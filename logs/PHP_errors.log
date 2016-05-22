@@ -1,0 +1,37 @@
+[22-May-2016 16:54:17 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`sell_orders_items`, CONSTRAINT `sell_orders_items_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`))' in /var/www/ecommerce_management/app/models/order.php:109
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(109): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(40): Order->delete()
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->destroy()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(74): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 109
+[22-May-2016 16:54:48 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`sell_orders_items`, CONSTRAINT `sell_orders_items_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`))' in /var/www/ecommerce_management/app/models/order.php:109
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(109): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(40): Order->delete()
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->destroy()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(74): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 109
+[22-May-2016 16:55:02 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`products`, CONSTRAINT `products_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`))' in /var/www/ecommerce_management/app/models/category.php:62
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/category.php(62): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/categories_controller.php(45): Category->delete()
+#2 /var/www/ecommerce_management/core/routes/router.php(47): CategoriesController->destroy()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(74): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/category.php on line 62
+[22-May-2016 16:58:07 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`products`, CONSTRAINT `products_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`))' in /var/www/ecommerce_management/app/models/category.php:62
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/category.php(62): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/categories_controller.php(45): Category->delete()
+#2 /var/www/ecommerce_management/core/routes/router.php(47): CategoriesController->destroy()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(74): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/category.php on line 62
+[22-May-2016 16:58:35 America/Sao_Paulo] PHP Fatal error:  Call to a member function delete() on null in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 40
