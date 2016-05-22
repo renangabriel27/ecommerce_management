@@ -1,0 +1,14 @@
+<?php if (SessionHelpers::isLoggedIn()): ?>
+  <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+    <div class="list-group">
+      <a href="#" class="list-group-item active">Menu</a>
+      <?= ViewHelpers::linkTo('/categorias', 'Cadastro de categorias', 'class="list-group-item"') ?>
+      <?= ViewHelpers::linkTo('/pedidos', 'Cadastro de pedidos', 'class="list-group-item"') ?>
+      <a href="#" class="list-group-item">Cadastro de produtos</a>
+      <a href="#" class="list-group-item">Cadastro de clientes</a>
+
+      <a href="../products" class="list-group-item">Relatório de produtos</a>
+      <a href="#" class="list-group-item">Pesquisar produto no estoque</a>
+    </div>
+  </div><!--/.sidebar-offcanvas-->
+<?php endif ?>

@@ -1,0 +1,48 @@
+<section>
+  <header>
+    <h2>Pedido</h2>
+  </header>
+  <article>
+      <p>Cliente : <?= $this->order->getClientId()->getName() ?></p>
+
+    <form role="form" class="form-inline" action="<?= ViewHelpers::urlFor('/pedidos/produtos') ?>" method="POST">
+      <div class="form-group">
+        <label class="sr-only" for="autocomplete_product_by_id">Id do produto</label>
+        <input type="number" class="form-control" id="autocomplete_product_by_id"
+          name="product[id]" placeholder="Código do produto" min="0">
+      </div>
+
+      <div class="form-group">
+        <label class="sr-only" for="autocomplete_product_by_name"> Nome do Produto </label>
+        <input type="text" class="form-control" id="autocomplete_product_by_name"
+        name="product[name]" value="Nome do produto" data-url="<?= ViewHelpers::urlFor('/produtos/autocomplete-search') ?>">
+      </div>
+
+      <input type="hidden" class="form-control" id="order_id" value="<?= $this->order->getId() ?>" name="order[id]">
+
+      <button type="submit"  class="btn btn-primary">Adicionar</button>
+    </form>
+
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Nome</th>
+          <th>Preço</th>
+          <th>Opções</th>
+        </tr>
+      </thead>
+      <tbody>
+        <?php foreach($this->order->getProducts() as $product) : ?>
+            <tr>
+              <td><?= $product->getId() ?></td>
+              <td><?= $product->getName() ?></td>
+              <td><?= $product->getPrice() ?></td>
+              <td><?= ViewHelpers::linkTo("/pedidos/{$product->getId()}/deletar", "Excluir", 'class="btn btn-danger"') ?></td>
+            </tr>
+      </tbody>
+      <?php endForeach; ?>
+    </table>
+
+  </article>
+</section>

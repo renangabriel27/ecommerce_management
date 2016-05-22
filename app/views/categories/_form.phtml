@@ -1,0 +1,11 @@
+<form action="<?= $this->action ?>" method="POST">
+
+  <div class="form-group <?= $this->category->getErrors('name') ? 'has-error' : '' ?>">
+    <label for="category_name">Nome</label>
+    <input type="text" class="form-control" id="category_name" name="category[name]"
+    placeholder="Digite o nome da categoria" value="<?= $this->category->getName() ?>">
+    <p class="help-block"><?= $this->category->getErrors('name') ?></p>
+  </div>
+
+  <button type="submit" name="button" class="btn btn-primary"><?= $this->submit ?> </button>
+</form>

@@ -1,0 +1,36 @@
+[22.05.2016 - 16:08:12][NOTICE] - /ecommerce_management/
+[22.05.2016 - 16:08:12][NOTICE] - match: / with /
+[22.05.2016 - 16:08:12][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 16:08:12][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 16:08:12][NOTICE] - /ecommerce_management/
+[22.05.2016 - 16:08:12][NOTICE] - match: / with /
+[22.05.2016 - 16:08:12][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 16:08:12][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 16:08:12][NOTICE] - /ecommerce_management/
+[22.05.2016 - 16:08:12][NOTICE] - match: / with /
+[22.05.2016 - 16:08:14][NOTICE] - /ecommerce_management/login
+[22.05.2016 - 16:08:14][NOTICE] - match: /login with /login
+[22.05.2016 - 16:08:14][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 16:08:14][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 16:08:14][NOTICE] - /ecommerce_management/
+[22.05.2016 - 16:08:14][NOTICE] - match: / with /
+[22.05.2016 - 16:08:14][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 16:08:14][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 16:08:14][NOTICE] - /ecommerce_management/
+[22.05.2016 - 16:08:14][NOTICE] - match: / with /
+[22.05.2016 - 16:08:16][NOTICE] - /ecommerce_management/login
+[22.05.2016 - 16:08:16][NOTICE] - match: /login with /login
+[22.05.2016 - 16:08:17][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 16:08:17][NOTICE] - /ecommerce_management/
+[22.05.2016 - 16:08:17][NOTICE] - match: / with /
+[22.05.2016 - 16:08:17][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 16:08:17][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 16:08:17][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 16:08:17][NOTICE] - /ecommerce_management/
+[22.05.2016 - 16:08:17][NOTICE] - match: / with /
+[22.05.2016 - 16:08:17][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 16:08:17][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 16:08:17][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 16:08:17][NOTICE] - /ecommerce_management/
+[22.05.2016 - 16:08:17][NOTICE] - match: / with /
+[22.05.2016 - 16:08:17][NOTICE] - Aberta conexão com banco de dados!
