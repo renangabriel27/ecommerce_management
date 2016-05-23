@@ -71,5 +71,13 @@
     /* Fim das rotas para os produtos
     --------------------------------- */
 
+    /* Rotas para os clientes pi
+    ------------------------- */
+    $router->get('/clientes', array('controller' => 'ClientsController', 'action' => 'index'));
+    $router->get('/clientes/novo', array('controller' => 'ClientsController', 'action' => '_new'));
+    /* Fim das rotas para os clientes
+    --------------------------------- */
+
+
     $router->load();
 ?>

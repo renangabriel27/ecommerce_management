@@ -4,11 +4,11 @@
 
   public function index() {
      $this->title = 'Sistema';
+     $this->clients = Client::all();
   }
 
   public function _new() {
     $this->client = new Client();
-  
   }
 
   public function create(){

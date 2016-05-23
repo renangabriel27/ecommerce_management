@@ -3,6 +3,14 @@
   private $name;
   private $email;
   private $password;
+  private $address;
+  private $addressNumber;
+  private $addressCep;
+  private $dateOfBirth;
+  private $phone;
+  private $cityId;
+  private $city;
+
 
   public function setName($name) {
     $this->name = $name;
@@ -20,6 +28,62 @@
 
   public function setPassword($password) {
     $this->password= $password;
+  }
+
+  public function setAddress($address) {
+    $this->address = $address;
+  }
+
+  public function getAddress() {
+    return $this->address;
+  }
+
+  public function setAddressNumber($addressNumber) {
+    $this->addressNumber = $addressNumber;
+  }
+
+  public function getAddressNumber() {
+    return $this->addressNumber;
+  }
+
+  public function setAddressCep($addressCep) {
+    $this->addressCep = $addressCep;
+  }
+
+  public function getAddressCep() {
+    return $this->addressCep;
+  }
+
+  public function setDateOfBirth($dateOfBirth) {
+    $this->dateOfBirth = $dateOfBirth;
+  }
+
+  public function getDateOfBirth() {
+    return $this->dateOfBirth;
+  }
+
+  public function setPhone($phone) {
+    $this->phone = $phone;
+  }
+
+  public function getPhone() {
+    return $this->phone;
+  }
+
+  public function setCityId($cityId) {
+    $this->cityId = $cityId;
+  }
+
+  public function getCityId() {
+    return $this->cityId;
+  }
+
+  public function setCity($city) {
+    $this->city = $city;
+  }
+
+  public function getCity() {
+    return $this->city;
   }
 
   public function validates() {
@@ -99,6 +163,26 @@
     }
 
     return null;
+  }
+
+  public static function all() {
+    $sql = "SELECT clients.id AS id, clients.name, clients.email,
+    clients.address_cep, clients.phone, clients.city_id, cities.name AS city
+    FROM clients, cities WHERE (clients.city_id = cities.id) ORDER BY clients.created_at DESC";
+
+    $db = Database::getConnection();
+    $statement = $db->prepare($sql);
+    $resp = $statement->execute();
+
+    $clients = [];
+
+    if(!$resp) return $clients;
+
+    while($client = $statement->fetch(PDO::FETCH_ASSOC)) {
+      $clients[] = new Client($client);
+    }
+
+    return $clients;
   }
 
   public static function findByEmail($email) {

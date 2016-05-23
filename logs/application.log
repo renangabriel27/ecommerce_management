@@ -626,3 +626,1599 @@
 [22.05.2016 - 16:59:41][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
 [22.05.2016 - 16:59:41][NOTICE] - /ecommerce_management/
 [22.05.2016 - 16:59:41][NOTICE] - match: / with /
+[22.05.2016 - 21:34:47][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:34:47][NOTICE] - match: / with /
+[22.05.2016 - 21:34:47][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 21:34:47][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 21:34:47][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:34:47][NOTICE] - match: / with /
+[22.05.2016 - 21:34:47][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:34:47][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:34:47][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:34:47][NOTICE] - match: / with /
+[22.05.2016 - 21:34:55][NOTICE] - /ecommerce_management/login
+[22.05.2016 - 21:34:55][NOTICE] - match: /login with /login
+[22.05.2016 - 21:34:55][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 21:34:55][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 21:34:55][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:34:55][NOTICE] - match: / with /
+[22.05.2016 - 21:34:55][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:34:55][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:34:55][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:34:55][NOTICE] - match: / with /
+[22.05.2016 - 21:34:59][NOTICE] - /ecommerce_management/login
+[22.05.2016 - 21:34:59][NOTICE] - match: /login with /login
+[22.05.2016 - 21:34:59][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:34:59][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:34:59][NOTICE] - match: / with /
+[22.05.2016 - 21:34:59][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:34:59][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 21:34:59][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 21:34:59][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:34:59][NOTICE] - match: / with /
+[22.05.2016 - 21:34:59][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:34:59][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:34:59][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:34:59][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:34:59][NOTICE] - match: / with /
+[22.05.2016 - 21:34:59][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:35:01][NOTICE] - /ecommerce_management/pedidos
+[22.05.2016 - 21:35:01][NOTICE] - match: /pedidos with /pedidos
+[22.05.2016 - 21:35:01][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:35:01][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 21:35:01][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 21:35:01][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:35:01][NOTICE] - match: / with /
+[22.05.2016 - 21:35:01][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:35:01][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:35:01][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:35:01][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:35:01][NOTICE] - match: / with /
+[22.05.2016 - 21:35:01][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:35:03][NOTICE] - /ecommerce_management/pedidos/10/deletar
+[22.05.2016 - 21:35:03][NOTICE] - match: /pedidos/:id/deletar with /pedidos/10/deletar
+[22.05.2016 - 21:35:03][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:35:04][NOTICE] - /ecommerce_management/pedidos
+[22.05.2016 - 21:35:04][NOTICE] - match: /pedidos with /pedidos
+[22.05.2016 - 21:35:04][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:35:04][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 21:35:04][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 21:35:04][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:35:04][NOTICE] - match: / with /
+[22.05.2016 - 21:35:04][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:35:04][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:35:04][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:35:04][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:35:04][NOTICE] - match: / with /
+[22.05.2016 - 21:35:04][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:35:07][NOTICE] - /ecommerce_management/pedidos/novo
+[22.05.2016 - 21:35:07][NOTICE] - match: /pedidos/novo with /pedidos/novo
+[22.05.2016 - 21:35:07][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:35:07][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 21:35:07][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 21:35:07][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:35:07][NOTICE] - match: / with /
+[22.05.2016 - 21:35:07][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:35:07][NOTICE] - /ecommerce_management/pedidos/assets/images/favicon.ico
+[22.05.2016 - 21:35:07][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/pedidos/assets/images/favicon.ico
+[22.05.2016 - 21:35:07][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:35:07][NOTICE] - match: / with /
+[22.05.2016 - 21:35:07][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:35:08][NOTICE] - /ecommerce_management/clientes/autocomplete-search?query=re
+[22.05.2016 - 21:35:08][NOTICE] - match: /clientes/autocomplete-search with /clientes/autocomplete-search
+[22.05.2016 - 21:35:08][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:35:09][NOTICE] - /ecommerce_management/pedidos
+[22.05.2016 - 21:35:09][NOTICE] - match: /pedidos with /pedidos
+[22.05.2016 - 21:35:09][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:35:09][NOTICE] - /ecommerce_management/pedidos
+[22.05.2016 - 21:35:09][NOTICE] - match: /pedidos with /pedidos
+[22.05.2016 - 21:35:09][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:35:09][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 21:35:09][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 21:35:09][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:35:09][NOTICE] - match: / with /
+[22.05.2016 - 21:35:09][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:35:09][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:35:09][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:35:09][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:35:09][NOTICE] - match: / with /
+[22.05.2016 - 21:35:09][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:35:11][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:35:11][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:35:11][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:35:11][NOTICE] - match: / with /
+[22.05.2016 - 21:35:11][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:35:12][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:35:12][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:35:12][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:35:12][NOTICE] - match: / with /
+[22.05.2016 - 21:35:12][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:35:13][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:35:13][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:35:13][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:35:13][NOTICE] - match: / with /
+[22.05.2016 - 21:35:13][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:35:14][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:35:14][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:35:14][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:35:14][NOTICE] - match: / with /
+[22.05.2016 - 21:35:14][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:35:17][NOTICE] - /ecommerce_management/pedidos
+[22.05.2016 - 21:35:17][NOTICE] - match: /pedidos with /pedidos
+[22.05.2016 - 21:35:17][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:35:17][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:35:17][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:35:17][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:35:17][NOTICE] - match: / with /
+[22.05.2016 - 21:35:17][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:35:19][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:35:19][NOTICE] - match: / with /
+[22.05.2016 - 21:35:19][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:35:19][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 21:35:19][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 21:35:19][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:35:19][NOTICE] - match: / with /
+[22.05.2016 - 21:35:19][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:35:19][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:35:19][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:35:19][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:35:19][NOTICE] - match: / with /
+[22.05.2016 - 21:35:19][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:35:27][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:35:27][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:35:27][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:35:27][NOTICE] - match: / with /
+[22.05.2016 - 21:35:27][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:35:29][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:35:29][NOTICE] - match: / with /
+[22.05.2016 - 21:35:29][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:35:30][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:35:30][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:35:30][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:35:30][NOTICE] - match: / with /
+[22.05.2016 - 21:35:30][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:35:30][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:35:30][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:35:30][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:35:30][NOTICE] - match: / with /
+[22.05.2016 - 21:35:30][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:35:31][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:35:31][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:35:31][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:35:31][NOTICE] - match: / with /
+[22.05.2016 - 21:35:31][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:35:31][NOTICE] - /ecommerce_management/pedidos
+[22.05.2016 - 21:35:31][NOTICE] - match: /pedidos with /pedidos
+[22.05.2016 - 21:35:31][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:35:31][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 21:35:31][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 21:35:31][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:35:31][NOTICE] - match: / with /
+[22.05.2016 - 21:35:31][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:35:31][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:35:31][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:35:31][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:35:31][NOTICE] - match: / with /
+[22.05.2016 - 21:35:31][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:35:32][NOTICE] - /ecommerce_management/categorias
+[22.05.2016 - 21:35:32][NOTICE] - match: /categorias with /categorias
+[22.05.2016 - 21:35:32][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:35:32][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 21:35:32][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 21:35:32][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:35:32][NOTICE] - match: / with /
+[22.05.2016 - 21:35:32][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:35:32][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:35:32][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:35:32][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:35:32][NOTICE] - match: / with /
+[22.05.2016 - 21:35:32][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:35:34][NOTICE] - /ecommerce_management/categorias/novo
+[22.05.2016 - 21:35:34][NOTICE] - match: /categorias/novo with /categorias/novo
+[22.05.2016 - 21:35:34][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:35:34][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 21:35:34][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 21:35:34][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:35:34][NOTICE] - match: / with /
+[22.05.2016 - 21:35:34][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:35:34][NOTICE] - /ecommerce_management/categorias/assets/images/favicon.ico
+[22.05.2016 - 21:35:34][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/categorias/assets/images/favicon.ico
+[22.05.2016 - 21:35:34][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:35:34][NOTICE] - match: / with /
+[22.05.2016 - 21:35:34][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:35:36][NOTICE] - /ecommerce_management/categorias
+[22.05.2016 - 21:35:36][NOTICE] - match: /categorias with /categorias
+[22.05.2016 - 21:35:36][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:35:36][NOTICE] - /ecommerce_management/categorias
+[22.05.2016 - 21:35:36][NOTICE] - match: /categorias with /categorias
+[22.05.2016 - 21:35:36][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:35:36][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 21:35:36][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 21:35:36][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:35:36][NOTICE] - match: / with /
+[22.05.2016 - 21:35:36][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:35:36][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:35:36][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:35:36][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:35:36][NOTICE] - match: / with /
+[22.05.2016 - 21:35:36][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 21:37:55][NOTICE] - /ecommerce_management/logout
+[22.05.2016 - 21:37:55][NOTICE] - match: /logout with /logout
+[22.05.2016 - 21:37:55][NOTICE] - /ecommerce_management/login
+[22.05.2016 - 21:37:55][NOTICE] - match: /login with /login
+[22.05.2016 - 21:37:55][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 21:37:55][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 21:37:55][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:37:55][NOTICE] - match: / with /
+[22.05.2016 - 21:37:55][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:37:55][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:37:55][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:37:55][NOTICE] - match: / with /
+[22.05.2016 - 21:41:24][NOTICE] - /materialize/
+[22.05.2016 - 21:41:24][!!ERROR!!] - URL NOT FOUND: /materialize/
+[22.05.2016 - 21:41:24][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:41:24][NOTICE] - match: / with /
+[22.05.2016 - 21:41:24][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 21:41:24][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 21:41:24][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:41:24][NOTICE] - match: / with /
+[22.05.2016 - 21:41:24][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:41:24][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:41:24][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:41:24][NOTICE] - match: / with /
+[22.05.2016 - 21:41:30][NOTICE] - /materialize/
+[22.05.2016 - 21:41:30][!!ERROR!!] - URL NOT FOUND: /materialize/
+[22.05.2016 - 21:41:30][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:41:30][NOTICE] - match: / with /
+[22.05.2016 - 21:41:30][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 21:41:30][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 21:41:30][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:41:30][NOTICE] - match: / with /
+[22.05.2016 - 21:41:30][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:41:30][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:41:30][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:41:30][NOTICE] - match: / with /
+[22.05.2016 - 21:41:35][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:41:35][NOTICE] - match: / with /
+[22.05.2016 - 21:41:35][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 21:41:35][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 21:41:35][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:41:35][NOTICE] - match: / with /
+[22.05.2016 - 21:41:35][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:41:35][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 21:41:35][NOTICE] - /ecommerce_management/
+[22.05.2016 - 21:41:35][NOTICE] - match: / with /
+[22.05.2016 - 22:25:15][NOTICE] - /ecommerce_management/login
+[22.05.2016 - 22:25:15][NOTICE] - match: /login with /login
+[22.05.2016 - 22:25:15][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 22:25:15][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 22:25:15][NOTICE] - /ecommerce_management/
+[22.05.2016 - 22:25:15][NOTICE] - match: / with /
+[22.05.2016 - 22:25:15][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 22:25:15][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 22:25:15][NOTICE] - /ecommerce_management/
+[22.05.2016 - 22:25:15][NOTICE] - match: / with /
+[22.05.2016 - 22:53:30][NOTICE] - /ecommerce_management/
+[22.05.2016 - 22:53:30][NOTICE] - match: / with /
+[22.05.2016 - 22:53:30][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 22:53:30][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 22:53:30][NOTICE] - /ecommerce_management/
+[22.05.2016 - 22:53:30][NOTICE] - match: / with /
+[22.05.2016 - 22:53:30][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 22:53:30][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 22:53:30][NOTICE] - /ecommerce_management/
+[22.05.2016 - 22:53:30][NOTICE] - match: / with /
+[22.05.2016 - 22:53:31][NOTICE] - /ecommerce_management/
+[22.05.2016 - 22:53:31][NOTICE] - match: / with /
+[22.05.2016 - 22:53:31][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 22:53:31][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 22:53:31][NOTICE] - /ecommerce_management/
+[22.05.2016 - 22:53:31][NOTICE] - match: / with /
+[22.05.2016 - 22:53:31][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 22:53:31][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 22:53:31][NOTICE] - /ecommerce_management/
+[22.05.2016 - 22:53:31][NOTICE] - match: / with /
+[22.05.2016 - 22:53:32][NOTICE] - /ecommerce_management/login
+[22.05.2016 - 22:53:32][NOTICE] - match: /login with /login
+[22.05.2016 - 22:53:32][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 22:53:32][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 22:53:32][NOTICE] - /ecommerce_management/
+[22.05.2016 - 22:53:32][NOTICE] - match: / with /
+[22.05.2016 - 22:53:32][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 22:53:32][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 22:53:32][NOTICE] - /ecommerce_management/
+[22.05.2016 - 22:53:32][NOTICE] - match: / with /
+[22.05.2016 - 23:10:53][NOTICE] - /ecommerce_management/login
+[22.05.2016 - 23:10:53][NOTICE] - match: /login with /login
+[22.05.2016 - 23:10:53][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:10:53][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:10:53][NOTICE] - match: / with /
+[22.05.2016 - 23:10:53][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:10:53][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:10:53][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:10:53][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:10:53][NOTICE] - match: / with /
+[22.05.2016 - 23:10:53][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:10:53][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:10:53][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:10:53][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:10:53][NOTICE] - match: / with /
+[22.05.2016 - 23:10:53][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:14:24][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:14:24][NOTICE] - match: / with /
+[22.05.2016 - 23:14:24][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:14:24][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:14:24][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:14:24][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:14:24][NOTICE] - match: / with /
+[22.05.2016 - 23:14:24][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:14:24][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:14:24][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:14:24][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:14:24][NOTICE] - match: / with /
+[22.05.2016 - 23:14:24][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:14:55][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:14:55][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:14:55][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:14:55][NOTICE] - match: / with /
+[22.05.2016 - 23:14:55][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:14:56][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:14:56][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:14:56][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:14:56][NOTICE] - match: / with /
+[22.05.2016 - 23:14:56][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:14:59][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:14:59][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:14:59][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:14:59][NOTICE] - match: / with /
+[22.05.2016 - 23:14:59][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:14:59][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:14:59][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:14:59][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:14:59][NOTICE] - match: / with /
+[22.05.2016 - 23:14:59][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:15:04][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:15:04][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:15:04][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:15:04][NOTICE] - match: / with /
+[22.05.2016 - 23:15:04][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:15:06][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:15:06][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:15:06][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:15:06][NOTICE] - match: / with /
+[22.05.2016 - 23:15:06][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:15:06][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:15:06][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:15:06][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:15:06][NOTICE] - match: / with /
+[22.05.2016 - 23:15:06][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:15:06][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:15:06][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:15:06][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:15:06][NOTICE] - match: / with /
+[22.05.2016 - 23:15:06][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:15:09][NOTICE] - /ecommerce_management/pedidos
+[22.05.2016 - 23:15:09][NOTICE] - match: /pedidos with /pedidos
+[22.05.2016 - 23:15:09][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:15:09][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:15:09][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:15:09][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:15:09][NOTICE] - match: / with /
+[22.05.2016 - 23:15:09][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:15:09][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:15:09][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:15:09][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:15:09][NOTICE] - match: / with /
+[22.05.2016 - 23:15:09][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:15:10][NOTICE] - /ecommerce_management/categorias
+[22.05.2016 - 23:15:10][NOTICE] - match: /categorias with /categorias
+[22.05.2016 - 23:15:10][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:15:10][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:15:10][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:15:10][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:15:10][NOTICE] - match: / with /
+[22.05.2016 - 23:15:10][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:15:10][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:15:10][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:15:10][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:15:10][NOTICE] - match: / with /
+[22.05.2016 - 23:15:10][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:15:11][NOTICE] - /ecommerce_management/categorias/1/editar
+[22.05.2016 - 23:15:11][NOTICE] - match: /categorias/:id/editar with /categorias/1/editar
+[22.05.2016 - 23:15:11][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:15:11][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:15:11][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:15:11][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:15:11][NOTICE] - match: / with /
+[22.05.2016 - 23:15:11][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:15:11][NOTICE] - /ecommerce_management/categorias/1/assets/images/favicon.ico
+[22.05.2016 - 23:15:11][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/categorias/1/assets/images/favicon.ico
+[22.05.2016 - 23:15:11][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:15:11][NOTICE] - match: / with /
+[22.05.2016 - 23:15:11][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:15:12][NOTICE] - /ecommerce_management/pedidos
+[22.05.2016 - 23:15:12][NOTICE] - match: /pedidos with /pedidos
+[22.05.2016 - 23:15:12][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:15:12][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:15:12][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:15:12][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:15:12][NOTICE] - match: / with /
+[22.05.2016 - 23:15:12][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:15:12][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:15:12][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:15:13][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:15:13][NOTICE] - match: / with /
+[22.05.2016 - 23:15:13][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:15:13][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:15:13][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:15:13][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:15:13][NOTICE] - match: / with /
+[22.05.2016 - 23:15:13][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:15:14][NOTICE] - /ecommerce_management/pedidos/11
+[22.05.2016 - 23:15:14][NOTICE] - match: /pedidos/:id with /pedidos/11
+[22.05.2016 - 23:15:14][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:15:14][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:15:14][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:15:14][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:15:14][NOTICE] - match: / with /
+[22.05.2016 - 23:15:14][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:15:14][NOTICE] - /ecommerce_management/pedidos/assets/images/favicon.ico
+[22.05.2016 - 23:15:14][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/pedidos/assets/images/favicon.ico
+[22.05.2016 - 23:15:14][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:15:14][NOTICE] - match: / with /
+[22.05.2016 - 23:15:14][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:15:15][NOTICE] - /ecommerce_management/categorias
+[22.05.2016 - 23:15:15][NOTICE] - match: /categorias with /categorias
+[22.05.2016 - 23:15:15][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:15:15][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:15:15][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:15:15][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:15:15][NOTICE] - match: / with /
+[22.05.2016 - 23:15:15][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:15:15][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:15:15][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:15:15][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:15:15][NOTICE] - match: / with /
+[22.05.2016 - 23:15:15][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:15:16][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:15:16][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:15:16][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:15:16][NOTICE] - match: / with /
+[22.05.2016 - 23:15:16][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:15:17][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:15:17][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:15:17][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:15:17][NOTICE] - match: / with /
+[22.05.2016 - 23:15:17][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:15:18][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:15:18][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:15:18][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:15:18][NOTICE] - match: / with /
+[22.05.2016 - 23:15:18][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:31:27][NOTICE] - /ecommerce_management/categorias
+[22.05.2016 - 23:31:27][NOTICE] - match: /categorias with /categorias
+[22.05.2016 - 23:31:27][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:31:27][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:31:27][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:31:27][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:31:27][NOTICE] - match: / with /
+[22.05.2016 - 23:31:27][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:31:27][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:31:27][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:31:27][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:31:27][NOTICE] - match: / with /
+[22.05.2016 - 23:31:27][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:31:28][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:31:28][NOTICE] - match: / with /
+[22.05.2016 - 23:31:28][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:31:28][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:31:28][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:31:28][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:31:28][NOTICE] - match: / with /
+[22.05.2016 - 23:31:28][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:31:28][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:31:28][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:31:28][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:31:28][NOTICE] - match: / with /
+[22.05.2016 - 23:31:28][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:31:29][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:31:29][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:31:29][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:31:29][NOTICE] - match: / with /
+[22.05.2016 - 23:31:29][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:32:49][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:32:49][NOTICE] - match: / with /
+[22.05.2016 - 23:32:49][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:32:49][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:32:49][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:32:49][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:32:49][NOTICE] - match: / with /
+[22.05.2016 - 23:32:49][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:32:49][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:32:49][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:32:49][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:32:49][NOTICE] - match: / with /
+[22.05.2016 - 23:32:49][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:32:50][NOTICE] - /ecommerce_management/clientes
+[22.05.2016 - 23:32:50][NOTICE] - match: /clientes with /clientes
+[22.05.2016 - 23:32:50][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:32:50][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:32:50][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:32:50][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:32:50][NOTICE] - match: / with /
+[22.05.2016 - 23:32:50][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:32:51][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:32:51][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:32:51][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:32:51][NOTICE] - match: / with /
+[22.05.2016 - 23:32:51][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:33:17][NOTICE] - /ecommerce_management/clientes
+[22.05.2016 - 23:33:17][NOTICE] - match: /clientes with /clientes
+[22.05.2016 - 23:33:17][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:33:17][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:33:17][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:33:17][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:33:17][NOTICE] - match: / with /
+[22.05.2016 - 23:33:17][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:33:17][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:33:17][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:33:17][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:33:17][NOTICE] - match: / with /
+[22.05.2016 - 23:33:17][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:34:26][NOTICE] - /ecommerce_management/clientes?textinput=Renan
+[22.05.2016 - 23:34:26][NOTICE] - match: /clientes with /clientes
+[22.05.2016 - 23:34:26][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:34:26][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:34:26][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:34:26][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:34:26][NOTICE] - match: / with /
+[22.05.2016 - 23:34:26][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:34:26][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:34:26][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:34:26][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:34:26][NOTICE] - match: / with /
+[22.05.2016 - 23:34:26][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:34:38][NOTICE] - /ecommerce_management/categorias
+[22.05.2016 - 23:34:38][NOTICE] - match: /categorias with /categorias
+[22.05.2016 - 23:34:38][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:34:38][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:34:38][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:34:38][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:34:38][NOTICE] - match: / with /
+[22.05.2016 - 23:34:38][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:34:38][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:34:38][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:34:38][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:34:38][NOTICE] - match: / with /
+[22.05.2016 - 23:34:38][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:36:56][NOTICE] - /ecommerce_management/categorias
+[22.05.2016 - 23:36:56][NOTICE] - match: /categorias with /categorias
+[22.05.2016 - 23:36:56][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:36:56][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:36:56][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:36:56][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:36:56][NOTICE] - match: / with /
+[22.05.2016 - 23:36:56][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:36:56][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:36:56][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:36:56][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:36:56][NOTICE] - match: / with /
+[22.05.2016 - 23:36:56][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:36:58][NOTICE] - /ecommerce_management/clientes
+[22.05.2016 - 23:36:58][NOTICE] - match: /clientes with /clientes
+[22.05.2016 - 23:36:58][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:36:58][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:36:58][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:36:58][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:36:58][NOTICE] - match: / with /
+[22.05.2016 - 23:36:58][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:36:58][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:36:58][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:36:58][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:36:58][NOTICE] - match: / with /
+[22.05.2016 - 23:36:58][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:37:52][NOTICE] - /ecommerce_management/clientes
+[22.05.2016 - 23:37:52][NOTICE] - match: /clientes with /clientes
+[22.05.2016 - 23:37:52][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:37:52][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:37:52][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:37:52][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:37:52][NOTICE] - match: / with /
+[22.05.2016 - 23:37:52][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:37:52][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:37:52][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:37:52][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:37:52][NOTICE] - match: / with /
+[22.05.2016 - 23:37:52][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:39:06][NOTICE] - /ecommerce_management/clientes
+[22.05.2016 - 23:39:06][NOTICE] - match: /clientes with /clientes
+[22.05.2016 - 23:40:23][NOTICE] - /ecommerce_management/clientes
+[22.05.2016 - 23:40:23][NOTICE] - match: /clientes with /clientes
+[22.05.2016 - 23:40:23][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:40:35][NOTICE] - /ecommerce_management/clientes
+[22.05.2016 - 23:40:35][NOTICE] - match: /clientes with /clientes
+[22.05.2016 - 23:40:35][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:41:23][NOTICE] - /ecommerce_management/clientes
+[22.05.2016 - 23:41:23][NOTICE] - match: /clientes with /clientes
+[22.05.2016 - 23:41:23][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:42:29][NOTICE] - /ecommerce_management/clientes
+[22.05.2016 - 23:42:29][NOTICE] - match: /clientes with /clientes
+[22.05.2016 - 23:42:29][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:43:00][NOTICE] - /ecommerce_management/clientes
+[22.05.2016 - 23:43:00][NOTICE] - match: /clientes with /clientes
+[22.05.2016 - 23:43:00][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:43:47][NOTICE] - /ecommerce_management/clientes
+[22.05.2016 - 23:43:47][NOTICE] - match: /clientes with /clientes
+[22.05.2016 - 23:43:47][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:44:38][NOTICE] - /ecommerce_management/clientes
+[22.05.2016 - 23:44:38][NOTICE] - match: /clientes with /clientes
+[22.05.2016 - 23:44:38][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:45:19][NOTICE] - /ecommerce_management/clientes
+[22.05.2016 - 23:45:19][NOTICE] - match: /clientes with /clientes
+[22.05.2016 - 23:45:19][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:47:33][NOTICE] - /ecommerce_management/clientes
+[22.05.2016 - 23:47:33][NOTICE] - match: /clientes with /clientes
+[22.05.2016 - 23:48:00][NOTICE] - /ecommerce_management/clientes
+[22.05.2016 - 23:48:00][NOTICE] - match: /clientes with /clientes
+[22.05.2016 - 23:48:41][NOTICE] - /ecommerce_management/clientes
+[22.05.2016 - 23:48:41][NOTICE] - match: /clientes with /clientes
+[22.05.2016 - 23:49:04][NOTICE] - /ecommerce_management/clientes
+[22.05.2016 - 23:49:04][NOTICE] - match: /clientes with /clientes
+[22.05.2016 - 23:49:04][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:49:37][NOTICE] - /ecommerce_management/clientes
+[22.05.2016 - 23:49:37][NOTICE] - match: /clientes with /clientes
+[22.05.2016 - 23:49:37][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:49:37][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:49:37][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:49:37][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:49:37][NOTICE] - match: / with /
+[22.05.2016 - 23:49:37][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:49:37][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:49:37][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:49:37][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:49:37][NOTICE] - match: / with /
+[22.05.2016 - 23:49:37][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:50:12][NOTICE] - /ecommerce_management/clientes
+[22.05.2016 - 23:50:12][NOTICE] - match: /clientes with /clientes
+[22.05.2016 - 23:50:12][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:50:12][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:50:12][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:50:13][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:50:13][NOTICE] - match: / with /
+[22.05.2016 - 23:50:13][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:50:13][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:50:13][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:50:13][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:50:13][NOTICE] - match: / with /
+[22.05.2016 - 23:50:13][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:50:16][NOTICE] - /ecommerce_management/clientes/3/editar
+[22.05.2016 - 23:50:16][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/clientes/3/editar
+[22.05.2016 - 23:50:16][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:50:16][NOTICE] - match: / with /
+[22.05.2016 - 23:50:16][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:50:16][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:50:16][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:50:16][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:50:16][NOTICE] - match: / with /
+[22.05.2016 - 23:50:16][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:50:16][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:50:16][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:50:16][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:50:16][NOTICE] - match: / with /
+[22.05.2016 - 23:50:16][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:50:17][NOTICE] - /ecommerce_management/clientes
+[22.05.2016 - 23:50:17][NOTICE] - match: /clientes with /clientes
+[22.05.2016 - 23:50:17][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:50:17][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:50:17][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:50:17][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:50:17][NOTICE] - match: / with /
+[22.05.2016 - 23:50:17][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:50:19][NOTICE] - /ecommerce_management/clientes/novo
+[22.05.2016 - 23:50:19][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/clientes/novo
+[22.05.2016 - 23:50:19][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:50:19][NOTICE] - match: / with /
+[22.05.2016 - 23:50:19][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:50:19][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:50:19][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:50:19][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:50:19][NOTICE] - match: / with /
+[22.05.2016 - 23:50:19][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:50:19][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:50:19][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:50:19][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:50:19][NOTICE] - match: / with /
+[22.05.2016 - 23:50:19][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:50:20][NOTICE] - /ecommerce_management/clientes
+[22.05.2016 - 23:50:20][NOTICE] - match: /clientes with /clientes
+[22.05.2016 - 23:50:20][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:50:20][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:50:20][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:50:20][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:50:20][NOTICE] - match: / with /
+[22.05.2016 - 23:50:20][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:50:48][NOTICE] - /ecommerce_management/clientes
+[22.05.2016 - 23:50:48][NOTICE] - match: /clientes with /clientes
+[22.05.2016 - 23:50:48][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:50:48][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:50:48][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:50:48][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:50:48][NOTICE] - match: / with /
+[22.05.2016 - 23:50:48][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:50:49][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:50:49][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:50:49][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:50:49][NOTICE] - match: / with /
+[22.05.2016 - 23:50:49][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:50:49][NOTICE] - /ecommerce_management/clientes/novo
+[22.05.2016 - 23:50:49][NOTICE] - match: /clientes/novo with /clientes/novo
+[22.05.2016 - 23:50:49][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:50:49][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:50:49][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:50:49][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:50:49][NOTICE] - match: / with /
+[22.05.2016 - 23:50:49][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:50:49][NOTICE] - /ecommerce_management/clientes/assets/images/favicon.ico
+[22.05.2016 - 23:50:49][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/clientes/assets/images/favicon.ico
+[22.05.2016 - 23:50:49][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:50:49][NOTICE] - match: / with /
+[22.05.2016 - 23:50:49][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:51:36][NOTICE] - /ecommerce_management/clientes/novo
+[22.05.2016 - 23:51:36][NOTICE] - match: /clientes/novo with /clientes/novo
+[22.05.2016 - 23:51:36][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:51:36][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:51:36][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:51:36][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:51:36][NOTICE] - match: / with /
+[22.05.2016 - 23:51:36][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:51:36][NOTICE] - /ecommerce_management/clientes/assets/images/favicon.ico
+[22.05.2016 - 23:51:36][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/clientes/assets/images/favicon.ico
+[22.05.2016 - 23:51:36][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:51:36][NOTICE] - match: / with /
+[22.05.2016 - 23:51:36][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:51:37][NOTICE] - /ecommerce_management/clientes
+[22.05.2016 - 23:51:37][NOTICE] - match: /clientes with /clientes
+[22.05.2016 - 23:51:37][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:51:37][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:51:37][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:51:37][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:51:37][NOTICE] - match: / with /
+[22.05.2016 - 23:51:37][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:51:37][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:51:37][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:51:37][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:51:37][NOTICE] - match: / with /
+[22.05.2016 - 23:51:37][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:55:40][NOTICE] - /ecommerce_management/clientes
+[22.05.2016 - 23:55:40][NOTICE] - match: /clientes with /clientes
+[22.05.2016 - 23:55:40][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:55:40][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:55:40][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:55:40][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:55:40][NOTICE] - match: / with /
+[22.05.2016 - 23:55:40][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:55:40][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:55:40][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:55:40][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:55:40][NOTICE] - match: / with /
+[22.05.2016 - 23:55:40][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:56:42][NOTICE] - /ecommerce_management/clientes
+[22.05.2016 - 23:56:42][NOTICE] - match: /clientes with /clientes
+[22.05.2016 - 23:56:42][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:56:42][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:56:42][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:56:42][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:56:42][NOTICE] - match: / with /
+[22.05.2016 - 23:56:42][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:56:42][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:56:42][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:56:42][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:56:42][NOTICE] - match: / with /
+[22.05.2016 - 23:56:42][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:56:50][NOTICE] - /ecommerce_management/clientes
+[22.05.2016 - 23:56:50][NOTICE] - match: /clientes with /clientes
+[22.05.2016 - 23:56:50][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:56:50][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:56:50][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:56:50][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:56:50][NOTICE] - match: / with /
+[22.05.2016 - 23:56:50][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:56:51][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:56:51][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:56:51][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:56:51][NOTICE] - match: / with /
+[22.05.2016 - 23:56:51][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:58:04][NOTICE] - /ecommerce_management/clientes
+[22.05.2016 - 23:58:04][NOTICE] - match: /clientes with /clientes
+[22.05.2016 - 23:58:04][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:58:04][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:58:04][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:58:04][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:58:04][NOTICE] - match: / with /
+[22.05.2016 - 23:58:04][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:58:05][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:58:05][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:58:05][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:58:05][NOTICE] - match: / with /
+[22.05.2016 - 23:58:05][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:59:11][NOTICE] - /ecommerce_management/clientes
+[22.05.2016 - 23:59:11][NOTICE] - match: /clientes with /clientes
+[22.05.2016 - 23:59:11][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:59:11][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:59:11][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:59:11][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:59:11][NOTICE] - match: / with /
+[22.05.2016 - 23:59:11][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:59:11][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:59:11][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:59:11][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:59:11][NOTICE] - match: / with /
+[22.05.2016 - 23:59:11][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:59:18][NOTICE] - /ecommerce_management/clientes
+[22.05.2016 - 23:59:18][NOTICE] - match: /clientes with /clientes
+[22.05.2016 - 23:59:18][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:59:18][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:59:18][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:59:18][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:59:18][NOTICE] - match: / with /
+[22.05.2016 - 23:59:18][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:59:18][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:59:18][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:59:18][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:59:18][NOTICE] - match: / with /
+[22.05.2016 - 23:59:18][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:59:36][NOTICE] - /ecommerce_management/clientes
+[22.05.2016 - 23:59:36][NOTICE] - match: /clientes with /clientes
+[22.05.2016 - 23:59:36][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:59:36][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:59:36][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:59:36][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:59:36][NOTICE] - match: / with /
+[22.05.2016 - 23:59:36][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:59:36][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:59:36][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:59:36][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:59:36][NOTICE] - match: / with /
+[22.05.2016 - 23:59:36][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:59:37][NOTICE] - /ecommerce_management/clientes
+[22.05.2016 - 23:59:37][NOTICE] - match: /clientes with /clientes
+[22.05.2016 - 23:59:37][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:59:37][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:59:37][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:59:37][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:59:37][NOTICE] - match: / with /
+[22.05.2016 - 23:59:37][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:59:37][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:59:37][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:59:37][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:59:37][NOTICE] - match: / with /
+[22.05.2016 - 23:59:37][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:59:37][NOTICE] - /ecommerce_management/clientes
+[22.05.2016 - 23:59:37][NOTICE] - match: /clientes with /clientes
+[22.05.2016 - 23:59:37][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:59:37][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:59:37][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:59:37][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:59:37][NOTICE] - match: / with /
+[22.05.2016 - 23:59:37][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:59:37][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:59:37][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:59:37][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:59:37][NOTICE] - match: / with /
+[22.05.2016 - 23:59:37][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:59:37][NOTICE] - /ecommerce_management/clientes
+[22.05.2016 - 23:59:37][NOTICE] - match: /clientes with /clientes
+[22.05.2016 - 23:59:37][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:59:37][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:59:37][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:59:37][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:59:37][NOTICE] - match: / with /
+[22.05.2016 - 23:59:37][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:59:37][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:59:37][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:59:37][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:59:37][NOTICE] - match: / with /
+[22.05.2016 - 23:59:37][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:59:38][NOTICE] - /ecommerce_management/clientes
+[22.05.2016 - 23:59:38][NOTICE] - match: /clientes with /clientes
+[22.05.2016 - 23:59:38][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:59:38][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:59:38][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:59:38][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:59:38][NOTICE] - match: / with /
+[22.05.2016 - 23:59:38][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:59:38][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:59:38][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:59:38][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:59:38][NOTICE] - match: / with /
+[22.05.2016 - 23:59:38][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:59:38][NOTICE] - /ecommerce_management/clientes
+[22.05.2016 - 23:59:38][NOTICE] - match: /clientes with /clientes
+[22.05.2016 - 23:59:38][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:59:38][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:59:38][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:59:38][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:59:38][NOTICE] - match: / with /
+[22.05.2016 - 23:59:38][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:59:38][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:59:38][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:59:38][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:59:38][NOTICE] - match: / with /
+[22.05.2016 - 23:59:38][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:59:38][NOTICE] - /ecommerce_management/clientes
+[22.05.2016 - 23:59:38][NOTICE] - match: /clientes with /clientes
+[22.05.2016 - 23:59:38][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:59:38][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:59:38][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:59:38][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:59:38][NOTICE] - match: / with /
+[22.05.2016 - 23:59:38][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:59:38][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:59:38][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:59:38][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:59:38][NOTICE] - match: / with /
+[22.05.2016 - 23:59:38][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:59:38][NOTICE] - /ecommerce_management/clientes
+[22.05.2016 - 23:59:38][NOTICE] - match: /clientes with /clientes
+[22.05.2016 - 23:59:38][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:59:38][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:59:38][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[22.05.2016 - 23:59:38][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:59:38][NOTICE] - match: / with /
+[22.05.2016 - 23:59:38][NOTICE] - Aberta conexão com banco de dados!
+[22.05.2016 - 23:59:38][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:59:38][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[22.05.2016 - 23:59:38][NOTICE] - /ecommerce_management/
+[22.05.2016 - 23:59:38][NOTICE] - match: / with /
+[22.05.2016 - 23:59:38][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:00:00][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:00:00][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:00:00][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:00:00][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:00:00][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:00:00][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:00:00][NOTICE] - match: / with /
+[23.05.2016 - 00:00:00][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:00:00][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:00:00][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:00:00][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:00:00][NOTICE] - match: / with /
+[23.05.2016 - 00:00:00][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:00:00][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:00:00][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:00:00][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:00:00][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:00:00][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:00:00][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:00:00][NOTICE] - match: / with /
+[23.05.2016 - 00:00:00][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:00:00][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:00:00][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:00:00][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:00:00][NOTICE] - match: / with /
+[23.05.2016 - 00:00:00][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:00:00][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:00:00][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:00:00][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:00:00][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:00:00][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:00:00][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:00:00][NOTICE] - match: / with /
+[23.05.2016 - 00:00:00][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:00:00][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:00:00][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:00:00][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:00:00][NOTICE] - match: / with /
+[23.05.2016 - 00:00:00][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:00:00][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:00:00][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:00:00][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:00:00][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:00:00][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:00:00][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:00:00][NOTICE] - match: / with /
+[23.05.2016 - 00:00:00][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:00:00][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:00:00][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:00:00][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:00:00][NOTICE] - match: / with /
+[23.05.2016 - 00:00:00][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:00:27][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:00:27][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:00:27][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:01:12][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:01:12][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:01:12][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:01:12][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:01:12][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:01:12][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:01:12][NOTICE] - match: / with /
+[23.05.2016 - 00:01:12][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:01:12][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:01:12][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:01:12][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:01:12][NOTICE] - match: / with /
+[23.05.2016 - 00:01:12][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:01:13][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:01:13][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:01:13][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:01:13][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:01:13][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:01:13][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:01:13][NOTICE] - match: / with /
+[23.05.2016 - 00:01:13][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:01:13][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:01:13][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:01:13][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:01:13][NOTICE] - match: / with /
+[23.05.2016 - 00:01:13][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:01:13][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:01:13][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:01:13][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:01:13][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:01:13][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:01:13][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:01:13][NOTICE] - match: / with /
+[23.05.2016 - 00:01:13][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:01:13][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:01:13][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:01:13][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:01:13][NOTICE] - match: / with /
+[23.05.2016 - 00:01:13][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:01:13][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:01:13][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:01:13][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:01:13][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:01:13][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:01:13][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:01:13][NOTICE] - match: / with /
+[23.05.2016 - 00:01:13][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:01:13][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:01:13][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:01:13][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:01:13][NOTICE] - match: / with /
+[23.05.2016 - 00:01:13][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:01:17][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:01:17][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:01:17][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:01:17][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:01:17][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:01:17][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:01:17][NOTICE] - match: / with /
+[23.05.2016 - 00:01:17][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:01:17][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:01:17][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:01:17][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:01:17][NOTICE] - match: / with /
+[23.05.2016 - 00:01:17][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:01:44][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:01:44][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:01:44][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:01:44][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:01:44][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:01:44][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:01:44][NOTICE] - match: / with /
+[23.05.2016 - 00:01:44][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:01:44][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:01:44][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:01:44][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:01:44][NOTICE] - match: / with /
+[23.05.2016 - 00:01:44][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:01:56][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:01:56][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:01:56][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:01:56][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:01:56][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:01:56][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:01:56][NOTICE] - match: / with /
+[23.05.2016 - 00:01:56][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:01:56][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:01:56][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:01:56][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:01:56][NOTICE] - match: / with /
+[23.05.2016 - 00:01:56][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:02:00][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:02:00][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:02:00][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:02:00][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:02:00][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:02:00][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:02:00][NOTICE] - match: / with /
+[23.05.2016 - 00:02:00][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:02:00][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:02:00][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:02:00][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:02:00][NOTICE] - match: / with /
+[23.05.2016 - 00:02:00][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:02:04][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:02:04][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:02:04][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:02:04][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:02:04][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:02:04][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:02:04][NOTICE] - match: / with /
+[23.05.2016 - 00:02:04][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:02:04][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:02:04][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:02:04][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:02:04][NOTICE] - match: / with /
+[23.05.2016 - 00:02:04][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:02:37][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:02:37][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:02:37][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:02:37][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:02:37][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:02:37][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:02:37][NOTICE] - match: / with /
+[23.05.2016 - 00:02:37][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:02:37][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:02:37][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:02:37][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:02:37][NOTICE] - match: / with /
+[23.05.2016 - 00:02:37][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:02:42][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:02:42][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:02:42][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:02:42][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:02:42][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:02:42][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:02:42][NOTICE] - match: / with /
+[23.05.2016 - 00:02:42][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:02:42][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:02:42][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:02:42][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:02:42][NOTICE] - match: / with /
+[23.05.2016 - 00:02:42][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:02:48][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:02:48][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:02:48][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:02:48][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:02:48][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:02:48][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:02:48][NOTICE] - match: / with /
+[23.05.2016 - 00:02:48][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:02:48][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:02:48][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:02:48][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:02:48][NOTICE] - match: / with /
+[23.05.2016 - 00:02:48][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:03:49][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:03:49][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:03:49][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:03:49][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:03:49][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:03:49][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:03:49][NOTICE] - match: / with /
+[23.05.2016 - 00:03:49][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:03:49][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:03:49][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:03:49][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:03:49][NOTICE] - match: / with /
+[23.05.2016 - 00:03:49][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:04:01][NOTICE] - /ecommerce_management/clientes/4/editar
+[23.05.2016 - 00:04:01][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/clientes/4/editar
+[23.05.2016 - 00:04:01][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:04:01][NOTICE] - match: / with /
+[23.05.2016 - 00:04:01][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:04:01][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:04:01][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:04:01][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:04:01][NOTICE] - match: / with /
+[23.05.2016 - 00:04:01][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:04:01][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:04:01][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:04:01][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:04:01][NOTICE] - match: / with /
+[23.05.2016 - 00:04:01][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:04:03][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:04:03][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:04:03][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:04:03][NOTICE] - match: / with /
+[23.05.2016 - 00:04:03][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:04:03][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:04:03][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:04:03][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:04:03][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:04:03][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:04:03][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:04:03][NOTICE] - match: / with /
+[23.05.2016 - 00:04:03][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:04:03][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:04:03][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:04:03][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:04:03][NOTICE] - match: / with /
+[23.05.2016 - 00:04:03][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:04:05][NOTICE] - /ecommerce_management/clientes/novo
+[23.05.2016 - 00:04:05][NOTICE] - match: /clientes/novo with /clientes/novo
+[23.05.2016 - 00:04:05][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:04:05][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:04:05][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:04:05][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:04:05][NOTICE] - match: / with /
+[23.05.2016 - 00:04:05][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:04:05][NOTICE] - /ecommerce_management/clientes/assets/images/favicon.ico
+[23.05.2016 - 00:04:05][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/clientes/assets/images/favicon.ico
+[23.05.2016 - 00:04:05][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:04:05][NOTICE] - match: / with /
+[23.05.2016 - 00:04:05][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:04:07][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:04:07][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:04:07][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:04:07][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:04:07][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:04:07][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:04:07][NOTICE] - match: / with /
+[23.05.2016 - 00:04:07][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:04:07][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:04:07][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:04:07][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:04:07][NOTICE] - match: / with /
+[23.05.2016 - 00:04:07][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:05:33][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:05:33][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:05:34][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:05:34][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:05:40][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:05:40][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:05:40][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:07:16][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:07:16][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:07:16][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:09:08][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:09:08][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:09:08][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:09:25][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:09:25][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:09:25][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:10:42][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:10:42][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:10:42][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:13:38][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:13:38][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:13:38][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:14:17][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:14:17][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:14:17][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:14:53][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:14:53][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:14:53][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:15:14][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:15:14][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:15:14][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:15:58][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:15:58][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:15:58][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:15:58][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:15:58][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:15:58][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:15:58][NOTICE] - match: / with /
+[23.05.2016 - 00:15:58][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:15:58][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:15:58][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:15:58][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:15:58][NOTICE] - match: / with /
+[23.05.2016 - 00:15:58][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:16:49][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:16:49][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:16:49][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:16:57][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:16:57][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:16:57][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:17:28][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:17:28][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:17:28][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:18:52][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:18:52][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:19:12][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:19:12][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:19:13][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:19:13][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:19:13][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:19:13][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:19:56][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:19:56][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:19:56][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:19:56][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:19:56][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:19:56][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:19:56][NOTICE] - match: / with /
+[23.05.2016 - 00:19:56][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:19:56][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:19:56][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:19:56][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:19:56][NOTICE] - match: / with /
+[23.05.2016 - 00:19:56][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:20:08][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:20:08][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:20:08][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:20:08][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:20:08][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:20:08][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:20:08][NOTICE] - match: / with /
+[23.05.2016 - 00:20:08][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:20:08][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:20:08][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:20:08][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:20:08][NOTICE] - match: / with /
+[23.05.2016 - 00:20:08][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:20:09][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:20:09][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:20:09][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:20:09][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:20:09][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:20:09][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:20:09][NOTICE] - match: / with /
+[23.05.2016 - 00:20:09][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:20:09][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:20:09][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:20:09][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:20:09][NOTICE] - match: / with /
+[23.05.2016 - 00:20:09][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:20:21][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:20:21][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:20:21][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:20:21][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:20:21][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:20:21][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:20:21][NOTICE] - match: / with /
+[23.05.2016 - 00:20:21][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:20:21][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:20:21][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:20:21][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:20:21][NOTICE] - match: / with /
+[23.05.2016 - 00:20:21][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:20:39][NOTICE] - /ecommerce_management/clientes/novo
+[23.05.2016 - 00:20:39][NOTICE] - match: /clientes/novo with /clientes/novo
+[23.05.2016 - 00:20:39][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:20:39][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:20:39][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:20:39][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:20:39][NOTICE] - match: / with /
+[23.05.2016 - 00:20:39][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:20:39][NOTICE] - /ecommerce_management/clientes/assets/images/favicon.ico
+[23.05.2016 - 00:20:39][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/clientes/assets/images/favicon.ico
+[23.05.2016 - 00:20:39][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:20:39][NOTICE] - match: / with /
+[23.05.2016 - 00:20:39][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:20:40][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:20:40][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:20:40][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:20:40][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:20:40][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:20:40][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:20:40][NOTICE] - match: / with /
+[23.05.2016 - 00:20:40][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:20:40][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:20:40][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:20:40][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:20:40][NOTICE] - match: / with /
+[23.05.2016 - 00:20:40][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:20:44][NOTICE] - /ecommerce_management/perfil
+[23.05.2016 - 00:20:44][NOTICE] - match: /perfil with /perfil
+[23.05.2016 - 00:20:44][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:20:44][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:20:44][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:20:44][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:20:44][NOTICE] - match: / with /
+[23.05.2016 - 00:20:44][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:20:44][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:20:44][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:20:44][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:20:44][NOTICE] - match: / with /
+[23.05.2016 - 00:20:44][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:20:46][NOTICE] - /ecommerce_management/perfil
+[23.05.2016 - 00:20:46][NOTICE] - match: /perfil with /perfil
+[23.05.2016 - 00:20:46][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:20:46][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:20:46][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:20:46][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:20:46][NOTICE] - match: / with /
+[23.05.2016 - 00:20:46][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:20:46][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:20:46][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:20:46][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:20:46][NOTICE] - match: / with /
+[23.05.2016 - 00:20:46][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:20:46][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:20:46][NOTICE] - match: / with /
+[23.05.2016 - 00:20:46][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:20:46][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:20:46][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:20:46][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:20:46][NOTICE] - match: / with /
+[23.05.2016 - 00:20:46][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:20:47][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:20:47][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:20:47][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:20:47][NOTICE] - match: / with /
+[23.05.2016 - 00:20:47][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:20:47][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:20:47][NOTICE] - match: / with /
+[23.05.2016 - 00:20:47][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:20:47][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:20:47][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:20:47][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:20:47][NOTICE] - match: / with /
+[23.05.2016 - 00:20:47][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:20:47][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:20:47][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:20:47][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:20:47][NOTICE] - match: / with /
+[23.05.2016 - 00:20:47][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:20:48][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:20:48][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:20:48][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:20:48][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:20:48][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:20:48][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:20:48][NOTICE] - match: / with /
+[23.05.2016 - 00:20:48][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:20:48][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:20:48][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:20:48][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:20:48][NOTICE] - match: / with /
+[23.05.2016 - 00:20:48][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:20:49][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:20:49][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:20:49][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:20:49][NOTICE] - match: / with /
+[23.05.2016 - 00:20:49][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:20:50][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:20:50][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:20:50][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:20:50][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:20:50][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:20:50][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:20:50][NOTICE] - match: / with /
+[23.05.2016 - 00:20:50][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:20:50][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:20:50][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:20:50][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:20:50][NOTICE] - match: / with /
+[23.05.2016 - 00:20:50][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:20:51][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:20:51][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:20:51][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:20:51][NOTICE] - match: / with /
+[23.05.2016 - 00:20:51][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:20:51][NOTICE] - /ecommerce_management/pedidos
+[23.05.2016 - 00:20:51][NOTICE] - match: /pedidos with /pedidos
+[23.05.2016 - 00:20:51][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:20:51][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:20:51][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:20:51][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:20:51][NOTICE] - match: / with /
+[23.05.2016 - 00:20:51][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:20:51][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:20:51][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:20:51][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:20:51][NOTICE] - match: / with /
+[23.05.2016 - 00:20:51][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:20:52][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:20:52][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:20:52][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:20:52][NOTICE] - match: / with /
+[23.05.2016 - 00:20:52][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:20:53][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:20:53][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:20:53][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:20:53][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:20:53][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:20:53][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:20:53][NOTICE] - match: / with /
+[23.05.2016 - 00:20:53][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:20:53][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:20:53][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:20:53][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:20:53][NOTICE] - match: / with /
+[23.05.2016 - 00:20:53][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:21:16][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:21:16][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:21:16][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:21:16][NOTICE] - match: / with /
+[23.05.2016 - 00:21:16][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:26:43][NOTICE] - /ecommerce_management/clientes/4/editar
+[23.05.2016 - 00:26:43][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/clientes/4/editar
+[23.05.2016 - 00:26:43][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:26:43][NOTICE] - match: / with /
+[23.05.2016 - 00:26:43][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:26:43][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:26:43][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:26:43][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:26:43][NOTICE] - match: / with /
+[23.05.2016 - 00:26:43][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:26:43][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:26:43][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:26:43][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:26:43][NOTICE] - match: / with /
+[23.05.2016 - 00:26:43][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:26:44][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:26:44][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:26:44][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:26:44][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:26:44][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:26:44][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:26:44][NOTICE] - match: / with /
+[23.05.2016 - 00:26:44][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:26:46][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:26:46][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:26:46][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:26:46][NOTICE] - match: / with /
+[23.05.2016 - 00:26:46][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:26:46][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:26:46][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:26:46][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:26:46][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:26:46][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:26:46][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:26:46][NOTICE] - match: / with /
+[23.05.2016 - 00:26:46][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:26:46][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:26:46][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:26:46][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:26:46][NOTICE] - match: / with /
+[23.05.2016 - 00:26:46][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:26:47][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:26:47][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:26:47][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:26:47][NOTICE] - match: / with /
+[23.05.2016 - 00:26:47][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:26:48][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:26:48][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:26:48][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:26:48][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:26:48][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:26:48][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:26:48][NOTICE] - match: / with /
+[23.05.2016 - 00:26:48][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:26:51][NOTICE] - /ecommerce_management/clientes/novo
+[23.05.2016 - 00:26:51][NOTICE] - match: /clientes/novo with /clientes/novo
+[23.05.2016 - 00:26:51][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:26:51][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:26:51][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:26:51][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:26:51][NOTICE] - match: / with /
+[23.05.2016 - 00:26:51][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:26:51][NOTICE] - /ecommerce_management/clientes/assets/images/favicon.ico
+[23.05.2016 - 00:26:51][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/clientes/assets/images/favicon.ico
+[23.05.2016 - 00:26:51][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:26:51][NOTICE] - match: / with /
+[23.05.2016 - 00:26:51][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:26:56][NOTICE] - /ecommerce_management/clientes/novo?textinput=
+[23.05.2016 - 00:26:56][NOTICE] - match: /clientes/novo with /clientes/novo
+[23.05.2016 - 00:26:56][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:26:56][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:26:56][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:26:56][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:26:56][NOTICE] - match: / with /
+[23.05.2016 - 00:26:56][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:26:56][NOTICE] - /ecommerce_management/clientes/assets/images/favicon.ico
+[23.05.2016 - 00:26:56][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/clientes/assets/images/favicon.ico
+[23.05.2016 - 00:26:56][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:26:56][NOTICE] - match: / with /
+[23.05.2016 - 00:26:56][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:26:58][NOTICE] - /ecommerce_management/clientes
+[23.05.2016 - 00:26:58][NOTICE] - match: /clientes with /clientes
+[23.05.2016 - 00:26:58][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:26:58][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:26:58][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:26:58][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:26:58][NOTICE] - match: / with /
+[23.05.2016 - 00:26:58][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:26:58][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:26:58][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:26:58][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:26:58][NOTICE] - match: / with /
+[23.05.2016 - 00:26:58][NOTICE] - Aberta conexão com banco de dados!
+[23.05.2016 - 00:27:08][NOTICE] - /ecommerce_management/logout
+[23.05.2016 - 00:27:08][NOTICE] - match: /logout with /logout
+[23.05.2016 - 00:27:08][NOTICE] - /ecommerce_management/login
+[23.05.2016 - 00:27:08][NOTICE] - match: /login with /login
+[23.05.2016 - 00:27:08][NOTICE] - /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:27:08][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/bootstrap/fonts/font-awesome.min.css
+[23.05.2016 - 00:27:08][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:27:08][NOTICE] - match: / with /
+[23.05.2016 - 00:27:08][NOTICE] - /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:27:08][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/assets/images/favicon.ico
+[23.05.2016 - 00:27:08][NOTICE] - /ecommerce_management/
+[23.05.2016 - 00:27:08][NOTICE] - match: / with /
