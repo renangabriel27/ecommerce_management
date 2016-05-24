@@ -1,11 +1,15 @@
 <form action="<?= $this->action ?>" method="POST">
 
-  <div class="form-group <?= $this->category->getErrors('name') ? 'has-error' : '' ?>">
-    <label for="category_name">Nome</label>
-    <input type="text" class="form-control" id="category_name" name="category[name]"
-    placeholder="Digite o nome da categoria" value="<?= $this->category->getName() ?>">
-    <p class="help-block"><?= $this->category->getErrors('name') ?></p>
-  </div>
+  <div class="ui form">
+    <div class="field <?= $this->category->getErrors('name') ? 'error' : '' ?>">
+      <label for="category_name">Nome</label>
+      <input type="text" id="category_name" name="category[name]"
+      placeholder="Digite o nome da categoria" value="<?= $this->category->getName() ?>">
+      <?php if($this->category->getErrors('name')) : ?>
+        <div class="ui basic red pointing prompt label transition visible"><?= $this->category->getErrors('name') ?></div>
+      <?php endIf; ?>
+    </div>
 
-  <button type="submit" name="button" class="btn btn-primary"><?= $this->submit ?> </button>
+    <button type="submit" name="button" class="ui primary button"><?= $this->submit ?> </button>
+  </div>
 </form>

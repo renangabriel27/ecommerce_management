@@ -1,99 +1,78 @@
-<form class="form-horizontal">
 
-  <fieldset>
+  <div class="ui segment">
+    <form class="ui form client">
 
-    <!-- Form Name -->
-    <legend> Cadastro de pessoa física </legend>
+      <h4 class="ui dividing header">Informações do cliente (pessoa física)</h4>
 
-    <!-- Text input-->
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="textinput">Nome</label>
-      <div class="col-md-5">
-        <input id="textinput" name="textinput" type="text" placeholder="nome" class="form-control input-md">
+      <div class="two fields">
+        <div class="field">
+          <label>Name</label>
+          <input type="text" name="shipping[first-name]" placeholder="First Name">
+        </div>
+        <div class="field">
+          <label>Email</label>
+          <div class="field">
+            <input type="text" name="shipping[last-name]" placeholder="email">
+          </div>
+        </div>
       </div>
-    </div>
 
-    <!-- Text input-->
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="">Email</label>
-      <div class="col-md-5">
-        <input id="" name="" type="text" placeholder="email" class="form-control input-md">
+      <div class="three fields">
+        <div class="field">
+          <label>CPF</label>
+          <input type="text" name="shipping[first-name]" placeholder="cpf">
+        </div>
+        <div class="field">
+          <label>Telefone</label>
+          <input type="text" name="shipping[last-name]" placeholder="telefone">
+        </div>
+        <div class="field">
+          <label>Data de nascimento</label>
+          <input type="text" name="shipping[last-name]" placeholder=" ** / ** / ****">
+        </div>
       </div>
-    </div>
 
-    <!-- Text input-->
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="">CPF</label>
-      <div class="col-md-5">
-        <input id="" name="" type="text" placeholder="cpf" class="form-control input-md">
-
+      <div class="field">
+        <label>Endereço</label>
+        <div class="fields">
+          <div class="eight wide field">
+            <input type="text" name="shipping[address]" placeholder="Street Address">
+          </div>
+          <div class="four wide field">
+            <input type="text" name="shipping[address-2]" placeholder="Número">
+          </div>
+          <div class="four wide field">
+            <input type="text" name="shipping[address-2]" placeholder="CEP">
+          </div>
+        </div>
       </div>
-    </div>
 
-    <!-- Select Basic -->
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="">Cidade</label>
-      <div class="col-md-5">
-        <select id="" name="" class="form-control">
-          <option value="1">Selecione</option>
-          <option value="2">Guarapuava</option>
-        </select>
+      <div class="two fields">
+        <div class="field">
+          <label>Estado</label>
+          <select class="ui fluid dropdown">
+            <option value="">State</option>
+            <option value="AL">Alabama</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Cidade</label>
+          <div class="ui fluid search selection dropdown">
+            <input type="hidden" name="country">
+            <i class="dropdown icon"></i>
+            <div class="default text">Select Country</div>
+            <div class="menu">
+              <div class="item" data-value="af"><i class="af flag"></i>Afghanistan</div>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <div class="align-center">
+        <div class="ui buttons">
+          <button class="ui button">Cancelar</button>
+          <div class="or"></div>
+          <button class="ui positive button">Cadastrar</button>
+        </div>
+      </form>
     </div>
-
-    <!-- Text input-->
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="">Data de nascimento</label>
-      <div class="col-md-5">
-        <input id="" name="" type="text" placeholder="" class="form-control input-md">
-
-      </div>
-    </div>
-
-    <!-- Text input-->
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="">Telefone</label>
-      <div class="col-md-5">
-        <input id="" name="" type="text" placeholder="" class="form-control input-md">
-
-      </div>
-    </div>
-
-    <!-- Text input-->
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="">Endereço</label>
-      <div class="col-md-5">
-        <input id="" name="" type="text" placeholder="" class="form-control input-md">
-
-      </div>
-    </div>
-
-    <!-- Text input-->
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="">CEP</label>
-      <div class="col-md-5">
-        <input id="" name="" type="text" placeholder="" class="form-control input-md">
-
-      </div>
-    </div>
-
-    <!-- Text input-->
-    <div class="form-group">
-      <label class="col-md-4 control-label" for="">Número</label>
-      <div class="col-md-5">
-        <input id="" name="" type="text" placeholder="" class="form-control input-md">
-
-      </div>
-    </div>
-
-    <!-- Button (Double) -->
-    <div class="form-group">
-      <label class="col-md-4 control-label" for=""></label>
-      <div class="col-md-8">
-        <button id="" name="" class="btn btn-success">Cadastrar</button>
-        <?= ViewHelpers::linkTo("/clientes", "Cancelar", 'class="btn btn-danger"') ?>
-      </div>
-    </div>
-
-  </fieldset>
-</form>

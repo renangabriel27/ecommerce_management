@@ -11,9 +11,6 @@ html {
 body {
   overflow-x: hidden; /* Prevent scroll on narrow devices */
 }
-body {
-  padding-top: 70px;
-}
 
 .footer {
   position: absolute;
@@ -29,61 +26,40 @@ body {
   margin: 20px 0;
 }
 
-/*
- * Off Canvas
- * --------------------------------------------------
- */
-@media screen and (max-width: 767px) {
-  .row-offcanvas {
-    position: relative;
-    -webkit-transition: all .25s ease-out;
-         -o-transition: all .25s ease-out;
-            transition: all .25s ease-out;
-  }
 
-  .row-offcanvas-right {
-    right: 0;
-  }
+.column.login {
+  max-width: 450px;
+}
 
-  .row-offcanvas-left {
-    left: 0;
-  }
+.button.login {
+    margin-top: 25px;
+}
 
-  .row-offcanvas-right
-  .sidebar-offcanvas {
-    right: -50%; /* 6 columns */
-  }
+.control-label {
+  padding: 10px 0;
+}
 
-  .row-offcanvas-left
-  .sidebar-offcanvas {
-    left: -50%; /* 6 columns */
-  }
+.ui.segment {
+  border: none;
+  box-shadow: none;
+}
 
-  .row-offcanvas-right.active {
-    right: 50%; /* 6 columns */
-  }
+.ui.vertical.menu {
+  margin: 5px;
+}
 
-  .row-offcanvas-left.active {
-    left: 50%; /* 6 columns */
-  }
+.align-center {
+  margin: 0 auto;
+  width: 208px;
+}
 
-  .sidebar-offcanvas {
-    position: absolute;
-    top: 0;
-    width: 50%; /* 6 columns */
-  }
+.ui.success.message {
+  margin: 10px;
 }
 
 
 /* Change defaults
 ------------------------- */
-.form-group.has-error span.help-inline {
-  color: #b94a48;
-}
-
-.form-group .errors {
-  color: #b94a48;
-}
 
 .page-header {
     border-bottom: 1px solid #C5BFBF;
@@ -91,84 +67,6 @@ body {
 
 .autocomplete-suggestions { border: 1px solid #999; background: #FFF; overflow: auto; }
 
-
-/* Sign in form
------------------- */
-
-.form-signin {
-  max-width: 400px;
-  display:block;
-  margin: 0 auto;
-  background-color: #f7f7f7;
-  border-radius:2px;
-  border: 1px solid #ccc;
-}
-.main{
-	padding: 38px;
-}
-.social-box{
-  margin: 0 auto;
-  padding: 38px;
-  border-bottom:1px #ccc solid;
-}
-.social-box a{
-  font-weight:bold;
-  font-size:18px;
-  padding:8px;
-}
-.social-box a i{
-  font-weight:bold;
-  font-size:20px;
-}
-.heading-desc{
-	font-size:20px;
-	font-weight:bold;
-	padding:38px 38px 0px 38px;
-
-}
-.form-signin .form-signin-heading,
-.form-signin .checkbox {
-  margin-bottom: 10px;
-}
-.form-signin .checkbox {
-  font-weight: normal;
-}
-.form-signin .form-control {
-  position: relative;
-  font-size: 16px;
-  height: 20px;
-  padding: 20px;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
-.form-signin .form-control:focus {
-  z-index: 2;
-}
-.form-signin input[type="text"] {
-  margin-bottom: 0px;
-  border-radius: 5px;
-}
-.form-signin input[type="password"] {
-  margin-bottom: 0px;
-  border-radius: 5px;
-}
-.input-group {
-    margin-bottom: 15px;
-}
-.login-footer{
-	background:#f0f0f0;
-	margin: 0 auto;
-	border-top: 1px solid #dadada;
-	padding:20px;
-}
-.login-footer .left-section a{
-	font-weight:bold;
-	line-height:19px;
-}
-.mg-btm{
-	margin-bottom:20px;
-}
 
 /*
 * Clearfix for float and utils

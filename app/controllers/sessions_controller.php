@@ -1,5 +1,6 @@
 <?php class SessionsController extends ApplicationController {
 
+
   public function _new() {
     $this->user = new User();
   }
@@ -14,7 +15,7 @@
       $this->redirectTo('/');
     } else {
       $this->user = new User();
-      Flash::message('danger', 'Usuário ou senha inválidos!');
+      Flash::message('negative', 'Usuário ou senha inválidos!');
       $this->render('new');
     }
   }

@@ -1,38 +1,39 @@
-<section>
-  <header>
-    <h2><?= $this->title ?></h2>
-  </header>
-  <?= ViewHelpers::linkTo('/pedidos/novo', 'Novo pedido', 'class="btn btn-default"') ?>
 
-  <table class="table table-hover">
-    <thead>
+<section>
+  <table class="ui compact celled definition table">
+    <thead class="full-width">
       <tr>
         <th>Id</th>
         <th>Cliente</th>
         <th>Quantidade de produtos</th>
         <th>Total</th>
         <th>Cadastrado em</th>
+        <th>Opções</th>
       </tr>
     </thead>
     <tbody>
       <?php
-          foreach ($this->orders as $order): ?>
-          <tr>
-            <td><?= $order->getId() ?></td>
-            <td><?= $order->getClientId()->getName() ?></td>
-            <td>0</td>
-            <td><?= $order->getTotal() ?></td>
-            <td><?= $order->getCreatedAt() ?></td>
-            <td><?= ViewHelpers::linkTo("/pedidos/{$order->getId()}", "Editar", 'class="btn btn-primary"') ?></td>
-            <td><?= ViewHelpers::linkTo("/pedidos/{$order->getId()}/deletar", "Excluir", 'class="btn btn-danger"') ?></td>
-          </tr>
-        <?php endForeach; ?>
+      foreach ($this->orders as $order): ?>
+      <tr>
+        <td><?= $order->getId() ?></td>
+        <td><?= $order->getClientId()->getName() ?></td>
+        <td>0</td>
+        <td><?= $order->getTotal() ?></td>
+        <td><?= $order->getCreatedAt() ?></td>
+        <td>
+          <?= ViewHelpers::linkTo("/pedidos/{$order->getId()}", '', '', 'class="zoom icon"') ?>
+          <?= ViewHelpers::linkTo("/pedidos/{$order->getId()}", '', '', 'class="edit icon"') ?>
+          <?= ViewHelpers::linkTo("/pedidos/{$order->getId()}/deletar", '', '', 'class="trash icon"') ?>
+        </td>
+      </tr>
+      <?php endForeach; ?>
     </tbody>
+    <tfoot class="full-width">
+      <tr>
+        <th colspan="8">
+            <i class="add icon"></i> <?= ViewHelpers::linkTo("/pedidos/novo", 'Novo pedido') ?>
+        </th>
+      </tr>
+    </tfoot>
   </table>
-
-  <ul class="pager">
-    <li><a href="#">Proxima</a></li>
-    <li><a href="#">Anterior</a></li>
-  </ul>
-
 </section>

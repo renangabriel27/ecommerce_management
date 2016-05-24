@@ -1,8 +1,10 @@
 $(document).ready(function() {
-  $('*[data-toggle="tooltip"]').tooltip()
+  // $('*[data-toggle="tooltip"]').tooltip();
   data_confirm();
   toogle_contact_message();
   auto_complete();
+  close_flash_message();
+  dropdown();
 });
 
 /*** Confirm dialog **/
@@ -48,4 +50,25 @@ var auto_complete = function() {
   });
 
 
+};
+
+var close_flash_message = function() {
+    $('.message').transition({
+      duration   : '2s'
+    });
+
+    $('.message .close').on('click', function() {
+      $(this).closest('.message').fadeOut();
+    });
+};
+
+
+var dropdown = function() {
+    $('.ui.menu .ui.dropdown').dropdown({
+      on: 'hover'
+    });
+
+    $('.ui.menu a.item').on('click', function() {
+      $(this).addClass('active').siblings().removeClass('active');
+    });
 };

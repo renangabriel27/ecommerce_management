@@ -25,7 +25,7 @@
         $this->redirectTo('/categorias');
       }
       else {
-        Flash::message('danger', 'Existem dados inválidos!');
+        Flash::message('negative', 'Existem dados inválidos!');
         $this->categories = Category::all();
         $this->action = ViewHelpers::urlFor('/categorias');
         $this->submit = 'Nova Categoria';
@@ -54,7 +54,7 @@
        Flash::message('success', 'Registro atualizado com sucesso!');
        $this->redirectTo('/categorias');
      } else {
-       Flash::message('danger', 'Existe dados incorretos no seu formulário!');
+       Flash::message('negative', 'Existe dados incorretos no seu formulário!');
        $this->categories = Category::all();
        $this->action = ViewHelpers::urlFor("/categorias/{$this->category->getId()}");
        $this->submit = 'Atualizar';

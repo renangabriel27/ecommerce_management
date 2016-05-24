@@ -3,7 +3,7 @@ class SessionHelpers {
 
   public static function shouldBeAutenticated(){
     if (!(isset($_SESSION['user']))) {
-      Flash::message('danger', 'Você deve estar logado para acessar está página!');
+      Flash::message('negative', 'Você deve estar logado para acessar está página!');
       ViewHelpers::redirect_to('/pages/sessions/new');
     }
   }

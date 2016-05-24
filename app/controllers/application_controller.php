@@ -10,7 +10,7 @@
 
   public function authenticated() {
     if (!SessionHelpers::isLoggedIn()) {
-      Flash::message('warning', 'Você deve estar logado para acessar esta página');
+      Flash::message('negative', 'Você deve estar logado para acessar esta página');
       $this->redirectTo('/login');
     }
   }

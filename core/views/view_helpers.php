@@ -41,12 +41,12 @@ class ViewHelpers {
    * Caso começe com / indica caminho absolute a partir do root da aplicação,
    * caso contrário é camaminho relativo
    */
-  public static function linkTo($path, $name, $options = '') {
+  public static function linkTo($path, $name, $options = '', $icon = '') {
     if (substr($path, 0, 1) == '/')
       $link = SITE_ROOT . $path;
     else
       $link = $path;
-    return "<a href='{$link}' {$options}> $name </a>";
+    return "<a href='{$link}' {$options}><i {$icon}></i>$name</a>";
   }
 
   /*

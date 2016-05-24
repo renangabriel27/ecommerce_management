@@ -105,3 +105,99 @@ Stack trace:
 [23-May-2016 00:19:12 America/Sao_Paulo] PHP Fatal error:  Cannot redeclare Client::setCityId() in /var/www/ecommerce_management/app/models/client.php on line 81
 [23-May-2016 00:19:13 America/Sao_Paulo] PHP Fatal error:  Cannot redeclare Client::setCityId() in /var/www/ecommerce_management/app/models/client.php on line 81
 [23-May-2016 00:19:13 America/Sao_Paulo] PHP Fatal error:  Cannot redeclare Client::setCityId() in /var/www/ecommerce_management/app/models/client.php on line 81
+[23-May-2016 15:42:53 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '$icon' (T_VARIABLE) in /var/www/ecommerce_management/core/views/view_helpers.php on line 49
+[23-May-2016 15:42:53 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '$icon' (T_VARIABLE) in /var/www/ecommerce_management/core/views/view_helpers.php on line 49
+[23-May-2016 15:42:54 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '$icon' (T_VARIABLE) in /var/www/ecommerce_management/core/views/view_helpers.php on line 49
+[23-May-2016 15:42:54 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '$icon' (T_VARIABLE) in /var/www/ecommerce_management/core/views/view_helpers.php on line 49
+[23-May-2016 15:43:25 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '$icon' (T_VARIABLE) in /var/www/ecommerce_management/core/views/view_helpers.php on line 49
+[23-May-2016 15:43:25 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '$icon' (T_VARIABLE) in /var/www/ecommerce_management/core/views/view_helpers.php on line 49
+[23-May-2016 15:44:07 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '{' in /var/www/ecommerce_management/core/views/view_helpers.php on line 49
+[23-May-2016 15:44:07 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '{' in /var/www/ecommerce_management/core/views/view_helpers.php on line 49
+[23-May-2016 15:44:08 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '{' in /var/www/ecommerce_management/core/views/view_helpers.php on line 49
+[23-May-2016 15:44:08 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '{' in /var/www/ecommerce_management/core/views/view_helpers.php on line 49
+[23-May-2016 15:44:08 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '{' in /var/www/ecommerce_management/core/views/view_helpers.php on line 49
+[23-May-2016 15:44:08 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '{' in /var/www/ecommerce_management/core/views/view_helpers.php on line 49
+[23-May-2016 15:44:14 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '{' in /var/www/ecommerce_management/core/views/view_helpers.php on line 49
+[23-May-2016 15:44:14 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '{' in /var/www/ecommerce_management/core/views/view_helpers.php on line 49
+[23-May-2016 15:44:20 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '{' in /var/www/ecommerce_management/core/views/view_helpers.php on line 49
+[23-May-2016 15:44:20 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '{' in /var/www/ecommerce_management/core/views/view_helpers.php on line 49
+[23-May-2016 15:47:08 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '{' in /var/www/ecommerce_management/core/views/view_helpers.php on line 49
+[23-May-2016 19:53:59 America/Sao_Paulo] PHP Fatal error:  Call to undefined method CategoriesController::linkTo() in /var/www/ecommerce_management/app/views/categories/index.phtml on line 21
+[23-May-2016 19:54:10 America/Sao_Paulo] PHP Notice:  Undefined property: CategoriesController::$category in /var/www/ecommerce_management/app/views/categories/index.phtml on line 21
+[23-May-2016 19:54:10 America/Sao_Paulo] PHP Fatal error:  Call to a member function linkTo() on null in /var/www/ecommerce_management/app/views/categories/index.phtml on line 21
+[23-May-2016 19:54:20 America/Sao_Paulo] PHP Notice:  Undefined property: CategoriesController::$categores in /var/www/ecommerce_management/app/views/categories/index.phtml on line 21
+[23-May-2016 19:54:20 America/Sao_Paulo] PHP Fatal error:  Call to a member function linkTo() on null in /var/www/ecommerce_management/app/views/categories/index.phtml on line 21
+[23-May-2016 22:19:11 America/Sao_Paulo] PHP Fatal error:  Call to a member function delete() on null in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 40
+[24-May-2016 00:11:02 America/Sao_Paulo] PHP Warning:  Missing argument 2 for ViewHelpers::linkTo(), called in /var/www/ecommerce_management/app/views/home/index.phtml on line 2 and defined in /var/www/ecommerce_management/core/views/view_helpers.php on line 44
+[24-May-2016 00:11:02 America/Sao_Paulo] PHP Notice:  Undefined variable: name in /var/www/ecommerce_management/core/views/view_helpers.php on line 49
+[24-May-2016 00:11:02 America/Sao_Paulo] PHP Warning:  Missing argument 2 for ViewHelpers::linkTo(), called in /var/www/ecommerce_management/app/views/home/index.phtml on line 2 and defined in /var/www/ecommerce_management/core/views/view_helpers.php on line 44
+[24-May-2016 00:11:02 America/Sao_Paulo] PHP Notice:  Undefined variable: name in /var/www/ecommerce_management/core/views/view_helpers.php on line 49
+[24-May-2016 00:41:05 America/Sao_Paulo] PHP Notice:  Undefined variable: category in /var/www/ecommerce_management/app/views/categories/show.phtml on line 13
+[24-May-2016 00:41:05 America/Sao_Paulo] PHP Fatal error:  Call to a member function getId() on null in /var/www/ecommerce_management/app/views/categories/show.phtml on line 13
+[24-May-2016 00:41:43 America/Sao_Paulo] PHP Notice:  Undefined variable: category in /var/www/ecommerce_management/app/views/categories/show.phtml on line 14
+[24-May-2016 00:41:43 America/Sao_Paulo] PHP Fatal error:  Call to a member function getName() on null in /var/www/ecommerce_management/app/views/categories/show.phtml on line 14
+[24-May-2016 00:42:06 America/Sao_Paulo] PHP Catchable fatal error:  Object of class CategoriesController could not be converted to string in /var/www/ecommerce_management/app/views/categories/show.phtml on line 14
+[24-May-2016 01:25:37 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`products`, CONSTRAINT `products_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`))' in /var/www/ecommerce_management/app/models/category.php:62
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/category.php(62): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/categories_controller.php(45): Category->delete()
+#2 /var/www/ecommerce_management/core/routes/router.php(47): CategoriesController->destroy()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(82): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/category.php on line 62
+[24-May-2016 01:47:29 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`products`, CONSTRAINT `products_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`))' in /var/www/ecommerce_management/app/models/category.php:62
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/category.php(62): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/categories_controller.php(45): Category->delete()
+#2 /var/www/ecommerce_management/core/routes/router.php(47): CategoriesController->destroy()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(82): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/category.php on line 62
+[24-May-2016 01:48:16 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`products`, CONSTRAINT `products_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`))' in /var/www/ecommerce_management/app/models/category.php:62
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/category.php(62): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/categories_controller.php(45): Category->delete()
+#2 /var/www/ecommerce_management/core/routes/router.php(47): CategoriesController->destroy()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(82): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/category.php on line 62
+[24-May-2016 01:48:27 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`products`, CONSTRAINT `products_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`))' in /var/www/ecommerce_management/app/models/category.php:62
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/category.php(62): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/categories_controller.php(45): Category->delete()
+#2 /var/www/ecommerce_management/core/routes/router.php(47): CategoriesController->destroy()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(82): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/category.php on line 62
+[24-May-2016 01:48:55 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`products`, CONSTRAINT `products_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`))' in /var/www/ecommerce_management/app/models/category.php:62
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/category.php(62): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/categories_controller.php(45): Category->delete()
+#2 /var/www/ecommerce_management/core/routes/router.php(47): CategoriesController->destroy()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(82): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/category.php on line 62
+[24-May-2016 01:49:02 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`products`, CONSTRAINT `products_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`))' in /var/www/ecommerce_management/app/models/category.php:62
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/category.php(62): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/categories_controller.php(45): Category->delete()
+#2 /var/www/ecommerce_management/core/routes/router.php(47): CategoriesController->destroy()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(82): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/category.php on line 62
+[24-May-2016 01:49:42 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`products`, CONSTRAINT `products_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`))' in /var/www/ecommerce_management/app/models/category.php:62
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/category.php(62): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/categories_controller.php(45): Category->delete()
+#2 /var/www/ecommerce_management/core/routes/router.php(47): CategoriesController->destroy()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(82): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/category.php on line 62
+[24-May-2016 01:53:15 America/Sao_Paulo] PHP Fatal error:  Call to a member function delete() on null in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 40

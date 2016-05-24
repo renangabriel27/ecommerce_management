@@ -1,13 +1,38 @@
 <?php if (SessionHelpers::isLoggedIn()): ?>
-  <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
-    <div class="list-group">
-      <a href="#" class="list-group-item active">Menu</a>
-      <?= ViewHelpers::linkTo('/categorias', 'Cadastro de categorias', 'class="list-group-item"') ?>
-      <?= ViewHelpers::linkTo('/pedidos', 'Cadastro de pedidos', 'class="list-group-item"') ?>
-      <a href="#" class="list-group-item">Cadastro de cliente jurídico</a>
-      <?= ViewHelpers::linkTo('/clientes', 'Cadastro de cliente físico', 'class="list-group-item"') ?>
-      <a href="../products" class="list-group-item">Relatório de produtos</a>
-      <a href="#" class="list-group-item">Pesquisar produto no estoque</a>
-    </div>
-  </div><!--/.sidebar-offcanvas-->
-<?php endif ?>
+  <div class="ui equal width grid">
+    <div class="row">
+      <div class="ui segment">
+        <div class="column">
+          <div class="ui vertical menu">
+            <div class="item">
+              <div class="header">Categorias</div>
+              <div class="menu">
+                <?= ViewHelpers::linkTo('/categorias', 'Visualizar categorias', 'class="item"') ?>
+                <?= ViewHelpers::linkTo('/categorias/novo', 'Cadastro de categorias', 'class="item"') ?>
+              </div>
+            </div>
+            <div class="item">
+              <div class="header">Pedidos</div>
+              <div class="menu">
+                <a class="item">Visualizar pedidos</a>
+                <?= ViewHelpers::linkTo('/pedidos', 'Cadastro de pedidos', 'class="item"') ?>
+              </div>
+            </div>
+            <div class="item">
+              <div class="header">Clientes</div>
+              <div class="menu">
+                <?= ViewHelpers::linkTo('/clientes', 'Visualizar clientes', 'class="item"') ?>
+                <?= ViewHelpers::linkTo('/clientes/novo', 'Cadastro de cliente físico', 'class="item"') ?>
+              </div>
+            </div>
+            <div class="item">
+              <div class="header">Relatórios</div>
+              <div class="menu">
+                <a class="item">Vendas</a>
+                <a class="item">Funcionários</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <?php endif ?>

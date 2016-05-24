@@ -1,37 +1,47 @@
 <section>
-  <header>
-    <h2><?= $this->title ?></h2>
-  </header>
-  <?= ViewHelpers::linkTo('/clientes/novo', 'Novo cliente', 'class="btn btn-default"') ?>
-
-  <table class="table table-hover">
-    <thead>
-      <tr>
-        <th>Id</th>
-        <th>Nome</th>
-        <th>Email</th>
-        <th>CEP</th>
-        <th>Telefone</th>
-        <th>Cidade</th>
-        <th>Criação</th>
-      </tr>
-    </thead>
-    <tbody>
-    <?php
-      foreach ($this->clients as $client): ?>
-      <tr>
-        <td><?= $client->getId() ?></td>
-        <td><?= $client->getName() ?></td>
-        <td><?= $client->getEmail() ?></td>
-        <td><?= $client->getAddressCep() ?></td>
-        <td><?= $client->getPhone() ?></td>
-        <td><?= $client->getCity() ?></td>
-        <td><?= ViewHelpers::dateFormat($client->getCreatedAt()); ?></td>
-        <td><?= ViewHelpers::linkTo("/clientes/{$client->getId()}/editar", "Editar", 'class="btn btn-primary"') ?></td>
-        <td><?= ViewHelpers::linkTo("/clientes/{$client->getId()}/deletar", "Excluir", 'class="btn btn-danger"') ?></td>
-      </tr>
-    <?php endForeach; ?>
-    </tbody>
-  </table>
+      <table class="ui compact celled definition table">
+      <thead class="full-width">
+        <tr>
+          <th>ID</th>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>CEP</th>
+          <th>Telefone</th>
+          <th>Cidade</th>
+          <th>Data de criação</th>
+          <th>Opções</th>
+        </tr>
+      </thead>
+      <tbody>
+        <?php
+          foreach ($this->clients as $client): ?>
+          <tr>
+            <td><?= $client->getId() ?></td>
+            <td><?= $client->getName() ?></td>
+            <td><?= $client->getEmail() ?></td>
+            <td><?= $client->getAddressCep() ?></td>
+            <td><?= $client->getPhone() ?></td>
+            <td><?= $client->getCity() ?></td>
+            <td><?= ViewHelpers::dateFormat($client->getCreatedAt()); ?></td>
+            <td>
+              <?= ViewHelpers::linkTo("/clientes/{$client->getId()}/editar", '', '', 'class="zoom icon"') ?>
+              <?= ViewHelpers::linkTo("/clientes/{$client->getId()}/editar", '', '', 'class="edit icon"') ?>
+              <?= ViewHelpers::linkTo("/clientes/{$client->getId()}/deletar", '', '', 'class="trash icon"') ?>
+            </td>
+          </tr>
+        <?php endForeach; ?>
+      </tbody>
+      <tfoot class="full-width">
+        <tr>
+          <th colspan="8">
+            <div class="ui right floated small primary labeled icon button">
+              <i class="user icon"></i>Novo cliente
+            </div>
+          </th>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</div>
 
 </section>

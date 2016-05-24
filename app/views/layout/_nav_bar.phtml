@@ -1,40 +1,25 @@
 
-  <nav class="navbar navbar-fixed-top navbar-inverse">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <?= ViewHelpers::linkTo('/', 'Sistema de vendas', 'class="navbar-brand"') ?>
+  <div class="ui attached stackable menu">
+    <div class="ui container">
+      <?= ViewHelpers::linkTo('/', 'Sistema', 'class="item"', 'class="home icon"') ?>
+      <?php if (SessionHelpers::isLoggedIn()): ?>
+      <div class="ui simple dropdown item">
+        Olá Renan
+        <i class="dropdown icon"></i>
+        <div class="menu">
+          <?= ViewHelpers::linkTo('/perfil', 'Perfil', 'class="item"', 'class="settings icon"') ?>
+          <?= ViewHelpers::linkTo('/logout', 'Sair', 'class="item"', 'class="sign out icon"') ?>
         </div>
-
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="<?= ViewHelpers::activeClass('/') ?>">
-              <?= ViewHelpers::linkTo('/', 'Home') ?>
-            </li>
-          </ul>
-          <?php if (SessionHelpers::isLoggedIn()): ?>
-          <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i>Olá <?= $this->currentUser()->getName() ?><span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><i class="fa fa-fw fa-gear"></i><?= ViewHelpers::linkTo('/perfil', 'Perfil') ?></li>
-                <li role="separator" class="divider"></li>
-                <li><i class="fa fa-fw fa-power-off"></i><?= ViewHelpers::linkTo('/logout', 'Sair') ?></li>
-              </ul>
-            </li>
-          </ul>
-          <?php else: ?>
-            <ul class="nav navbar-nav navbar-right">
-              <li class="<?= ViewHelpers::activeClass('/login') ?>">
-                <?= ViewHelpers::linkTo('/login', 'Login') ?>
-              </li>
-            </ul>
-          <?php endif ?>
-        </div><!-- /.nav-collapse -->
-      </div><!-- /.container -->
-  </nav><!-- /.navbar -->
+      </div>
+      <div class="right item">
+        <div class="ui icon input">
+          <input class="prompt" type="text" placeholder="search...">
+          <i class="search link icon"></i>
+        </div>
+      </div>
+      <?php else: ?>
+        <?= ViewHelpers::linkTo('/login', 'Login', 'class="item"', 'class="protect icon"') ?>
+      <?php endif ?>
+    </div>
+    </div>
+  </div>

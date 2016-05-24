@@ -12,10 +12,9 @@
     <title><?= ViewHelpers::fullTitle(@$page_title) ?></title>
 
     <!-- Bootstrap core CSS -->
-    <?= ViewHelpers::styleSheetIncludeTag('/bootstrap/css/bootstrap.min.css',
-                                          '/bootstrap/css/bootstrap-theme.min.css',
-                                          '/bootstrap/css/bootstrap.min.css.map',
-                                          '/bootstrap/fonts/font-awesome.min.css',
+    <?= ViewHelpers::styleSheetIncludeTag('/semantic-ui/css/normalize.css',
+                                          '/semantic-ui/css/semantic.min.css',
+                                          '/semantic-ui/css/icon.min.css',
                                           'application.css') ?>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -35,16 +34,16 @@
       <?php require "_flash_messages.phtml" ?>
 
       <article>
-        <div class="row row-offcanvas row-offcanvas-right">
+        <?php require "_side_bar.phtml" ?>
 
-          <div class="col-xs-12 col-sm-9">
+        <div class="column twelve wide">
+          <div class="ui hidden divider"></div>
             <?php require $view; ?>
-          </div>
+        </div>
 
-          <?php require "_side_bar.phtml" ?>
-        </article>
+      </article>
 
-      </div><!-- #MAIN-CONTAINER -->
+    </div><!-- #MAIN-CONTAINER -->
 
 
 
@@ -53,7 +52,7 @@
       <!-- Placed at the end of the document so the pages load faster -->
       <?= ViewHelpers::javascriptIncludeTag('jquery-1.11.3.min.js',
                                             'jquery.autocomplete.js',
-                                            '/bootstrap/js/bootstrap.min.js',
+                                            '/semantic-ui/js/semantic.min.js',
                                             'application.js') ?>
 
     </body>
