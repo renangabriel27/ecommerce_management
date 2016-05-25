@@ -13,13 +13,13 @@
   public function validates() {
     Validations::greaterThen($this->name, 5, 'name', $this->errors);
     Validations::notEmpty($this->name, 'name', $this->errors);
+    Validations::uniqueField($this->name, 'name' , 'categories', $this->errors);
   }
 
   public function save() {
     if(!$this->isValid()) return false;
 
-    $sql = "INSERT INTO categories (name)
-    VALUES (:name);";
+    $sql = "INSERT INTO categories (name) VALUES (:name)";
 
     $params = array('name' => $this->name);
 
@@ -29,14 +29,13 @@
 
 
     if(!$resp) {
-      Logger::getInstance()->log("Falha para salvar categorias: " . print_r($this, TRUE),
-        Logger::ERROR);
-      Logger::getInstance()->log("Error " . print_r(error_get_last(), true ),
-        Logger::ERROR);
+      Logger::getInstance()->log("Falha para salvar categorias: " . print_r($this, TRUE), Logger::ERROR);
+      Logger::getInstance()->log("Error " . print_r(error_get_last(), true ), Logger::ERROR);
       return false;
     }
 
     $this->setId($db->lastInsertId());
+    $this->setCreatedAt(date());
     return true;
   }
 

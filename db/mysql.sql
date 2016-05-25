@@ -26,9 +26,9 @@ CREATE TABLE clients (
 	address VARCHAR(50),
   address_number INT,
   address_cep VARCHAR(10),
-  date_of_birth DATE,
 	phone VARCHAR(11),
 	email VARCHAR(50),
+	type VARCHAR(10),
 	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 	city_id INT NOT NULL,
 	CONSTRAINT FOREIGN KEY(city_id) REFERENCES cities(id)
@@ -37,6 +37,7 @@ CREATE TABLE clients (
 CREATE TABLE clients_pi (
 	id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
   cpf VARCHAR(11),
+	date_of_birth DATE,
 	client_id INT NOT NULL,
 	CONSTRAINT FOREIGN KEY(client_id) REFERENCES clients(id)
 );
@@ -78,18 +79,13 @@ CREATE TABLE products (
 	CONSTRAINT FOREIGN KEY(category_id) REFERENCES categories(id)
 );
 
-CREATE TABLE status (
-  id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-  name VARCHAR(50) NULL,
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-
 CREATE TABLE orders (
 	id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 	total DOUBLE NOT NULL,
 	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 	client_id INT NOT NULL,
 	employee_id INT NOT NULL,
+	status INT,
   status_id INT,
   CONSTRAINT FOREIGN KEY(status_id) REFERENCES status(id),
 	CONSTRAINT FOREIGN KEY(client_id) REFERENCES clients(id),

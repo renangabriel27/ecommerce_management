@@ -60,6 +60,8 @@ var close_flash_message = function() {
     $('.message .close').on('click', function() {
       $(this).closest('.message').fadeOut();
     });
+
+  
 };
 
 

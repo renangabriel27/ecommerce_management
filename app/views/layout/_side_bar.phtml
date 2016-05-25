@@ -14,15 +14,16 @@
             <div class="item">
               <div class="header">Pedidos</div>
               <div class="menu">
-                <a class="item">Visualizar pedidos</a>
-                <?= ViewHelpers::linkTo('/pedidos', 'Cadastro de pedidos', 'class="item"') ?>
+                <?= ViewHelpers::linkTo('/pedidos', 'Visualizar pedidos', 'class="item"') ?>
+                <?= ViewHelpers::linkTo('/pedidos/novo', 'Cadastro de pedidos', 'class="item"') ?>
               </div>
             </div>
             <div class="item">
               <div class="header">Clientes</div>
               <div class="menu">
                 <?= ViewHelpers::linkTo('/clientes', 'Visualizar clientes', 'class="item"') ?>
-                <?= ViewHelpers::linkTo('/clientes/novo', 'Cadastro de cliente físico', 'class="item"') ?>
+                <?= ViewHelpers::linkTo('/clientes/novo/1', 'Cadastro de cliente físico', 'class="item"') ?>
+                <?= ViewHelpers::linkTo('/clientes/novo/2', 'Cadastro de cliente jurídico', 'class="item"') ?>
               </div>
             </div>
             <div class="item">

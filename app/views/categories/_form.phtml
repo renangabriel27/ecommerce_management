@@ -5,11 +5,10 @@
       <label for="category_name">Nome</label>
       <input type="text" id="category_name" name="category[name]"
       placeholder="Digite o nome da categoria" value="<?= $this->category->getName() ?>">
-      <?php if($this->category->getErrors('name')) : ?>
-        <div class="ui basic red pointing prompt label transition visible"><?= $this->category->getErrors('name') ?></div>
-      <?php endIf; ?>
+      <div class="ui pointing <?= $this->category->getErrors('name') ? 'red basic label' : '' ?>"><?= $this->category->getErrors('name') ?></div>
     </div>
 
+    <?= $this->linkTo("/categorias", 'Voltar', 'class="ui left floated small labeled icon button"', 'class="reply icon"') ?>
     <button type="submit" name="button" class="ui primary button"><?= $this->submit ?> </button>
   </div>
 </form>

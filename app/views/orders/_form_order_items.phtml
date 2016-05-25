@@ -1,0 +1,20 @@
+<form role="form" class="ui form" action="<?= $this->action ?>" method="POST">
+  <p>Cliente : <?= $this->order->getClientId()->getName() ?></p>
+  <div class="field">
+    <label class="sr-only" for="autocomplete_product_by_id">ID do produto</label>
+    <input type="number" id="autocomplete_product_by_id"
+      name="product[id]" placeholder="Código do produto" min="0">
+  </div>
+
+  <div class="field">
+    <label class="sr-only" for="autocomplete_product_by_name"> Nome do Produto </label>
+    <input type="text" id="autocomplete_product_by_name"
+    name="product[name]" data-url="<?= ViewHelpers::urlFor('/produtos/autocomplete-search') ?>"
+    placeholder="Nome do produto">
+  </div>
+
+  <input type="hidden" class="form-control" id="order_id" value="<?= $this->order->getId() ?>" name="order[id]">
+
+  <button type="submit"  class="ui primary button"><?= $this->submit ?></button>
+  <?= $this->linkTo("/pedidos", 'Voltar', 'class="ui left floated small labeled icon button"', 'class="reply icon"') ?>
+</form>

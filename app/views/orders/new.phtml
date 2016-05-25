@@ -3,21 +3,6 @@
     <h2>Novo pedido</h2>
   </header>
   <article>
-    <form action="<?= $this->action ?>" method="POST">
-
-      <div class="ui form <?= $this->order->getErrors('client_id') ? 'has-error' : ' '?>">
-        <label for="autocomplete_clients">Cliente</label>
-        <input type="text" class="autocomplete-suggestions" id="autocomplete_clients"
-          name="order[client_name]" placeholder="Digite o nome do cliente" value=""
-          data-url="<?= ViewHelpers::urlFor('/clientes/autocomplete-search') ?>">
-
-        <input type="hidden" id="order_user_id" name="order[client_id]">
-
-        <p class="help-block"><?= $this->order->getErrors('client_id') ?></p>
-      </div>
-
-      <button type="submit" name="button" class="ui button"><?= $this->submit ?> </button>
-    </form>
-
+    <?php require '_form_order.phtml' ?>
   </article>
 </section>

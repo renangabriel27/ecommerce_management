@@ -74,7 +74,10 @@
     /* Rotas para os clientes pi
     ------------------------- */
     $router->get('/clientes', array('controller' => 'ClientsController', 'action' => 'index'));
+    $router->get('/clientes/novo/:type', array('controller' => 'ClientsController', 'action' => '_new'));
     $router->get('/clientes/novo', array('controller' => 'ClientsController', 'action' => '_new'));
+    $router->post('/clientes/novo', array('controller' => 'ClientsController', 'action' => 'create'));
+    $router->get('/clientes/:id/editar', array('controller' => 'ClientsController', 'action' => 'edit'));
     /* Fim das rotas para os clientes
     --------------------------------- */
 

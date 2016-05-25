@@ -40,20 +40,19 @@
 
   public function validates() {
     Validations::notEmpty($this->client, 'client_id', $this->errors);
+    Validations::uniqueField($this->client, 'client_id', 'orders', $this->errors);
   }
 
   public function save() {
     if(!$this->isValid()) return false;
 
-    $sql = "INSERT INTO orders (client_id)
-    VALUES (:client_id);";
+    $sql = "INSERT INTO orders (client_id) VALUES (:client_id)";
 
     $params = array('client_id' => $this->client);
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
     $resp = $statement->execute($params);
-
 
     if(!$resp) {
       Logger::getInstance()->log("Falha para salvar pedidos: " . print_r($this, TRUE), Logger::ERROR);
@@ -62,6 +61,7 @@
     }
 
     $this->setId($db->lastInsertId());
+    $this->setCreatedAt(date());
     return true;
   }
 
@@ -81,6 +81,7 @@
     while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
       $products[] = new Product($row);
     }
+
     return $products;
   }
 
@@ -109,10 +110,12 @@
     return $statement->execute($params);
   }
 
+
   public static function all() {
-    $sql = "SELECT orders.id AS id, clients.id AS client_id, clients.name AS client_name,
-    clients.email AS client_email FROM clients, orders WHERE (orders.client_id = clients.id)
-    ORDER BY id";
+    $sql = "SELECT orders.id AS id, orders.created_at AS created_at, clients.id AS client_id, clients.name AS client_name,
+     clients.email AS client_email, sell_orders_items.price AS price, sell_orders_items.amount AS amount FROM clients JOIN
+     orders ON(orders.client_id = clients.id) LEFT OUTER JOIN sell_orders_items ON(sell_orders_items.order_id = orders.id) LEFT OUTER JOIN
+     products ON(products.id = sell_orders_items.product_id) ORDER BY id";
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
@@ -125,6 +128,9 @@
     while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
       $order = new Order();
       $order->setId($row['id']);
+      $order->setCreatedAt($row['created_at']);
+      $order->setAmount($row['amount']);
+      $order->setTotal($row['price']);
 
       $client = new Client();
       $client->setId($row['client_id']);

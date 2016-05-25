@@ -1,6 +1,5 @@
 <?php class SessionsController extends ApplicationController {
 
-
   public function _new() {
     $this->user = new User();
   }

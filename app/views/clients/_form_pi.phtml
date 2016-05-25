@@ -1,0 +1,11 @@
+
+<div class="field <?= $this->client->getErrors('phone') ? 'error' : '' ?>">
+  <label>CPF</label>
+  <input type="text" id="client['phone']" name="client[cpf]" placeholder="cpf" value="<?= $this->client->getCpf() ?>">
+  <div class="ui pointing <?= $this->client->getErrors('cpf') ? 'red basic label' : '' ?>"><?= $this->client->getErrors('cpf') ?></div>
+</div>
+<div class="field <?= $this->client->getErrors('dateOfBirth') ? 'error' : '' ?>">
+  <label>Data de nascimento</label>
+  <input type="text" id="clinet['date_of_birth']" name="client[date_of_birth]" placeholder=" ** / ** / ****" value="<?= $this->client->getDateOfBirth() ?>">
+  <div class="ui pointing <?= $this->client->getErrors('dateOfBirth') ? 'red basic label' : '' ?>"><?= $this->client->getErrors('dateOfBirth') ?></div>
+</div>

@@ -9,11 +9,14 @@
 
    public function show() {
      $this->order = Order::findById($this->params[':id']);
+     $this->title = 'Pedido';
+     $this->submit = "Adicionar";
+     $this->action =  ViewHelpers::urlFor('/pedidos/produtos');
    }
 
    public function _new() {
       $this->order = new Order();
-      $this->submit = 'Novo pedido';
+      $this->submit = 'Cadastrar';
       $this->action = ViewHelpers::urlFor("/pedidos");
    }
 
@@ -27,7 +30,7 @@
        $this->redirectTo('/pedidos');
      }
      else {
-       Flash::message('danger', 'Existem dados inválidos!');
+       Flash::message('negative', 'Existem dados inválidos!');
        $this->orders = Order::all();
        $this->action = ViewHelpers::urlFor('/pedidos');
        $this->submit = 'Novo pedido';

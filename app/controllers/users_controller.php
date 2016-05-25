@@ -19,7 +19,7 @@
       Flash::message('success', 'Registro realizado com sucesso!');
       $this->redirectTo('/login');
     } else {
-      Flash::message('danger', 'Existe dados incorretos no seu formulário!');
+      Flash::message('negative', 'Existe dados incorretos no seu formulário!');
       $this->action = '/registre-se';
       $this->submit = 'Cadastre-se';
       $this->render('new');
@@ -39,7 +39,7 @@
       Flash::message('success', 'Registro atualizado com sucesso!');
       $this->redirectTo('/');
     } else {
-      Flash::message('danger', 'Existe dados incorretos no seu formulário!');
+      Flash::message('negative', 'Existe dados incorretos no seu formulário!');
       $this->action = '/perfil';
       $this->submit = 'Atualizar';
       $this->render('edit');
