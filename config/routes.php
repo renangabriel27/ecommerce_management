@@ -78,6 +78,7 @@
     $router->get('/clientes/novo', array('controller' => 'ClientsController', 'action' => '_new'));
     $router->post('/clientes/novo', array('controller' => 'ClientsController', 'action' => 'create'));
     $router->get('/clientes/:id/editar', array('controller' => 'ClientsController', 'action' => 'edit'));
+    $router->post('/clientes/:id', array('controller' => 'ClientsController', 'action' => 'update'));
     /* Fim das rotas para os clientes
     --------------------------------- */
 

@@ -12,8 +12,11 @@
 
   public function validates() {
     Validations::greaterThen($this->name, 5, 'name', $this->errors);
-    Validations::notEmpty($this->name, 'name', $this->errors);
-    Validations::uniqueField($this->name, 'name' , 'categories', $this->errors);
+
+    if ($this->newRecord() || $this->changedFieldValue('name', 'categories')) {
+      Validations::notEmpty($this->name, 'name', $this->errors);
+      Validations::uniqueField($this->name, 'name' , 'categories', $this->errors);
+    }
   }
 
   public function save() {
@@ -40,12 +43,12 @@
   }
 
   public function update($data = array()) {
+    if($data['name'] === $this->name) return true;
     $this->setData($data);
     if (!$this->isvalid()) return false;
 
     $db = Database::getConnection();
-    $params = array('name' => $this->name,
-      'id' => $this->id);
+    $params = array('id' => $this->id, 'name' => $this->name);
 
     $sql = "UPDATE categories SET name=:name WHERE id = :id";
 

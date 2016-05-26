@@ -10,6 +10,8 @@
         <tr>
           <th>Id</th>
           <th>Nome</th>
+          <th>Quantidade</th>
+          <th>Preço Unitário</th>
           <th>Preço</th>
           <th>Opções</th>
         </tr>
@@ -19,11 +21,18 @@
             <tr>
               <td><?= $product->getId() ?></td>
               <td><?= $product->getName() ?></td>
+              <td></td>
               <td><?= $product->getPrice() ?></td>
+              <td></td>
               <td><?= ViewHelpers::linkTo("/pedidos/{$product->getId()}/deletar", "Excluir", 'class="btn btn-danger"') ?></td>
             </tr>
       </tbody>
       <?php endForeach; ?>
+      <tfoot>
+        <th colspan="3"></th>
+        <th>TOTAL</th>
+        <th colspan="2"></th>
+      </tfoots>
     </table>
 
   </article>

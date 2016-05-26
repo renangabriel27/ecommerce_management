@@ -34,9 +34,8 @@
    }
 
    public function edit() {
-     $this->categories = Category::all();
-     $this->category = Category::findById($this->params[':id']);
      $this->submit = 'Salvar';
+     $this->category = Category::findById($this->params[':id']);
      $this->action = ViewHelpers::urlFor("/categorias/{$this->category->getId()}");
    }
 
@@ -55,21 +54,11 @@
        $this->redirectTo('/categorias');
      } else {
        Flash::message('negative', 'Existe dados incorretos no seu formulário!');
-       $this->categories = Category::all();
        $this->action = ViewHelpers::urlFor("/categorias/{$this->category->getId()}");
        $this->submit = 'Atualizar';
        $this->render('edit');
      }
    }
-
-   public function delete() {
-      $db = Database::getConnection();
-      $params = array('id' => $this->id);
-      $sql = "DELETE FROM categories WHERE id = :id";
-      $statement = $db->prepare($sql);
-      return $statement->execute($params);
-   }
-
 
 
 } ?>

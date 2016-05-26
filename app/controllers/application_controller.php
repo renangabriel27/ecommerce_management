@@ -1,6 +1,12 @@
 <?php class ApplicationController extends BaseController {
   private $currentUser;
 
+  /* Mudar layout da rota */
+  // public function __construct() {
+  //   parent::__construct();
+  //   $this->layout = 'layout/application.phtml';
+  // }
+
   public function currentUser() {
     if ($this->currentUser === null) {
       $this->currentUser = SessionHelpers::currentUser();
@@ -14,5 +20,5 @@
       $this->redirectTo('/login');
     }
   }
-  
+
 }

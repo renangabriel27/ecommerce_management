@@ -7,7 +7,7 @@
       <div class="two fields">
         <div class="field <?= $this->client->getErrors('name') ? 'error' : '' ?>">
           <label>Nome </label>
-          <input type="text" id="client_name" name="client[name]" placeholder="nome" value="<?= $this->client->getName() ?>">
+          <input type="text" id="client['name']" name="client[name]" placeholder="nome" value="<?= $this->client->getName() ?>">
           <div class="ui pointing <?= $this->client->getErrors('name') ? 'red basic label' : '' ?>"><?= $this->client->getErrors('name') ?></div>
         </div>
         <div class="field <?= $this->client->getErrors('email') ? 'error' : '' ?>">
@@ -27,11 +27,11 @@
 
         <div class="field">
           <label>Cidade</label>
-          <select class="ui fluid dropdown" name="client[city]">
+          <select name="client[city_id]" class="ui fluid dropdown <?= $this->client->getErrors('city_id') ? 'error' : '' ?>">
             <option value="">Selecione uma cidade</option>
             <?php foreach($this->cities as $city) : ?>
               <option value='<?= $city->getId() ?>'
-                <?= ($city->getId() === $this->client->getCity()) ? 'selected' :  '' ?> >
+                <?= ($city->getId() === $this->client->getCityId()) ? 'selected' :  '' ?> >
                 <?=  $city->getName() ?>
               </option>
             <?php endForeach; ?>

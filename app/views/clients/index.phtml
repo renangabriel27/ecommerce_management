@@ -21,7 +21,7 @@
             <td><?= $client->getEmail() ?></td>
             <td><?= $client->getAddressCep() ?></td>
             <td><?= $client->getPhone() ?></td>
-            <td><?= $client->getCity() ?></td>
+            <td><?= $client->getCityId()->getName() ?></td>
             <td><?= ViewHelpers::dateFormat($client->getCreatedAt()); ?></td>
             <td>
               <?= ViewHelpers::linkTo("/clientes/{$client->getId()}/editar", '', '', 'class="zoom icon"') ?>
@@ -34,7 +34,7 @@
       <tfoot class="full-width">
         <tr>
           <th colspan="8">
-            <?= $this->linkTo("/clientes/novo", 'Novo cliente', 'class="ui left floated small primary labeled icon button"', 'class="add circle icon"') ?>
+            <?= $this->linkTo("/clientes/novo/1", 'Novo cliente', 'class="ui left floated small primary labeled icon button"', 'class="add circle icon"') ?>
           </th>
         </tr>
       </tfoot>

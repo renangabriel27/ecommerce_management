@@ -86,8 +86,6 @@ CREATE TABLE orders (
 	client_id INT NOT NULL,
 	employee_id INT NOT NULL,
 	status INT,
-  status_id INT,
-  CONSTRAINT FOREIGN KEY(status_id) REFERENCES status(id),
 	CONSTRAINT FOREIGN KEY(client_id) REFERENCES clients(id),
 	CONSTRAINT FOREIGN KEY(employee_id) REFERENCES employees(id)
 );
@@ -127,9 +125,36 @@ INSERT INTO cities (name, state_id) VALUES ("Florianópolis", 3);
 /* ---------------------------------------------------- */
 
 /*
-*** Dumping data for table `states`
+*** Dumping data for table `employees`
 */
 
-INSERT INTO employees (name, email, password, salary, city_id) VALUES ("Renan", "renanthompsom@gmail.com", "62fbe97113baa78a7e2bab0f21b50ef525f6dc37", 1200, 3);
-INSERT INTO employees (name, email, password, salary, city_id) VALUES ("Thompsom", "thompsom@gmail.com", "62fbe97113baa78a7e2bab0f21b50ef525f6dc37", 1500, 1);
+INSERT INTO employees (name, email, password, salary, city_id) VALUES ("Rafael", "rafael@gmail.com", "62fbe97113baa78a7e2bab0f21b50ef525f6dc37", 1200, 3);
+INSERT INTO employees (name, email, password, salary, city_id) VALUES ("Cintia", "cintia@gmail.com", "62fbe97113baa78a7e2bab0f21b50ef525f6dc37", 1500, 1);
+INSERT INTO employees (name, email, password, salary, city_id) VALUES ("Alisson", "alisson@gmail.com", "62fbe97113baa78a7e2bab0f21b50ef525f6dc37", 2200, 2);
 INSERT INTO employees (name, email, password, salary, city_id) VALUES ("Gabriel", "gabriel@gmail.com", "62fbe97113baa78a7e2bab0f21b50ef525f6dc37", 2200, 2);
+INSERT INTO employees (name, email, password, salary, city_id) VALUES ("João", "joao@gmail.com", "62fbe97113baa78a7e2bab0f21b50ef525f6dc37", 2200, 2);
+
+/* ---------------------------------------------------- */
+
+/*
+*** Dumping data for table `categories`
+*/
+
+INSERT INTO categories (name) VALUES ("Processador");
+INSERT INTO categories (name) VALUES ("Notebook");
+INSERT INTO categories (name) VALUES ("Netbook");
+INSERT INTO categories (name) VALUES ("Placa de vídeo");
+INSERT INTO categories (name) VALUES ("Monitor");
+
+
+/* ---------------------------------------------------- */
+
+/*
+*** Dumping data for table `categories`
+*/
+
+INSERT INTO products (name, amount, description, price, category_id) VALUES ("AMD FX-4300",100, "Processador potente", "417.49", 1);
+INSERT INTO products (name, amount, description, price, category_id) VALUES ("AMD FX-6300",100, "Processador potente", "485.00", 1);
+INSERT INTO products (name, amount, description, price, category_id) VALUES ("AMD FX-8350",100, "Processador potente", "819.02", 1);
+INSERT INTO products (name, amount, description, price, category_id) VALUES ("INTEL CORE I5 4460",100, "Processador potente", "919.00", 1);
+INSERT INTO products (name, amount, description, price, category_id) VALUES ("INTEL CORE I7",100, "Processador potente", "1618.49", 1);

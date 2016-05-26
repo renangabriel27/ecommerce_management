@@ -6,7 +6,7 @@
   protected $addressNumber;
   protected $addressCep;
   protected $phone;
-  protected $city;
+  protected $cityId;
   protected $type;
 
 
@@ -56,12 +56,12 @@
     return $this->phone;
   }
 
-  public function setCity($city) {
-    $this->city = $city;
+  public function setCityId($cityId) {
+    $this->cityId = $cityId;
   }
 
-  public function getCity() {
-    return $this->city;
+  public function getCityId() {
+    return $this->cityId;
   }
 
   public function setType($type) {
@@ -91,11 +91,12 @@
   public function save() {
     if (!$this->isvalid()) return false;
 
-    $sql = "INSERT INTO clients (name, email, phone, date_of_birth, address , address_number, address_cep, city_id )
-            VALUES (:name, :email, :phone, :date_of_birth, :address, :address_number, :address_cep, :city);";
+    $sql = "INSERT INTO clients (name, email, phone, date_of_birth, address , address_number, address_cep, city_id, type)
+            VALUES (:name, :email, :phone, :date_of_birth, :address, :address_number, :address_cep, :city_id, :type);";
 
     $params = array('name' => $this->name, 'email' => $this->email, 'phone' => $this->phone, 'date_of_birth' => $this->dateOfBirth,
-                    'city' => $this->city, 'address' => $this->address, 'address_number' => $this->addressNumber, 'address_cep' => $this->addressCep);
+                    'city_id' => $this->city, 'address' => $this->address, 'address_number' => $this->addressNumber, 'address_cep' => $this->addressCep,
+                    'type' => $this->type);
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
@@ -106,30 +107,9 @@
     return true;
   }
 
-  public function update($data = array()) {
-    $this->setData($data);
-    if (!$this->isvalid()) return false;
-
-    $db = Database::getConnection();
-    $params = array('name' => $this->name,
-      'email' => $this->email,
-      'id' => $this->id);
-
-    if (empty($this->password)) {
-      $sql = "UPDATE clients SET name=:name, email=:email WHERE id = :id";
-    } else {
-      $params['password'] = $this->cryptographyPassword($this->password);
-      $sql = "UPDATE clients SET name=:name, email=:email, password=:password WHERE id = :id";
-    }
-
-    $statement = $db->prepare($sql);
-    return $statement->execute($params);
-  }
-
-
   public static function findById($id) {
     $db = Database::getConnection();
-    $sql = "SELECT name, email FROM clients WHERE id = ?";
+    $sql = "SELECT * FROM clients WHERE id = ?";
     $params = array($id);
 
     $db = Database::getConnection();
@@ -145,9 +125,11 @@
   }
 
   public static function all() {
-    $sql = "SELECT clients.id AS id, clients.name, clients.email,
-    clients.address_cep, clients.phone, clients.city_id AS city, cities.name AS city
-    FROM clients, cities WHERE (clients.city_id = cities.id) ORDER BY clients.created_at DESC";
+    $sql = "SELECT clients.id AS client_id, clients.name AS client_name, clients.email AS client_email,
+    clients.address AS client_address, clients.address_cep AS client_cep, clients.address_number AS
+    client_address_number, clients.phone AS client_phone, clients.type AS client_type, clients.created_at AS
+    client_created_at, cities.id AS city_id, cities.name AS city_name, cities.state_id AS state_id FROM
+    clients, cities WHERE (clients.city_id = cities.id) ORDER BY clients.created_at DESC";
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
@@ -157,10 +139,27 @@
 
     if(!$resp) return $clients;
 
-    while($client = $statement->fetch(PDO::FETCH_ASSOC)) {
-      $clients[] = new Client($client);
-    }
+    while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+      $client = new Client();
+      $client->setId($row['client_id']);
+      $client->setName($row['client_name']);
+      $client->setEmail($row['client_email']);
+      $client->setAddress($row['client_address']);
+      $client->setAddressNumber($row['client_address_number']);
+      $client->setAddressCep($row['client_cep']);
+      $client->setPhone($row['client_phone']);
+      $client->setType($row['client_type']);
+      $client->setCreatedAt($row['client_created_at']);
 
+      $city = new City();
+      $city->setId($row['city_id']);
+      $city->setName($row['city_name']);
+      $city->setStateId($row['state_id']);
+
+      $client->setCityId($city);
+
+      $clients[] = $client;
+    }
     return $clients;
   }
 
