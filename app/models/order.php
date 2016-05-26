@@ -115,8 +115,8 @@
   public static function all() {
     $sql = "SELECT orders.id AS id, orders.created_at AS created_at, clients.id AS client_id, clients.name AS client_name,
      clients.email AS client_email, sell_orders_items.price AS price, sell_orders_items.amount AS amount FROM clients JOIN
-     orders ON(orders.client_id = clients.id) LEFT JOIN sell_orders_items ON(sell_orders_items.order_id = orders.id)
-     LEFT JOIN products ON(products.id = sell_orders_items.product_id) ORDER BY id";
+     orders ON(orders.client_id = clients.id) LEFT OUTER JOIN sell_orders_items ON(sell_orders_items.order_id = orders.id)
+     LEFT OUTER JOIN products ON(products.id = sell_orders_items.product_id) ORDER BY id";
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);

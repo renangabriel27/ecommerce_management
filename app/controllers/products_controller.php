@@ -3,7 +3,8 @@
    protected $beforeAction = array('authenticated' => 'all');
 
    public function index() {
-      $this->products = $this->pagination('Product', array('url' => '/produtos', 'limit' => 10));
+      $this->title = "Listagem de produtos";
+      $this->products = Product::all();
    }
 
    public function show() {
@@ -11,7 +12,7 @@
    }
 
    public function _new() {
-      $this->categories =  Category::all();
+      $this->categories = Category::all();
       $this->product = new Product();
       $this->submit = 'Novo produto';
       $this->action = ViewHelpers::urlFor("/produtos");
@@ -25,9 +26,9 @@
        $this->redirectTo('/produtos');
      }
      else {
-       Flash::message('danger', 'Existem dados inválidos!');
+       Flash::message('negative', 'Existem dados inválidos!');
        $this->categories = Category::all();
-       $this->submit = 'Novo pedido';
+       $this->submit = 'Novo produto';
        $this->action = ViewHelpers::urlFor('/produtos');
        $this->render('new');
      }
@@ -47,7 +48,7 @@
        Flash::message('success', 'Registro atualizado com sucesso!');
        $this->redirectTo('/produtos');
      } else {
-       Flash::message('danger', 'Existe dados incorretos no seu formulário!');
+       Flash::message('negative', 'Existe dados incorretos no seu formulário!');
        $this->categories = Category::all();
        $this->action = ViewHelpers::urlFor("/produtos/{$this->product->getId()}");
        $this->submit = 'Atualizar';

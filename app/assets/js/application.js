@@ -4,6 +4,7 @@ $(document).ready(function() {
   toogle_contact_message();
   auto_complete();
   close_flash_message();
+  mask_money();
   dropdown();
 });
 
@@ -25,6 +26,20 @@ var toogle_contact_message = function () {
       msg.toggleClass('hidden');
    });
 };
+
+/**
+https://github.com/plentz/jquery-maskmoney/
+*/
+
+var mask_money = function() {
+  $("#product_price").maskMoney({
+    prefix:'R$',
+    thousands:'.',
+    decimal:','
+  });
+  $("#product_price").maskMoney('mask');
+};
+
 
 /**
   https://github.com/devbridge/jQuery-Autocomplete
@@ -60,8 +75,6 @@ var close_flash_message = function() {
     $('.message .close').on('click', function() {
       $(this).closest('.message').fadeOut();
     });
-
-  
 };
 
 

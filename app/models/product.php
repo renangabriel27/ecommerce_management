@@ -1,6 +1,7 @@
 <?php class Product extends Base {
 
   private $name;
+  private $amount;
   private $description;
   private $price;
   private $categoryId;
@@ -14,12 +15,33 @@
     return $this->name;
   }
 
+  public function setAmount($amount) {
+    $this->amount = $amount;
+  }
+
+  public function getAmount() {
+    return $this->amount;
+  }
+
   public function setDescription($description) {
       $this->description = $description;
   }
 
   public function getDescription() {
     return $this->description;
+  }
+
+  public function setPrice($price) {
+    if (preg_match('/R\$/', $price)) {
+      $price = str_replace('.', '', $price);
+      $price = str_replace(',', '.', $price);
+      $price = str_replace('R$', '', $price);
+    }
+    $this->price = $price;
+  }
+
+  public function getPrice() {
+    return $this->price;
   }
 
   public function setCategoryId($categoryId) {
@@ -45,55 +67,41 @@
     return null;
   }
 
-  public function setPrice($price) {
-    if (preg_match('/R\$/', $price)) {
-      $price = str_replace('.', '', $price);
-      $price = str_replace(',', '.', $price);
-      $price = str_replace('R$', '', $price);
-    }
-    $this->price = $price;
-  }
-
-  public function getPrice() {
-    return $this->price;
-  }
-
   public function validates() {
     Validations::notEmpty($this->name, 'name', $this->errors);
-    Validations::notEmpty($this->description, 'description', $this->errors);
+    Validations::notEmpty($this->amount, 'amount', $this->errors);
     Validations::isNumeric($this->price, 'price', $this->errors);
     Validations::notEmpty($this->categoryId, 'category_id', $this->errors);
+    Validations::notEmpty($this->description, 'description', $this->errors);
   }
 
   public function save() {
     if(!$this->isValid()) return false;
 
-    $sql = "INSERT INTO products (name, description, price, category_id)
-    VALUES (?,?,?,?);";
+    $sql = "INSERT INTO products (name, amount, description, price, category_id)
+    VALUES (:name, :amount, :description, :price, :category_id);";
 
-    $params = array($this->name, $this->description, $this->price, $this->categoryId);
+    $params = array('name' => $this->name, 'amount' => $this->amount, 'description' => $this->description,
+                    'price' => $this->price, 'category_id' => $this->categoryId);
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
     $resp = $statement->execute($params);
 
-
     if(!$resp) {
-      Logger::getInstance()->log("Falha ao salvar o produto: " . print_r($this, TRUE),
-        Logger::ERROR);
-      Logger::getInstance()->log("Error " . print_r(error_get_last(), true ),
-        Logger::ERROR);
+      Logger::getInstance()->log("Falha ao salvar o produto: " . print_r($this, TRUE), Logger::ERROR);
+      Logger::getInstance()->log("Error " . print_r(error_get_last(), true ), Logger::ERROR);
       return false;
     }
     return true;
   }
 
-  public function update() {
+  public function update($data = array()) {
     $this->setData($data);
     if (!$this->isValid()) return false;
 
-    $params = array($this->name, $this->description, $this->price, $this->categoryId);
-    $sql = "UPDATE products set name = ?, description = ?, price = ?, category_id = ?
+    $params = array($this->name, $this->amount, $this->description, $this->price, $this->categoryId, $this->id);
+    $sql = "UPDATE products set name = ?, amount = ?, description = ?, price = ?, category_id = ?
     WHERE id = ?";
 
     $db = Database::getConnection();
@@ -101,10 +109,8 @@
     $resp = $statement->execute($params);
 
     if(!$resp) {
-      Logger::getInstance()->log("Falha ao atualizar o produto: " . print_r($this, TRUE),
-        Logger::ERROR);
-      Logger::getInstance()->log("Error " . print_r(error_get_last(), true ),
-        Logger::ERROR);
+      Logger::getInstance()->log("Falha ao atualizar o produto: " . print_r($this, TRUE), Logger::ERROR);
+      Logger::getInstance()->log("Error " . print_r(error_get_last(), true ), Logger::ERROR);
       return false;
     }
     return true;
@@ -135,21 +141,17 @@
       $product = array('value' => $row['name'], 'data' => $row['id']);
       $suggestions['suggestions'][] = $product;
     }
-
     return json_encode($suggestions);
   }
 
-  public static function all($options) {
-    $limit = $options['limit'];
-    $offset = ($options['page'] - 1) * $limit;
-
-    $sql = "SELECT * FROM products ORDER BY created_at DESC
-    LIMIT :limit OFFSET :offset";
+  public static function all() {
+    $sql = "SELECT products.id AS id, products.name AS product_name, products.amount AS product_amount,
+            products.price AS product_price, products.created_at AS product_created_at, categories.id
+            AS category_id, categories.name AS category_name FROM products, categories
+            WHERE(products.category_id = categories.id) ORDER BY product_created_at DESC";
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
-    $statement->bindParam(':limit', $limit, PDO::PARAM_INT);
-    $statement->bindParam(':offset', $offset, PDO::PARAM_INT);
     $resp = $statement->execute();
 
     $products = [];
@@ -157,7 +159,20 @@
     if(!$resp) return $products;
 
     while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-      $products[] = new Procuct($row);
+      $product = new Product();
+      $product->setId($row['id']);
+      $product->setName($row['product_name']);
+      $product->setAmount($row['product_amount']);
+      $product->setPrice($row['product_price']);
+      $product->setCreatedAt($row['product_created_at']);
+
+      $category = new Category();
+      $category->setId($row['category_id']);
+      $category->setName($row['category_name']);
+
+      $product->setCategoryId($category);
+
+      $products[] = $product;
     }
     return $products;
   }

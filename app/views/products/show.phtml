@@ -1,0 +1,41 @@
+<section>
+      <table class="ui compact celled definition table">
+      <thead class="full-width">
+        <tr>
+          <th>ID</th>
+          <th>Nome</th>
+          <th>Quantidade</th>
+          <th>Preço</th>
+          <th>Categoria</th>
+          <th>Data de criação</th>
+          <th>Opções</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr>
+            <td><?= $this->product->getId() ?></td>
+            <td><?= $this->product->getName() ?></td>
+            <td><?= $this->product->getAmount() ?></td>
+            <td><?= $this->product->getPrice() ?></td>
+            <td><?= $this->product->getCategoryId() ?></td>
+            <td><?= ViewHelpers::dateFormat($this->product->getCreatedAt()); ?></td>
+            <td>
+              <?= ViewHelpers::linkTo("/produtos/{$this->product->getId()}", '', '', 'class="zoom icon"') ?>
+              <?= ViewHelpers::linkTo("/produtos/{$this->product->getId()}/editar", '', '', 'class="edit icon"') ?>
+              <?= ViewHelpers::linkTo("/produtos/{$this->product->getId()}/deletar", '','data-confirm="Deseja excluir produto?"', 'class="trash icon"') ?>
+            </td>
+          </tr>
+      </tbody>
+      <tfoot class="full-width">
+        <tr>
+          <th colspan="8">
+            <?= $this->linkTo("/produtos", 'Voltar', 'class="ui left floated small labeled icon button"', 'class="reply icon"') ?>
+            <?= $this->linkTo("/produtos/novo", 'Novo produto', 'class="ui left floated small primary labeled icon button"', 'class="add circle icon"') ?>
+          </th>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</div>
+
+</section>
