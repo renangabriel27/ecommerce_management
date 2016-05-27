@@ -45,7 +45,7 @@
       <div class="ui pointing <?= $this->product->getErrors('description') ? 'red basic label' : '' ?>"><?= $this->product->getErrors('description') ?></div>
     </div>
 
-    <?= $this->linkTo("/produtos", 'Voltar', 'class="ui left small labeled icon button"', 'class="reply icon"') ?>
-    <button type="submit" name="button" class="ui primary button"><?= $this->submit ?></button>
+    <?= ViewHelpers::linkTo("/produtos", 'Voltar', 'class="ui left small labeled icon button"', 'class="reply icon"') ?>
+    <?= ViewHelpers::buttonTo($this->submit, 'class="ui right labeled icon primary button"', 'class="right arrow icon"') ?>
   </div>
 </form>

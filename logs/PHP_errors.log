@@ -290,3 +290,63 @@ Stack trace:
 #4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
 #5 {main}
   thrown in /var/www/ecommerce_management/app/models/product.php on line 124
+[27-May-2016 11:08:34 America/Sao_Paulo] PHP Fatal error:  Call to undefined method CategoriesController::buttonTo() in /var/www/ecommerce_management/app/views/categories/_form.phtml on line 12
+[27-May-2016 11:08:45 America/Sao_Paulo] PHP Fatal error:  Call to undefined method CategoriesController::buttonTo() in /var/www/ecommerce_management/app/views/categories/_form.phtml on line 12
+[27-May-2016 11:10:35 America/Sao_Paulo] PHP Fatal error:  Call to undefined method CategoriesController::buttonTo() in /var/www/ecommerce_management/app/views/categories/_form.phtml on line 12
+[27-May-2016 11:11:54 America/Sao_Paulo] PHP Fatal error:  Call to undefined method CategoriesController::linkTo() in /var/www/ecommerce_management/app/views/categories/index.phtml on line 19
+[27-May-2016 11:12:25 America/Sao_Paulo] PHP Fatal error:  Call to undefined method CategoriesController::linkTo() in /var/www/ecommerce_management/app/views/categories/index.phtml on line 29
+[27-May-2016 11:16:55 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ProductsController::linkTo() in /var/www/ecommerce_management/app/views/products/index.phtml on line 35
+[27-May-2016 11:17:15 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ProductsController::linkTo() in /var/www/ecommerce_management/app/views/products/_form.phtml on line 48
+[27-May-2016 11:17:41 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ProductsController::linkTo() in /var/www/ecommerce_management/app/views/products/_form.phtml on line 48
+[27-May-2016 11:40:58 America/Sao_Paulo] PHP Fatal error:  Call to undefined method OrdersController::linkTo() in /var/www/ecommerce_management/app/views/orders/index.phtml on line 33
+[27-May-2016 11:41:36 America/Sao_Paulo] PHP Fatal error:  Call to undefined method OrdersController::linkTo() in /var/www/ecommerce_management/app/views/orders/_form_order.phtml on line 12
+[27-May-2016 11:41:50 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/order.php on line 65
+[27-May-2016 11:41:53 America/Sao_Paulo] PHP Fatal error:  Call to undefined method OrdersController::linkTo() in /var/www/ecommerce_management/app/views/orders/_form_order_items.phtml on line 19
+[27-May-2016 11:46:09 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientsController::linkTo() in /var/www/ecommerce_management/app/views/clients/index.phtml on line 37
+[27-May-2016 11:46:47 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientsController::linkTo() in /var/www/ecommerce_management/app/views/clients/index.phtml on line 37
+[27-May-2016 12:05:22 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '>' in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 64
+[27-May-2016 12:28:24 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '?>' in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 3
+[27-May-2016 12:29:40 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '?>' in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 2
+[27-May-2016 12:29:55 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '?>' in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 3
+[27-May-2016 12:44:41 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
+[27-May-2016 13:08:02 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 3
+[27-May-2016 13:08:02 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 4
+[27-May-2016 13:08:03 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 3
+[27-May-2016 13:08:03 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 4
+[27-May-2016 13:08:05 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 3
+[27-May-2016 13:08:05 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 4
+[27-May-2016 13:08:32 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 3
+[27-May-2016 13:08:32 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 4
+[27-May-2016 13:08:57 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 3
+[27-May-2016 13:08:57 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 4
+[27-May-2016 13:08:59 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 3
+[27-May-2016 13:08:59 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 4
+[27-May-2016 13:09:00 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 3
+[27-May-2016 13:09:00 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 4
+[27-May-2016 13:09:02 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 3
+[27-May-2016 13:09:02 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 4
+[27-May-2016 13:09:26 America/Sao_Paulo] PHP Notice:  Undefined variable: active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 3
+[27-May-2016 13:09:26 America/Sao_Paulo] PHP Notice:  Undefined variable: active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 4
+[27-May-2016 13:09:41 America/Sao_Paulo] PHP Notice:  Undefined variable: active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 3
+[27-May-2016 13:09:41 America/Sao_Paulo] PHP Notice:  Undefined variable: active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 4
+[27-May-2016 13:09:42 America/Sao_Paulo] PHP Notice:  Undefined variable: active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 3
+[27-May-2016 13:09:42 America/Sao_Paulo] PHP Notice:  Undefined variable: active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 4
+[27-May-2016 13:10:23 America/Sao_Paulo] PHP Notice:  Undefined variable: active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 3
+[27-May-2016 13:10:23 America/Sao_Paulo] PHP Notice:  Undefined variable: active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 4
+[27-May-2016 13:10:36 America/Sao_Paulo] PHP Notice:  Undefined variable: active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 3
+[27-May-2016 13:10:36 America/Sao_Paulo] PHP Notice:  Undefined variable: active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 4
+[27-May-2016 13:10:37 America/Sao_Paulo] PHP Notice:  Undefined variable: active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 3
+[27-May-2016 13:10:37 America/Sao_Paulo] PHP Notice:  Undefined variable: active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 4
+[27-May-2016 13:10:40 America/Sao_Paulo] PHP Notice:  Undefined variable: active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 3
+[27-May-2016 13:10:40 America/Sao_Paulo] PHP Notice:  Undefined variable: active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 4
+[27-May-2016 13:11:41 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '?>' in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 3
+[27-May-2016 13:12:06 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '?>' in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 3
+[27-May-2016 13:22:55 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`sell_orders_items`, CONSTRAINT `sell_orders_items_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`))' in /var/www/ecommerce_management/app/models/order.php:111
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(111): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(43): Order->delete()
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->destroy()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 111

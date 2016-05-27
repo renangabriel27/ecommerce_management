@@ -46,7 +46,17 @@ class ViewHelpers {
       $link = SITE_ROOT . $path;
     else
       $link = $path;
-    return "<a href='{$link}' {$options}><i {$icon}></i>$name</a>";
+    return "<a href='{$link}' {$options}><i {$icon} ></i>$name</a>";
+  }
+
+  /*
+   * Função para criar buttons.
+   */
+  public static function buttonTo($name, $options = '', $icon = '') {
+    if($icon != '')
+      return "<button type='submit' name='button' {$options}><i {$icon}></i>{$name} </button>";
+
+    return "<button type='submit' name='button' {$options}> {$name} </button>";
   }
 
   /*
@@ -103,9 +113,9 @@ class ViewHelpers {
   public static function activeClass($route) {
     $route = SITE_ROOT . $route;
     if (preg_match('#^' . $route . '$#', $_SERVER['REQUEST_URI']))
-      return 'active';
+      return 'item active';
 
-    return '';
+    return 'item';
   }
 
   public static function fullTitle($pageTitle = "") {

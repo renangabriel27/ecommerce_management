@@ -32,15 +32,6 @@
     exit();
   }
 
-  public static function linkTo($path, $name, $options = '', $icon = '') {
-    if (substr($path, 0, 1) == '/')
-      $link = SITE_ROOT . $path;
-    else
-      $link = $path;
-    return "<a href='{$link}' {$options}><i {$icon}></i>$name</a>";
-  }
-
-
   /*
    * Método destinada ao redirecionamento de páginas
    * Lembre-se que quando um endereço inicia-se com '/' diz respeito

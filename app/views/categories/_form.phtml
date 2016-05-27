@@ -3,12 +3,11 @@
   <div class="ui form">
     <div class="field <?= $this->category->getErrors('name') ? 'error' : '' ?>">
       <label for="category_name">Nome</label>
-      <input type="text" id="category_name" name="category[name]"
-      placeholder="Digite o nome da categoria" value="<?= $this->category->getName() ?>">
+      <input type="text" id="category_name" name="category[name]" placeholder="Digite o nome da categoria" value="<?= $this->category->getName() ?>">
       <div class="ui pointing <?= $this->category->getErrors('name') ? 'red basic label' : '' ?>"><?= $this->category->getErrors('name') ?></div>
     </div>
 
-    <?= $this->linkTo("/categorias", 'Voltar', 'class="ui left floated small labeled icon button"', 'class="reply icon"') ?>
-    <button type="submit" name="button" class="ui primary button"><?= $this->submit ?> </button>
+    <?= ViewHelpers::linkTo("/categorias", 'Voltar', 'class="ui left small labeled icon button"', 'class="reply icon"') ?>
+    <?= ViewHelpers::buttonTo($this->submit, 'class="ui right labeled icon primary button"', 'class="right arrow icon"') ?>
   </div>
 </form>

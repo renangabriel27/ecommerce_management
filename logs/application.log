@@ -828,3 +828,1710 @@
 [26.05.2016 - 20:37:29][NOTICE] - match: /logout with /logout
 [26.05.2016 - 20:37:29][NOTICE] - /ecommerce_management/login
 [26.05.2016 - 20:37:29][NOTICE] - match: /login with /login
+[26.05.2016 - 20:44:18][NOTICE] - /ecommerce_management/login
+[26.05.2016 - 20:44:18][NOTICE] - match: /login with /login
+[26.05.2016 - 20:44:18][NOTICE] - Aberta conexão com banco de dados!
+[26.05.2016 - 20:44:24][NOTICE] - /ecommerce_management/login
+[26.05.2016 - 20:44:24][NOTICE] - match: /login with /login
+[26.05.2016 - 20:44:24][NOTICE] - Aberta conexão com banco de dados!
+[26.05.2016 - 20:44:28][NOTICE] - /ecommerce_management/login
+[26.05.2016 - 20:44:28][NOTICE] - match: /login with /login
+[26.05.2016 - 20:44:28][NOTICE] - Aberta conexão com banco de dados!
+[26.05.2016 - 20:44:28][NOTICE] - /ecommerce_management/
+[26.05.2016 - 20:44:28][NOTICE] - match: / with /
+[26.05.2016 - 20:44:33][NOTICE] - /ecommerce_management/perfil
+[26.05.2016 - 20:44:33][NOTICE] - match: /perfil with /perfil
+[26.05.2016 - 20:44:33][NOTICE] - Aberta conexão com banco de dados!
+[26.05.2016 - 20:44:35][NOTICE] - /ecommerce_management/categorias/novo
+[26.05.2016 - 20:44:35][NOTICE] - match: /categorias/novo with /categorias/novo
+[26.05.2016 - 20:44:36][NOTICE] - /ecommerce_management/categorias
+[26.05.2016 - 20:44:36][NOTICE] - match: /categorias with /categorias
+[26.05.2016 - 20:44:36][NOTICE] - Aberta conexão com banco de dados!
+[26.05.2016 - 20:44:36][NOTICE] - /ecommerce_management/produtos
+[26.05.2016 - 20:44:36][NOTICE] - match: /produtos with /produtos
+[26.05.2016 - 20:44:36][NOTICE] - Aberta conexão com banco de dados!
+[26.05.2016 - 20:44:37][NOTICE] - /ecommerce_management/produtos/novo
+[26.05.2016 - 20:44:37][NOTICE] - match: /produtos/novo with /produtos/novo
+[26.05.2016 - 20:44:37][NOTICE] - Aberta conexão com banco de dados!
+[26.05.2016 - 20:44:49][NOTICE] - /ecommerce_management/pedidos/novo
+[26.05.2016 - 20:44:49][NOTICE] - match: /pedidos/novo with /pedidos/novo
+[26.05.2016 - 20:44:50][NOTICE] - /ecommerce_management/pedidos
+[26.05.2016 - 20:44:50][NOTICE] - match: /pedidos with /pedidos
+[26.05.2016 - 20:44:50][NOTICE] - Aberta conexão com banco de dados!
+[26.05.2016 - 20:44:51][NOTICE] - /ecommerce_management/clientes
+[26.05.2016 - 20:44:51][NOTICE] - match: /clientes with /clientes
+[26.05.2016 - 20:44:51][NOTICE] - Aberta conexão com banco de dados!
+[26.05.2016 - 20:44:51][NOTICE] - /ecommerce_management/clientes/novo/1
+[26.05.2016 - 20:44:51][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[26.05.2016 - 20:44:51][NOTICE] - Aberta conexão com banco de dados!
+[26.05.2016 - 20:44:53][NOTICE] - /ecommerce_management/clientes/novo/2
+[26.05.2016 - 20:44:53][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[26.05.2016 - 20:44:53][NOTICE] - Aberta conexão com banco de dados!
+[26.05.2016 - 20:44:56][NOTICE] - /ecommerce_management/logout
+[26.05.2016 - 20:44:56][NOTICE] - match: /logout with /logout
+[26.05.2016 - 20:44:56][NOTICE] - /ecommerce_management/login
+[26.05.2016 - 20:44:56][NOTICE] - match: /login with /login
+[27.05.2016 - 10:53:37][NOTICE] - /ecommerce_management/
+[27.05.2016 - 10:53:37][NOTICE] - match: / with /
+[27.05.2016 - 10:54:06][NOTICE] - /ecommerce_management/login
+[27.05.2016 - 10:54:06][NOTICE] - match: /login with /login
+[27.05.2016 - 10:54:36][NOTICE] - /ecommerce_management/login
+[27.05.2016 - 10:54:36][NOTICE] - match: /login with /login
+[27.05.2016 - 10:54:37][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 10:54:37][NOTICE] - /ecommerce_management/
+[27.05.2016 - 10:54:37][NOTICE] - match: / with /
+[27.05.2016 - 10:54:40][NOTICE] - /ecommerce_management/produtos
+[27.05.2016 - 10:54:40][NOTICE] - match: /produtos with /produtos
+[27.05.2016 - 10:54:40][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 10:54:41][NOTICE] - /ecommerce_management/produtos/novo
+[27.05.2016 - 10:54:41][NOTICE] - match: /produtos/novo with /produtos/novo
+[27.05.2016 - 10:54:41][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 10:54:43][NOTICE] - /ecommerce_management/pedidos
+[27.05.2016 - 10:54:43][NOTICE] - match: /pedidos with /pedidos
+[27.05.2016 - 10:54:43][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 10:54:44][NOTICE] - /ecommerce_management/clientes
+[27.05.2016 - 10:54:44][NOTICE] - match: /clientes with /clientes
+[27.05.2016 - 10:54:44][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 10:54:44][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 10:54:44][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 10:54:44][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 10:54:47][NOTICE] - /ecommerce_management/categorias
+[27.05.2016 - 10:54:47][NOTICE] - match: /categorias with /categorias
+[27.05.2016 - 10:54:47][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 10:54:49][NOTICE] - /ecommerce_management/categorias/novo
+[27.05.2016 - 10:54:49][NOTICE] - match: /categorias/novo with /categorias/novo
+[27.05.2016 - 10:54:50][NOTICE] - /ecommerce_management/produtos
+[27.05.2016 - 10:54:50][NOTICE] - match: /produtos with /produtos
+[27.05.2016 - 10:54:50][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 10:54:51][NOTICE] - /ecommerce_management/produtos/novo
+[27.05.2016 - 10:54:51][NOTICE] - match: /produtos/novo with /produtos/novo
+[27.05.2016 - 10:54:51][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 10:54:54][NOTICE] - /ecommerce_management/pedidos
+[27.05.2016 - 10:54:54][NOTICE] - match: /pedidos with /pedidos
+[27.05.2016 - 10:54:54][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 10:54:54][NOTICE] - /ecommerce_management/pedidos/novo
+[27.05.2016 - 10:54:54][NOTICE] - match: /pedidos/novo with /pedidos/novo
+[27.05.2016 - 10:54:56][NOTICE] - /ecommerce_management/clientes
+[27.05.2016 - 10:54:56][NOTICE] - match: /clientes with /clientes
+[27.05.2016 - 10:54:56][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 10:54:56][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 10:54:56][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 10:54:56][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 10:55:08][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 10:55:08][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 10:55:08][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 10:55:10][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 10:55:10][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 10:55:10][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 10:55:10][NOTICE] - /ecommerce_management/clientes
+[27.05.2016 - 10:55:10][NOTICE] - match: /clientes with /clientes
+[27.05.2016 - 10:55:10][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 10:56:51][NOTICE] - /ecommerce_management/clientes/7/deletar
+[27.05.2016 - 10:56:51][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/clientes/7/deletar
+[27.05.2016 - 10:56:51][NOTICE] - /ecommerce_management/
+[27.05.2016 - 10:56:51][NOTICE] - match: / with /
+[27.05.2016 - 10:56:54][NOTICE] - /ecommerce_management/clientes
+[27.05.2016 - 10:56:54][NOTICE] - match: /clientes with /clientes
+[27.05.2016 - 10:56:54][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 10:57:44][NOTICE] - /ecommerce_management/clientes
+[27.05.2016 - 10:57:44][NOTICE] - match: /clientes with /clientes
+[27.05.2016 - 10:57:44][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 10:57:45][NOTICE] - /ecommerce_management/categorias
+[27.05.2016 - 10:57:45][NOTICE] - match: /categorias with /categorias
+[27.05.2016 - 10:57:45][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 10:57:46][NOTICE] - /ecommerce_management/categorias/novo
+[27.05.2016 - 10:57:46][NOTICE] - match: /categorias/novo with /categorias/novo
+[27.05.2016 - 10:58:22][NOTICE] - /ecommerce_management/categorias/novo
+[27.05.2016 - 10:58:22][NOTICE] - match: /categorias/novo with /categorias/novo
+[27.05.2016 - 10:58:30][NOTICE] - /ecommerce_management/categorias/novo
+[27.05.2016 - 10:58:30][NOTICE] - match: /categorias/novo with /categorias/novo
+[27.05.2016 - 10:58:40][NOTICE] - /ecommerce_management/categorias/novo
+[27.05.2016 - 10:58:40][NOTICE] - match: /categorias/novo with /categorias/novo
+[27.05.2016 - 10:58:43][NOTICE] - /ecommerce_management/categorias
+[27.05.2016 - 10:58:43][NOTICE] - match: /categorias with /categorias
+[27.05.2016 - 10:58:43][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 10:58:47][NOTICE] - /ecommerce_management/categorias/novo
+[27.05.2016 - 10:58:47][NOTICE] - match: /categorias/novo with /categorias/novo
+[27.05.2016 - 10:59:31][NOTICE] - /ecommerce_management/categorias/novo
+[27.05.2016 - 10:59:31][NOTICE] - match: /categorias/novo with /categorias/novo
+[27.05.2016 - 11:01:28][NOTICE] - /ecommerce_management/categorias/novo
+[27.05.2016 - 11:01:28][NOTICE] - match: /categorias/novo with /categorias/novo
+[27.05.2016 - 11:08:34][NOTICE] - /ecommerce_management/categorias/novo
+[27.05.2016 - 11:08:34][NOTICE] - match: /categorias/novo with /categorias/novo
+[27.05.2016 - 11:08:42][NOTICE] - /ecommerce_management/pedidos
+[27.05.2016 - 11:08:42][NOTICE] - match: /pedidos with /pedidos
+[27.05.2016 - 11:08:42][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:08:44][NOTICE] - /ecommerce_management/categorias
+[27.05.2016 - 11:08:44][NOTICE] - match: /categorias with /categorias
+[27.05.2016 - 11:08:44][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:08:45][NOTICE] - /ecommerce_management/categorias/novo
+[27.05.2016 - 11:08:45][NOTICE] - match: /categorias/novo with /categorias/novo
+[27.05.2016 - 11:10:35][NOTICE] - /ecommerce_management/categorias/novo
+[27.05.2016 - 11:10:35][NOTICE] - match: /categorias/novo with /categorias/novo
+[27.05.2016 - 11:11:50][NOTICE] - /ecommerce_management/categorias/novo
+[27.05.2016 - 11:11:50][NOTICE] - match: /categorias/novo with /categorias/novo
+[27.05.2016 - 11:11:54][NOTICE] - /ecommerce_management/categorias
+[27.05.2016 - 11:11:54][NOTICE] - match: /categorias with /categorias
+[27.05.2016 - 11:11:54][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:12:25][NOTICE] - /ecommerce_management/categorias
+[27.05.2016 - 11:12:25][NOTICE] - match: /categorias with /categorias
+[27.05.2016 - 11:12:25][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:12:38][NOTICE] - /ecommerce_management/categorias
+[27.05.2016 - 11:12:38][NOTICE] - match: /categorias with /categorias
+[27.05.2016 - 11:12:38][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:12:39][NOTICE] - /ecommerce_management/categorias/novo
+[27.05.2016 - 11:12:39][NOTICE] - match: /categorias/novo with /categorias/novo
+[27.05.2016 - 11:12:58][NOTICE] - /ecommerce_management/categorias/novo
+[27.05.2016 - 11:12:58][NOTICE] - match: /categorias/novo with /categorias/novo
+[27.05.2016 - 11:13:07][NOTICE] - /ecommerce_management/categorias/novo
+[27.05.2016 - 11:13:07][NOTICE] - match: /categorias/novo with /categorias/novo
+[27.05.2016 - 11:13:17][NOTICE] - /ecommerce_management/categorias/novo
+[27.05.2016 - 11:13:17][NOTICE] - match: /categorias/novo with /categorias/novo
+[27.05.2016 - 11:13:30][NOTICE] - /ecommerce_management/categorias/novo
+[27.05.2016 - 11:13:30][NOTICE] - match: /categorias/novo with /categorias/novo
+[27.05.2016 - 11:13:41][NOTICE] - /ecommerce_management/categorias/novo
+[27.05.2016 - 11:13:41][NOTICE] - match: /categorias/novo with /categorias/novo
+[27.05.2016 - 11:15:08][NOTICE] - /ecommerce_management/categorias/novo
+[27.05.2016 - 11:15:08][NOTICE] - match: /categorias/novo with /categorias/novo
+[27.05.2016 - 11:15:33][NOTICE] - /ecommerce_management/categorias/novo
+[27.05.2016 - 11:15:33][NOTICE] - match: /categorias/novo with /categorias/novo
+[27.05.2016 - 11:15:43][NOTICE] - /ecommerce_management/categorias/novo
+[27.05.2016 - 11:15:43][NOTICE] - match: /categorias/novo with /categorias/novo
+[27.05.2016 - 11:15:46][NOTICE] - /ecommerce_management/categorias
+[27.05.2016 - 11:15:46][NOTICE] - match: /categorias with /categorias
+[27.05.2016 - 11:15:46][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:15:48][NOTICE] - /ecommerce_management/categorias
+[27.05.2016 - 11:15:48][NOTICE] - match: /categorias with /categorias
+[27.05.2016 - 11:15:48][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:15:50][NOTICE] - /ecommerce_management/categorias/3/editar
+[27.05.2016 - 11:15:50][NOTICE] - match: /categorias/:id/editar with /categorias/3/editar
+[27.05.2016 - 11:15:50][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:15:54][NOTICE] - /ecommerce_management/categorias/3
+[27.05.2016 - 11:15:54][NOTICE] - match: /categorias/:id with /categorias/3
+[27.05.2016 - 11:15:54][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:15:54][NOTICE] - /ecommerce_management/categorias
+[27.05.2016 - 11:15:54][NOTICE] - match: /categorias with /categorias
+[27.05.2016 - 11:15:54][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:15:57][NOTICE] - /ecommerce_management/categorias/3/editar
+[27.05.2016 - 11:15:57][NOTICE] - match: /categorias/:id/editar with /categorias/3/editar
+[27.05.2016 - 11:15:57][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:16:04][NOTICE] - /ecommerce_management/categorias
+[27.05.2016 - 11:16:04][NOTICE] - match: /categorias with /categorias
+[27.05.2016 - 11:16:04][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:16:05][NOTICE] - /ecommerce_management/categorias/novo
+[27.05.2016 - 11:16:05][NOTICE] - match: /categorias/novo with /categorias/novo
+[27.05.2016 - 11:16:08][NOTICE] - /ecommerce_management/categorias
+[27.05.2016 - 11:16:08][NOTICE] - match: /categorias with /categorias
+[27.05.2016 - 11:16:08][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:16:46][NOTICE] - /ecommerce_management/categorias
+[27.05.2016 - 11:16:46][NOTICE] - match: /categorias with /categorias
+[27.05.2016 - 11:16:46][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:16:52][NOTICE] - /ecommerce_management/categorias/novo
+[27.05.2016 - 11:16:52][NOTICE] - match: /categorias/novo with /categorias/novo
+[27.05.2016 - 11:16:54][NOTICE] - /ecommerce_management/categorias/novo
+[27.05.2016 - 11:16:54][NOTICE] - match: /categorias/novo with /categorias/novo
+[27.05.2016 - 11:16:55][NOTICE] - /ecommerce_management/produtos
+[27.05.2016 - 11:16:55][NOTICE] - match: /produtos with /produtos
+[27.05.2016 - 11:16:55][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:17:13][NOTICE] - /ecommerce_management/produtos
+[27.05.2016 - 11:17:13][NOTICE] - match: /produtos with /produtos
+[27.05.2016 - 11:17:13][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:17:15][NOTICE] - /ecommerce_management/produtos/novo
+[27.05.2016 - 11:17:15][NOTICE] - match: /produtos/novo with /produtos/novo
+[27.05.2016 - 11:17:15][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:17:41][NOTICE] - /ecommerce_management/produtos/novo
+[27.05.2016 - 11:17:41][NOTICE] - match: /produtos/novo with /produtos/novo
+[27.05.2016 - 11:17:41][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:17:54][NOTICE] - /ecommerce_management/produtos/novo
+[27.05.2016 - 11:17:54][NOTICE] - match: /produtos/novo with /produtos/novo
+[27.05.2016 - 11:17:54][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:17:57][NOTICE] - /ecommerce_management/produtos
+[27.05.2016 - 11:17:57][NOTICE] - match: /produtos with /produtos
+[27.05.2016 - 11:17:57][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:18:33][NOTICE] - /ecommerce_management/produtos
+[27.05.2016 - 11:18:33][NOTICE] - match: /produtos with /produtos
+[27.05.2016 - 11:18:33][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:19:01][NOTICE] - /ecommerce_management/produtos/novo
+[27.05.2016 - 11:19:01][NOTICE] - match: /produtos/novo with /produtos/novo
+[27.05.2016 - 11:19:01][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:19:02][NOTICE] - /ecommerce_management/produtos
+[27.05.2016 - 11:19:02][NOTICE] - match: /produtos with /produtos
+[27.05.2016 - 11:19:02][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:19:06][NOTICE] - /ecommerce_management/produtos/novo
+[27.05.2016 - 11:19:06][NOTICE] - match: /produtos/novo with /produtos/novo
+[27.05.2016 - 11:19:06][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:19:07][NOTICE] - /ecommerce_management/produtos
+[27.05.2016 - 11:19:07][NOTICE] - match: /produtos with /produtos
+[27.05.2016 - 11:19:07][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:21:58][NOTICE] - /ecommerce_management/produtos
+[27.05.2016 - 11:21:58][NOTICE] - match: /produtos with /produtos
+[27.05.2016 - 11:21:58][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:21:59][NOTICE] - /ecommerce_management/app/assets/semantic-ui/themes/default/assets/fonts/icons.woff2
+[27.05.2016 - 11:21:59][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/semantic-ui/themes/default/assets/fonts/icons.woff2
+[27.05.2016 - 11:21:59][NOTICE] - /ecommerce_management/
+[27.05.2016 - 11:21:59][NOTICE] - match: / with /
+[27.05.2016 - 11:22:01][NOTICE] - /ecommerce_management/perfil
+[27.05.2016 - 11:22:01][NOTICE] - match: /perfil with /perfil
+[27.05.2016 - 11:22:01][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:22:01][NOTICE] - /ecommerce_management/app/assets/semantic-ui/themes/default/assets/fonts/icons.woff2
+[27.05.2016 - 11:22:01][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/semantic-ui/themes/default/assets/fonts/icons.woff2
+[27.05.2016 - 11:22:01][NOTICE] - /ecommerce_management/
+[27.05.2016 - 11:22:01][NOTICE] - match: / with /
+[27.05.2016 - 11:22:01][NOTICE] - /ecommerce_management/app/assets/semantic-ui/themes/default/assets/fonts/icons.woff
+[27.05.2016 - 11:22:01][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/semantic-ui/themes/default/assets/fonts/icons.woff
+[27.05.2016 - 11:22:01][NOTICE] - /ecommerce_management/
+[27.05.2016 - 11:22:01][NOTICE] - match: / with /
+[27.05.2016 - 11:22:01][NOTICE] - /ecommerce_management/app/assets/semantic-ui/themes/default/assets/fonts/icons.ttf
+[27.05.2016 - 11:22:01][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/semantic-ui/themes/default/assets/fonts/icons.ttf
+[27.05.2016 - 11:22:01][NOTICE] - /ecommerce_management/
+[27.05.2016 - 11:22:01][NOTICE] - match: / with /
+[27.05.2016 - 11:22:01][NOTICE] - /ecommerce_management/app/assets/semantic-ui/css/themes/default/assets/fonts/icons.woff2
+[27.05.2016 - 11:22:01][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/semantic-ui/css/themes/default/assets/fonts/icons.woff2
+[27.05.2016 - 11:22:01][NOTICE] - /ecommerce_management/
+[27.05.2016 - 11:22:01][NOTICE] - match: / with /
+[27.05.2016 - 11:22:01][NOTICE] - /ecommerce_management/app/assets/semantic-ui/css/themes/default/assets/fonts/icons.woff
+[27.05.2016 - 11:22:01][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/semantic-ui/css/themes/default/assets/fonts/icons.woff
+[27.05.2016 - 11:22:01][NOTICE] - /ecommerce_management/
+[27.05.2016 - 11:22:01][NOTICE] - match: / with /
+[27.05.2016 - 11:22:01][NOTICE] - /ecommerce_management/app/assets/semantic-ui/css/themes/default/assets/fonts/icons.ttf
+[27.05.2016 - 11:22:01][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/semantic-ui/css/themes/default/assets/fonts/icons.ttf
+[27.05.2016 - 11:22:01][NOTICE] - /ecommerce_management/
+[27.05.2016 - 11:22:01][NOTICE] - match: / with /
+[27.05.2016 - 11:22:04][NOTICE] - /ecommerce_management/categorias/novo
+[27.05.2016 - 11:22:04][NOTICE] - match: /categorias/novo with /categorias/novo
+[27.05.2016 - 11:22:04][NOTICE] - /ecommerce_management/app/assets/semantic-ui/themes/default/assets/fonts/icons.woff2
+[27.05.2016 - 11:22:04][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/semantic-ui/themes/default/assets/fonts/icons.woff2
+[27.05.2016 - 11:22:04][NOTICE] - /ecommerce_management/
+[27.05.2016 - 11:22:04][NOTICE] - match: / with /
+[27.05.2016 - 11:22:04][NOTICE] - /ecommerce_management/app/assets/semantic-ui/themes/default/assets/fonts/icons.woff
+[27.05.2016 - 11:22:04][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/semantic-ui/themes/default/assets/fonts/icons.woff
+[27.05.2016 - 11:22:04][NOTICE] - /ecommerce_management/
+[27.05.2016 - 11:22:04][NOTICE] - match: / with /
+[27.05.2016 - 11:22:04][NOTICE] - /ecommerce_management/app/assets/semantic-ui/themes/default/assets/fonts/icons.ttf
+[27.05.2016 - 11:22:04][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/semantic-ui/themes/default/assets/fonts/icons.ttf
+[27.05.2016 - 11:22:04][NOTICE] - /ecommerce_management/
+[27.05.2016 - 11:22:04][NOTICE] - match: / with /
+[27.05.2016 - 11:22:04][NOTICE] - /ecommerce_management/app/assets/semantic-ui/css/themes/default/assets/fonts/icons.woff2
+[27.05.2016 - 11:22:04][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/semantic-ui/css/themes/default/assets/fonts/icons.woff2
+[27.05.2016 - 11:22:04][NOTICE] - /ecommerce_management/
+[27.05.2016 - 11:22:04][NOTICE] - match: / with /
+[27.05.2016 - 11:22:04][NOTICE] - /ecommerce_management/app/assets/semantic-ui/css/themes/default/assets/fonts/icons.woff
+[27.05.2016 - 11:22:04][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/semantic-ui/css/themes/default/assets/fonts/icons.woff
+[27.05.2016 - 11:22:04][NOTICE] - /ecommerce_management/
+[27.05.2016 - 11:22:04][NOTICE] - match: / with /
+[27.05.2016 - 11:22:04][NOTICE] - /ecommerce_management/app/assets/semantic-ui/css/themes/default/assets/fonts/icons.ttf
+[27.05.2016 - 11:22:04][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/semantic-ui/css/themes/default/assets/fonts/icons.ttf
+[27.05.2016 - 11:22:04][NOTICE] - /ecommerce_management/
+[27.05.2016 - 11:22:04][NOTICE] - match: / with /
+[27.05.2016 - 11:22:06][NOTICE] - /ecommerce_management/categorias
+[27.05.2016 - 11:22:06][NOTICE] - match: /categorias with /categorias
+[27.05.2016 - 11:22:06][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:22:06][NOTICE] - /ecommerce_management/app/assets/semantic-ui/themes/default/assets/fonts/icons.woff2
+[27.05.2016 - 11:22:06][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/semantic-ui/themes/default/assets/fonts/icons.woff2
+[27.05.2016 - 11:22:06][NOTICE] - /ecommerce_management/
+[27.05.2016 - 11:22:06][NOTICE] - match: / with /
+[27.05.2016 - 11:22:06][NOTICE] - /ecommerce_management/app/assets/semantic-ui/themes/default/assets/fonts/icons.woff
+[27.05.2016 - 11:22:06][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/semantic-ui/themes/default/assets/fonts/icons.woff
+[27.05.2016 - 11:22:06][NOTICE] - /ecommerce_management/
+[27.05.2016 - 11:22:06][NOTICE] - match: / with /
+[27.05.2016 - 11:22:06][NOTICE] - /ecommerce_management/app/assets/semantic-ui/themes/default/assets/fonts/icons.ttf
+[27.05.2016 - 11:22:06][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/semantic-ui/themes/default/assets/fonts/icons.ttf
+[27.05.2016 - 11:22:06][NOTICE] - /ecommerce_management/
+[27.05.2016 - 11:22:06][NOTICE] - match: / with /
+[27.05.2016 - 11:22:06][NOTICE] - /ecommerce_management/app/assets/semantic-ui/css/themes/default/assets/fonts/icons.woff2
+[27.05.2016 - 11:22:06][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/semantic-ui/css/themes/default/assets/fonts/icons.woff2
+[27.05.2016 - 11:22:06][NOTICE] - /ecommerce_management/
+[27.05.2016 - 11:22:06][NOTICE] - match: / with /
+[27.05.2016 - 11:22:06][NOTICE] - /ecommerce_management/app/assets/semantic-ui/css/themes/default/assets/fonts/icons.woff
+[27.05.2016 - 11:22:06][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/semantic-ui/css/themes/default/assets/fonts/icons.woff
+[27.05.2016 - 11:22:06][NOTICE] - /ecommerce_management/
+[27.05.2016 - 11:22:06][NOTICE] - match: / with /
+[27.05.2016 - 11:22:06][NOTICE] - /ecommerce_management/app/assets/semantic-ui/css/themes/default/assets/fonts/icons.ttf
+[27.05.2016 - 11:22:06][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/semantic-ui/css/themes/default/assets/fonts/icons.ttf
+[27.05.2016 - 11:22:06][NOTICE] - /ecommerce_management/
+[27.05.2016 - 11:22:06][NOTICE] - match: / with /
+[27.05.2016 - 11:22:08][NOTICE] - /ecommerce_management/produtos
+[27.05.2016 - 11:22:08][NOTICE] - match: /produtos with /produtos
+[27.05.2016 - 11:22:08][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:22:08][NOTICE] - /ecommerce_management/app/assets/semantic-ui/themes/default/assets/fonts/icons.woff2
+[27.05.2016 - 11:22:08][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/semantic-ui/themes/default/assets/fonts/icons.woff2
+[27.05.2016 - 11:22:08][NOTICE] - /ecommerce_management/
+[27.05.2016 - 11:22:08][NOTICE] - match: / with /
+[27.05.2016 - 11:22:08][NOTICE] - /ecommerce_management/app/assets/semantic-ui/themes/default/assets/fonts/icons.woff
+[27.05.2016 - 11:22:08][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/semantic-ui/themes/default/assets/fonts/icons.woff
+[27.05.2016 - 11:22:08][NOTICE] - /ecommerce_management/
+[27.05.2016 - 11:22:08][NOTICE] - match: / with /
+[27.05.2016 - 11:22:08][NOTICE] - /ecommerce_management/app/assets/semantic-ui/themes/default/assets/fonts/icons.ttf
+[27.05.2016 - 11:22:08][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/semantic-ui/themes/default/assets/fonts/icons.ttf
+[27.05.2016 - 11:22:08][NOTICE] - /ecommerce_management/
+[27.05.2016 - 11:22:08][NOTICE] - match: / with /
+[27.05.2016 - 11:22:08][NOTICE] - /ecommerce_management/app/assets/semantic-ui/css/themes/default/assets/fonts/icons.woff2
+[27.05.2016 - 11:22:08][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/semantic-ui/css/themes/default/assets/fonts/icons.woff2
+[27.05.2016 - 11:22:08][NOTICE] - /ecommerce_management/
+[27.05.2016 - 11:22:08][NOTICE] - match: / with /
+[27.05.2016 - 11:22:08][NOTICE] - /ecommerce_management/app/assets/semantic-ui/css/themes/default/assets/fonts/icons.woff
+[27.05.2016 - 11:22:08][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/semantic-ui/css/themes/default/assets/fonts/icons.woff
+[27.05.2016 - 11:22:08][NOTICE] - /ecommerce_management/
+[27.05.2016 - 11:22:08][NOTICE] - match: / with /
+[27.05.2016 - 11:22:08][NOTICE] - /ecommerce_management/app/assets/semantic-ui/css/themes/default/assets/fonts/icons.ttf
+[27.05.2016 - 11:22:08][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/semantic-ui/css/themes/default/assets/fonts/icons.ttf
+[27.05.2016 - 11:22:08][NOTICE] - /ecommerce_management/
+[27.05.2016 - 11:22:08][NOTICE] - match: / with /
+[27.05.2016 - 11:22:09][NOTICE] - /ecommerce_management/categorias/novo
+[27.05.2016 - 11:22:09][NOTICE] - match: /categorias/novo with /categorias/novo
+[27.05.2016 - 11:22:10][NOTICE] - /ecommerce_management/app/assets/semantic-ui/themes/default/assets/fonts/icons.woff2
+[27.05.2016 - 11:22:10][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/semantic-ui/themes/default/assets/fonts/icons.woff2
+[27.05.2016 - 11:22:10][NOTICE] - /ecommerce_management/
+[27.05.2016 - 11:22:10][NOTICE] - match: / with /
+[27.05.2016 - 11:22:10][NOTICE] - /ecommerce_management/app/assets/semantic-ui/themes/default/assets/fonts/icons.woff
+[27.05.2016 - 11:22:10][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/semantic-ui/themes/default/assets/fonts/icons.woff
+[27.05.2016 - 11:22:10][NOTICE] - /ecommerce_management/
+[27.05.2016 - 11:22:10][NOTICE] - match: / with /
+[27.05.2016 - 11:22:10][NOTICE] - /ecommerce_management/app/assets/semantic-ui/themes/default/assets/fonts/icons.ttf
+[27.05.2016 - 11:22:10][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/semantic-ui/themes/default/assets/fonts/icons.ttf
+[27.05.2016 - 11:22:10][NOTICE] - /ecommerce_management/
+[27.05.2016 - 11:22:10][NOTICE] - match: / with /
+[27.05.2016 - 11:22:10][NOTICE] - /ecommerce_management/app/assets/semantic-ui/css/themes/default/assets/fonts/icons.woff2
+[27.05.2016 - 11:22:10][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/semantic-ui/css/themes/default/assets/fonts/icons.woff2
+[27.05.2016 - 11:22:10][NOTICE] - /ecommerce_management/
+[27.05.2016 - 11:22:10][NOTICE] - match: / with /
+[27.05.2016 - 11:22:10][NOTICE] - /ecommerce_management/app/assets/semantic-ui/css/themes/default/assets/fonts/icons.woff
+[27.05.2016 - 11:22:10][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/semantic-ui/css/themes/default/assets/fonts/icons.woff
+[27.05.2016 - 11:22:10][NOTICE] - /ecommerce_management/
+[27.05.2016 - 11:22:10][NOTICE] - match: / with /
+[27.05.2016 - 11:22:10][NOTICE] - /ecommerce_management/app/assets/semantic-ui/css/themes/default/assets/fonts/icons.ttf
+[27.05.2016 - 11:22:10][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/semantic-ui/css/themes/default/assets/fonts/icons.ttf
+[27.05.2016 - 11:22:10][NOTICE] - /ecommerce_management/
+[27.05.2016 - 11:22:10][NOTICE] - match: / with /
+[27.05.2016 - 11:22:10][NOTICE] - /ecommerce_management/categorias
+[27.05.2016 - 11:22:10][NOTICE] - match: /categorias with /categorias
+[27.05.2016 - 11:22:10][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:22:10][NOTICE] - /ecommerce_management/app/assets/semantic-ui/themes/default/assets/fonts/icons.woff2
+[27.05.2016 - 11:22:10][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/semantic-ui/themes/default/assets/fonts/icons.woff2
+[27.05.2016 - 11:22:10][NOTICE] - /ecommerce_management/
+[27.05.2016 - 11:22:10][NOTICE] - match: / with /
+[27.05.2016 - 11:22:10][NOTICE] - /ecommerce_management/app/assets/semantic-ui/themes/default/assets/fonts/icons.woff
+[27.05.2016 - 11:22:10][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/semantic-ui/themes/default/assets/fonts/icons.woff
+[27.05.2016 - 11:22:10][NOTICE] - /ecommerce_management/
+[27.05.2016 - 11:22:10][NOTICE] - match: / with /
+[27.05.2016 - 11:22:10][NOTICE] - /ecommerce_management/app/assets/semantic-ui/themes/default/assets/fonts/icons.ttf
+[27.05.2016 - 11:22:10][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/semantic-ui/themes/default/assets/fonts/icons.ttf
+[27.05.2016 - 11:22:10][NOTICE] - /ecommerce_management/
+[27.05.2016 - 11:22:10][NOTICE] - match: / with /
+[27.05.2016 - 11:22:10][NOTICE] - /ecommerce_management/app/assets/semantic-ui/css/themes/default/assets/fonts/icons.woff2
+[27.05.2016 - 11:22:10][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/semantic-ui/css/themes/default/assets/fonts/icons.woff2
+[27.05.2016 - 11:22:10][NOTICE] - /ecommerce_management/
+[27.05.2016 - 11:22:10][NOTICE] - match: / with /
+[27.05.2016 - 11:22:10][NOTICE] - /ecommerce_management/app/assets/semantic-ui/css/themes/default/assets/fonts/icons.woff
+[27.05.2016 - 11:22:10][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/semantic-ui/css/themes/default/assets/fonts/icons.woff
+[27.05.2016 - 11:22:10][NOTICE] - /ecommerce_management/
+[27.05.2016 - 11:22:10][NOTICE] - match: / with /
+[27.05.2016 - 11:22:10][NOTICE] - /ecommerce_management/app/assets/semantic-ui/css/themes/default/assets/fonts/icons.ttf
+[27.05.2016 - 11:22:10][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/app/assets/semantic-ui/css/themes/default/assets/fonts/icons.ttf
+[27.05.2016 - 11:22:10][NOTICE] - /ecommerce_management/
+[27.05.2016 - 11:22:10][NOTICE] - match: / with /
+[27.05.2016 - 11:22:37][NOTICE] - /ecommerce_management/categorias
+[27.05.2016 - 11:22:37][NOTICE] - match: /categorias with /categorias
+[27.05.2016 - 11:22:37][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:22:39][NOTICE] - /ecommerce_management/perfil
+[27.05.2016 - 11:22:39][NOTICE] - match: /perfil with /perfil
+[27.05.2016 - 11:22:39][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:22:41][NOTICE] - /ecommerce_management/
+[27.05.2016 - 11:22:41][NOTICE] - match: / with /
+[27.05.2016 - 11:22:42][NOTICE] - /ecommerce_management/perfil
+[27.05.2016 - 11:22:42][NOTICE] - match: /perfil with /perfil
+[27.05.2016 - 11:22:42][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:22:42][NOTICE] - /ecommerce_management/categorias/novo
+[27.05.2016 - 11:22:42][NOTICE] - match: /categorias/novo with /categorias/novo
+[27.05.2016 - 11:22:43][NOTICE] - /ecommerce_management/produtos/novo
+[27.05.2016 - 11:22:43][NOTICE] - match: /produtos/novo with /produtos/novo
+[27.05.2016 - 11:22:43][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:22:44][NOTICE] - /ecommerce_management/produtos
+[27.05.2016 - 11:22:44][NOTICE] - match: /produtos with /produtos
+[27.05.2016 - 11:22:44][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:28:51][NOTICE] - /ecommerce_management/produtos/novo
+[27.05.2016 - 11:28:51][NOTICE] - match: /produtos/novo with /produtos/novo
+[27.05.2016 - 11:28:51][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:28:52][NOTICE] - /ecommerce_management/produtos
+[27.05.2016 - 11:28:52][NOTICE] - match: /produtos with /produtos
+[27.05.2016 - 11:28:52][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:29:46][NOTICE] - /ecommerce_management/produtos
+[27.05.2016 - 11:29:46][NOTICE] - match: /produtos with /produtos
+[27.05.2016 - 11:29:46][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:30:09][NOTICE] - /ecommerce_management/produtos/novo
+[27.05.2016 - 11:30:09][NOTICE] - match: /produtos/novo with /produtos/novo
+[27.05.2016 - 11:30:09][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:30:11][NOTICE] - /ecommerce_management/produtos
+[27.05.2016 - 11:30:11][NOTICE] - match: /produtos with /produtos
+[27.05.2016 - 11:30:11][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:31:12][NOTICE] - /ecommerce_management/produtos/novo
+[27.05.2016 - 11:31:12][NOTICE] - match: /produtos/novo with /produtos/novo
+[27.05.2016 - 11:31:12][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:31:13][NOTICE] - /ecommerce_management/produtos
+[27.05.2016 - 11:31:13][NOTICE] - match: /produtos with /produtos
+[27.05.2016 - 11:31:13][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:31:37][NOTICE] - /ecommerce_management/produtos
+[27.05.2016 - 11:31:37][NOTICE] - match: /produtos with /produtos
+[27.05.2016 - 11:31:37][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:31:40][NOTICE] - /ecommerce_management/produtos
+[27.05.2016 - 11:31:40][NOTICE] - match: /produtos with /produtos
+[27.05.2016 - 11:31:40][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:31:40][NOTICE] - /ecommerce_management/produtos/novo
+[27.05.2016 - 11:31:40][NOTICE] - match: /produtos/novo with /produtos/novo
+[27.05.2016 - 11:31:40][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:31:41][NOTICE] - /ecommerce_management/produtos
+[27.05.2016 - 11:31:41][NOTICE] - match: /produtos with /produtos
+[27.05.2016 - 11:31:41][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:40:49][NOTICE] - /ecommerce_management/produtos/novo
+[27.05.2016 - 11:40:49][NOTICE] - match: /produtos/novo with /produtos/novo
+[27.05.2016 - 11:40:49][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:40:50][NOTICE] - /ecommerce_management/produtos
+[27.05.2016 - 11:40:50][NOTICE] - match: /produtos with /produtos
+[27.05.2016 - 11:40:50][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:40:52][NOTICE] - /ecommerce_management/produtos/novo
+[27.05.2016 - 11:40:52][NOTICE] - match: /produtos/novo with /produtos/novo
+[27.05.2016 - 11:40:52][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:40:54][NOTICE] - /ecommerce_management/produtos
+[27.05.2016 - 11:40:54][NOTICE] - match: /produtos with /produtos
+[27.05.2016 - 11:40:54][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:40:55][NOTICE] - /ecommerce_management/produtos
+[27.05.2016 - 11:40:55][NOTICE] - match: /produtos with /produtos
+[27.05.2016 - 11:40:55][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:40:56][NOTICE] - /ecommerce_management/produtos
+[27.05.2016 - 11:40:56][NOTICE] - match: /produtos with /produtos
+[27.05.2016 - 11:40:56][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:40:56][NOTICE] - /ecommerce_management/produtos/novo
+[27.05.2016 - 11:40:56][NOTICE] - match: /produtos/novo with /produtos/novo
+[27.05.2016 - 11:40:56][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:40:58][NOTICE] - /ecommerce_management/pedidos
+[27.05.2016 - 11:40:58][NOTICE] - match: /pedidos with /pedidos
+[27.05.2016 - 11:40:58][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:41:34][NOTICE] - /ecommerce_management/pedidos
+[27.05.2016 - 11:41:34][NOTICE] - match: /pedidos with /pedidos
+[27.05.2016 - 11:41:34][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:41:36][NOTICE] - /ecommerce_management/pedidos/novo
+[27.05.2016 - 11:41:36][NOTICE] - match: /pedidos/novo with /pedidos/novo
+[27.05.2016 - 11:41:48][NOTICE] - /ecommerce_management/pedidos/novo
+[27.05.2016 - 11:41:48][NOTICE] - match: /pedidos/novo with /pedidos/novo
+[27.05.2016 - 11:41:49][NOTICE] - /ecommerce_management/clientes/autocomplete-search?query=re
+[27.05.2016 - 11:41:49][NOTICE] - match: /clientes/autocomplete-search with /clientes/autocomplete-search
+[27.05.2016 - 11:41:49][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:41:50][NOTICE] - /ecommerce_management/pedidos
+[27.05.2016 - 11:41:50][NOTICE] - match: /pedidos with /pedidos
+[27.05.2016 - 11:41:50][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:41:50][NOTICE] - /ecommerce_management/pedidos
+[27.05.2016 - 11:41:50][NOTICE] - match: /pedidos with /pedidos
+[27.05.2016 - 11:41:50][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:41:52][NOTICE] - /ecommerce_management/pedidos/1
+[27.05.2016 - 11:41:52][NOTICE] - match: /pedidos/:id with /pedidos/1
+[27.05.2016 - 11:41:52][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:42:02][NOTICE] - /ecommerce_management/pedidos/1
+[27.05.2016 - 11:42:02][NOTICE] - match: /pedidos/:id with /pedidos/1
+[27.05.2016 - 11:42:02][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:42:06][NOTICE] - /ecommerce_management/produtos/autocomplete-search?query=c
+[27.05.2016 - 11:42:06][NOTICE] - match: /produtos/autocomplete-search with /produtos/autocomplete-search
+[27.05.2016 - 11:42:06][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:42:07][NOTICE] - /ecommerce_management/pedidos/produtos
+[27.05.2016 - 11:42:07][NOTICE] - match: /pedidos/produtos with /pedidos/produtos
+[27.05.2016 - 11:42:07][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:42:07][NOTICE] - /ecommerce_management/pedidos/1
+[27.05.2016 - 11:42:07][NOTICE] - match: /pedidos/:id with /pedidos/1
+[27.05.2016 - 11:42:07][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:42:18][NOTICE] - /ecommerce_management/pedidos/1
+[27.05.2016 - 11:42:18][NOTICE] - match: /pedidos/:id with /pedidos/1
+[27.05.2016 - 11:42:18][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:42:43][NOTICE] - /ecommerce_management/pedidos/1
+[27.05.2016 - 11:42:43][NOTICE] - match: /pedidos/:id with /pedidos/1
+[27.05.2016 - 11:42:43][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:42:54][NOTICE] - /ecommerce_management/pedidos/1
+[27.05.2016 - 11:42:54][NOTICE] - match: /pedidos/:id with /pedidos/1
+[27.05.2016 - 11:42:54][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:42:58][NOTICE] - /ecommerce_management/pedidos/1
+[27.05.2016 - 11:42:58][NOTICE] - match: /pedidos/:id with /pedidos/1
+[27.05.2016 - 11:42:58][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:44:12][NOTICE] - /ecommerce_management/pedidos/1
+[27.05.2016 - 11:44:12][NOTICE] - match: /pedidos/:id with /pedidos/1
+[27.05.2016 - 11:44:12][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:44:23][NOTICE] - /ecommerce_management/pedidos/1
+[27.05.2016 - 11:44:23][NOTICE] - match: /pedidos/:id with /pedidos/1
+[27.05.2016 - 11:44:23][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:45:24][NOTICE] - /ecommerce_management/pedidos/1
+[27.05.2016 - 11:45:24][NOTICE] - match: /pedidos/:id with /pedidos/1
+[27.05.2016 - 11:45:24][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:45:25][NOTICE] - /ecommerce_management/pedidos
+[27.05.2016 - 11:45:25][NOTICE] - match: /pedidos with /pedidos
+[27.05.2016 - 11:45:25][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:45:26][NOTICE] - /ecommerce_management/pedidos/novo
+[27.05.2016 - 11:45:26][NOTICE] - match: /pedidos/novo with /pedidos/novo
+[27.05.2016 - 11:45:28][NOTICE] - /ecommerce_management/pedidos
+[27.05.2016 - 11:45:28][NOTICE] - match: /pedidos with /pedidos
+[27.05.2016 - 11:45:28][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:45:55][NOTICE] - /ecommerce_management/pedidos
+[27.05.2016 - 11:45:55][NOTICE] - match: /pedidos with /pedidos
+[27.05.2016 - 11:45:55][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:45:56][NOTICE] - /ecommerce_management/pedidos/novo
+[27.05.2016 - 11:45:56][NOTICE] - match: /pedidos/novo with /pedidos/novo
+[27.05.2016 - 11:45:57][NOTICE] - /ecommerce_management/pedidos
+[27.05.2016 - 11:45:57][NOTICE] - match: /pedidos with /pedidos
+[27.05.2016 - 11:45:57][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:45:58][NOTICE] - /ecommerce_management/pedidos
+[27.05.2016 - 11:45:58][NOTICE] - match: /pedidos with /pedidos
+[27.05.2016 - 11:45:58][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:46:01][NOTICE] - /ecommerce_management/pedidos/1
+[27.05.2016 - 11:46:01][NOTICE] - match: /pedidos/:id with /pedidos/1
+[27.05.2016 - 11:46:01][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:46:06][NOTICE] - /ecommerce_management/pedidos
+[27.05.2016 - 11:46:06][NOTICE] - match: /pedidos with /pedidos
+[27.05.2016 - 11:46:06][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:46:07][NOTICE] - /ecommerce_management/pedidos
+[27.05.2016 - 11:46:07][NOTICE] - match: /pedidos with /pedidos
+[27.05.2016 - 11:46:07][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:46:08][NOTICE] - /ecommerce_management/pedidos/novo
+[27.05.2016 - 11:46:08][NOTICE] - match: /pedidos/novo with /pedidos/novo
+[27.05.2016 - 11:46:09][NOTICE] - /ecommerce_management/clientes
+[27.05.2016 - 11:46:09][NOTICE] - match: /clientes with /clientes
+[27.05.2016 - 11:46:09][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:46:47][NOTICE] - /ecommerce_management/clientes
+[27.05.2016 - 11:46:47][NOTICE] - match: /clientes with /clientes
+[27.05.2016 - 11:46:47][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:46:57][NOTICE] - /ecommerce_management/clientes
+[27.05.2016 - 11:46:57][NOTICE] - match: /clientes with /clientes
+[27.05.2016 - 11:46:57][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:46:59][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 11:46:59][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 11:46:59][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:47:52][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 11:47:52][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 11:47:52][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:47:59][NOTICE] - /ecommerce_management/categorias
+[27.05.2016 - 11:47:59][NOTICE] - match: /categorias with /categorias
+[27.05.2016 - 11:47:59][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:48:00][NOTICE] - /ecommerce_management/categorias/novo
+[27.05.2016 - 11:48:00][NOTICE] - match: /categorias/novo with /categorias/novo
+[27.05.2016 - 11:48:07][NOTICE] - /ecommerce_management/clientes
+[27.05.2016 - 11:48:07][NOTICE] - match: /clientes with /clientes
+[27.05.2016 - 11:48:07][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:48:08][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 11:48:08][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 11:48:08][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:48:26][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 11:48:26][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 11:48:26][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:48:37][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 11:48:37][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 11:48:37][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 11:48:44][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 11:48:44][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 11:48:44][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:01:58][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:01:58][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:01:58][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:02:47][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:02:47][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:02:47][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:02:57][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:02:57][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:02:57][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:03:16][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:03:16][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:03:16][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:03:26][NOTICE] - /ecommerce_management/clientes
+[27.05.2016 - 12:03:26][NOTICE] - match: /clientes with /clientes
+[27.05.2016 - 12:03:26][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:03:26][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:03:26][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:03:26][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:03:27][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:03:27][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:03:27][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:03:28][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:03:28][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:03:28][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:05:22][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:05:22][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:05:22][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:05:32][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:05:32][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:05:32][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:06:06][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:06:06][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:06:06][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:06:13][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:06:13][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:06:13][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:06:22][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:06:22][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:06:22][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:06:29][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:06:29][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:06:29][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:07:03][NOTICE] - /ecommerce_management/categorias/novo
+[27.05.2016 - 12:07:03][NOTICE] - match: /categorias/novo with /categorias/novo
+[27.05.2016 - 12:07:22][NOTICE] - /ecommerce_management/categorias/novo
+[27.05.2016 - 12:07:22][NOTICE] - match: /categorias/novo with /categorias/novo
+[27.05.2016 - 12:07:24][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:07:24][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:07:24][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:07:29][NOTICE] - /ecommerce_management/categorias
+[27.05.2016 - 12:07:29][NOTICE] - match: /categorias with /categorias
+[27.05.2016 - 12:07:29][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:07:31][NOTICE] - /ecommerce_management/categorias/novo
+[27.05.2016 - 12:07:31][NOTICE] - match: /categorias/novo with /categorias/novo
+[27.05.2016 - 12:07:33][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:07:33][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:07:33][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:07:36][NOTICE] - /ecommerce_management/clientes
+[27.05.2016 - 12:07:36][NOTICE] - match: /clientes with /clientes
+[27.05.2016 - 12:07:36][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:07:38][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:07:38][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:07:38][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:07:40][NOTICE] - /ecommerce_management/clientes/novo
+[27.05.2016 - 12:07:40][NOTICE] - match: /clientes/novo with /clientes/novo
+[27.05.2016 - 12:07:40][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:07:42][NOTICE] - /ecommerce_management/clientes
+[27.05.2016 - 12:07:42][NOTICE] - match: /clientes with /clientes
+[27.05.2016 - 12:07:42][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:07:43][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:07:43][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:07:43][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:07:44][NOTICE] - /ecommerce_management/clientes
+[27.05.2016 - 12:07:44][NOTICE] - match: /clientes with /clientes
+[27.05.2016 - 12:07:44][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:07:45][NOTICE] - /ecommerce_management/categorias/novo
+[27.05.2016 - 12:07:45][NOTICE] - match: /categorias/novo with /categorias/novo
+[27.05.2016 - 12:07:49][NOTICE] - /ecommerce_management/categorias
+[27.05.2016 - 12:07:49][NOTICE] - match: /categorias with /categorias
+[27.05.2016 - 12:07:49][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:07:50][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:07:50][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:07:50][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:07:52][NOTICE] - /ecommerce_management/clientes
+[27.05.2016 - 12:07:52][NOTICE] - match: /clientes with /clientes
+[27.05.2016 - 12:07:52][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:07:53][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:07:53][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:07:53][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:07:56][NOTICE] - /ecommerce_management/categorias/novo
+[27.05.2016 - 12:07:56][NOTICE] - match: /categorias/novo with /categorias/novo
+[27.05.2016 - 12:08:12][NOTICE] - /ecommerce_management/categorias/novo
+[27.05.2016 - 12:08:12][NOTICE] - match: /categorias/novo with /categorias/novo
+[27.05.2016 - 12:08:18][NOTICE] - /ecommerce_management/categorias
+[27.05.2016 - 12:08:18][NOTICE] - match: /categorias with /categorias
+[27.05.2016 - 12:08:18][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:08:22][NOTICE] - /ecommerce_management/categorias
+[27.05.2016 - 12:08:22][NOTICE] - match: /categorias with /categorias
+[27.05.2016 - 12:08:22][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:08:24][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:08:24][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:08:24][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:09:12][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:09:12][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:09:12][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:09:37][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:09:37][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:09:37][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:09:49][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:09:49][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:09:49][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:09:59][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:09:59][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:09:59][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:10:07][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:10:07][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:10:07][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:10:20][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:10:20][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:10:20][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:10:35][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:10:35][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:10:35][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:11:00][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:11:00][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:11:00][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:11:26][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:11:26][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:11:26][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:11:33][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:11:33][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:11:33][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:11:38][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:11:38][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:11:38][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:11:42][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:11:42][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:11:42][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:11:47][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:11:47][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:11:47][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:11:57][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:11:57][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:11:57][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:12:08][NOTICE] - /ecommerce_management/clientes/novo
+[27.05.2016 - 12:12:08][NOTICE] - match: /clientes/novo with /clientes/novo
+[27.05.2016 - 12:12:08][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:12:09][NOTICE] - /ecommerce_management/clientes
+[27.05.2016 - 12:12:09][NOTICE] - match: /clientes with /clientes
+[27.05.2016 - 12:12:09][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:12:11][NOTICE] - /ecommerce_management/clientes
+[27.05.2016 - 12:12:11][NOTICE] - match: /clientes with /clientes
+[27.05.2016 - 12:12:11][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:12:11][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:12:11][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:12:11][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:12:12][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:12:12][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:12:12][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:12:13][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:12:13][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:12:13][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:12:15][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:12:15][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:12:15][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:13:52][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:13:52][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:13:52][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:14:10][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:14:10][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:14:10][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:14:22][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:14:22][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:14:22][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:15:51][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:15:51][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:15:51][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:15:57][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:15:57][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:15:57][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:15:58][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:15:58][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:15:58][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:15:59][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:15:59][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:15:59][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:16:00][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:16:00][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:16:00][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:20:04][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:20:04][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:20:04][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:20:05][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:20:05][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:20:05][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:20:07][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:20:07][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:20:07][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:20:21][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:20:21][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:20:21][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:20:27][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:20:27][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:20:27][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:20:28][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:20:28][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:20:28][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:20:28][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:20:28][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:20:28][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:21:05][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:21:05][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:21:05][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:21:07][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:21:07][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:21:07][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:21:07][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:21:07][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:21:07][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:21:08][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:21:08][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:21:08][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:21:25][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:21:25][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:21:25][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:21:26][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:21:26][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:21:26][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:21:27][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:21:27][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:21:27][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:22:06][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:22:06][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:22:06][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:22:07][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:22:07][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:22:07][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:22:09][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:22:09][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:22:09][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:22:22][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:22:22][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:22:22][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:22:23][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:22:23][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:22:23][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:22:23][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:22:23][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:22:23][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:28:24][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:28:24][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:28:24][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:28:38][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:28:38][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:28:38][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:28:42][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:28:42][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:28:42][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:28:43][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:28:43][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:28:43][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:29:16][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:29:16][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:29:16][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:29:17][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:29:17][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:29:17][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:29:17][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:29:17][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:29:17][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:29:40][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:29:40][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:29:40][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:29:55][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:29:55][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:29:55][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:30:01][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:30:01][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:30:01][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:30:02][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:30:02][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:30:02][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:30:02][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:30:02][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:30:02][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:30:03][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:30:03][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:30:03][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:30:06][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:30:06][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:30:06][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:30:07][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:30:07][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:30:07][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:30:09][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:30:09][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:30:09][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:30:10][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:30:10][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:30:10][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:30:11][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:30:11][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:30:11][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:30:11][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:30:11][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:30:11][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:30:12][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:30:12][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:30:12][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:32:45][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:32:45][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:32:45][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:33:12][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:33:12][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:33:12][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:33:14][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:33:14][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:33:14][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:33:15][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:33:15][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:33:15][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:33:16][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:33:16][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:33:16][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:33:17][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:33:17][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:33:17][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:33:39][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:33:39][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:33:39][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:33:49][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:33:49][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:33:49][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:33:58][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:33:58][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:33:58][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:34:24][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:34:24][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:34:24][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:34:32][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:34:32][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:34:32][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:34:34][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:34:34][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:34:34][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:34:35][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:34:35][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:34:35][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:34:35][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:34:35][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:34:35][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:34:36][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:34:36][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:34:36][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:34:47][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:34:47][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:34:47][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:34:48][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:34:48][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:34:48][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:34:49][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:34:49][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:34:49][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:34:50][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:34:50][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:34:50][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:34:51][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:34:51][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:34:51][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:35:01][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:35:01][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:35:01][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:35:13][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:35:13][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:35:13][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:35:22][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:35:22][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:35:22][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:35:24][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:35:24][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:35:24][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:35:24][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:35:24][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:35:24][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:35:25][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:35:25][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:35:25][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:35:27][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:35:27][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:35:27][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:36:06][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:36:06][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:36:06][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:36:09][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:36:09][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:36:09][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:36:13][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:36:13][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:36:13][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:36:29][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:36:29][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:36:29][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:36:31][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:36:31][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:36:31][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:36:32][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:36:32][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:36:32][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:36:33][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:36:33][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:36:33][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:36:33][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:36:33][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:36:33][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:36:35][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:36:35][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:36:35][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:36:36][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:36:36][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:36:36][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:36:37][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:36:37][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:36:37][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:36:37][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:36:37][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:36:37][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:36:49][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:36:49][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:36:49][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:36:50][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:36:50][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:36:50][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:36:51][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:36:51][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:36:51][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:37:32][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:37:32][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:37:32][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:37:34][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:37:34][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:37:34][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:37:35][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:37:35][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:37:35][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:37:38][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:37:38][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:37:38][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:37:39][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:37:39][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:37:39][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:37:46][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:37:46][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:37:46][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:37:49][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:37:49][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:37:49][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:37:51][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:37:51][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:37:51][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:38:04][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:38:04][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:38:04][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:38:05][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:38:05][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:38:05][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:38:05][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:38:05][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:38:05][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:38:10][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:38:10][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:38:10][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:38:22][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:38:22][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:38:22][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:38:34][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:38:34][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:38:34][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:38:36][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:38:36][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:38:36][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:38:37][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:38:37][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:38:37][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:38:51][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:38:51][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:38:51][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:39:32][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:39:32][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:39:32][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:39:38][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:39:38][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:39:38][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:39:40][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:39:40][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:39:40][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:39:41][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:39:41][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:39:41][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:39:44][NOTICE] - /ecommerce_management/categorias/novo
+[27.05.2016 - 12:39:44][NOTICE] - match: /categorias/novo with /categorias/novo
+[27.05.2016 - 12:39:45][NOTICE] - /ecommerce_management/categorias
+[27.05.2016 - 12:39:45][NOTICE] - match: /categorias with /categorias
+[27.05.2016 - 12:39:45][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:39:46][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:39:46][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:39:46][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:39:51][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:39:51][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:39:51][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:39:51][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:39:51][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:39:51][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:40:24][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:40:24][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:40:25][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:40:25][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:40:25][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:40:25][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:40:26][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:40:26][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:40:26][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:40:31][NOTICE] - /ecommerce_management/clientes/novo
+[27.05.2016 - 12:40:31][NOTICE] - match: /clientes/novo with /clientes/novo
+[27.05.2016 - 12:40:31][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:41:04][NOTICE] - /ecommerce_management/clientes/novo
+[27.05.2016 - 12:41:04][NOTICE] - match: /clientes/novo with /clientes/novo
+[27.05.2016 - 12:41:04][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:41:06][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:41:06][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:41:06][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:41:32][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:41:32][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:41:32][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:42:09][NOTICE] - /ecommerce_management/clientes/novo
+[27.05.2016 - 12:42:09][NOTICE] - match: /clientes/novo with /clientes/novo
+[27.05.2016 - 12:42:09][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:42:12][NOTICE] - /ecommerce_management/clientes/novo
+[27.05.2016 - 12:42:12][NOTICE] - match: /clientes/novo with /clientes/novo
+[27.05.2016 - 12:42:12][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:42:14][NOTICE] - /ecommerce_management/clientes
+[27.05.2016 - 12:42:14][NOTICE] - match: /clientes with /clientes
+[27.05.2016 - 12:42:14][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:42:20][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:42:20][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:42:20][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:42:21][NOTICE] - /ecommerce_management/clientes/novo
+[27.05.2016 - 12:42:21][NOTICE] - match: /clientes/novo with /clientes/novo
+[27.05.2016 - 12:42:21][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:43:46][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:43:46][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:43:46][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:43:47][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:43:47][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:43:47][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:43:49][NOTICE] - /ecommerce_management/clientes/novo
+[27.05.2016 - 12:43:49][NOTICE] - match: /clientes/novo with /clientes/novo
+[27.05.2016 - 12:43:49][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:43:57][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:43:57][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:43:57][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:43:58][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:43:58][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:43:58][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:44:10][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:44:10][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:44:10][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:44:13][NOTICE] - /ecommerce_management/clientes/novo
+[27.05.2016 - 12:44:13][NOTICE] - match: /clientes/novo with /clientes/novo
+[27.05.2016 - 12:44:13][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:44:17][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:44:17][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:44:17][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:44:27][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:44:27][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:44:27][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:44:28][NOTICE] - /ecommerce_management/clientes/novo
+[27.05.2016 - 12:44:28][NOTICE] - match: /clientes/novo with /clientes/novo
+[27.05.2016 - 12:44:28][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:44:34][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:44:34][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:44:34][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:44:40][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:44:40][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:44:40][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:44:41][NOTICE] - /ecommerce_management/clientes/novo
+[27.05.2016 - 12:44:41][NOTICE] - match: /clientes/novo with /clientes/novo
+[27.05.2016 - 12:44:41][NOTICE] - /ecommerce_management/clientes
+[27.05.2016 - 12:44:41][NOTICE] - match: /clientes with /clientes
+[27.05.2016 - 12:44:41][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:44:43][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:44:43][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:44:43][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:44:56][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:44:56][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:44:56][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:44:58][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:44:58][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:44:58][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:44:58][NOTICE] - /ecommerce_management/clientes
+[27.05.2016 - 12:44:58][NOTICE] - match: /clientes with /clientes
+[27.05.2016 - 12:44:58][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:44:59][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:44:59][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:44:59][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:45:02][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:45:02][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:45:02][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:45:04][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:45:04][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:45:04][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:45:05][NOTICE] - /ecommerce_management/clientes
+[27.05.2016 - 12:45:05][NOTICE] - match: /clientes with /clientes
+[27.05.2016 - 12:45:05][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:45:06][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:45:06][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:45:06][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:45:26][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:45:26][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:45:26][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:45:27][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:45:27][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:45:27][NOTICE] - /ecommerce_management/
+[27.05.2016 - 12:45:27][NOTICE] - match: / with /
+[27.05.2016 - 12:45:31][NOTICE] - /ecommerce_management/clientes
+[27.05.2016 - 12:45:31][NOTICE] - match: /clientes with /clientes
+[27.05.2016 - 12:45:31][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:45:31][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:45:31][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:45:31][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:45:41][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:45:41][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:45:41][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:45:42][NOTICE] - /ecommerce_management/clientes/novo
+[27.05.2016 - 12:45:42][NOTICE] - match: /clientes/novo with /clientes/novo
+[27.05.2016 - 12:45:42][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:45:50][NOTICE] - /ecommerce_management/clientes/novo
+[27.05.2016 - 12:45:50][NOTICE] - match: /clientes/novo with /clientes/novo
+[27.05.2016 - 12:45:50][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:45:58][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:45:58][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:45:58][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:45:59][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 12:45:59][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 12:45:59][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 12:45:59][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 12:45:59][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 12:45:59][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:03:00][NOTICE] - /ecommerce_management/clientes/novo
+[27.05.2016 - 13:03:00][NOTICE] - match: /clientes/novo with /clientes/novo
+[27.05.2016 - 13:03:00][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:03:02][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 13:03:02][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 13:03:02][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:03:03][NOTICE] - /ecommerce_management/clientes/novo
+[27.05.2016 - 13:03:03][NOTICE] - match: /clientes/novo with /clientes/novo
+[27.05.2016 - 13:03:03][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:03:17][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 13:03:17][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 13:03:17][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:04:45][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 13:04:45][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 13:04:45][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:04:47][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:04:47][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:04:47][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:04:48][NOTICE] - /ecommerce_management/clientes/novo
+[27.05.2016 - 13:04:48][NOTICE] - match: /clientes/novo with /clientes/novo
+[27.05.2016 - 13:04:48][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:07:37][NOTICE] - /ecommerce_management/clientes/novo
+[27.05.2016 - 13:07:37][NOTICE] - match: /clientes/novo with /clientes/novo
+[27.05.2016 - 13:07:37][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:08:00][NOTICE] - /ecommerce_management/clientes/novo
+[27.05.2016 - 13:08:00][NOTICE] - match: /clientes/novo with /clientes/novo
+[27.05.2016 - 13:08:00][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:08:02][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:08:02][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:08:02][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:08:03][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 13:08:03][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 13:08:03][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:08:05][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:08:05][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:08:05][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:08:32][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:08:32][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:08:32][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:08:57][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:08:57][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:08:57][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:08:59][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:08:59][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:08:59][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:09:00][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:09:00][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:09:00][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:09:02][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:09:02][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:09:02][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:09:26][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:09:26][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:09:26][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:09:41][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:09:41][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:09:41][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:09:42][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:09:42][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:09:42][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:10:23][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:10:23][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:10:23][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:10:34][NOTICE] - /ecommerce_management/clientes
+[27.05.2016 - 13:10:34][NOTICE] - match: /clientes with /clientes
+[27.05.2016 - 13:10:34][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:10:36][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:10:36][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:10:36][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:10:37][NOTICE] - /ecommerce_management/clientes/novo
+[27.05.2016 - 13:10:37][NOTICE] - match: /clientes/novo with /clientes/novo
+[27.05.2016 - 13:10:37][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:10:39][NOTICE] - /ecommerce_management/clientes
+[27.05.2016 - 13:10:39][NOTICE] - match: /clientes with /clientes
+[27.05.2016 - 13:10:39][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:10:40][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:10:40][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:10:40][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:11:41][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:11:41][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:11:41][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:12:06][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:12:06][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:12:06][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:12:26][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:12:26][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:12:26][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:12:27][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 13:12:27][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 13:12:27][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:12:28][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:12:28][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:12:28][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:12:28][NOTICE] - /ecommerce_management/clientes/novo
+[27.05.2016 - 13:12:28][NOTICE] - match: /clientes/novo with /clientes/novo
+[27.05.2016 - 13:12:28][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:12:29][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 13:12:29][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 13:12:29][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:12:31][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:12:31][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:12:31][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:12:37][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 13:12:37][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 13:12:37][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:12:38][NOTICE] - /ecommerce_management/clientes/novo
+[27.05.2016 - 13:12:38][NOTICE] - match: /clientes/novo with /clientes/novo
+[27.05.2016 - 13:12:38][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:12:40][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 13:12:40][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 13:12:40][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:12:41][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:12:41][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:12:41][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:12:43][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 13:12:43][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 13:12:43][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:12:43][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:12:43][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:12:43][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:12:45][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:12:45][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:12:45][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:12:45][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 13:12:45][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 13:12:45][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:13:01][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 13:13:01][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 13:13:01][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:13:03][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:13:03][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:13:03][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:14:01][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:14:01][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:14:01][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:14:03][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 13:14:03][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 13:14:03][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:14:04][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:14:04][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:14:04][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:14:05][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 13:14:05][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 13:14:05][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:14:06][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:14:06][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:14:06][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:14:07][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 13:14:07][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 13:14:07][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:14:08][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:14:08][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:14:08][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:15:18][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:15:18][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:15:18][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:15:20][NOTICE] - /ecommerce_management/clientes/novo
+[27.05.2016 - 13:15:20][NOTICE] - match: /clientes/novo with /clientes/novo
+[27.05.2016 - 13:15:20][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:16:01][NOTICE] - /ecommerce_management/clientes/novo
+[27.05.2016 - 13:16:01][NOTICE] - match: /clientes/novo with /clientes/novo
+[27.05.2016 - 13:16:01][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:16:03][NOTICE] - /ecommerce_management/clientes
+[27.05.2016 - 13:16:03][NOTICE] - match: /clientes with /clientes
+[27.05.2016 - 13:16:03][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:16:04][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:16:04][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:16:04][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:16:37][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:16:37][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:16:37][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:16:49][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:16:49][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:16:49][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:16:51][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 13:16:51][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 13:16:51][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:16:54][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:16:54][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:16:54][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:17:44][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:17:44][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:17:44][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:17:53][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:17:53][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:17:53][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:18:10][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:18:10][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:18:10][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:18:34][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:18:34][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:18:34][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:18:55][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:18:55][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:18:55][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:19:21][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:19:21][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:19:21][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:19:38][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:19:38][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:19:38][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:19:56][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:19:56][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:19:56][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:20:07][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:20:07][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:20:07][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:20:18][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:20:18][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:20:18][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:20:25][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:20:25][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:20:25][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:20:31][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:20:31][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:20:31][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:20:38][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:20:38][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:20:38][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:20:41][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 13:20:41][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 13:20:42][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:20:42][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:20:42][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:20:42][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:20:44][NOTICE] - /ecommerce_management/clientes/novo
+[27.05.2016 - 13:20:44][NOTICE] - match: /clientes/novo with /clientes/novo
+[27.05.2016 - 13:20:44][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:20:48][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 13:20:48][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 13:20:48][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:20:49][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:20:49][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:20:49][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:20:52][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 13:20:52][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 13:20:52][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:20:55][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:20:55][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:20:55][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:20:59][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:20:59][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:20:59][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:21:00][NOTICE] - /ecommerce_management/clientes
+[27.05.2016 - 13:21:00][NOTICE] - match: /clientes with /clientes
+[27.05.2016 - 13:21:00][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:21:01][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:21:01][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:21:01][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:21:02][NOTICE] - /ecommerce_management/clientes
+[27.05.2016 - 13:21:02][NOTICE] - match: /clientes with /clientes
+[27.05.2016 - 13:21:02][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:21:03][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:21:03][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:21:03][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:21:05][NOTICE] - /ecommerce_management/pedidos/novo
+[27.05.2016 - 13:21:05][NOTICE] - match: /pedidos/novo with /pedidos/novo
+[27.05.2016 - 13:21:05][NOTICE] - /ecommerce_management/pedidos
+[27.05.2016 - 13:21:05][NOTICE] - match: /pedidos with /pedidos
+[27.05.2016 - 13:21:05][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:21:06][NOTICE] - /ecommerce_management/produtos/novo
+[27.05.2016 - 13:21:06][NOTICE] - match: /produtos/novo with /produtos/novo
+[27.05.2016 - 13:21:06][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:21:07][NOTICE] - /ecommerce_management/produtos
+[27.05.2016 - 13:21:07][NOTICE] - match: /produtos with /produtos
+[27.05.2016 - 13:21:07][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:21:07][NOTICE] - /ecommerce_management/categorias/novo
+[27.05.2016 - 13:21:07][NOTICE] - match: /categorias/novo with /categorias/novo
+[27.05.2016 - 13:21:08][NOTICE] - /ecommerce_management/categorias
+[27.05.2016 - 13:21:08][NOTICE] - match: /categorias with /categorias
+[27.05.2016 - 13:21:08][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:21:09][NOTICE] - /ecommerce_management/produtos
+[27.05.2016 - 13:21:09][NOTICE] - match: /produtos with /produtos
+[27.05.2016 - 13:21:09][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:21:09][NOTICE] - /ecommerce_management/produtos/novo
+[27.05.2016 - 13:21:09][NOTICE] - match: /produtos/novo with /produtos/novo
+[27.05.2016 - 13:21:09][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:21:10][NOTICE] - /ecommerce_management/produtos
+[27.05.2016 - 13:21:10][NOTICE] - match: /produtos with /produtos
+[27.05.2016 - 13:21:10][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:21:13][NOTICE] - /ecommerce_management/produtos
+[27.05.2016 - 13:21:13][NOTICE] - match: /produtos with /produtos
+[27.05.2016 - 13:21:13][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:21:15][NOTICE] - /ecommerce_management/categorias
+[27.05.2016 - 13:21:15][NOTICE] - match: /categorias with /categorias
+[27.05.2016 - 13:21:15][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:21:22][NOTICE] - /ecommerce_management/categorias/novo
+[27.05.2016 - 13:21:22][NOTICE] - match: /categorias/novo with /categorias/novo
+[27.05.2016 - 13:21:23][NOTICE] - /ecommerce_management/produtos
+[27.05.2016 - 13:21:23][NOTICE] - match: /produtos with /produtos
+[27.05.2016 - 13:21:23][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:21:24][NOTICE] - /ecommerce_management/produtos/novo
+[27.05.2016 - 13:21:24][NOTICE] - match: /produtos/novo with /produtos/novo
+[27.05.2016 - 13:21:24][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:21:25][NOTICE] - /ecommerce_management/categorias
+[27.05.2016 - 13:21:25][NOTICE] - match: /categorias with /categorias
+[27.05.2016 - 13:21:25][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:21:27][NOTICE] - /ecommerce_management/categorias/novo
+[27.05.2016 - 13:21:27][NOTICE] - match: /categorias/novo with /categorias/novo
+[27.05.2016 - 13:21:28][NOTICE] - /ecommerce_management/clientes
+[27.05.2016 - 13:21:28][NOTICE] - match: /clientes with /clientes
+[27.05.2016 - 13:21:28][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:21:28][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:21:28][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:21:28][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:22:15][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:22:15][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:22:15][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:22:16][NOTICE] - /ecommerce_management/categorias
+[27.05.2016 - 13:22:16][NOTICE] - match: /categorias with /categorias
+[27.05.2016 - 13:22:16][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:22:18][NOTICE] - /ecommerce_management/categorias/novo
+[27.05.2016 - 13:22:18][NOTICE] - match: /categorias/novo with /categorias/novo
+[27.05.2016 - 13:22:19][NOTICE] - /ecommerce_management/clientes
+[27.05.2016 - 13:22:19][NOTICE] - match: /clientes with /clientes
+[27.05.2016 - 13:22:19][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:22:22][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:22:22][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:22:22][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:22:23][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 13:22:23][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 13:22:23][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:22:23][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:22:23][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:22:23][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:22:31][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:22:31][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:22:31][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:22:32][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 13:22:32][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 13:22:32][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:22:34][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:22:34][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:22:34][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:22:38][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:22:38][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:22:38][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:22:40][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 13:22:40][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 13:22:40][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:22:41][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:22:41][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:22:41][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:22:43][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:22:43][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:22:43][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:22:44][NOTICE] - /ecommerce_management/clientes
+[27.05.2016 - 13:22:44][NOTICE] - match: /clientes with /clientes
+[27.05.2016 - 13:22:44][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:22:48][NOTICE] - /ecommerce_management/clientes/6/deletar
+[27.05.2016 - 13:22:48][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/clientes/6/deletar
+[27.05.2016 - 13:22:48][NOTICE] - /ecommerce_management/
+[27.05.2016 - 13:22:48][NOTICE] - match: / with /
+[27.05.2016 - 13:22:49][NOTICE] - /ecommerce_management/clientes
+[27.05.2016 - 13:22:49][NOTICE] - match: /clientes with /clientes
+[27.05.2016 - 13:22:49][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:22:52][NOTICE] - /ecommerce_management/pedidos
+[27.05.2016 - 13:22:52][NOTICE] - match: /pedidos with /pedidos
+[27.05.2016 - 13:22:52][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:22:55][NOTICE] - /ecommerce_management/pedidos/1/deletar
+[27.05.2016 - 13:22:55][NOTICE] - match: /pedidos/:id/deletar with /pedidos/1/deletar
+[27.05.2016 - 13:22:55][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:22:57][NOTICE] - /ecommerce_management/pedidos
+[27.05.2016 - 13:22:57][NOTICE] - match: /pedidos with /pedidos
+[27.05.2016 - 13:22:57][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:22:58][NOTICE] - /ecommerce_management/pedidos/1
+[27.05.2016 - 13:22:58][NOTICE] - match: /pedidos/:id with /pedidos/1
+[27.05.2016 - 13:22:58][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:25:43][NOTICE] - /ecommerce_management/pedidos/1
+[27.05.2016 - 13:25:43][NOTICE] - match: /pedidos/:id with /pedidos/1
+[27.05.2016 - 13:25:43][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:26:08][NOTICE] - /ecommerce_management/pedidos/1
+[27.05.2016 - 13:26:08][NOTICE] - match: /pedidos/:id with /pedidos/1
+[27.05.2016 - 13:26:08][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:26:31][NOTICE] - /ecommerce_management/pedidos/1
+[27.05.2016 - 13:26:31][NOTICE] - match: /pedidos/:id with /pedidos/1
+[27.05.2016 - 13:26:31][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:26:38][NOTICE] - /ecommerce_management/pedidos/1
+[27.05.2016 - 13:26:38][NOTICE] - match: /pedidos/:id with /pedidos/1
+[27.05.2016 - 13:26:38][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:26:51][NOTICE] - /ecommerce_management/pedidos/1
+[27.05.2016 - 13:26:51][NOTICE] - match: /pedidos/:id with /pedidos/1
+[27.05.2016 - 13:26:51][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:27:11][NOTICE] - /ecommerce_management/pedidos/1
+[27.05.2016 - 13:27:11][NOTICE] - match: /pedidos/:id with /pedidos/1
+[27.05.2016 - 13:27:11][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:27:24][NOTICE] - /ecommerce_management/pedidos/1
+[27.05.2016 - 13:27:24][NOTICE] - match: /pedidos/:id with /pedidos/1
+[27.05.2016 - 13:27:24][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:27:26][NOTICE] - /ecommerce_management/pedidos
+[27.05.2016 - 13:27:26][NOTICE] - match: /pedidos with /pedidos
+[27.05.2016 - 13:27:26][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:27:26][NOTICE] - /ecommerce_management/pedidos/novo
+[27.05.2016 - 13:27:26][NOTICE] - match: /pedidos/novo with /pedidos/novo
+[27.05.2016 - 13:27:27][NOTICE] - /ecommerce_management/produtos/novo
+[27.05.2016 - 13:27:27][NOTICE] - match: /produtos/novo with /produtos/novo
+[27.05.2016 - 13:27:27][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:27:28][NOTICE] - /ecommerce_management/produtos
+[27.05.2016 - 13:27:28][NOTICE] - match: /produtos with /produtos
+[27.05.2016 - 13:27:28][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:27:41][NOTICE] - /ecommerce_management/produtos
+[27.05.2016 - 13:27:41][NOTICE] - match: /produtos with /produtos
+[27.05.2016 - 13:27:41][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:27:48][NOTICE] - /ecommerce_management/produtos
+[27.05.2016 - 13:27:48][NOTICE] - match: /produtos with /produtos
+[27.05.2016 - 13:27:48][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:28:22][NOTICE] - /ecommerce_management/pedidos/1
+[27.05.2016 - 13:28:22][NOTICE] - match: /pedidos/:id with /pedidos/1
+[27.05.2016 - 13:28:22][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:28:37][NOTICE] - /ecommerce_management/produtos
+[27.05.2016 - 13:28:37][NOTICE] - match: /produtos with /produtos
+[27.05.2016 - 13:28:37][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:28:38][NOTICE] - /ecommerce_management/produtos/novo
+[27.05.2016 - 13:28:38][NOTICE] - match: /produtos/novo with /produtos/novo
+[27.05.2016 - 13:28:38][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:28:39][NOTICE] - /ecommerce_management/categorias/novo
+[27.05.2016 - 13:28:39][NOTICE] - match: /categorias/novo with /categorias/novo
+[27.05.2016 - 13:28:40][NOTICE] - /ecommerce_management/categorias
+[27.05.2016 - 13:28:40][NOTICE] - match: /categorias with /categorias
+[27.05.2016 - 13:28:40][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:30:25][NOTICE] - /ecommerce_management/produtos
+[27.05.2016 - 13:30:25][NOTICE] - match: /produtos with /produtos
+[27.05.2016 - 13:30:25][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:30:26][NOTICE] - /ecommerce_management/produtos/novo
+[27.05.2016 - 13:30:26][NOTICE] - match: /produtos/novo with /produtos/novo
+[27.05.2016 - 13:30:26][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:30:27][NOTICE] - /ecommerce_management/produtos
+[27.05.2016 - 13:30:27][NOTICE] - match: /produtos with /produtos
+[27.05.2016 - 13:30:27][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:30:28][NOTICE] - /ecommerce_management/clientes
+[27.05.2016 - 13:30:28][NOTICE] - match: /clientes with /clientes
+[27.05.2016 - 13:30:28][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:30:29][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:30:29][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:30:29][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:30:30][NOTICE] - /ecommerce_management/clientes
+[27.05.2016 - 13:30:30][NOTICE] - match: /clientes with /clientes
+[27.05.2016 - 13:30:30][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:30:32][NOTICE] - /ecommerce_management/clientes
+[27.05.2016 - 13:30:32][NOTICE] - match: /clientes with /clientes
+[27.05.2016 - 13:30:32][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:30:33][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:30:33][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:30:33][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:30:34][NOTICE] - /ecommerce_management/clientes/novo
+[27.05.2016 - 13:30:34][NOTICE] - match: /clientes/novo with /clientes/novo
+[27.05.2016 - 13:30:34][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:30:35][NOTICE] - /ecommerce_management/clientes/novo/2
+[27.05.2016 - 13:30:35][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[27.05.2016 - 13:30:35][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:30:36][NOTICE] - /ecommerce_management/clientes/novo/1
+[27.05.2016 - 13:30:36][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[27.05.2016 - 13:30:36][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:30:36][NOTICE] - /ecommerce_management/clientes
+[27.05.2016 - 13:30:36][NOTICE] - match: /clientes with /clientes
+[27.05.2016 - 13:30:36][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:30:38][NOTICE] - /ecommerce_management/categorias/novo
+[27.05.2016 - 13:30:38][NOTICE] - match: /categorias/novo with /categorias/novo
+[27.05.2016 - 13:30:39][NOTICE] - /ecommerce_management/categorias
+[27.05.2016 - 13:30:39][NOTICE] - match: /categorias with /categorias
+[27.05.2016 - 13:30:39][NOTICE] - Aberta conexão com banco de dados!
+[27.05.2016 - 13:30:41][NOTICE] - /ecommerce_management/logout
+[27.05.2016 - 13:30:41][NOTICE] - match: /logout with /logout
+[27.05.2016 - 13:30:41][NOTICE] - /ecommerce_management/login
+[27.05.2016 - 13:30:41][NOTICE] - match: /login with /login

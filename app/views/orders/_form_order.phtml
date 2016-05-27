@@ -9,10 +9,9 @@
 
         <input type="hidden" id="order_user_id" name="order[client_id]">
               </div>
-        <?= $this->linkTo("/pedidos", 'Voltar', 'class="ui left  small labeled icon button"', 'class="reply icon"') ?>
+        <?= ViewHelpers::linkTo("/pedidos", 'Voltar', 'class="ui left  small labeled icon button"', 'class="reply icon"') ?>
+        <?= ViewHelpers::buttonTo($this->submit, 'class="ui right labeled icon primary button"', 'class="right arrow icon"') ?>
 
-        <button type="submit" name="button" class="ui primary button"><?= $this->submit ?> </button>
-        
         <div class="ui pointing <?= $this->order->getErrors('client_id') ? 'red basic label' : '' ?>"><?= $this->order->getErrors('client_id') ?></div>
 
   </div>

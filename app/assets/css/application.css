@@ -50,11 +50,19 @@ body {
 
 .align-center {
   margin: 0 auto;
-  width: 208px;
+  width: 280px;
 }
 
 .ui.success.message {
   margin: 10px;
+}
+
+a.clients {
+  color: black;
+}
+
+a.clients:hover {
+  color: #1678c2;
 }
 
 

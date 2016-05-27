@@ -15,6 +15,6 @@
 
   <input type="hidden" class="form-control" id="order_id" value="<?= $this->order->getId() ?>" name="order[id]">
 
-  <button type="submit"  class="ui primary button"><?= $this->submit ?></button>
-  <?= $this->linkTo("/pedidos", 'Voltar', 'class="ui left floated small labeled icon button"', 'class="reply icon"') ?>
+  <?= ViewHelpers::buttonTo($this->submit, 'class="ui primary button"') ?>
+  <?= ViewHelpers::linkTo("/pedidos", 'Voltar', 'class="ui left floated small labeled icon button"', 'class="reply icon"') ?>
 </form>

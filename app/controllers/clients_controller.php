@@ -28,7 +28,7 @@
     } else {
       Flash::message('negative', 'Existe dados incorretos no seu formulário!');
       $this->cities = City::all();
-      $this->action = ViewHelpers::urlFor('/clientes/novo');
+      $this->action = ViewHelpers::urlFor("/clientes/novo");
       $this->submit = 'Cadastrar';
       $this->render('new');
     }
