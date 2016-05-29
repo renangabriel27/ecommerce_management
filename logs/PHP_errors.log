@@ -350,3 +350,341 @@ Stack trace:
 #4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
 #5 {main}
   thrown in /var/www/ecommerce_management/app/models/order.php on line 111
+[27-May-2016 13:43:32 America/Sao_Paulo] PHP Fatal error:  Call to undefined method Client::update() in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 50
+[27-May-2016 20:31:36 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecommerce_management.users' doesn't exist' in /var/www/ecommerce_management/app/models/user.php:72
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/user.php(72): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/users_controller.php(38): User->update(Array)
+#2 /var/www/ecommerce_management/core/routes/router.php(47): UsersController->update()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/user.php on line 72
+[28-May-2016 18:19:58 America/Sao_Paulo] PHP Fatal error:  Call to undefined method CategoriesController::linkTo() in /var/www/ecommerce_management/app/views/categories/show.phtml on line 17
+[28-May-2016 19:07:15 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ProductsController::linkTo() in /var/www/ecommerce_management/app/views/products/show.phtml on line 32
+[28-May-2016 19:08:18 America/Sao_Paulo] PHP Fatal error:  Call to undefined method Client::update() in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 50
+[28-May-2016 19:20:02 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'client_id' in where clause is ambiguous' in /var/www/ecommerce_management/app/models/client.php:117
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/client.php(117): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/clients_controller.php(39): Client::findById('8')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): ClientsController->edit()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/client.php on line 117
+[28-May-2016 19:21:34 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 26
+[28-May-2016 19:21:34 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$cities in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 37
+[28-May-2016 19:21:34 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 37
+[28-May-2016 19:21:34 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 65
+[28-May-2016 19:21:59 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 26
+[28-May-2016 19:21:59 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 65
+[28-May-2016 19:22:09 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 26
+[28-May-2016 19:22:09 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 65
+[28-May-2016 19:22:18 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 26
+[28-May-2016 19:22:18 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 65
+[28-May-2016 19:22:19 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 26
+[28-May-2016 19:22:19 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 65
+[28-May-2016 19:23:48 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 26
+[28-May-2016 19:23:49 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 26
+[28-May-2016 19:24:18 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 26
+[28-May-2016 19:24:21 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 26
+[28-May-2016 19:24:23 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 26
+[28-May-2016 19:25:53 America/Sao_Paulo] PHP Fatal error:  Call to a member function update() on null in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 48
+[28-May-2016 19:26:19 America/Sao_Paulo] PHP Fatal error:  Call to a member function update() on null in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 48
+[28-May-2016 19:26:42 America/Sao_Paulo] PHP Fatal error:  Call to a member function update() on null in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 48
+[28-May-2016 19:28:28 America/Sao_Paulo] PHP Fatal error:  Call to a member function update() on null in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 48
+[28-May-2016 19:30:34 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN), expecting function (T_FUNCTION) in /var/www/ecommerce_management/app/models/client.php on line 153
+[28-May-2016 19:31:15 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/client_pi.php:106
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/client_pi.php(106): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/clients_controller.php(48): ClientPi->update(Array)
+#2 /var/www/ecommerce_management/core/routes/router.php(47): ClientsController->update()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/client_pi.php on line 106
+[28-May-2016 19:37:09 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/client_pi.php:106
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/client_pi.php(106): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/clients_controller.php(48): ClientPi->update(Array)
+#2 /var/www/ecommerce_management/core/routes/router.php(47): ClientsController->update()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/client_pi.php on line 106
+[28-May-2016 19:37:12 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/client_pi.php:106
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/client_pi.php(106): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/clients_controller.php(48): ClientPi->update(Array)
+#2 /var/www/ecommerce_management/core/routes/router.php(47): ClientsController->update()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/client_pi.php on line 106
+[28-May-2016 19:37:14 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/client_pi.php:106
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/client_pi.php(106): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/clients_controller.php(48): ClientPi->update(Array)
+#2 /var/www/ecommerce_management/core/routes/router.php(47): ClientsController->update()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/client_pi.php on line 106
+[28-May-2016 19:38:48 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/client_pi.php:106
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/client_pi.php(106): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/clients_controller.php(48): ClientPi->update(Array)
+#2 /var/www/ecommerce_management/core/routes/router.php(47): ClientsController->update()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/client_pi.php on line 106
+[28-May-2016 19:40:25 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/client_pi.php:106
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/client_pi.php(106): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/clients_controller.php(47): ClientPi->update(Array)
+#2 /var/www/ecommerce_management/core/routes/router.php(47): ClientsController->update()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/client_pi.php on line 106
+[28-May-2016 19:40:27 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/client_pi.php:106
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/client_pi.php(106): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/clients_controller.php(47): ClientPi->update(Array)
+#2 /var/www/ecommerce_management/core/routes/router.php(47): ClientsController->update()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/client_pi.php on line 106
+[28-May-2016 19:40:30 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/client_pi.php:106
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/client_pi.php(106): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/clients_controller.php(47): ClientPi->update(Array)
+#2 /var/www/ecommerce_management/core/routes/router.php(47): ClientsController->update()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/client_pi.php on line 106
+[28-May-2016 19:41:27 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/client_pi.php:106
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/client_pi.php(106): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/clients_controller.php(47): ClientPi->update(Array)
+#2 /var/www/ecommerce_management/core/routes/router.php(47): ClientsController->update()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/client_pi.php on line 106
+[28-May-2016 19:41:30 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/client_pi.php:106
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/client_pi.php(106): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/clients_controller.php(47): ClientPi->update(Array)
+#2 /var/www/ecommerce_management/core/routes/router.php(47): ClientsController->update()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/client_pi.php on line 106
+[28-May-2016 19:42:51 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/client_pi.php:107
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/client_pi.php(107): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/clients_controller.php(47): ClientPi->update(Array)
+#2 /var/www/ecommerce_management/core/routes/router.php(47): ClientsController->update()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/client_pi.php on line 107
+[28-May-2016 19:42:58 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/client_pi.php:107
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/client_pi.php(107): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/clients_controller.php(47): ClientPi->update(Array)
+#2 /var/www/ecommerce_management/core/routes/router.php(47): ClientsController->update()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/client_pi.php on line 107
+[28-May-2016 19:45:28 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/client_pi.php:107
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/client_pi.php(107): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/clients_controller.php(47): ClientPi->update(Array)
+#2 /var/www/ecommerce_management/core/routes/router.php(47): ClientsController->update()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/client_pi.php on line 107
+[28-May-2016 19:48:40 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/client_pi.php:107
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/client_pi.php(107): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/clients_controller.php(47): ClientPi->update(Array)
+#2 /var/www/ecommerce_management/core/routes/router.php(47): ClientsController->update()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/client_pi.php on line 107
+[28-May-2016 19:48:42 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/client_pi.php:107
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/client_pi.php(107): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/clients_controller.php(47): ClientPi->update(Array)
+#2 /var/www/ecommerce_management/core/routes/router.php(47): ClientsController->update()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/client_pi.php on line 107
+[28-May-2016 20:06:08 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$cities in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 37
+[28-May-2016 20:06:08 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 37
+[28-May-2016 20:09:55 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
+[28-May-2016 20:14:48 America/Sao_Paulo] PHP Fatal error:  Unsupported operand types in /var/www/ecommerce_management/app/models/client.php on line 147
+[28-May-2016 20:15:32 America/Sao_Paulo] PHP Fatal error:  Unsupported operand types in /var/www/ecommerce_management/app/models/client.php on line 147
+[28-May-2016 20:15:49 America/Sao_Paulo] PHP Fatal error:  Unsupported operand types in /var/www/ecommerce_management/app/models/client.php on line 147
+[28-May-2016 20:15:55 America/Sao_Paulo] PHP Fatal error:  Unsupported operand types in /var/www/ecommerce_management/app/models/client.php on line 147
+[28-May-2016 20:16:00 America/Sao_Paulo] PHP Fatal error:  Unsupported operand types in /var/www/ecommerce_management/app/models/client.php on line 147
+[28-May-2016 20:16:24 America/Sao_Paulo] PHP Fatal error:  Cannot redeclare ClientPc::update() in /var/www/ecommerce_management/app/models/client_pc.php on line 124
+[28-May-2016 20:24:42 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
+[28-May-2016 20:24:49 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
+[28-May-2016 20:25:20 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
+[28-May-2016 20:25:23 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
+[28-May-2016 20:25:55 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
+[28-May-2016 20:25:57 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
+[28-May-2016 20:25:59 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
+[28-May-2016 20:26:36 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
+[28-May-2016 20:26:37 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
+[28-May-2016 20:26:40 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
+[28-May-2016 20:26:43 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
+[28-May-2016 20:26:45 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
+[28-May-2016 20:27:22 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$client in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
+[28-May-2016 20:27:22 America/Sao_Paulo] PHP Fatal error:  Call to a member function getType() on null in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
+[28-May-2016 20:27:31 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
+[28-May-2016 20:27:33 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
+[28-May-2016 20:27:35 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
+[28-May-2016 20:27:40 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
+[28-May-2016 20:27:41 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
+[28-May-2016 20:28:49 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 13
+[28-May-2016 20:29:15 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$client in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
+[28-May-2016 20:29:15 America/Sao_Paulo] PHP Fatal error:  Call to a member function getType() on null in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
+[28-May-2016 20:29:22 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
+[28-May-2016 20:29:25 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
+[28-May-2016 20:29:26 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
+[28-May-2016 20:29:28 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
+[28-May-2016 20:29:33 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
+[28-May-2016 20:29:34 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
+[28-May-2016 20:29:46 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
+[28-May-2016 20:30:19 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
+[28-May-2016 20:30:22 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
+[28-May-2016 20:31:54 America/Sao_Paulo] PHP Notice:  Undefined index: client in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
+[28-May-2016 20:31:54 America/Sao_Paulo] PHP Notice:  Undefined index: client in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 12
+[28-May-2016 20:32:21 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
+[28-May-2016 20:33:54 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
+[28-May-2016 20:33:57 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
+[28-May-2016 20:34:08 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
+[28-May-2016 20:34:11 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
+[28-May-2016 20:34:13 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
+[28-May-2016 20:35:12 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
+[28-May-2016 20:35:54 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 26
+[28-May-2016 20:35:54 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
+[28-May-2016 20:36:16 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 26
+[28-May-2016 20:36:16 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
+[28-May-2016 20:36:24 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 26
+[28-May-2016 20:36:24 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
+[28-May-2016 20:36:40 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 65
+[28-May-2016 20:36:47 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 26
+[28-May-2016 20:36:47 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
+[28-May-2016 20:37:17 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$client in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 37
+[28-May-2016 20:37:17 America/Sao_Paulo] PHP Fatal error:  Call to a member function getType() on null in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 37
+[28-May-2016 20:37:37 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 26
+[28-May-2016 20:37:37 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
+[28-May-2016 20:38:06 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
+[28-May-2016 20:39:02 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 12
+[28-May-2016 20:39:10 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 12
+[28-May-2016 20:39:15 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
+[28-May-2016 20:39:42 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
+[28-May-2016 20:39:54 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
+[28-May-2016 20:40:04 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
+[28-May-2016 20:40:58 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/category.php on line 41
+[28-May-2016 20:41:04 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
+[28-May-2016 20:42:55 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
+[28-May-2016 20:46:40 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
+[28-May-2016 20:49:16 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/category.php on line 41
+[28-May-2016 20:49:25 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
+[28-May-2016 20:49:36 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
+[28-May-2016 20:52:04 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
+[28-May-2016 20:58:02 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
+[28-May-2016 20:58:46 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/client_pi.php on line 64
+[28-May-2016 21:02:17 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'submit' (T_STRING) in /var/www/ecommerce_management/core/views/view_helpers.php on line 57
+[28-May-2016 21:02:19 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'submit' (T_STRING) in /var/www/ecommerce_management/core/views/view_helpers.php on line 57
+[28-May-2016 21:03:32 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
+[28-May-2016 21:30:05 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`clients_pc`, CONSTRAINT `clients_pc_ibfk_1` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`))' in /var/www/ecommerce_management/app/models/client.php:131
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/client.php(131): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/clients_controller.php(71): Client->delete()
+#2 /var/www/ecommerce_management/core/routes/router.php(47): ClientsController->destroy()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/client.php on line 131
+[28-May-2016 21:34:35 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`orders`, CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`))' in /var/www/ecommerce_management/app/models/client.php:139
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/client.php(139): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/clients_controller.php(71): Client->delete()
+#2 /var/www/ecommerce_management/core/routes/router.php(47): ClientsController->destroy()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/client.php on line 139
+[28-May-2016 21:34:41 America/Sao_Paulo] PHP Fatal error:  Unsupported operand types in /var/www/ecommerce_management/app/models/client.php on line 155
+[28-May-2016 21:34:49 America/Sao_Paulo] PHP Fatal error:  Unsupported operand types in /var/www/ecommerce_management/app/models/client.php on line 155
+[28-May-2016 21:35:11 America/Sao_Paulo] PHP Fatal error:  Unsupported operand types in /var/www/ecommerce_management/app/models/client.php on line 155
+[28-May-2016 21:36:49 America/Sao_Paulo] PHP Fatal error:  Unsupported operand types in /var/www/ecommerce_management/app/models/client.php on line 155
+[28-May-2016 21:36:53 America/Sao_Paulo] PHP Fatal error:  Unsupported operand types in /var/www/ecommerce_management/app/models/client.php on line 155
+[28-May-2016 21:37:25 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/client_pi.php on line 64
+[28-May-2016 21:38:25 America/Sao_Paulo] PHP Fatal error:  Unsupported operand types in /var/www/ecommerce_management/app/models/client.php on line 155
+[28-May-2016 21:39:54 America/Sao_Paulo] PHP Fatal error:  Unsupported operand types in /var/www/ecommerce_management/app/models/client.php on line 155
+[28-May-2016 21:39:58 America/Sao_Paulo] PHP Fatal error:  Unsupported operand types in /var/www/ecommerce_management/app/models/client.php on line 155
+[28-May-2016 21:40:18 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ecommerce_management/core/models/base.php on line 67
+[28-May-2016 22:04:14 America/Sao_Paulo] PHP Fatal error:  Unsupported operand types in /var/www/ecommerce_management/app/models/client.php on line 155
+[28-May-2016 22:06:19 America/Sao_Paulo] PHP Fatal error:  Unsupported operand types in /var/www/ecommerce_management/app/models/client.php on line 155
+[28-May-2016 22:06:31 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/client_pi.php on line 64
+[28-May-2016 22:06:52 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /var/www/ecommerce_management/app/models/client.php on line 157
+[28-May-2016 22:07:13 America/Sao_Paulo] PHP Fatal error:  Unsupported operand types in /var/www/ecommerce_management/app/models/client.php on line 155
+[28-May-2016 22:16:22 America/Sao_Paulo] PHP Fatal error:  Unsupported operand types in /var/www/ecommerce_management/app/models/client.php on line 155
+[28-May-2016 22:28:56 America/Sao_Paulo] PHP Fatal error:  Unsupported operand types in /var/www/ecommerce_management/app/models/client.php on line 155
+[28-May-2016 22:32:12 America/Sao_Paulo] PHP Warning:  array_merge(): Argument #2 is not an array in /var/www/ecommerce_management/app/models/client.php on line 156
+[28-May-2016 22:33:25 America/Sao_Paulo] PHP Warning:  array_merge(): Argument #2 is not an array in /var/www/ecommerce_management/app/models/client.php on line 156
+[28-May-2016 22:33:25 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ecommerce_management/core/models/base.php on line 67
+[28-May-2016 22:33:25 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
+[28-May-2016 22:33:42 America/Sao_Paulo] PHP Warning:  array_merge(): Argument #2 is not an array in /var/www/ecommerce_management/app/models/client.php on line 156
+[28-May-2016 22:33:42 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ecommerce_management/core/models/base.php on line 67
+[28-May-2016 22:33:42 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
+[28-May-2016 22:33:52 America/Sao_Paulo] PHP Warning:  array_merge(): Argument #2 is not an array in /var/www/ecommerce_management/app/models/client.php on line 156
+[28-May-2016 22:33:52 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ecommerce_management/core/models/base.php on line 67
+[28-May-2016 22:33:52 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
+[28-May-2016 22:35:29 America/Sao_Paulo] PHP Notice:  Undefined variable: client in /var/www/ecommerce_management/app/models/client.php on line 158
+[28-May-2016 22:35:29 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ecommerce_management/core/models/base.php on line 67
+[28-May-2016 22:35:29 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
+[28-May-2016 22:37:58 America/Sao_Paulo] PHP Fatal error:  Call to a member function getType() on null in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 48
+[28-May-2016 22:38:23 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ecommerce_management/core/models/base.php on line 67
+[28-May-2016 22:38:23 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPc::setcpf() in /var/www/ecommerce_management/core/models/base.php on line 70
+[28-May-2016 22:38:57 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ecommerce_management/core/models/base.php on line 67
+[28-May-2016 22:38:57 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPc::setcpf() in /var/www/ecommerce_management/core/models/base.php on line 70
+[28-May-2016 22:39:12 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/client_pi.php on line 64
+[28-May-2016 22:39:33 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/client_pc.php on line 63
+[28-May-2016 22:50:18 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/client_pi.php on line 64
+[28-May-2016 22:50:32 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/client_pi.php on line 64
+[28-May-2016 22:50:54 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/client_pc.php on line 63
+[28-May-2016 22:56:39 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ecommerce_management/core/models/base.php on line 67
+[28-May-2016 22:56:39 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPc::setcpf() in /var/www/ecommerce_management/core/models/base.php on line 70
+[28-May-2016 22:57:55 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ecommerce_management/core/models/base.php on line 67
+[28-May-2016 22:57:55 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPc::setcpf() in /var/www/ecommerce_management/core/models/base.php on line 70
+[28-May-2016 22:58:32 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ecommerce_management/core/models/base.php on line 67
+[28-May-2016 22:58:32 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPc::setcpf() in /var/www/ecommerce_management/core/models/base.php on line 70
+[28-May-2016 22:59:12 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/client_pi.php on line 64
+[28-May-2016 22:59:38 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/client_pi.php on line 64
+[28-May-2016 22:59:55 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/client_pi.php on line 64
+[28-May-2016 23:30:44 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPc::getCpf() in /var/www/ecommerce_management/app/views/clients/_form_pi.phtml on line 4
+[28-May-2016 23:30:46 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPc::getCpf() in /var/www/ecommerce_management/app/views/clients/_form_pi.phtml on line 4
+[28-May-2016 23:30:48 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPc::getCpf() in /var/www/ecommerce_management/app/views/clients/_form_pi.phtml on line 4
+[28-May-2016 23:30:50 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPc::getCpf() in /var/www/ecommerce_management/app/views/clients/_form_pi.phtml on line 4
+[28-May-2016 23:30:52 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPc::getCpf() in /var/www/ecommerce_management/app/views/clients/_form_pi.phtml on line 4
+[28-May-2016 23:30:55 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPc::getCpf() in /var/www/ecommerce_management/app/views/clients/_form_pi.phtml on line 4
+[28-May-2016 23:31:09 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPc::getCpf() in /var/www/ecommerce_management/app/views/clients/_form_pi.phtml on line 4
+[28-May-2016 23:31:28 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPc::getCpf() in /var/www/ecommerce_management/app/views/clients/_form_pi.phtml on line 4
+[28-May-2016 23:31:39 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPc::getCpf() in /var/www/ecommerce_management/app/views/clients/_form_pi.phtml on line 4
+[28-May-2016 23:32:16 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 26

@@ -42,6 +42,7 @@
     if ($this->newRecord() || $this->changedFieldValue('email', 'clients')) {
       Validations::validEmail($this->email, 'email', $this->errors);
       Validations::uniqueField($this->email, 'email', 'clients', $this->errors);
+
     }
   }
 
@@ -96,14 +97,28 @@
     if (!$this->isvalid()) return false;
 
     $db = Database::getConnection();
-    $params = array('id' => $this->clientId, 'name' => $this->name, 'email' => $this->email, 'phone' => $this->phone, 'address' => $this->address,
-                    'address_number' => $this->addressNumber, 'address_cep' => $this->addressCep, 'city_id' => $this->cityId);
+    $params = array($this->name, $this->address, $this->addressNumber, $this->addressCep,
+                    $this->phone, $this->email, $this->cityId, $this->clientId);
 
-    $sql = "UPDATE clients SET name=:name, email=:email, phone:=phone, address:=address, address_number:=address_number,
-                   address_cep:=address_cep, city_id:=city_id WHERE id = :id";
+    $sql = "UPDATE clients SET name = ?, address = ? , address_number = ?, address_cep = ?,
+                    phone = ?, email = ?, city_id = ? WHERE id = ?";
 
     $statement = $db->prepare($sql);
-    return $statement->execute($params);
+    $resp = $statement->execute($params);
+
+    $params = array($this->cpf, $this->dateOfBirth, $this->id);
+
+    $sql = "UPDATE clients_pi SET cpf= ? , date_of_birth = ? WHERE client_id = ?";
+
+    $statement = $db->prepare($sql);
+    $resp = $statement->execute($params);
+
+    if(!$resp) {
+      Loger::getInstance()->log("Falha ao atualizar o cliente: " . print_r($this, TRUE), Logger::ERROR);
+      Logger::getInstance()->log("Error " . print_r(error_get_last(), true ), Logger::ERROR);
+      return false;
+    }
+    return true;
   }
 
 

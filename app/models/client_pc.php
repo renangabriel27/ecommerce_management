@@ -74,6 +74,36 @@
     return true;
   }
 
+
+  public function update($data = array()) {
+    $this->setData($data);
+    if (!$this->isvalid()) return false;
+
+    $db = Database::getConnection();
+    $params = array($this->name, $this->address, $this->addressNumber, $this->addressCep,
+    $this->phone, $this->email, $this->cityId, $this->clientId);
+
+    $sql = "UPDATE clients SET name = ?, address = ? , address_number = ?, address_cep = ?,
+    phone = ?, email = ?, city_id = ? WHERE id = ?";
+
+    $statement = $db->prepare($sql);
+    $resp = $statement->execute($params);
+
+    $params = array($this->cnpj, $this->companyName, $this->clientId);
+
+    $sql = "UPDATE clients_pc SET cnpj= ? , company_name = ? WHERE client_id = ?";
+
+    $statement = $db->prepare($sql);
+    $resp = $statement->execute($params);
+
+    if(!$resp) {
+      Loger::getInstance()->log("Falha ao atualizar o cliente: " . print_r($this, TRUE), Logger::ERROR);
+      Logger::getInstance()->log("Error " . print_r(error_get_last(), true ), Logger::ERROR);
+      return false;
+    }
+    return true;
+  }
+
   public static function findById($id) {
     $db = Database::getConnection();
     $sql = "SELECT * FROM clients, clients_pc WHERE clients.id = ?";
@@ -90,23 +120,5 @@
 
     return null;
   }
-
-  public function update($data = array()) {
-    $this->setData($data);
-    if (!$this->isvalid()) return false;
-
-    $db = Database::getConnection();
-    $params = array('id' => $this->id, 'name' => $this->name, 'email' => $this->email, 'phone' => $this->phone, 'address' => $this->address,
-                    'address_number' => $this->addressNumber, 'address_cep' => $this->addressCep, 'city_id' => $this->cityId);
-
-    $sql = "UPDATE clients SET name=:name, email=:email, phone:=phone, address:=address, address_number:=address_number,
-                   address_cep:=address_cep, city_id:=city_id WHERE id = :id";
-
-    $statement = $db->prepare($sql);
-    return $statement->execute($params);
-  }
-
-
-
 
 } ?>

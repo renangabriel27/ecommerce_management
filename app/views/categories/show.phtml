@@ -14,17 +14,17 @@
         <td><?= $this->category->getName() ?></td>
         <td><?= ViewHelpers::dateFormat($this->category->getCreatedAt()); ?></td>
         <td>
-          <?= $this->linkTo("/categorias/{$this->category->getId()}/editar",'', '', 'class="zoom icon"') ?>
-          <?= $this->linkTo("/categorias/{$this->category->getId()}/editar", '', '', 'class="edit icon"') ?>
-          <?= $this->linkTo("/categorias/{$this->category->getId()}/deletar", '', '', 'class="trash icon"') ?>
+          <?= ViewHelpers::linkTo("/categorias/{$this->category->getId()}/editar",'', '', 'class="zoom icon"') ?>
+          <?= ViewHelpers::linkTo("/categorias/{$this->category->getId()}/editar", '', '', 'class="edit icon"') ?>
+          <?= ViewHelpers::linkTo("/categorias/{$this->category->getId()}/deletar", '', '', 'class="trash icon"') ?>
         </td>
       </tr>
     </tbody>
     <tfoot class="full-width">
       <tr>
         <th colspan="8">
-          <?= $this->linkTo("/categorias/novo", 'Nova categoria', 'class="ui right floated small primary labeled icon button"', 'class="add circle icon"') ?>
-          <?= $this->linkTo("/categorias", 'Voltar', 'class="ui right floated small labeled icon button"', 'class="reply icon"') ?>
+          <?= ViewHelpers::linkTo("/categorias/novo", 'Nova categoria', 'class="ui right floated small primary labeled icon button"', 'class="add circle icon"') ?>
+          <?= ViewHelpers::linkTo("/categorias", 'Voltar', 'class="ui right floated small labeled icon button"', 'class="reply icon"') ?>
         </th>
       </tr>
     </tfoot>

@@ -26,7 +26,7 @@
             <td>
               <?= ViewHelpers::linkTo("/clientes/{$client->getId()}/editar", '', '', 'class="zoom icon"') ?>
               <?= ViewHelpers::linkTo("/clientes/{$client->getId()}/editar", '', '', 'class="edit icon"') ?>
-              <?= ViewHelpers::linkTo("/clientes/{$client->getId()}/deletar", '', '', 'class="trash icon"') ?>
+              <?= ViewHelpers::linkTo("/clientes/{$client->getId()}/deletar", '', 'data-confirm="Tem certeza que deseja deletar?"', 'class="trash icon"') ?>
             </td>
           </tr>
         <?php endForeach; ?>

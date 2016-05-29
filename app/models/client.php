@@ -20,7 +20,7 @@
   public function setEmail($email) {
     $this->email = $email;
   }
-  
+
   public function getEmail() {
     return $this->email;
   }
@@ -108,19 +108,61 @@
     return true;
   }
 
-  public static function findById($id) {
+  public function update($data = array()) {
+    $this->setData($data);
+    if (!$this->isvalid()) return false;
+
     $db = Database::getConnection();
+    $params = array('id' => $this->clientId, 'name' => $this->name, 'email' => $this->email, 'phone' => $this->phone, 'address' => $this->address,
+    'address_number' => $this->addressNumber, 'address_cep' => $this->addressCep, 'city_id' => $this->cityId);
+
+    $sql = "UPDATE clients SET name=:name, email=:email, phone:=phone, address:=address, address_number:=address_number,
+    address_cep:=address_cep, city_id:=city_id WHERE id = :id";
+
+    $statement = $db->prepare($sql);
+    return $statement->execute($params);
+  }
+
+  public function delete() {
+    $db = Database::getConnection();
+    $params = array($this->id);
+    $sql = "DELETE FROM clients_pi WHERE client_id = ?";
+    $statement = $db->prepare($sql);
+    $statement->execute($params);
+
+    $sql = "DELETE FROM clients_pc WHERE client_id = ?";
+    $statement = $db->prepare($sql);
+    $statement->execute($params);
+
+    $sql = "DELETE FROM clients WHERE id = ?";
+    $statement = $db->prepare($sql);
+    return $statement->execute($params);
+  }
+
+  public static function findById($id) {
     $sql = "SELECT * FROM clients WHERE id = ?";
     $params = array($id);
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
     $resp = $statement->execute($params);
+    $row = $statement->fetch(PDO::FETCH_ASSOC);
 
-    if ($resp && $row = $statement->fetch(PDO::FETCH_ASSOC)) {
-      $client = new Client($row);
-      return $client;
-    }
+    if($row['type'] == 1) {
+        $sql = "SELECT * FROM clients_pi WHERE client_id = ?";
+        $statement = $db->prepare($sql);
+        $resp = $statement->execute($params);
+        $row  += $statement->fetch(PDO::FETCH_ASSOC);
+
+        return new ClientPi($row);
+    } else   {
+        $sql = "SELECT * FROM clients_pc WHERE client_id = ?";
+        $statement = $db->prepare($sql);
+        $resp = $statement->execute($params);
+        $row += $statement->fetch(PDO::FETCH_ASSOC);
+
+        return new ClientPc($row);
+      }
 
     return null;
   }
@@ -199,5 +241,8 @@
 
     return json_encode($suggestions);
   }
+
+
+
 
 } ?>

@@ -23,7 +23,7 @@
       </div>
 
       <div class="four fields">
-        <?php ($this->type == 1) ? require '_form_pi.phtml' : require '_form_pc.phtml'; ?>
+          <?php (ViewHelpers::activeClass("/clientes/novo/1") == "item active") ? require '_form_pi.phtml' : require '_form_pc.phtml'; ?>
         <div class="required field <?= $this->client->getErrors('phone') ? 'error' : '' ?>">
           <label>Telefone</label>
           <input type="text" id="client['phone']" name="client[phone]" placeholder="telefone" value="<?= $this->client->getPhone() ?>">
