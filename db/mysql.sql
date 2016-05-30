@@ -85,7 +85,7 @@ CREATE TABLE orders (
 	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 	client_id INT NOT NULL,
 	employee_id INT NOT NULL,
-	status INT,
+	status VARCHAR(8) DEFAULT "Aberto",
 	CONSTRAINT FOREIGN KEY(client_id) REFERENCES clients(id),
 	CONSTRAINT FOREIGN KEY(employee_id) REFERENCES employees(id)
 );

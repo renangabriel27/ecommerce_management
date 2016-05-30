@@ -1,5 +1,5 @@
 <?php class ApplicationController extends BaseController {
-  private $currentUser;
+  private $currentEmployee;
 
   /* Mudar layout da rota */
   // public function __construct() {
@@ -7,11 +7,11 @@
   //   $this->layout = 'layout/application.phtml';
   // }
 
-  public function currentUser() {
-    if ($this->currentUser === null) {
-      $this->currentUser = SessionHelpers::currentUser();
+  public function currentEmployee() {
+    if ($this->currentEmployee === null) {
+      $this->currentEmployee = SessionHelpers::currentEmployee();
     }
-    return $this->currentUser;
+    return $this->currentEmployee;
   }
 
   public function authenticated() {

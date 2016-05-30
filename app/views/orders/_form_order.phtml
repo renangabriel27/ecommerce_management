@@ -3,16 +3,20 @@
   <div class="ui form">
     <div class="field <?= $this->order->getErrors('client_id') ? 'error' : ' '?>">
       <label for="autocomplete_clients"> Cliente : </label>
-      <input type="text" class="autocomplete-suggestions" id="autocomplete_clients"
-        name="order[client_name]" placeholder="Digite o nome do cliente" value=""
-        data-url="<?= ViewHelpers::urlFor('/clientes/autocomplete-search') ?>">
+      <div class="ui search">
+        <div class="ui icon input">
+          <input type="text" class="autocomplete-suggestions" id="autocomplete_clients"
+                name="order[client_name]" placeholder="Digite o nome do cliente" value=""
+                data-url="<?= ViewHelpers::urlFor('/clientes/autocomplete-search') ?>">
+            <i class="search icon"></i>
+        </div>
+      </div>
+      <input type="hidden" id="order_user_id" name="order[client_id]">
+    </div>
+    <?= ViewHelpers::linkTo("/pedidos", 'Voltar', 'class="ui left  small labeled icon button"', 'class="reply icon"') ?>
+    <?= ViewHelpers::buttonTo($this->submit, 'class="ui right labeled icon primary button"', 'class="right arrow icon"') ?>
 
-        <input type="hidden" id="order_user_id" name="order[client_id]">
-              </div>
-        <?= ViewHelpers::linkTo("/pedidos", 'Voltar', 'class="ui left  small labeled icon button"', 'class="reply icon"') ?>
-        <?= ViewHelpers::buttonTo($this->submit, 'class="ui right labeled icon primary button"', 'class="right arrow icon"') ?>
-
-        <div class="ui pointing <?= $this->order->getErrors('client_id') ? 'red basic label' : '' ?>"><?= $this->order->getErrors('client_id') ?></div>
+    <div class="ui pointing <?= $this->order->getErrors('client_id') ? 'red basic label' : '' ?>"><?= $this->order->getErrors('client_id') ?></div>
 
   </div>
 </form>

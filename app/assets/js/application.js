@@ -64,6 +64,14 @@ var auto_complete = function() {
         $("#autocomplete_product_by_id").val(suggestion.data)
     }
   });
+  
+  url = $('#autocomplete_product_by_id').data('url');
+  $('#autocomplete_product_by_id').autocomplete({
+    serviceUrl: url,
+    onSelect: function (suggestion) {
+      $("#autocomplete_product_by_name").val(suggestion.data)
+    }
+  });
 
 
 };

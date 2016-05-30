@@ -9,6 +9,7 @@
 
    public function show() {
      $this->order = Order::findById($this->params[':id']);
+     $this->sellOrderItem = new SellOrderItem();
      $this->title = 'Pedido';
      $this->submit = "Adicionar";
      $this->action =  ViewHelpers::urlFor('/pedidos/produtos');
@@ -55,6 +56,10 @@
 
    public function addOrderProduct() {
      $this->order = Order::findById($this->params['order']['id']);
+     if($this->params['product']['name'] == NULL) {
+        Flash::message('negative', 'Produto não pode ser vazio!');
+        $this->redirectTo("/pedidos/{$this->order->getId()}");
+    }
      if($this->order->uniqueItem($this->params['product']['id'])) {
       Flash::message('negative', 'Esse produto já está cadastrado no pedido!');
       $this->redirectTo("/pedidos/{$this->order->getId()}");
@@ -80,5 +85,15 @@
      $this->redirectTo("/pedidos/{$this->order->getId()}");
    }
 
+   public function closeOrder() {
+     $this->order = Order::findById($this->params[':id']);
+     if($this->order->changeStatusOrder($this->params[':id'])) {
+       Flash::message('positive', 'Pedido fechado com sucesso!');
+       $this->redirectTo("/pedidos");
+     } else {
+       Flash::message('negative', 'Erro no fechamento do pedido!');
+     }
+
+   }
 
 } ?>

@@ -38,6 +38,6 @@
         <th colspan="2"></th>
       </tfoots>
     </table>
-
+      <?= ViewHelpers::linkTo("/pedidos/{$this->order->getId()}/fechar", 'Fechar pedido', 'class="ui right floated primary labeled icon button"', 'class="unlock alternate icon"') ?>
   </article>
 </section>

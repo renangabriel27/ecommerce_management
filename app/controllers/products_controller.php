@@ -68,4 +68,10 @@
      exit();
    }
 
+   public function autoCompleteSearchId() {
+     $products = Product::whereIdLikeAsJson($this->params['query']);
+     echo $products;
+     exit();
+   }
+
 } ?>

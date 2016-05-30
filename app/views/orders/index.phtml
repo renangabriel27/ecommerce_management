@@ -7,6 +7,7 @@
         <th>Quantidade de produtos</th>
         <th>Total</th>
         <th>Cadastrado em</th>
+        <th>Status</th>
         <th>Opções</th>
       </tr>
     </thead>
@@ -19,6 +20,7 @@
         <td></td>
         <td></td>
         <td><?= ViewHelpers::dateFormat($order->getCreatedAt()) ?></td>
+        <td><?= $order->getStatus() ?></td>
         <td>
           <?= ViewHelpers::linkTo("/pedidos/{$order->getId()}", '', '', 'class="zoom icon"') ?>
           <?= ViewHelpers::linkTo("/pedidos/{$order->getId()}", '', '', 'class="edit icon"') ?>

@@ -204,3 +204,339 @@ Stack trace:
 [30-May-2016 13:12:25 America/Sao_Paulo] PHP Warning:  Missing argument 2 for SellOrderItem::getAmountOfProduct(), called in /var/www/ecommerce_management/app/models/sell_order_item.php on line 51 and defined in /var/www/ecommerce_management/app/models/sell_order_item.php on line 61
 [30-May-2016 13:12:25 America/Sao_Paulo] PHP Notice:  Undefined variable: order in /var/www/ecommerce_management/app/models/sell_order_item.php on line 63
 [30-May-2016 13:15:33 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/order.php on line 64
+[30-May-2016 14:11:41 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/order.php on line 64
+[30-May-2016 14:11:48 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'price' cannot be null' in /var/www/ecommerce_management/app/models/order.php:95
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(95): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(62): Order->addProduct('')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->addOrderProduct()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(88): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 95
+[30-May-2016 14:11:52 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'price' cannot be null' in /var/www/ecommerce_management/app/models/order.php:95
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(95): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(62): Order->addProduct('')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->addOrderProduct()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(88): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 95
+[30-May-2016 14:12:04 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'price' cannot be null' in /var/www/ecommerce_management/app/models/order.php:95
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(95): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(62): Order->addProduct('')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->addOrderProduct()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(88): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 95
+[30-May-2016 14:12:52 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$product in /var/www/ecommerce_management/app/views/orders/_form_order_items.phtml on line 9
+[30-May-2016 14:12:52 America/Sao_Paulo] PHP Fatal error:  Call to a member function getErrors() on null in /var/www/ecommerce_management/app/views/orders/_form_order_items.phtml on line 9
+[30-May-2016 14:13:21 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'price' cannot be null' in /var/www/ecommerce_management/app/models/order.php:95
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(95): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(63): Order->addProduct('')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->addOrderProduct()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(88): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 95
+[30-May-2016 14:15:00 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'price' cannot be null' in /var/www/ecommerce_management/app/models/order.php:95
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(95): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(63): Order->addProduct('')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->addOrderProduct()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(88): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 95
+[30-May-2016 14:15:02 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'price' cannot be null' in /var/www/ecommerce_management/app/models/order.php:95
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(95): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(63): Order->addProduct('')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->addOrderProduct()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(88): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 95
+[30-May-2016 14:15:06 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'price' cannot be null' in /var/www/ecommerce_management/app/models/order.php:95
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(95): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(63): Order->addProduct('')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->addOrderProduct()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(88): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 95
+[30-May-2016 14:16:10 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$name in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 59
+[30-May-2016 14:16:10 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'price' cannot be null' in /var/www/ecommerce_management/app/models/order.php:95
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(95): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(64): Order->addProduct('')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->addOrderProduct()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(88): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 95
+[30-May-2016 14:17:09 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'price' cannot be null' in /var/www/ecommerce_management/app/models/order.php:95
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(95): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(65): Order->addProduct('')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->addOrderProduct()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(88): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 95
+[30-May-2016 14:18:07 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'price' cannot be null' in /var/www/ecommerce_management/app/models/order.php:96
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(96): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(64): Order->addProduct('')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->addOrderProduct()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(88): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 96
+[30-May-2016 14:18:11 America/Sao_Paulo] PHP Notice:  Undefined property: Order::$product in /var/www/ecommerce_management/app/models/order.php on line 43
+[30-May-2016 14:19:18 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'price' cannot be null' in /var/www/ecommerce_management/app/models/order.php:95
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(95): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(64): Order->addProduct('')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->addOrderProduct()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(88): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 95
+[30-May-2016 14:21:08 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$sellOrderItem in /var/www/ecommerce_management/app/views/orders/_form_order_items.phtml on line 9
+[30-May-2016 14:21:08 America/Sao_Paulo] PHP Fatal error:  Call to a member function getErrors() on null in /var/www/ecommerce_management/app/views/orders/_form_order_items.phtml on line 9
+[30-May-2016 14:21:16 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$sellOrderItem in /var/www/ecommerce_management/app/views/orders/_form_order_items.phtml on line 9
+[30-May-2016 14:21:16 America/Sao_Paulo] PHP Fatal error:  Call to a member function getErrors() on null in /var/www/ecommerce_management/app/views/orders/_form_order_items.phtml on line 9
+[30-May-2016 14:21:17 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$sellOrderItem in /var/www/ecommerce_management/app/views/orders/_form_order_items.phtml on line 9
+[30-May-2016 14:21:17 America/Sao_Paulo] PHP Fatal error:  Call to a member function getErrors() on null in /var/www/ecommerce_management/app/views/orders/_form_order_items.phtml on line 9
+[30-May-2016 14:22:08 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$sellOrderItem in /var/www/ecommerce_management/app/views/orders/_form_order_items.phtml on line 3
+[30-May-2016 14:22:08 America/Sao_Paulo] PHP Fatal error:  Call to a member function getErrors() on null in /var/www/ecommerce_management/app/views/orders/_form_order_items.phtml on line 3
+[30-May-2016 14:22:41 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'price' cannot be null' in /var/www/ecommerce_management/app/models/order.php:95
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(95): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(64): Order->addProduct('')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->addOrderProduct()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(88): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 95
+[30-May-2016 14:22:43 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'price' cannot be null' in /var/www/ecommerce_management/app/models/order.php:95
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(95): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(64): Order->addProduct('')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->addOrderProduct()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(88): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 95
+[30-May-2016 14:23:44 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'price' cannot be null' in /var/www/ecommerce_management/app/models/order.php:95
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(95): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(64): Order->addProduct('')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->addOrderProduct()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(88): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 95
+[30-May-2016 14:23:53 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'price' cannot be null' in /var/www/ecommerce_management/app/models/order.php:95
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(95): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(64): Order->addProduct('')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->addOrderProduct()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(88): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 95
+[30-May-2016 14:24:11 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'price' cannot be null' in /var/www/ecommerce_management/app/models/order.php:95
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(95): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(64): Order->addProduct('')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->addOrderProduct()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(88): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 95
+[30-May-2016 14:24:46 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'price' cannot be null' in /var/www/ecommerce_management/app/models/order.php:95
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(95): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(64): Order->addProduct('')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->addOrderProduct()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(88): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 95
+[30-May-2016 14:25:12 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'price' cannot be null' in /var/www/ecommerce_management/app/models/order.php:95
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(95): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(64): Order->addProduct('')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->addOrderProduct()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(88): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 95
+[30-May-2016 14:25:15 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'price' cannot be null' in /var/www/ecommerce_management/app/models/order.php:95
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(95): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(64): Order->addProduct('')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->addOrderProduct()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(88): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 95
+[30-May-2016 14:33:43 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '<' in /var/www/ecommerce_management/app/views/orders/_form_order_items.phtml on line 7
+[30-May-2016 14:38:26 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'price' cannot be null' in /var/www/ecommerce_management/app/models/order.php:95
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(95): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(67): Order->addProduct('')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->addOrderProduct()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(89): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 95
+[30-May-2016 14:45:50 America/Sao_Paulo] PHP Notice:  Undefined variable: sellOrderItem in /var/www/ecommerce_management/app/models/sell_order_item.php on line 56
+[30-May-2016 14:45:50 America/Sao_Paulo] PHP Fatal error:  Call to a member function delete() on null in /var/www/ecommerce_management/app/models/sell_order_item.php on line 56
+[30-May-2016 14:45:54 America/Sao_Paulo] PHP Notice:  Undefined variable: sellOrderItem in /var/www/ecommerce_management/app/models/sell_order_item.php on line 56
+[30-May-2016 14:45:54 America/Sao_Paulo] PHP Fatal error:  Call to a member function delete() on null in /var/www/ecommerce_management/app/models/sell_order_item.php on line 56
+[30-May-2016 14:47:44 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /var/www/ecommerce_management/app/models/sell_order_item.php on line 56
+[30-May-2016 14:52:01 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'price' cannot be null' in /var/www/ecommerce_management/app/models/order.php:95
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(95): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(67): Order->addProduct('')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->addOrderProduct()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(89): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 95
+[30-May-2016 15:02:50 America/Sao_Paulo] PHP Fatal error:  Call to undefined method Order::getStatus() in /var/www/ecommerce_management/app/views/orders/index.phtml on line 22
+[30-May-2016 15:10:19 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecommerce_management.orders' doesn't exist' in /var/www/ecommerce_management/app/models/order.php:154
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(154): PDOStatement->execute()
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(7): Order::all()
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->index()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(89): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 154
+[30-May-2016 15:10:20 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecommerce_management.orders' doesn't exist' in /var/www/ecommerce_management/app/models/order.php:186
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(186): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(11): Order::findById('13')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->show()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(89): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 186
+[30-May-2016 15:10:22 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecommerce_management.orders' doesn't exist' in /var/www/ecommerce_management/app/models/order.php:186
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(186): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(11): Order::findById('13')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->show()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(89): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 186
+[30-May-2016 15:10:22 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecommerce_management.orders' doesn't exist' in /var/www/ecommerce_management/app/models/order.php:186
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(186): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(11): Order::findById('13')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->show()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(89): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 186
+[30-May-2016 15:10:25 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecommerce_management.orders' doesn't exist' in /var/www/ecommerce_management/app/models/order.php:154
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(154): PDOStatement->execute()
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(7): Order::all()
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->index()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(89): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 154
+[30-May-2016 15:11:31 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/order.php on line 73
+[30-May-2016 15:12:32 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/order.php on line 73
+[30-May-2016 15:34:49 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/order.php on line 73
+[30-May-2016 15:57:00 America/Sao_Paulo] PHP Notice:  Undefined variable: params in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 89
+[30-May-2016 15:57:00 America/Sao_Paulo] PHP Fatal error:  Call to a member function changeStatusOrder() on null in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 90
+[30-May-2016 15:57:16 America/Sao_Paulo] PHP Notice:  Undefined variable: params in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 89
+[30-May-2016 15:57:16 America/Sao_Paulo] PHP Fatal error:  Call to a member function changeStatusOrder() on null in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 90
+[30-May-2016 15:57:33 America/Sao_Paulo] PHP Catchable fatal error:  Object of class Order could not be converted to string in /var/www/ecommerce_management/app/models/order.php on line 154
+[30-May-2016 15:58:20 America/Sao_Paulo] PHP Catchable fatal error:  Object of class Order could not be converted to string in /var/www/ecommerce_management/app/models/order.php on line 154
+[30-May-2016 15:59:53 America/Sao_Paulo] PHP Catchable fatal error:  Object of class Order could not be converted to string in /var/www/ecommerce_management/app/models/order.php on line 154
+[30-May-2016 16:00:36 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$order in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 90
+[30-May-2016 16:00:36 America/Sao_Paulo] PHP Fatal error:  Call to a member function changeStatusOrder() on null in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 90
+[30-May-2016 16:00:49 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'field list'' in /var/www/ecommerce_management/app/models/order.php:154
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(154): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(90): Order->changeStatusOrder('1')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->closeOrder()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(90): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 154
+[30-May-2016 16:01:12 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'field list'' in /var/www/ecommerce_management/app/models/order.php:154
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(154): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(90): Order->changeStatusOrder('1')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->closeOrder()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(90): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 154
+[30-May-2016 16:01:36 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order_id' in 'where clause'' in /var/www/ecommerce_management/app/models/order.php:154
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(154): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(90): Order->changeStatusOrder('1')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->closeOrder()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(90): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 154
+[30-May-2016 16:01:39 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order_id' in 'where clause'' in /var/www/ecommerce_management/app/models/order.php:154
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(154): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(90): Order->changeStatusOrder('1')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->closeOrder()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(90): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 154
+[30-May-2016 16:03:41 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`sell_orders_items`, CONSTRAINT `sell_orders_items_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`))' in /var/www/ecommerce_management/core/models/base.php:79
+Stack trace:
+#0 /var/www/ecommerce_management/core/models/base.php(79): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(44): Base->delete('orders')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->destroy()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(90): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/core/models/base.php on line 79
+[30-May-2016 16:04:15 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/order.php on line 73
+[30-May-2016 16:04:40 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`sell_orders_items`, CONSTRAINT `sell_orders_items_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`))' in /var/www/ecommerce_management/core/models/base.php:79
+Stack trace:
+#0 /var/www/ecommerce_management/core/models/base.php(79): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(44): Base->delete('orders')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->destroy()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(90): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/core/models/base.php on line 79
+[30-May-2016 16:05:14 America/Sao_Paulo] PHP Fatal error:  Call to undefined method EmployeesController::currentEmployee() in /var/www/ecommerce_management/app/controllers/employees_controller.php on line 30
+[30-May-2016 16:05:48 America/Sao_Paulo] PHP Fatal error:  Call to undefined method EmployeesController::currentEmployee() in /var/www/ecommerce_management/app/controllers/employees_controller.php on line 30
+[30-May-2016 16:06:46 America/Sao_Paulo] PHP Fatal error:  Call to undefined method EmployeesController::currentEmployee() in /var/www/ecommerce_management/app/controllers/employees_controller.php on line 30
+[30-May-2016 16:08:56 America/Sao_Paulo] PHP Notice:  Undefined index: Employee in /var/www/ecommerce_management/app/controllers/employees_controller.php on line 38
+[30-May-2016 16:08:56 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ecommerce_management/core/models/base.php on line 67
+[30-May-2016 16:08:56 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecommerce_management.users' doesn't exist' in /var/www/ecommerce_management/app/models/employee.php:72
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/employee.php(72): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/employees_controller.php(38): Employee->update(NULL)
+#2 /var/www/ecommerce_management/core/routes/router.php(47): EmployeesController->update()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(90): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/employee.php on line 72
+[30-May-2016 16:09:41 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/order.php on line 73

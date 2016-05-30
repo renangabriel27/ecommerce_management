@@ -186,6 +186,25 @@
     return json_encode($suggestions);
   }
 
+  public static function whereIdLikeAsJson($param) {
+    $sql = "SELECT id, name FROM products WHERE name LIKE :param ORDER BY name";
+    $params = array('param' => "%{$param}%");
+
+    $db = Database::getConnection();
+    $statement = $db->prepare($sql);
+    $resp = $statement->execute($params);
+
+    $suggestions = array('suggestions' => '');
+
+    if(!$resp) return $suggestions;
+
+    while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+      $product = array('value' => $row['id'], 'data' => $row['name']);
+      $suggestions['suggestions'][] = $product;
+    }
+    return json_encode($suggestions);
+  }
+
   public static function count() {
     $sql = "SELECT COUNT(*) FROM products";
 

@@ -48,6 +48,7 @@
     $router->post('/pedidos/produtos', array('controller' => 'OrdersController', 'action' => 'addOrderProduct'));
     $router->get('/pedidos/:id', array('controller' => 'OrdersController', 'action' => 'show'));
     $router->get('/pedidos/:id/deletar', array('controller' => 'OrdersController', 'action' => 'destroy'));
+    $router->get('/pedidos/:id/fechar', array('controller' => 'OrdersController', 'action' => 'closeOrder'));
     $router->get('/pedidos/:id/produtos/:product_id/deletar', array('controller' => 'OrdersController', 'action' => 'destroyProduct'));
     $router->get('/pedidos/:id/produtos/:product_id/adicionar', array('controller' => 'OrdersController', 'action' => 'addAmountProduct'));
     $router->get('/pedidos/:id/produtos/:product_id/remover', array('controller' => 'OrdersController', 'action' => 'removeAmountProduct'));
@@ -58,6 +59,7 @@
     /* Rotas para os produtos
     ------------------------- */
     $router->get('/produtos/autocomplete-search', array('controller' => 'ProductsController', 'action' => 'autoCompleteSearch'));
+    $router->get('/produtos/autocomplete-search-id', array('controller' => 'ProductsController', 'action' => 'autoCompleteSearchId'));
 
     $router->get('/produtos', array('controller' => 'ProductsController', 'action' => 'index'));
     $router->get('/produtos/page/:page', array('controller' => 'ProductsController', 'action' => 'index'));

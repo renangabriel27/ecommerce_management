@@ -4,6 +4,7 @@
   private $client;
   private $amount;
   private $total;
+  private $status;
 
   public function setEmployeeId($employeeId) {
       $this->employeeId = $employeeId;
@@ -35,6 +36,14 @@
 
   public function getTotal() {
     return $this->total;
+  }
+
+  public function setStatus($status) {
+      $this->status = $status;
+  }
+
+  public function getStatus() {
+    return $this->status;
   }
 
   public function validates() {
@@ -136,8 +145,20 @@
     return $sell_order_item;
   }
 
+  public function changeStatusOrder($id) {
+    $db = Database::getConnection();
+    $this->status = "Fechado";
+    $params = array('id' => $id, 'status' => $this->status);
+    $sql = "UPDATE orders SET status= :status WHERE id = :id";
+    $statement = $db->prepare($sql);
+    $resp = $statement->execute($params);
+    if($resp) return true;
+
+    return false;
+  }
+
   public static function all() {
-    $sql = "SELECT orders.id AS id, orders.created_at AS created_at, clients.id AS client_id, clients.name AS client_name,
+    $sql = "SELECT orders.id AS id, orders.created_at AS created_at, orders.status AS status, clients.id AS client_id, clients.name AS client_name,
      clients.email AS client_email FROM clients JOIN orders ON(orders.client_id = clients.id) ORDER BY id";
 
     $db = Database::getConnection();
@@ -151,6 +172,7 @@
     while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
       $order = new Order();
       $order->setId($row['id']);
+      $order->setStatus($row['status']);
       $order->setCreatedAt($row['created_at']);
 
       $client = new Client();

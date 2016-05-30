@@ -37,22 +37,29 @@
     return $this->productId;
   }
 
-  public static function addProduct($productId, $orderId) {
-    $amount = (int) self::getAmountOfProduct($productId, $orderId);
+  public function validates() {
+
+  }
+
+  public static function addProduct($id, $order) {
+    $amount = (int) self::getAmountOfProduct($id, $order);
     $amount++;
     $db = Database::getConnection();
-    $params = array('product_id' => $productId, 'amount' => $amount, 'order_id' => $orderId);
+    $params = array('product_id' => $id, 'amount' => $amount, 'order_id' => $order);
     $sql = "UPDATE sell_orders_items SET amount= :amount WHERE product_id = :product_id AND order_id = :order_id";
     $statement = $db->prepare($sql);
     return $statement->execute($params);
   }
 
-  public static function removeProduct($productId, $orderId) {
-    $amount = (int) self::getAmountOfProduct($productId, $orderId);
-    if($amount == 0) return null;
+  public static function removeProduct($id, $order) {
+    $amount = (int) self::getAmountOfProduct($id, $order);
+    if(($amount-1) == 0) {
+      $sellOrderItem = self::findById($id, $order);
+      return $sellOrderItem->delete('sell_orders_items');
+    }
     $amount--;
     $db = Database::getConnection();
-    $params = array('id' => $productId, 'amount' => $amount, 'order_id' => $orderId);
+    $params = array('id' => $id, 'amount' => $amount, 'order_id' => $order);
     $sql = "UPDATE sell_orders_items SET amount= :amount WHERE product_id = :id AND order_id = :order_id";
     $statement = $db->prepare($sql);
     return $statement->execute($params);
