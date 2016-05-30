@@ -12,8 +12,8 @@
    }
 
    public function _new() {
-      $this->categories = Category::all();
       $this->product = new Product();
+      $this->categories = Category::all();
       $this->submit = 'Novo produto';
       $this->action = ViewHelpers::urlFor("/produtos");
    }
@@ -24,19 +24,18 @@
      if($this->product->save()) {
        Flash::message('success', 'Produto cadastrado com sucesso!');
        $this->redirectTo('/produtos');
-     }
-     else {
+     } else {
        Flash::message('negative', 'Existem dados inválidos!');
        $this->categories = Category::all();
        $this->submit = 'Novo produto';
        $this->action = ViewHelpers::urlFor('/produtos');
        $this->render('new');
-     }
+    }
    }
 
    public function edit() {
-     $this->categories = Category::all();
      $this->product = Product::findById($this->params[':id']);
+     $this->categories = Category::all();
      $this->submit = 'Salvar';
      $this->action = ViewHelpers::urlFor("/produtos/{$this->product->getId()}");
    }
@@ -58,7 +57,7 @@
 
    public function destroy() {
      $product = Product::findById($this->params[':id']);
-     $product->delete();
+     $product->delete('products');
      Flash::message('success', 'Produto deletado com sucesso');
      $this->redirectTo("/produtos");
    }
@@ -68,7 +67,5 @@
      echo $products;
      exit();
    }
-
-
 
 } ?>

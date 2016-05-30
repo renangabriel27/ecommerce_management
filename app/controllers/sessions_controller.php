@@ -24,4 +24,5 @@
     Flash::message('success', 'Logout com sucesso!');
     $this->redirectTo('/login');
   }
+  
 } ?>

@@ -40,15 +40,38 @@
 
    public function destroy() {
      $order = Order::findById($this->params[':id']);
-     $order->delete();
+     $order->delete('orders');
      Flash::message('success', 'Pedido deletado com sucesso');
      $this->redirectTo("/pedidos");
    }
 
-   public function addProduct() {
+   public function destroyProduct() {
+     $this->order = Order::findById($this->params[':id']);
+     $sellOrderItem = SellOrderItem::findById($this->params[':product_id'], $this->params[':id']);
+     $sellOrderItem->delete('sell_orders_items');
+     Flash::message('success', 'Produto deletado com sucesso do pedido');
+     $this->redirectTo("/pedidos/{$this->order->getId()}");
+   }
+
+   public function addOrderProduct() {
      $this->order = Order::findById($this->params['order']['id']);
      $this->order->addProduct($this->params['product']['id']);
      $this->redirectTo("/pedidos/{$this->order->getId()}");
    }
+
+   public function addAmountProduct() {
+     $this->order = Order::findById($this->params[':id']);
+     $this->product = $this->params[':product_id'];
+     SellOrderItem::addProduct($this->product);
+     $this->redirectTo("/pedidos/{$this->order->getId()}");
+   }
+
+   public function removeAmountProduct() {
+     $this->order = Order::findById($this->params[':id']);
+     $this->product = $this->params[':product_id'];
+     SellOrderItem::removeProduct($this->product);
+     $this->redirectTo("/pedidos/{$this->order->getId()}");
+   }
+
 
 } ?>

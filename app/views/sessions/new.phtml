@@ -1,36 +1,36 @@
 
-  <section>
-      <div class="ui hidden divider"></div>
+<section>
+  <div class="ui hidden divider"></div>
 
-      <div class="ui middle aligned center aligned grid">
-        <div class="column login">
-          <form action="<?= ViewHelpers::urlFor('/login') ?>" method="POST" class="form-signin mg-btm">
-            <h2 class="ui teal image header">
-              <i class="sign in icon"></i>
-              <div class="content">
-                Faça seu login
-              </div>
-            </h2>
-            <div class="ui form">
-              <div class="field">
-                <label class="control-label">Email</label>
-                <div class="ui left icon input">
-                  <input type="text" placeholder="" name="user[email]" value="<?= $this->user->getEmail() ?>">
-                  <i class="user icon"></i>
-                </div>
-              </div>
-              <div class="field">
-                <label class="control-label">Senha</label>
-                <div class="ui left icon input">
-                  <input type="password"  placeholder="senha" name="user[password]">
-                  <i class="lock icon"></i>
-                </div>
-              </div>
-              <button class="ui blue submit button login">Login</button>
+  <div class="ui middle aligned center aligned grid">
+    <div class="column login">
+      <form action="<?= ViewHelpers::urlFor('/login') ?>" method="POST" class="form-signin mg-btm">
+        <h2 class="ui teal image header">
+          <i class="sign in icon"></i>
+          <div class="content">
+            Faça seu login
+          </div>
+        </h2>
+        <div class="ui form">
+          <div class="field">
+            <label class="control-label">Email</label>
+            <div class="ui left icon input">
+              <input type="text" placeholder="" name="user[email]" value="<?= $this->user->getEmail() ?>">
+              <i class="user icon"></i>
             </div>
-          </form>
+          </div>
+          <div class="field">
+            <label class="control-label">Senha</label>
+            <div class="ui left icon input">
+              <input type="password"  placeholder="senha" name="user[password]">
+              <i class="lock icon"></i>
+            </div>
+          </div>
+          <button class="ui blue submit button login">Login</button>
         </div>
-      </div>
+      </form>
     </div>
-    </div>
-  </section>
+  </div>
+  </div>
+  </div>
+</section>

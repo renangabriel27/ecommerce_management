@@ -19,25 +19,6 @@
     return $this->stateId;
   }
 
-
-  public static function all() {
-    $sql = "SELECT * FROM cities ORDER BY id";
-
-    $db = Database::getConnection();
-    $statement = $db->prepare($sql);
-    $resp = $statement->execute();
-
-    $states = [];
-
-    if(!$resp) return $states;
-
-    while($city = $statement->fetch(PDO::FETCH_ASSOC)) {
-      $cities[] = new City($city);
-    }
-
-    return $cities;
-  }
-
   public static function findById($id) {
     $db = Database::getConnection();
     $sql = "SELECT * FROM cities WHERE id = ?";
@@ -55,6 +36,21 @@
     return null;
   }
 
+  public static function all() {
+    $sql = "SELECT * FROM cities ORDER BY id";
 
+    $db = Database::getConnection();
+    $statement = $db->prepare($sql);
+    $resp = $statement->execute();
+
+    $states = [];
+    
+    if(!$resp) return $states;
+
+    while($city = $statement->fetch(PDO::FETCH_ASSOC)) {
+      $cities[] = new City($city);
+    }
+    return $cities;
+  }
 
 } ?>

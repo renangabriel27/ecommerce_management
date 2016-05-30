@@ -47,10 +47,12 @@
     $router->get('/pedidos', array('controller' => 'OrdersController', 'action' => 'index'));
     $router->post('/pedidos', array('controller' => 'OrdersController', 'action' => 'create'));
     $router->get('/pedidos/novo', array('controller' => 'OrdersController', 'action' => '_new'));
-    $router->post('/pedidos/produtos', array('controller' => 'OrdersController', 'action' => 'addProduct'));
+    $router->post('/pedidos/produtos', array('controller' => 'OrdersController', 'action' => 'addOrderProduct'));
     $router->get('/pedidos/:id', array('controller' => 'OrdersController', 'action' => 'show'));
     $router->get('/pedidos/:id/deletar', array('controller' => 'OrdersController', 'action' => 'destroy'));
-
+    $router->get('/pedidos/:id/produtos/:product_id/deletar', array('controller' => 'OrdersController', 'action' => 'destroyProduct'));
+    $router->get('/pedidos/:id/produtos/:product_id/adicionar', array('controller' => 'OrdersController', 'action' => 'addAmountProduct'));
+    $router->get('/pedidos/:id/produtos/:product_id/remover', array('controller' => 'OrdersController', 'action' => 'removeAmountProduct'));
 
     /* Fim das rotas para os pedidos
     --------------------------------- */

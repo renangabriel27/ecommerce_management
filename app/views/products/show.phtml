@@ -17,7 +17,7 @@
             <td><?= $this->product->getName() ?></td>
             <td><?= $this->product->getAmount() ?></td>
             <td><?= $this->product->getPrice() ?></td>
-            <td><?= $this->product->getCategoryId() ?></td>
+            <td><?= $this->product->getCategory()->getName() ?></td>
             <td><?= ViewHelpers::dateFormat($this->product->getCreatedAt()); ?></td>
             <td>
               <?= ViewHelpers::linkTo("/produtos/{$this->product->getId()}", '', '', 'class="zoom icon"') ?>

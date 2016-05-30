@@ -1,10 +1,9 @@
 <?php class Order extends Base {
 
-  private $employeeId; /* user id */
-  private $client; /* user */
+  private $employeeId;
+  private $client;
   private $amount;
   private $total;
-
 
   public function setEmployeeId($employeeId) {
       $this->employeeId = $employeeId;
@@ -46,7 +45,7 @@
   public function save() {
     if(!$this->isValid()) return false;
 
-    $sql = "INSERT INTO orders (client_id, employee_id) VALUES (:client_id, :employee_id)";
+    $sql = "INSERT INTO orders (client_id, employee_id ) VALUES (:client_id, :employee_id)";
 
     $this->employeeId = SessionHelpers::currentUser()->getId();
     $params = array('client_id' => $this->client, 'employee_id' => $this->employeeId);
@@ -100,7 +99,39 @@
       Logger::getInstance()->log("Error " . print_r(error_get_last(), true ), Logger::ERROR);
       return false;
     }
+
     return true;
+  }
+
+  public function getSellOrderItem($id) {
+    $sql = "SELECT * FROM sell_orders_items where product_id = ?";
+    $db = Database::getConnection();
+    $params = array($id);
+    $statement = $db->prepare($sql);
+    $statement->execute($params);
+
+    while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+      $sell_order_item = new SellOrderItem();
+      $sell_order_item->setId($row['id']);
+      $sell_order_item->setAmount($row['amount']);
+      $sell_order_item->setPrice($row['price']);
+      $sell_order_item->setCreatedAt($row['created_at']);
+      $sell_order_item->setOrderId($row['order_id']);
+      $sell_order_item->setProductId($row['product_id']);
+
+    }
+    return $sell_order_item;
+  }
+
+  public function addAmountProduct($id) {
+    if (!$this->isvalid()) return false;
+
+    $db = Database::getConnection();
+    $params = array('id' => $id, 'amount' => $this->amount);
+    $sql = "UPDATE sell_orders_items SET amount=:amount WHERE product_id = :id";
+
+    $statement = $db->prepare($sql);
+    return $statement->execute($params);
   }
 
   public function delete() {

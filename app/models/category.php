@@ -23,7 +23,6 @@
     if(!$this->isValid()) return false;
 
     $sql = "INSERT INTO categories (name) VALUES (:name)";
-
     $params = array('name' => $this->name);
 
     $db = Database::getConnection();
@@ -44,42 +43,26 @@
 
   public function update($data = array()) {
     if($data['name'] === $this->name) return true;
+
     $this->setData($data);
     if (!$this->isvalid()) return false;
 
     $db = Database::getConnection();
     $params = array('id' => $this->id, 'name' => $this->name);
-
     $sql = "UPDATE categories SET name=:name WHERE id = :id";
 
     $statement = $db->prepare($sql);
     return $statement->execute($params);
   }
 
-  public function delete() {
-    $db = Database::getConnection();
-    $params = array($this->id);
-    $sql = "DELETE FROM categories WHERE id = ?";
-    $statement = $db->prepare($sql);
-    return $statement->execute($params);
-  }
-
-  public static function all() {
-    $sql = "SELECT * FROM categories ORDER BY created_at DESC";
+  public static function count() {
+    $sql = "SELECT COUNT(*) FROM categories";
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
     $resp = $statement->execute();
 
-    $categories = [];
-
-    if(!$resp) return $categories;
-
-    while($category = $statement->fetch(PDO::FETCH_ASSOC)) {
-      $categories[] = new Category($category);
-    }
-
-    return $categories;
+    return $statement->fetch()[0];
   }
 
   public static function findById($id) {
@@ -92,21 +75,26 @@
     $resp = $statement->execute($params);
 
     if ($resp && $row = $statement->fetch(PDO::FETCH_ASSOC)) {
-      $category = new Category($row);
-      return $category;
+      return new Category($row);
     }
-
     return null;
   }
 
-  public static function count() {
-    $sql = "SELECT COUNT(*) FROM categories";
+  public static function all() {
+    $sql = "SELECT * FROM categories ORDER BY created_at DESC";
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
     $resp = $statement->execute();
 
-    return $statement->fetch()[0];
+    $categories = [];
+    if(!$resp) return $categories;
+
+    while($category = $statement->fetch(PDO::FETCH_ASSOC)) {
+      $categories[] = new Category($category);
+    }
+    return $categories;
   }
+
 
 } ?>

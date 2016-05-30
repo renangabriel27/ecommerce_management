@@ -21,10 +21,14 @@
             <tr>
               <td><?= $product->getId() ?></td>
               <td><?= $product->getName() ?></td>
-              <td></td>
+              <td>
+                <?= SellOrderItem::getAmountOfProduct($product->getId()) ?>
+                <?= ViewHelpers::linkTo("/pedidos/{$this->order->getId()}/produtos/{$product->getId()}/adicionar", "", '', 'class="add square icon"') ?>
+                <?= ViewHelpers::linkTo("/pedidos/{$this->order->getId()}/produtos/{$product->getId()}/remover", '', '', 'class="minus square icon"') ?>
+              </td>
               <td><?= $product->getPrice() ?></td>
-              <td></td>
-              <td><?= ViewHelpers::linkTo("/pedidos/{$product->getId()}/deletar", "Excluir", 'class="btn btn-danger"') ?></td>
+              <td><?= ViewHelpers::currencyFormat($product->getPrice() * SellOrderItem::getAmountOfProduct($product->getId())) ?></td>
+              <td><?= ViewHelpers::linkTo("/pedidos/{$this->order->getId()}/produtos/{$product->getId()}/deletar", '', 'data-confirm="Tem certeza que deseja deletar o produto?"', 'class="trash icon"') ?></td>
             </tr>
       </tbody>
       <?php endForeach; ?>

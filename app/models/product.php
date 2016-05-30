@@ -54,7 +54,7 @@
 
   public function getCategory() {
     $db = Database::getConnection();
-    $sql = "SELECT * FROM categories WHERE id = ?";
+    $sql = "SELECT name FROM categories WHERE id = ?";
     $params = array($this->categoryId);
 
     $db = Database::getConnection();
@@ -68,6 +68,7 @@
   }
 
   public function validates() {
+    Validations::uniqueField($this->name, 'name',  'products', $this->errors);
     Validations::notEmpty($this->name, 'name', $this->errors);
     Validations::notEmpty($this->amount, 'amount', $this->errors);
     Validations::isNumeric($this->price, 'price', $this->errors);
@@ -116,34 +117,6 @@
     return true;
   }
 
-  public function delete() {
-    $db = Database::getConnection();
-    $params = array($this->id);
-    $sql = "DELETE FROM products WHERE id = ?";
-    $statement = $db->prepare($sql);
-    return $statement->execute($params);
-  }
-
-
-  public static function whereNameLikeAsJson($param) {
-    $sql = "SELECT id, name FROM products WHERE name LIKE :param ORDER BY name";
-    $params = array('param' => "%{$param}%");
-
-    $db = Database::getConnection();
-    $statement = $db->prepare($sql);
-    $resp = $statement->execute($params);
-
-    $suggestions = array('suggestions' => '');
-
-    if(!$resp) return $suggestions;
-
-    while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-      $product = array('value' => $row['name'], 'data' => $row['id']);
-      $suggestions['suggestions'][] = $product;
-    }
-    return json_encode($suggestions);
-  }
-
   public static function all() {
     $sql = "SELECT products.id AS id, products.name AS product_name, products.amount AS product_amount,
             products.price AS product_price, products.created_at AS product_created_at, categories.id
@@ -190,6 +163,25 @@
       return new Product($row);
     }
     return null;
+  }
+
+  public static function whereNameLikeAsJson($param) {
+    $sql = "SELECT id, name FROM products WHERE name LIKE :param ORDER BY name";
+    $params = array('param' => "%{$param}%");
+
+    $db = Database::getConnection();
+    $statement = $db->prepare($sql);
+    $resp = $statement->execute($params);
+
+    $suggestions = array('suggestions' => '');
+
+    if(!$resp) return $suggestions;
+
+    while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+      $product = array('value' => $row['name'], 'data' => $row['id']);
+      $suggestions['suggestions'][] = $product;
+    }
+    return json_encode($suggestions);
   }
 
   public static function count() {

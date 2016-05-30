@@ -1,10 +1,14 @@
 <?php class ClientsController  extends ApplicationController {
 
-  protected $beforeAction = array('authenticated' => array('edit', 'update'));
+  protected $beforeAction = array('authenticated' => 'all');
 
   public function index() {
      $this->title = 'Sistema';
      $this->clients = Client::all();
+  }
+
+  public function show() {
+    $this->client = Client::findById(':id');
   }
 
   public function _new() {
@@ -61,12 +65,6 @@
     }
   }
 
-  public function autoCompleteSearch() {
-    $this->clients = Client::whereNameLikeAsJson($this->params['query']);
-    echo $this->clients;
-    exit();
-  }
-
   public function destroy() {
     $client = Client::findById($this->params[':id']);
     $client->delete();
@@ -74,5 +72,10 @@
     $this->redirectTo("/clientes");
   }
 
+  public function autoCompleteSearch() {
+    $this->clients = Client::whereNameLikeAsJson($this->params['query']);
+    echo $this->clients;
+    exit();
+  }
 
 } ?>

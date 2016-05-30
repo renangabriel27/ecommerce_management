@@ -172,7 +172,7 @@
     clients.address AS client_address, clients.address_cep AS client_cep, clients.address_number AS
     client_address_number, clients.phone AS client_phone, clients.type AS client_type, clients.created_at AS
     client_created_at, cities.id AS city_id, cities.name AS city_name, cities.state_id AS state_id FROM
-    clients, cities WHERE (clients.city_id = cities.id) ORDER BY clients.created_at DESC";
+    clients, cities WHERE (clients.city_id = cities.id) ORDER BY client_id";
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
