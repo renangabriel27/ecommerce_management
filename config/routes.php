@@ -11,12 +11,10 @@
 
     /* Rotas para os usuários
     ------------------------- */
-    $router->get('/clientes/autocomplete-search', array('controller' => 'ClientsController', 'action' => 'autoCompleteSearch'));
-
-    $router->get('/registre-se', array('controller' => 'UsersController', 'action' => '_new'));
-    $router->post('/registre-se', array('controller' => 'UsersController', 'action' => 'create'));
-    $router->get('/perfil', array('controller' => 'UsersController', 'action' => 'edit'));
-    $router->post('/perfil', array('controller' => 'UsersController', 'action' => 'update'));
+    $router->get('/registre-se', array('controller' => 'EmployeesController', 'action' => '_new'));
+    $router->post('/registre-se', array('controller' => 'EmployeesController', 'action' => 'create'));
+    $router->get('/perfil', array('controller' => 'EmployeesController', 'action' => 'edit'));
+    $router->post('/perfil', array('controller' => 'EmployeesController', 'action' => 'update'));
     /* Fim das rotas para os usuários
     --------------------------------- */
 
@@ -75,6 +73,8 @@
 
     /* Rotas para os clientes pi
     ------------------------- */
+    $router->get('/clientes/autocomplete-search', array('controller' => 'ClientsController', 'action' => 'autoCompleteSearch'));
+
     $router->get('/clientes', array('controller' => 'ClientsController', 'action' => 'index'));
     $router->get('/clientes/novo/:type', array('controller' => 'ClientsController', 'action' => '_new'));
     $router->post('/clientes', array('controller' => 'ClientsController', 'action' => 'create'));

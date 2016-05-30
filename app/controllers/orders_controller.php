@@ -55,21 +55,28 @@
 
    public function addOrderProduct() {
      $this->order = Order::findById($this->params['order']['id']);
+     if($this->order->uniqueItem($this->params['product']['id'])) {
+      Flash::message('negative', 'Esse produto já está cadastrado no pedido!');
+      $this->redirectTo("/pedidos/{$this->order->getId()}");
+    } else {
      $this->order->addProduct($this->params['product']['id']);
      $this->redirectTo("/pedidos/{$this->order->getId()}");
    }
+   }
 
    public function addAmountProduct() {
-     $this->order = Order::findById($this->params[':id']);
+     $orderId = $this->params[':id'];
+     $this->order = Order::findById($orderId);
      $this->product = $this->params[':product_id'];
-     SellOrderItem::addProduct($this->product);
+     SellOrderItem::addProduct($this->product, $orderId);
      $this->redirectTo("/pedidos/{$this->order->getId()}");
    }
 
    public function removeAmountProduct() {
-     $this->order = Order::findById($this->params[':id']);
+     $orderId = $this->params[':id'];
+     $this->order = Order::findById($orderId);
      $this->product = $this->params[':product_id'];
-     SellOrderItem::removeProduct($this->product);
+     SellOrderItem::removeProduct($this->product, $orderId);
      $this->redirectTo("/pedidos/{$this->order->getId()}");
    }
 

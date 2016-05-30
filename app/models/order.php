@@ -47,7 +47,7 @@
 
     $sql = "INSERT INTO orders (client_id, employee_id ) VALUES (:client_id, :employee_id)";
 
-    $this->employeeId = SessionHelpers::currentUser()->getId();
+    $this->employeeId = SessionHelpers::currentEmployee()->getId();
     $params = array('client_id' => $this->client, 'employee_id' => $this->employeeId);
 
     $db = Database::getConnection();
@@ -99,7 +99,20 @@
       Logger::getInstance()->log("Error " . print_r(error_get_last(), true ), Logger::ERROR);
       return false;
     }
+    return true;
+  }
 
+  public function uniqueItem($id) {
+    $sql = "SELECT order_id, product_id FROM sell_orders_items WHERE order_id = ? AND product_id = ?";
+    $params = array($this->id, $id);
+
+    $db = Database::getConnection();
+    $statement = $db->prepare($sql);
+    $statement->execute($params);
+
+    if (!$row = $statement->fetch()) {
+      return false;
+    }
     return true;
   }
 
@@ -123,31 +136,9 @@
     return $sell_order_item;
   }
 
-  public function addAmountProduct($id) {
-    if (!$this->isvalid()) return false;
-
-    $db = Database::getConnection();
-    $params = array('id' => $id, 'amount' => $this->amount);
-    $sql = "UPDATE sell_orders_items SET amount=:amount WHERE product_id = :id";
-
-    $statement = $db->prepare($sql);
-    return $statement->execute($params);
-  }
-
-  public function delete() {
-    $db = Database::getConnection();
-    $params = array($this->id);
-    $sql = "DELETE FROM orders WHERE id = ?";
-    $statement = $db->prepare($sql);
-    return $statement->execute($params);
-  }
-
-
   public static function all() {
     $sql = "SELECT orders.id AS id, orders.created_at AS created_at, clients.id AS client_id, clients.name AS client_name,
-     clients.email AS client_email, sell_orders_items.price AS price, sell_orders_items.amount AS amount FROM clients JOIN
-     orders ON(orders.client_id = clients.id) LEFT OUTER JOIN sell_orders_items ON(sell_orders_items.order_id = orders.id)
-     LEFT OUTER JOIN products ON(products.id = sell_orders_items.product_id) ORDER BY id";
+     clients.email AS client_email FROM clients JOIN orders ON(orders.client_id = clients.id) ORDER BY id";
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
@@ -161,8 +152,6 @@
       $order = new Order();
       $order->setId($row['id']);
       $order->setCreatedAt($row['created_at']);
-      $order->setAmount($row['amount']);
-      $order->setTotal($row['price']);
 
       $client = new Client();
       $client->setId($row['client_id']);

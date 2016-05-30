@@ -1,0 +1,26 @@
+<form role="form" action="<?= ViewHelpers::urlFor($this->action) ?>" method="POST">
+
+  <div class="ui form">
+    <div class="field <?= $this->employee->getErrors('name') ? 'error' : '' ?>">
+      <label class="control-label" for="employee_name">Nome:*</label>
+      <input type="text" class="form-control" name="employee[name]" value="<?= $this->employee->getName() ?>"
+             id="employee_name" placeholder="Seu nome">
+      <div class="ui pointing <?= $this->employee->getErrors('name') ? 'red basic label' : '' ?>"><?= $this->employee->getErrors('name') ?></div>
+    </div>
+
+    <div class="field <?= $this->employee->getErrors('email') ? 'error' : '' ?>">
+      <label class="control-label" for="employee_email">Email:*</label>
+      <input type="text" class="form-control" name="employee[email]" value="<?= $this->employee->getEmail() ?>"
+             id="employee_email" placeholder="Seu nome">
+      <div class="ui pointing <?= $this->employee->getErrors('email') ? 'red basic label' : '' ?>"><?= $this->employee->getErrors('email') ?></div>
+    </div>
+
+    <div class="field <?= $this->employee->getErrors('password') ? 'error' : '' ?>">
+      <label class="control-label" for="employee_password">Senha:*</label>
+      <input type="password" class="form-control" name="employee[password]" id="employee_password">
+      <div class="ui pointing <?= $this->employee->getErrors('password') ? 'red basic label' : '' ?>"><?= $this->employee->getErrors('password') ?></div>
+    </div>
+
+    <button type="submit" class="ui primary button"> <?= $this->submit ?></button>
+  </div>
+</form>

@@ -1,4 +1,4 @@
-<?php class UsersController  extends ApplicationController {
+<?php class EmployeesController  extends ApplicationController {
 
   protected $beforeAction = array('authenticated' => array('edit', 'update'));
 
@@ -7,15 +7,15 @@
   }
 
   public function _new() {
-    $this->user = new User();
+    $this->employee = new Employee();
     $this->action = '/registre-se';
     $this->submit = 'Cadastre-se';
   }
 
   public function create(){
-    $this->user = new User($this->params['user']);
+    $this->employee = new Employee($this->params['Employee']);
 
-    if ($this->user->save()) {
+    if ($this->employee->save()) {
       Flash::message('success', 'Registro realizado com sucesso!');
       $this->redirectTo('/login');
     } else {
@@ -27,15 +27,15 @@
   }
 
   public function edit() {
-    $this->user = $this->currentUser();
+    $this->employee = $this->currentEmployee();
     $this->action = '/perfil';
     $this->submit = 'Atualizar';
   }
 
   public function update() {
-    $this->user = $this->currentUser();
+    $this->employee = $this->currentEmployee();
 
-    if ($this->user->update($this->params['user'])) {
+    if ($this->employee->update($this->params['Employee'])) {
       Flash::message('success', 'Registro atualizado com sucesso!');
       $this->redirectTo('/');
     } else {
@@ -47,8 +47,8 @@
   }
 
   public function autoCompleteSearch() {
-    $this->users = User::whereNameLikeAsJson($this->params['query']);
-    echo $this->users;
+    $this->employees = Employee::whereNameLikeAsJson($this->params['query']);
+    echo $this->employees;
     exit();
   }
 

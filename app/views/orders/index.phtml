@@ -16,8 +16,8 @@
       <tr>
         <td><?= $order->getId() ?></td>
         <td><?= $order->getClientId()->getName() ?></td>
-        <td><?= $order->getAmount() ?></td>
-        <td><?= $order->getTotal() ?></td>
+        <td></td>
+        <td></td>
         <td><?= ViewHelpers::dateFormat($order->getCreatedAt()) ?></td>
         <td>
           <?= ViewHelpers::linkTo("/pedidos/{$order->getId()}", '', '', 'class="zoom icon"') ?>

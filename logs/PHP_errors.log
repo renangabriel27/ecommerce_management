@@ -1,1100 +1,4 @@
-[26-May-2016 18:35:26 America/Sao_Paulo] PHP Warning:  Missing argument 1 for Product::all(), called in /var/www/ecommerce_management/app/controllers/products_controller.php on line 7 and defined in /var/www/ecommerce_management/app/models/product.php on line 151
-[26-May-2016 18:35:26 America/Sao_Paulo] PHP Fatal error:  Class 'Procuct' not found in /var/www/ecommerce_management/app/models/product.php on line 163
-[26-May-2016 18:36:16 America/Sao_Paulo] PHP Fatal error:  Class 'Procuct' not found in /var/www/ecommerce_management/app/models/product.php on line 163
-[26-May-2016 18:39:02 America/Sao_Paulo] PHP Fatal error:  Call to undefined method Product::getAmountl() in /var/www/ecommerce_management/app/views/products/index.phtml on line 20
-[26-May-2016 18:39:40 America/Sao_Paulo] PHP Fatal error:  Call to a member function getName() on string in /var/www/ecommerce_management/app/views/products/index.phtml on line 22
-[26-May-2016 18:40:27 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'created_at' in order clause is ambiguous' in /var/www/ecommerce_management/app/models/product.php:156
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/product.php(156): PDOStatement->execute()
-#1 /var/www/ecommerce_management/app/controllers/products_controller.php(7): Product::all()
-#2 /var/www/ecommerce_management/core/routes/router.php(47): ProductsController->index()
-#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/product.php on line 156
-[26-May-2016 18:41:31 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'created_at' in order clause is ambiguous' in /var/www/ecommerce_management/app/models/product.php:156
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/product.php(156): PDOStatement->execute()
-#1 /var/www/ecommerce_management/app/controllers/products_controller.php(7): Product::all()
-#2 /var/www/ecommerce_management/core/routes/router.php(47): ProductsController->index()
-#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/product.php on line 156
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: id in /var/www/ecommerce_management/app/models/product.php on line 166
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: name in /var/www/ecommerce_management/app/models/product.php on line 167
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: amount in /var/www/ecommerce_management/app/models/product.php on line 168
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: price in /var/www/ecommerce_management/app/models/product.php on line 169
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: created_at in /var/www/ecommerce_management/app/models/product.php on line 170
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: id in /var/www/ecommerce_management/app/models/product.php on line 166
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: name in /var/www/ecommerce_management/app/models/product.php on line 167
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: amount in /var/www/ecommerce_management/app/models/product.php on line 168
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: price in /var/www/ecommerce_management/app/models/product.php on line 169
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: created_at in /var/www/ecommerce_management/app/models/product.php on line 170
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: id in /var/www/ecommerce_management/app/models/product.php on line 166
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: name in /var/www/ecommerce_management/app/models/product.php on line 167
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: amount in /var/www/ecommerce_management/app/models/product.php on line 168
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: price in /var/www/ecommerce_management/app/models/product.php on line 169
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: created_at in /var/www/ecommerce_management/app/models/product.php on line 170
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: id in /var/www/ecommerce_management/app/models/product.php on line 166
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: name in /var/www/ecommerce_management/app/models/product.php on line 167
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: amount in /var/www/ecommerce_management/app/models/product.php on line 168
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: price in /var/www/ecommerce_management/app/models/product.php on line 169
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: created_at in /var/www/ecommerce_management/app/models/product.php on line 170
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: id in /var/www/ecommerce_management/app/models/product.php on line 166
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: name in /var/www/ecommerce_management/app/models/product.php on line 167
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: amount in /var/www/ecommerce_management/app/models/product.php on line 168
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: price in /var/www/ecommerce_management/app/models/product.php on line 169
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: created_at in /var/www/ecommerce_management/app/models/product.php on line 170
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: id in /var/www/ecommerce_management/app/models/product.php on line 166
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: name in /var/www/ecommerce_management/app/models/product.php on line 167
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: amount in /var/www/ecommerce_management/app/models/product.php on line 168
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: price in /var/www/ecommerce_management/app/models/product.php on line 169
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: created_at in /var/www/ecommerce_management/app/models/product.php on line 170
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: id in /var/www/ecommerce_management/app/models/product.php on line 166
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: name in /var/www/ecommerce_management/app/models/product.php on line 167
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: amount in /var/www/ecommerce_management/app/models/product.php on line 168
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: price in /var/www/ecommerce_management/app/models/product.php on line 169
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: created_at in /var/www/ecommerce_management/app/models/product.php on line 170
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: id in /var/www/ecommerce_management/app/models/product.php on line 166
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: name in /var/www/ecommerce_management/app/models/product.php on line 167
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: amount in /var/www/ecommerce_management/app/models/product.php on line 168
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: price in /var/www/ecommerce_management/app/models/product.php on line 169
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: created_at in /var/www/ecommerce_management/app/models/product.php on line 170
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: id in /var/www/ecommerce_management/app/models/product.php on line 166
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: name in /var/www/ecommerce_management/app/models/product.php on line 167
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: amount in /var/www/ecommerce_management/app/models/product.php on line 168
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: price in /var/www/ecommerce_management/app/models/product.php on line 169
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: created_at in /var/www/ecommerce_management/app/models/product.php on line 170
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: id in /var/www/ecommerce_management/app/models/product.php on line 166
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: name in /var/www/ecommerce_management/app/models/product.php on line 167
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: amount in /var/www/ecommerce_management/app/models/product.php on line 168
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: price in /var/www/ecommerce_management/app/models/product.php on line 169
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: created_at in /var/www/ecommerce_management/app/models/product.php on line 170
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: id in /var/www/ecommerce_management/app/models/product.php on line 166
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: name in /var/www/ecommerce_management/app/models/product.php on line 167
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: amount in /var/www/ecommerce_management/app/models/product.php on line 168
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: price in /var/www/ecommerce_management/app/models/product.php on line 169
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: created_at in /var/www/ecommerce_management/app/models/product.php on line 170
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: id in /var/www/ecommerce_management/app/models/product.php on line 166
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: name in /var/www/ecommerce_management/app/models/product.php on line 167
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: amount in /var/www/ecommerce_management/app/models/product.php on line 168
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: price in /var/www/ecommerce_management/app/models/product.php on line 169
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: created_at in /var/www/ecommerce_management/app/models/product.php on line 170
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: id in /var/www/ecommerce_management/app/models/product.php on line 166
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: name in /var/www/ecommerce_management/app/models/product.php on line 167
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: amount in /var/www/ecommerce_management/app/models/product.php on line 168
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: price in /var/www/ecommerce_management/app/models/product.php on line 169
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: created_at in /var/www/ecommerce_management/app/models/product.php on line 170
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: id in /var/www/ecommerce_management/app/models/product.php on line 166
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: name in /var/www/ecommerce_management/app/models/product.php on line 167
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: amount in /var/www/ecommerce_management/app/models/product.php on line 168
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: price in /var/www/ecommerce_management/app/models/product.php on line 169
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: created_at in /var/www/ecommerce_management/app/models/product.php on line 170
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: id in /var/www/ecommerce_management/app/models/product.php on line 166
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: name in /var/www/ecommerce_management/app/models/product.php on line 167
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: amount in /var/www/ecommerce_management/app/models/product.php on line 168
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: price in /var/www/ecommerce_management/app/models/product.php on line 169
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: created_at in /var/www/ecommerce_management/app/models/product.php on line 170
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: id in /var/www/ecommerce_management/app/models/product.php on line 166
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: name in /var/www/ecommerce_management/app/models/product.php on line 167
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: amount in /var/www/ecommerce_management/app/models/product.php on line 168
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: price in /var/www/ecommerce_management/app/models/product.php on line 169
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: created_at in /var/www/ecommerce_management/app/models/product.php on line 170
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: id in /var/www/ecommerce_management/app/models/product.php on line 166
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: name in /var/www/ecommerce_management/app/models/product.php on line 167
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: amount in /var/www/ecommerce_management/app/models/product.php on line 168
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: price in /var/www/ecommerce_management/app/models/product.php on line 169
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: created_at in /var/www/ecommerce_management/app/models/product.php on line 170
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: id in /var/www/ecommerce_management/app/models/product.php on line 166
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: name in /var/www/ecommerce_management/app/models/product.php on line 167
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: amount in /var/www/ecommerce_management/app/models/product.php on line 168
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: price in /var/www/ecommerce_management/app/models/product.php on line 169
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: created_at in /var/www/ecommerce_management/app/models/product.php on line 170
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: id in /var/www/ecommerce_management/app/models/product.php on line 166
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: name in /var/www/ecommerce_management/app/models/product.php on line 167
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: amount in /var/www/ecommerce_management/app/models/product.php on line 168
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: price in /var/www/ecommerce_management/app/models/product.php on line 169
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: created_at in /var/www/ecommerce_management/app/models/product.php on line 170
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: id in /var/www/ecommerce_management/app/models/product.php on line 166
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: name in /var/www/ecommerce_management/app/models/product.php on line 167
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: amount in /var/www/ecommerce_management/app/models/product.php on line 168
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: price in /var/www/ecommerce_management/app/models/product.php on line 169
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: created_at in /var/www/ecommerce_management/app/models/product.php on line 170
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: id in /var/www/ecommerce_management/app/models/product.php on line 166
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: name in /var/www/ecommerce_management/app/models/product.php on line 167
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: amount in /var/www/ecommerce_management/app/models/product.php on line 168
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: price in /var/www/ecommerce_management/app/models/product.php on line 169
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: created_at in /var/www/ecommerce_management/app/models/product.php on line 170
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: id in /var/www/ecommerce_management/app/models/product.php on line 166
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: name in /var/www/ecommerce_management/app/models/product.php on line 167
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: amount in /var/www/ecommerce_management/app/models/product.php on line 168
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: price in /var/www/ecommerce_management/app/models/product.php on line 169
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: created_at in /var/www/ecommerce_management/app/models/product.php on line 170
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: id in /var/www/ecommerce_management/app/models/product.php on line 166
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: name in /var/www/ecommerce_management/app/models/product.php on line 167
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: amount in /var/www/ecommerce_management/app/models/product.php on line 168
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: price in /var/www/ecommerce_management/app/models/product.php on line 169
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: created_at in /var/www/ecommerce_management/app/models/product.php on line 170
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: id in /var/www/ecommerce_management/app/models/product.php on line 166
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: name in /var/www/ecommerce_management/app/models/product.php on line 167
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: amount in /var/www/ecommerce_management/app/models/product.php on line 168
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: price in /var/www/ecommerce_management/app/models/product.php on line 169
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: created_at in /var/www/ecommerce_management/app/models/product.php on line 170
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: id in /var/www/ecommerce_management/app/models/product.php on line 166
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: name in /var/www/ecommerce_management/app/models/product.php on line 167
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: amount in /var/www/ecommerce_management/app/models/product.php on line 168
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: price in /var/www/ecommerce_management/app/models/product.php on line 169
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: created_at in /var/www/ecommerce_management/app/models/product.php on line 170
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:46:25 America/Sao_Paulo] PHP Catchable fatal error:  Object of class Category could not be converted to string in /var/www/ecommerce_management/app/views/products/index.phtml on line 22
-[26-May-2016 18:47:00 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:47:00 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:47:00 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:47:00 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:47:00 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:47:00 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:47:00 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:47:00 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:47:00 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:47:00 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:47:00 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:47:00 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:47:00 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:47:00 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:47:00 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:47:00 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:47:00 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:47:00 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:47:00 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:47:00 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:47:00 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:47:00 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:47:00 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:47:00 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:47:00 America/Sao_Paulo] PHP Notice:  Undefined index: category_name in /var/www/ecommerce_management/app/models/product.php on line 174
-[26-May-2016 18:47:00 America/Sao_Paulo] PHP Catchable fatal error:  Object of class Category could not be converted to string in /var/www/ecommerce_management/app/views/products/index.phtml on line 22
-[26-May-2016 18:47:12 America/Sao_Paulo] PHP Catchable fatal error:  Object of class Category could not be converted to string in /var/www/ecommerce_management/app/views/products/index.phtml on line 22
-[26-May-2016 18:48:52 America/Sao_Paulo] PHP Warning:  require(views/products/new.phtml): failed to open stream: No such file or directory in /var/www/ecommerce_management/app/views/layout/application.phtml on line 40
-[26-May-2016 18:48:52 America/Sao_Paulo] PHP Fatal error:  require(): Failed opening required 'views/products/new.phtml' (include_path='.:/usr/share/php:/usr/share/pear:/var/www/ecommerce_management:/var/www/ecommerce_management/config/:/var/www/ecommerce_management/app/:/var/www/ecommerce_management/lib/:/var/www/ecommerce_management/vendor/') in /var/www/ecommerce_management/app/views/layout/application.phtml on line 40
-[26-May-2016 18:53:11 America/Sao_Paulo] PHP Warning:  require(views/products/edit.phtml): failed to open stream: No such file or directory in /var/www/ecommerce_management/app/views/layout/application.phtml on line 40
-[26-May-2016 18:53:11 America/Sao_Paulo] PHP Fatal error:  require(): Failed opening required 'views/products/edit.phtml' (include_path='.:/usr/share/php:/usr/share/pear:/var/www/ecommerce_management:/var/www/ecommerce_management/config/:/var/www/ecommerce_management/app/:/var/www/ecommerce_management/lib/:/var/www/ecommerce_management/vendor/') in /var/www/ecommerce_management/app/views/layout/application.phtml on line 40
-[26-May-2016 18:53:13 America/Sao_Paulo] PHP Warning:  require(views/products/new.phtml): failed to open stream: No such file or directory in /var/www/ecommerce_management/app/views/layout/application.phtml on line 40
-[26-May-2016 18:53:13 America/Sao_Paulo] PHP Fatal error:  require(): Failed opening required 'views/products/new.phtml' (include_path='.:/usr/share/php:/usr/share/pear:/var/www/ecommerce_management:/var/www/ecommerce_management/config/:/var/www/ecommerce_management/app/:/var/www/ecommerce_management/lib/:/var/www/ecommerce_management/vendor/') in /var/www/ecommerce_management/app/views/layout/application.phtml on line 40
-[26-May-2016 18:55:04 America/Sao_Paulo] PHP Notice:  Undefined variable: product in /var/www/ecommerce_management/app/views/products/show.phtml on line 16
-[26-May-2016 18:55:04 America/Sao_Paulo] PHP Fatal error:  Call to a member function getId() on null in /var/www/ecommerce_management/app/views/products/show.phtml on line 16
-[26-May-2016 18:56:20 America/Sao_Paulo] PHP Fatal error:  Call to a member function getName() on string in /var/www/ecommerce_management/app/views/products/show.phtml on line 20
-[26-May-2016 18:56:55 America/Sao_Paulo] PHP Fatal error:  Call to a member function getName() on string in /var/www/ecommerce_management/app/views/products/show.phtml on line 20
-[26-May-2016 18:58:54 America/Sao_Paulo] PHP Fatal error:  Call to a member function getName() on string in /var/www/ecommerce_management/app/controllers/products_controller.php on line 12
-[26-May-2016 19:00:47 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous' in /var/www/ecommerce_management/app/models/product.php:191
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/product.php(191): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/products_controller.php(11): Product::findById('1')
-#2 /var/www/ecommerce_management/core/routes/router.php(47): ProductsController->show()
-#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/product.php on line 191
-[26-May-2016 19:02:05 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous' in /var/www/ecommerce_management/app/models/product.php:191
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/product.php(191): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/products_controller.php(11): Product::findById('1')
-#2 /var/www/ecommerce_management/core/routes/router.php(47): ProductsController->show()
-#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/product.php on line 191
-[26-May-2016 19:02:06 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous' in /var/www/ecommerce_management/app/models/product.php:191
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/product.php(191): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/products_controller.php(11): Product::findById('1')
-#2 /var/www/ecommerce_management/core/routes/router.php(47): ProductsController->show()
-#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/product.php on line 191
-[26-May-2016 19:02:12 America/Sao_Paulo] PHP Notice:  Undefined property: ProductsController::$category in /var/www/ecommerce_management/app/views/products/show.phtml on line 20
-[26-May-2016 19:08:22 America/Sao_Paulo] PHP Notice:  Undefined property: ProductsController::$category in /var/www/ecommerce_management/app/views/products/show.phtml on line 20
-[26-May-2016 19:09:54 America/Sao_Paulo] PHP Warning:  require(views/products/edit.phtml): failed to open stream: No such file or directory in /var/www/ecommerce_management/app/views/layout/application.phtml on line 40
-[26-May-2016 19:09:54 America/Sao_Paulo] PHP Fatal error:  require(): Failed opening required 'views/products/edit.phtml' (include_path='.:/usr/share/php:/usr/share/pear:/var/www/ecommerce_management:/var/www/ecommerce_management/config/:/var/www/ecommerce_management/app/:/var/www/ecommerce_management/lib/:/var/www/ecommerce_management/vendor/') in /var/www/ecommerce_management/app/views/layout/application.phtml on line 40
-[26-May-2016 19:12:32 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`sell_orders_items`, CONSTRAINT `sell_orders_items_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`))' in /var/www/ecommerce_management/app/models/product.php:127
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/product.php(127): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/products_controller.php(61): Product->delete()
-#2 /var/www/ecommerce_management/core/routes/router.php(47): ProductsController->destroy()
-#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/product.php on line 127
-[26-May-2016 19:14:33 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`sell_orders_items`, CONSTRAINT `sell_orders_items_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`))' in /var/www/ecommerce_management/app/models/product.php:127
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/product.php(127): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/products_controller.php(61): Product->delete()
-#2 /var/www/ecommerce_management/core/routes/router.php(47): ProductsController->destroy()
-#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/product.php on line 127
-[26-May-2016 19:15:04 America/Sao_Paulo] PHP Fatal error:  Call to a member function delete() on null in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 43
-[26-May-2016 19:15:10 America/Sao_Paulo] PHP Warning:  require(views/products/new.phtml): failed to open stream: No such file or directory in /var/www/ecommerce_management/app/views/layout/application.phtml on line 40
-[26-May-2016 19:15:10 America/Sao_Paulo] PHP Fatal error:  require(): Failed opening required 'views/products/new.phtml' (include_path='.:/usr/share/php:/usr/share/pear:/var/www/ecommerce_management:/var/www/ecommerce_management/config/:/var/www/ecommerce_management/app/:/var/www/ecommerce_management/lib/:/var/www/ecommerce_management/vendor/') in /var/www/ecommerce_management/app/views/layout/application.phtml on line 40
-[26-May-2016 19:15:14 America/Sao_Paulo] PHP Warning:  require(views/products/edit.phtml): failed to open stream: No such file or directory in /var/www/ecommerce_management/app/views/layout/application.phtml on line 40
-[26-May-2016 19:15:14 America/Sao_Paulo] PHP Fatal error:  require(): Failed opening required 'views/products/edit.phtml' (include_path='.:/usr/share/php:/usr/share/pear:/var/www/ecommerce_management:/var/www/ecommerce_management/config/:/var/www/ecommerce_management/app/:/var/www/ecommerce_management/lib/:/var/www/ecommerce_management/vendor/') in /var/www/ecommerce_management/app/views/layout/application.phtml on line 40
-[26-May-2016 19:15:20 America/Sao_Paulo] PHP Warning:  require(views/products/new.phtml): failed to open stream: No such file or directory in /var/www/ecommerce_management/app/views/layout/application.phtml on line 40
-[26-May-2016 19:15:20 America/Sao_Paulo] PHP Fatal error:  require(): Failed opening required 'views/products/new.phtml' (include_path='.:/usr/share/php:/usr/share/pear:/var/www/ecommerce_management:/var/www/ecommerce_management/config/:/var/www/ecommerce_management/app/:/var/www/ecommerce_management/lib/:/var/www/ecommerce_management/vendor/') in /var/www/ecommerce_management/app/views/layout/application.phtml on line 40
-[26-May-2016 19:32:26 America/Sao_Paulo] PHP Fatal error:  Call to undefined method Product::set'description'() in /var/www/ecommerce_management/core/models/base.php on line 70
-[26-May-2016 19:32:52 America/Sao_Paulo] PHP Fatal error:  Call to undefined method Product::set'description'() in /var/www/ecommerce_management/core/models/base.php on line 70
-[26-May-2016 19:37:14 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/product.php:89
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/product.php(89): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/products_controller.php(24): Product->save()
-#2 /var/www/ecommerce_management/core/routes/router.php(47): ProductsController->create()
-#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/product.php on line 89
-[26-May-2016 19:39:48 America/Sao_Paulo] PHP Warning:  require(views/products/edit.phtml): failed to open stream: No such file or directory in /var/www/ecommerce_management/app/views/layout/application.phtml on line 40
-[26-May-2016 19:39:48 America/Sao_Paulo] PHP Fatal error:  require(): Failed opening required 'views/products/edit.phtml' (include_path='.:/usr/share/php:/usr/share/pear:/var/www/ecommerce_management:/var/www/ecommerce_management/config/:/var/www/ecommerce_management/app/:/var/www/ecommerce_management/lib/:/var/www/ecommerce_management/vendor/') in /var/www/ecommerce_management/app/views/layout/application.phtml on line 40
-[26-May-2016 19:45:49 America/Sao_Paulo] PHP Notice:  Undefined variable: data in /var/www/ecommerce_management/app/models/product.php on line 100
-[26-May-2016 19:45:49 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ecommerce_management/core/models/base.php on line 67
-[26-May-2016 20:06:26 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`sell_orders_items`, CONSTRAINT `sell_orders_items_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`))' in /var/www/ecommerce_management/app/models/product.php:124
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/product.php(124): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/products_controller.php(61): Product->delete()
-#2 /var/www/ecommerce_management/core/routes/router.php(47): ProductsController->destroy()
-#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/product.php on line 124
-[27-May-2016 11:08:34 America/Sao_Paulo] PHP Fatal error:  Call to undefined method CategoriesController::buttonTo() in /var/www/ecommerce_management/app/views/categories/_form.phtml on line 12
-[27-May-2016 11:08:45 America/Sao_Paulo] PHP Fatal error:  Call to undefined method CategoriesController::buttonTo() in /var/www/ecommerce_management/app/views/categories/_form.phtml on line 12
-[27-May-2016 11:10:35 America/Sao_Paulo] PHP Fatal error:  Call to undefined method CategoriesController::buttonTo() in /var/www/ecommerce_management/app/views/categories/_form.phtml on line 12
-[27-May-2016 11:11:54 America/Sao_Paulo] PHP Fatal error:  Call to undefined method CategoriesController::linkTo() in /var/www/ecommerce_management/app/views/categories/index.phtml on line 19
-[27-May-2016 11:12:25 America/Sao_Paulo] PHP Fatal error:  Call to undefined method CategoriesController::linkTo() in /var/www/ecommerce_management/app/views/categories/index.phtml on line 29
-[27-May-2016 11:16:55 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ProductsController::linkTo() in /var/www/ecommerce_management/app/views/products/index.phtml on line 35
-[27-May-2016 11:17:15 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ProductsController::linkTo() in /var/www/ecommerce_management/app/views/products/_form.phtml on line 48
-[27-May-2016 11:17:41 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ProductsController::linkTo() in /var/www/ecommerce_management/app/views/products/_form.phtml on line 48
-[27-May-2016 11:40:58 America/Sao_Paulo] PHP Fatal error:  Call to undefined method OrdersController::linkTo() in /var/www/ecommerce_management/app/views/orders/index.phtml on line 33
-[27-May-2016 11:41:36 America/Sao_Paulo] PHP Fatal error:  Call to undefined method OrdersController::linkTo() in /var/www/ecommerce_management/app/views/orders/_form_order.phtml on line 12
-[27-May-2016 11:41:50 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/order.php on line 65
-[27-May-2016 11:41:53 America/Sao_Paulo] PHP Fatal error:  Call to undefined method OrdersController::linkTo() in /var/www/ecommerce_management/app/views/orders/_form_order_items.phtml on line 19
-[27-May-2016 11:46:09 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientsController::linkTo() in /var/www/ecommerce_management/app/views/clients/index.phtml on line 37
-[27-May-2016 11:46:47 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientsController::linkTo() in /var/www/ecommerce_management/app/views/clients/index.phtml on line 37
-[27-May-2016 12:05:22 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '>' in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 64
-[27-May-2016 12:28:24 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '?>' in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 3
-[27-May-2016 12:29:40 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '?>' in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 2
-[27-May-2016 12:29:55 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '?>' in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 3
-[27-May-2016 12:44:41 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
-[27-May-2016 13:08:02 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 3
-[27-May-2016 13:08:02 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 4
-[27-May-2016 13:08:03 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 3
-[27-May-2016 13:08:03 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 4
-[27-May-2016 13:08:05 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 3
-[27-May-2016 13:08:05 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 4
-[27-May-2016 13:08:32 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 3
-[27-May-2016 13:08:32 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 4
-[27-May-2016 13:08:57 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 3
-[27-May-2016 13:08:57 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 4
-[27-May-2016 13:08:59 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 3
-[27-May-2016 13:08:59 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 4
-[27-May-2016 13:09:00 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 3
-[27-May-2016 13:09:00 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 4
-[27-May-2016 13:09:02 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 3
-[27-May-2016 13:09:02 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 4
-[27-May-2016 13:09:26 America/Sao_Paulo] PHP Notice:  Undefined variable: active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 3
-[27-May-2016 13:09:26 America/Sao_Paulo] PHP Notice:  Undefined variable: active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 4
-[27-May-2016 13:09:41 America/Sao_Paulo] PHP Notice:  Undefined variable: active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 3
-[27-May-2016 13:09:41 America/Sao_Paulo] PHP Notice:  Undefined variable: active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 4
-[27-May-2016 13:09:42 America/Sao_Paulo] PHP Notice:  Undefined variable: active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 3
-[27-May-2016 13:09:42 America/Sao_Paulo] PHP Notice:  Undefined variable: active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 4
-[27-May-2016 13:10:23 America/Sao_Paulo] PHP Notice:  Undefined variable: active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 3
-[27-May-2016 13:10:23 America/Sao_Paulo] PHP Notice:  Undefined variable: active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 4
-[27-May-2016 13:10:36 America/Sao_Paulo] PHP Notice:  Undefined variable: active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 3
-[27-May-2016 13:10:36 America/Sao_Paulo] PHP Notice:  Undefined variable: active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 4
-[27-May-2016 13:10:37 America/Sao_Paulo] PHP Notice:  Undefined variable: active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 3
-[27-May-2016 13:10:37 America/Sao_Paulo] PHP Notice:  Undefined variable: active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 4
-[27-May-2016 13:10:40 America/Sao_Paulo] PHP Notice:  Undefined variable: active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 3
-[27-May-2016 13:10:40 America/Sao_Paulo] PHP Notice:  Undefined variable: active in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 4
-[27-May-2016 13:11:41 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '?>' in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 3
-[27-May-2016 13:12:06 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '?>' in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 3
-[27-May-2016 13:22:55 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`sell_orders_items`, CONSTRAINT `sell_orders_items_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`))' in /var/www/ecommerce_management/app/models/order.php:111
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/order.php(111): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(43): Order->delete()
-#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->destroy()
-#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/order.php on line 111
-[27-May-2016 13:43:32 America/Sao_Paulo] PHP Fatal error:  Call to undefined method Client::update() in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 50
-[27-May-2016 20:31:36 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecommerce_management.users' doesn't exist' in /var/www/ecommerce_management/app/models/user.php:72
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/user.php(72): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/users_controller.php(38): User->update(Array)
-#2 /var/www/ecommerce_management/core/routes/router.php(47): UsersController->update()
-#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/user.php on line 72
-[28-May-2016 18:19:58 America/Sao_Paulo] PHP Fatal error:  Call to undefined method CategoriesController::linkTo() in /var/www/ecommerce_management/app/views/categories/show.phtml on line 17
-[28-May-2016 19:07:15 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ProductsController::linkTo() in /var/www/ecommerce_management/app/views/products/show.phtml on line 32
-[28-May-2016 19:08:18 America/Sao_Paulo] PHP Fatal error:  Call to undefined method Client::update() in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 50
-[28-May-2016 19:20:02 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'client_id' in where clause is ambiguous' in /var/www/ecommerce_management/app/models/client.php:117
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/client.php(117): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/clients_controller.php(39): Client::findById('8')
-#2 /var/www/ecommerce_management/core/routes/router.php(47): ClientsController->edit()
-#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/client.php on line 117
-[28-May-2016 19:21:34 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 26
-[28-May-2016 19:21:34 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$cities in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 37
-[28-May-2016 19:21:34 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 37
-[28-May-2016 19:21:34 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 65
-[28-May-2016 19:21:59 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 26
-[28-May-2016 19:21:59 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 65
-[28-May-2016 19:22:09 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 26
-[28-May-2016 19:22:09 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 65
-[28-May-2016 19:22:18 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 26
-[28-May-2016 19:22:18 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 65
-[28-May-2016 19:22:19 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 26
-[28-May-2016 19:22:19 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 65
-[28-May-2016 19:23:48 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 26
-[28-May-2016 19:23:49 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 26
-[28-May-2016 19:24:18 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 26
-[28-May-2016 19:24:21 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 26
-[28-May-2016 19:24:23 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 26
-[28-May-2016 19:25:53 America/Sao_Paulo] PHP Fatal error:  Call to a member function update() on null in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 48
-[28-May-2016 19:26:19 America/Sao_Paulo] PHP Fatal error:  Call to a member function update() on null in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 48
-[28-May-2016 19:26:42 America/Sao_Paulo] PHP Fatal error:  Call to a member function update() on null in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 48
-[28-May-2016 19:28:28 America/Sao_Paulo] PHP Fatal error:  Call to a member function update() on null in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 48
-[28-May-2016 19:30:34 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN), expecting function (T_FUNCTION) in /var/www/ecommerce_management/app/models/client.php on line 153
-[28-May-2016 19:31:15 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/client_pi.php:106
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/client_pi.php(106): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/clients_controller.php(48): ClientPi->update(Array)
-#2 /var/www/ecommerce_management/core/routes/router.php(47): ClientsController->update()
-#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/client_pi.php on line 106
-[28-May-2016 19:37:09 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/client_pi.php:106
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/client_pi.php(106): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/clients_controller.php(48): ClientPi->update(Array)
-#2 /var/www/ecommerce_management/core/routes/router.php(47): ClientsController->update()
-#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/client_pi.php on line 106
-[28-May-2016 19:37:12 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/client_pi.php:106
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/client_pi.php(106): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/clients_controller.php(48): ClientPi->update(Array)
-#2 /var/www/ecommerce_management/core/routes/router.php(47): ClientsController->update()
-#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/client_pi.php on line 106
-[28-May-2016 19:37:14 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/client_pi.php:106
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/client_pi.php(106): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/clients_controller.php(48): ClientPi->update(Array)
-#2 /var/www/ecommerce_management/core/routes/router.php(47): ClientsController->update()
-#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/client_pi.php on line 106
-[28-May-2016 19:38:48 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/client_pi.php:106
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/client_pi.php(106): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/clients_controller.php(48): ClientPi->update(Array)
-#2 /var/www/ecommerce_management/core/routes/router.php(47): ClientsController->update()
-#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/client_pi.php on line 106
-[28-May-2016 19:40:25 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/client_pi.php:106
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/client_pi.php(106): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/clients_controller.php(47): ClientPi->update(Array)
-#2 /var/www/ecommerce_management/core/routes/router.php(47): ClientsController->update()
-#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/client_pi.php on line 106
-[28-May-2016 19:40:27 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/client_pi.php:106
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/client_pi.php(106): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/clients_controller.php(47): ClientPi->update(Array)
-#2 /var/www/ecommerce_management/core/routes/router.php(47): ClientsController->update()
-#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/client_pi.php on line 106
-[28-May-2016 19:40:30 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/client_pi.php:106
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/client_pi.php(106): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/clients_controller.php(47): ClientPi->update(Array)
-#2 /var/www/ecommerce_management/core/routes/router.php(47): ClientsController->update()
-#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/client_pi.php on line 106
-[28-May-2016 19:41:27 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/client_pi.php:106
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/client_pi.php(106): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/clients_controller.php(47): ClientPi->update(Array)
-#2 /var/www/ecommerce_management/core/routes/router.php(47): ClientsController->update()
-#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/client_pi.php on line 106
-[28-May-2016 19:41:30 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/client_pi.php:106
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/client_pi.php(106): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/clients_controller.php(47): ClientPi->update(Array)
-#2 /var/www/ecommerce_management/core/routes/router.php(47): ClientsController->update()
-#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/client_pi.php on line 106
-[28-May-2016 19:42:51 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/client_pi.php:107
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/client_pi.php(107): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/clients_controller.php(47): ClientPi->update(Array)
-#2 /var/www/ecommerce_management/core/routes/router.php(47): ClientsController->update()
-#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/client_pi.php on line 107
-[28-May-2016 19:42:58 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/client_pi.php:107
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/client_pi.php(107): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/clients_controller.php(47): ClientPi->update(Array)
-#2 /var/www/ecommerce_management/core/routes/router.php(47): ClientsController->update()
-#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/client_pi.php on line 107
-[28-May-2016 19:45:28 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/client_pi.php:107
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/client_pi.php(107): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/clients_controller.php(47): ClientPi->update(Array)
-#2 /var/www/ecommerce_management/core/routes/router.php(47): ClientsController->update()
-#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/client_pi.php on line 107
-[28-May-2016 19:48:40 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/client_pi.php:107
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/client_pi.php(107): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/clients_controller.php(47): ClientPi->update(Array)
-#2 /var/www/ecommerce_management/core/routes/router.php(47): ClientsController->update()
-#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/client_pi.php on line 107
-[28-May-2016 19:48:42 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/client_pi.php:107
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/client_pi.php(107): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/clients_controller.php(47): ClientPi->update(Array)
-#2 /var/www/ecommerce_management/core/routes/router.php(47): ClientsController->update()
-#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/client_pi.php on line 107
-[28-May-2016 20:06:08 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$cities in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 37
-[28-May-2016 20:06:08 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 37
-[28-May-2016 20:09:55 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
-[28-May-2016 20:14:48 America/Sao_Paulo] PHP Fatal error:  Unsupported operand types in /var/www/ecommerce_management/app/models/client.php on line 147
-[28-May-2016 20:15:32 America/Sao_Paulo] PHP Fatal error:  Unsupported operand types in /var/www/ecommerce_management/app/models/client.php on line 147
-[28-May-2016 20:15:49 America/Sao_Paulo] PHP Fatal error:  Unsupported operand types in /var/www/ecommerce_management/app/models/client.php on line 147
-[28-May-2016 20:15:55 America/Sao_Paulo] PHP Fatal error:  Unsupported operand types in /var/www/ecommerce_management/app/models/client.php on line 147
-[28-May-2016 20:16:00 America/Sao_Paulo] PHP Fatal error:  Unsupported operand types in /var/www/ecommerce_management/app/models/client.php on line 147
-[28-May-2016 20:16:24 America/Sao_Paulo] PHP Fatal error:  Cannot redeclare ClientPc::update() in /var/www/ecommerce_management/app/models/client_pc.php on line 124
-[28-May-2016 20:24:42 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
-[28-May-2016 20:24:49 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
-[28-May-2016 20:25:20 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
-[28-May-2016 20:25:23 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
-[28-May-2016 20:25:55 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
-[28-May-2016 20:25:57 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
-[28-May-2016 20:25:59 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
-[28-May-2016 20:26:36 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
-[28-May-2016 20:26:37 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
-[28-May-2016 20:26:40 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
-[28-May-2016 20:26:43 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
-[28-May-2016 20:26:45 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
-[28-May-2016 20:27:22 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$client in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
-[28-May-2016 20:27:22 America/Sao_Paulo] PHP Fatal error:  Call to a member function getType() on null in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
-[28-May-2016 20:27:31 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
-[28-May-2016 20:27:33 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
-[28-May-2016 20:27:35 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
-[28-May-2016 20:27:40 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
-[28-May-2016 20:27:41 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
-[28-May-2016 20:28:49 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 13
-[28-May-2016 20:29:15 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$client in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
-[28-May-2016 20:29:15 America/Sao_Paulo] PHP Fatal error:  Call to a member function getType() on null in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
-[28-May-2016 20:29:22 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
-[28-May-2016 20:29:25 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
-[28-May-2016 20:29:26 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
-[28-May-2016 20:29:28 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
-[28-May-2016 20:29:33 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
-[28-May-2016 20:29:34 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
-[28-May-2016 20:29:46 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
-[28-May-2016 20:30:19 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
-[28-May-2016 20:30:22 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
-[28-May-2016 20:31:54 America/Sao_Paulo] PHP Notice:  Undefined index: client in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
-[28-May-2016 20:31:54 America/Sao_Paulo] PHP Notice:  Undefined index: client in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 12
-[28-May-2016 20:32:21 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
-[28-May-2016 20:33:54 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
-[28-May-2016 20:33:57 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
-[28-May-2016 20:34:08 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
-[28-May-2016 20:34:11 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
-[28-May-2016 20:34:13 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
-[28-May-2016 20:35:12 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
-[28-May-2016 20:35:54 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 26
-[28-May-2016 20:35:54 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
-[28-May-2016 20:36:16 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 26
-[28-May-2016 20:36:16 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
-[28-May-2016 20:36:24 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 26
-[28-May-2016 20:36:24 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
-[28-May-2016 20:36:40 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 65
-[28-May-2016 20:36:47 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 26
-[28-May-2016 20:36:47 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
-[28-May-2016 20:37:17 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$client in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 37
-[28-May-2016 20:37:17 America/Sao_Paulo] PHP Fatal error:  Call to a member function getType() on null in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 37
-[28-May-2016 20:37:37 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsController::$type in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 26
-[28-May-2016 20:37:37 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
-[28-May-2016 20:38:06 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
-[28-May-2016 20:39:02 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 12
-[28-May-2016 20:39:10 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 12
-[28-May-2016 20:39:15 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
-[28-May-2016 20:39:42 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
-[28-May-2016 20:39:54 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
-[28-May-2016 20:40:04 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
-[28-May-2016 20:40:58 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/category.php on line 41
-[28-May-2016 20:41:04 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
-[28-May-2016 20:42:55 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
-[28-May-2016 20:46:40 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
-[28-May-2016 20:49:16 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/category.php on line 41
-[28-May-2016 20:49:25 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
-[28-May-2016 20:49:36 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
-[28-May-2016 20:52:04 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
-[28-May-2016 20:58:02 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
-[28-May-2016 20:58:46 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/client_pi.php on line 64
-[28-May-2016 21:02:17 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'submit' (T_STRING) in /var/www/ecommerce_management/core/views/view_helpers.php on line 57
-[28-May-2016 21:02:19 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'submit' (T_STRING) in /var/www/ecommerce_management/core/views/view_helpers.php on line 57
-[28-May-2016 21:03:32 America/Sao_Paulo] PHP Notice:  Undefined index: :type in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 11
-[28-May-2016 21:30:05 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`clients_pc`, CONSTRAINT `clients_pc_ibfk_1` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`))' in /var/www/ecommerce_management/app/models/client.php:131
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/client.php(131): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/clients_controller.php(71): Client->delete()
-#2 /var/www/ecommerce_management/core/routes/router.php(47): ClientsController->destroy()
-#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/client.php on line 131
-[28-May-2016 21:34:35 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`orders`, CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`))' in /var/www/ecommerce_management/app/models/client.php:139
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/client.php(139): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/clients_controller.php(71): Client->delete()
-#2 /var/www/ecommerce_management/core/routes/router.php(47): ClientsController->destroy()
-#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/client.php on line 139
-[28-May-2016 21:34:41 America/Sao_Paulo] PHP Fatal error:  Unsupported operand types in /var/www/ecommerce_management/app/models/client.php on line 155
-[28-May-2016 21:34:49 America/Sao_Paulo] PHP Fatal error:  Unsupported operand types in /var/www/ecommerce_management/app/models/client.php on line 155
-[28-May-2016 21:35:11 America/Sao_Paulo] PHP Fatal error:  Unsupported operand types in /var/www/ecommerce_management/app/models/client.php on line 155
-[28-May-2016 21:36:49 America/Sao_Paulo] PHP Fatal error:  Unsupported operand types in /var/www/ecommerce_management/app/models/client.php on line 155
-[28-May-2016 21:36:53 America/Sao_Paulo] PHP Fatal error:  Unsupported operand types in /var/www/ecommerce_management/app/models/client.php on line 155
-[28-May-2016 21:37:25 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/client_pi.php on line 64
-[28-May-2016 21:38:25 America/Sao_Paulo] PHP Fatal error:  Unsupported operand types in /var/www/ecommerce_management/app/models/client.php on line 155
-[28-May-2016 21:39:54 America/Sao_Paulo] PHP Fatal error:  Unsupported operand types in /var/www/ecommerce_management/app/models/client.php on line 155
-[28-May-2016 21:39:58 America/Sao_Paulo] PHP Fatal error:  Unsupported operand types in /var/www/ecommerce_management/app/models/client.php on line 155
-[28-May-2016 21:40:18 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ecommerce_management/core/models/base.php on line 67
-[28-May-2016 22:04:14 America/Sao_Paulo] PHP Fatal error:  Unsupported operand types in /var/www/ecommerce_management/app/models/client.php on line 155
-[28-May-2016 22:06:19 America/Sao_Paulo] PHP Fatal error:  Unsupported operand types in /var/www/ecommerce_management/app/models/client.php on line 155
-[28-May-2016 22:06:31 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/client_pi.php on line 64
-[28-May-2016 22:06:52 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /var/www/ecommerce_management/app/models/client.php on line 157
-[28-May-2016 22:07:13 America/Sao_Paulo] PHP Fatal error:  Unsupported operand types in /var/www/ecommerce_management/app/models/client.php on line 155
-[28-May-2016 22:16:22 America/Sao_Paulo] PHP Fatal error:  Unsupported operand types in /var/www/ecommerce_management/app/models/client.php on line 155
-[28-May-2016 22:28:56 America/Sao_Paulo] PHP Fatal error:  Unsupported operand types in /var/www/ecommerce_management/app/models/client.php on line 155
-[28-May-2016 22:32:12 America/Sao_Paulo] PHP Warning:  array_merge(): Argument #2 is not an array in /var/www/ecommerce_management/app/models/client.php on line 156
-[28-May-2016 22:33:25 America/Sao_Paulo] PHP Warning:  array_merge(): Argument #2 is not an array in /var/www/ecommerce_management/app/models/client.php on line 156
-[28-May-2016 22:33:25 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ecommerce_management/core/models/base.php on line 67
-[28-May-2016 22:33:25 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
-[28-May-2016 22:33:42 America/Sao_Paulo] PHP Warning:  array_merge(): Argument #2 is not an array in /var/www/ecommerce_management/app/models/client.php on line 156
-[28-May-2016 22:33:42 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ecommerce_management/core/models/base.php on line 67
-[28-May-2016 22:33:42 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
-[28-May-2016 22:33:52 America/Sao_Paulo] PHP Warning:  array_merge(): Argument #2 is not an array in /var/www/ecommerce_management/app/models/client.php on line 156
-[28-May-2016 22:33:52 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ecommerce_management/core/models/base.php on line 67
-[28-May-2016 22:33:52 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
-[28-May-2016 22:35:29 America/Sao_Paulo] PHP Notice:  Undefined variable: client in /var/www/ecommerce_management/app/models/client.php on line 158
-[28-May-2016 22:35:29 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ecommerce_management/core/models/base.php on line 67
-[28-May-2016 22:35:29 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
-[28-May-2016 22:37:58 America/Sao_Paulo] PHP Fatal error:  Call to a member function getType() on null in /var/www/ecommerce_management/app/controllers/clients_controller.php on line 48
-[28-May-2016 22:38:23 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ecommerce_management/core/models/base.php on line 67
-[28-May-2016 22:38:23 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPc::setcpf() in /var/www/ecommerce_management/core/models/base.php on line 70
-[28-May-2016 22:38:57 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ecommerce_management/core/models/base.php on line 67
-[28-May-2016 22:38:57 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPc::setcpf() in /var/www/ecommerce_management/core/models/base.php on line 70
-[28-May-2016 22:39:12 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/client_pi.php on line 64
-[28-May-2016 22:39:33 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/client_pc.php on line 63
-[28-May-2016 22:50:18 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/client_pi.php on line 64
-[28-May-2016 22:50:32 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/client_pi.php on line 64
-[28-May-2016 22:50:54 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/client_pc.php on line 63
-[28-May-2016 22:56:39 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ecommerce_management/core/models/base.php on line 67
-[28-May-2016 22:56:39 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPc::setcpf() in /var/www/ecommerce_management/core/models/base.php on line 70
-[28-May-2016 22:57:55 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ecommerce_management/core/models/base.php on line 67
-[28-May-2016 22:57:55 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPc::setcpf() in /var/www/ecommerce_management/core/models/base.php on line 70
-[28-May-2016 22:58:32 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ecommerce_management/core/models/base.php on line 67
-[28-May-2016 22:58:32 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPc::setcpf() in /var/www/ecommerce_management/core/models/base.php on line 70
-[28-May-2016 22:59:12 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/client_pi.php on line 64
-[28-May-2016 22:59:38 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/client_pi.php on line 64
-[28-May-2016 22:59:55 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/client_pi.php on line 64
-[28-May-2016 23:30:44 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPc::getCpf() in /var/www/ecommerce_management/app/views/clients/_form_pi.phtml on line 4
-[28-May-2016 23:30:46 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPc::getCpf() in /var/www/ecommerce_management/app/views/clients/_form_pi.phtml on line 4
-[28-May-2016 23:30:48 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPc::getCpf() in /var/www/ecommerce_management/app/views/clients/_form_pi.phtml on line 4
-[28-May-2016 23:30:50 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPc::getCpf() in /var/www/ecommerce_management/app/views/clients/_form_pi.phtml on line 4
-[28-May-2016 23:30:52 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPc::getCpf() in /var/www/ecommerce_management/app/views/clients/_form_pi.phtml on line 4
-[28-May-2016 23:30:55 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPc::getCpf() in /var/www/ecommerce_management/app/views/clients/_form_pi.phtml on line 4
-[28-May-2016 23:31:09 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPc::getCpf() in /var/www/ecommerce_management/app/views/clients/_form_pi.phtml on line 4
-[28-May-2016 23:31:28 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPc::getCpf() in /var/www/ecommerce_management/app/views/clients/_form_pi.phtml on line 4
-[28-May-2016 23:31:39 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPc::getCpf() in /var/www/ecommerce_management/app/views/clients/_form_pi.phtml on line 4
-[28-May-2016 23:32:16 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /var/www/ecommerce_management/app/views/clients/_form.phtml on line 26
-[29-May-2016 19:52:43 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected ''categories'' (T_CONSTANT_ENCAPSED_STRING), expecting variable (T_VARIABLE) in /var/www/ecommerce_management/app/models/category.php on line 91
-[29-May-2016 19:53:19 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`products`, CONSTRAINT `products_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`))' in /var/www/ecommerce_management/core/models/base.php:79
-Stack trace:
-#0 /var/www/ecommerce_management/core/models/base.php(79): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/categories_controller.php(58): Base->delete('categories')
-#2 /var/www/ecommerce_management/core/routes/router.php(47): CategoriesController->destroy()
-#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/core/models/base.php on line 79
-[29-May-2016 19:55:17 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`products`, CONSTRAINT `products_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`))' in /var/www/ecommerce_management/core/models/base.php:79
-Stack trace:
-#0 /var/www/ecommerce_management/core/models/base.php(79): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/categories_controller.php(58): Base->delete('categories')
-#2 /var/www/ecommerce_management/core/routes/router.php(47): CategoriesController->destroy()
-#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/core/models/base.php on line 79
-[29-May-2016 19:57:04 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`products`, CONSTRAINT `products_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`))' in /var/www/ecommerce_management/core/models/base.php:79
-Stack trace:
-#0 /var/www/ecommerce_management/core/models/base.php(79): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/categories_controller.php(58): Base->delete('categories')
-#2 /var/www/ecommerce_management/core/routes/router.php(47): CategoriesController->destroy()
-#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/core/models/base.php on line 79
-[29-May-2016 19:57:07 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`products`, CONSTRAINT `products_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`))' in /var/www/ecommerce_management/core/models/base.php:79
-Stack trace:
-#0 /var/www/ecommerce_management/core/models/base.php(79): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/categories_controller.php(58): Base->delete('categories')
-#2 /var/www/ecommerce_management/core/routes/router.php(47): CategoriesController->destroy()
-#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/core/models/base.php on line 79
-[29-May-2016 20:02:46 America/Sao_Paulo] PHP Notice:  Undefined variable: category in /var/www/ecommerce_management/app/controllers/categories_controller.php on line 11
-[29-May-2016 20:05:35 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/category.php on line 40
-[29-May-2016 20:09:11 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE), expecting ']' in /var/www/ecommerce_management/app/controllers/categories_controller.php on line 4
-[29-May-2016 20:10:18 America/Sao_Paulo] PHP Notice:  Undefined variable: category in /var/www/ecommerce_management/app/controllers/categories_controller.php on line 12
-[29-May-2016 20:10:18 America/Sao_Paulo] PHP Warning:  Missing argument 3 for Base::findById(), called in /var/www/ecommerce_management/app/controllers/categories_controller.php on line 12 and defined in /var/www/ecommerce_management/core/models/base.php on line 74
-[29-May-2016 20:10:18 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE id = '6'' at line 1' in /var/www/ecommerce_management/core/models/base.php:81
-Stack trace:
-#0 /var/www/ecommerce_management/core/models/base.php(81): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/categories_controller.php(12): Base::findById('6', NULL)
-#2 /var/www/ecommerce_management/core/routes/router.php(47): CategoriesController->show()
-#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/core/models/base.php on line 81
-[29-May-2016 20:19:26 America/Sao_Paulo] PHP Warning:  Missing argument 1 for Base::all(), called in /var/www/ecommerce_management/app/controllers/categories_controller.php on line 29 and defined in /var/www/ecommerce_management/core/models/base.php on line 97
-[29-May-2016 20:19:26 America/Sao_Paulo] PHP Warning:  Missing argument 2 for Base::all(), called in /var/www/ecommerce_management/app/controllers/categories_controller.php on line 29 and defined in /var/www/ecommerce_management/core/models/base.php on line 97
-[29-May-2016 20:19:26 America/Sao_Paulo] PHP Notice:  Undefined variable: table in /var/www/ecommerce_management/core/models/base.php on line 98
-[29-May-2016 20:19:26 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY created_at DESC' at line 1' in /var/www/ecommerce_management/core/models/base.php:102
-Stack trace:
-#0 /var/www/ecommerce_management/core/models/base.php(102): PDOStatement->execute()
-#1 /var/www/ecommerce_management/app/controllers/categories_controller.php(29): Base::all()
-#2 /var/www/ecommerce_management/core/routes/router.php(47): CategoriesController->create()
-#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/core/models/base.php on line 102
-[29-May-2016 20:21:25 America/Sao_Paulo] PHP Warning:  Missing argument 1 for Base::all(), called in /var/www/ecommerce_management/app/controllers/products_controller.php on line 15 and defined in /var/www/ecommerce_management/core/models/base.php on line 97
-[29-May-2016 20:21:25 America/Sao_Paulo] PHP Warning:  Missing argument 2 for Base::all(), called in /var/www/ecommerce_management/app/controllers/products_controller.php on line 15 and defined in /var/www/ecommerce_management/core/models/base.php on line 97
-[29-May-2016 20:21:25 America/Sao_Paulo] PHP Notice:  Undefined variable: table in /var/www/ecommerce_management/core/models/base.php on line 98
-[29-May-2016 20:21:25 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY created_at DESC' at line 1' in /var/www/ecommerce_management/core/models/base.php:102
-Stack trace:
-#0 /var/www/ecommerce_management/core/models/base.php(102): PDOStatement->execute()
-#1 /var/www/ecommerce_management/app/controllers/products_controller.php(15): Base::all()
-#2 /var/www/ecommerce_management/core/routes/router.php(47): ProductsController->_new()
-#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/core/models/base.php on line 102
-[29-May-2016 20:21:52 America/Sao_Paulo] PHP Warning:  Missing argument 1 for Base::all(), called in /var/www/ecommerce_management/app/controllers/products_controller.php on line 15 and defined in /var/www/ecommerce_management/core/models/base.php on line 97
-[29-May-2016 20:21:52 America/Sao_Paulo] PHP Warning:  Missing argument 2 for Base::all(), called in /var/www/ecommerce_management/app/controllers/products_controller.php on line 15 and defined in /var/www/ecommerce_management/core/models/base.php on line 97
-[29-May-2016 20:21:52 America/Sao_Paulo] PHP Notice:  Undefined variable: table in /var/www/ecommerce_management/core/models/base.php on line 98
-[29-May-2016 20:21:52 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY created_at DESC' at line 1' in /var/www/ecommerce_management/core/models/base.php:102
-Stack trace:
-#0 /var/www/ecommerce_management/core/models/base.php(102): PDOStatement->execute()
-#1 /var/www/ecommerce_management/app/controllers/products_controller.php(15): Base::all()
-#2 /var/www/ecommerce_management/core/routes/router.php(47): ProductsController->_new()
-#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/core/models/base.php on line 102
-[29-May-2016 20:26:55 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/category.php on line 40
-[29-May-2016 20:27:17 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/client_pi.php on line 64
-[29-May-2016 20:35:06 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`products`, CONSTRAINT `products_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`))' in /var/www/ecommerce_management/core/models/base.php:79
-Stack trace:
-#0 /var/www/ecommerce_management/core/models/base.php(79): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/categories_controller.php(58): Base->delete('categories')
-#2 /var/www/ecommerce_management/core/routes/router.php(47): CategoriesController->destroy()
-#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/core/models/base.php on line 79
-[29-May-2016 20:35:09 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`products`, CONSTRAINT `products_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`))' in /var/www/ecommerce_management/core/models/base.php:79
-Stack trace:
-#0 /var/www/ecommerce_management/core/models/base.php(79): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/categories_controller.php(58): Base->delete('categories')
-#2 /var/www/ecommerce_management/core/routes/router.php(47): CategoriesController->destroy()
-#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/core/models/base.php on line 79
-[29-May-2016 20:35:25 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/category.php on line 40
-[29-May-2016 20:38:19 America/Sao_Paulo] PHP Catchable fatal error:  Object of class Category could not be converted to string in /var/www/ecommerce_management/app/views/products/show.phtml on line 20
-[29-May-2016 20:39:37 America/Sao_Paulo] PHP Catchable fatal error:  Object of class Category could not be converted to string in /var/www/ecommerce_management/app/views/products/show.phtml on line 20
-[29-May-2016 20:39:58 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/category.php on line 40
-[29-May-2016 20:40:28 America/Sao_Paulo] PHP Fatal error:  Call to a member function getName() on string in /var/www/ecommerce_management/app/views/products/show.phtml on line 20
-[29-May-2016 20:57:45 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientPi::getCnpj() in /var/www/ecommerce_management/app/views/clients/_form_pc.phtml on line 4
-[29-May-2016 21:46:57 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/order.php on line 64
-[29-May-2016 21:49:31 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/order.php:95
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/order.php(95): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(50): Order->addProduct('9')
-#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->addProduct()
-#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/order.php on line 95
-[29-May-2016 21:50:50 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/order.php:95
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/order.php(95): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(50): Order->addProduct('10')
-#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->addProduct()
-#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/order.php on line 95
-[29-May-2016 22:22:20 America/Sao_Paulo] PHP Fatal error:  Call to a member function delete() on null in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 43
-[29-May-2016 22:22:37 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`sell_orders_items`, CONSTRAINT `sell_orders_items_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`))' in /var/www/ecommerce_management/app/models/order.php:110
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/order.php(110): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(43): Order->delete()
-#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->destroy()
-#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/order.php on line 110
-[29-May-2016 22:22:46 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') VALUES ('1', '1')' at line 1' in /var/www/ecommerce_management/app/models/order.php:55
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/order.php(55): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(28): Order->save()
-#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->create()
-#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/order.php on line 55
-[29-May-2016 22:23:44 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') VALUES ('7', '1')' at line 1' in /var/www/ecommerce_management/app/models/order.php:55
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/order.php(55): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(28): Order->save()
-#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->create()
-#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/order.php on line 55
-[29-May-2016 22:25:52 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/order.php on line 64
-[29-May-2016 22:26:02 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/order.php on line 64
-[29-May-2016 22:26:54 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'price' cannot be null' in /var/www/ecommerce_management/app/models/order.php:95
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/order.php(95): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(50): Order->addProduct('')
-#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->addProduct()
-#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(86): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/order.php on line 95
-[29-May-2016 22:37:17 America/Sao_Paulo] PHP Notice:  Undefined variable: product in /var/www/ecommerce_management/app/views/orders/index.phtml on line 19
-[29-May-2016 22:37:17 America/Sao_Paulo] PHP Fatal error:  Call to a member function getId() on null in /var/www/ecommerce_management/app/views/orders/index.phtml on line 19
-[29-May-2016 22:37:42 America/Sao_Paulo] PHP Fatal error:  Class 'ShoppingCart' not found in /var/www/ecommerce_management/app/views/orders/show.phtml on line 25
-[29-May-2016 22:37:48 America/Sao_Paulo] PHP Fatal error:  Class 'ShoppingCart' not found in /var/www/ecommerce_management/app/views/orders/show.phtml on line 25
-[29-May-2016 22:37:51 America/Sao_Paulo] PHP Fatal error:  Class 'ShoppingCart' not found in /var/www/ecommerce_management/app/views/orders/show.phtml on line 25
-[29-May-2016 22:38:00 America/Sao_Paulo] PHP Fatal error:  Class 'ShoppingCart' not found in /var/www/ecommerce_management/app/views/orders/show.phtml on line 25
-[29-May-2016 22:56:34 America/Sao_Paulo] PHP Notice:  Undefined index: id in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 55
-[29-May-2016 22:56:34 America/Sao_Paulo] PHP Notice:  Undefined index:  in /var/www/ecommerce_management/app/models/sell_order.php on line 54
-[29-May-2016 22:56:34 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$order in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 58
-[29-May-2016 22:56:34 America/Sao_Paulo] PHP Fatal error:  Call to a member function getId() on null in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 58
-[29-May-2016 22:57:01 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$order in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 58
-[29-May-2016 22:57:01 America/Sao_Paulo] PHP Fatal error:  Call to a member function getId() on null in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 58
-[29-May-2016 22:57:13 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$order in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 58
-[29-May-2016 22:57:13 America/Sao_Paulo] PHP Fatal error:  Call to a member function getId() on null in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 58
-[29-May-2016 22:57:39 America/Sao_Paulo] PHP Warning:  require(views/orders/addAmountProduct.phtml): failed to open stream: No such file or directory in /var/www/ecommerce_management/app/views/layout/application.phtml on line 40
-[29-May-2016 22:57:39 America/Sao_Paulo] PHP Fatal error:  require(): Failed opening required 'views/orders/addAmountProduct.phtml' (include_path='.:/usr/share/php:/usr/share/pear:/var/www/ecommerce_management:/var/www/ecommerce_management/config/:/var/www/ecommerce_management/app/:/var/www/ecommerce_management/lib/:/var/www/ecommerce_management/vendor/') in /var/www/ecommerce_management/app/views/layout/application.phtml on line 40
-[29-May-2016 22:57:53 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$order in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 57
-[29-May-2016 22:57:53 America/Sao_Paulo] PHP Fatal error:  Call to a member function getId() on null in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 57
-[29-May-2016 22:58:26 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$title in /var/www/ecommerce_management/app/views/orders/show.phtml on line 3
-[29-May-2016 22:58:26 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$action in /var/www/ecommerce_management/app/views/orders/_form_order_items.phtml on line 1
-[29-May-2016 22:58:26 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$order in /var/www/ecommerce_management/app/views/orders/_form_order_items.phtml on line 2
-[29-May-2016 22:58:26 America/Sao_Paulo] PHP Fatal error:  Call to a member function getClientId() on null in /var/www/ecommerce_management/app/views/orders/_form_order_items.phtml on line 2
-[29-May-2016 23:03:53 America/Sao_Paulo] PHP Fatal error:  Class 'ShoppingCart' not found in /var/www/ecommerce_management/app/models/sell_order.php on line 23
-[29-May-2016 23:25:09 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '?>' in /var/www/ecommerce_management/app/views/orders/show.phtml on line 25
-[29-May-2016 23:32:30 America/Sao_Paulo] PHP Fatal error:  Call to a member function getClientId() on null in /var/www/ecommerce_management/app/views/orders/_form_order_items.phtml on line 2
-[29-May-2016 23:32:43 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/order.php on line 64
-[29-May-2016 23:36:04 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '?>', expecting function (T_FUNCTION) in /var/www/ecommerce_management/app/models/sell_order_item.php on line 48
-[29-May-2016 23:36:25 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '?>', expecting function (T_FUNCTION) in /var/www/ecommerce_management/app/models/sell_order_item.php on line 48
-[29-May-2016 23:36:46 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '?>', expecting function (T_FUNCTION) in /var/www/ecommerce_management/app/models/sell_order_item.php on line 48
-[29-May-2016 23:41:22 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '?>', expecting function (T_FUNCTION) in /var/www/ecommerce_management/app/models/sell_order_item.php on line 58
-[29-May-2016 23:41:52 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '?>', expecting function (T_FUNCTION) in /var/www/ecommerce_management/app/models/sell_order_item.php on line 58
-[29-May-2016 23:42:08 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '?>', expecting function (T_FUNCTION) in /var/www/ecommerce_management/app/models/sell_order_item.php on line 58
-[29-May-2016 23:42:30 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ecommerce_management/core/models/base.php on line 67
-[29-May-2016 23:42:30 America/Sao_Paulo] PHP Notice:  Array to string conversion in /var/www/ecommerce_management/app/views/orders/show.phtml on line 25
-[29-May-2016 23:43:54 America/Sao_Paulo] PHP Notice:  Array to string conversion in /var/www/ecommerce_management/app/views/orders/show.phtml on line 25
-[29-May-2016 23:44:54 America/Sao_Paulo] PHP Notice:  Array to string conversion in /var/www/ecommerce_management/app/views/orders/show.phtml on line 25
-[29-May-2016 23:50:23 America/Sao_Paulo] PHP Fatal error:  Call to undefined method SellOrderItem::addProduct() in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 57
-[29-May-2016 23:54:09 America/Sao_Paulo] PHP Fatal error:  Can't use function return value in write context in /var/www/ecommerce_management/app/models/sell_order_item.php on line 41
-[29-May-2016 23:55:17 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /var/www/ecommerce_management/app/models/sell_order_item.php on line 42
-[29-May-2016 23:55:23 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /var/www/ecommerce_management/app/models/sell_order_item.php on line 42
-[29-May-2016 23:55:38 America/Sao_Paulo] PHP Fatal error:  Call to undefined method OrdersController::setAmount() in /var/www/ecommerce_management/app/models/sell_order_item.php on line 42
-[29-May-2016 23:58:57 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /var/www/ecommerce_management/app/models/order.php:103
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/order.php(103): PDOStatement->fetch(2)
-#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(50): Order->addProduct('10')
-#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->addProduct()
-#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(88): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/order.php on line 103
-[29-May-2016 23:59:41 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /var/www/ecommerce_management/app/models/order.php:103
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/order.php(103): PDOStatement->fetch(2)
-#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(50): Order->addProduct('10')
-#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->addProduct()
-#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(88): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/order.php on line 103
-[29-May-2016 23:59:47 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /var/www/ecommerce_management/app/models/order.php:103
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/order.php(103): PDOStatement->fetch(2)
-#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(50): Order->addProduct('9')
-#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->addProduct()
-#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(88): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/order.php on line 103
-[30-May-2016 00:00:14 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /var/www/ecommerce_management/app/models/order.php:103
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/order.php(103): PDOStatement->fetch(2)
-#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(50): Order->addProduct('1')
-#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->addProduct()
-#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(88): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/order.php on line 103
-[30-May-2016 00:00:53 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /var/www/ecommerce_management/app/models/order.php:102
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/order.php(102): PDOStatement->fetch(2)
-#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(50): Order->addProduct('10')
-#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->addProduct()
-#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(88): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/order.php on line 102
-[30-May-2016 00:01:28 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /var/www/ecommerce_management/app/models/order.php:96
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/order.php(96): PDOStatement->fetch(2)
-#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(50): Order->addProduct('1')
-#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->addProduct()
-#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(88): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/order.php on line 96
-[30-May-2016 00:01:42 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /var/www/ecommerce_management/app/models/order.php:96
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/order.php(96): PDOStatement->fetch(2)
-#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(50): Order->addProduct('2')
-#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->addProduct()
-#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(88): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/order.php on line 96
-[30-May-2016 00:04:24 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: no parameters were bound' in /var/www/ecommerce_management/app/models/order.php:106
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/order.php(106): PDOStatement->execute()
-#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(50): Order->addProduct('1')
-#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->addProduct()
-#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(88): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/order.php on line 106
-[30-May-2016 00:04:58 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: no parameters were bound' in /var/www/ecommerce_management/app/models/order.php:106
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/order.php(106): PDOStatement->execute()
-#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(50): Order->addProduct('3')
-#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->addProduct()
-#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(88): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/order.php on line 106
-[30-May-2016 00:05:53 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecommerce_management.sell_order_items' doesn't exist' in /var/www/ecommerce_management/app/models/order.php:107
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/order.php(107): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(50): Order->addProduct('2')
-#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->addProduct()
-#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(88): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/order.php on line 107
-[30-May-2016 00:10:49 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$amount in /var/www/ecommerce_management/app/models/sell_order_item.php on line 41
-[30-May-2016 00:11:02 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$amount in /var/www/ecommerce_management/app/models/sell_order_item.php on line 41
-[30-May-2016 00:12:40 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$amount in /var/www/ecommerce_management/app/models/sell_order_item.php on line 41
-[30-May-2016 00:13:34 America/Sao_Paulo] PHP Notice:  Undefined variable: amount in /var/www/ecommerce_management/app/models/sell_order_item.php on line 43
-[30-May-2016 00:13:36 America/Sao_Paulo] PHP Notice:  Undefined variable: amount in /var/www/ecommerce_management/app/models/sell_order_item.php on line 43
-[30-May-2016 00:14:48 America/Sao_Paulo] PHP Fatal error:  Call to a member function getAmount() on string in /var/www/ecommerce_management/app/models/sell_order_item.php on line 41
-[30-May-2016 00:15:37 America/Sao_Paulo] PHP Fatal error:  Call to a member function getAmount() on string in /var/www/ecommerce_management/app/models/sell_order_item.php on line 41
-[30-May-2016 00:16:20 America/Sao_Paulo] PHP Fatal error:  Call to a member function getAmount() on string in /var/www/ecommerce_management/app/models/sell_order_item.php on line 41
-[30-May-2016 00:17:12 America/Sao_Paulo] PHP Fatal error:  Call to a member function getAmount() on string in /var/www/ecommerce_management/app/models/sell_order_item.php on line 41
-[30-May-2016 00:17:56 America/Sao_Paulo] PHP Fatal error:  Call to a member function getAmount() on string in /var/www/ecommerce_management/app/models/sell_order_item.php on line 41
-[30-May-2016 00:18:06 America/Sao_Paulo] PHP Fatal error:  Call to a member function getAmount() on string in /var/www/ecommerce_management/app/models/sell_order_item.php on line 41
-[30-May-2016 00:19:20 America/Sao_Paulo] PHP Fatal error:  Call to a member function getAmount() on string in /var/www/ecommerce_management/app/models/sell_order_item.php on line 41
-[30-May-2016 00:19:41 America/Sao_Paulo] PHP Fatal error:  Call to a member function getAmount() on string in /var/www/ecommerce_management/app/models/sell_order_item.php on line 41
-[30-May-2016 00:20:22 America/Sao_Paulo] PHP Fatal error:  Call to a member function getAmount() on string in /var/www/ecommerce_management/app/models/sell_order_item.php on line 41
-[30-May-2016 00:20:41 America/Sao_Paulo] PHP Fatal error:  Call to undefined method SellOrderItem::addProduct() in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 60
-[30-May-2016 00:21:59 America/Sao_Paulo] PHP Notice:  Undefined index: product in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 57
-[30-May-2016 00:21:59 America/Sao_Paulo] PHP Notice:  Undefined variable: sell_order_item in /var/www/ecommerce_management/app/models/order.php on line 116
-[30-May-2016 00:22:22 America/Sao_Paulo] PHP Notice:  Undefined index: product_id in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 57
-[30-May-2016 00:22:22 America/Sao_Paulo] PHP Notice:  Undefined variable: sell_order_item in /var/www/ecommerce_management/app/models/order.php on line 116
-[30-May-2016 00:22:25 America/Sao_Paulo] PHP Notice:  Undefined index: product_id in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 57
-[30-May-2016 00:22:25 America/Sao_Paulo] PHP Notice:  Undefined variable: sell_order_item in /var/www/ecommerce_management/app/models/order.php on line 116
-[30-May-2016 00:26:11 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'price' cannot be null' in /var/www/ecommerce_management/app/models/order.php:95
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/order.php(95): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(50): Order->addProduct('')
-#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->addProduct()
-#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(88): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/order.php on line 95
-[30-May-2016 00:31:06 America/Sao_Paulo] PHP Fatal error:  Call to undefined method SellOrderItem::setAmount() in /var/www/ecommerce_management/app/models/order.php on line 116
-[30-May-2016 00:33:49 America/Sao_Paulo] PHP Fatal error:  Call to undefined function tostring() in /var/www/ecommerce_management/app/models/sell_order_item.php on line 42
-[30-May-2016 00:51:22 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /var/www/ecommerce_management/app/models/sell_order_item.php on line 57
-[30-May-2016 00:51:24 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /var/www/ecommerce_management/app/models/sell_order_item.php on line 57
-[30-May-2016 00:51:29 America/Sao_Paulo] PHP Notice:  Array to string conversion in /var/www/ecommerce_management/app/views/orders/show.phtml on line 25
-[30-May-2016 00:57:12 America/Sao_Paulo] PHP Fatal error:  Call to undefined method SellOrder::removeProduct() in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 64
-[30-May-2016 01:02:39 America/Sao_Paulo] PHP Notice:  Undefined index: order in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 49
-[30-May-2016 01:02:39 America/Sao_Paulo] PHP Fatal error:  Call to a member function addProduct() on null in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 50
-[30-May-2016 01:09:48 America/Sao_Paulo] PHP Notice:  Array to string conversion in /var/www/ecommerce_management/app/views/orders/show.phtml on line 25
-[30-May-2016 01:09:48 America/Sao_Paulo] PHP Fatal error:  Unsupported operand types in /var/www/ecommerce_management/app/views/orders/show.phtml on line 30
-[30-May-2016 01:14:23 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$product in /var/www/ecommerce_management/app/views/orders/_form_order_items.phtml on line 9
-[30-May-2016 01:14:23 America/Sao_Paulo] PHP Fatal error:  Call to a member function getErrors() on null in /var/www/ecommerce_management/app/views/orders/_form_order_items.phtml on line 9
-[30-May-2016 01:15:05 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$product in /var/www/ecommerce_management/app/views/orders/_form_order_items.phtml on line 9
-[30-May-2016 01:15:05 America/Sao_Paulo] PHP Fatal error:  Call to a member function getErrors() on null in /var/www/ecommerce_management/app/views/orders/_form_order_items.phtml on line 9
-[30-May-2016 01:15:20 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$product in /var/www/ecommerce_management/app/views/orders/_form_order_items.phtml on line 9
-[30-May-2016 01:15:20 America/Sao_Paulo] PHP Fatal error:  Call to a member function getErrors() on null in /var/www/ecommerce_management/app/views/orders/_form_order_items.phtml on line 9
-[30-May-2016 01:15:49 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/order.php on line 64
-[30-May-2016 01:15:51 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$product in /var/www/ecommerce_management/app/views/orders/_form_order_items.phtml on line 9
-[30-May-2016 01:15:51 America/Sao_Paulo] PHP Fatal error:  Call to a member function getErrors() on null in /var/www/ecommerce_management/app/views/orders/_form_order_items.phtml on line 9
-[30-May-2016 01:16:48 America/Sao_Paulo] PHP Notice:  Array to string conversion in /var/www/ecommerce_management/lib/validations.php on line 37
-[30-May-2016 01:16:48 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ecommerce_management.Array' doesn't exist' in /var/www/ecommerce_management/lib/validations.php:42
-Stack trace:
-#0 /var/www/ecommerce_management/lib/validations.php(42): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/models/product.php(71): Validations::uniqueField('AMD FX-4300', 'name', Array)
-#2 /var/www/ecommerce_management/core/models/base.php(41): Product->validates()
-#3 /var/www/ecommerce_management/app/models/product.php(80): Base->isValid()
-#4 /var/www/ecommerce_management/app/controllers/products_controller.php(24): Product->save()
-#5 /var/www/ecommerce_management/core/routes/router.php(47): ProductsController->create()
-#6 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
-#7 /var/www/ecommerce_management/config/routes.php(87): Router->load()
-#8 {main}
-  thrown in /var/www/ecommerce_management/lib/validations.php on line 42
-[30-May-2016 01:25:21 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`sell_orders_items`, CONSTRAINT `sell_orders_items_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`))' in /var/www/ecommerce_management/app/models/order.php:142
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/order.php(142): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(43): Order->delete()
-#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->destroy()
-#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(87): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/order.php on line 142
-[30-May-2016 01:25:27 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`sell_orders_items`, CONSTRAINT `sell_orders_items_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`))' in /var/www/ecommerce_management/app/models/order.php:142
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/order.php(142): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(43): Order->delete()
-#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->destroy()
-#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(87): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/order.php on line 142
-[30-May-2016 01:25:33 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`sell_orders_items`, CONSTRAINT `sell_orders_items_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`))' in /var/www/ecommerce_management/app/models/order.php:142
-Stack trace:
-#0 /var/www/ecommerce_management/app/models/order.php(142): PDOStatement->execute(Array)
-#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(43): Order->delete()
-#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->destroy()
-#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
-#4 /var/www/ecommerce_management/config/routes.php(87): Router->load()
-#5 {main}
-  thrown in /var/www/ecommerce_management/app/models/order.php on line 142
-[30-May-2016 01:27:45 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/order.php on line 64
-[30-May-2016 01:34:30 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/order.php on line 64
-[30-May-2016 01:35:39 America/Sao_Paulo] PHP Notice:  Undefined variable: order in /var/www/ecommerce_management/app/views/orders/show.phtml on line 31
-[30-May-2016 01:35:39 America/Sao_Paulo] PHP Fatal error:  Call to a member function getId() on null in /var/www/ecommerce_management/app/views/orders/show.phtml on line 31
-[30-May-2016 01:38:08 America/Sao_Paulo] PHP Fatal error:  Call to a member function delete() on null in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 51
-[30-May-2016 01:43:51 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$sellOrderItem in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 51
-[30-May-2016 01:43:51 America/Sao_Paulo] PHP Fatal error:  Call to a member function delete() on null in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 51
-[30-May-2016 01:43:56 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$sellOrderItem in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 51
-[30-May-2016 01:43:56 America/Sao_Paulo] PHP Fatal error:  Call to a member function delete() on null in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 51
-[30-May-2016 01:44:49 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$sellOrderItem in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 51
-[30-May-2016 01:44:49 America/Sao_Paulo] PHP Fatal error:  Call to a member function delete() on null in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 51
-[30-May-2016 01:45:01 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$sellOrderItem in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 51
-[30-May-2016 01:45:01 America/Sao_Paulo] PHP Fatal error:  Call to a member function delete() on null in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 51
-[30-May-2016 01:49:26 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/order.php on line 64
-[30-May-2016 01:54:27 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/order.php on line 64
-[30-May-2016 01:54:48 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`sell_orders_items`, CONSTRAINT `sell_orders_items_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`))' in /var/www/ecommerce_management/app/models/order.php:142
+[30-May-2016 02:12:07 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`sell_orders_items`, CONSTRAINT `sell_orders_items_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`))' in /var/www/ecommerce_management/app/models/order.php:142
 Stack trace:
 #0 /var/www/ecommerce_management/app/models/order.php(142): PDOStatement->execute(Array)
 #1 /var/www/ecommerce_management/app/controllers/orders_controller.php(43): Order->delete('orders')
@@ -1103,3 +7,200 @@ Stack trace:
 #4 /var/www/ecommerce_management/config/routes.php(88): Router->load()
 #5 {main}
   thrown in /var/www/ecommerce_management/app/models/order.php on line 142
+[30-May-2016 11:10:02 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'price' cannot be null' in /var/www/ecommerce_management/app/models/order.php:95
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(95): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(58): Order->addProduct('11')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->addOrderProduct()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(88): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 95
+[30-May-2016 11:26:54 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'sell_orders_items.price' in 'field list'' in /var/www/ecommerce_management/app/models/order.php:153
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(153): PDOStatement->execute()
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(7): Order::all()
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->index()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(88): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 153
+[30-May-2016 11:27:37 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/order.php on line 64
+[30-May-2016 11:28:51 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`sell_orders_items`, CONSTRAINT `sell_orders_items_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`))' in /var/www/ecommerce_management/app/models/order.php:142
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(142): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(43): Order->delete('orders')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->destroy()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(88): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 142
+[30-May-2016 11:31:31 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`sell_orders_items`, CONSTRAINT `sell_orders_items_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`))' in /var/www/ecommerce_management/core/models/base.php:79
+Stack trace:
+#0 /var/www/ecommerce_management/core/models/base.php(79): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(43): Base->delete('orders')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->destroy()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(88): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/core/models/base.php on line 79
+[30-May-2016 11:36:28 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/order.php on line 64
+[30-May-2016 11:38:38 America/Sao_Paulo] PHP Fatal error:  Call to a member function getName() on null in /var/www/ecommerce_management/app/views/orders/index.phtml on line 20
+[30-May-2016 11:45:38 America/Sao_Paulo] PHP Fatal error:  Call to a member function getName() on null in /var/www/ecommerce_management/app/views/orders/index.phtml on line 20
+[30-May-2016 11:45:54 America/Sao_Paulo] PHP Fatal error:  Class 'User' not found in /var/www/ecommerce_management/lib/session_helpers.php on line 20
+[30-May-2016 11:46:26 America/Sao_Paulo] PHP Fatal error:  Class 'User' not found in /var/www/ecommerce_management/lib/session_helpers.php on line 20
+[30-May-2016 11:46:27 America/Sao_Paulo] PHP Fatal error:  Class 'User' not found in /var/www/ecommerce_management/lib/session_helpers.php on line 20
+[30-May-2016 11:46:55 America/Sao_Paulo] PHP Fatal error:  Class 'User' not found in /var/www/ecommerce_management/lib/session_helpers.php on line 20
+[30-May-2016 11:46:56 America/Sao_Paulo] PHP Fatal error:  Class 'User' not found in /var/www/ecommerce_management/lib/session_helpers.php on line 20
+[30-May-2016 11:47:26 America/Sao_Paulo] PHP Fatal error:  Call to undefined method EmployeesController::currentEmployee() in /var/www/ecommerce_management/app/controllers/employees_controller.php on line 30
+[30-May-2016 11:48:44 America/Sao_Paulo] PHP Fatal error:  Class 'User' not found in /var/www/ecommerce_management/app/controllers/sessions_controller.php on line 4
+[30-May-2016 11:49:08 America/Sao_Paulo] PHP Notice:  Undefined property: SessionsController::$user in /var/www/ecommerce_management/app/views/sessions/new.phtml on line 18
+[30-May-2016 11:49:08 America/Sao_Paulo] PHP Fatal error:  Call to a member function getEmail() on null in /var/www/ecommerce_management/app/views/sessions/new.phtml on line 18
+[30-May-2016 11:50:53 America/Sao_Paulo] PHP Notice:  Undefined property: SessionsController::$user in /var/www/ecommerce_management/app/views/sessions/new.phtml on line 18
+[30-May-2016 11:50:53 America/Sao_Paulo] PHP Fatal error:  Call to a member function getEmail() on null in /var/www/ecommerce_management/app/views/sessions/new.phtml on line 18
+[30-May-2016 11:55:16 America/Sao_Paulo] PHP Fatal error:  Class 'user' not found in /var/www/ecommerce_management/lib/session_helpers.php on line 20
+[30-May-2016 11:59:36 America/Sao_Paulo] PHP Fatal error:  Class 'User' not found in /var/www/ecommerce_management/app/models/employee.php on line 114
+[30-May-2016 12:00:33 America/Sao_Paulo] PHP Fatal error:  Class 'user' not found in /var/www/ecommerce_management/lib/session_helpers.php on line 20
+[30-May-2016 12:02:09 America/Sao_Paulo] PHP Fatal error:  Call to undefined method SessionHelpers::currentUser() in /var/www/ecommerce_management/app/models/order.php on line 50
+[30-May-2016 12:02:50 America/Sao_Paulo] PHP Fatal error:  Call to undefined method SessionHelpers::currentUser() in /var/www/ecommerce_management/app/models/order.php on line 50
+[30-May-2016 12:03:25 America/Sao_Paulo] PHP Fatal error:  Class 'User' not found in /var/www/ecommerce_management/app/models/employee.php on line 97
+[30-May-2016 12:03:58 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/order.php on line 64
+[30-May-2016 12:04:14 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/order.php on line 64
+[30-May-2016 12:07:29 America/Sao_Paulo] PHP Notice:  Undefined variable: id in /var/www/ecommerce_management/app/models/sell_order_item.php on line 41
+[30-May-2016 12:07:29 America/Sao_Paulo] PHP Catchable fatal error:  Object of class Order could not be converted to string in /var/www/ecommerce_management/app/models/sell_order_item.php on line 47
+[30-May-2016 12:08:35 America/Sao_Paulo] PHP Catchable fatal error:  Object of class Order could not be converted to string in /var/www/ecommerce_management/app/models/sell_order_item.php on line 47
+[30-May-2016 12:10:09 America/Sao_Paulo] PHP Catchable fatal error:  Object of class Order could not be converted to string in /var/www/ecommerce_management/app/models/sell_order_item.php on line 47
+[30-May-2016 12:10:15 America/Sao_Paulo] PHP Catchable fatal error:  Object of class Order could not be converted to string in /var/www/ecommerce_management/app/models/sell_order_item.php on line 47
+[30-May-2016 12:10:23 America/Sao_Paulo] PHP Catchable fatal error:  Object of class Order could not be converted to string in /var/www/ecommerce_management/app/models/sell_order_item.php on line 47
+[30-May-2016 12:22:21 America/Sao_Paulo] PHP Warning:  Missing argument 2 for SellOrderItem::removeProduct(), called in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 73 and defined in /var/www/ecommerce_management/app/models/sell_order_item.php on line 50
+[30-May-2016 12:22:21 America/Sao_Paulo] PHP Notice:  Undefined variable: orderId in /var/www/ecommerce_management/app/models/sell_order_item.php on line 55
+[30-May-2016 12:22:22 America/Sao_Paulo] PHP Warning:  Missing argument 2 for SellOrderItem::removeProduct(), called in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 73 and defined in /var/www/ecommerce_management/app/models/sell_order_item.php on line 50
+[30-May-2016 12:22:22 America/Sao_Paulo] PHP Notice:  Undefined variable: orderId in /var/www/ecommerce_management/app/models/sell_order_item.php on line 55
+[30-May-2016 12:22:23 America/Sao_Paulo] PHP Warning:  Missing argument 2 for SellOrderItem::removeProduct(), called in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 73 and defined in /var/www/ecommerce_management/app/models/sell_order_item.php on line 50
+[30-May-2016 12:22:23 America/Sao_Paulo] PHP Notice:  Undefined variable: orderId in /var/www/ecommerce_management/app/models/sell_order_item.php on line 55
+[30-May-2016 12:22:24 America/Sao_Paulo] PHP Warning:  Missing argument 2 for SellOrderItem::removeProduct(), called in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 73 and defined in /var/www/ecommerce_management/app/models/sell_order_item.php on line 50
+[30-May-2016 12:22:24 America/Sao_Paulo] PHP Notice:  Undefined variable: orderId in /var/www/ecommerce_management/app/models/sell_order_item.php on line 55
+[30-May-2016 12:22:24 America/Sao_Paulo] PHP Warning:  Missing argument 2 for SellOrderItem::removeProduct(), called in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 73 and defined in /var/www/ecommerce_management/app/models/sell_order_item.php on line 50
+[30-May-2016 12:22:24 America/Sao_Paulo] PHP Notice:  Undefined variable: orderId in /var/www/ecommerce_management/app/models/sell_order_item.php on line 55
+[30-May-2016 12:22:25 America/Sao_Paulo] PHP Warning:  Missing argument 2 for SellOrderItem::removeProduct(), called in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 73 and defined in /var/www/ecommerce_management/app/models/sell_order_item.php on line 50
+[30-May-2016 12:22:25 America/Sao_Paulo] PHP Notice:  Undefined variable: orderId in /var/www/ecommerce_management/app/models/sell_order_item.php on line 55
+[30-May-2016 12:25:51 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'amount' cannot be null' in /var/www/ecommerce_management/app/models/order.php:95
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(95): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(58): Order->addProduct('13')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->addOrderProduct()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(88): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 95
+[30-May-2016 12:37:41 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/order.php on line 64
+[30-May-2016 12:50:36 America/Sao_Paulo] PHP Fatal error:  Using $this when not in object context in /var/www/ecommerce_management/app/models/order.php on line 107
+[30-May-2016 12:51:05 America/Sao_Paulo] PHP Fatal error:  Using $this when not in object context in /var/www/ecommerce_management/app/models/order.php on line 107
+[30-May-2016 12:52:00 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ': product_id AND order_id = order_id' at line 1' in /var/www/ecommerce_management/app/models/order.php:111
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(111): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(58): Order->uniqueItem('1')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->addOrderProduct()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(88): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 111
+[30-May-2016 12:52:16 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ': product_id AND order_id = : order_id' at line 1' in /var/www/ecommerce_management/app/models/order.php:111
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(111): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(58): Order->uniqueItem('1')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->addOrderProduct()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(88): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 111
+[30-May-2016 12:53:21 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ': product_id AND order_id : order_id' at line 1' in /var/www/ecommerce_management/app/models/order.php:111
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(111): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(58): Order->uniqueItem('1')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->addOrderProduct()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(88): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 111
+[30-May-2016 12:53:36 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ': product_id AND order_id : order_id' at line 1' in /var/www/ecommerce_management/app/models/order.php:111
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(111): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(58): Order->uniqueItem('1')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->addOrderProduct()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(88): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 111
+[30-May-2016 12:56:16 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/order.php:111
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(111): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(58): Order->uniqueItem('1')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->addOrderProduct()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(88): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 111
+[30-May-2016 13:08:04 America/Sao_Paulo] PHP Warning:  Missing argument 2 for SellOrderItem::getAmountOfProduct(), called in /var/www/ecommerce_management/app/views/orders/show.phtml on line 25 and defined in /var/www/ecommerce_management/app/models/sell_order_item.php on line 61
+[30-May-2016 13:08:04 America/Sao_Paulo] PHP Notice:  Undefined variable: orderId in /var/www/ecommerce_management/app/models/sell_order_item.php on line 63
+[30-May-2016 13:08:04 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/sell_order_item.php:66
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/sell_order_item.php(66): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/views/orders/show.phtml(25): SellOrderItem::getAmountOfProduct('1')
+#2 /var/www/ecommerce_management/app/views/layout/application.phtml(40): require('/var/www/ecomme...')
+#3 /var/www/ecommerce_management/core/controllers/base_controller.php(31): require('/var/www/ecomme...')
+#4 /var/www/ecommerce_management/core/routes/router.php(48): BaseController->render()
+#5 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#6 /var/www/ecommerce_management/config/routes.php(88): Router->load()
+#7 {main}
+  thrown in /var/www/ecommerce_management/app/models/sell_order_item.php on line 66
+[30-May-2016 13:08:19 America/Sao_Paulo] PHP Warning:  Missing argument 2 for SellOrderItem::getAmountOfProduct(), called in /var/www/ecommerce_management/app/views/orders/show.phtml on line 25 and defined in /var/www/ecommerce_management/app/models/sell_order_item.php on line 61
+[30-May-2016 13:08:19 America/Sao_Paulo] PHP Notice:  Undefined variable: orderId in /var/www/ecommerce_management/app/models/sell_order_item.php on line 63
+[30-May-2016 13:08:19 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/sell_order_item.php:66
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/sell_order_item.php(66): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/views/orders/show.phtml(25): SellOrderItem::getAmountOfProduct('1')
+#2 /var/www/ecommerce_management/app/views/layout/application.phtml(40): require('/var/www/ecomme...')
+#3 /var/www/ecommerce_management/core/controllers/base_controller.php(31): require('/var/www/ecomme...')
+#4 /var/www/ecommerce_management/core/routes/router.php(48): BaseController->render()
+#5 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#6 /var/www/ecommerce_management/config/routes.php(88): Router->load()
+#7 {main}
+  thrown in /var/www/ecommerce_management/app/models/sell_order_item.php on line 66
+[30-May-2016 13:09:28 America/Sao_Paulo] PHP Warning:  Missing argument 2 for SellOrderItem::getAmountOfProduct(), called in /var/www/ecommerce_management/app/views/orders/show.phtml on line 25 and defined in /var/www/ecommerce_management/app/models/sell_order_item.php on line 61
+[30-May-2016 13:09:28 America/Sao_Paulo] PHP Notice:  Undefined variable: order in /var/www/ecommerce_management/app/models/sell_order_item.php on line 63
+[30-May-2016 13:09:28 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/sell_order_item.php:66
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/sell_order_item.php(66): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/views/orders/show.phtml(25): SellOrderItem::getAmountOfProduct('1')
+#2 /var/www/ecommerce_management/app/views/layout/application.phtml(40): require('/var/www/ecomme...')
+#3 /var/www/ecommerce_management/core/controllers/base_controller.php(31): require('/var/www/ecomme...')
+#4 /var/www/ecommerce_management/core/routes/router.php(48): BaseController->render()
+#5 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#6 /var/www/ecommerce_management/config/routes.php(88): Router->load()
+#7 {main}
+  thrown in /var/www/ecommerce_management/app/models/sell_order_item.php on line 66
+[30-May-2016 13:10:15 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/sell_order_item.php:66
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/sell_order_item.php(66): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/views/orders/show.phtml(25): SellOrderItem::getAmountOfProduct('1', '5')
+#2 /var/www/ecommerce_management/app/views/layout/application.phtml(40): require('/var/www/ecomme...')
+#3 /var/www/ecommerce_management/core/controllers/base_controller.php(31): require('/var/www/ecomme...')
+#4 /var/www/ecommerce_management/core/routes/router.php(48): BaseController->render()
+#5 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#6 /var/www/ecommerce_management/config/routes.php(88): Router->load()
+#7 {main}
+  thrown in /var/www/ecommerce_management/app/models/sell_order_item.php on line 66
+[30-May-2016 13:11:41 America/Sao_Paulo] PHP Warning:  Missing argument 2 for SellOrderItem::getAmountOfProduct(), called in /var/www/ecommerce_management/app/views/orders/show.phtml on line 30 and defined in /var/www/ecommerce_management/app/models/sell_order_item.php on line 61
+[30-May-2016 13:11:41 America/Sao_Paulo] PHP Notice:  Undefined variable: order in /var/www/ecommerce_management/app/models/sell_order_item.php on line 63
+[30-May-2016 13:12:21 America/Sao_Paulo] PHP Warning:  Missing argument 2 for SellOrderItem::getAmountOfProduct(), called in /var/www/ecommerce_management/app/models/sell_order_item.php on line 51 and defined in /var/www/ecommerce_management/app/models/sell_order_item.php on line 61
+[30-May-2016 13:12:21 America/Sao_Paulo] PHP Notice:  Undefined variable: order in /var/www/ecommerce_management/app/models/sell_order_item.php on line 63
+[30-May-2016 13:12:22 America/Sao_Paulo] PHP Warning:  Missing argument 2 for SellOrderItem::getAmountOfProduct(), called in /var/www/ecommerce_management/app/models/sell_order_item.php on line 51 and defined in /var/www/ecommerce_management/app/models/sell_order_item.php on line 61
+[30-May-2016 13:12:22 America/Sao_Paulo] PHP Notice:  Undefined variable: order in /var/www/ecommerce_management/app/models/sell_order_item.php on line 63
+[30-May-2016 13:12:23 America/Sao_Paulo] PHP Warning:  Missing argument 2 for SellOrderItem::getAmountOfProduct(), called in /var/www/ecommerce_management/app/models/sell_order_item.php on line 51 and defined in /var/www/ecommerce_management/app/models/sell_order_item.php on line 61
+[30-May-2016 13:12:23 America/Sao_Paulo] PHP Notice:  Undefined variable: order in /var/www/ecommerce_management/app/models/sell_order_item.php on line 63
+[30-May-2016 13:12:25 America/Sao_Paulo] PHP Warning:  Missing argument 2 for SellOrderItem::getAmountOfProduct(), called in /var/www/ecommerce_management/app/models/sell_order_item.php on line 51 and defined in /var/www/ecommerce_management/app/models/sell_order_item.php on line 61
+[30-May-2016 13:12:25 America/Sao_Paulo] PHP Notice:  Undefined variable: order in /var/www/ecommerce_management/app/models/sell_order_item.php on line 63
+[30-May-2016 13:12:25 America/Sao_Paulo] PHP Warning:  Missing argument 2 for SellOrderItem::getAmountOfProduct(), called in /var/www/ecommerce_management/app/models/sell_order_item.php on line 51 and defined in /var/www/ecommerce_management/app/models/sell_order_item.php on line 61
+[30-May-2016 13:12:25 America/Sao_Paulo] PHP Notice:  Undefined variable: order in /var/www/ecommerce_management/app/models/sell_order_item.php on line 63
+[30-May-2016 13:15:33 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/order.php on line 64

@@ -37,31 +37,31 @@
     return $this->productId;
   }
 
-  public function addProduct($id) {
-    $amount = (int) self::getAmountOfProduct($id);
+  public static function addProduct($productId, $orderId) {
+    $amount = (int) self::getAmountOfProduct($productId, $orderId);
     $amount++;
     $db = Database::getConnection();
-    $params = array('id' => $id, 'amount' => $amount);
-    $sql = "UPDATE sell_orders_items SET amount= :amount WHERE product_id = :id ";
+    $params = array('product_id' => $productId, 'amount' => $amount, 'order_id' => $orderId);
+    $sql = "UPDATE sell_orders_items SET amount= :amount WHERE product_id = :product_id AND order_id = :order_id";
     $statement = $db->prepare($sql);
     return $statement->execute($params);
   }
 
-  public function removeProduct($id) {
-    $amount = (int) self::getAmountOfProduct($id);
+  public static function removeProduct($productId, $orderId) {
+    $amount = (int) self::getAmountOfProduct($productId, $orderId);
     if($amount == 0) return null;
     $amount--;
     $db = Database::getConnection();
-    $params = array('id' => $id, 'amount' => $amount);
-    $sql = "UPDATE sell_orders_items SET amount= :amount WHERE product_id = :id ";
+    $params = array('id' => $productId, 'amount' => $amount, 'order_id' => $orderId);
+    $sql = "UPDATE sell_orders_items SET amount= :amount WHERE product_id = :id AND order_id = :order_id";
     $statement = $db->prepare($sql);
     return $statement->execute($params);
   }
 
-  public static function getAmountOfProduct($id) {
+  public static function getAmountOfProduct($id, $order) {
       $db = Database::getConnection();
-      $params = array($id);
-      $sql = "SELECT amount FROM sell_orders_items WHERE product_id = ?";
+      $params = array($id, $order);
+      $sql = "SELECT amount FROM sell_orders_items WHERE product_id = ? AND order_id = ?";
       $statement = $db->prepare($sql);
       $statement->execute($params);
       $resp = $statement->fetch(PDO::FETCH_ASSOC);

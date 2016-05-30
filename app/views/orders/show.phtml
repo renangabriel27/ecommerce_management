@@ -22,12 +22,12 @@
               <td><?= $product->getId() ?></td>
               <td><?= $product->getName() ?></td>
               <td>
-                <?= SellOrderItem::getAmountOfProduct($product->getId()) ?>
+                <?= SellOrderItem::getAmountOfProduct($product->getId(), $this->order->getId()) ?>
                 <?= ViewHelpers::linkTo("/pedidos/{$this->order->getId()}/produtos/{$product->getId()}/adicionar", "", '', 'class="add square icon"') ?>
                 <?= ViewHelpers::linkTo("/pedidos/{$this->order->getId()}/produtos/{$product->getId()}/remover", '', '', 'class="minus square icon"') ?>
               </td>
               <td><?= $product->getPrice() ?></td>
-              <td><?= ViewHelpers::currencyFormat($product->getPrice() * SellOrderItem::getAmountOfProduct($product->getId())) ?></td>
+              <td><?= ViewHelpers::currencyFormat($product->getPrice() * SellOrderItem::getAmountOfProduct($product->getId() , $this->order->getId())) ?></td>
               <td><?= ViewHelpers::linkTo("/pedidos/{$this->order->getId()}/produtos/{$product->getId()}/deletar", '', 'data-confirm="Tem certeza que deseja deletar o produto?"', 'class="trash icon"') ?></td>
             </tr>
       </tbody>

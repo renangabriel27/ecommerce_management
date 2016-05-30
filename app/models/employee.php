@@ -1,4 +1,4 @@
-<?php class User extends Base {
+<?php class Employee extends Base {
 
   private $name;
   private $email;
@@ -94,8 +94,8 @@
     $resp = $statement->execute($params);
 
     if ($resp && $row = $statement->fetch(PDO::FETCH_ASSOC)) {
-      $user = new User($row);
-      return $user;
+      $employee = new Employee($row);
+      return $employee;
     }
 
     return null;
@@ -111,15 +111,15 @@
     $resp = $statement->execute($params);
 
     if ($resp && $row = $statement->fetch(PDO::FETCH_ASSOC)) {
-      $user = new User($row);
-      return $user;
+      $employee = new Employee($row);
+      return $employee;
     }
 
     return null;
   }
 
   public static function whereNameLikeAsJson($query) {
-    $sql = "SELECT * FROM clients WHERE name LIKE :query ORDER BY name";
+    $sql = "SELECT * FROM employees WHERE name LIKE :query ORDER BY name";
     $params = ['query' => '%' . $query . '%'];
 
     $db = Database::getConnection();

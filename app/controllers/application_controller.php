@@ -21,4 +21,11 @@
     }
   }
 
+  public function notBeAuthenticated() {
+    if (SessionHelpers::isLoggedIn()) {
+      Flash::message('negative', 'Você deve estar deslogado para acessar esta página');
+      $this->redirectTo('/');
+    }
+  }
+
 }

@@ -68,8 +68,10 @@
   }
 
   public function validates() {
-    Validations::uniqueField($this->name, 'name',  'products', $this->errors);
-    Validations::notEmpty($this->name, 'name', $this->errors);
+    if ($this->newRecord() || $this->changedFieldValue('name', 'products')) {
+      Validations::uniqueField($this->name, 'name',  'products', $this->errors);
+      Validations::notEmpty($this->name, 'name', $this->errors);
+    }
     Validations::notEmpty($this->amount, 'amount', $this->errors);
     Validations::isNumeric($this->price, 'price', $this->errors);
     Validations::notEmpty($this->categoryId, 'category_id', $this->errors);

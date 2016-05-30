@@ -32,6 +32,7 @@ https://github.com/plentz/jquery-maskmoney/
 */
 
 var mask_money = function() {
+  if($("#product_price").length == 0) return false;
   $("#product_price").maskMoney({
     prefix:'R$',
     thousands:'.',
