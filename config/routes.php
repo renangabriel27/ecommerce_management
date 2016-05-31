@@ -4,18 +4,13 @@
 
     $router->get('/', array('controller' => 'HomeController', 'action' => 'index'));
 
-    /* Rotas para os contatos
-    ------------------------- */
-    /* Fim das rotas para os contatos
-    --------------------------------- */
-
-    /* Rotas para os usuários
+    /* Rotas para os funcionarios
     ------------------------- */
     $router->get('/registre-se', array('controller' => 'EmployeesController', 'action' => '_new'));
     $router->post('/registre-se', array('controller' => 'EmployeesController', 'action' => 'create'));
     $router->get('/perfil', array('controller' => 'EmployeesController', 'action' => 'edit'));
     $router->post('/perfil', array('controller' => 'EmployeesController', 'action' => 'update'));
-    /* Fim das rotas para os usuários
+    /* Fim das rotas para os funcionários
     --------------------------------- */
 
     /* Rotas para os sessões
@@ -26,7 +21,7 @@
     /* Fim das rotas para os sessões
       --------------------------------- */
 
-    /* Rotas para os usuários
+    /* Rotas para as categorias
     ------------------------- */
     $router->get('/categorias', array('controller' => 'CategoriesController', 'action' => 'index'));
     $router->get('/categorias/page/:page', array('controller' => 'CategoriesController', 'action' => 'index'));
@@ -37,7 +32,7 @@
     $router->post('/categorias/:id', array('controller' => 'CategoriesController', 'action' => 'update'));
     $router->get('/categorias/:id/deletar', array('controller' => 'CategoriesController', 'action' => 'destroy'));
 
-    /* Fim das rotas para os usuários
+    /* Fim das rotas para os categorias
     --------------------------------- */
 
     /* Rotas para os pedidos
@@ -73,18 +68,22 @@
     /* Fim das rotas para os produtos
     --------------------------------- */
 
-    /* Rotas para os clientes pi
+    /* Rotas para os clientes
     ------------------------- */
     $router->get('/clientes/autocomplete-search', array('controller' => 'ClientsController', 'action' => 'autoCompleteSearch'));
 
     $router->get('/clientes', array('controller' => 'ClientsController', 'action' => 'index'));
+    $router->get('/clientes/novo', array('controller' => 'ClientsController', 'action' => '_new'));
     $router->get('/clientes/novo/:type', array('controller' => 'ClientsController', 'action' => '_new'));
     $router->post('/clientes', array('controller' => 'ClientsController', 'action' => 'create'));
-    $router->get('/clientes/:id/editar', array('controller' => 'ClientsController', 'action' => 'edit'));
+    $router->get('/clientes/:id/editar/:type', array('controller' => 'ClientsController', 'action' => 'edit'));
+    $router->get('/clientes/:id/:type', array('controller' => 'ClientsController', 'action' => 'show'));
     $router->post('/clientes/:id', array('controller' => 'ClientsController', 'action' => 'update'));
     $router->get('/clientes/:id/deletar', array('controller' => 'ClientsController', 'action' => 'destroy'));
+
     /* Fim das rotas para os clientes
     --------------------------------- */
+
 
 
     $router->load();

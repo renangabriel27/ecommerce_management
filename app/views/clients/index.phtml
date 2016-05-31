@@ -24,8 +24,8 @@
             <td><?= $client->getCityId()->getName() ?></td>
             <td><?= ViewHelpers::dateFormat($client->getCreatedAt()); ?></td>
             <td>
-              <?= ViewHelpers::linkTo("/clientes/{$client->getId()}/editar", '', '', 'class="zoom icon"') ?>
-              <?= ViewHelpers::linkTo("/clientes/{$client->getId()}/editar", '', '', 'class="edit icon"') ?>
+              <?= ViewHelpers::linkTo("/clientes/{$client->getId()}", '', '', 'class="zoom icon"') ?>
+              <?= ViewHelpers::linkTo("/clientes/{$client->getId()}/editar/{$client->getType()}", '', '', 'class="edit icon"') ?>
               <?= ViewHelpers::linkTo("/clientes/{$client->getId()}/deletar", '', 'data-confirm="Tem certeza que deseja deletar?"', 'class="trash icon"') ?>
             </td>
           </tr>

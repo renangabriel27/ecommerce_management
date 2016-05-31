@@ -29,24 +29,14 @@
   }
 
   public function validates() {
-    Validations::notEmpty($this->name, 'name', $this->errors);
     Validations::notEmpty($this->cnpj, 'cnpj', $this->errors);
-    Validations::notEmpty($this->cityId, 'city_id', $this->errors);
-    Validations::notEmpty($this->phone, 'phone', $this->errors);
     Validations::notEmpty($this->companyName, 'companyName', $this->errors);
-    Validations::notEmpty($this->address, 'address', $this->errors);
-    Validations::notEmpty($this->addressNumber, 'addressNumber', $this->errors);
-    Validations::notEmpty($this->addressCep, 'addressCep', $this->errors);
-
-    /* Como o campo é único é necessário atualizar caso não tenha mudado*/
-    if ($this->newRecord() || $this->changedFieldValue('email', 'clients')) {
-      Validations::validEmail($this->email, 'email', $this->errors);
-      Validations::uniqueField($this->email, 'email', 'clients', $this->errors);
-    }
+    parent::validates();
   }
 
   public function save() {
     if (!$this->isvalid()) return false;
+    $this->type = 2;
 
     $sql = "INSERT INTO clients (name, email, phone, address , address_number, address_cep, city_id, type)
             VALUES (:name, :email, :phone, :address, :address_number, :address_cep, :city_id, :type);";
@@ -106,19 +96,30 @@
 
   public static function findById($id) {
     $db = Database::getConnection();
-    $sql = "SELECT * FROM clients, clients_pc WHERE clients.id = ?";
-    $params = array($id);
+    $sql = "SELECT * FROM clients, clients_pc WHERE clients.id = ? AND clients_pc.client_id = ?";
+    $params = array($id, $id);
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
     $resp = $statement->execute($params);
 
     if ($resp && $row = $statement->fetch(PDO::FETCH_ASSOC)) {
-      $client = new ClientPc($row);
-      return $client;
+      return new ClientPc($row);
     }
-
     return null;
+  }
+
+  public function deleteClient() {
+    $db = Database::getConnection();
+    $params = array($this->clientId);
+    $sql = "DELETE FROM clients WHERE id = ?";
+    $statement = $db->prepare($sql);
+    $resp = $statement->execute($params);
+    if(!$resp) return false;
+
+    $sql = "DELETE FROM clients_pc WHERE client_id = ?";
+    $statement = $db->prepare($sql);
+    return $statement->execute($params);
   }
 
 } ?>

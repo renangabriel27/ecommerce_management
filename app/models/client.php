@@ -76,13 +76,13 @@
   public function validates() {
     Validations::notEmpty($this->name, 'name', $this->errors);
     Validations::notEmpty($this->phone, 'phone', $this->errors);
-    Validations::notEmpty($this->dateOfBirth, 'dateOfBirth', $this->errors);
     Validations::notEmpty($this->address, 'address', $this->errors);
+    Validations::notEmpty($this->cityId, 'cityId', $this->errors);
     Validations::notEmpty($this->addressNumber, 'addressNumber', $this->errors);
     Validations::notEmpty($this->addressCep, 'addressCep', $this->errors);
 
     /* Como o campo é único é necessário atualizar caso não tenha mudado*/
-    if ($this->newRecord() || $this->changedFieldValue('email', 'client')) {
+    if ($this->newRecord() || $this->changedFieldValue('email', 'clients')) {
       Validations::validEmail($this->email, 'email', $this->errors);
       Validations::uniqueField($this->email, 'email', 'clients', $this->errors);
     }
@@ -121,50 +121,6 @@
 
     $statement = $db->prepare($sql);
     return $statement->execute($params);
-  }
-
-  public function delete() {
-    $db = Database::getConnection();
-    $params = array($this->id);
-    $sql = "DELETE FROM clients_pi WHERE client_id = ?";
-    $statement = $db->prepare($sql);
-    $statement->execute($params);
-
-    $sql = "DELETE FROM clients_pc WHERE client_id = ?";
-    $statement = $db->prepare($sql);
-    $statement->execute($params);
-
-    $sql = "DELETE FROM clients WHERE id = ?";
-    $statement = $db->prepare($sql);
-    return $statement->execute($params);
-  }
-
-  public static function findById($id) {
-    $sql = "SELECT * FROM clients WHERE id = ?";
-    $params = array($id);
-
-    $db = Database::getConnection();
-    $statement = $db->prepare($sql);
-    $resp = $statement->execute($params);
-    $row = $statement->fetch(PDO::FETCH_ASSOC);
-
-    if($row['type'] == 1) {
-        $sql = "SELECT * FROM clients_pi WHERE client_id = ?";
-        $statement = $db->prepare($sql);
-        $resp = $statement->execute($params);
-        $row  += $statement->fetch(PDO::FETCH_ASSOC);
-
-        return new ClientPi($row);
-    } else   {
-        $sql = "SELECT * FROM clients_pc WHERE client_id = ?";
-        $statement = $db->prepare($sql);
-        $resp = $statement->execute($params);
-        $row += $statement->fetch(PDO::FETCH_ASSOC);
-
-        return new ClientPc($row);
-      }
-
-    return null;
   }
 
   public static function all() {

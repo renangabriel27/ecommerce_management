@@ -8,49 +8,46 @@
   }
 
   public function show() {
-    $this->client = Client::findById(':id');
+    $this->client = ClientPi::findById(':id');
   }
 
   public function _new() {
     $this->type = $this->params[':type'];
-    if($this->type != 1 && $this->type != 2){
-			$this->redirectTo('/clientes');
-		}
-    $this->client = ($this->type == 1) ? new ClientPi() : new ClientPc();
+    $this->client = $this->type == 1 ? new ClientPi(): new ClientPc() ;
     $this->cities = City::all();
-    $this->action = ViewHelpers::urlFor('/clientes');
+    $this->action = ViewHelpers::urlFor("/clientes");
     $this->submit = 'Cadastrar';
   }
 
   public function create(){
     $client = $this->params['client'];
     $this->type = $this->params['client']['type'];
-
-    $this->cities = City::all();
-    $this->client = ($this->type == 1) ? new ClientPi($client) : new ClientPc($client);
-    $this->action = ViewHelpers::urlFor("/clientes/novo");
+    $this->client = $this->type == 1 ? new ClientPi($client): new ClientPc($client);
 
     if ($this->client->save()) {
       Flash::message('success', 'Cliente realizado com sucesso!');
       $this->redirectTo('/clientes');
     } else {
       Flash::message('negative', 'Existe dados incorretos no seu formulário!');
+      $this->cities = City::all();
+      $this->action = ViewHelpers::urlFor("/clientes");
       $this->submit = 'Cadastrar';
       $this->render('new');
     }
   }
 
   public function edit() {
-    $this->client = Client::findById($this->params[':id']);
-    $this->type = $this->client->getType();
+    $client = $this->params[':id'];
+    $this->type = $this->params[':type'];
+    $this->client = $this->type == 1 ? ClientPi::findById($client) : ClientPc::findById($client);
     $this->cities = City::all();
     $this->submit = 'Salvar';
     $this->action = ViewHelpers::urlFor("/clientes/{$this->client->getId()}");
   }
 
   public function update() {
-     $this->client = Client::findById($this->params[':id']);
-     $this->type = $this->client->getType();
+     $client = $this->params[':id'];
+     $this->client = $this->type == 1 ? ClientPi::findById($client) : ClientPc::findById($client);
      $this->cities = City::all();
      $city = City::findById($this->client->getCityId());
      $this->submit = 'Salvar';
@@ -66,8 +63,8 @@
   }
 
   public function destroy() {
-    $client = Client::findById($this->params[':id']);
-    $client->delete();
+    $client = ClientPi::findById($this->params[':id']);
+    $client->deleteClient();
     Flash::message('success', 'Cliente deletado com sucesso');
     $this->redirectTo("/clientes");
   }
