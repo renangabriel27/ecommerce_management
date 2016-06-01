@@ -1,4 +1,5 @@
 <section>
+
       <table class="ui compact celled definition table">
       <thead class="full-width">
         <tr>
@@ -8,7 +9,7 @@
           <th>CEP</th>
           <th>Telefone</th>
           <th>Cidade</th>
-          <th>Data de criação</th>
+          <th>Cliente</th>
           <th>Opções</th>
         </tr>
       </thead>
@@ -22,7 +23,7 @@
             <td><?= $client->getAddressCep() ?></td>
             <td><?= $client->getPhone() ?></td>
             <td><?= $client->getCityId()->getName() ?></td>
-            <td><?= ViewHelpers::dateFormat($client->getCreatedAt()); ?></td>
+            <td><?= ViewHelpers::clientType($client->getType()) ?></td>
             <td>
               <?= ViewHelpers::linkTo("/clientes/{$client->getId()}", '', '', 'class="zoom icon"') ?>
               <?= ViewHelpers::linkTo("/clientes/{$client->getId()}/editar", '', '', 'class="edit icon"') ?>
@@ -33,7 +34,7 @@
       </tbody>
       <tfoot class="full-width">
         <tr>
-          <th colspan="8">
+          <th colspan="9">
             <?= ViewHelpers::linkTo("/clientes/novo/1", 'Novo cliente', 'class="ui left floated small primary labeled icon button"', 'class="add circle icon"') ?>
           </th>
         </tr>

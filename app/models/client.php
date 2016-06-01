@@ -219,10 +219,21 @@
     while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
       $suggestions['suggestions'][] = array('value' => $row['name'], 'data' => $row['id']);
     }
-
     return json_encode($suggestions);
   }
 
+  public function deleteClient($type, $id) {
+    if($type == "1")
+      $sql = "DELETE FROM clients, clients_pi USING clients, clients_pi WHERE clients.id = ? AND clients_pi.client_id =?";
+    else
+      $sql = "DELETE FROM clients, clients_pc USING clients, clients_pc WHERE clients.id = ? AND clients_pc.client_id =?";
+
+    $params = array($id,  $id);
+
+    $db = Database::getConnection();
+    $statement = $db->prepare($sql);
+    return $statement->execute($params);
+  }
 
 
 

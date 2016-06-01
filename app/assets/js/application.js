@@ -6,6 +6,7 @@ $(document).ready(function() {
   close_flash_message();
   mask_money();
   dropdown();
+  inputmasks();
 });
 
 /*** Confirm dialog **/
@@ -64,7 +65,7 @@ var auto_complete = function() {
         $("#autocomplete_product_by_id").val(suggestion.data)
     }
   });
-  
+
   url = $('#autocomplete_product_by_id').data('url');
   $('#autocomplete_product_by_id').autocomplete({
     serviceUrl: url,
@@ -78,7 +79,7 @@ var auto_complete = function() {
 
 var close_flash_message = function() {
     $('.message').transition({
-      duration   : '2s'
+      duration   : '1s'
     });
 
     $('.message .close').on('click', function() {
@@ -96,3 +97,9 @@ var dropdown = function() {
       $(this).addClass('active').siblings().removeClass('active');
     });
 };
+
+var inputmasks = function() {
+    $("#client_phone").mask("(000) 0000-00000");
+    $("#client_cpf").mask("999.999.999-99");
+    $('#client_cep').mask('00000-000');
+}

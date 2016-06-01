@@ -30,13 +30,13 @@
     <!-- Begin page content -->
     <div id="main-container" class="container">
 
-      <?php require "_flash_messages.phtml" ?>
-
       <article>
         <?php require "_side_bar.phtml" ?>
 
         <div class="column twelve wide">
           <div class="ui hidden divider"></div>
+            <?php require "_flash_messages.phtml" ?>
+
             <?php require $view; ?>
         </div>
 
@@ -52,6 +52,7 @@
       <?= ViewHelpers::javascriptIncludeTag('jquery-1.11.3.min.js',
                                             'jquery.autocomplete.js',
                                             'jquery.maskmoney.min.js',
+                                            'jquery.mask.min.js',
                                             '/semantic-ui/js/semantic.min.js',
                                             'application.js') ?>
 

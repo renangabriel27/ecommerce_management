@@ -44,8 +44,8 @@
               (:name, :email, :phone, :address, :address_number, :address_cep, :city_id, :type)";
 
     $params = array('name' => $this->name, 'email' => $this->email, 'phone' => $this->phone, 'address' => $this->address,
-                    'address_number' => $this->addressNumber, 'address_cep' => $this->addressCep, 'city_id' => $this->cityId,
-                    'type' => $this->type);
+                    'address_number' => $this->addressNumber, 'address_cep' => $this->addressCep,
+                    'city_id' => $this->cityId, 'type' => $this->type);
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
@@ -65,7 +65,6 @@
     $statement = $db->prepare($sql);
     $resp = $statement->execute($params);
 
-
     return true;
   }
 
@@ -84,26 +83,15 @@
     $resp = $statement->execute($params);
 
     $params = array($this->cpf, $this->dateOfBirth, $this->id);
-    
+
     $sql = "UPDATE clients_pi SET cpf= ? , date_of_birth = ? WHERE client_id = ?";
 
     $statement = $db->prepare($sql);
     $resp = $statement->execute($params);
 
-    if(!$resp) {
-      Loger::getInstance()->log("Falha ao atualizar o cliente: " . print_r($this, TRUE), Logger::ERROR);
-      Logger::getInstance()->log("Error " . print_r(error_get_last(), true ), Logger::ERROR);
-      return false;
-    }
-    return true;
-  }
+    if(!$resp) return false;
 
-  public function deleteClient() {
-    $db = Database::getConnection();
-    $params = array($this->clientId);
-    $sql = "DELETE FROM clients, clients_pi WHERE id = ?";
-    $statement = $db->prepare($sql);
-    return $statement->execute($params);
+    return true;
   }
 
 

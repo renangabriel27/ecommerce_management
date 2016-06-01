@@ -75,18 +75,14 @@
     $params = array($this->name, $this->address, $this->addressNumber, $this->addressCep,
                     $this->phone, $this->email, $this->cityId, $this->clientId);
 
-    $sql = "UPDATE
-              clients SET name = ?, address = ? , address_number = ?, address_cep = ?,
-              phone = ?, email = ?, city_id = ?
-            WHERE
-              id = ?";
+    $sql = "UPDATE clients SET name = ?, address = ? , address_number = ?, address_cep = ?, phone = ?, email = ?, city_id = ? WHERE id = ?";
 
     $statement = $db->prepare($sql);
     $resp = $statement->execute($params);
 
     $params = array($this->cnpj, $this->companyName, $this->clientId);
 
-    $sql = "UPDATE clients_pc SET cnpj= ? , company_name = ? WHERE client_id = ?";
+    $sql = "UPDATE clients_pc SET cnpj= ?, company_name = ? WHERE client_id = ?";
 
     $statement = $db->prepare($sql);
     $resp = $statement->execute($params);
@@ -94,14 +90,6 @@
     if(!$resp) return false;
 
     return true;
-  }
-
-  public function deleteClient() {
-    $db = Database::getConnection();
-    $params = array($this->clientId);
-    $sql = "DELETE FROM clients, clients_pc WHERE id = ?";
-    $statement = $db->prepare($sql);
-    return $statement->execute($params);
   }
 
 } ?>

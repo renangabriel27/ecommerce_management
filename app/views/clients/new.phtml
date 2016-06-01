@@ -1,11 +1,15 @@
 <section>
   <header class="ui dividing header">
-    <h2>Cadastro de cliente</h2>
+    <h2><?= $this->title ?></h2>
   </header>
   <article>
     <div class="ui top attached tabular menu">
-      <div class="<?= ViewHelpers::activeClass("/clientes/novo") ?>"><?= ViewHelpers::linkTo("/clientes/novo/1", 'Pessoa física', 'class="clients"') ?> </div>
-      <div class="<?= ViewHelpers::activeClass("/clientes/novo/2") ?>"><?= ViewHelpers::linkTo("/clientes/novo/2", 'Pessoa jurídica', 'class="clients"') ?> </div>
+        <div class="item <?= ViewHelpers::activeClass("/clientes/novo/1") ?>">
+            <?= ViewHelpers::linkTo("/clientes/novo/1", 'Pessoa física', 'class="clients"') ?>
+        </div>
+        <div class="item <?= ViewHelpers::activeClass("/clientes/novo/2") ?>">
+            <?= ViewHelpers::linkTo("/clientes/novo/2", 'Pessoa jurídica', 'class="clients"') ?>
+        </div>
     </div>
     <?php  require '_form.phtml' ?>
   </article>

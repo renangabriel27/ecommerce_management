@@ -28,5 +28,10 @@
     }
   }
 
+  public function newClientType($type, $client = '') {
+    if (!$client) return ($type == 1) ? new ClientPi() : new ClientPc();
+
+    return ($type == 1) ? new ClientPi($client) : new ClientPc($client);
+  }
 
 }

@@ -73,8 +73,10 @@ abstract class Base {
 
     public function delete($table) {
       $db = Database::getConnection();
-      $params = array($this->id);
-      $sql = "DELETE FROM $table WHERE id = ?";
+
+      $params = array('id' => $this->id);
+      $sql = "DELETE FROM $table WHERE id = :id";
+
       $statement = $db->prepare($sql);
       return $statement->execute($params);
     }

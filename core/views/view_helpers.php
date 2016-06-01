@@ -95,6 +95,10 @@ class ViewHelpers {
     }
   }
 
+  public static function clientType($client) {
+    return ($client == 1) ? 'Pessoa física' : 'Pessoa jurídica';
+  }
+
   /*
    * Função para converter boleano em formato amigável
    */
@@ -113,9 +117,9 @@ class ViewHelpers {
   public static function activeClass($route) {
     $route = SITE_ROOT . $route;
     if (preg_match('#^' . $route . '$#', $_SERVER['REQUEST_URI']))
-      return 'item active';
+      return 'active';
 
-    return 'item';
+    return null;
   }
 
   public static function fullTitle($pageTitle = "") {
