@@ -95,8 +95,10 @@
   }
 
   public function addProduct($id) {
-    $sql = "INSERT INTO sell_orders_items (price, order_id, product_id)
-    VALUES ((SELECT price FROM products WHERE products.id = :product_id) , :order_id, :product_id)";
+    $sql = "INSERT INTO
+              sell_orders_items (price, order_id, product_id)
+            VALUES
+              ((SELECT price FROM products WHERE products.id = :product_id) , :order_id, :product_id)";
     $params = array('product_id' => $id, 'order_id' => $this->id);
 
     $db = Database::getConnection();
@@ -158,8 +160,17 @@
   }
 
   public static function all() {
-    $sql = "SELECT orders.id AS id, orders.created_at AS created_at, orders.status AS status, clients.id AS client_id, clients.name AS client_name,
-     clients.email AS client_email FROM clients JOIN orders ON(orders.client_id = clients.id) ORDER BY id";
+    $sql = "SELECT
+              orders.id AS id, orders.created_at AS created_at, orders.status AS status,
+              clients.id AS client_id, clients.name AS client_name, clients.email AS client_email
+            FROM
+              clients
+            JOIN
+              orders
+            ON
+              (orders.client_id = clients.id)
+            ORDER BY
+              id";
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
@@ -189,9 +200,16 @@
 
   public static function findById($id) {
     $db = Database::getConnection();
-    $sql = "SELECT orders.id AS id, clients.id AS client_id, clients.name AS client_name,
-    clients.email AS client_email FROM clients, orders WHERE (orders.client_id = clients.id)
-    AND (orders.id = ? )";
+    $sql = "SELECT
+              orders.id AS id, clients.id AS client_id, clients.name AS client_name,
+              clients.email AS client_email
+            FROM
+              clients, orders
+            WHERE
+              (orders.client_id = clients.id)
+            AND
+              (orders.id = ? )";
+              
     $params = array($id);
 
     $db = Database::getConnection();

@@ -29,17 +29,19 @@
   }
 
   public function validates() {
+    parent::validates();
     Validations::notEmpty($this->cpf, 'cpf', $this->errors);
     Validations::notEmpty($this->dateOfBirth, 'dateOfBirth', $this->errors);
-    parent::validates();
   }
 
   public function save() {
     if (!$this->isvalid()) return false;
     $this->type = 1;
 
-    $sql = "INSERT INTO clients (name, email, phone, address , address_number, address_cep, city_id, type)
-            VALUES (:name, :email, :phone, :address, :address_number, :address_cep, :city_id, :type)";
+    $sql = "INSERT INTO
+              clients (name, email, phone, address , address_number, address_cep, city_id, type)
+            VALUES
+              (:name, :email, :phone, :address, :address_number, :address_cep, :city_id, :type)";
 
     $params = array('name' => $this->name, 'email' => $this->email, 'phone' => $this->phone, 'address' => $this->address,
                     'address_number' => $this->addressNumber, 'address_cep' => $this->addressCep, 'city_id' => $this->cityId,
@@ -52,7 +54,10 @@
     $this->setId($db->lastInsertId());
     $this->setCreatedAt(date());
 
-    $sql = "INSERT INTO clients_pi (date_of_birth, cpf , client_id) VALUES (:date_of_birth, :cpf, :client_id);";
+    $sql = "INSERT INTO
+              clients_pi (date_of_birth, cpf , client_id)
+          VALUES
+              (:date_of_birth, :cpf, :client_id);";
 
     $params = array('date_of_birth' => $this->dateOfBirth, 'cpf' => $this->cpf, 'client_id' => $this->id);
 
@@ -62,24 +67,6 @@
 
 
     return true;
-  }
-
-  public static function findById($id) {
-    $db = Database::getConnection();
-
-    $sql = "SELECT * FROM clients, clients_pi WHERE clients.id = ?";
-    $params = array($id);
-
-    $db = Database::getConnection();
-    $statement = $db->prepare($sql);
-    $resp = $statement->execute($params);
-
-    if ($resp && $row = $statement->fetch(PDO::FETCH_ASSOC)) {
-      $client = new ClientPi($row);
-      return $client;
-    }
-
-    return null;
   }
 
   public function update($data = array()) {
@@ -97,7 +84,7 @@
     $resp = $statement->execute($params);
 
     $params = array($this->cpf, $this->dateOfBirth, $this->id);
-
+    
     $sql = "UPDATE clients_pi SET cpf= ? , date_of_birth = ? WHERE client_id = ?";
 
     $statement = $db->prepare($sql);
@@ -114,11 +101,7 @@
   public function deleteClient() {
     $db = Database::getConnection();
     $params = array($this->clientId);
-    $sql = "DELETE FROM clients WHERE id = ?";
-    $statement = $db->prepare($sql);
-    $statement->execute($params);
-
-    $sql = "DELETE FROM clients_pi WHERE client_id = ?";
+    $sql = "DELETE FROM clients, clients_pi WHERE id = ?";
     $statement = $db->prepare($sql);
     return $statement->execute($params);
   }

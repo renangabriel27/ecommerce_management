@@ -33,7 +33,6 @@
     while($state = $statement->fetch(PDO::FETCH_ASSOC)) {
       $states[] = new State($state);
     }
-
     return $states;
   }
 
@@ -53,7 +52,5 @@
 
     return null;
   }
-
-
 
 } ?>

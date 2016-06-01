@@ -44,6 +44,7 @@
   public static function addProduct($id, $order) {
     $amount = (int) self::getAmountOfProduct($id, $order);
     $amount++;
+
     $db = Database::getConnection();
     $params = array('product_id' => $id, 'amount' => $amount, 'order_id' => $order);
     $sql = "UPDATE sell_orders_items SET amount= :amount WHERE product_id = :product_id AND order_id = :order_id";

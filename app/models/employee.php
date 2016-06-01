@@ -25,7 +25,6 @@
   public function validates() {
     Validations::notEmpty($this->name, 'name', $this->errors);
 
-    /* Como o campo é único é necessário atualizar caso não tenha mudado*/
     if ($this->newRecord() || $this->changedFieldValue('email', 'employees')) {
       Validations::validEmail($this->email, 'email', $this->errors);
       Validations::uniqueField($this->email, 'email', 'employees', $this->errors);
@@ -38,8 +37,10 @@
   public function save() {
     if (!$this->isvalid()) return false;
 
-    $sql = "INSERT INTO employees (name, email, password)
-            VALUES (:name, :email, :password);";
+    $sql = "INSERT INTO
+              employees (name, email, password)
+            VALUES
+              (:name, :email, :password);";
 
     $params = array('name' => $this->name, 'email' => $this->email,
                     'password' => $this->cryptographyPassword($this->password));

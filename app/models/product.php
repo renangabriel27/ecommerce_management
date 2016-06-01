@@ -53,18 +53,7 @@
   }
 
   public function getCategory() {
-    $db = Database::getConnection();
-    $sql = "SELECT name FROM categories WHERE id = ?";
-    $params = array($this->categoryId);
-
-    $db = Database::getConnection();
-    $statement = $db->prepare($sql);
-    $resp = $statement->execute($params);
-
-    if($resp && $row = $statement->fetch(PDO::FETCH_ASSOC)) {
-      return new Category($row);
-    }
-    return null;
+    return Category::findById($this->categoryId);
   }
 
   public function validates() {
@@ -100,12 +89,17 @@
   }
 
   public function update($data = array()) {
+
+    // return $this->hasChange($data);
+
     $this->setData($data);
     if (!$this->isValid()) return false;
 
     $params = array($this->name, $this->amount, $this->description, $this->price, $this->categoryId, $this->id);
-    $sql = "UPDATE products set name = ?, amount = ?, description = ?, price = ?, category_id = ?
-    WHERE id = ?";
+    $sql = "UPDATE
+              products set name = ?, amount = ?, description = ?, price = ?, category_id = ?
+           WHERE
+              id = ?";
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
@@ -120,10 +114,14 @@
   }
 
   public static function all() {
-    $sql = "SELECT products.id AS id, products.name AS product_name, products.amount AS product_amount,
-            products.price AS product_price, products.created_at AS product_created_at, categories.id
-            AS category_id, categories.name AS category_name FROM products, categories
-            WHERE(products.category_id = categories.id) ORDER BY product_created_at DESC";
+    $sql = "SELECT
+              products.id AS id, products.name AS product_name, products.amount AS product_amount,
+              products.price AS product_price, products.created_at AS product_created_at, categories.id
+              AS category_id, categories.name AS category_name
+            FROM
+              products, categories
+            WHERE
+              (products.category_id = categories.id) ORDER BY product_created_at DESC";
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);

@@ -1,0 +1,72 @@
+
+  <div class="ui segment">
+    <form class="ui form client" action="<?= $this->action ?>" method="POST">
+
+     <div class="required field"><label class="ui dividing header">Campos obrigatórios</label></div>
+
+      <div class="two fields">
+        <div class="required field <?= $this->client->getErrors('name') ? 'error' : '' ?>">
+          <label>Nome </label>
+          <input type="text" id="client['name']" name="client[name]" placeholder="nome" value="<?= $this->client->getName() ?>">
+          <div class="ui pointing <?= $this->client->getErrors('name') ? 'red basic label' : '' ?>"><?= $this->client->getErrors('name') ?></div>
+        </div>
+        <div class="required field <?= $this->client->getErrors('email') ? 'error' : '' ?>">
+          <label>Email</label>
+          <input type="text" id="client['email']" name="client[email]" placeholder="email"  value="<?= $this->client->getEmail() ?>">
+          <div class="ui pointing <?= $this->client->getErrors('email') ? 'red basic label' : '' ?>"><?= $this->client->getErrors('email') ?></div>
+        </div>
+      </div>
+
+      <div class="four fields">
+        <?php $this->type == 1 ? require '_form_pi.phtml' : require '_form_pc.phtml'  ?>
+
+        <div class="required field <?= $this->client->getErrors('phone') ? 'error' : '' ?>">
+          <label>Telefone</label>
+          <input type="text" id="client['phone']" name="client[phone]" placeholder="telefone" value="<?= $this->client->getPhone() ?>">
+          <div class="ui pointing <?= $this->client->getErrors('phone') ? 'red basic label' : '' ?>"><?= $this->client->getErrors('phone') ?></div>
+        </div>
+
+        <div class="required field">
+          <label>Cidade</label>
+          <select name="client[city_id]" class="ui fluid dropdown <?= $this->client->getErrors('city_id') ? 'error' : '' ?>">
+            <option value="">Selecione uma cidade</option>
+            <?php foreach($this->cities as $city) : ?>
+              <option value='<?= $city->getId() ?>'
+                <?= ($city->getId() === $this->client->getCityId()) ? 'selected' :  '' ?> >
+                <?=  $city->getName() ?>
+              </option>
+            <?php endForeach; ?>
+          </select>
+        </div>
+      </div>
+
+      <div class="three fields">
+        <div class="required field <?= $this->client->getErrors('address') ? 'error' : '' ?>">
+            <label>Endereço</label>
+              <input type="text" id="client['address']" name="client[address]" placeholder="Street Address"  value="<?= $this->client->getAddress() ?>">
+              <div class="ui pointing <?= $this->client->getErrors('address') ? 'red basic label' : '' ?>"><?= $this->client->getErrors('address') ?></div>
+          </div>
+          <div class="required field <?= $this->client->getErrors('address_number') ? 'error' : '' ?>">
+            <label>Número</label>
+              <input type="text" id="client['address_number']" name="client[address_number]" placeholder="Número"  value="<?= $this->client->getAddressNumber() ?>">
+              <div class="ui pointing <?= $this->client->getErrors('address_number') ? 'red basic label' : '' ?>"><?= $this->client->getErrors('address_number') ?></div>
+          </div>
+          <div class="required field <?= $this->client->getErrors('address_cep') ? 'error' : '' ?>">
+            <label>CEP</label>
+              <input type="text" id="client['address_cep']" name="client[address_cep]" placeholder="cep"  value="<?= $this->client->getAddressCep() ?>">
+              <div class="ui pointing <?= $this->client->getErrors('address_cep') ? 'red basic label' : '' ?>"><?= $this->client->getErrors('address_cep') ?></div>
+          </div>
+      </div>
+
+      <input type="hidden" name="client[type]" value="<?= $this->type ?>">
+
+      <div class="align-center">
+        <div class="ui buttons">
+          <?= ViewHelpers::linkTo("/clientes", 'Cancelar', 'class="ui labeled icon button"', 'class="reply icon"') ?>
+          <div class="or"></div>
+          <?= ViewHelpers::buttonTo($this->submit, 'class="ui right labeled primary icon button"', 'class="right arrow icon"') ?>
+        </div>
+      </div>
+      </form>
+    </div>
+  </div>

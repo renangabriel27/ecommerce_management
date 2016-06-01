@@ -15,9 +15,9 @@ CREATE TABLE states (
 CREATE TABLE cities (
 	id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 	name VARCHAR(50) NOT NULL,
-	state_id INT NOT NULL,
 	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-  CONSTRAINT FOREIGN KEY(state_id) REFERENCES states(id)
+
+	state_id INT NOT NULL REFERENCES states(id)
 );
 
 CREATE TABLE clients (
@@ -30,24 +30,24 @@ CREATE TABLE clients (
 	email VARCHAR(50),
 	type VARCHAR(10),
 	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-	city_id INT NOT NULL,
-	CONSTRAINT FOREIGN KEY(city_id) REFERENCES cities(id)
+
+	city_id INT NOT NULL REFERENCES cities(id)
 );
 
 CREATE TABLE clients_pi (
 	id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
   cpf VARCHAR(11),
 	date_of_birth DATE,
-	client_id INT NOT NULL,
-	CONSTRAINT FOREIGN KEY(client_id) REFERENCES clients(id)
+
+	client_id INT NOT NULL REFERENCES clients(id)
 );
 
 CREATE TABLE clients_pc (
 	id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
   cnpj VARCHAR(14),
   company_name VARCHAR(50),
-	client_id INT NOT NULL,
-	CONSTRAINT FOREIGN KEY(client_id) REFERENCES clients(id)
+
+	client_id INT NOT NULL REFERENCES clients(id)
 );
 
 CREATE TABLE employees (
@@ -58,8 +58,8 @@ CREATE TABLE employees (
   salary DECIMAL(10,2),
 	comission DOUBLE,
 	registration_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-	city_id INT NOT NULL,
-	CONSTRAINT FOREIGN KEY(city_id) REFERENCES cities(id)
+
+	city_id INT NOT NULL REFERENCES cities(id)
 );
 
 CREATE TABLE categories (
@@ -74,20 +74,19 @@ CREATE TABLE products (
   amount INT,
 	description TEXT,
 	price DECIMAL(10,2) NOT NULL,
-	category_id INTEGER NOT NULL,
 	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-	CONSTRAINT FOREIGN KEY(category_id) REFERENCES categories(id)
+
+	category_id INT NOT NULL REFERENCES categories(id)
 );
 
 CREATE TABLE orders (
 	id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 	total DOUBLE NOT NULL,
 	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-	client_id INT NOT NULL,
-	employee_id INT NOT NULL,
 	status VARCHAR(8) DEFAULT "Aberto",
-	CONSTRAINT FOREIGN KEY(client_id) REFERENCES clients(id),
-	CONSTRAINT FOREIGN KEY(employee_id) REFERENCES employees(id)
+
+	client_id INT NOT NULL REFERENCES clients(id),
+	employee_id INT NOT NULL REFERENCES employees(id)
 );
 
 CREATE TABLE sell_orders_items (
@@ -95,10 +94,9 @@ CREATE TABLE sell_orders_items (
 	price DECIMAL(10,2) NOT NULL,
 	amount INT NOT NULL DEFAULT 1,
 	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-	order_id INT NOT NULL,
-	product_id INT NOT NULL,
-	CONSTRAINT FOREIGN KEY(order_id) REFERENCES orders(id),
-	CONSTRAINT FOREIGN KEY(product_id) REFERENCES products(id)
+
+	order_id INT NOT NULL REFERENCES orders(id),
+	product_id INT NOT NULL REFERENCES products(id)
 );
 
 /*

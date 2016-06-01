@@ -76,8 +76,8 @@
     $router->get('/clientes/novo', array('controller' => 'ClientsController', 'action' => '_new'));
     $router->get('/clientes/novo/:type', array('controller' => 'ClientsController', 'action' => '_new'));
     $router->post('/clientes', array('controller' => 'ClientsController', 'action' => 'create'));
-    $router->get('/clientes/:id/editar/:type', array('controller' => 'ClientsController', 'action' => 'edit'));
-    $router->get('/clientes/:id/:type', array('controller' => 'ClientsController', 'action' => 'show'));
+    $router->get('/clientes/:id', array('controller' => 'ClientsController', 'action' => 'show'));
+    $router->get('/clientes/:id/editar', array('controller' => 'ClientsController', 'action' => 'edit'));
     $router->post('/clientes/:id', array('controller' => 'ClientsController', 'action' => 'update'));
     $router->get('/clientes/:id/deletar', array('controller' => 'ClientsController', 'action' => 'destroy'));
 

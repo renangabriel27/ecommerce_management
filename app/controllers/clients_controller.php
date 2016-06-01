@@ -8,7 +8,9 @@
   }
 
   public function show() {
-    $this->client = ClientPi::findById(':id');
+    $this->client = Client::findById($this->params[':id']);
+    $this->type = $this->client->getType();
+      $this->cities = City::all();
   }
 
   public function _new() {
@@ -38,26 +40,27 @@
 
   public function edit() {
     $client = $this->params[':id'];
-    $this->type = $this->params[':type'];
-    $this->client = $this->type == 1 ? ClientPi::findById($client) : ClientPc::findById($client);
+    $this->client = Client::findById($client);
+    $this->type = $this->client->getType();
     $this->cities = City::all();
+
     $this->submit = 'Salvar';
-    $this->action = ViewHelpers::urlFor("/clientes/{$this->client->getId()}");
+    $this->action = ViewHelpers::urlFor("/clientes/{$this->client->getClientId()}");
   }
 
   public function update() {
-     $client = $this->params[':id'];
-     $this->client = $this->type == 1 ? ClientPi::findById($client) : ClientPc::findById($client);
-     $this->cities = City::all();
-     $city = City::findById($this->client->getCityId());
-     $this->submit = 'Salvar';
-     $this->action = ViewHelpers::urlFor("/clientes/{$this->client->getId()}");
+     $clientId = $this->params[':id'];
+     $this->client = Client::findById($clientId);
+     $this->type = $this->client->getType();
 
     if($this->client->update($this->params['client'])) {
       Flash::message('success', 'Registro atualizado com sucesso!');
       $this->redirectTo('/clientes');
     } else {
       Flash::message('negative', 'Existe dados incorretos no seu formulário!');
+      $this->action = ViewHelpers::urlFor("/clientes/{$this->client->getClientId()}");
+      $this->cities = City::all();
+      $this->submit = 'Salvar';
       $this->render('edit');
     }
   }
