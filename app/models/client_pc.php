@@ -95,11 +95,22 @@
     return true;
   }
 
+
+  public function deleteClient($id) {
+    $sql = "DELETE FROM clients, clients_pc USING clients, clients_pc WHERE clients.id = ? AND clients_pc.client_id =?";
+
+    $params = array($id, $id);
+
+    $db = Database::getConnection();
+    $statement = $db->prepare($sql);
+    return $statement->execute($params);
+  }
+
   public static function findById($id) {
     $sql = "SELECT
               c.id, c.name, c.email, c.address, c.address_cep, c.address_number, c.city_id,
               c.phone, c.type, c.created_at, cities.id AS city_id, cities.name AS city_name,
-              cities.state_id AS state_id, cities.created_at AS city_created_at, cp.id, cp.cnpj,
+              cities.state_id AS state_id, cities.created_at AS city_created_at, cp.cnpj,
               cp.company_name, cp.client_id
             FROM
               clients c, clients_pc cp, cities WHERE (c.city_id = cities.id) AND (c.id = :id) AND (cp.client_id = :id)
@@ -123,9 +134,9 @@
 
   public static function all() {
     $sql = "SELECT
-              c.name, c.email, c.address, c.address_cep, c.address_number, c.city_id,
+              c.id, c.name, c.email, c.address, c.address_cep, c.address_number, c.city_id,
               c.phone, c.type, c.created_at, cities.id AS city_id, cities.name AS city_name,
-              cities.state_id AS state_id, cities.created_at AS city_created_at, cp.id, cp.cnpj,
+              cities.state_id AS state_id, cities.created_at AS city_created_at, cp.cnpj,
               cp.company_name, cp.client_id
             FROM
               clients c, clients_pc cp, cities WHERE (c.city_id = cities.id) AND (c.id = cp.client_id)
@@ -144,16 +155,6 @@
       $clients[] =  self::createClient($row);
     }
     return $clients;
-  }
-
-  public function deleteClient($id) {
-    $sql = "DELETE FROM clients, clients_pc USING clients, clients_pc WHERE clients.id = ? AND clients_pc.client_id =?";
-
-    $params = array($id, $id);
-
-    $db = Database::getConnection();
-    $statement = $db->prepare($sql);
-    return $statement->execute($params);
   }
 
   private static function createClient($row) {

@@ -10,7 +10,6 @@
   public function show() {
     $this->title = "Visualizar cliente";
     $this->client = ClientPi::findById($this->params[':id']);
-    $this->cities = City::all();
   }
 
   public function _new() {
@@ -44,7 +43,7 @@
     $this->cities = City::all();
 
     $this->submit = 'Salvar';
-    $this->action = ViewHelpers::urlFor("/clientes/{$this->client->getClientId()}/pessoa-fisica");
+    $this->action = ViewHelpers::urlFor("/clientes/{$this->client->getId()}/pessoa-fisica");
   }
 
   public function update() {
@@ -58,7 +57,7 @@
       $this->title = "Editar cliente";
       $this->submit = 'Salvar';
       $this->cities = City::all();
-      $this->action = ViewHelpers::urlFor("/clientes/{$this->client->getClientId()}/pessoa-fisica");
+      $this->action = ViewHelpers::urlFor("/clientes/{$this->client->getId()}/pessoa-fisica");
       $this->render('edit');
     }
   }

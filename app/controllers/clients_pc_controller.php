@@ -40,11 +40,10 @@
   public function edit() {
     $this->title = "Editar cliente";
     $this->client = ClientPc::findById($this->params[':id']);
-
     $this->cities = City::all();
 
     $this->submit = 'Salvar';
-    $this->action = ViewHelpers::urlFor("/clientes/{$this->client->getClientId()}/pessoa-juridica");
+    $this->action = ViewHelpers::urlFor("/clientes/{$this->client->getId()}/pessoa-juridica");
   }
 
   public function update() {
@@ -58,7 +57,7 @@
       $this->title = "Editar cliente";
       $this->submit = 'Salvar';
       $this->cities = City::all();
-      $this->action = ViewHelpers::urlFor("/clientes/{$this->client->getClientId()}/pessoa-juridica");
+      $this->action = ViewHelpers::urlFor("/clientes/{$this->client->getId()}/pessoa-juridica");
       $this->render('edit');
     }
   }

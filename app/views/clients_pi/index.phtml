@@ -9,7 +9,6 @@
           <th>CEP</th>
           <th>Telefone</th>
           <th>Cidade</th>
-          <th>Cliente</th>
           <th>Opções</th>
         </tr>
       </thead>
@@ -23,11 +22,10 @@
             <td><?= $client->getAddressCep() ?></td>
             <td><?= $client->getPhone() ?></td>
             <td><?= $client->getCity()->getName() ?></td>
-            <td><?= ViewHelpers::clientType($client->getType()) ?></td>
             <td>
-              <?= ViewHelpers::linkTo("/clientes/{$client->getClientId()}/pessoa-fisica", '', '', 'class="zoom icon"') ?>
-              <?= ViewHelpers::linkTo("/clientes/{$client->getClientId()}/editar/pessoa-fisica", '', '', 'class="edit icon"') ?>
-              <?= ViewHelpers::linkTo("/clientes/{$client->getClientId()}/deletar/pessoa-fisica", '', 'data-confirm="Tem certeza que deseja deletar?"', 'class="trash icon"') ?>
+              <?= ViewHelpers::linkTo("/clientes/{$client->getId()}/pessoa-fisica", '', '', 'class="zoom icon"') ?>
+              <?= ViewHelpers::linkTo("/clientes/{$client->getId()}/editar/pessoa-fisica", '', '', 'class="edit icon"') ?>
+              <?= ViewHelpers::linkTo("/clientes/{$client->getId()}/deletar/pessoa-fisica", '', 'data-confirm="Tem certeza que deseja deletar?"', 'class="trash icon"') ?>
             </td>
           </tr>
         <?php endForeach; ?>

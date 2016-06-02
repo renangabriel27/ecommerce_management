@@ -74,7 +74,7 @@
     $sql = "SELECT
               c.id, c.name, c.email, c.address, c.address_cep, c.address_number, c.city_id,
               c.phone, c.type, c.created_at, cities.id AS city_id, cities.name AS city_name,
-              cities.state_id AS state_id, cities.created_at AS city_created_at, cp.id, cp.cpf,
+              cities.state_id AS state_id, cities.created_at AS city_created_at, cp.cpf,
               cp.date_of_birth, cp.client_id
             FROM
               clients c, clients_pi cp, cities WHERE (c.city_id = cities.id) AND (c.id = :id) AND (cp.client_id =:id)
@@ -133,9 +133,9 @@
 
   public static function all() {
     $sql = "SELECT
-              c.name, c.email, c.address, c.address_cep, c.address_number, c.city_id,
+              c.id, c.name, c.email, c.address, c.address_cep, c.address_number, c.city_id,
               c.phone, c.type, c.created_at, cities.id AS city_id, cities.name AS city_name,
-              cities.state_id AS state_id, cities.created_at AS city_created_at, cp.id, cp.cpf,
+              cities.state_id AS state_id, cities.created_at AS city_created_at, cp.cpf,
               cp.date_of_birth, cp.client_id
             FROM
               clients c, clients_pi cp, cities WHERE (c.city_id = cities.id) AND (c.id = cp.client_id)
@@ -167,6 +167,7 @@
     $client->setPhone($row['phone']);
     $client->setType($row['type']);
     $client->setCpf($row['cpf']);
+    $client->setCityId($row['city_id']);
     $client->setDateOfBirth($row['date_of_birth']);
     $client->setClientId($row['client_id']);
     $client->setCreatedAt($row['created_at']);

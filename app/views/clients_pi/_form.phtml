@@ -40,9 +40,9 @@
           <label>Cidade</label>
           <select name="client[city_id]" class="ui fluid dropdown <?= $this->client->getErrors('city_id') ? 'error' : '' ?>">
             <option value="">Selecione uma cidade</option>
-            <?php foreach($this->cities as $city) : ?>
+            <?php foreach($this->cities as $city): ?>
               <option value='<?= $city->getId() ?>'
-                  <?= ($city->getId() === $this->client->getCityId()) ? 'selected' :  '' ?> >
+                <?= ($city->getId() == $this->client->getCityId()) ? 'selected' :  '' ?> >
                 <?=  $city->getName() ?>
               </option>
             <?php endForeach; ?>

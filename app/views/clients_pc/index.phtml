@@ -23,9 +23,9 @@
             <td><?= $client->getPhone() ?></td>
             <td><?= $client->getCity()->getName() ?></td>
             <td>
-              <?= ViewHelpers::linkTo("/clientes/{$client->getClientId()}/pessoa-juridica", '', '', 'class="zoom icon"') ?>
-              <?= ViewHelpers::linkTo("/clientes/{$client->getClientId()}/editar-pessoa-juridica", '', '', 'class="edit icon"') ?>
-              <?= ViewHelpers::linkTo("/clientes/{$client->getClientId()}/deletar-pessoa-juridica", '', 'data-confirm="Tem certeza que deseja deletar?"', 'class="trash icon"') ?>
+              <?= ViewHelpers::linkTo("/clientes/{$client->getId()}/pessoa-juridica", '', '', 'class="zoom icon"') ?>
+              <?= ViewHelpers::linkTo("/clientes/{$client->getId()}/editar-pessoa-juridica", '', '', 'class="edit icon"') ?>
+              <?= ViewHelpers::linkTo("/clientes/{$client->getId()}/deletar-pessoa-juridica", '', 'data-confirm="Tem certeza que deseja deletar?"', 'class="trash icon"') ?>
             </td>
           </tr>
         <?php endForeach; ?>
