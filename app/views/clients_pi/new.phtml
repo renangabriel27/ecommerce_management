@@ -1,0 +1,18 @@
+<section>
+  <header class="ui dividing header">
+    <h2><?= $this->title ?></h2>
+  </header>
+  <article>
+    <div class="ui top attached tabular menu">
+        <div class="item <?= ViewHelpers::activeClass("/clientes/nova-pessoa-fisica") ?>">
+            <?= ViewHelpers::linkTo("/clientes/nova-pessoa-fisica", 'Pessoa física', 'class="clients"') ?>
+        </div>
+        <div class="item <?= ViewHelpers::activeClass("/clientes/nova-pessoa-juridica") ?>">
+            <?= ViewHelpers::linkTo("/clientes/nova-pessoa-juridica", 'Pessoa jurídica', 'class="clients"') ?>
+        </div>
+    </div>
+
+      <?php  require '_form.phtml' ?>
+
+  </article>
+</section>

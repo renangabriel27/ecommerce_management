@@ -68,22 +68,34 @@
     /* Fim das rotas para os produtos
     --------------------------------- */
 
-    /* Rotas para os clientes
+    /* Rotas para os clientes físicos
     ------------------------- */
-    $router->get('/clientes/autocomplete-search', array('controller' => 'ClientsController', 'action' => 'autoCompleteSearch'));
+    $router->get('/clientes/autocomplete-search', array('controller' => 'ClientsPiController', 'action' => 'autoCompleteSearch'));
 
-    $router->get('/clientes', array('controller' => 'ClientsController', 'action' => 'index'));
-    $router->get('/clientes/nova-pessoa-juridica', array('controller' => 'ClientsController', 'action' => 'newClientPc'));
-    $router->get('/clientes/nova-pessoa-fisica', array('controller' => 'ClientsController', 'action' => 'newClientPi'));
-    $router->post('/clientes', array('controller' => 'ClientsController', 'action' => 'create'));
-    $router->get('/clientes/:id', array('controller' => 'ClientsController', 'action' => 'show'));
-    $router->get('/clientes/:id/editar', array('controller' => 'ClientsController', 'action' => 'edit'));
-    $router->post('/clientes/:id', array('controller' => 'ClientsController', 'action' => 'update'));
-    $router->get('/clientes/:id/deletar', array('controller' => 'ClientsController', 'action' => 'destroy'));
+    $router->get('/clientes/pessoa-fisica', array('controller' => 'ClientsPiController', 'action' => 'index'));
+    $router->get('/clientes/nova-pessoa-fisica', array('controller' => 'ClientsPiController', 'action' => '_new'));
+    $router->post('/clientes/pessoa-fisica', array('controller' => 'ClientsPiController', 'action' => 'create'));
+    $router->get('/clientes/:id/pessoa-fisica', array('controller' => 'ClientsPiController', 'action' => 'show'));
+    $router->get('/clientes/:id/editar/pessoa-fisica', array('controller' => 'ClientsPiController', 'action' => 'edit'));
+    $router->post('/clientes/:id/pessoa-fisica', array('controller' => 'ClientsPiController', 'action' => 'update'));
+    $router->get('/clientes/:id/deletar/pessoa-fisica', array('controller' => 'ClientsPiController', 'action' => 'destroy'));
 
-    /* Fim das rotas para os clientes
+    /* Fim das rotas para os clientes físicos
     --------------------------------- */
 
+    /* Rotas para os clientes jurídicos
+    ------------------------- */
+
+    $router->get('/clientes/pessoa-juridica', array('controller' => 'ClientsPcController', 'action' => 'index'));
+    $router->get('/clientes/nova-pessoa-juridica', array('controller' => 'ClientsPcController', 'action' => '_new'));
+    $router->post('/clientes/pessoa-juridica', array('controller' => 'ClientsPcController', 'action' => 'create'));
+    $router->get('/clientes/:id/pessoa-juridica', array('controller' => 'ClientsPcController', 'action' => 'show'));
+    $router->get('/clientes/:id/editar-pessoa-juridica', array('controller' => 'ClientsPcController', 'action' => 'edit'));
+    $router->post('/clientes/:id/pessoa-juridica', array('controller' => 'ClientsPcController', 'action' => 'update'));
+    $router->get('/clientes/:id/deletar-pessoa-juridica', array('controller' => 'ClientsPcController', 'action' => 'destroy'));
+
+    /* Fim das rotas para os clientes jurídicos
+    --------------------------------- */
 
 
     $router->load();

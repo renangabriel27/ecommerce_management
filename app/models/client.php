@@ -7,6 +7,7 @@
   protected $addressCep;
   protected $phone;
   protected $cityId;
+  protected $city;
   protected $type;
 
   public function setName($name) {
@@ -70,6 +71,14 @@
     return $this->cityId;
   }
 
+  public function setCity($city) {
+    $this->city = $city;
+  }
+
+  public function getCity() {
+    return $this->city;
+  }
+
   public function setType($type) {
     $this->type = $type;
   }
@@ -92,10 +101,6 @@
       Validations::uniqueField($this->email, 'email', 'clients', $this->errors);
     }
 
-  }
-
-  public function getCity() {
-    return City::findById($this->cityId);
   }
 
   public function save() {
@@ -140,31 +145,7 @@
     return $statement->execute($params);
   }
 
-  public static function findById($id) {
-    $sql = "SELECT * FROM clients, clients_pi WHERE clients.id = :id AND clients_pi.client_id = :client_id";
-    $params = array('id' => $id, 'client_id' => $id);
-
-    $db = Database::getConnection();
-    $statement = $db->prepare($sql);
-    $resp = $statement->execute($params);
-
-    if ($resp && $row = $statement->fetch(PDO::FETCH_ASSOC)) {
-      return new ClientPi($row);
-    }
-    else {
-      $sql = "SELECT * FROM clients, clients_pc WHERE clients.id = :id AND clients_pc.client_id = :client_id";
-      $params = array('id' => $id, 'client_id' => $id);
-
-      $db = Database::getConnection();
-      $statement = $db->prepare($sql);
-      $resp = $statement->execute($params);
-
-      if ($resp && $row = $statement->fetch(PDO::FETCH_ASSOC)) {
-        return new ClientPc($row);
-      }
-    }
-    return null;
-  }
+  
 
   public static function all() {
     $sql = "SELECT

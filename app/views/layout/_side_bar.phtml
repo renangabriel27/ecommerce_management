@@ -28,7 +28,8 @@
             <div class="item">
               <div class="header">Clientes</div>
               <div class="menu">
-                <?= ViewHelpers::linkTo('/clientes', 'Visualizar clientes', 'class="item"') ?>
+                <?= ViewHelpers::linkTo('/clientes/pessoa-fisica', 'Visualizar clientes físicos', 'class="item"') ?>
+                <?= ViewHelpers::linkTo('/clientes/pessoa-juridica', 'Visualizar clientes jurídicos', 'class="item"') ?>
                 <?= ViewHelpers::linkTo('/clientes/nova-pessoa-fisica', 'Cadastro de cliente', 'class="item"') ?>
               </div>
             </div>

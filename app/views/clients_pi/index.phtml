@@ -22,12 +22,12 @@
             <td><?= $client->getEmail() ?></td>
             <td><?= $client->getAddressCep() ?></td>
             <td><?= $client->getPhone() ?></td>
-            <td><?= $client->getCityId()->getName() ?></td>
+            <td><?= $client->getCity()->getName() ?></td>
             <td><?= ViewHelpers::clientType($client->getType()) ?></td>
             <td>
-              <?= ViewHelpers::linkTo("/clientes/{$client->getId()}", '', '', 'class="zoom icon"') ?>
-              <?= ViewHelpers::linkTo("/clientes/{$client->getId()}/editar", '', '', 'class="edit icon"') ?>
-              <?= ViewHelpers::linkTo("/clientes/{$client->getId()}/deletar", '', 'data-confirm="Tem certeza que deseja deletar?"', 'class="trash icon"') ?>
+              <?= ViewHelpers::linkTo("/clientes/{$client->getClientId()}/pessoa-fisica", '', '', 'class="zoom icon"') ?>
+              <?= ViewHelpers::linkTo("/clientes/{$client->getClientId()}/editar/pessoa-fisica", '', '', 'class="edit icon"') ?>
+              <?= ViewHelpers::linkTo("/clientes/{$client->getClientId()}/deletar/pessoa-fisica", '', 'data-confirm="Tem certeza que deseja deletar?"', 'class="trash icon"') ?>
             </td>
           </tr>
         <?php endForeach; ?>

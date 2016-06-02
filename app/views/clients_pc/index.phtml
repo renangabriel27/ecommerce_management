@@ -1,0 +1,44 @@
+<section>
+
+      <table class="ui compact celled definition table">
+      <thead class="full-width">
+        <tr>
+          <th>ID</th>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>CEP</th>
+          <th>Telefone</th>
+          <th>Cidade</th>
+          <th>Opções</th>
+        </tr>
+      </thead>
+      <tbody>
+        <?php
+          foreach ($this->clients as $client): ?>
+          <tr>
+            <td><?= $client->getId() ?></td>
+            <td><?= $client->getName() ?></td>
+            <td><?= $client->getEmail() ?></td>
+            <td><?= $client->getAddressCep() ?></td>
+            <td><?= $client->getPhone() ?></td>
+            <td><?= $client->getCity()->getName() ?></td>
+            <td>
+              <?= ViewHelpers::linkTo("/clientes/{$client->getClientId()}/pessoa-juridica", '', '', 'class="zoom icon"') ?>
+              <?= ViewHelpers::linkTo("/clientes/{$client->getClientId()}/editar-pessoa-juridica", '', '', 'class="edit icon"') ?>
+              <?= ViewHelpers::linkTo("/clientes/{$client->getClientId()}/deletar-pessoa-juridica", '', 'data-confirm="Tem certeza que deseja deletar?"', 'class="trash icon"') ?>
+            </td>
+          </tr>
+        <?php endForeach; ?>
+      </tbody>
+      <tfoot class="full-width">
+        <tr>
+          <th colspan="9">
+            <?= ViewHelpers::linkTo("/clientes/nova-pessoa-juridica", 'Novo cliente', 'class="ui left floated small primary labeled icon button"', 'class="add circle icon"') ?>
+          </th>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</div>
+
+</section>

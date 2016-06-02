@@ -10,7 +10,7 @@
         <thead>
           <tr>
             <th>Cliente</th>
-            <th><?= ViewHelpers::clientType($this->client->getType())  ?></th>
+            <th><?= ViewHelpers::clientType($this->client->getType()) ?></th>
           </tr>
           <tr>
             <th>Nome</th>
@@ -28,11 +28,14 @@
             <th>Cidade</th>
             <th><?= $this->client->getCity()->getName() ?></th>
           </tr>
-          <?php if($this->client->getType() == 1): ?>
-            <?php require '_show_pi.phtml' ?>
-          <?php else : ?>
-            <?php require '_show_pc.phtml' ?>
-          <?php endIf; ?>
+          <tr>
+            <th>CNPJ</th>
+            <th><?= $this->client->getCnpj() ?></th>
+          </tr>
+          <tr>
+            <th>Razão social</th>
+            <th><?= $this->client->getCompanyName() ?></th>
+          </tr>
           <tr>
             <th>Endereço</th>
             <th><?= $this->client->getAddress() ?></th>
@@ -55,7 +58,7 @@
       </table>
 
       <div class="ui buttons">
-        <?= ViewHelpers::linkTo("/clientes", 'Cancelar', 'class="ui labeled icon button"', 'class="reply icon"') ?>
+        <?= ViewHelpers::linkTo("/clientes/pessoa-juridica", 'Cancelar', 'class="ui labeled icon button"', 'class="reply icon"') ?>
       </div>
     </div>
   </div>

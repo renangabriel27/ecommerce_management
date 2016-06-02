@@ -1,0 +1,67 @@
+<section>
+  <header class="ui dividing header">
+    <h2><?= $this->title ?></h2>
+  </header>
+  <article>
+
+    <div class="ui segment">
+
+      <table class="ui celled table">
+        <thead>
+          <tr>
+            <th>Cliente</th>
+            <th></th>
+          </tr>
+          <tr>
+            <th>Nome</th>
+            <th><?= $this->client->getName() ?></th>
+          </tr>
+          <tr>
+            <th>Email</th>
+            <th><?= $this->client->getEmail() ?></th>
+          </tr>
+          <tr>
+            <th>Telefone</th>
+            <th><?= $this->client->getPhone() ?></th>
+          </tr>
+          <tr>
+            <th>Cidade</th>
+            <th><?= $this->client->getCity()->getName() ?></th>
+          </tr>
+          <tr>
+            <th>CPF</th>
+            <th><?= $this->client->getCpf() ?></th>
+          </tr>
+          <tr>
+            <th>Data de nascimento</th>
+            <th><?= $this->client->getDateOfBirth() ?></th>
+          </tr>
+          <tr>
+            <th>Endereço</th>
+            <th><?= $this->client->getAddress() ?></th>
+          </tr>
+          <tr>
+            <th>Número</th>
+            <th><?= $this->client->getAddressNumber() ?></th>
+          </tr>
+          <tr>
+            <th>CEP</th>
+            <th><?= $this->client->getAddressCep() ?></th>
+          </tr>
+          <tr>
+            <th>Data de criação</th>
+            <th><?= ViewHelpers::dateFormat($this->client->getCreatedAt()) ?></th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+
+      <div class="ui buttons">
+        <?= ViewHelpers::linkTo("/clientes/pessoa-fisica", 'Cancelar', 'class="ui labeled icon button"', 'class="reply icon"') ?>
+      </div>
+    </div>
+  </div>
+
+</article>
+</section>
