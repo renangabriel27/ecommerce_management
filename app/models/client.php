@@ -42,6 +42,7 @@
   }
 
   public function setAddressCep($addressCep) {
+    $addressCep = str_replace('-', '', $addressCep);
     $this->addressCep = $addressCep;
   }
 
@@ -50,6 +51,10 @@
   }
 
   public function setPhone($phone) {
+    $phone = str_replace('(', '', $phone);
+    $phone = str_replace(')', '', $phone);
+    $phone = str_replace('-', '', $phone);
+
     $this->phone = $phone;
   }
 

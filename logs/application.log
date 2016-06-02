@@ -3648,3 +3648,723 @@
 [01.06.2016 - 15:55:38][NOTICE] - /ecommerce_management/clientes
 [01.06.2016 - 15:55:38][NOTICE] - match: /clientes with /clientes
 [01.06.2016 - 15:55:38][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:00:35][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:00:35][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:00:35][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:12:09][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:12:09][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:12:09][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:15:17][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:15:17][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:15:17][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:15:18][NOTICE] - /ecommerce_management/clientes/novo/1
+[01.06.2016 - 16:15:18][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[01.06.2016 - 16:15:18][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:15:21][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:15:21][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:15:21][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:15:30][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:15:30][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:15:30][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:15:30][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:15:30][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:15:30][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:15:39][NOTICE] - /ecommerce_management/clientes/11/editar
+[01.06.2016 - 16:15:39][NOTICE] - match: /clientes/:id/editar with /clientes/11/editar
+[01.06.2016 - 16:15:39][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:15:46][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:15:46][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:15:46][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:19:13][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:19:13][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:19:13][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:19:15][NOTICE] - /ecommerce_management/clientes/1/editar
+[01.06.2016 - 16:19:15][NOTICE] - match: /clientes/:id/editar with /clientes/1/editar
+[01.06.2016 - 16:19:15][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:19:19][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:19:19][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:19:19][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:19:40][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:19:40][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:19:40][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:19:41][NOTICE] - /ecommerce_management/clientes/1/editar
+[01.06.2016 - 16:19:41][NOTICE] - match: /clientes/:id/editar with /clientes/1/editar
+[01.06.2016 - 16:19:41][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:19:59][NOTICE] - /ecommerce_management/clientes/1/editar
+[01.06.2016 - 16:19:59][NOTICE] - match: /clientes/:id/editar with /clientes/1/editar
+[01.06.2016 - 16:19:59][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:20:01][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:20:01][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:20:01][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:20:02][NOTICE] - /ecommerce_management/clientes/3/editar
+[01.06.2016 - 16:20:02][NOTICE] - match: /clientes/:id/editar with /clientes/3/editar
+[01.06.2016 - 16:20:02][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:20:03][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:20:03][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:20:03][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:20:04][NOTICE] - /ecommerce_management/clientes/7/editar
+[01.06.2016 - 16:20:04][NOTICE] - match: /clientes/:id/editar with /clientes/7/editar
+[01.06.2016 - 16:20:04][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:20:16][NOTICE] - /ecommerce_management/clientes/7/editar
+[01.06.2016 - 16:20:16][NOTICE] - match: /clientes/:id/editar with /clientes/7/editar
+[01.06.2016 - 16:20:16][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:20:41][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:20:41][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:20:41][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:23:48][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:23:48][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:23:48][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:23:50][NOTICE] - /ecommerce_management/clientes/10/editar
+[01.06.2016 - 16:23:50][NOTICE] - match: /clientes/:id/editar with /clientes/10/editar
+[01.06.2016 - 16:23:50][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:23:52][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:23:52][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:23:52][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:23:53][NOTICE] - /ecommerce_management/clientes/8/editar
+[01.06.2016 - 16:23:53][NOTICE] - match: /clientes/:id/editar with /clientes/8/editar
+[01.06.2016 - 16:23:53][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:23:54][NOTICE] - /ecommerce_management/clientes/8
+[01.06.2016 - 16:23:54][NOTICE] - match: /clientes/:id with /clientes/8
+[01.06.2016 - 16:23:54][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:23:54][NOTICE] - Mudou: paulo@gmail.com
+[01.06.2016 - 16:23:56][NOTICE] - /ecommerce_management/clientes/8
+[01.06.2016 - 16:23:56][NOTICE] - match: /clientes/:id with /clientes/8
+[01.06.2016 - 16:23:56][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:23:56][NOTICE] - Mudou: paulo@gmail.com.br
+[01.06.2016 - 16:23:56][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:23:56][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:23:56][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:24:00][NOTICE] - /ecommerce_management/clientes/1/deletar
+[01.06.2016 - 16:24:00][NOTICE] - match: /clientes/:id/deletar with /clientes/1/deletar
+[01.06.2016 - 16:24:00][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:24:00][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:24:00][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:24:00][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:24:03][NOTICE] - /ecommerce_management/clientes/2/editar
+[01.06.2016 - 16:24:03][NOTICE] - match: /clientes/:id/editar with /clientes/2/editar
+[01.06.2016 - 16:24:03][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:24:05][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:24:05][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:24:05][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:24:06][NOTICE] - /ecommerce_management/clientes/6/editar
+[01.06.2016 - 16:24:06][NOTICE] - match: /clientes/:id/editar with /clientes/6/editar
+[01.06.2016 - 16:24:06][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:24:08][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:24:08][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:24:08][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:24:42][NOTICE] - /ecommerce_management/clientes/7/editar
+[01.06.2016 - 16:24:42][NOTICE] - match: /clientes/:id/editar with /clientes/7/editar
+[01.06.2016 - 16:24:42][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:24:46][NOTICE] - /ecommerce_management/clientes/7
+[01.06.2016 - 16:24:46][NOTICE] - match: /clientes/:id with /clientes/7
+[01.06.2016 - 16:24:46][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:24:46][NOTICE] - Mudou: leandro@gmail.com
+[01.06.2016 - 16:24:49][NOTICE] - /ecommerce_management/clientes/7
+[01.06.2016 - 16:24:49][NOTICE] - match: /clientes/:id with /clientes/7
+[01.06.2016 - 16:24:49][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:24:49][NOTICE] - Mudou: leandro@gmail.com.br
+[01.06.2016 - 16:24:50][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:24:50][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:24:50][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:24:52][NOTICE] - /ecommerce_management/clientes/6
+[01.06.2016 - 16:24:52][NOTICE] - match: /clientes/:id with /clientes/6
+[01.06.2016 - 16:24:52][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:24:54][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:24:54][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:24:54][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:24:55][NOTICE] - /ecommerce_management/clientes/8
+[01.06.2016 - 16:24:55][NOTICE] - match: /clientes/:id with /clientes/8
+[01.06.2016 - 16:24:55][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:24:56][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:24:56][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:24:56][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:24:57][NOTICE] - /ecommerce_management/clientes/2
+[01.06.2016 - 16:24:57][NOTICE] - match: /clientes/:id with /clientes/2
+[01.06.2016 - 16:24:57][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:24:59][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:24:59][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:24:59][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:25:00][NOTICE] - /ecommerce_management/clientes/10
+[01.06.2016 - 16:25:00][NOTICE] - match: /clientes/:id with /clientes/10
+[01.06.2016 - 16:25:00][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:25:02][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:25:02][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:25:02][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:25:03][NOTICE] - /ecommerce_management/clientes/9
+[01.06.2016 - 16:25:03][NOTICE] - match: /clientes/:id with /clientes/9
+[01.06.2016 - 16:25:03][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:25:04][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:25:04][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:25:04][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:25:06][NOTICE] - /ecommerce_management/clientes/5
+[01.06.2016 - 16:25:06][NOTICE] - match: /clientes/:id with /clientes/5
+[01.06.2016 - 16:25:06][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:25:09][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:25:09][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:25:09][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:26:49][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:26:49][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:26:49][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:26:50][NOTICE] - /ecommerce_management/clientes/novo/1
+[01.06.2016 - 16:26:50][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[01.06.2016 - 16:26:50][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:28:35][NOTICE] - /ecommerce_management/clientes/novo/1
+[01.06.2016 - 16:28:35][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[01.06.2016 - 16:28:35][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:30:05][NOTICE] - /ecommerce_management/clientes/novo/1
+[01.06.2016 - 16:30:05][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[01.06.2016 - 16:30:05][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:30:08][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:30:08][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:30:08][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:31:01][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:31:01][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:31:01][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:31:02][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:31:02][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:31:02][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:34:03][NOTICE] - /ecommerce_management/clientes/novo/1
+[01.06.2016 - 16:34:03][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[01.06.2016 - 16:34:04][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:34:17][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:34:17][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:34:17][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:34:21][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:34:21][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:34:21][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:34:21][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:34:21][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:34:21][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:34:26][NOTICE] - /ecommerce_management/clientes/12/editar
+[01.06.2016 - 16:34:26][NOTICE] - match: /clientes/:id/editar with /clientes/12/editar
+[01.06.2016 - 16:34:26][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:35:16][NOTICE] - /ecommerce_management/clientes/12/editar
+[01.06.2016 - 16:35:16][NOTICE] - match: /clientes/:id/editar with /clientes/12/editar
+[01.06.2016 - 16:35:16][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:35:32][NOTICE] - /ecommerce_management/clientes/12/editar
+[01.06.2016 - 16:35:32][NOTICE] - match: /clientes/:id/editar with /clientes/12/editar
+[01.06.2016 - 16:35:32][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:35:36][NOTICE] - /ecommerce_management/clientes/12
+[01.06.2016 - 16:35:36][NOTICE] - match: /clientes/:id with /clientes/12
+[01.06.2016 - 16:35:36][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:35:36][NOTICE] - Mudou: df@me.com.br.v
+[01.06.2016 - 16:35:41][NOTICE] - /ecommerce_management/clientes/12
+[01.06.2016 - 16:35:41][NOTICE] - match: /clientes/:id with /clientes/12
+[01.06.2016 - 16:35:41][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:35:41][NOTICE] - Mudou: df@me.com.br.vcd
+[01.06.2016 - 16:35:41][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:35:41][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:35:41][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:35:45][NOTICE] - /ecommerce_management/clientes/12
+[01.06.2016 - 16:35:45][NOTICE] - match: /clientes/:id with /clientes/12
+[01.06.2016 - 16:35:45][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:35:51][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:35:51][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:35:51][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:35:52][NOTICE] - /ecommerce_management/clientes/novo/1
+[01.06.2016 - 16:35:52][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[01.06.2016 - 16:35:52][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:36:06][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:36:06][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:36:06][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:36:15][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:36:15][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:36:15][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:36:16][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:36:16][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:36:16][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:36:18][NOTICE] - /ecommerce_management/clientes/13
+[01.06.2016 - 16:36:18][NOTICE] - match: /clientes/:id with /clientes/13
+[01.06.2016 - 16:36:18][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:36:25][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:36:25][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:36:25][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:37:46][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:37:46][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:37:46][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:37:48][NOTICE] - /ecommerce_management/clientes/novo/1
+[01.06.2016 - 16:37:48][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[01.06.2016 - 16:37:48][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:37:49][NOTICE] - /ecommerce_management/clientes/novo/2
+[01.06.2016 - 16:37:49][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[01.06.2016 - 16:37:49][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:38:16][NOTICE] - /ecommerce_management/clientes/novo/2
+[01.06.2016 - 16:38:16][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[01.06.2016 - 16:38:16][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:39:22][NOTICE] - /ecommerce_management/clientes/novo/2
+[01.06.2016 - 16:39:22][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[01.06.2016 - 16:39:22][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:39:34][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:39:34][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:39:34][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:39:35][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:39:35][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:39:35][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:39:37][NOTICE] - /ecommerce_management/clientes/14
+[01.06.2016 - 16:39:37][NOTICE] - match: /clientes/:id with /clientes/14
+[01.06.2016 - 16:39:37][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:39:42][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:39:42][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:39:42][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:41:16][NOTICE] - /ecommerce_management/clientes/14
+[01.06.2016 - 16:41:16][NOTICE] - match: /clientes/:id with /clientes/14
+[01.06.2016 - 16:41:16][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 16:41:22][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 16:41:22][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 16:41:22][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 18:45:28][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 18:45:28][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 18:45:28][NOTICE] - /ecommerce_management/login
+[01.06.2016 - 18:45:28][NOTICE] - match: /login with /login
+[01.06.2016 - 18:45:35][NOTICE] - /ecommerce_management/login
+[01.06.2016 - 18:45:35][NOTICE] - match: /login with /login
+[01.06.2016 - 18:45:35][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 18:45:35][NOTICE] - /ecommerce_management/
+[01.06.2016 - 18:45:35][NOTICE] - match: / with /
+[01.06.2016 - 18:45:38][NOTICE] - /ecommerce_management/pedidos
+[01.06.2016 - 18:45:38][NOTICE] - match: /pedidos with /pedidos
+[01.06.2016 - 18:45:38][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 18:45:41][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 18:45:41][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 18:45:41][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 18:45:54][NOTICE] - /ecommerce_management/clientes/13/deletar
+[01.06.2016 - 18:45:54][NOTICE] - match: /clientes/:id/deletar with /clientes/13/deletar
+[01.06.2016 - 18:45:54][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 18:45:54][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 18:45:54][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 18:45:54][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 18:46:13][NOTICE] - /ecommerce_management/clientes/12/deletar
+[01.06.2016 - 18:46:13][NOTICE] - match: /clientes/:id/deletar with /clientes/12/deletar
+[01.06.2016 - 18:46:13][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 18:46:13][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 18:46:13][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 18:46:13][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 18:46:50][NOTICE] - /ecommerce_management/clientes/14/deletar
+[01.06.2016 - 18:46:50][NOTICE] - match: /clientes/:id/deletar with /clientes/14/deletar
+[01.06.2016 - 18:46:50][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 18:46:50][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 18:46:50][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 18:46:50][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 18:47:08][NOTICE] - /ecommerce_management/clientes/11/deletar
+[01.06.2016 - 18:47:08][NOTICE] - match: /clientes/:id/deletar with /clientes/11/deletar
+[01.06.2016 - 18:47:08][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 18:47:08][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 18:47:08][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 18:47:08][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:01:20][NOTICE] - /ecommerce_management/pedidos/novo
+[01.06.2016 - 19:01:20][NOTICE] - match: /pedidos/novo with /pedidos/novo
+[01.06.2016 - 19:01:21][NOTICE] - /ecommerce_management/pedidos
+[01.06.2016 - 19:01:21][NOTICE] - match: /pedidos with /pedidos
+[01.06.2016 - 19:01:21][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:01:22][NOTICE] - /ecommerce_management/produtos
+[01.06.2016 - 19:01:22][NOTICE] - match: /produtos with /produtos
+[01.06.2016 - 19:01:22][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:01:24][NOTICE] - /ecommerce_management/produtos/6/editar
+[01.06.2016 - 19:01:24][NOTICE] - match: /produtos/:id/editar with /produtos/6/editar
+[01.06.2016 - 19:01:24][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:01:25][NOTICE] - /ecommerce_management/produtos/6
+[01.06.2016 - 19:01:25][NOTICE] - match: /produtos/:id with /produtos/6
+[01.06.2016 - 19:01:25][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:01:25][NOTICE] - Mudou: EVGA GEFORCE GTX 750TI
+[01.06.2016 - 19:01:25][NOTICE] - /ecommerce_management/produtos
+[01.06.2016 - 19:01:25][NOTICE] - match: /produtos with /produtos
+[01.06.2016 - 19:01:25][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:01:28][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 19:01:28][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 19:01:28][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:07:59][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 19:07:59][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 19:07:59][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:08:00][NOTICE] - /ecommerce_management/produtos
+[01.06.2016 - 19:08:00][NOTICE] - match: /produtos with /produtos
+[01.06.2016 - 19:08:00][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:08:02][NOTICE] - /ecommerce_management/produtos/4/editar
+[01.06.2016 - 19:08:02][NOTICE] - match: /produtos/:id/editar with /produtos/4/editar
+[01.06.2016 - 19:08:02][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:08:03][NOTICE] - /ecommerce_management/produtos/4
+[01.06.2016 - 19:08:03][NOTICE] - match: /produtos/:id with /produtos/4
+[01.06.2016 - 19:08:03][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:08:03][NOTICE] - Mudou: INTEL CORE I5 4460
+[01.06.2016 - 19:08:03][NOTICE] - /ecommerce_management/produtos
+[01.06.2016 - 19:08:03][NOTICE] - match: /produtos with /produtos
+[01.06.2016 - 19:08:03][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:08:05][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 19:08:05][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 19:08:05][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:08:07][NOTICE] - /ecommerce_management/clientes/novo/1
+[01.06.2016 - 19:08:07][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[01.06.2016 - 19:08:07][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:08:08][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 19:08:08][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 19:08:08][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:13:28][NOTICE] - /ecommerce_management/pedidos
+[01.06.2016 - 19:13:28][NOTICE] - match: /pedidos with /pedidos
+[01.06.2016 - 19:13:28][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:13:29][NOTICE] - /ecommerce_management/produtos
+[01.06.2016 - 19:13:29][NOTICE] - match: /produtos with /produtos
+[01.06.2016 - 19:13:29][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:13:58][NOTICE] - /ecommerce_management/produtos
+[01.06.2016 - 19:13:58][NOTICE] - match: /produtos with /produtos
+[01.06.2016 - 19:13:58][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:14:13][NOTICE] - /ecommerce_management/produtos
+[01.06.2016 - 19:14:13][NOTICE] - match: /produtos with /produtos
+[01.06.2016 - 19:14:13][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:15:15][NOTICE] - /ecommerce_management/produtos
+[01.06.2016 - 19:15:15][NOTICE] - match: /produtos with /produtos
+[01.06.2016 - 19:15:15][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:16:16][NOTICE] - /ecommerce_management/produtos
+[01.06.2016 - 19:16:16][NOTICE] - match: /produtos with /produtos
+[01.06.2016 - 19:16:16][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:21:48][NOTICE] - /ecommerce_management/produtos
+[01.06.2016 - 19:21:48][NOTICE] - match: /produtos with /produtos
+[01.06.2016 - 19:21:48][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:22:05][NOTICE] - /ecommerce_management/produtos
+[01.06.2016 - 19:22:05][NOTICE] - match: /produtos with /produtos
+[01.06.2016 - 19:22:05][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:22:11][NOTICE] - /ecommerce_management/produtos
+[01.06.2016 - 19:22:11][NOTICE] - match: /produtos with /produtos
+[01.06.2016 - 19:22:11][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:22:35][NOTICE] - /ecommerce_management/produtos
+[01.06.2016 - 19:22:35][NOTICE] - match: /produtos with /produtos
+[01.06.2016 - 19:22:35][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:22:36][NOTICE] - /ecommerce_management/produtos
+[01.06.2016 - 19:22:36][NOTICE] - match: /produtos with /produtos
+[01.06.2016 - 19:22:36][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:23:40][NOTICE] - /ecommerce_management/produtos
+[01.06.2016 - 19:23:40][NOTICE] - match: /produtos with /produtos
+[01.06.2016 - 19:23:40][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:25:01][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 19:25:01][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 19:25:01][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:25:02][NOTICE] - /ecommerce_management/clientes/novo/1
+[01.06.2016 - 19:25:02][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[01.06.2016 - 19:25:02][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:25:05][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 19:25:05][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 19:25:05][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:25:06][NOTICE] - /ecommerce_management/clientes/3/editar
+[01.06.2016 - 19:25:06][NOTICE] - match: /clientes/:id/editar with /clientes/3/editar
+[01.06.2016 - 19:25:06][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:25:07][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 19:25:07][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 19:25:08][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:25:11][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 19:25:11][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 19:25:11][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:25:13][NOTICE] - /ecommerce_management/clientes/novo/1
+[01.06.2016 - 19:25:13][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[01.06.2016 - 19:25:13][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:25:13][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 19:25:13][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 19:25:13][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:28:57][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 19:28:57][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 19:28:57][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:29:09][NOTICE] - /ecommerce_management/produtos
+[01.06.2016 - 19:29:09][NOTICE] - match: /produtos with /produtos
+[01.06.2016 - 19:29:09][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:29:11][NOTICE] - /ecommerce_management/produtos/novo
+[01.06.2016 - 19:29:11][NOTICE] - match: /produtos/novo with /produtos/novo
+[01.06.2016 - 19:29:11][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:29:12][NOTICE] - /ecommerce_management/produtos
+[01.06.2016 - 19:29:12][NOTICE] - match: /produtos with /produtos
+[01.06.2016 - 19:29:12][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:29:42][NOTICE] - /ecommerce_management/produtos
+[01.06.2016 - 19:29:42][NOTICE] - match: /produtos with /produtos
+[01.06.2016 - 19:29:42][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:30:40][NOTICE] - /ecommerce_management/produtos
+[01.06.2016 - 19:30:40][NOTICE] - match: /produtos with /produtos
+[01.06.2016 - 19:30:40][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:31:38][NOTICE] - /ecommerce_management/pedidos
+[01.06.2016 - 19:31:38][NOTICE] - match: /pedidos with /pedidos
+[01.06.2016 - 19:31:38][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:31:40][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 19:31:40][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 19:31:40][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:34:50][NOTICE] - /ecommerce_management/clientes/novo/1
+[01.06.2016 - 19:34:50][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[01.06.2016 - 19:34:50][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:35:10][NOTICE] - /ecommerce_management/clientes/novo/2
+[01.06.2016 - 19:35:10][NOTICE] - match: /clientes/novo/:type with /clientes/novo/2
+[01.06.2016 - 19:35:10][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:35:11][NOTICE] - /ecommerce_management/clientes/novo/1
+[01.06.2016 - 19:35:11][NOTICE] - match: /clientes/novo/:type with /clientes/novo/1
+[01.06.2016 - 19:35:11][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:36:43][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 19:36:43][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 19:36:43][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:36:44][NOTICE] - /ecommerce_management/clientes/2/editar
+[01.06.2016 - 19:36:44][NOTICE] - match: /clientes/:id/editar with /clientes/2/editar
+[01.06.2016 - 19:36:44][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:36:47][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 19:36:47][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 19:36:47][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:36:48][NOTICE] - /ecommerce_management/clientes/6/editar
+[01.06.2016 - 19:36:48][NOTICE] - match: /clientes/:id/editar with /clientes/6/editar
+[01.06.2016 - 19:36:48][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:36:51][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 19:36:51][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 19:36:51][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:42:10][NOTICE] - /ecommerce_management/clientes/novo/1
+[01.06.2016 - 19:42:10][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/clientes/novo/1
+[01.06.2016 - 19:42:10][NOTICE] - /ecommerce_management/
+[01.06.2016 - 19:42:10][NOTICE] - match: / with /
+[01.06.2016 - 19:42:12][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 19:42:12][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 19:43:09][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 19:43:09][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 19:43:30][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 19:43:30][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 19:43:30][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:43:53][NOTICE] - /ecommerce_management/clientes/6/editar
+[01.06.2016 - 19:43:53][NOTICE] - match: /clientes/:id/editar with /clientes/6/editar
+[01.06.2016 - 19:43:53][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:43:59][NOTICE] - /ecommerce_management/clientes/6
+[01.06.2016 - 19:43:59][NOTICE] - match: /clientes/:id with /clientes/6
+[01.06.2016 - 19:43:59][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:43:59][NOTICE] - Mudou: marcos@gmail.com
+[01.06.2016 - 19:44:06][NOTICE] - /ecommerce_management/clientes/6
+[01.06.2016 - 19:44:06][NOTICE] - match: /clientes/:id with /clientes/6
+[01.06.2016 - 19:44:06][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:44:06][NOTICE] - Mudou: marcos@gmail.com.bn
+[01.06.2016 - 19:44:06][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 19:44:06][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 19:44:06][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:44:09][NOTICE] - /ecommerce_management/clientes/nova-pessoa-fisica
+[01.06.2016 - 19:44:09][NOTICE] - match: /clientes/nova-pessoa-fisica with /clientes/nova-pessoa-fisica
+[01.06.2016 - 19:44:09][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 19:57:16][NOTICE] - /ecommerce_management/clientes/nova-pessoa-fisica
+[01.06.2016 - 19:57:16][NOTICE] - match: /clientes/nova-pessoa-fisica with /clientes/nova-pessoa-fisica
+[01.06.2016 - 19:57:16][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:02:27][NOTICE] - /ecommerce_management/clientes/nova-pessoa-fisica
+[01.06.2016 - 20:02:27][NOTICE] - match: /clientes/nova-pessoa-fisica with /clientes/nova-pessoa-fisica
+[01.06.2016 - 20:02:27][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:02:55][NOTICE] - /ecommerce_management/clientes/nova-pessoa-juridica
+[01.06.2016 - 20:02:55][NOTICE] - match: /clientes/nova-pessoa-juridica with /clientes/nova-pessoa-juridica
+[01.06.2016 - 20:02:55][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:03:54][NOTICE] - /ecommerce_management/clientes/nova-pessoa-juridica
+[01.06.2016 - 20:03:54][NOTICE] - match: /clientes/nova-pessoa-juridica with /clientes/nova-pessoa-juridica
+[01.06.2016 - 20:03:54][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:04:00][NOTICE] - /ecommerce_management/clientes/nova-pessoa-juridica
+[01.06.2016 - 20:04:00][NOTICE] - match: /clientes/nova-pessoa-juridica with /clientes/nova-pessoa-juridica
+[01.06.2016 - 20:04:00][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:04:02][NOTICE] - /ecommerce_management/clientes/nova-pessoa-fisica
+[01.06.2016 - 20:04:02][NOTICE] - match: /clientes/nova-pessoa-fisica with /clientes/nova-pessoa-fisica
+[01.06.2016 - 20:04:02][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:04:04][NOTICE] - /ecommerce_management/clientes/nova-pessoa-juridica
+[01.06.2016 - 20:04:04][NOTICE] - match: /clientes/nova-pessoa-juridica with /clientes/nova-pessoa-juridica
+[01.06.2016 - 20:04:04][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:05:25][NOTICE] - /ecommerce_management/clientes/nova-pessoa-juridica
+[01.06.2016 - 20:05:25][NOTICE] - match: /clientes/nova-pessoa-juridica with /clientes/nova-pessoa-juridica
+[01.06.2016 - 20:05:25][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:05:31][NOTICE] - /ecommerce_management/clientes/nova-pessoa-fisica
+[01.06.2016 - 20:05:31][NOTICE] - match: /clientes/nova-pessoa-fisica with /clientes/nova-pessoa-fisica
+[01.06.2016 - 20:05:31][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:05:44][NOTICE] - /ecommerce_management/clientes/nova-pessoa-juridica
+[01.06.2016 - 20:05:44][NOTICE] - match: /clientes/nova-pessoa-juridica with /clientes/nova-pessoa-juridica
+[01.06.2016 - 20:05:44][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:05:46][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 20:05:46][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 20:05:46][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:05:52][NOTICE] - /ecommerce_management/clientes/nova-pessoa-juridica
+[01.06.2016 - 20:05:52][NOTICE] - match: /clientes/nova-pessoa-juridica with /clientes/nova-pessoa-juridica
+[01.06.2016 - 20:05:52][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:06:19][NOTICE] - /ecommerce_management/clientes/nova-pessoa-fisica
+[01.06.2016 - 20:06:19][NOTICE] - match: /clientes/nova-pessoa-fisica with /clientes/nova-pessoa-fisica
+[01.06.2016 - 20:06:19][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:06:23][NOTICE] - /ecommerce_management/clientes/nova-pessoa-juridica
+[01.06.2016 - 20:06:23][NOTICE] - match: /clientes/nova-pessoa-juridica with /clientes/nova-pessoa-juridica
+[01.06.2016 - 20:06:23][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:06:26][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 20:06:26][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 20:06:26][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:06:28][NOTICE] - /ecommerce_management/clientes/nova-pessoa-fisica
+[01.06.2016 - 20:06:28][NOTICE] - match: /clientes/nova-pessoa-fisica with /clientes/nova-pessoa-fisica
+[01.06.2016 - 20:06:28][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:06:29][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 20:06:29][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 20:06:31][NOTICE] - /ecommerce_management/clientes/nova-pessoa-fisica
+[01.06.2016 - 20:06:31][NOTICE] - match: /clientes/nova-pessoa-fisica with /clientes/nova-pessoa-fisica
+[01.06.2016 - 20:06:31][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:07:41][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 20:07:41][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 20:07:41][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:07:42][NOTICE] - /ecommerce_management/clientes/2
+[01.06.2016 - 20:07:42][NOTICE] - match: /clientes/:id with /clientes/2
+[01.06.2016 - 20:07:42][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:07:52][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 20:07:52][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 20:07:52][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:12:21][NOTICE] - /ecommerce_management/clientes/2
+[01.06.2016 - 20:12:21][NOTICE] - match: /clientes/:id with /clientes/2
+[01.06.2016 - 20:12:21][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:12:32][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 20:12:32][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 20:12:32][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:12:33][NOTICE] - /ecommerce_management/clientes/7
+[01.06.2016 - 20:12:33][NOTICE] - match: /clientes/:id with /clientes/7
+[01.06.2016 - 20:12:33][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:12:40][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 20:12:40][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 20:12:40][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:16:53][NOTICE] - /ecommerce_management/pedidos
+[01.06.2016 - 20:16:53][NOTICE] - match: /pedidos with /pedidos
+[01.06.2016 - 20:16:53][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:16:54][NOTICE] - /ecommerce_management/pedidos/novo
+[01.06.2016 - 20:16:54][NOTICE] - match: /pedidos/novo with /pedidos/novo
+[01.06.2016 - 20:16:56][NOTICE] - /ecommerce_management/clientes/autocomplete-search?query=TH
+[01.06.2016 - 20:16:56][NOTICE] - match: /clientes/autocomplete-search with /clientes/autocomplete-search
+[01.06.2016 - 20:16:56][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:16:57][NOTICE] - /ecommerce_management/clientes/autocomplete-search?query=Thomas
+[01.06.2016 - 20:16:57][NOTICE] - match: /clientes/autocomplete-search with /clientes/autocomplete-search
+[01.06.2016 - 20:16:57][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:16:59][NOTICE] - /ecommerce_management/pedidos
+[01.06.2016 - 20:16:59][NOTICE] - match: /pedidos with /pedidos
+[01.06.2016 - 20:16:59][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:16:59][NOTICE] - /ecommerce_management/pedidos
+[01.06.2016 - 20:16:59][NOTICE] - match: /pedidos with /pedidos
+[01.06.2016 - 20:16:59][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:17:02][NOTICE] - /ecommerce_management/pedidos/1
+[01.06.2016 - 20:17:02][NOTICE] - match: /pedidos/:id with /pedidos/1
+[01.06.2016 - 20:17:02][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:17:03][NOTICE] - /ecommerce_management/produtos/autocomplete-search?query=A
+[01.06.2016 - 20:17:03][NOTICE] - match: /produtos/autocomplete-search with /produtos/autocomplete-search
+[01.06.2016 - 20:17:03][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:17:04][NOTICE] - /ecommerce_management/pedidos/produtos
+[01.06.2016 - 20:17:04][NOTICE] - match: /pedidos/produtos with /pedidos/produtos
+[01.06.2016 - 20:17:04][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:17:04][NOTICE] - /ecommerce_management/pedidos/1
+[01.06.2016 - 20:17:04][NOTICE] - match: /pedidos/:id with /pedidos/1
+[01.06.2016 - 20:17:04][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:17:05][NOTICE] - /ecommerce_management/produtos/autocomplete-search?query=A
+[01.06.2016 - 20:17:05][NOTICE] - match: /produtos/autocomplete-search with /produtos/autocomplete-search
+[01.06.2016 - 20:17:05][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:17:06][NOTICE] - /ecommerce_management/pedidos/produtos
+[01.06.2016 - 20:17:06][NOTICE] - match: /pedidos/produtos with /pedidos/produtos
+[01.06.2016 - 20:17:06][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:17:06][NOTICE] - /ecommerce_management/pedidos/1
+[01.06.2016 - 20:17:06][NOTICE] - match: /pedidos/:id with /pedidos/1
+[01.06.2016 - 20:17:06][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:17:07][NOTICE] - /ecommerce_management/produtos/autocomplete-search?query=A
+[01.06.2016 - 20:17:07][NOTICE] - match: /produtos/autocomplete-search with /produtos/autocomplete-search
+[01.06.2016 - 20:17:07][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:17:08][NOTICE] - /ecommerce_management/produtos/autocomplete-search?query=AMD+FX-6300
+[01.06.2016 - 20:17:08][NOTICE] - match: /produtos/autocomplete-search with /produtos/autocomplete-search
+[01.06.2016 - 20:17:08][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:17:09][NOTICE] - /ecommerce_management/produtos/autocomplete-search?query=AMD+FX-6300A
+[01.06.2016 - 20:17:09][NOTICE] - match: /produtos/autocomplete-search with /produtos/autocomplete-search
+[01.06.2016 - 20:17:09][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:17:11][NOTICE] - /ecommerce_management/pedidos/produtos
+[01.06.2016 - 20:17:11][NOTICE] - match: /pedidos/produtos with /pedidos/produtos
+[01.06.2016 - 20:17:11][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:17:11][NOTICE] - /ecommerce_management/pedidos/1
+[01.06.2016 - 20:17:11][NOTICE] - match: /pedidos/:id with /pedidos/1
+[01.06.2016 - 20:17:11][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:17:13][NOTICE] - /ecommerce_management/pedidos/1/produtos/1/adicionar
+[01.06.2016 - 20:17:13][NOTICE] - match: /pedidos/:id/produtos/:product_id/adicionar with /pedidos/1/produtos/1/adicionar
+[01.06.2016 - 20:17:13][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:17:13][NOTICE] - /ecommerce_management/pedidos/1
+[01.06.2016 - 20:17:13][NOTICE] - match: /pedidos/:id with /pedidos/1
+[01.06.2016 - 20:17:13][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:17:13][NOTICE] - /ecommerce_management/pedidos/1/produtos/1/adicionar
+[01.06.2016 - 20:17:13][NOTICE] - match: /pedidos/:id/produtos/:product_id/adicionar with /pedidos/1/produtos/1/adicionar
+[01.06.2016 - 20:17:13][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:17:13][NOTICE] - /ecommerce_management/pedidos/1
+[01.06.2016 - 20:17:13][NOTICE] - match: /pedidos/:id with /pedidos/1
+[01.06.2016 - 20:17:13][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:17:16][NOTICE] - /ecommerce_management/pedidos/1/produtos/2/remover
+[01.06.2016 - 20:17:16][NOTICE] - match: /pedidos/:id/produtos/:product_id/remover with /pedidos/1/produtos/2/remover
+[01.06.2016 - 20:17:16][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:17:16][NOTICE] - /ecommerce_management/pedidos/1
+[01.06.2016 - 20:17:16][NOTICE] - match: /pedidos/:id with /pedidos/1
+[01.06.2016 - 20:17:16][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:17:21][NOTICE] - /ecommerce_management/pedidos/1/fechar
+[01.06.2016 - 20:17:21][NOTICE] - match: /pedidos/:id/fechar with /pedidos/1/fechar
+[01.06.2016 - 20:17:21][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:17:21][NOTICE] - /ecommerce_management/pedidos
+[01.06.2016 - 20:17:21][NOTICE] - match: /pedidos with /pedidos
+[01.06.2016 - 20:17:21][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:17:35][NOTICE] - /ecommerce_management/pedidos/1
+[01.06.2016 - 20:17:35][NOTICE] - match: /pedidos/:id with /pedidos/1
+[01.06.2016 - 20:17:35][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:53:10][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 20:53:10][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 20:53:10][NOTICE] - /ecommerce_management/login
+[01.06.2016 - 20:53:10][NOTICE] - match: /login with /login
+[01.06.2016 - 20:53:25][NOTICE] - /ecommerce_management/login
+[01.06.2016 - 20:53:25][NOTICE] - match: /login with /login
+[01.06.2016 - 20:53:25][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:53:25][NOTICE] - /ecommerce_management/
+[01.06.2016 - 20:53:25][NOTICE] - match: / with /
+[01.06.2016 - 20:53:28][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 20:53:28][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 20:53:28][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:53:31][NOTICE] - /ecommerce_management/clientes/2
+[01.06.2016 - 20:53:31][NOTICE] - match: /clientes/:id with /clientes/2
+[01.06.2016 - 20:53:31][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:53:33][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 20:53:33][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 20:53:33][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:53:34][NOTICE] - /ecommerce_management/clientes/2/editar
+[01.06.2016 - 20:53:34][NOTICE] - match: /clientes/:id/editar with /clientes/2/editar
+[01.06.2016 - 20:53:34][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:56:18][NOTICE] - /ecommerce_management/clientes/2/editar
+[01.06.2016 - 20:56:18][NOTICE] - match: /clientes/:id/editar with /clientes/2/editar
+[01.06.2016 - 20:56:18][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:59:22][NOTICE] - /ecommerce_management/clientes/2/editar
+[01.06.2016 - 20:59:22][NOTICE] - match: /clientes/:id/editar with /clientes/2/editar
+[01.06.2016 - 20:59:22][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:59:28][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 20:59:28][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 20:59:28][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 20:59:31][NOTICE] - /ecommerce_management/clientes/9/editar
+[01.06.2016 - 20:59:31][NOTICE] - match: /clientes/:id/editar with /clientes/9/editar
+[01.06.2016 - 20:59:31][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 21:04:21][NOTICE] - /ecommerce_management/clientes/9/editar
+[01.06.2016 - 21:04:21][NOTICE] - match: /clientes/:id/editar with /clientes/9/editar
+[01.06.2016 - 21:04:21][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 21:04:22][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 21:04:22][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 21:04:22][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 21:04:25][NOTICE] - /ecommerce_management/clientes/4/editar
+[01.06.2016 - 21:04:25][NOTICE] - match: /clientes/:id/editar with /clientes/4/editar
+[01.06.2016 - 21:04:25][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 21:04:26][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 21:04:26][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 21:04:26][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 21:05:13][NOTICE] - /ecommerce_management/clientes/3/editar
+[01.06.2016 - 21:05:13][NOTICE] - match: /clientes/:id/editar with /clientes/3/editar
+[01.06.2016 - 21:05:13][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 21:05:15][NOTICE] - /ecommerce_management/clientes/3
+[01.06.2016 - 21:05:15][NOTICE] - match: /clientes/:id with /clientes/3
+[01.06.2016 - 21:05:15][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 21:05:15][NOTICE] - Mudou: rogerio@hotmail.com
+[01.06.2016 - 21:05:15][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 21:05:15][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 21:05:15][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 21:05:18][NOTICE] - /ecommerce_management/clientes/3/editar
+[01.06.2016 - 21:05:18][NOTICE] - match: /clientes/:id/editar with /clientes/3/editar
+[01.06.2016 - 21:05:18][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 21:05:24][NOTICE] - /ecommerce_management/clientes/3
+[01.06.2016 - 21:05:24][NOTICE] - match: /clientes/:id with /clientes/3
+[01.06.2016 - 21:05:24][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 21:05:24][NOTICE] - Mudou: rogerio@hotmail.com
+[01.06.2016 - 21:05:28][NOTICE] - /ecommerce_management/clientes/3
+[01.06.2016 - 21:05:28][NOTICE] - match: /clientes/:id with /clientes/3
+[01.06.2016 - 21:05:28][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 21:05:28][NOTICE] - Mudou: rogerio@hotmail.com
+[01.06.2016 - 21:05:28][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 21:05:28][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 21:05:28][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 21:06:37][NOTICE] - /ecommerce_management/clientes/10/deletar
+[01.06.2016 - 21:06:37][NOTICE] - match: /clientes/:id/deletar with /clientes/10/deletar
+[01.06.2016 - 21:06:37][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 21:06:37][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 21:06:37][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 21:06:37][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 21:06:39][NOTICE] - /ecommerce_management/clientes/9
+[01.06.2016 - 21:06:39][NOTICE] - match: /clientes/:id with /clientes/9
+[01.06.2016 - 21:06:39][NOTICE] - Aberta conexão com banco de dados!
+[01.06.2016 - 21:06:43][NOTICE] - /ecommerce_management/clientes
+[01.06.2016 - 21:06:43][NOTICE] - match: /clientes with /clientes
+[01.06.2016 - 21:06:43][NOTICE] - Aberta conexão com banco de dados!

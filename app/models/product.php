@@ -5,6 +5,7 @@
   private $description;
   private $price;
   private $categoryId;
+  private $category;
 
 
   public function setName($name) {
@@ -52,8 +53,12 @@
     return $this->categoryId;
   }
 
+  public function setCategory($category) {
+    $this->category = $category;
+  }
+
   public function getCategory() {
-    return Category::findById($this->categoryId);
+    return $this->category;
   }
 
   public function validates() {
@@ -80,17 +85,14 @@
     $statement = $db->prepare($sql);
     $resp = $statement->execute($params);
 
-    if(!$resp) {
-      Logger::getInstance()->log("Falha ao salvar o produto: " . print_r($this, TRUE), Logger::ERROR);
-      Logger::getInstance()->log("Error " . print_r(error_get_last(), true ), Logger::ERROR);
-      return false;
-    }
+    if(!$resp)  return false;
+
     return true;
   }
 
   public function update($data = array()) {
 
-    // return $this->hasChange($data);
+    if($this->hasNotChange($data)) return true;
 
     $this->setData($data);
     if (!$this->isValid()) return false;
@@ -105,23 +107,20 @@
     $statement = $db->prepare($sql);
     $resp = $statement->execute($params);
 
-    if(!$resp) {
-      Logger::getInstance()->log("Falha ao atualizar o produto: " . print_r($this, TRUE), Logger::ERROR);
-      Logger::getInstance()->log("Error " . print_r(error_get_last(), true ), Logger::ERROR);
-      return false;
-    }
+    if(!$resp) false;
+
     return true;
   }
 
   public static function all() {
     $sql = "SELECT
-              products.id AS id, products.name AS product_name, products.amount AS product_amount,
-              products.price AS product_price, products.created_at AS product_created_at, categories.id
-              AS category_id, categories.name AS category_name
+              p.id AS id, p.name AS product_name, p.amount AS product_amount,
+              p.price AS product_price, p.created_at AS product_created_at, c.id
+              AS category_id, c.name AS category_name, c.created_at AS category_created_at
             FROM
-              products, categories
+              products p, categories c
             WHERE
-              (products.category_id = categories.id) ORDER BY product_created_at DESC";
+              (p.category_id = c.id) ORDER BY product_created_at DESC";
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
@@ -132,20 +131,7 @@
     if(!$resp) return $products;
 
     while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-      $product = new Product();
-      $product->setId($row['id']);
-      $product->setName($row['product_name']);
-      $product->setAmount($row['product_amount']);
-      $product->setPrice($row['product_price']);
-      $product->setCreatedAt($row['product_created_at']);
-
-      $category = new Category();
-      $category->setId($row['category_id']);
-      $category->setName($row['category_name']);
-
-      $product->setCategoryId($category);
-
-      $products[] = $product;
+        $products [] =  self::createProduct($row);
     }
     return $products;
   }
@@ -163,6 +149,24 @@
       return new Product($row);
     }
     return null;
+  }
+
+  private static function createProduct($row) {
+    $product = new Product();
+    $product->setId($row['id']);
+    $product->setName($row['product_name']);
+    $product->setAmount($row['product_amount']);
+    $product->setPrice($row['product_price']);
+    $product->setCreatedAt($row['product_created_at']);
+
+    $category = new Category();
+    $category->setId($row['category_id']);
+    $category->setName($row['category_name']);
+    $category->setCreatedAt($row['category_created_at']);
+
+    $product->setCategory($category);
+
+    return $product;
   }
 
   public static function whereNameLikeAsJson($param) {

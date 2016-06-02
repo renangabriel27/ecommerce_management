@@ -29,27 +29,9 @@
             <th><?= $this->client->getCity()->getName() ?></th>
           </tr>
           <?php if($this->client->getType() == 1): ?>
-
-            <tr>
-              <th>CPF</th>
-              <th><?= $this->client->getCpf() ?></th>
-            </tr>
-            <tr>
-              <th>Data de nascimento</th>
-              <th><?= $this->client->getDateOfBirth() ?></th>
-            </tr>
-
+            <?php require '_show_pi.phtml' ?>
           <?php else : ?>
-
-            <tr>
-              <th>CNPJ</th>
-              <th><?= $this->client->getCnpj() ?></th>
-            </tr>
-            <tr>
-              <th>Razão social</th>
-              <th><?= $this->client->getCompanyName() ?></th>
-            </tr>
-
+            <?php require '_show_pc.phtml' ?>
           <?php endIf; ?>
           <tr>
             <th>Endereço</th>

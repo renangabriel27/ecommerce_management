@@ -5,6 +5,8 @@
   private $clientId;
 
   public function setCpf($cpf) {
+    $cpf = str_replace('.', '', $cpf);
+    $cpf = str_replace('-', '', $cpf);
     $this->cpf = $cpf;
   }
 

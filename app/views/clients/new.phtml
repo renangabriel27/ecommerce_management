@@ -4,13 +4,15 @@
   </header>
   <article>
     <div class="ui top attached tabular menu">
-        <div class="item <?= ViewHelpers::activeClass("/clientes/novo/1") ?>">
-            <?= ViewHelpers::linkTo("/clientes/novo/1", 'Pessoa física', 'class="clients"') ?>
+        <div class="item <?= ViewHelpers::activeClass("/clientes/nova-pessoa-fisica") ?>">
+            <?= ViewHelpers::linkTo("/clientes/nova-pessoa-fisica", 'Pessoa física', 'class="clients"') ?>
         </div>
-        <div class="item <?= ViewHelpers::activeClass("/clientes/novo/2") ?>">
-            <?= ViewHelpers::linkTo("/clientes/novo/2", 'Pessoa jurídica', 'class="clients"') ?>
+        <div class="item <?= ViewHelpers::activeClass("/clientes/nova-pessoa-juridica") ?>">
+            <?= ViewHelpers::linkTo("/clientes/nova-pessoa-juridica", 'Pessoa jurídica', 'class="clients"') ?>
         </div>
     </div>
-    <?php  require '_form.phtml' ?>
+
+      <?php  require '_form.phtml' ?>
+
   </article>
 </section>

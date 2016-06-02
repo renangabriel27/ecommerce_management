@@ -1,5 +1,4 @@
 
-
   <div class="ui segment">
     <form class="ui form client" action="<?= $this->action ?>" method="POST">
 
@@ -19,33 +18,7 @@
       </div>
 
       <div class="four fields">
-        <?php if($this->type == 1): ?>
-
-          <div class="required field <?= $this->client->getErrors('cpf') ? 'error' : '' ?>">
-            <label>CPF</label>
-            <input type="text" id="client_cpf" name="client[cpf]" placeholder="cpf" value="<?= $this->client->getCpf() ?>">
-            <div class="ui pointing <?= $this->client->getErrors('cpf') ? 'red basic label' : '' ?>"><?= $this->client->getErrors('cpf') ?></div>
-          </div>
-          <div class="required field <?= $this->client->getErrors('dateOfBirth') ? 'error' : '' ?>">
-            <label>Data de nascimento</label>
-            <input type="date" id="clinet['date_of_birth']" name="client[date_of_birth]" placeholder=" ** / ** / ****" value="<?= $this->client->getDateOfBirth() ?>">
-            <div class="ui pointing <?= $this->client->getErrors('dateOfBirth') ? 'red basic label' : '' ?>"><?= $this->client->getErrors('dateOfBirth') ?></div>
-          </div>
-
-        <?php else: ?>
-
-          <div class="required field <?= $this->client->getErrors('cnpj') ? 'error' : '' ?>">
-            <label> CNPJ </label>
-            <input type="text" id="client['cnpj']" name="client[cnpj]" placeholder="cnpj" value="<?= $this->client->getCnpj() ?>">
-            <div class="ui pointing <?= $this->client->getErrors('cnpj') ? 'red basic label' : '' ?>"><?= $this->client->getErrors('cnpj') ?></div>
-          </div>
-          <div class="required field <?= $this->client->getErrors('companyName') ? 'error' : '' ?>">
-            <label>Razão social</label>
-            <input type="text" id="client['companyName']" name="client[companyName]"  value="<?= $this->client->getCompanyName() ?>">
-            <div class="ui pointing <?= $this->client->getErrors('companyName') ? 'red basic label' : '' ?>"><?= $this->client->getErrors('companyName') ?></div>
-          </div>
-
-        <?php endIf; ?>
+        <?php require $this->form; ?>
 
         <div class="required field <?= $this->client->getErrors('phone') ? 'error' : '' ?>">
           <label>Telefone</label>

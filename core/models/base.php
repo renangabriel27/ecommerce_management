@@ -71,6 +71,15 @@ abstract class Base {
       }
     }
 
+    public function hasNotChange($data = array()) {
+      foreach($data as $key => $value){
+         $method = "get{$key}";
+         $method = ActiveSupport::snakToCamelCase($method);
+         if($this->$method != $value) return false;
+      }
+      return true;
+    }
+
     public function delete($table) {
       $db = Database::getConnection();
 

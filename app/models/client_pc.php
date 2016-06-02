@@ -3,8 +3,11 @@
   private $cnpj;
   private $companyName;
   private $clientId;
-
+  
   public function setCnpj($cnpj) {
+    $cnpj = str_replace('.', '', $cnpj);
+    $cnpj = str_replace('-', '', $cnpj);
+    $cnpj = str_replace('/', '', $cnpj);
     $this->cnpj = $cnpj;
   }
 

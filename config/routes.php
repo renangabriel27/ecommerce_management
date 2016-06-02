@@ -73,8 +73,8 @@
     $router->get('/clientes/autocomplete-search', array('controller' => 'ClientsController', 'action' => 'autoCompleteSearch'));
 
     $router->get('/clientes', array('controller' => 'ClientsController', 'action' => 'index'));
-    $router->get('/clientes/novo', array('controller' => 'ClientsController', 'action' => '_new'));
-    $router->get('/clientes/novo/:type', array('controller' => 'ClientsController', 'action' => '_new'));
+    $router->get('/clientes/nova-pessoa-juridica', array('controller' => 'ClientsController', 'action' => 'newClientPc'));
+    $router->get('/clientes/nova-pessoa-fisica', array('controller' => 'ClientsController', 'action' => 'newClientPi'));
     $router->post('/clientes', array('controller' => 'ClientsController', 'action' => 'create'));
     $router->get('/clientes/:id', array('controller' => 'ClientsController', 'action' => 'show'));
     $router->get('/clientes/:id/editar', array('controller' => 'ClientsController', 'action' => 'edit'));
