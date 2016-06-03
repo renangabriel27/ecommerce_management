@@ -75,11 +75,14 @@
   public function save() {
     if(!$this->isValid()) return false;
 
-    $sql = "INSERT INTO products (name, amount, description, price, category_id)
-    VALUES (:name, :amount, :description, :price, :category_id);";
+    $sql = "INSERT INTO
+              products (name, amount, description, price, category_id)
+            VALUES
+              (:name, :amount, :description, :price, :category_id)";
 
-    $params = array('name' => $this->name, 'amount' => $this->amount, 'description' => $this->description,
-                    'price' => $this->price, 'category_id' => $this->categoryId);
+    $params = array('name' => $this->name, 'amount' => $this->amount,
+                    'description' => $this->description, 'price' => $this->price,
+                    'category_id' => $this->categoryId);
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
@@ -112,11 +115,36 @@
     return true;
   }
 
+  public static function findById($id) {
+    $db = Database::getConnection();
+    $sql = "SELECT
+              p.id AS id, p.name AS product_name, p.amount AS product_amount,
+              p.price AS product_price, p.description AS product_description,
+              p.created_at AS product_created_at, c.id AS category_id,
+              c.name AS category_name, c.created_at AS category_created_at
+            FROM
+              products p, categories c
+            WHERE
+              (p.category_id = c.id) ORDER BY product_created_at DESC";
+
+    $params = array($id);
+
+    $db = Database::getConnection();
+    $statement = $db->prepare($sql);
+    $resp = $statement->execute($params);
+
+    if ($resp && $row = $statement->fetch(PDO::FETCH_ASSOC)) {
+      return self::createProduct($row);
+    }
+    return null;
+  }
+
   public static function all() {
     $sql = "SELECT
               p.id AS id, p.name AS product_name, p.amount AS product_amount,
-              p.price AS product_price, p.created_at AS product_created_at, c.id
-              AS category_id, c.name AS category_name, c.created_at AS category_created_at
+              p.price AS product_price, p.description AS product_description,
+              p.created_at AS product_created_at, c.id AS category_id,
+              c.name AS category_name, c.created_at AS category_created_at
             FROM
               products p, categories c
             WHERE
@@ -134,39 +162,6 @@
         $products [] =  self::createProduct($row);
     }
     return $products;
-  }
-
-  public static function findById($id) {
-    $db = Database::getConnection();
-    $sql = "SELECT * FROM products WHERE id = ?";
-    $params = array($id);
-
-    $db = Database::getConnection();
-    $statement = $db->prepare($sql);
-    $resp = $statement->execute($params);
-
-    if ($resp && $row = $statement->fetch(PDO::FETCH_ASSOC)) {
-      return new Product($row);
-    }
-    return null;
-  }
-
-  private static function createProduct($row) {
-    $product = new Product();
-    $product->setId($row['id']);
-    $product->setName($row['product_name']);
-    $product->setAmount($row['product_amount']);
-    $product->setPrice($row['product_price']);
-    $product->setCreatedAt($row['product_created_at']);
-
-    $category = new Category();
-    $category->setId($row['category_id']);
-    $category->setName($row['category_name']);
-    $category->setCreatedAt($row['category_created_at']);
-
-    $product->setCategory($category);
-
-    return $product;
   }
 
   public static function whereNameLikeAsJson($param) {
@@ -215,6 +210,26 @@
     $statement->execute();
 
     return $statement->fetch()[0];
+  }
+
+  private static function createProduct($row) {
+    $product = new Product();
+    $product->setId($row['id']);
+    $product->setName($row['product_name']);
+    $product->setAmount($row['product_amount']);
+    $product->setPrice($row['product_price']);
+    $product->setDescription($row['product_description']);
+    $product->setCategoryId($row['category_id']);
+    $product->setCreatedAt($row['product_created_at']);
+
+    $category = new Category();
+    $category->setId($row['category_id']);
+    $category->setName($row['category_name']);
+    $category->setCreatedAt($row['category_created_at']);
+
+    $product->setCategory($category);
+
+    return $product;
   }
 
 } ?>

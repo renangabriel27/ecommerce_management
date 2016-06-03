@@ -8,6 +8,7 @@
    }
 
    public function show() {
+     $this->title = "Visualizar produto";
      $this->product = Product::findById($this->params[':id']);
    }
 

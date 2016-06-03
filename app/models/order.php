@@ -54,7 +54,10 @@
   public function save() {
     if(!$this->isValid()) return false;
 
-    $sql = "INSERT INTO orders (client_id, employee_id ) VALUES (:client_id, :employee_id)";
+    $sql = "INSERT INTO
+              orders (client_id, employee_id)
+            VALUES
+              (:client_id, :employee_id)";
 
     $this->employeeId = SessionHelpers::currentEmployee()->getId();
     $params = array('client_id' => $this->client, 'employee_id' => $this->employeeId);
@@ -75,8 +78,13 @@
   }
 
   public function getProducts() {
-    $sql = "SELECT products.id, products.name, products.price, products.created_at
-    FROM sell_orders_items, products WHERE ((sell_orders_items.order_id = ?) AND (products.id = sell_orders_items.product_id))";
+    $sql = "SELECT
+              products.id, products.name, products.price, products.created_at
+            FROM
+              sell_orders_items, products
+            WHERE
+              ((sell_orders_items.order_id = ?) AND (products.id = sell_orders_items.product_id))";
+              
     $params = array($this->id);
 
     $db = Database::getConnection();
@@ -209,7 +217,7 @@
               (orders.client_id = clients.id)
             AND
               (orders.id = ? )";
-              
+
     $params = array($id);
 
     $db = Database::getConnection();

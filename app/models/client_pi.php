@@ -2,7 +2,6 @@
 
   private $cpf;
   private $dateOfBirth;
-  private $clientId;
 
   public function setCpf($cpf) {
     $cpf = str_replace('.', '', $cpf);
@@ -20,14 +19,6 @@
 
   public function getDateOfBirth() {
     return $this->dateOfBirth;
-  }
-
-  public function setClientId($clientId) {
-    $this->clientId = $clientId;
-  }
-
-  public function getClientId() {
-    return $this->clientId;
   }
 
   public function validates() {
@@ -56,12 +47,9 @@
     $this->setId($db->lastInsertId());
     $this->setCreatedAt(date());
 
-    $sql = "INSERT INTO
-              clients_pi (date_of_birth, cpf , client_id)
-          VALUES
-              (:date_of_birth, :cpf, :client_id);";
+    $sql = "INSERT INTO clients_pi (id, date_of_birth, cpf) VALUES (:id, :date_of_birth, :cpf)";
 
-    $params = array('date_of_birth' => $this->dateOfBirth, 'cpf' => $this->cpf, 'client_id' => $this->id);
+    $params = array('id' => $this->id, 'date_of_birth' => $this->dateOfBirth, 'cpf' => $this->cpf);
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
@@ -75,11 +63,12 @@
               c.id, c.name, c.email, c.address, c.address_cep, c.address_number, c.city_id,
               c.phone, c.type, c.created_at, cities.id AS city_id, cities.name AS city_name,
               cities.state_id AS state_id, cities.created_at AS city_created_at, cp.cpf,
-              cp.date_of_birth, cp.client_id
+              cp.date_of_birth
             FROM
-              clients c, clients_pi cp, cities WHERE (c.city_id = cities.id) AND (c.id = :id) AND (cp.client_id =:id)
+              clients c, clients_pi cp, cities WHERE (c.city_id = cities.id) AND (c.id = :id) AND (cp.id =:id)
             ORDER BY
-              client_id";
+              id";
+
     $params = array('id' => $id, 'id' => $id);
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
@@ -101,7 +90,7 @@
 
     $db = Database::getConnection();
     $params = array($this->name, $this->address, $this->addressNumber, $this->addressCep,
-                    $this->phone, $this->email, $this->cityId, $this->clientId);
+                    $this->phone, $this->email, $this->cityId, $this->id);
 
     $sql = "UPDATE clients SET name = ?, address = ? , address_number = ?, address_cep = ?,
                     phone = ?, email = ?, city_id = ? WHERE id = ?";
@@ -111,7 +100,7 @@
 
     $params = array($this->cpf, $this->dateOfBirth, $this->id);
 
-    $sql = "UPDATE clients_pi SET cpf= ? , date_of_birth = ? WHERE client_id = ?";
+    $sql = "UPDATE clients_pi SET cpf= ? , date_of_birth = ? WHERE id = ?";
 
     $statement = $db->prepare($sql);
     $resp = $statement->execute($params);
@@ -122,7 +111,7 @@
   }
 
   public function deleteClient($id) {
-    $sql = "DELETE FROM clients, clients_pi USING clients, clients_pi WHERE clients.id = ? AND clients_pi.client_id =?";
+    $sql = "DELETE FROM clients, clients_pi USING clients, clients_pi WHERE clients.id = ? AND clients_pi.id =?";
 
     $params = array($id, $id);
 
@@ -136,11 +125,11 @@
               c.id, c.name, c.email, c.address, c.address_cep, c.address_number, c.city_id,
               c.phone, c.type, c.created_at, cities.id AS city_id, cities.name AS city_name,
               cities.state_id AS state_id, cities.created_at AS city_created_at, cp.cpf,
-              cp.date_of_birth, cp.client_id
+              cp.date_of_birth
             FROM
-              clients c, clients_pi cp, cities WHERE (c.city_id = cities.id) AND (c.id = cp.client_id)
+              clients c, clients_pi cp, cities WHERE (c.city_id = cities.id) AND (c.id = cp.id)
             ORDER BY
-              client_id";
+              id";
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
@@ -169,7 +158,6 @@
     $client->setCpf($row['cpf']);
     $client->setCityId($row['city_id']);
     $client->setDateOfBirth($row['date_of_birth']);
-    $client->setClientId($row['client_id']);
     $client->setCreatedAt($row['created_at']);
 
     $city = new City();

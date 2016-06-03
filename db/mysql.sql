@@ -17,7 +17,8 @@ CREATE TABLE cities (
 	name VARCHAR(50) NOT NULL,
 	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 
-	state_id INT NOT NULL REFERENCES states(id)
+	state_id INT NOT NULL,
+	CONSTRAINT FOREIGN KEY(state_id) REFERENCES states(id)
 );
 
 CREATE TABLE clients (
@@ -31,23 +32,20 @@ CREATE TABLE clients (
 	type VARCHAR(10),
 	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 
-	city_id INT NOT NULL REFERENCES cities(id)
+	city_id INT NOT NULL,
+	CONSTRAINT FOREIGN KEY(city_id) REFERENCES cities(id)
 );
 
 CREATE TABLE clients_pi (
 	id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-  cpf VARCHAR(11),
-	date_of_birth DATE,
-
-	client_id INT NOT NULL REFERENCES clients(id)
+  cpf CHAR(11),
+	date_of_birth DATE
 );
 
 CREATE TABLE clients_pc (
 	id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-  cnpj VARCHAR(14),
-  company_name VARCHAR(50),
-
-	client_id INT NOT NULL REFERENCES clients(id)
+  cnpj CHAR(14),
+  company_name VARCHAR(50)
 );
 
 CREATE TABLE employees (
@@ -59,7 +57,8 @@ CREATE TABLE employees (
 	comission DOUBLE,
 	registration_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 
-	city_id INT NOT NULL REFERENCES cities(id)
+	city_id INT NOT NULL,
+	CONSTRAINT FOREIGN KEY(city_id) REFERENCES cities(id)
 );
 
 CREATE TABLE categories (
@@ -76,7 +75,8 @@ CREATE TABLE products (
 	price DECIMAL(10,2) NOT NULL,
 	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 
-	category_id INT NOT NULL REFERENCES categories(id)
+	category_id INT NOT NULL,
+	CONSTRAINT FOREIGN KEY(category_id) REFERENCES categories(id)
 );
 
 CREATE TABLE orders (
@@ -85,8 +85,10 @@ CREATE TABLE orders (
 	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 	status VARCHAR(8) DEFAULT "Aberto",
 
-	client_id INT NOT NULL REFERENCES clients(id),
-	employee_id INT NOT NULL REFERENCES employees(id)
+	client_id INT NOT NULL,
+	employee_id INT NOT NULL,
+	CONSTRAINT FOREIGN KEY(client_id) REFERENCES clients(id),
+	CONSTRAINT FOREIGN KEY(employee_id) REFERENCES employees(id)
 );
 
 CREATE TABLE sell_orders_items (
@@ -95,8 +97,10 @@ CREATE TABLE sell_orders_items (
 	amount INT NOT NULL DEFAULT 1,
 	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 
-	order_id INT NOT NULL REFERENCES orders(id),
-	product_id INT NOT NULL REFERENCES products(id)
+	order_id INT NOT NULL,
+	product_id INT NOT NULL REFERENCES products(id),
+	CONSTRAINT FOREIGN KEY(order_id) REFERENCES orders(id),
+	CONSTRAINT FOREIGN KEY(product_id) REFERENCES products(id)
 );
 
 /*
@@ -171,23 +175,23 @@ INSERT INTO products (name, amount, description, price, category_id) VALUES ("AS
 
 INSERT INTO clients(name, address, address_number, address_cep, phone, email, type, city_id) VALUES ("Amélio", "Rua 1", 1, 230, "9919-2033",
 "amelio@hotmail.com", 1, 1);
-INSERT INTO clients_pi(cpf, date_of_birth, client_id) VALUES ("18960196410", "1996-12-02", 1);
+INSERT INTO clients_pi(id, cpf, date_of_birth) VALUES (1, "18960196410", "1996-12-02");
 
 INSERT INTO clients(name, address, address_number, address_cep, phone, email, type, city_id) VALUES ("Bruno", "Rua 2", 2, 240, "9920-2013",
 "bruno@hotmail.com", 1, 2);
-INSERT INTO clients_pi(cpf, date_of_birth, client_id) VALUES ("89761184641", "1990-06-01", 2);
+INSERT INTO clients_pi(id, cpf, date_of_birth) VALUES (2, "89761184641", "1990-06-01");
 
 INSERT INTO clients(name, address, address_number, address_cep, phone, email, type, city_id) VALUES ("Rogério", "Rua 3", 3, 250, "8818-2055",
 "rogerio@hotmail.com", 1, 3);
-INSERT INTO clients_pi(cpf, date_of_birth, client_id) VALUES ("56865189981", "2000-03-05", 3);
+INSERT INTO clients_pi(id, cpf, date_of_birth) VALUES (3, "56865189981", "2000-03-05");
 
 INSERT INTO clients(name, address, address_number, address_cep, phone, email, type, city_id) VALUES ("Thomas", "Rua 4", 4, 260, "8815-2023",
 "thomas@hotmail.com", 1, 2);
-INSERT INTO clients_pi(cpf, date_of_birth, client_id) VALUES ("80078987784", "1995-05-01", 4);
+INSERT INTO clients_pi(id, cpf, date_of_birth) VALUES (4, "80078987784", "1995-05-01");
 
 INSERT INTO clients(name, address, address_number, address_cep, phone, email, type, city_id) VALUES ("Maicon", "Rua 5", 5, 270, "3619-2543",
 "maicon@hotmail.com", 1, 2);
-INSERT INTO clients_pi(cpf, date_of_birth, client_id) VALUES ("05636927584", "1998-06-07", 5);
+INSERT INTO clients_pi(id, cpf, date_of_birth) VALUES (5, "05636927584", "1998-06-07");
 
 
 /* ---------------------------------------------------- */
@@ -198,20 +202,20 @@ INSERT INTO clients_pi(cpf, date_of_birth, client_id) VALUES ("05636927584", "19
 
 INSERT INTO clients(name, address, address_number, address_cep, phone, email, type, city_id) VALUES ("Marcos", "Rua 6", 6, 280, "3623-2010",
 "marcos@gmail.com", 2, 1);
-INSERT INTO clients_pc(cnpj, company_name, client_id) VALUES ("04641158000100", "Contact computadores", 6);
+INSERT INTO clients_pc(id, cnpj, company_name) VALUES (6, "04641158000100", "Contact computadores");
 
 INSERT INTO clients(name, address, address_number, address_cep, phone, email, type, city_id) VALUES ("Leandro", "Rua 7", 8, 290, "9910-2040",
 "leandro@gmail.com",  2, 2);
-INSERT INTO clients_pc(cnpj, company_name, client_id) VALUES ("43441387000124", "Alta tecnologia", 7);
+INSERT INTO clients_pc(id, cnpj, company_name) VALUES (7, "43441387000124", "Alta tecnologia");
 
 INSERT INTO clients(name, address, address_number, address_cep, phone, email, type, city_id) VALUES ("Paulo", "Rua 8", 9, 300, "8818-1033",
 "paulo@gmail.com",  2, 3);
-INSERT INTO clients_pc(cnpj, company_name, client_id) VALUES ("82260863000162", "Milenium informática", 8);
+INSERT INTO clients_pc(id, cnpj, company_name) VALUES (8, "82260863000162", "Milenium informática");
 
 INSERT INTO clients(name, address, address_number, address_cep, phone, email, type, city_id) VALUES ("Guilherme", "Rua 9", 10, 310, "8815-1033",
 "guilherme@gmail.com",  2, 2);
-INSERT INTO clients_pc(cnpj, company_name, client_id) VALUES ("34568180000124", "Tech tudo", 9);
+INSERT INTO clients_pc(id, cnpj, company_name) VALUES (9, "34568180000124", "Tech tudo");
 
 INSERT INTO clients(name, address, address_number, address_cep, phone, email, type, city_id) VALUES ("Juca", "Rua 10", 11, 320, "3619-3543",
 "juca@gmail.com", 2, 2);
-INSERT INTO clients_pc(cnpj, company_name, client_id) VALUES ("36674375000184", "Inf hardware", 10);
+INSERT INTO clients_pc(id, cnpj, company_name) VALUES (10, "36674375000184", "Inf hardware");

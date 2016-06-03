@@ -2,7 +2,6 @@
 
   private $cnpj;
   private $companyName;
-  private $clientId;
 
   public function setCnpj($cnpj) {
     $cnpj = str_replace('.', '', $cnpj);
@@ -21,14 +20,6 @@
 
   public function getCompanyName() {
     return $this->companyName;
-  }
-
-  public function setClientId($clientId) {
-    $this->clientId = $clientId;
-  }
-
-  public function getClientId() {
-    return $this->clientId;
   }
 
   public function validates() {
@@ -57,9 +48,9 @@
     $this->setId($db->lastInsertId());
     $this->setCreatedAt(date());
 
-    $sql = "INSERT INTO clients_pc (company_name, cnpj , client_id) VALUES (:companyName, :cnpj, :client_id);";
+    $sql = "INSERT INTO clients_pc (id, company_name, cnpj) VALUES (:id, :companyName, :cnpj)";
 
-    $params = array('companyName' => $this->companyName, 'cnpj' => $this->cnpj, 'client_id' => $this->id);
+    $params = array('id' => $this->id, 'companyName' => $this->companyName, 'cnpj' => $this->cnpj);
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
@@ -69,23 +60,27 @@
     return true;
   }
 
-
   public function update($data = array()) {
     $this->setData($data);
     if (!$this->isvalid()) return false;
 
     $db = Database::getConnection();
     $params = array($this->name, $this->address, $this->addressNumber, $this->addressCep,
-                    $this->phone, $this->email, $this->cityId, $this->clientId);
+                    $this->phone, $this->email, $this->cityId, $this->id);
 
-    $sql = "UPDATE clients SET name = ?, address = ? , address_number = ?, address_cep = ?, phone = ?, email = ?, city_id = ? WHERE id = ?";
+    $sql = "UPDATE
+              clients
+            SET
+              name = ?, address = ? , address_number = ?, address_cep = ?, phone = ?, email = ?, city_id = ?
+            WHERE
+              id = ?";
 
     $statement = $db->prepare($sql);
     $resp = $statement->execute($params);
 
-    $params = array($this->cnpj, $this->companyName, $this->clientId);
+    $params = array($this->cnpj, $this->companyName, $this->id);
 
-    $sql = "UPDATE clients_pc SET cnpj= ?, company_name = ? WHERE client_id = ?";
+    $sql = "UPDATE clients_pc SET cnpj= ?, company_name = ? WHERE id = ?";
 
     $statement = $db->prepare($sql);
     $resp = $statement->execute($params);
@@ -95,9 +90,8 @@
     return true;
   }
 
-
   public function deleteClient($id) {
-    $sql = "DELETE FROM clients, clients_pc USING clients, clients_pc WHERE clients.id = ? AND clients_pc.client_id =?";
+    $sql = "DELETE FROM clients, clients_pc USING clients, clients_pc WHERE clients.id = ? AND clients_pc.id =?";
 
     $params = array($id, $id);
 
@@ -111,11 +105,11 @@
               c.id, c.name, c.email, c.address, c.address_cep, c.address_number, c.city_id,
               c.phone, c.type, c.created_at, cities.id AS city_id, cities.name AS city_name,
               cities.state_id AS state_id, cities.created_at AS city_created_at, cp.cnpj,
-              cp.company_name, cp.client_id
+              cp.company_name
             FROM
-              clients c, clients_pc cp, cities WHERE (c.city_id = cities.id) AND (c.id = :id) AND (cp.client_id = :id)
+              clients c, clients_pc cp, cities WHERE (c.city_id = cities.id) AND (c.id = :id) AND (cp.id = :id)
             ORDER BY
-              client_id";
+              id";
 
     $params = array('id' => $id, 'id' => $id);
     $db = Database::getConnection();
@@ -137,11 +131,11 @@
               c.id, c.name, c.email, c.address, c.address_cep, c.address_number, c.city_id,
               c.phone, c.type, c.created_at, cities.id AS city_id, cities.name AS city_name,
               cities.state_id AS state_id, cities.created_at AS city_created_at, cp.cnpj,
-              cp.company_name, cp.client_id
+              cp.company_name
             FROM
-              clients c, clients_pc cp, cities WHERE (c.city_id = cities.id) AND (c.id = cp.client_id)
+              clients c, clients_pc cp, cities WHERE (c.city_id = cities.id) AND (c.id = cp.id)
             ORDER BY
-              client_id";
+              id";
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
@@ -170,7 +164,6 @@
     $client->setCnpj($row['cnpj']);
     $client->setCompanyName($row['company_name']);
     $client->setCityId($row['city_id']);
-    $client->setClientId($row['client_id']);
     $client->setCreatedAt($row['created_at']);
 
     $city = new City();
