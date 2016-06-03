@@ -5,7 +5,7 @@ $(document).ready(function() {
   auto_complete();
   close_flash_message();
   mask_money();
-  dropdown();
+  dropdowns();
   inputmasks();
 });
 
@@ -88,14 +88,12 @@ var close_flash_message = function() {
 };
 
 
-var dropdown = function() {
-    $('.ui.menu .ui.dropdown').dropdown({
-      on: 'hover'
-    });
+var dropdowns = function() {
+  $('.ui.menu .ui.dropdown').dropdown({ on: 'hover' });
 
-    $('.ui.menu a.item').on('click', function() {
+  $('.ui.menu a.item').on('click', function() {
       $(this).addClass('active').siblings().removeClass('active');
-    });
+  });
 };
 
 var inputmasks = function() {

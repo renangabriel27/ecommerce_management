@@ -4,7 +4,7 @@
       <?= ViewHelpers::linkTo('/', 'Sistema', 'class="item"', 'class="home icon"') ?>
       <?php if (SessionHelpers::isLoggedIn()): ?>
       <div class="ui simple dropdown item">
-        Olá Renan
+        <i class="user icon"></i> Olá <?= $this->currentEmployee()->getName() ?>
         <i class="dropdown icon"></i>
         <div class="menu">
           <?= ViewHelpers::linkTo('/perfil', 'Perfil', 'class="item"', 'class="settings icon"') ?>
