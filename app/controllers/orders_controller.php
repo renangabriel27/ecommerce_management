@@ -66,7 +66,7 @@
     } else {
      $this->order->addProduct($this->params['product']['id']);
      $this->redirectTo("/pedidos/{$this->order->getId()}");
-   }
+    }
    }
 
    public function addAmountProduct() {

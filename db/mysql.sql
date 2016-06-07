@@ -53,8 +53,7 @@ CREATE TABLE employees (
 	name VARCHAR(50) NOT NULL,
 	email VARCHAR(50) UNIQUE NOT NULL,
 	password VARCHAR(100) NOT NULL,
-  salary DECIMAL(10,2),
-	comission DOUBLE,
+  salary DOUBLE,
 	registration_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 
 	city_id INT NOT NULL,
@@ -72,7 +71,7 @@ CREATE TABLE products (
 	name VARCHAR(50) NOT NULL,
   amount INT,
 	description TEXT,
-	price DECIMAL(10,2) NOT NULL,
+	price DOUBLE NOT NULL,
 	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 
 	category_id INT NOT NULL,
@@ -93,7 +92,7 @@ CREATE TABLE orders (
 
 CREATE TABLE sell_orders_items (
 	id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-	price DECIMAL(10,2) NOT NULL,
+	price DOUBLE NOT NULL,
 	amount INT NOT NULL DEFAULT 1,
 	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 
@@ -131,7 +130,7 @@ INSERT INTO cities (name, state_id) VALUES ("Florianópolis", 3);
 */
 
 INSERT INTO employees (name, email, password, salary, city_id) VALUES ("Rafael", "renan@gmail.com", "62fbe97113baa78a7e2bab0f21b50ef525f6dc37", 1200, 3);
-INSERT INTO employees (name, email, password, salary, city_id) VALUES ("Cintia", "carlos@gmail.com", "62fbe97113baa78a7e2bab0f21b50ef525f6dc37", 1500, 1);
+INSERT INTO employees (name, email, password, salary, city_id) VALUES ("Carlos", "carlos@gmail.com", "62fbe97113baa78a7e2bab0f21b50ef525f6dc37", 1500, 1);
 INSERT INTO employees (name, email, password, salary, city_id) VALUES ("Alisson", "alisson@gmail.com", "62fbe97113baa78a7e2bab0f21b50ef525f6dc37", 2200, 2);
 INSERT INTO employees (name, email, password, salary, city_id) VALUES ("Gabriel", "gabriel@gmail.com", "62fbe97113baa78a7e2bab0f21b50ef525f6dc37", 2200, 2);
 INSERT INTO employees (name, email, password, salary, city_id) VALUES ("João", "joao@gmail.com", "62fbe97113baa78a7e2bab0f21b50ef525f6dc37", 2200, 2);

@@ -58,15 +58,13 @@
     if (!$this->isvalid()) return false;
 
     $db = Database::getConnection();
-    $params = array('name' => $this->name,
-      'email' => $this->email,
-      'id' => $this->id);
+    $params = array('name' => $this->name, 'email' => $this->email, 'id' => $this->id);
 
     if (empty($this->password)) {
-      $sql = "UPDATE users SET name=:name, email=:email WHERE id = :id";
+      $sql = "UPDATE employees SET name=:name, email=:email WHERE id = :id";
     } else {
       $params['password'] = $this->cryptographyPassword($this->password);
-      $sql = "UPDATE users SET name=:name, email=:email, password=:password WHERE id = :id";
+      $sql = "UPDATE employees SET name=:name, email=:email, password=:password WHERE id = :id";
     }
 
     $statement = $db->prepare($sql);

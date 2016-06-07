@@ -1,32 +1,42 @@
 <section>
-  <table class="ui compact celled definition table">
-    <thead class="full-width">
-      <tr>
-        <th>ID</th>
-        <th>Nome</th>
-        <th>Data de criação</th>
-        <th>Opções</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><?= $this->category->getId() ?></td>
-        <td><?= $this->category->getName() ?></td>
-        <td><?= ViewHelpers::dateFormat($this->category->getCreatedAt()); ?></td>
-        <td>
-          <?= ViewHelpers::linkTo("/categorias/{$this->category->getId()}/editar",'', '', 'class="zoom icon"') ?>
-          <?= ViewHelpers::linkTo("/categorias/{$this->category->getId()}/editar", '', '', 'class="edit icon"') ?>
-          <?= ViewHelpers::linkTo("/categorias/{$this->category->getId()}/deletar", '', '', 'class="trash icon"') ?>
-        </td>
-      </tr>
-    </tbody>
-    <tfoot class="full-width">
-      <tr>
-        <th colspan="8">
-          <?= ViewHelpers::linkTo("/categorias/novo", 'Nova categoria', 'class="ui right floated small primary labeled icon button"', 'class="add circle icon"') ?>
-          <?= ViewHelpers::linkTo("/categorias", 'Voltar', 'class="ui right floated small labeled icon button"', 'class="reply icon"') ?>
-        </th>
-      </tr>
-    </tfoot>
-  </table>
+  <header class="ui dividing header">
+    <h2><?= $this->title ?></h2>
+  </header>
+  <article>
+
+    <div class="ui segment">
+
+      <table class="ui celled table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th><?= $this->category->getId() ?></th>
+          </tr>
+          <tr>
+            <th>Nome</th>
+            <th><?= $this->category->getName() ?></th>
+          </tr>
+          <tr>
+            <th>Data de criação</th>
+            <th><?= ViewHelpers::dateFormat($this->category->getCreatedAt()); ?></th>
+          </tr>
+          <tr>
+            <th>Opções</th>
+            <th>
+              <?= ViewHelpers::linkTo("/categorias/{$this->category->getId()}/editar", '', '', 'class="edit icon"') ?>
+              <?= ViewHelpers::linkTo("/categorias/{$this->category->getId()}/deletar", '', 'data-confirm="Tem certeza que deseja deletar?"', 'class="trash icon"') ?>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+
+      <div class="ui buttons">
+        <?= ViewHelpers::linkTo("/categorias", 'Cancelar', 'class="ui labeled icon button"', 'class="reply icon"') ?>
+      </div>
+    </div>
+  </div>
+
+</article>
 </section>

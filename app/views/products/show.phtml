@@ -22,7 +22,7 @@
           </tr>
           <tr>
             <th>Preço</th>
-            <th><?= $this->product->getPrice() ?></th>
+            <th><?= ViewHelpers::currencyFormat($this->product->getPrice()) ?></th>
           </tr>
           <tr>
             <th>Categoria</th>

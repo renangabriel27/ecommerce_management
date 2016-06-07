@@ -76,9 +76,9 @@
     $router->get('/clientes/nova-pessoa-fisica', array('controller' => 'ClientsPiController', 'action' => '_new'));
     $router->post('/clientes/pessoa-fisica', array('controller' => 'ClientsPiController', 'action' => 'create'));
     $router->get('/clientes/:id/pessoa-fisica', array('controller' => 'ClientsPiController', 'action' => 'show'));
-    $router->get('/clientes/:id/editar/pessoa-fisica', array('controller' => 'ClientsPiController', 'action' => 'edit'));
+    $router->get('/clientes/:id/editar-pessoa-fisica', array('controller' => 'ClientsPiController', 'action' => 'edit'));
     $router->post('/clientes/:id/pessoa-fisica', array('controller' => 'ClientsPiController', 'action' => 'update'));
-    $router->get('/clientes/:id/deletar/pessoa-fisica', array('controller' => 'ClientsPiController', 'action' => 'destroy'));
+    $router->get('/clientes/:id/deletar-pessoa-fisica', array('controller' => 'ClientsPiController', 'action' => 'destroy'));
 
     /* Fim das rotas para os clientes físicos
     --------------------------------- */

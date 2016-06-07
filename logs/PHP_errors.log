@@ -1,0 +1,80 @@
+[03-Jun-2016 18:54:07 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/client_pc.php on line 49
+[03-Jun-2016 18:54:38 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/client_pi.php on line 48
+[03-Jun-2016 18:58:46 America/Sao_Paulo] PHP Notice:  Undefined index: Employee in /var/www/ecommerce_management/app/controllers/employees_controller.php on line 38
+[03-Jun-2016 18:58:46 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ecommerce_management/core/models/base.php on line 67
+[03-Jun-2016 19:19:05 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/order.php on line 76
+[03-Jun-2016 19:19:07 America/Sao_Paulo] PHP Notice:  Undefined index: status in /var/www/ecommerce_management/app/models/order.php on line 225
+[03-Jun-2016 19:19:07 America/Sao_Paulo] PHP Notice:  Undefined index: created_at in /var/www/ecommerce_management/app/models/order.php on line 226
+[03-Jun-2016 19:23:25 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/order.php on line 76
+[03-Jun-2016 19:32:40 America/Sao_Paulo] PHP Fatal error:  Call to undefined method Order::getClient() in /var/www/ecommerce_management/app/views/orders/index.phtml on line 19
+[03-Jun-2016 19:34:42 America/Sao_Paulo] PHP Fatal error:  Call to undefined method Order::getClient() in /var/www/ecommerce_management/app/views/orders/index.phtml on line 19
+[03-Jun-2016 19:34:47 America/Sao_Paulo] PHP Notice:  Undefined variable: clientId in /var/www/ecommerce_management/app/models/order.php on line 19
+[03-Jun-2016 19:34:48 America/Sao_Paulo] PHP Fatal error:  Call to undefined method Order::getClient() in /var/www/ecommerce_management/app/views/orders/index.phtml on line 19
+[03-Jun-2016 19:36:14 America/Sao_Paulo] PHP Fatal error:  Call to a member function getName() on null in /var/www/ecommerce_management/app/views/orders/_form_order_items.phtml on line 2
+[05-Jun-2016 14:35:23 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`sell_orders_items`, CONSTRAINT `sell_orders_items_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`))' in /var/www/ecommerce_management/core/models/base.php:90
+Stack trace:
+#0 /var/www/ecommerce_management/core/models/base.php(90): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(44): Base->delete('orders')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->destroy()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(101): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/core/models/base.php on line 90
+[05-Jun-2016 14:36:02 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/client_pi.php on line 48
+[05-Jun-2016 14:45:55 America/Sao_Paulo] PHP Notice:  Undefined variable: client in /var/www/ecommerce_management/app/views/clients_pi/show.phtml on line 54
+[05-Jun-2016 14:45:55 America/Sao_Paulo] PHP Fatal error:  Call to a member function getId() on null in /var/www/ecommerce_management/app/views/clients_pi/show.phtml on line 54
+[05-Jun-2016 14:46:33 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`orders`, CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`))' in /var/www/ecommerce_management/app/models/client_pi.php:120
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/client_pi.php(120): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/clients_pi_controller.php(67): ClientPi->deleteClient('1')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): ClientsPiController->destroy()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(101): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/client_pi.php on line 120
+[05-Jun-2016 14:46:40 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`sell_orders_items`, CONSTRAINT `sell_orders_items_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`))' in /var/www/ecommerce_management/core/models/base.php:90
+Stack trace:
+#0 /var/www/ecommerce_management/core/models/base.php(90): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(44): Base->delete('orders')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->destroy()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(101): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/core/models/base.php on line 90
+[05-Jun-2016 14:47:52 America/Sao_Paulo] PHP Fatal error:  Call to a member function getId() on null in /var/www/ecommerce_management/app/controllers/clients_pi_controller.php on line 46
+[05-Jun-2016 14:48:01 America/Sao_Paulo] PHP Fatal error:  Call to a member function getId() on null in /var/www/ecommerce_management/app/controllers/clients_pi_controller.php on line 46
+[05-Jun-2016 14:48:05 America/Sao_Paulo] PHP Fatal error:  Call to a member function deleteClient() on null in /var/www/ecommerce_management/app/controllers/clients_pi_controller.php on line 67
+[06-Jun-2016 19:35:50 America/Sao_Paulo] PHP Notice:  Undefined property: CategoriesController::$title in /var/www/ecommerce_management/app/views/categories/show.phtml on line 3
+[06-Jun-2016 19:37:01 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`products`, CONSTRAINT `products_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`))' in /var/www/ecommerce_management/core/models/base.php:90
+Stack trace:
+#0 /var/www/ecommerce_management/core/models/base.php(90): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/categories_controller.php(59): Base->delete('categories')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): CategoriesController->destroy()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(101): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/core/models/base.php on line 90
+[06-Jun-2016 19:37:54 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`products`, CONSTRAINT `products_ibfk_1` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`))' in /var/www/ecommerce_management/core/models/base.php:90
+Stack trace:
+#0 /var/www/ecommerce_management/core/models/base.php(90): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/categories_controller.php(59): Base->delete('categories')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): CategoriesController->destroy()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(101): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/core/models/base.php on line 90
+[06-Jun-2016 22:33:16 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/order.php on line 85
+[06-Jun-2016 22:33:21 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/order.php on line 85
+[06-Jun-2016 22:33:57 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/order.php on line 85
+[06-Jun-2016 22:34:13 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/order.php on line 85
+[06-Jun-2016 22:34:31 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`sell_orders_items`, CONSTRAINT `sell_orders_items_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`))' in /var/www/ecommerce_management/core/models/base.php:90
+Stack trace:
+#0 /var/www/ecommerce_management/core/models/base.php(90): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(44): Base->delete('orders')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->destroy()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(101): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/core/models/base.php on line 90
+[06-Jun-2016 22:34:52 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/order.php on line 85
+[06-Jun-2016 22:35:23 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/order.php on line 85

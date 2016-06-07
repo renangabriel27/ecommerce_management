@@ -145,7 +145,7 @@
     return $statement->execute($params);
   }
 
-  
+
 
   public static function all() {
     $sql = "SELECT

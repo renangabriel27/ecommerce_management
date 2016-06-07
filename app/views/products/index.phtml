@@ -18,7 +18,7 @@
             <td><?= $product->getId() ?></td>
             <td><?= $product->getName() ?></td>
             <td><?= $product->getAmount() ?></td>
-            <td><?= $product->getPrice() ?></td>
+            <td><?= ViewHelpers::currencyFormat($product->getPrice()) ?></td>
             <td><?= $product->getCategory()->getName() ?></td>
             <td><?= ViewHelpers::dateFormat($product->getCreatedAt()); ?></td>
             <td>

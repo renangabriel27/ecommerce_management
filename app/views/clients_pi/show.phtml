@@ -48,6 +48,13 @@
             <th>Data de criação</th>
             <th><?= ViewHelpers::dateFormat($this->client->getCreatedAt()) ?></th>
           </tr>
+          <tr>
+            <th>Opções</th>
+            <th>
+              <?= ViewHelpers::linkTo("/clientes/{$this->client->getId()}/editar-pessoa-fisica", '', '', 'class="edit icon"') ?>
+              <?= ViewHelpers::linkTo("/clientes/{$this->client->getId()}/deletar-pessoa-fisica", '', 'data-confirm="Tem certeza que deseja deletar?"', 'class="trash icon"') ?>
+            </th>
+          </tr>
         </thead>
         <tbody>
         </tbody>

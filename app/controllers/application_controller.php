@@ -28,14 +28,4 @@
     }
   }
 
-  public function newClientType($type, $client = '') {
-    if (!$client) return ($type == 1) ? new ClientPi() : new ClientPc();
-
-    return ($type == 1) ? new ClientPi($client) : new ClientPc($client);
-  }
-
-  public function clientForm($type) {
-    return ($type == 1) ? '_form_client_pi.phtml' : '_form_client_pc.phtml';
-  }
-
 }

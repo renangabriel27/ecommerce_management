@@ -35,7 +35,7 @@
   public function update() {
     $this->employee = $this->currentEmployee();
 
-    if ($this->employee->update($this->params['Employee'])) {
+    if ($this->employee->update($this->params['employee'])) {
       Flash::message('success', 'Registro atualizado com sucesso!');
       $this->redirectTo('/');
     } else {

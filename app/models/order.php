@@ -1,6 +1,7 @@
 <?php class Order extends Base {
 
   private $employeeId;
+  private $clientId;
   private $client;
   private $amount;
   private $total;
@@ -14,11 +15,19 @@
     return $this->employeeId;
   }
 
-  public function setClientId($client) {
-      $this->client = $client;
+  public function setClientId($clientId) {
+      $this->clientId = $clientId;
   }
 
   public function getClientId() {
+    return $this->clientId;
+  }
+
+  public function setClient($client) {
+    $this->client = $client;
+  }
+
+  public function getClient() {
     return $this->client;
   }
 
@@ -47,8 +56,8 @@
   }
 
   public function validates() {
-    Validations::notEmpty($this->client, 'client_id', $this->errors);
-    Validations::uniqueField($this->client, 'client_id', 'orders', $this->errors);
+    Validations::notEmpty($this->clientId, 'client_id', $this->errors);
+    Validations::uniqueField($this->clientId, 'client_id', 'orders', $this->errors);
   }
 
   public function save() {
@@ -60,7 +69,7 @@
               (:client_id, :employee_id)";
 
     $this->employeeId = SessionHelpers::currentEmployee()->getId();
-    $params = array('client_id' => $this->client, 'employee_id' => $this->employeeId);
+    $params = array('client_id' => $this->clientId, 'employee_id' => $this->employeeId);
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
@@ -84,7 +93,7 @@
               sell_orders_items, products
             WHERE
               ((sell_orders_items.order_id = ?) AND (products.id = sell_orders_items.product_id))";
-              
+
     $params = array($this->id);
 
     $db = Database::getConnection();
@@ -189,19 +198,7 @@
     if(!$resp) return $orders;
 
     while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-      $order = new Order();
-      $order->setId($row['id']);
-      $order->setStatus($row['status']);
-      $order->setCreatedAt($row['created_at']);
-
-      $client = new Client();
-      $client->setId($row['client_id']);
-      $client->setName($row['client_name']);
-      $client->setEmail($row['client_email']);
-
-      $order->setClientId($client);
-
-      $orders[] = $order;
+      $orders[] = self::createOrder($row);
     }
     return $orders;
   }
@@ -209,14 +206,14 @@
   public static function findById($id) {
     $db = Database::getConnection();
     $sql = "SELECT
-              orders.id AS id, clients.id AS client_id, clients.name AS client_name,
-              clients.email AS client_email
+              o.id AS id, o.created_at AS created_at, o.status AS status,
+              c.id AS client_id, c.name AS client_name, c.email AS client_email
             FROM
-              clients, orders
+              clients c, orders o
             WHERE
-              (orders.client_id = clients.id)
+              (o.client_id = c.id)
             AND
-              (orders.id = ? )";
+              (o.id = ? )";
 
     $params = array($id);
 
@@ -225,22 +222,26 @@
     $resp = $statement->execute($params);
 
     if ($resp && $row = $statement->fetch(PDO::FETCH_ASSOC)) {
-      $order = new Order();
-      $order->setId($row['id']);
-
-      $client = new Client();
-      $client->setId($row['client_id']);
-      $client->setName($row['client_name']);
-      $client->setEmail($row['client_email']);
-
-      $order->setClientId($client);
-      return $order;
+      return self::createOrder($row);
     }
 
     return null;
   }
 
+  private static function createOrder($row) {
+    $order = new Order();
+    $order->setId($row['id']);
+    $order->setStatus($row['status']);
+    $order->setCreatedAt($row['created_at']);
 
+    $client = new Client();
+    $client->setId($row['client_id']);
+    $client->setName($row['client_name']);
+    $client->setEmail($row['client_email']);
 
+    $order->setClient($client);
+
+    return $order;
+  }
 
 } ?>

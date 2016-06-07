@@ -8,6 +8,7 @@
   }
 
   public function show() {
+    $this->title = "Visualizar categoria";
     $this->category = Category::findById($this->params[':id']);
   }
 

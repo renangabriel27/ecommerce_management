@@ -95,10 +95,6 @@ class ViewHelpers {
     }
   }
 
-  public static function clientType($client) {
-    return ($client == 1) ? 'Pessoa física' : 'Pessoa jurídica';
-  }
-
   /*
    * Função para converter boleano em formato amigável
    */
