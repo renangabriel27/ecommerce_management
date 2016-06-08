@@ -32,15 +32,20 @@
   }
 
   public function setAmount($amount) {
-      $this->amount = $amount;
+    $this->amount = $amount;
   }
 
   public function getAmount() {
     return $this->amount;
   }
 
-  public function setTotal($total) {
-      $this->total = $total;
+  public function setTotal($total = '') {
+    if (preg_match('/R\$/', $total)) {
+      $total = str_replace('.', '', $total);
+      $total = str_replace(',', '.', $total);
+      $total = str_replace('R$', '', $total);
+    }
+    $this->total = $this->getItemsTotal();
   }
 
   public function getTotal() {
@@ -53,6 +58,23 @@
 
   public function getStatus() {
     return $this->status;
+  }
+
+  public function getItemsTotal() {
+    $sql = "SELECT amount, price FROM sell_orders_items WHERE order_id = ?";
+    $params = array($this->id);
+
+    $db = Database::getConnection();
+    $statement = $db->prepare($sql);
+    $resp = $statement->execute($params);
+
+    if(!$resp) return false;
+
+    while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+      $itemsTotal = $row['amount'] * $row['price'];
+      $this->total += $itemsTotal;
+    }
+    return $this->total;
   }
 
   public function validates() {
@@ -111,6 +133,19 @@
     return $products;
   }
 
+  public function updateTotal($orderId) {
+    $sql = "UPDATE orders set total = ? WHERE id = ?";
+    $params = array($this->total, $orderId);
+
+    $db = Database::getConnection();
+    $statement = $db->prepare($sql);
+    $resp = $statement->execute($params);
+
+    if(!$resp) return false;
+
+    return true;
+  }
+
   public function addProduct($id) {
     $sql = "INSERT INTO
               sell_orders_items (price, order_id, product_id)
@@ -142,6 +177,17 @@
       return false;
     }
     return true;
+  }
+
+  public function sum() {
+    $sql = "SELECT SUM(amount) FROM sell_orders_items WHERE order_id = ?";
+
+    $params = array($this->id);
+    $db = Database::getConnection();
+    $statement = $db->prepare($sql);
+    $statement->execute($params);
+
+    return $statement->fetch()[0];
   }
 
   public function getSellOrderItem($id) {
@@ -178,7 +224,7 @@
 
   public static function all() {
     $sql = "SELECT
-              orders.id AS id, orders.created_at AS created_at, orders.status AS status,
+              orders.id AS id, orders.created_at AS created_at,  orders.total AS total, orders.status AS status,
               clients.id AS client_id, clients.name AS client_name, clients.email AS client_email
             FROM
               clients
@@ -206,7 +252,7 @@
   public static function findById($id) {
     $db = Database::getConnection();
     $sql = "SELECT
-              o.id AS id, o.created_at AS created_at, o.status AS status,
+              o.id AS id, o.created_at AS created_at, o.status AS status, o.total AS total,
               c.id AS client_id, c.name AS client_name, c.email AS client_email
             FROM
               clients c, orders o
@@ -232,6 +278,7 @@
     $order = new Order();
     $order->setId($row['id']);
     $order->setStatus($row['status']);
+    $order->setTotal($row['total']);
     $order->setCreatedAt($row['created_at']);
 
     $client = new Client();

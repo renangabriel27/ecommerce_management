@@ -17,8 +17,8 @@
       <tr>
         <td><?= $order->getId() ?></td>
         <td><?= $order->getClient()->getName() ?></td>
-        <td></td>
-        <td></td>
+        <td><?= $order->sum() ?></td>
+        <td><?= ViewHelpers::currencyFormat($order->getTotal()) ?></td>
         <td><?= ViewHelpers::dateFormat($order->getCreatedAt()) ?></td>
         <td><?= $order->getStatus() ?></td>
         <td>

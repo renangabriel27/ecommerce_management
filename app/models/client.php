@@ -111,9 +111,9 @@
             VALUES
               (:name, :email, :phone, :date_of_birth, :address, :address_number, :address_cep, :city_id, :type);";
 
-    $params = array('name' => $this->name, 'email' => $this->email, 'phone' => $this->phone, 'date_of_birth' => $this->dateOfBirth,
-                    'city_id' => $this->city, 'address' => $this->address, 'address_number' => $this->addressNumber, 'address_cep' => $this->addressCep,
-                    'type' => $this->type);
+    $params = array('name' => $this->name, 'email' => $this->email, 'phone' => $this->phone,
+                    'date_of_birth' => $this->dateOfBirth, 'city_id' => $this->city, 'address' => $this->address,
+                    'address_number' => $this->addressNumber, 'address_cep' => $this->addressCep, 'type' => $this->type);
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);

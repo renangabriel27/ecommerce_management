@@ -38,7 +38,7 @@
   }
 
   public function validates() {
-
+    Validations::notEmpty($this->productId, 'id', $this->errors);
   }
 
   public static function addProduct($id, $order) {
