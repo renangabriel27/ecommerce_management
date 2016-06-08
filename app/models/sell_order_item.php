@@ -41,8 +41,8 @@
     Validations::notEmpty($this->productId, 'id', $this->errors);
   }
 
-  public static function addProduct($id, $order) {
-    $amount = (int) self::getAmountOfProduct($id, $order);
+  public function addProduct($id, $order) {
+    $amount = $this->getAmountOfProduct($id, $order);
     $amount++;
 
     $db = Database::getConnection();
@@ -52,8 +52,8 @@
     return $statement->execute($params);
   }
 
-  public static function removeProduct($id, $order) {
-    $amount = (int) self::getAmountOfProduct($id, $order);
+  public function removeProduct($id, $order) {
+    $amount = $this->getAmountOfProduct($id, $order);
     if(($amount-1) == 0) {
       $sellOrderItem = self::findById($id, $order);
       return $sellOrderItem->delete('sell_orders_items');
@@ -66,15 +66,14 @@
     return $statement->execute($params);
   }
 
-  public static function getAmountOfProduct($id, $order) {
+  public function getAmountOfProduct($id, $order) {
       $db = Database::getConnection();
       $params = array($id, $order);
       $sql = "SELECT amount FROM sell_orders_items WHERE product_id = ? AND order_id = ?";
       $statement = $db->prepare($sql);
-      $statement->execute($params);
-      $resp = $statement->fetch(PDO::FETCH_ASSOC);
-      $amount = $resp['amount'];
-      return $amount;
+      $statement->execute($params);;
+
+      return $statement->fetch()[0];
   }
 
   public static function findById($productId, $orderId) {

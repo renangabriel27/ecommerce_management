@@ -9,6 +9,7 @@
 
    public function show() {
      $this->order = Order::findById($this->params[':id']);
+     $this->sellOrderItem = new SellOrderItem();
      $this->title = 'Pedido';
      $this->submit = "Adicionar";
      $this->action =  ViewHelpers::urlFor('/pedidos/produtos');
@@ -70,7 +71,9 @@
      $orderId = $this->params[':id'];
      $this->order = Order::findById($orderId);
      $this->product = $this->params[':product_id'];
-     SellOrderItem::addProduct($this->product, $orderId);
+
+     $this->sellOrderItem = new SellOrderItem();
+     $this->sellOrderItem->addProduct($this->product, $orderId);
      $this->redirectTo("/pedidos/{$this->order->getId()}");
    }
 
@@ -78,7 +81,9 @@
      $orderId = $this->params[':id'];
      $this->order = Order::findById($orderId);
      $this->product = $this->params[':product_id'];
-     SellOrderItem::removeProduct($this->product, $orderId);
+
+     $this->sellOrderItem = new SellOrderItem();
+     $this->sellOrderItem->removeProduct($this->product, $orderId);
      $this->redirectTo("/pedidos/{$this->order->getId()}");
    }
 
