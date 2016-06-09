@@ -57,7 +57,10 @@
    public function addOrderProduct() {
      $this->order = Order::findById($this->params['order']['id']);
      $this->sellOrderItem = SellOrderItem::findById($this->params['product']['id'], $this->params['order']['id']);
-
+     if($this->params['product']['name'] == NULL) {
+       Flash::message('negative', 'Insira algum produto!');
+       $this->redirectTo("/pedidos/{$this->order->getId()}");
+     }
      if($this->order->uniqueItem($this->params['product']['id'])) {
       Flash::message('negative', 'Esse produto já está cadastrado no pedido!');
       $this->redirectTo("/pedidos/{$this->order->getId()}");

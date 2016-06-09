@@ -27,7 +27,6 @@
     }
     else {
       Flash::message('negative', 'Existem dados inválidos!');
-      $this->categories = Category::all();
       $this->action = ViewHelpers::urlFor('/categorias');
       $this->submit = 'Nova Categoria';
       $this->render('new');

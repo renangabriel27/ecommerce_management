@@ -5,6 +5,7 @@
    public function index() {
       $this->title = "Listagem de produtos";
       $this->products = Product::all();
+      $this->action = "/produtos/search";
    }
 
    public function show() {
@@ -61,6 +62,23 @@
      $product->delete('products');
      Flash::message('success', 'Produto deletado com sucesso');
      $this->redirectTo("/produtos");
+   }
+
+   public function search() {
+     $this->title = "Listagem de produtos";
+     $this->product = new Product();
+     $this->products = $this->product->productSearch($this->params['product']['name']);
+     $this->action = "/produtos/search";
+
+     if($this->products) {
+       Flash::message("success", "Produto(s) encontrado(s)!");
+     } else {
+       Flash::message("negative", "Nenhum produto encontrado!");
+       $this->products = Product::all();
+       ViewHelpers::redirectTo("/produtos");
+     }
+
+       $this->action = "/produtos/search";
    }
 
    public function autoCompleteSearch() {

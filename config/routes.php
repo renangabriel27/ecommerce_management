@@ -55,6 +55,7 @@
     ------------------------- */
     $router->get('/produtos/autocomplete-search', array('controller' => 'ProductsController', 'action' => 'autoCompleteSearch'));
     $router->get('/produtos/autocomplete-search-id', array('controller' => 'ProductsController', 'action' => 'autoCompleteSearchId'));
+    $router->get('/produtos/search', array('controller' => 'ProductsController', 'action' => 'search'));
 
     $router->get('/produtos', array('controller' => 'ProductsController', 'action' => 'index'));
     $router->get('/produtos/page/:page', array('controller' => 'ProductsController', 'action' => 'index'));

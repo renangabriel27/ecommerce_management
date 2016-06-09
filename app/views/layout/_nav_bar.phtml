@@ -11,12 +11,6 @@
           <?= ViewHelpers::linkTo('/logout', 'Sair', 'class="item"', 'class="sign out icon"') ?>
         </div>
       </div>
-      <div class="right item">
-        <div class="ui icon input">
-          <input class="prompt" type="text" placeholder="search...">
-          <i class="search link icon"></i>
-        </div>
-      </div>
       <?php else: ?>
         <?= ViewHelpers::linkTo('/login', 'Login', 'class="item"', 'class="protect icon"') ?>
       <?php endif ?>

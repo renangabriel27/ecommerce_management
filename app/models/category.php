@@ -90,8 +90,8 @@
     $categories = [];
     if(!$resp) return $categories;
 
-    while($category = $statement->fetch(PDO::FETCH_ASSOC)) {
-      $categories[] = new Category($category);
+    while($row= $statement->fetch(PDO::FETCH_ASSOC)) {
+      $categories[] = new Category($row);
     }
     return $categories;
   }

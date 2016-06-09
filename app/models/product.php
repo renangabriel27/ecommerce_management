@@ -115,6 +115,34 @@
     return true;
   }
 
+  public function productSearch($param) {
+    $sql = "SELECT
+              p.id AS id, p.name AS product_name, p.amount AS product_amount,
+              p.price AS product_price, p.description AS product_description,
+              p.created_at AS product_created_at, c.id AS category_id,
+              c.name AS category_name, c.created_at AS category_created_at
+            FROM
+              products p JOIN categories c ON(p.category_id = c.id)
+            WHERE
+              p.name LIKE :param ORDER BY p.name";
+
+    $params = array('param' => "%{$param}%");
+
+    $db = Database::getConnection();
+    $statement = $db->prepare($sql);
+    $resp = $statement->execute($params);
+
+    $products = [];
+
+    if(!$resp) return $products;
+
+    while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+      $products[] =  self::createProduct($row);
+    }
+
+    return $products;
+  }
+
   public static function findById($id) {
     $db = Database::getConnection();
     $sql = "SELECT
