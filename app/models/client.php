@@ -167,25 +167,7 @@
     if(!$resp) return $clients;
 
     while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-      $client = new Client();
-      $client->setId($row['client_id']);
-      $client->setName($row['client_name']);
-      $client->setEmail($row['client_email']);
-      $client->setAddress($row['client_address']);
-      $client->setAddressNumber($row['client_address_number']);
-      $client->setAddressCep($row['client_cep']);
-      $client->setPhone($row['client_phone']);
-      $client->setType($row['client_type']);
-      $client->setCreatedAt($row['client_created_at']);
-
-      $city = new City();
-      $city->setId($row['city_id']);
-      $city->setName($row['city_name']);
-      $city->setStateId($row['state_id']);
-
-      $client->setCityId($city);
-
-      $clients[] = $client;
+      $clients[] = self::createClient($row);
     }
     return $clients;
   }
@@ -219,6 +201,28 @@
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
     return $statement->execute($params);
+  }
+
+  private static function createClient($row) {
+    $client = new Client();
+    $client->setId($row['client_id']);
+    $client->setName($row['client_name']);
+    $client->setEmail($row['client_email']);
+    $client->setAddress($row['client_address']);
+    $client->setAddressNumber($row['client_address_number']);
+    $client->setAddressCep($row['client_cep']);
+    $client->setPhone($row['client_phone']);
+    $client->setType($row['client_type']);
+    $client->setCreatedAt($row['client_created_at']);
+
+    $city = new City();
+    $city->setId($row['city_id']);
+    $city->setName($row['city_name']);
+    $city->setStateId($row['state_id']);
+
+    $client->setCity($city);
+
+    return $client;
   }
 
 

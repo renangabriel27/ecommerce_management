@@ -3,7 +3,7 @@
   protected $beforeAction = array('authenticated' => 'all');
 
   public function index() {
-    $this->title = 'Listagem de categorias';
+    $this->title = 'Categorias';
     $this->categories = Category::all();
   }
 

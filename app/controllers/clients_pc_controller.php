@@ -3,7 +3,7 @@
   protected $beforeAction = array('authenticated' => 'all');
 
   public function index() {
-     $this->title = 'Sistema';
+     $this->title = "Clientes (Pessoa jurídica)";
      $this->clients = ClientPc::all();
   }
 

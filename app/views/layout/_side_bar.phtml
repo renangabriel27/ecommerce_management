@@ -3,13 +3,20 @@
     <div class="row">
       <div class="ui segment">
         <div class="column">
-          <div class="ui vertical menu">
+          <div class="ui vertical menu" id="sidebar">
             <div class="item">
-              <div class="header">Categorias</div>
-              <div class="menu">
-                  <?= ViewHelpers::linkTo('/categorias', 'Visualizar categorias', 'class="item"') ?>
-                  <?= ViewHelpers::linkTo('/categorias/novo', 'Cadastro de categorias', 'class="item"') ?>
+                <div class="header">Clientes</div>
+                <div class="menu">
+                  <?= ViewHelpers::linkTo('/clientes/pessoa-fisica', 'Visualizar clientes', 'class="item"') ?>
+                  <?= ViewHelpers::linkTo('/clientes/nova-pessoa-fisica', 'Cadastro de cliente', 'class="item"') ?>
+                </div>
               </div>
+              <div class="item">
+                <div class="header">Pedidos</div>
+                <div class="menu">
+                  <?= ViewHelpers::linkTo('/pedidos', 'Visualizar pedidos', 'class="item"') ?>
+                  <?= ViewHelpers::linkTo('/pedidos/novo', 'Cadastro de pedidos', 'class="item"') ?>
+                </div>
             </div>
             <div class="item">
               <div class="header">Produtos</div>
@@ -19,18 +26,10 @@
               </div>
             </div>
             <div class="item">
-              <div class="header">Pedidos</div>
+              <div class="header">Categorias</div>
               <div class="menu">
-                <?= ViewHelpers::linkTo('/pedidos', 'Visualizar pedidos', 'class="item"') ?>
-                <?= ViewHelpers::linkTo('/pedidos/novo', 'Cadastro de pedidos', 'class="item"') ?>
-              </div>
-            </div>
-            <div class="item">
-              <div class="header">Clientes</div>
-              <div class="menu">
-                <?= ViewHelpers::linkTo('/clientes/pessoa-fisica', 'Visualizar clientes físicos', 'class="item"') ?>
-                <?= ViewHelpers::linkTo('/clientes/pessoa-juridica', 'Visualizar clientes jurídicos', 'class="item"') ?>
-                <?= ViewHelpers::linkTo('/clientes/nova-pessoa-fisica', 'Cadastro de cliente', 'class="item"') ?>
+                  <?= ViewHelpers::linkTo('/categorias', 'Visualizar categorias', 'class="item"') ?>
+                  <?= ViewHelpers::linkTo('/categorias/novo', 'Cadastro de categorias', 'class="item"') ?>
               </div>
             </div>
             <div class="item">

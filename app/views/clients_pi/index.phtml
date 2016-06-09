@@ -1,6 +1,12 @@
 <section>
+  <header class="ui dividing header">
+    <h2><?= $this->title ?></h2>
+  </header>
 
-      <table class="ui compact celled definition table">
+  <article>
+
+
+    <table class="ui compact celled definition table">
       <thead class="full-width">
         <tr>
           <th>ID</th>
@@ -14,31 +20,33 @@
       </thead>
       <tbody>
         <?php
-          foreach ($this->clients as $client): ?>
-          <tr>
-            <td><?= $client->getId() ?></td>
-            <td><?= $client->getName() ?></td>
-            <td><?= $client->getEmail() ?></td>
-            <td><?= $client->getAddressCep() ?></td>
-            <td><?= $client->getPhone() ?></td>
-            <td><?= $client->getCity()->getName() ?></td>
-            <td>
-              <?= ViewHelpers::linkTo("/clientes/{$client->getId()}/pessoa-fisica", '', '', 'class="zoom icon"') ?>
-              <?= ViewHelpers::linkTo("/clientes/{$client->getId()}/editar-pessoa-fisica", '', '', 'class="edit icon"') ?>
-              <?= ViewHelpers::linkTo("/clientes/{$client->getId()}/deletar-pessoa-fisica", '', 'data-confirm="Tem certeza que deseja deletar?"', 'class="trash icon"') ?>
-            </td>
-          </tr>
+        foreach ($this->clients as $client): ?>
+        <tr>
+          <td><?= $client->getId() ?></td>
+          <td><?= $client->getName() ?></td>
+          <td><?= $client->getEmail() ?></td>
+          <td><?= $client->getAddressCep() ?></td>
+          <td><?= $client->getPhone() ?></td>
+          <td><?= $client->getCity()->getName() ?></td>
+          <td>
+            <?= ViewHelpers::linkTo("/clientes/{$client->getId()}/pessoa-fisica", '', '', 'class="zoom icon"') ?>
+            <?= ViewHelpers::linkTo("/clientes/{$client->getId()}/editar-pessoa-fisica", '', '', 'class="edit icon"') ?>
+            <?= ViewHelpers::linkTo("/clientes/{$client->getId()}/deletar-pessoa-fisica", '', 'data-confirm="Tem certeza que deseja deletar?"', 'class="trash icon"') ?>
+          </td>
+        </tr>
         <?php endForeach; ?>
       </tbody>
       <tfoot class="full-width">
         <tr>
-          <th colspan="9">
+          <th colspan="8">
             <?= ViewHelpers::linkTo("/clientes/nova-pessoa-fisica", 'Novo cliente', 'class="ui left floated small primary labeled icon button"', 'class="add circle icon"') ?>
+            <?= ViewHelpers::linkTo("/clientes/pessoa-fisica", 'Pessoa física', 'class="ui button"') ?>
+            <?= ViewHelpers::linkTo("/clientes/pessoa-juridica", 'Pessoa jurídica', 'class="ui button"') ?>
           </th>
         </tr>
       </tfoot>
     </table>
   </div>
 </div>
-
+</article>
 </section>

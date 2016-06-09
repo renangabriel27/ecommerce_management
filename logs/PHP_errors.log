@@ -86,3 +86,67 @@ Stack trace:
 #4 /var/www/ecommerce_management/config/routes.php(102): Router->load()
 #5 {main}
   thrown in /var/www/ecommerce_management/app/models/product.php on line 133
+[09-Jun-2016 00:08:43 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`orders`, CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`))' in /var/www/ecommerce_management/app/models/client_pc.php:100
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/client_pc.php(100): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/clients_pc_controller.php(67): ClientPc->deleteClient('6')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): ClientsPcController->destroy()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(102): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/client_pc.php on line 100
+[09-Jun-2016 01:46:34 America/Sao_Paulo] PHP Warning:  require(views/clients/index.phtml): failed to open stream: No such file or directory in /var/www/ecommerce_management/app/views/layout/application.phtml on line 39
+[09-Jun-2016 01:46:34 America/Sao_Paulo] PHP Fatal error:  require(): Failed opening required 'views/clients/index.phtml' (include_path='.:/usr/share/php:/usr/share/pear:/var/www/ecommerce_management:/var/www/ecommerce_management/config/:/var/www/ecommerce_management/app/:/var/www/ecommerce_management/lib/:/var/www/ecommerce_management/vendor/') in /var/www/ecommerce_management/app/views/layout/application.phtml on line 39
+[09-Jun-2016 01:47:17 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ClientsPiController::indexClients() in /var/www/ecommerce_management/core/routes/router.php on line 47
+[09-Jun-2016 01:47:37 America/Sao_Paulo] PHP Warning:  require(views/clients_pi/indexClients.phtml): failed to open stream: No such file or directory in /var/www/ecommerce_management/app/views/layout/application.phtml on line 39
+[09-Jun-2016 01:47:37 America/Sao_Paulo] PHP Fatal error:  require(): Failed opening required 'views/clients_pi/indexClients.phtml' (include_path='.:/usr/share/php:/usr/share/pear:/var/www/ecommerce_management:/var/www/ecommerce_management/config/:/var/www/ecommerce_management/app/:/var/www/ecommerce_management/lib/:/var/www/ecommerce_management/vendor/') in /var/www/ecommerce_management/app/views/layout/application.phtml on line 39
+[09-Jun-2016 01:48:47 America/Sao_Paulo] PHP Warning:  require(views/clients_pi/indexClients.phtml): failed to open stream: No such file or directory in /var/www/ecommerce_management/app/views/layout/application.phtml on line 39
+[09-Jun-2016 01:48:47 America/Sao_Paulo] PHP Fatal error:  require(): Failed opening required 'views/clients_pi/indexClients.phtml' (include_path='.:/usr/share/php:/usr/share/pear:/var/www/ecommerce_management:/var/www/ecommerce_management/config/:/var/www/ecommerce_management/app/:/var/www/ecommerce_management/lib/:/var/www/ecommerce_management/vendor/') in /var/www/ecommerce_management/app/views/layout/application.phtml on line 39
+[09-Jun-2016 01:48:49 America/Sao_Paulo] PHP Warning:  require(views/clients_pi/indexClients.phtml): failed to open stream: No such file or directory in /var/www/ecommerce_management/app/views/layout/application.phtml on line 39
+[09-Jun-2016 01:48:49 America/Sao_Paulo] PHP Fatal error:  require(): Failed opening required 'views/clients_pi/indexClients.phtml' (include_path='.:/usr/share/php:/usr/share/pear:/var/www/ecommerce_management:/var/www/ecommerce_management/config/:/var/www/ecommerce_management/app/:/var/www/ecommerce_management/lib/:/var/www/ecommerce_management/vendor/') in /var/www/ecommerce_management/app/views/layout/application.phtml on line 39
+[09-Jun-2016 01:52:09 America/Sao_Paulo] PHP Fatal error:  Class 'Router' not found in /var/www/ecommerce_management/config/routes.php on line 3
+[09-Jun-2016 01:52:40 America/Sao_Paulo] PHP Fatal error:  Class 'Router' not found in /var/www/ecommerce_management/config/routes.php on line 3
+[09-Jun-2016 01:52:47 America/Sao_Paulo] PHP Warning:  require(views/clients_pi/indexClients.phtml): failed to open stream: No such file or directory in /var/www/ecommerce_management/app/views/layout/application.phtml on line 39
+[09-Jun-2016 01:52:47 America/Sao_Paulo] PHP Fatal error:  require(): Failed opening required 'views/clients_pi/indexClients.phtml' (include_path='.:/usr/share/php:/usr/share/pear:/var/www/ecommerce_management:/var/www/ecommerce_management/config/:/var/www/ecommerce_management/app/:/var/www/ecommerce_management/lib/:/var/www/ecommerce_management/vendor/') in /var/www/ecommerce_management/app/views/layout/application.phtml on line 39
+[09-Jun-2016 01:55:00 America/Sao_Paulo] PHP Warning:  require(views/clients_pi/indexClients.phtml): failed to open stream: No such file or directory in /var/www/ecommerce_management/app/views/layout/application.phtml on line 39
+[09-Jun-2016 01:55:00 America/Sao_Paulo] PHP Fatal error:  require(): Failed opening required 'views/clients_pi/indexClients.phtml' (include_path='.:/usr/share/php:/usr/share/pear:/var/www/ecommerce_management:/var/www/ecommerce_management/config/:/var/www/ecommerce_management/app/:/var/www/ecommerce_management/lib/:/var/www/ecommerce_management/vendor/') in /var/www/ecommerce_management/app/views/layout/application.phtml on line 39
+[09-Jun-2016 01:55:01 America/Sao_Paulo] PHP Warning:  require(views/clients_pi/indexClients.phtml): failed to open stream: No such file or directory in /var/www/ecommerce_management/app/views/layout/application.phtml on line 39
+[09-Jun-2016 01:55:01 America/Sao_Paulo] PHP Fatal error:  require(): Failed opening required 'views/clients_pi/indexClients.phtml' (include_path='.:/usr/share/php:/usr/share/pear:/var/www/ecommerce_management:/var/www/ecommerce_management/config/:/var/www/ecommerce_management/app/:/var/www/ecommerce_management/lib/:/var/www/ecommerce_management/vendor/') in /var/www/ecommerce_management/app/views/layout/application.phtml on line 39
+[09-Jun-2016 01:55:05 America/Sao_Paulo] PHP Warning:  require(views/clients_pi/indexClients.phtml): failed to open stream: No such file or directory in /var/www/ecommerce_management/app/views/layout/application.phtml on line 39
+[09-Jun-2016 01:55:05 America/Sao_Paulo] PHP Fatal error:  require(): Failed opening required 'views/clients_pi/indexClients.phtml' (include_path='.:/usr/share/php:/usr/share/pear:/var/www/ecommerce_management:/var/www/ecommerce_management/config/:/var/www/ecommerce_management/app/:/var/www/ecommerce_management/lib/:/var/www/ecommerce_management/vendor/') in /var/www/ecommerce_management/app/views/layout/application.phtml on line 39
+[09-Jun-2016 01:56:17 America/Sao_Paulo] PHP Warning:  require(views/clients_pi/indexClients.phtml): failed to open stream: No such file or directory in /var/www/ecommerce_management/app/views/layout/application.phtml on line 39
+[09-Jun-2016 01:56:17 America/Sao_Paulo] PHP Fatal error:  require(): Failed opening required 'views/clients_pi/indexClients.phtml' (include_path='.:/usr/share/php:/usr/share/pear:/var/www/ecommerce_management:/var/www/ecommerce_management/config/:/var/www/ecommerce_management/app/:/var/www/ecommerce_management/lib/:/var/www/ecommerce_management/vendor/') in /var/www/ecommerce_management/app/views/layout/application.phtml on line 39
+[09-Jun-2016 01:56:35 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsPiController::$title in /var/www/ecommerce_management/app/views/clients_pi/index_clients.phtml on line 3
+[09-Jun-2016 01:56:35 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsPiController::$clients in /var/www/ecommerce_management/app/views/clients_pi/index_clients.phtml on line 21
+[09-Jun-2016 01:56:35 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ecommerce_management/app/views/clients_pi/index_clients.phtml on line 21
+[09-Jun-2016 01:57:08 America/Sao_Paulo] PHP Warning:  require(views/clients_pi/indexClients.phtml): failed to open stream: No such file or directory in /var/www/ecommerce_management/app/views/layout/application.phtml on line 39
+[09-Jun-2016 01:57:08 America/Sao_Paulo] PHP Fatal error:  require(): Failed opening required 'views/clients_pi/indexClients.phtml' (include_path='.:/usr/share/php:/usr/share/pear:/var/www/ecommerce_management:/var/www/ecommerce_management/config/:/var/www/ecommerce_management/app/:/var/www/ecommerce_management/lib/:/var/www/ecommerce_management/vendor/') in /var/www/ecommerce_management/app/views/layout/application.phtml on line 39
+[09-Jun-2016 01:57:30 America/Sao_Paulo] PHP Fatal error:  Call to a member function getName() on null in /var/www/ecommerce_management/app/views/clients_pi/index.phtml on line 28
+[09-Jun-2016 01:57:37 America/Sao_Paulo] PHP Fatal error:  Class 'Clients' not found in /var/www/ecommerce_management/app/controllers/clients_pi_controller.php on line 7
+[09-Jun-2016 01:57:40 America/Sao_Paulo] PHP Fatal error:  Call to a member function getName() on null in /var/www/ecommerce_management/app/views/clients_pi/index.phtml on line 28
+[09-Jun-2016 01:58:51 America/Sao_Paulo] PHP Fatal error:  Call to a member function getId() on null in /var/www/ecommerce_management/app/views/clients_pi/index.phtml on line 23
+[09-Jun-2016 02:00:54 America/Sao_Paulo] PHP Fatal error:  Call to a member function getId() on null in /var/www/ecommerce_management/app/controllers/clients_pi_controller.php on line 51
+[09-Jun-2016 02:00:58 America/Sao_Paulo] PHP Fatal error:  Call to a member function getId() on null in /var/www/ecommerce_management/app/controllers/clients_pi_controller.php on line 51
+[09-Jun-2016 02:01:12 America/Sao_Paulo] PHP Fatal error:  Call to a member function getId() on null in /var/www/ecommerce_management/app/controllers/clients_pi_controller.php on line 51
+[09-Jun-2016 02:01:15 America/Sao_Paulo] PHP Fatal error:  Call to a member function getId() on null in /var/www/ecommerce_management/app/controllers/clients_pi_controller.php on line 51
+[09-Jun-2016 02:01:23 America/Sao_Paulo] PHP Fatal error:  Call to a member function getName() on null in /var/www/ecommerce_management/app/views/clients_pi/show.phtml on line 13
+[09-Jun-2016 02:01:26 America/Sao_Paulo] PHP Fatal error:  Call to a member function getName() on null in /var/www/ecommerce_management/app/views/clients_pi/show.phtml on line 13
+[09-Jun-2016 02:07:00 America/Sao_Paulo] PHP Notice:  Undefined variable: client in /var/www/ecommerce_management/app/views/clients_pi/index.phtml on line 10
+[09-Jun-2016 02:07:00 America/Sao_Paulo] PHP Fatal error:  Call to a member function getId() on null in /var/www/ecommerce_management/app/views/clients_pi/index.phtml on line 10
+[09-Jun-2016 02:07:12 America/Sao_Paulo] PHP Notice:  Undefined variable: client in /var/www/ecommerce_management/app/views/clients_pi/index.phtml on line 10
+[09-Jun-2016 02:07:12 America/Sao_Paulo] PHP Fatal error:  Call to a member function getId() on null in /var/www/ecommerce_management/app/views/clients_pi/index.phtml on line 10
+[09-Jun-2016 02:07:16 America/Sao_Paulo] PHP Notice:  Undefined variable: client in /var/www/ecommerce_management/app/views/clients_pi/index.phtml on line 10
+[09-Jun-2016 02:07:16 America/Sao_Paulo] PHP Fatal error:  Call to a member function getId() on null in /var/www/ecommerce_management/app/views/clients_pi/index.phtml on line 10
+[09-Jun-2016 02:07:31 America/Sao_Paulo] PHP Notice:  Undefined variable: client in /var/www/ecommerce_management/app/views/clients_pi/index.phtml on line 10
+[09-Jun-2016 02:07:31 America/Sao_Paulo] PHP Fatal error:  Call to a member function getId() on null in /var/www/ecommerce_management/app/views/clients_pi/index.phtml on line 10
+[09-Jun-2016 02:09:47 America/Sao_Paulo] PHP Warning:  Missing argument 2 for ViewHelpers::linkTo(), called in /var/www/ecommerce_management/app/views/clients_pi/index.phtml on line 11 and defined in /var/www/ecommerce_management/core/views/view_helpers.php on line 44
+[09-Jun-2016 02:09:47 America/Sao_Paulo] PHP Notice:  Undefined variable: name in /var/www/ecommerce_management/core/views/view_helpers.php on line 49
+[09-Jun-2016 02:18:58 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`sell_orders_items`, CONSTRAINT `sell_orders_items_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`))' in /var/www/ecommerce_management/core/models/base.php:90
+Stack trace:
+#0 /var/www/ecommerce_management/core/models/base.php(90): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(44): Base->delete('orders')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->destroy()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(102): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/core/models/base.php on line 90

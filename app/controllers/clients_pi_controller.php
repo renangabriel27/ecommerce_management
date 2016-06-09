@@ -3,8 +3,13 @@
   protected $beforeAction = array('authenticated' => 'all');
 
   public function index() {
-     $this->title = 'Sistema';
+     $this->title = "Clientes (Pessoa física)";
      $this->clients = ClientPi::all();
+  }
+
+  public function indexClients() {
+     $this->title = "Clientes";
+     $this->clients = Client::all();
   }
 
   public function show() {

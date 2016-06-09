@@ -3,7 +3,7 @@
    protected $beforeAction = array('authenticated' => 'all');
 
    public function index() {
-      $this->title = "Listagem de produtos";
+      $this->title = "Produtos";
       $this->products = Product::all();
       $this->action = "/produtos/search";
    }
@@ -65,7 +65,7 @@
    }
 
    public function search() {
-     $this->title = "Listagem de produtos";
+     $this->title = "Produtos";
      $this->product = new Product();
      $this->products = $this->product->productSearch($this->params['product']['name']);
      $this->action = "/produtos/search";
