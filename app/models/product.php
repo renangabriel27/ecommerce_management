@@ -143,6 +143,50 @@
     return $products;
   }
 
+  public function removeProductOfStock() {
+    if($this->amount == 0) return false;
+    
+    $this->amount--;
+    $sql = "UPDATE products set amount = ? WHERE id = ?";
+    $params = array($this->amount, $this->id);
+
+    $db = Database::getConnection();
+    $statement = $db->prepare($sql);
+    $resp = $statement->execute($params);
+
+    if(!$resp) return false;
+
+    return true;
+  }
+
+  public function addProductOnStock() {
+    $this->amount++;
+    $sql = "UPDATE products set amount = ? WHERE id = ?";
+    $params = array($this->amount, $this->id);
+
+    $db = Database::getConnection();
+    $statement = $db->prepare($sql);
+    $resp = $statement->execute($params);
+
+    if(!$resp) return false;
+
+    return true;
+  }
+
+  public function restoreProductOnStock($amount) {
+    $this->amount += $amount;
+    $sql = "UPDATE products set amount = ? WHERE id = ?";
+    $params = array($this->amount, $this->id);
+
+    $db = Database::getConnection();
+    $statement = $db->prepare($sql);
+    $resp = $statement->execute($params);
+
+    if(!$resp) return false;
+
+    return true;
+  }
+
   public static function findById($id) {
     $db = Database::getConnection();
     $sql = "SELECT
@@ -153,7 +197,7 @@
             FROM
               products p, categories c
             WHERE
-              (p.category_id = c.id) ORDER BY product_created_at DESC";
+              (p.category_id = c.id) AND (p.id = ?)";
 
     $params = array($id);
 

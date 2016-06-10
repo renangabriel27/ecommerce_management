@@ -41,7 +41,7 @@
     $router->post('/pedidos', array('controller' => 'OrdersController', 'action' => 'create'));
     $router->get('/pedidos/novo', array('controller' => 'OrdersController', 'action' => '_new'));
     $router->post('/pedidos/produtos', array('controller' => 'OrdersController', 'action' => 'addOrderProduct'));
-    $router->get('/pedidos/:id', array('controller' => 'OrdersController', 'action' => 'show'));
+    $router->get('/pedidos/:id', array('controller' => 'OrdersController', 'action' => 'edit'));
     $router->get('/pedidos/:id/deletar', array('controller' => 'OrdersController', 'action' => 'destroy'));
     $router->get('/pedidos/:id/fechar', array('controller' => 'OrdersController', 'action' => 'closeOrder'));
     $router->get('/pedidos/:id/produtos/:product_id/deletar', array('controller' => 'OrdersController', 'action' => 'destroyProduct'));

@@ -27,8 +27,10 @@
           <td><?= ViewHelpers::dateFormat($order->getCreatedAt()) ?></td>
           <td><?= $order->getStatus() ?></td>
           <td>
-            <?= ViewHelpers::linkTo("/pedidos/{$order->getId()}", '', '', 'class="zoom icon"') ?>
-            <?= ViewHelpers::linkTo("/pedidos/{$order->getId()}", '', '', 'class="edit icon"') ?>
+              <?= ViewHelpers::linkTo("/pedidos/{$order->getId()}", '', '', 'class="zoom icon"') ?>
+            <?php if($order->getStatus() == "Aberto"): ?>
+              <?= ViewHelpers::linkTo("/pedidos/{$order->getId()}", '', '', 'class="edit icon"') ?>
+            <?php endIf; ?>
             <?= ViewHelpers::linkTo("/pedidos/{$order->getId()}/deletar", '', 'data-confirm="Deseja excluir pedido?"', 'class="trash icon"') ?>
           </td>
         </tr>

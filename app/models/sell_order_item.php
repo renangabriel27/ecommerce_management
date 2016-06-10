@@ -49,7 +49,10 @@
     $params = array('product_id' => $id, 'amount' => $amount, 'order_id' => $order);
     $sql = "UPDATE sell_orders_items SET amount= :amount WHERE product_id = :product_id AND order_id = :order_id";
     $statement = $db->prepare($sql);
-    return $statement->execute($params);
+    $resp = $statement->execute($params);
+    if(!$resp) return false;
+
+    return true;
   }
 
   public function removeProduct($id, $order) {

@@ -1,28 +1,45 @@
-<form role="form" class="ui form" action="<?= $this->action ?>" method="POST">
-  <p>Cliente : <?= $this->order->getClient()->getName() ?></p>
-  <div class="field <?= $this->order->getErrors('id') ?>">
-    <label class="sr-only" for="autocomplete_product_by_id">ID do produto</label>
-    <input type="number" id="autocomplete_product_by_id" name="product[id]"
-      placeholder="Código do produto" min="0"
-      data-url="<?= ViewHelpers::urlFor('/produtos/autocomplete-search-id') ?>" >
-      <div class="ui pointing <?= $this->order->getErrors('id') ? 'red basic label' : '' ?>"><?= $this->order->getErrors('id') ?></div>
-  </div>
+<section>
+  <header>
+    <h2 class="ui dividing header"><?= $this->title ?></h2>
+  </header>
+  <article>
+    <?php require '_form_order_product.phtml'; ?>
 
-  <div class="field">
-    <label class="sr-only" for="autocomplete_product_by_name"> Nome do Produto </label>
-    <div class="ui search">
-      <div class="ui icon input">
-        <input type="text" id="autocomplete_product_by_name"
-        name="product[name]" data-url="<?= ViewHelpers::urlFor('/produtos/autocomplete-search') ?>"
-        placeholder="Nome do produto">
-        <i class="search icon"></i>
-
-      </div>
-    </div>
-  </div>
-
-  <input type="hidden" class="form-control" id="order_id" value="<?= $this->order->getId() ?>" name="order[id]">
-
-  <?= ViewHelpers::buttonTo($this->submit, 'class="ui primary button"') ?>
-  <?= ViewHelpers::linkTo("/pedidos", 'Voltar', 'class="ui left floated small labeled icon button"', 'class="reply icon"') ?>
-</form>
+    <table class="ui table">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Nome</th>
+          <th>Quantidade</th>
+          <th>Preço Unitário</th>
+          <th>Preço</th>
+          <th>Opções</th>
+        </tr>
+      </thead>
+      <tbody>
+        <?php foreach($this->order->getProducts() as $product) : ?>
+            <tr>
+              <td><?= $product->getId() ?></td>
+              <td><?= $product->getName() ?></td>
+              <td>
+                <?= $amount = $this->sellOrderItem->getAmountOfProduct($product->getId(), $this->order->getId()) ?>
+                <?= ViewHelpers::linkTo("/pedidos/{$this->order->getId()}/produtos/{$product->getId()}/adicionar", "", '', 'class="add square icon"') ?>
+                <?= ViewHelpers::linkTo("/pedidos/{$this->order->getId()}/produtos/{$product->getId()}/remover", '', '', 'class="minus square icon"') ?>
+              </td>
+              <td><?= ViewHelpers::currencyFormat($product->getPrice()) ?></td>
+              <td><?= $price_amount = ViewHelpers::currencyFormat($product->getPrice() * $amount) ?>
+              </td>
+              <td><?= ViewHelpers::linkTo("/pedidos/{$this->order->getId()}/produtos/{$product->getId()}/deletar", '', 'data-confirm="Tem certeza que deseja deletar o produto?"', 'class="trash icon"') ?></td>
+            </tr>
+      </tbody>
+      <?php endForeach; ?>
+      <tfoot>
+        <th colspan="3"></th>
+        <th>TOTAL</th>
+        <th colspan="2"><?= ViewHelpers::currencyFormat($this->order->getTotal()) ?></th>
+      </tfoots>
+    </table>
+      <input type="hidden" value="<?= $this->order->updateTotal($this->order->getId()) ?>"></input>
+      <?= ViewHelpers::linkTo("/pedidos/{$this->order->getId()}/fechar", 'Fechar pedido', 'class="ui right floated primary labeled icon button"', 'class="unlock alternate icon"') ?>
+  </article>
+</section>
