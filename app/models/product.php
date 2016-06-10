@@ -145,7 +145,7 @@
 
   public function removeProductOfStock() {
     if($this->amount == 0) return false;
-    
+
     $this->amount--;
     $sql = "UPDATE products set amount = ? WHERE id = ?";
     $params = array($this->amount, $this->id);
