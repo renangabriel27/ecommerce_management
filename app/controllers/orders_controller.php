@@ -72,11 +72,10 @@
       Flash::message('negative', 'Esse produto já está cadastrado no pedido!');
       $this->redirectTo("/pedidos/{$this->order->getId()}");
     } else {
-
-     if($this->product->removeProductOfStock()) {
-       $this->order->addProduct($this->params['product']['id']);
-     } else {
-       Flash::message('negative', 'Acabou o produto no estoque!');
+       if($this->product->removeProductOfStock()) {
+         $this->order->addProduct($this->params['product']['id']);
+       } else {
+         Flash::message('negative', 'Acabou o produto no estoque!');
      }
      $this->redirectTo("/pedidos/{$this->order->getId()}");
     }

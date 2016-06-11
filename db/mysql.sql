@@ -266,8 +266,35 @@ INSERT INTO clients_pc(id, cnpj, company_name) VALUES (10, "36674375000184", "In
 
 
 /*
-*** Dumping data for table `orders and sell_orders_items`
+*** Dumping data for table `orders'
 */
 
-INSERT INTO orders (total, created_at, status, client_id, employee_id) VALUES ("517.49", '2016-06-10 00:53:00', "Fechado", 1, 1);
-INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("517.49", 1, '2016-06-10 00:53:00', 1, 2);
+INSERT INTO orders (total, created_at, status, client_id, employee_id) VALUES ("417.49", '2016-06-10 18:56:30', "Fechado", 6, 1);
+INSERT INTO orders (total, created_at, status, client_id, employee_id) VALUES ("1969.96", '2016-06-10 18:56:30', "Fechado", 1, 1);
+INSERT INTO orders (total, created_at, status, client_id, employee_id) VALUES ("2209.65", '2016-06-10 19:09:07', "Fechado", 5, 1);
+INSERT INTO orders (total, created_at, status, client_id, employee_id) VALUES ("775.1", '2016-06-10 19:17:13', "Fechado", 4, 1);
+INSERT INTO orders (total, created_at, status, client_id, employee_id) VALUES ("4186.1", '2016-06-10 19:26:01', "Fechado", 2, 1);
+INSERT INTO orders (total, created_at, status, client_id, employee_id) VALUES ("12550.2", '2016-06-10 19:32:28', "Fechado", 3, 1);
+INSERT INTO orders (total, created_at, status, client_id, employee_id) VALUES ("155.02", '2016-06-10 20:09:07', "Fechado", 7, 1);
+INSERT INTO orders (total, created_at, status, client_id, employee_id) VALUES ("1838.04", '2016-06-10 20:17:13', "Fechado", 8, 1);
+
+/* ---------------------------------------------------- */
+
+
+/*
+*** Dumping data for table `orders'
+*/
+
+INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("417.49", 1, '2016-06-10 18:56:30', 1, 1);
+INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("417.49", 1, '2016-06-10 18:56:30', 2, 1);
+INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("517.49", 3, '2016-06-10 18:56:30', 2, 2);
+INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("434.75", 1, '2016-06-10 19:09:07', 3, 32);
+INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("823.95", 2, '2016-06-10 19:09:07', 3, 40);
+INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("127", 1, '2016-06-10 19:09:07', 3, 43);
+INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("155.05", 5, '2016-06-10 19:17:13', 4, 27);
+INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("78.9", 5, '2016-06-10 19:26:01', 5, 46);
+INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("823.95", 4, '2016-06-10 19:26:01', 5, 40);
+INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("247.9", 2, '2016-06-10 19:26:01', 5, 30);
+INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("1255.02", 10, '2016-06-10 19:32:28', 6, 17);
+INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("155.02", 1, '2016-06-10 20:09:07', 7, 27);
+INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("919.02", 2, '2016-06-10 20:09:07', 8, 6);
