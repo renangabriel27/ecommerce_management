@@ -46,23 +46,6 @@
      $this->redirectTo("/pedidos");
    }
 
-   public function destroyProduct() {
-     $orderId = $this->params[':id'];
-     $productId = $this->params[':product_id'];
-
-     $this->order = Order::findById($orderId);
-     $this->product = Product::findById($productId);
-     $sellOrderItem = SellOrderItem::findById($productId, $orderId);
-
-     $amount = $sellOrderItem->getAmountOfProduct($productId, $orderId);
-     $this->product->restoreProductOnStock($amount);
-
-     $sellOrderItem->delete('sell_orders_items');
-     Flash::message('success', 'Produto deletado com sucesso do pedido');
-
-     $this->redirectTo("/pedidos/{$this->order->getId()}");
-   }
-
    public function addOrderProduct() {
      $orderId = $this->params['order']['id'];
      $productId = $this->params['product']['id'];
@@ -86,36 +69,6 @@
          }
          $this->redirectTo("/pedidos/{$this->order->getId()}");
      }
-   }
-
-   public function addAmountProduct() {
-     $orderId = $this->params[':id'];
-     $productId = $this->params[':product_id'];
-
-     $this->order = Order::findById($orderId);
-     $this->product = Product::findById($productId);
-     $this->sellOrderItem = SellOrderItem::findById($productId, $orderId);
-
-     if($this->product->removeProductOfStock()) {
-       $this->sellOrderItem->addProduct();
-     } else {
-       Flash::message('negative', 'Acabou o produto no estoque!');
-     }
-     $this->redirectTo("/pedidos/{$this->order->getId()}");
-   }
-
-   public function removeAmountProduct() {
-     $orderId = $this->params[':id'];
-     $productId = $this->params[':product_id'];
-
-     $this->order = Order::findById($orderId);
-     $this->product = Product::findById($productId);
-     $this->sellOrderItem = SellOrderItem::findById($productId, $orderId);
-
-     if($this->sellOrderItem->removeProduct()) {
-       $this->product->addProductOnStock();
-     }
-     $this->redirectTo("/pedidos/{$this->order->getId()}");
    }
 
    public function closeOrder() {
