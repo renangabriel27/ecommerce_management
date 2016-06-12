@@ -146,12 +146,12 @@
     return true;
   }
 
-  public function addProduct($id) {
+  public function addProduct($productId) {
     $sql = "INSERT INTO
               sell_orders_items (price, order_id, product_id)
             VALUES
-              ((SELECT price FROM products WHERE products.id = :product_id) , :order_id, :product_id)";
-    $params = array('product_id' => $id, 'order_id' => $this->id);
+              ((SELECT price FROM products WHERE products.id = :product_id), :order_id, :product_id)";
+    $params = array('product_id' => $productId, 'order_id' => $this->id);
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
@@ -210,13 +210,15 @@
     return $sell_order_item;
   }
 
-  public function changeStatusOrder($id) {
-    $db = Database::getConnection();
-    $this->status = "Fechado";
-    $params = array('id' => $id, 'status' => $this->status);
+  public function changeStatusOrder() {
+    $this->status = 'Fechado';
+    $params = array('id' => $this->id, 'status' => $this->status);
     $sql = "UPDATE orders SET status= :status WHERE id = :id";
+
+    $db = Database::getConnection();
     $statement = $db->prepare($sql);
     $resp = $statement->execute($params);
+
     if($resp) return true;
 
     return false;

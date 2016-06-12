@@ -143,48 +143,38 @@
     return $products;
   }
 
+  public function updateProductOnStock() {
+    $sql = "UPDATE products set amount = ? WHERE id = ?";
+    $params = array($this->amount, $this->id);
+
+    $db = Database::getConnection();
+    $statement = $db->prepare($sql);
+    $resp = $statement->execute($params);
+
+    if(!$resp) return false;
+
+    return true;
+  }
+
   public function removeProductOfStock() {
     if($this->amount == 0) return false;
 
     $this->amount--;
-    $sql = "UPDATE products set amount = ? WHERE id = ?";
-    $params = array($this->amount, $this->id);
-
-    $db = Database::getConnection();
-    $statement = $db->prepare($sql);
-    $resp = $statement->execute($params);
-
-    if(!$resp) return false;
-
-    return true;
+    if($this->updateProductOnStock()) return true;
+    return false;
   }
 
   public function addProductOnStock() {
     $this->amount++;
-    $sql = "UPDATE products set amount = ? WHERE id = ?";
-    $params = array($this->amount, $this->id);
-
-    $db = Database::getConnection();
-    $statement = $db->prepare($sql);
-    $resp = $statement->execute($params);
-
-    if(!$resp) return false;
-
-    return true;
+    if($this->updateProductOnStock()) return true;
+    return false;
   }
 
   public function restoreProductOnStock($amount) {
     $this->amount += $amount;
-    $sql = "UPDATE products set amount = ? WHERE id = ?";
-    $params = array($this->amount, $this->id);
+    if($this->updateProductOnStock()) return true;
 
-    $db = Database::getConnection();
-    $statement = $db->prepare($sql);
-    $resp = $statement->execute($params);
-
-    if(!$resp) return false;
-
-    return true;
+    return false;
   }
 
   public static function findById($id) {

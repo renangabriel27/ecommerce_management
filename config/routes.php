@@ -44,8 +44,8 @@
     $router->get('/pedidos/:id', array('controller' => 'OrdersController', 'action' => 'edit'));
     $router->get('/pedidos/:id/deletar', array('controller' => 'OrdersController', 'action' => 'destroy'));
     $router->get('/pedidos/:id/fechar', array('controller' => 'OrdersController', 'action' => 'closeOrder'));
-    $router->get('/pedidos/:id/produtos/:product_id/deletar', array('controller' => 'OrdersController', 'action' => 'destroyProduct'));
     $router->get('/pedidos/:id/produtos/:product_id/adicionar', array('controller' => 'OrdersController', 'action' => 'addAmountProduct'));
+    $router->get('/pedidos/:id/produtos/:product_id/deletar', array('controller' => 'OrdersController', 'action' => 'destroyProduct'));
     $router->get('/pedidos/:id/produtos/:product_id/remover', array('controller' => 'OrdersController', 'action' => 'removeAmountProduct'));
 
     /* Fim das rotas para os pedidos

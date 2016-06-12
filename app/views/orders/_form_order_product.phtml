@@ -1,11 +1,11 @@
 <form role="form" class="ui form" action="<?= $this->action ?>" method="POST">
   <p>Cliente : <?= $this->order->getClient()->getName() ?></p>
-  <div class="field <?= $this->order->getErrors('id') ?>">
+    <div class="field  <?= $this->sellOrderItem->getErrors('id') ? 'error' : ' '?>">
     <label class="sr-only" for="autocomplete_product_by_id">ID do produto</label>
     <input type="number" id="autocomplete_product_by_id" name="product[id]"
       placeholder="Código do produto" min="0"
       data-url="<?= ViewHelpers::urlFor('/produtos/autocomplete-search-id') ?>" >
-      <div class="ui pointing <?= $this->order->getErrors('id') ? 'red basic label' : '' ?>"><?= $this->order->getErrors('id') ?></div>
+      <div class="ui pointing <?= $this->sellOrderItem->getErrors('id') ? 'red basic label' : '' ?>"><?= $this->sellOrderItem->getErrors('id') ?></div>
   </div>
 
   <div class="field">
@@ -16,7 +16,6 @@
         name="product[name]" data-url="<?= ViewHelpers::urlFor('/produtos/autocomplete-search') ?>"
         placeholder="Nome do produto">
         <i class="search icon"></i>
-
       </div>
     </div>
   </div>

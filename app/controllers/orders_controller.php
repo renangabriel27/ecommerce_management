@@ -47,22 +47,29 @@
    }
 
    public function destroyProduct() {
-     $this->order = Order::findById($this->params[':id']);
-     $sellOrderItem = SellOrderItem::findById($this->params[':product_id'], $this->params[':id']);
-     $this->product = Product::findById($this->params[':product_id']);
+     $orderId = $this->params[':id'];
+     $productId = $this->params[':product_id'];
 
-     $amount = $sellOrderItem->getAmountOfProduct($this->params[':product_id'], $this->params[':id']);
+     $this->order = Order::findById($orderId);
+     $this->product = Product::findById($productId);
+     $sellOrderItem = SellOrderItem::findById($productId, $orderId);
+
+     $amount = $sellOrderItem->getAmountOfProduct($productId, $orderId);
      $this->product->restoreProductOnStock($amount);
 
      $sellOrderItem->delete('sell_orders_items');
      Flash::message('success', 'Produto deletado com sucesso do pedido');
+
      $this->redirectTo("/pedidos/{$this->order->getId()}");
    }
 
    public function addOrderProduct() {
-     $this->order = Order::findById($this->params['order']['id']);
-     $this->sellOrderItem = SellOrderItem::findById($this->params['product']['id'], $this->params['order']['id']);
-     $this->product = Product::findById($this->params['product']['id']);
+     $orderId = $this->params['order']['id'];
+     $productId = $this->params['product']['id'];
+
+     $this->order = Order::findById($orderId);
+     $this->product = Product::findById($productId);
+     $this->sellOrderItem = SellOrderItem::findById($productId, $orderId);
 
      if($this->params['product']['name'] == NULL) {
        Flash::message('negative', 'Insira algum produto!');
@@ -71,26 +78,26 @@
      if($this->order->uniqueItem($this->params['product']['id'])) {
       Flash::message('negative', 'Esse produto já está cadastrado no pedido!');
       $this->redirectTo("/pedidos/{$this->order->getId()}");
-    } else {
-       if($this->product->removeProductOfStock()) {
-         $this->order->addProduct($this->params['product']['id']);
-       } else {
-         Flash::message('negative', 'Acabou o produto no estoque!');
+     } else {
+         if($this->product->removeProductOfStock()) {
+           $this->order->addProduct($productId);
+         } else {
+           Flash::message('negative', 'Acabou o produto no estoque!');
+         }
+         $this->redirectTo("/pedidos/{$this->order->getId()}");
      }
-     $this->redirectTo("/pedidos/{$this->order->getId()}");
-    }
    }
 
    public function addAmountProduct() {
      $orderId = $this->params[':id'];
      $productId = $this->params[':product_id'];
+
      $this->order = Order::findById($orderId);
      $this->product = Product::findById($productId);
-
-     $this->sellOrderItem = new SellOrderItem();
+     $this->sellOrderItem = SellOrderItem::findById($productId, $orderId);
 
      if($this->product->removeProductOfStock()) {
-       $this->sellOrderItem->addProduct($productId, $orderId);
+       $this->sellOrderItem->addProduct();
      } else {
        Flash::message('negative', 'Acabou o produto no estoque!');
      }
@@ -100,11 +107,12 @@
    public function removeAmountProduct() {
      $orderId = $this->params[':id'];
      $productId = $this->params[':product_id'];
+
      $this->order = Order::findById($orderId);
      $this->product = Product::findById($productId);
+     $this->sellOrderItem = SellOrderItem::findById($productId, $orderId);
 
-     $this->sellOrderItem = new SellOrderItem();
-     if($this->sellOrderItem->removeProduct($productId, $orderId)) {
+     if($this->sellOrderItem->removeProduct()) {
        $this->product->addProductOnStock();
      }
      $this->redirectTo("/pedidos/{$this->order->getId()}");
@@ -112,7 +120,8 @@
 
    public function closeOrder() {
      $this->order = Order::findById($this->params[':id']);
-     if($this->order->changeStatusOrder($this->params[':id'])) {
+
+     if($this->order->changeStatusOrder()) {
        Flash::message('positive', 'Pedido fechado com sucesso!');
        $this->redirectTo("/pedidos");
      } else {
