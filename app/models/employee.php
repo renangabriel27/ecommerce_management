@@ -3,6 +3,9 @@
   private $name;
   private $email;
   private $password;
+  private $salary;
+  private $cityId;
+  private $city;
 
   public function setName($name) {
     $this->name = $name;
@@ -20,6 +23,30 @@
 
   public function setPassword($password) {
     $this->password= $password;
+  }
+
+  public function setSalary($salary) {
+    $this->salary = $salary;
+  }
+
+  public function getSalary() {
+    return $this->salary;
+  }
+
+  public function setCityId($cityId) {
+    $this->cityId = $cityId;
+  }
+
+  public function getCityId() {
+    return $this->getCityId;
+  }
+
+  public function setCity($city) {
+    $this->city = $city;
+  }
+
+  public function getCity() {
+    return $this->city;
   }
 
   public function validates() {
@@ -84,8 +111,14 @@
   }
 
   public static function findById($id) {
-    $db = Database::getConnection();
-    $sql = "SELECT id, name, email, password FROM employees WHERE id = ?";
+    $sql = "SELECT
+              e.id AS employee_id, e.name AS employee_name, e.email AS employee_email, e.password AS employee_password,
+              e.city_id AS employee_city_id, e.salary AS employee_salary, e.created_at AS employee_created_at,
+              c.id AS city_id, c.name AS city_name, c.state_id AS state_id, c.created_at AS city_created_at
+              FROM
+                employees e, cities c
+              WHERE
+                e.id = ? AND (e.city_id = c.id)";
     $params = array($id);
 
     $db = Database::getConnection();
@@ -93,16 +126,21 @@
     $resp = $statement->execute($params);
 
     if ($resp && $row = $statement->fetch(PDO::FETCH_ASSOC)) {
-      $employee = new Employee($row);
-      return $employee;
+      return self::createEmployee($row);
     }
 
     return null;
   }
 
   public static function findByEmail($email) {
-    $db = Database::getConnection();
-    $sql = "SELECT id, name, email, password FROM employees WHERE email = ?";
+    $sql = "SELECT
+              e.id AS employee_id, e.name AS employee_name, e.email AS employee_email, e.password AS employee_password,
+              e.city_id AS employee_city_id, e.salary AS employee_salary, e.created_at AS employee_created_at,
+              c.id AS city_id, c.name AS city_name, c.state_id AS state_id, c.created_at AS city_created_at
+              FROM
+                employees e, cities c
+              WHERE
+                (e.email = ?) AND (e.city_id = c.id)";
     $params = array($email);
 
     $db = Database::getConnection();
@@ -110,30 +148,30 @@
     $resp = $statement->execute($params);
 
     if ($resp && $row = $statement->fetch(PDO::FETCH_ASSOC)) {
-      $employee = new Employee($row);
-      return $employee;
+      return self::createEmployee($row);
     }
-
     return null;
   }
 
-  public static function whereNameLikeAsJson($query) {
-    $sql = "SELECT * FROM employees WHERE name LIKE :query ORDER BY name";
-    $params = ['query' => '%' . $query . '%'];
+  private static function createEmployee($row) {
+    $employee = new Employee();
+    $employee->setId($row['employee_id']);
+    $employee->setName($row['employee_name']);
+    $employee->setEmail($row['employee_email']);
+    $employee->setPassword($row['employee_password']);
+    $employee->setSalary($row['employee_salary']);
+    $employee->setCityId($row['employee_city_id']);
+    $employee->setCreatedAt($row['employee_created_at']);
 
-    $db = Database::getConnection();
-    $statement = $db->prepare($sql);
-    $resp = $statement->execute($params);
+    $city = new City();
+    $city->setId($row['city_id']);
+    $city->setName($row['city_name']);
+    $city->setStateId($row['state_id']);
+    $city->setCreatedAt($row['city_created_at']);
 
-    $suggestions = ['suggestions' => ''];
+    $employee->setCity($city);
 
-    if(!$resp) return $suggestions;
-
-    while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-      $suggestions['suggestions'][] = array('value' => $row['name'], 'data' => $row['id']);
-    }
-
-    return json_encode($suggestions);
+    return $employee;
   }
 
 } ?>

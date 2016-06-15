@@ -13,7 +13,7 @@
   }
 
   public function create(){
-    $this->employee = new Employee($this->params['Employee']);
+    $this->employee = new Employee($this->params['employee']);
 
     if ($this->employee->save()) {
       Flash::message('success', 'Registro realizado com sucesso!');
@@ -44,12 +44,6 @@
       $this->submit = 'Atualizar';
       $this->render('edit');
     }
-  }
-
-  public function autoCompleteSearch() {
-    $this->employees = Employee::whereNameLikeAsJson($this->params['query']);
-    echo $this->employees;
-    exit();
   }
 
 } ?>

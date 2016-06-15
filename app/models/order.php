@@ -2,6 +2,7 @@
 
   private $employeeId;
   private $clientId;
+  private $employee;
   private $client;
   private $amount;
   private $total;
@@ -29,6 +30,10 @@
 
   public function getClient() {
     return $this->client;
+  }
+
+  public function getEmployee() {
+    return $this->employee;
   }
 
   public function setAmount($amount) {
@@ -104,7 +109,7 @@
     }
 
     $this->setId($db->lastInsertId());
-    $this->setCreatedAt(date());
+
     return true;
   }
 
@@ -226,14 +231,17 @@
 
   public static function all() {
     $sql = "SELECT
-              orders.id AS id, orders.created_at AS created_at,  orders.total AS total, orders.status AS status,
-              clients.id AS client_id, clients.name AS client_name, clients.email AS client_email
+              o.id AS id, o.created_at AS created_at,  o.total AS total, o.status AS status,
+              c.id AS client_id, c.name AS client_name, c.email AS client_email, c.address AS client_address,
+              c.address_number AS client_address_number, c.address_cep AS client_cep, c.phone AS client_phone,
+              c.created_at AS client_created_at, c.city_id AS client_city_id, c.type AS client_type, ct.id AS city_id,
+              ct.name AS city_name, ct.created_at AS city_created_at, ct.state_id AS state_id
             FROM
-              clients
+              clients c
             JOIN
-              orders
-            ON
-              (orders.client_id = clients.id)
+              orders o ON (o.client_id = c.id)
+            JOIN
+              cities ct ON (ct.id = c.city_id)
             ORDER BY
               id";
 
@@ -255,13 +263,14 @@
     $db = Database::getConnection();
     $sql = "SELECT
               o.id AS id, o.created_at AS created_at, o.status AS status, o.total AS total,
-              c.id AS client_id, c.name AS client_name, c.email AS client_email
+              c.id AS client_id, c.name AS client_name, c.email AS client_email, c.address AS client_address,
+              c.address_number AS client_address_number, c.address_cep AS client_cep, c.phone AS client_phone,
+              c.created_at AS client_created_at, c.city_id AS client_city_id, c.type AS client_type, ct.id AS city_id,
+              ct.name AS city_name, ct.created_at AS city_created_at, ct.state_id AS state_id
             FROM
-              clients c, orders o
+              clients c, orders o, cities ct
             WHERE
-              (o.client_id = c.id)
-            AND
-              (o.id = ? )";
+              (o.client_id = c.id) AND (o.id = ? ) AND (c.city_id = ct.id)";
 
     $params = array($id);
 
@@ -287,6 +296,22 @@
     $client->setId($row['client_id']);
     $client->setName($row['client_name']);
     $client->setEmail($row['client_email']);
+    $client->setCityId($row['client_city_id']);
+    $client->setAddress($row['client_address']);
+    $client->setAddressNumber($row['client_address_number']);
+    $client->setAddressCep($row['client_cep']);
+    $client->setPhone($row['client_phone']);
+    $client->setType($row['client_type']);
+    $client->setCreatedAt($row['client_created_at']);
+
+    $city = new City();
+    $city->setId($row['city_id']);
+    $city->setName($row['city_name']);
+    $city->setCreatedAt($row['city_created_at']);
+    $city->setStateId($row['state_id']);
+
+    $client->setCity($city);
+
 
     $order->setClient($client);
 
