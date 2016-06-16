@@ -9,6 +9,13 @@
 
    public function edit() {
      $this->order = Order::findById($this->params[':id']);
+     $this->employeeId = $this->currentEmployee()->getId();
+
+     if(!$this->order->getEmployeeOrder($this->employeeId)) {
+       Flash::message('negative', 'Você não pode acessar esta página');
+       $this->redirectTo('/pedidos');
+     }
+
      $this->sellOrderItem = new SellOrderItem();
      $this->title = 'Pedido';
      $this->submit = "Adicionar";
@@ -59,15 +66,15 @@
        $this->redirectTo("/pedidos/{$this->order->getId()}");
      }
      if($this->order->uniqueItem($this->params['product']['id'])) {
-      Flash::message('negative', 'Esse produto já está cadastrado no pedido!');
-      $this->redirectTo("/pedidos/{$this->order->getId()}");
+       Flash::message('negative', 'Esse produto já está cadastrado no pedido!');
+       $this->redirectTo("/pedidos/{$this->order->getId()}");
      } else {
-         if($this->product->removeProductOfStock()) {
-           $this->order->addProduct($productId);
-         } else {
-           Flash::message('negative', 'Acabou o produto no estoque!');
-         }
-         $this->redirectTo("/pedidos/{$this->order->getId()}");
+       if($this->product->removeProductOfStock()) {
+         $this->order->addProduct($productId);
+       } else {
+         Flash::message('negative', 'Acabou o produto no estoque!');
+       }
+       $this->redirectTo("/pedidos/{$this->order->getId()}");
      }
    }
 

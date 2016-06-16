@@ -32,6 +32,10 @@
     return $this->client;
   }
 
+  public function setEmployee($employee) {
+    $this->employee = $employee;
+  }
+
   public function getEmployee() {
     return $this->employee;
   }
@@ -229,25 +233,40 @@
     return false;
   }
 
+  public function getEmployeeOrder($employeeId) {
+    $params = array('employee_id' => $employeeId, 'order_id' => $this->id);
+    $sql = "SELECT * FROM orders WHERE employee_id = :employee_id AND orders.id = :order_id";
+
+    $db = Database::getConnection();
+    $statement = $db->prepare($sql);
+    $statement->execute($params);
+    $resp = $statement->fetch(PDO::FETCH_ASSOC);
+    if($resp) return true;
+
+    return false;
+  }
+
   public static function all() {
+    $employeeId = SessionHelpers::currentEmployee()->getId();
     $sql = "SELECT
               o.id AS id, o.created_at AS created_at,  o.total AS total, o.status AS status,
+              o.employee_id AS order_employee_id, o.client_id AS order_client_id,
               c.id AS client_id, c.name AS client_name, c.email AS client_email, c.address AS client_address,
               c.address_number AS client_address_number, c.address_cep AS client_cep, c.phone AS client_phone,
-              c.created_at AS client_created_at, c.city_id AS client_city_id, c.type AS client_type, ct.id AS city_id,
-              ct.name AS city_name, ct.created_at AS city_created_at, ct.state_id AS state_id
+              c.created_at AS client_created_at, c.city_id AS client_city_id, c.type AS client_type,
+              ct.id AS city_id, ct.name AS city_name, ct.created_at AS city_created_at, ct.state_id AS state_id,
+              e.id AS employee_id, e.name AS employee_name, e.email AS employee_email, e.salary AS employee_salary,
+              e.created_at AS employee_created_at
             FROM
-              clients c
-            JOIN
-              orders o ON (o.client_id = c.id)
-            JOIN
-              cities ct ON (ct.id = c.city_id)
+              clients c, orders o, cities ct, employees e
+            WHERE
+              (o.client_id = c.id) AND (ct.id = c.city_id ) AND (e.id = o.employee_id) AND (o.employee_id = ?)
             ORDER BY
               id";
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
-    $resp = $statement->execute();
+    $resp = $statement->execute(array($employeeId));
 
     $orders = [];
 
@@ -263,14 +282,17 @@
     $db = Database::getConnection();
     $sql = "SELECT
               o.id AS id, o.created_at AS created_at, o.status AS status, o.total AS total,
+              o.employee_id AS order_employee_id, o.client_id AS order_client_id,
               c.id AS client_id, c.name AS client_name, c.email AS client_email, c.address AS client_address,
               c.address_number AS client_address_number, c.address_cep AS client_cep, c.phone AS client_phone,
               c.created_at AS client_created_at, c.city_id AS client_city_id, c.type AS client_type, ct.id AS city_id,
-              ct.name AS city_name, ct.created_at AS city_created_at, ct.state_id AS state_id
+              ct.name AS city_name, ct.created_at AS city_created_at, ct.state_id AS state_id, e.id AS employee_id,
+              e.name AS employee_name, e.email AS employee_email, e.salary AS employee_salary,
+              e.created_at AS employee_created_at
             FROM
-              clients c, orders o, cities ct
+              clients c, orders o, cities ct, employees e
             WHERE
-              (o.client_id = c.id) AND (o.id = ? ) AND (c.city_id = ct.id)";
+              (o.client_id = c.id) AND (o.id = ? ) AND (c.city_id = ct.id) AND (o.employee_id = e.id)";
 
     $params = array($id);
 
@@ -289,6 +311,8 @@
     $order = new Order();
     $order->setId($row['id']);
     $order->setStatus($row['status']);
+    $order->setEmployeeId($row['order_employee_id']);
+    $order->setClientId($row['order_client_id']);
     $order->setTotal($row['total']);
     $order->setCreatedAt($row['created_at']);
 
@@ -312,8 +336,15 @@
 
     $client->setCity($city);
 
+    $employee = new Employee();
+    $employee->setId($row['employee_id']);
+    $employee->setName($row['employee_name']);
+    $employee->setEmail($row['employee_email']);
+    $employee->setSalary($row['employee_salary']);
+    $employee->setCreatedAt($row['employee_created_at']);
 
     $order->setClient($client);
+    $order->setEmployee($employee);
 
     return $order;
   }

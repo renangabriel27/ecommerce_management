@@ -15,7 +15,7 @@
   public function create(){
     $this->employee = new Employee($this->params['employee']);
 
-    if ($this->employee->save()) {
+    if(!$this->employee->save()) {
       Flash::message('success', 'Registro realizado com sucesso!');
       $this->redirectTo('/login');
     } else {
