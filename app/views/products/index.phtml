@@ -21,7 +21,7 @@
           foreach ($this->products as $product): ?>
           <tr>
             <td><?= $product->getId() ?></td>
-            <td><?= $product->getName() ?></td>
+            <td><?= ViewHelpers::truncate($product->getName()) ?></td>
             <td><?= $product->getAmount() ?></td>
             <td><?= ViewHelpers::currencyFormat($product->getPrice()) ?></td>
             <td><?= $product->getCategory()->getName() ?></td>

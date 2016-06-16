@@ -1,0 +1,8 @@
+[16-Jun-2016 09:10:47 America/Sao_Paulo] PHP Warning:  Missing argument 2 for ViewHelpers::linkTo(), called in /var/www/ecommerce_management/app/views/clients_pi/index.phtml on line 47 and defined in /var/www/ecommerce_management/core/views/view_helpers.php on line 44
+[16-Jun-2016 09:10:47 America/Sao_Paulo] PHP Notice:  Undefined variable: name in /var/www/ecommerce_management/core/views/view_helpers.php on line 49
+[16-Jun-2016 09:13:46 America/Sao_Paulo] PHP Warning:  Missing argument 2 for ViewHelpers::linkTo(), called in /var/www/ecommerce_management/app/views/clients_pi/index.phtml on line 47 and defined in /var/www/ecommerce_management/core/views/view_helpers.php on line 44
+[16-Jun-2016 09:13:46 America/Sao_Paulo] PHP Notice:  Undefined variable: name in /var/www/ecommerce_management/core/views/view_helpers.php on line 49
+[16-Jun-2016 09:16:00 America/Sao_Paulo] PHP Fatal error:  Call to a member function getEmployeeOrder() on null in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 14
+[16-Jun-2016 09:16:56 America/Sao_Paulo] PHP Fatal error:  Call to a member function getEmployeeOrder() on null in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 14
+[16-Jun-2016 09:21:13 America/Sao_Paulo] PHP Fatal error:  Call to a member function getId() on null in /var/www/ecommerce_management/app/views/products/show.phtml on line 13
+[16-Jun-2016 09:22:40 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/client_pi.php on line 48

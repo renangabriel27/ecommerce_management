@@ -8,7 +8,10 @@
    }
 
    public function edit() {
-     $this->order = Order::findById($this->params[':id']);
+     if(!$this->order = Order::findById($this->params[':id'])) {
+       Flash::message('negative', 'Este pedido não existe!');
+       $this->redirectTo('/pedidos');
+     }
      $this->employeeId = $this->currentEmployee()->getId();
 
      if(!$this->order->getEmployeeOrder($this->employeeId)) {
