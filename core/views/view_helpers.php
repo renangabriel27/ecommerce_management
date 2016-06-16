@@ -107,7 +107,7 @@ class ViewHelpers {
   }
 
   public static function currencyFormat($number) {
-     return 'R$' . number_format($number, 2, ',', '.');
+     return 'R$ ' . number_format($number, 2, ',', '.');
   }
 
   public static function activeClass($route) {

@@ -35,8 +35,8 @@
             <div class="item">
               <div class="header">Relatórios</div>
               <div class="menu">
-                <a class="item">Produtos</a>
-                <a class="item">Funcionários</a>
+                <?= ViewHelpers::linkTo('/relatorios/produtos-mais-vendidos', 'Produtos', 'class="item"') ?>
+                <?= ViewHelpers::linkTo('/relatorios/funcionarios', 'Funcionarios', 'class="item"') ?>
               </div>
             </div>
           </div>

@@ -1,0 +1,38 @@
+
+    <div class="clearfix ui dividing header">
+      <?= ViewHelpers::linkTo("/relatorios/produtos-menos-vendidos", 'Produtos menos vendidos', 'class="ui right floated small button"') ?>
+      <?= ViewHelpers::linkTo("/relatorios/produtos-mais-vendidos", 'Produtos mais vendidos', 'class="ui right floated small button"') ?>
+    </div>
+
+    <table class="ui compact celled definition table">
+      <thead class="full-width">
+        <tr>
+          <th>ID</th>
+          <th>Produto</th>
+          <th>Preço do produto</th>
+          <th>Quantidade de vendas</td>
+          <th>Valor total das vendas</td>
+          <th>Opções</th>
+        </tr>
+      </thead>
+      <tbody>
+        <?php
+        foreach ($this->reports as $report): ?>
+        <tr>
+          <td><?= $report->getProduct()->getId() ?></td>
+          <td><?= $report->getProduct()->getName() ?></td>
+          <td><?= ViewHelpers::currencyFormat($report->getProduct()->getPrice()) ?></td>
+          <td><?= $report->getAmount() ?></td>
+          <td><?= ViewHelpers::currencyFormat($report->getTotal()) ?></td>
+          <td>
+            <?= ViewHelpers::linkTo("/relatorios", '', '', 'class="zoom icon"') ?>
+          </td>
+        </tr>
+        <?php endForeach; ?>
+      </tbody>
+      <tfoot class="full-width">
+
+      </tfoot>
+    </table>
+  </div>
+</div>

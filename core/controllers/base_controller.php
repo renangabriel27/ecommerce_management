@@ -15,6 +15,7 @@
   }
 
   public function setView($view) {
+    $view = ActiveSupport::camelToSnake($view);
     $this->view = $view;
   }
 

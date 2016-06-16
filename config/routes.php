@@ -103,6 +103,13 @@
     /* End of routes for clients - person corporate
     --------------------------------- */
 
+    /* Routes for reports
+    ------------------------- */
+    $router->get('/relatorios/funcionarios', array('controller' => 'ReportsController', 'action' => 'indexEmployees'));
+    $router->get('/relatorios/produtos-mais-vendidos', array('controller' => 'ReportsController', 'action' => 'indexBestSellingProducts'));
+    $router->get('/relatorios/produtos-menos-vendidos', array('controller' => 'ReportsController', 'action' => 'indexLeastSellingProducts'));
+    /* End of routes for reports
+    --------------------------------- */
 
     $router->load();
 ?>

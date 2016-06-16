@@ -1,0 +1,43 @@
+<section>
+  <header class="ui dividing header">
+    <h2><?= $this->title ?></h2>
+  </header>
+
+  <article>
+
+
+    <table class="ui compact celled definition table">
+      <thead class="full-width">
+        <tr>
+          <th>ID</th>
+          <th>Funcionário</th>
+          <th>Quantidade de vendas</td>
+          <th>Valor total das vendas</th>
+          <th>Opções</th>
+        </tr>
+      </thead>
+      <tbody>
+        <?php
+        foreach ($this->reports as $report): ?>
+        <tr>
+          <td><?= $report->getEmployee()->getId() ?></td>
+          <td><?= $report->getEmployee()->getName() ?></td>
+          <td><?= $report->getAmount() ?></td>
+          <td><?= ViewHelpers::currencyFormat($report->getTotal()) ?></td>
+          <td>
+            <?= ViewHelpers::linkTo("/relatorios/", '', '', 'class="zoom icon"') ?>
+          </td>
+        </tr>
+        <?php endForeach; ?>
+      </tbody>
+      <tfoot class="full-width">
+        <tr>
+          <th colspan="8">
+          </th>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</div>
+</article>
+</section>
