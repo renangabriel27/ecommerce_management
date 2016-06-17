@@ -4,7 +4,7 @@
 
    public function index() {
       $this->title = "Produtos";
-      $this->products = Product::all();
+      $this->existParams();
       $this->action = "/produtos/search";
    }
 
@@ -65,20 +65,15 @@
    }
 
    public function search() {
-     $this->title = "Produtos";
      $this->product = new Product();
      $this->products = $this->product->productSearch($this->params['product']['name']);
-     $this->action = "/produtos/search";
 
      if($this->products) {
        Flash::message("success", "Produto(s) encontrado(s)!");
      } else {
        Flash::message("negative", "Nenhum produto encontrado!");
-       $this->products = Product::all();
        ViewHelpers::redirectTo("/produtos");
      }
-
-       $this->action = "/produtos/search";
    }
 
    public function autoCompleteSearch() {
@@ -91,6 +86,28 @@
      $products = Product::whereIdLikeAsJson($this->params['query']);
      echo $products;
      exit();
+   }
+
+   public function existParams() {
+     if(!$this->params) {
+       $this->products = Product::all();
+       $this->linkToNew();
+     } else {
+       $this->search();
+       $this->linkToBack();
+     }
+   }
+
+   public function linkToNew() {
+     $this->url = "/produtos/novo";
+     $this->link = "Novo produto";
+     $this->icon = 'class="add circle icon"';
+   }
+
+   public function linkToBack() {
+     $this->url = "/produtos";
+     $this->link = "Voltar";
+     $this->icon = 'class="reply icon"';
    }
 
 } ?>

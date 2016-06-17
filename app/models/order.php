@@ -262,11 +262,77 @@
             WHERE
               (o.client_id = c.id) AND (ct.id = c.city_id ) AND (e.id = o.employee_id) AND (o.employee_id = ?)
             ORDER BY
-              id";
+              o.created_at ASC";
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
     $resp = $statement->execute(array($employeeId));
+
+    $orders = [];
+
+    if(!$resp) return $orders;
+
+    while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+      $orders[] = self::createOrder($row);
+    }
+    return $orders;
+  }
+
+  public static function allOpen() {
+    $employeeId = SessionHelpers::currentEmployee()->getId();
+    $sql = "SELECT
+              o.id AS id, o.created_at AS created_at,  o.total AS total, o.status AS status,
+              o.employee_id AS order_employee_id, o.client_id AS order_client_id,
+              c.id AS client_id, c.name AS client_name, c.email AS client_email, c.address AS client_address,
+              c.address_number AS client_address_number, c.address_cep AS client_cep, c.phone AS client_phone,
+              c.created_at AS client_created_at, c.city_id AS client_city_id, c.type AS client_type,
+              ct.id AS city_id, ct.name AS city_name, ct.created_at AS city_created_at, ct.state_id AS state_id,
+              e.id AS employee_id, e.name AS employee_name, e.email AS employee_email, e.salary AS employee_salary,
+              e.created_at AS employee_created_at
+            FROM
+              clients c, orders o, cities ct, employees e
+            WHERE
+              (o.client_id = c.id) AND (ct.id = c.city_id ) AND (e.id = o.employee_id) AND (o.employee_id = ?) AND (o.status = ?)
+            ORDER BY
+              o.created_at ASC";
+
+    $params = array($employeeId, 'Aberto');
+    $db = Database::getConnection();
+    $statement = $db->prepare($sql);
+    $resp = $statement->execute($params);
+
+    $orders = [];
+
+    if(!$resp) return $orders;
+
+    while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+      $orders[] = self::createOrder($row);
+    }
+    return $orders;
+  }
+
+  public static function allClose() {
+    $employeeId = SessionHelpers::currentEmployee()->getId();
+    $sql = "SELECT
+              o.id AS id, o.created_at AS created_at,  o.total AS total, o.status AS status,
+              o.employee_id AS order_employee_id, o.client_id AS order_client_id,
+              c.id AS client_id, c.name AS client_name, c.email AS client_email, c.address AS client_address,
+              c.address_number AS client_address_number, c.address_cep AS client_cep, c.phone AS client_phone,
+              c.created_at AS client_created_at, c.city_id AS client_city_id, c.type AS client_type,
+              ct.id AS city_id, ct.name AS city_name, ct.created_at AS city_created_at, ct.state_id AS state_id,
+              e.id AS employee_id, e.name AS employee_name, e.email AS employee_email, e.salary AS employee_salary,
+              e.created_at AS employee_created_at
+            FROM
+              clients c, orders o, cities ct, employees e
+            WHERE
+              (o.client_id = c.id) AND (ct.id = c.city_id ) AND (e.id = o.employee_id) AND (o.employee_id = ?) AND (o.status = ?)
+            ORDER BY
+              o.created_at ASC";
+
+    $params = array($employeeId, 'Fechado');
+    $db = Database::getConnection();
+    $statement = $db->prepare($sql);
+    $resp = $statement->execute($params);
 
     $orders = [];
 

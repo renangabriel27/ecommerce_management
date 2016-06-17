@@ -7,7 +7,7 @@
      $this->clients = ClientPi::all();
   }
 
-  public function indexClients() {
+  public function clients() {
      $this->title = "Clientes";
      $this->clients = Client::all();
   }

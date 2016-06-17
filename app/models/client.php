@@ -145,8 +145,6 @@
     return $statement->execute($params);
   }
 
-
-
   public static function all() {
     $sql = "SELECT
               clients.id AS client_id, clients.name AS client_name, clients.email AS client_email,

@@ -65,7 +65,9 @@ a.clients:hover {
   color: #1678c2;
 }
 
-
+table {
+  margin-top: 20px !important;
+}
 
 
 /* Change defaults

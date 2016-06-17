@@ -15,7 +15,7 @@
           <th>CEP</th>
           <th>Telefone</th>
           <th>Cidade</th>
-          <th>Opções</th>
+          <th>Tipo</th>
         </tr>
       </thead>
       <tbody>
@@ -28,11 +28,7 @@
           <td><?= $client->getAddressCep() ?></td>
           <td><?= $client->getPhone() ?></td>
           <td><?= $client->getCity()->getName() ?></td>
-          <td>
-            <?= ViewHelpers::linkTo("/clientes/{$client->getId()}/pessoa-fisica", '', '', 'class="zoom icon"') ?>
-            <?= ViewHelpers::linkTo("/clientes/{$client->getId()}/editar-pessoa-fisica", '', '', 'class="edit icon"') ?>
-            <?= ViewHelpers::linkTo("/clientes/{$client->getId()}/deletar-pessoa-fisica", '', 'data-confirm="Tem certeza que deseja deletar?"', 'class="trash icon"') ?>
-          </td>
+          <td><?= ViewHelpers::clientType($client->getType()) ?></td>
         </tr>
         <?php endForeach; ?>
       </tbody>

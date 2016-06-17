@@ -3,15 +3,27 @@
    protected $beforeAction = array('authenticated' => 'all');
 
    public function index() {
-      $this->title = 'Pedidos';
+      $this->title = 'Visualizar Pedidos';
       $this->orders = Order::all();
    }
 
+   public function indexOrderOpen() {
+     $this->title = 'Pedidos em aberto';
+     $this->orders = Order::allOpen();
+   }
+
+   public function indexOrderClose() {
+     $this->title = 'Pedidos fechados';
+     $this->orders = Order::allClose();
+   }
+
    public function edit() {
-     if(!$this->order = Order::findById($this->params[':id'])) {
-       Flash::message('negative', 'Este pedido não existe!');
+     $this->order = Order::findById($this->params[':id']);
+
+     if(!$this->order) {
        $this->redirectTo('/pedidos');
      }
+
      $this->employeeId = $this->currentEmployee()->getId();
 
      if(!$this->order->getEmployeeOrder($this->employeeId)) {
@@ -56,11 +68,17 @@
      $this->redirectTo("/pedidos");
    }
 
+
    public function addOrderProduct() {
      $orderId = $this->params['order']['id'];
      $productId = $this->params['product']['id'];
 
      $this->order = Order::findById($orderId);
+
+     if($this->order->getStatus() == 'Fechado') {
+        $this->redirectTo("/pedidos");
+     }
+
      $this->product = Product::findById($productId);
      $this->sellOrderItem = SellOrderItem::findById($productId, $orderId);
 

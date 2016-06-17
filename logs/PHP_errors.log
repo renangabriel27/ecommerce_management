@@ -234,3 +234,88 @@ Stack trace:
 [16-Jun-2016 15:01:28 America/Sao_Paulo] PHP Fatal error:  require(): Failed opening required 'views/reports/bestProducts.phtml' (include_path='.:/usr/share/php:/usr/share/pear:/var/www/ecommerce_management:/var/www/ecommerce_management/config/:/var/www/ecommerce_management/app/:/var/www/ecommerce_management/lib/:/var/www/ecommerce_management/vendor/') in /var/www/ecommerce_management/app/views/layout/application.phtml on line 39
 [16-Jun-2016 15:02:45 America/Sao_Paulo] PHP Warning:  require(views/reports/.phtml): failed to open stream: No such file or directory in /var/www/ecommerce_management/app/views/layout/application.phtml on line 39
 [16-Jun-2016 15:02:45 America/Sao_Paulo] PHP Fatal error:  require(): Failed opening required 'views/reports/.phtml' (include_path='.:/usr/share/php:/usr/share/pear:/var/www/ecommerce_management:/var/www/ecommerce_management/config/:/var/www/ecommerce_management/app/:/var/www/ecommerce_management/lib/:/var/www/ecommerce_management/vendor/') in /var/www/ecommerce_management/app/views/layout/application.phtml on line 39
+[16-Jun-2016 15:49:40 America/Sao_Paulo] PHP Fatal error:  Call to a member function getId() on null in /var/www/ecommerce_management/app/views/products/show.phtml on line 13
+[16-Jun-2016 18:55:15 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected ''Pedidos abertos'' (T_CONSTANT_ENCAPSED_STRING) in /var/www/ecommerce_management/app/views/orders/index.phtml on line 43
+[16-Jun-2016 19:12:09 America/Sao_Paulo] PHP Fatal error:  Call to undefined method OrdersController::indexOrderClose() in /var/www/ecommerce_management/core/routes/router.php on line 47
+[16-Jun-2016 19:14:25 America/Sao_Paulo] PHP Fatal error:  Call to undefined method OrdersController::indexOrderClose() in /var/www/ecommerce_management/core/routes/router.php on line 47
+[16-Jun-2016 19:15:23 America/Sao_Paulo] PHP Warning:  require(views/orders/index_order_close.phtml): failed to open stream: No such file or directory in /var/www/ecommerce_management/app/views/layout/application.phtml on line 39
+[16-Jun-2016 19:15:23 America/Sao_Paulo] PHP Fatal error:  require(): Failed opening required 'views/orders/index_order_close.phtml' (include_path='.:/usr/share/php:/usr/share/pear:/var/www/ecommerce_management:/var/www/ecommerce_management/config/:/var/www/ecommerce_management/app/:/var/www/ecommerce_management/lib/:/var/www/ecommerce_management/vendor/') in /var/www/ecommerce_management/app/views/layout/application.phtml on line 39
+[16-Jun-2016 19:38:52 America/Sao_Paulo] PHP Fatal error:  Call to a member function addProduct() on null in /var/www/ecommerce_management/app/controllers/sell_orders_controller.php on line 18
+[16-Jun-2016 19:45:29 America/Sao_Paulo] PHP Fatal error:  Call to undefined function createobjects() in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 86
+[16-Jun-2016 19:45:38 America/Sao_Paulo] PHP Notice:  Undefined variable: productId in /var/www/ecommerce_management/app/controllers/orders_controller.php on line 97
+[16-Jun-2016 19:45:38 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'price' cannot be null' in /var/www/ecommerce_management/app/models/order.php:167
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(167): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(97): Order->addProduct(NULL)
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->addOrderProduct()
+#3 /var/www/ecommerce_management/core/routes/router.php(23): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(116): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 167
+[16-Jun-2016 19:47:41 America/Sao_Paulo] PHP Fatal error:  Call to a member function addProduct() on null in /var/www/ecommerce_management/app/controllers/sell_orders_controller.php on line 21
+[16-Jun-2016 19:54:18 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`sell_orders_items`, CONSTRAINT `sell_orders_items_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`))' in /var/www/ecommerce_management/core/models/base.php:90
+Stack trace:
+#0 /var/www/ecommerce_management/core/models/base.php(90): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(66): Base->delete('orders')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->destroy()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(116): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/core/models/base.php on line 90
+[16-Jun-2016 23:15:02 America/Sao_Paulo] PHP Fatal error:  Call to a member function getId() on null in /var/www/ecommerce_management/app/controllers/clients_pi_controller.php on line 51
+[16-Jun-2016 23:15:08 America/Sao_Paulo] PHP Fatal error:  Call to a member function getId() on null in /var/www/ecommerce_management/app/controllers/clients_pi_controller.php on line 51
+[16-Jun-2016 23:15:10 America/Sao_Paulo] PHP Fatal error:  Call to a member function getId() on null in /var/www/ecommerce_management/app/controllers/clients_pi_controller.php on line 51
+[16-Jun-2016 23:15:12 America/Sao_Paulo] PHP Fatal error:  Call to a member function getId() on null in /var/www/ecommerce_management/app/controllers/clients_pi_controller.php on line 51
+[16-Jun-2016 23:30:59 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /var/www/ecommerce_management/app/controllers/products_controller.php on line 7
+[16-Jun-2016 23:31:01 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /var/www/ecommerce_management/app/controllers/products_controller.php on line 7
+[16-Jun-2016 23:31:19 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /var/www/ecommerce_management/app/controllers/products_controller.php on line 7
+[16-Jun-2016 23:31:30 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /var/www/ecommerce_management/app/controllers/products_controller.php on line 7
+[16-Jun-2016 23:31:31 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /var/www/ecommerce_management/app/controllers/products_controller.php on line 7
+[16-Jun-2016 23:31:31 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /var/www/ecommerce_management/app/controllers/products_controller.php on line 7
+[16-Jun-2016 23:31:54 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected ')' in /var/www/ecommerce_management/app/controllers/products_controller.php on line 7
+[16-Jun-2016 23:31:58 America/Sao_Paulo] PHP Notice:  Undefined index: product in /var/www/ecommerce_management/app/controllers/products_controller.php on line 7
+[16-Jun-2016 23:31:59 America/Sao_Paulo] PHP Notice:  Undefined index: product in /var/www/ecommerce_management/app/controllers/products_controller.php on line 7
+[16-Jun-2016 23:32:08 America/Sao_Paulo] PHP Notice:  Undefined index: product in /var/www/ecommerce_management/app/controllers/products_controller.php on line 7
+[16-Jun-2016 23:33:37 America/Sao_Paulo] PHP Notice:  Undefined index: product in /var/www/ecommerce_management/app/controllers/products_controller.php on line 7
+[16-Jun-2016 23:44:21 America/Sao_Paulo] PHP Notice:  Undefined property: ProductsController::$url in /var/www/ecommerce_management/app/views/products/index.phtml on line 11
+[16-Jun-2016 23:44:21 America/Sao_Paulo] PHP Notice:  Undefined property: ProductsController::$link in /var/www/ecommerce_management/app/views/products/index.phtml on line 11
+[16-Jun-2016 23:44:34 America/Sao_Paulo] PHP Notice:  Undefined property: ProductsController::$url in /var/www/ecommerce_management/app/views/products/index.phtml on line 11
+[16-Jun-2016 23:44:34 America/Sao_Paulo] PHP Notice:  Undefined property: ProductsController::$link in /var/www/ecommerce_management/app/views/products/index.phtml on line 11
+[16-Jun-2016 23:59:21 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '}', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /var/www/ecommerce_management/app/controllers/products_controller.php on line 13
+[17-Jun-2016 00:10:32 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/client_pi.php on line 48
+[17-Jun-2016 00:11:48 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ReportsController::indexBestSellingProducts() in /var/www/ecommerce_management/core/routes/router.php on line 47
+[17-Jun-2016 00:27:15 America/Sao_Paulo] PHP Notice:  Undefined property: Product::$getname in /var/www/ecommerce_management/core/models/base.php on line 78
+[17-Jun-2016 00:28:30 America/Sao_Paulo] PHP Notice:  Undefined property: Product::$getname in /var/www/ecommerce_management/core/models/base.php on line 78
+[17-Jun-2016 00:28:39 America/Sao_Paulo] PHP Notice:  Undefined property: Product::$getname in /var/www/ecommerce_management/core/models/base.php on line 78
+[17-Jun-2016 00:29:16 America/Sao_Paulo] PHP Notice:  Undefined property: Product::$getname in /var/www/ecommerce_management/core/models/base.php on line 78
+[17-Jun-2016 00:29:24 America/Sao_Paulo] PHP Notice:  Undefined property: Product::$getname in /var/www/ecommerce_management/core/models/base.php on line 78
+[17-Jun-2016 00:29:30 America/Sao_Paulo] PHP Notice:  Undefined property: Product::$getname in /var/www/ecommerce_management/core/models/base.php on line 78
+[17-Jun-2016 00:29:34 America/Sao_Paulo] PHP Notice:  Undefined property: Product::$getname in /var/www/ecommerce_management/core/models/base.php on line 78
+[17-Jun-2016 00:30:00 America/Sao_Paulo] PHP Notice:  Undefined property: Product::$getname in /var/www/ecommerce_management/core/models/base.php on line 78
+[17-Jun-2016 00:30:08 America/Sao_Paulo] PHP Notice:  Undefined property: Product::$getname in /var/www/ecommerce_management/core/models/base.php on line 78
+[17-Jun-2016 00:30:20 America/Sao_Paulo] PHP Notice:  Undefined property: Product::$getname in /var/www/ecommerce_management/core/models/base.php on line 78
+[17-Jun-2016 00:30:23 America/Sao_Paulo] PHP Notice:  Undefined property: Product::$getname in /var/www/ecommerce_management/core/models/base.php on line 78
+[17-Jun-2016 00:32:00 America/Sao_Paulo] PHP Notice:  Undefined property: Product::$getname in /var/www/ecommerce_management/core/models/base.php on line 78
+[17-Jun-2016 00:32:07 America/Sao_Paulo] PHP Notice:  Undefined property: Product::$getname in /var/www/ecommerce_management/core/models/base.php on line 78
+[17-Jun-2016 00:32:14 America/Sao_Paulo] PHP Notice:  Undefined property: Product::$getname in /var/www/ecommerce_management/core/models/base.php on line 78
+[17-Jun-2016 00:33:48 America/Sao_Paulo] PHP Notice:  Undefined property: Product::$getname in /var/www/ecommerce_management/core/models/base.php on line 78
+[17-Jun-2016 00:34:28 America/Sao_Paulo] PHP Notice:  Undefined property: Product::$getname in /var/www/ecommerce_management/core/models/base.php on line 78
+[17-Jun-2016 00:34:31 America/Sao_Paulo] PHP Notice:  Undefined property: Product::$getname in /var/www/ecommerce_management/core/models/base.php on line 78
+[17-Jun-2016 00:36:35 America/Sao_Paulo] PHP Notice:  Undefined property: Product::$getname in /var/www/ecommerce_management/core/models/base.php on line 78
+[17-Jun-2016 00:37:36 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected ')' in /var/www/ecommerce_management/app/controllers/products_controller.php on line 48
+[17-Jun-2016 00:37:40 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected ';' in /var/www/ecommerce_management/app/controllers/products_controller.php on line 47
+[17-Jun-2016 00:37:48 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected ')' in /var/www/ecommerce_management/app/controllers/products_controller.php on line 48
+[17-Jun-2016 00:37:58 America/Sao_Paulo] PHP Notice:  Undefined property: Product::$getname in /var/www/ecommerce_management/core/models/base.php on line 78
+[17-Jun-2016 00:38:40 America/Sao_Paulo] PHP Notice:  Undefined property: Product::$getname in /var/www/ecommerce_management/core/models/base.php on line 78
+[17-Jun-2016 00:39:43 America/Sao_Paulo] PHP Notice:  Undefined property: Product::$getname in /var/www/ecommerce_management/core/models/base.php on line 78
+[17-Jun-2016 00:41:26 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ActiveSupport::snakeToCamelCase() in /var/www/ecommerce_management/core/models/base.php on line 78
+[17-Jun-2016 00:42:55 America/Sao_Paulo] PHP Notice:  Undefined property: Product::$getname in /var/www/ecommerce_management/core/models/base.php on line 79
+[17-Jun-2016 00:44:16 America/Sao_Paulo] PHP Notice:  Undefined property: Product::$getname in /var/www/ecommerce_management/core/models/base.php on line 79
+[17-Jun-2016 00:44:32 America/Sao_Paulo] PHP Notice:  Undefined property: Product::$getname in /var/www/ecommerce_management/core/models/base.php on line 79
+[17-Jun-2016 00:46:58 America/Sao_Paulo] PHP Notice:  Undefined property: Product::$GetName in /var/www/ecommerce_management/core/models/base.php on line 79
+[17-Jun-2016 00:48:04 America/Sao_Paulo] PHP Notice:  Undefined property: Product::$getName in /var/www/ecommerce_management/core/models/base.php on line 79
+[17-Jun-2016 00:54:49 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /var/www/ecommerce_management/lib/validations.php on line 36
+[17-Jun-2016 00:55:26 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '{' in /var/www/ecommerce_management/lib/validations.php on line 27
+[17-Jun-2016 00:55:34 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /var/www/ecommerce_management/lib/validations.php on line 28
+[17-Jun-2016 00:55:52 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /var/www/ecommerce_management/lib/validations.php on line 28
+[17-Jun-2016 00:56:16 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /var/www/ecommerce_management/lib/validations.php on line 28

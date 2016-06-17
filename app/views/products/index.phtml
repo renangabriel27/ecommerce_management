@@ -7,6 +7,19 @@
       <table class="ui compact celled definition table">
       <thead class="full-width">
         <tr>
+          <th colspan="5">
+            <?= ViewHelpers::linkTo($this->url, $this->link, 'class="ui right small primary labeled icon button"', $this->icon) ?>
+          </th>
+          <th colspan="3">
+            <form action="<?= ViewHelpers::urlFor($this->action) ?>" method="GET">
+              <div class="ui action input">
+                <input type="text" placeholder="procurar produto..." name="product[name]">
+                <button class="ui button" type="submit">Procurar</button>
+              </div>
+            </form>
+          </th>
+        </tr>
+        <tr>
           <th>ID</th>
           <th>Nome</th>
           <th>Quantidade</th>
@@ -36,31 +49,21 @@
       </tbody>
       <tfoot class="full-width">
         <tr>
-          <th colspan="5">
-            <?= ViewHelpers::linkTo("/produtos/novo", 'Novo produto', 'class="ui left floated small primary labeled icon button"', 'class="add circle icon"') ?>
-          </th>
-          <th colspan="3">
-            <form action="<?= ViewHelpers::urlFor($this->action) ?>" method="GET">
-              <div class="ui action input">
-                <input type="text" placeholder="procurar produto..." name="product[name]">
-                <button class="ui button" type="submit">Procurar</button>
+          <tr>
+            <th colspan="8">
+              <div class="ui right floated pagination menu">
+                <a class="icon item">
+                  <i class="left chevron icon"></i>
+                </a>
+                <a class="item">1</a>
+                <a class="item">2</a>
+                <a class="item">3</a>
+                <a class="item">4</a>
+                <a class="icon item">
+                  <i class="right chevron icon"></i>
+                </a>
               </div>
-            </form>
-          </th>
-          <tr><th colspan="8">
-            <div class="ui right floated pagination menu">
-              <a class="icon item">
-                <i class="left chevron icon"></i>
-              </a>
-              <a class="item">1</a>
-              <a class="item">2</a>
-              <a class="item">3</a>
-              <a class="item">4</a>
-              <a class="icon item">
-                <i class="right chevron icon"></i>
-              </a>
-            </div>
-          </th>
+            </th>
         </tr>
       </tfoot>
     </table>

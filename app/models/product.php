@@ -9,7 +9,7 @@
 
 
   public function setName($name) {
-      $this->name = $name;
+    $this->name = $name;
   }
 
   public function getName() {
@@ -66,7 +66,10 @@
       Validations::uniqueField($this->name, 'name',  'products', $this->errors);
       Validations::notEmpty($this->name, 'name', $this->errors);
     }
+
     Validations::notEmpty($this->amount, 'amount', $this->errors);
+    Validations::isNumeric($this->amount, 'amount', $this->errors);
+    Validations::notEmpty($this->price, 'price', $this->errors);
     Validations::isNumeric($this->price, 'price', $this->errors);
     Validations::notEmpty($this->categoryId, 'category_id', $this->errors);
     Validations::notEmpty($this->description, 'description', $this->errors);
@@ -94,8 +97,7 @@
   }
 
   public function update($data = array()) {
-
-    if($this->hasNotChange($data)) return true;
+    // if($this->hasNotChange($data)) return true;
 
     $this->setData($data);
     if (!$this->isValid()) return false;

@@ -41,6 +41,8 @@
     $router->post('/pedidos', array('controller' => 'OrdersController', 'action' => 'create'));
     $router->get('/pedidos/novo', array('controller' => 'OrdersController', 'action' => '_new'));
     $router->post('/pedidos/produtos', array('controller' => 'OrdersController', 'action' => 'addOrderProduct'));
+    $router->get('/pedidos/abertos', array('controller' => 'OrdersController', 'action' => 'indexOrderOpen'));
+    $router->get('/pedidos/fechados', array('controller' => 'OrdersController', 'action' => 'indexOrderClose'));
     $router->get('/pedidos/:id', array('controller' => 'OrdersController', 'action' => 'edit'));
     $router->get('/pedidos/:id/deletar', array('controller' => 'OrdersController', 'action' => 'destroy'));
     $router->get('/pedidos/:id/fechar', array('controller' => 'OrdersController', 'action' => 'closeOrder'));
@@ -60,7 +62,7 @@
     ------------------------- */
     $router->get('/produtos/autocomplete-search', array('controller' => 'ProductsController', 'action' => 'autoCompleteSearch'));
     $router->get('/produtos/autocomplete-search-id', array('controller' => 'ProductsController', 'action' => 'autoCompleteSearchId'));
-    $router->get('/produtos/search', array('controller' => 'ProductsController', 'action' => 'search'));
+    $router->get('/produtos/search', array('controller' => 'ProductsController', 'action' => 'index'));
 
     $router->get('/produtos', array('controller' => 'ProductsController', 'action' => 'index'));
     $router->get('/produtos/page/:page', array('controller' => 'ProductsController', 'action' => 'index'));
@@ -77,6 +79,7 @@
     /* Routes for clients - person individual
     ------------------------- */
     $router->get('/clientes/autocomplete-search', array('controller' => 'ClientsPiController', 'action' => 'autoCompleteSearch'));
+    $router->get('/clientes', array('controller' => 'ClientsPiController', 'action' => 'clients'));
 
     $router->get('/clientes/pessoa-fisica', array('controller' => 'ClientsPiController', 'action' => 'index'));
     $router->get('/clientes/nova-pessoa-fisica', array('controller' => 'ClientsPiController', 'action' => '_new'));
@@ -105,9 +108,9 @@
 
     /* Routes for reports
     ------------------------- */
-    $router->get('/relatorios/funcionarios', array('controller' => 'ReportsController', 'action' => 'indexEmployees'));
-    $router->get('/relatorios/produtos-mais-vendidos', array('controller' => 'ReportsController', 'action' => 'indexBestSellingProducts'));
-    $router->get('/relatorios/produtos-menos-vendidos', array('controller' => 'ReportsController', 'action' => 'indexLeastSellingProducts'));
+    $router->get('/relatorios/funcionarios', array('controller' => 'ReportsController', 'action' => 'employees'));
+    $router->get('/relatorios/produtos-mais-vendidos', array('controller' => 'ReportsController', 'action' => 'bestSellingProducts'));
+    $router->get('/relatorios/produtos-menos-vendidos', array('controller' => 'ReportsController', 'action' => 'leastSellingProducts'));
     /* End of routes for reports
     --------------------------------- */
 

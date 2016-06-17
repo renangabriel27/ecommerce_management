@@ -24,11 +24,11 @@
   }
 
   public static function isNumeric($value, $key = null, &$errors = null) {
-    if (is_numeric($value))
+    if((is_numeric($value) && ($value > 0)))
       return true;
 
     if ($key !== null && $errors !== null)
-      $errors[$key] = 'deve ser um número';
+      $errors[$key] = 'deve ser um número maior que zero';
 
     return false;
   }

@@ -72,9 +72,10 @@ abstract class Base {
     }
 
     public function hasNotChange($data = array()) {
-      foreach($data as $key => $value){
-         $method = "get{$key}";
-         $method = ActiveSupport::snakToCamelCase($method);
+      foreach($data as $key => $value) {
+         $method = "get_{$key}";
+         $method = ActiveSupport::snakeToCamelCase($method);
+
          if($this->$method != $value) return false;
       }
       return true;
