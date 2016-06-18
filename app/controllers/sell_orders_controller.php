@@ -3,15 +3,8 @@
    protected $beforeAction = array('authenticated' => 'all');
 
    public function createObjects() {
-     $orderId = $this->params[':id'];
-     $productId = $this->params[':product_id'];
-
-     $this->order = Order::findById($orderId);
-     if($this->order->getStatus() == 'Fechado') {
-        $this->redirectTo("/pedidos");
-     }
-     $this->product = Product::findById($productId);
-     $this->sellOrderItem = SellOrderItem::findById($productId, $orderId);
+     $this->findByParams($this->params[':id'], $this->params[':product_id']);
+     $this->orderIsClosed();
    }
 
    public function addAmountProduct() {

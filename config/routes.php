@@ -41,8 +41,8 @@
     $router->post('/pedidos', array('controller' => 'OrdersController', 'action' => 'create'));
     $router->get('/pedidos/novo', array('controller' => 'OrdersController', 'action' => '_new'));
     $router->post('/pedidos/produtos', array('controller' => 'OrdersController', 'action' => 'addOrderProduct'));
-    $router->get('/pedidos/abertos', array('controller' => 'OrdersController', 'action' => 'indexOrderOpen'));
-    $router->get('/pedidos/fechados', array('controller' => 'OrdersController', 'action' => 'indexOrderClose'));
+    $router->get('/pedidos/abertos', array('controller' => 'OrdersController', 'action' => 'orderOpen'));
+    $router->get('/pedidos/fechados', array('controller' => 'OrdersController', 'action' => 'orderClose'));
     $router->get('/pedidos/:id', array('controller' => 'OrdersController', 'action' => 'edit'));
     $router->get('/pedidos/:id/deletar', array('controller' => 'OrdersController', 'action' => 'destroy'));
     $router->get('/pedidos/:id/fechar', array('controller' => 'OrdersController', 'action' => 'closeOrder'));

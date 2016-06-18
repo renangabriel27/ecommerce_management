@@ -7,29 +7,19 @@
       $this->orders = Order::all();
    }
 
-   public function indexOrderOpen() {
+   public function orderOpen() {
      $this->title = 'Pedidos em aberto';
      $this->orders = Order::allOpen();
    }
 
-   public function indexOrderClose() {
+   public function orderClose() {
      $this->title = 'Pedidos fechados';
      $this->orders = Order::allClose();
    }
 
    public function edit() {
      $this->order = Order::findById($this->params[':id']);
-
-     if(!$this->order) {
-       $this->redirectTo('/pedidos');
-     }
-
-     $this->employeeId = $this->currentEmployee()->getId();
-
-     if(!$this->order->getEmployeeOrder($this->employeeId)) {
-       Flash::message('negative', 'Você não pode acessar esta página');
-       $this->redirectTo('/pedidos');
-     }
+     $this->authenticatedEmployee();
 
      $this->sellOrderItem = new SellOrderItem();
      $this->title = 'Pedido';
@@ -70,19 +60,13 @@
 
 
    public function addOrderProduct() {
-     $orderId = $this->params['order']['id'];
-     $productId = $this->params['product']['id'];
+     $this->findByParams($this->params['order']['id'], $this->params['product']['id']);
+     $this->orderIsClosed();
+     $this->validateOrder();
+   }
 
-     $this->order = Order::findById($orderId);
-
-     if($this->order->getStatus() == 'Fechado') {
-        $this->redirectTo("/pedidos");
-     }
-
-     $this->product = Product::findById($productId);
-     $this->sellOrderItem = SellOrderItem::findById($productId, $orderId);
-
-     if($this->params['product']['name'] == NULL) {
+   public function validateOrder() {
+     if($this->order->productIsValid($this->params['product']['name'])) {
        Flash::message('negative', 'Insira algum produto!');
        $this->redirectTo("/pedidos/{$this->order->getId()}");
      }
@@ -91,7 +75,7 @@
        $this->redirectTo("/pedidos/{$this->order->getId()}");
      } else {
        if($this->product->removeProductOfStock()) {
-         $this->order->addProduct($productId);
+         $this->order->addProduct($this->params['product']['id']);
        } else {
          Flash::message('negative', 'Acabou o produto no estoque!');
        }

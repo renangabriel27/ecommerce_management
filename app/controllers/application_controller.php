@@ -28,5 +28,25 @@
     }
   }
 
+  public function authenticatedEmployee() {
+    $this->employeeId = $this->currentEmployee()->getId();
+
+    if(!$this->order->getEmployeeOrder($this->employeeId)) {
+      Flash::message('negative', 'Você não pode acessar esta página');
+      $this->redirectTo('/pedidos');
+    }
+  }
+
+  public function orderIsClosed() {
+    if($this->order->getStatus() == 'Fechado') {
+      $this->redirectTo("/pedidos");
+    }
+  }
+
+  public function findByParams($orderId, $productId) {
+    $this->order = Order::findById($orderId);
+    $this->product = Product::findById($productId);
+    $this->sellOrderItem = SellOrderItem::findById($productId, $orderId);
+  }
 
 }

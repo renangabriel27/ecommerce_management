@@ -188,6 +188,12 @@
     return true;
   }
 
+  public function productIsValid($params) {
+    if($params == NULL) return true;
+
+    return false;
+  }
+
   public function sum() {
     $sql = "SELECT SUM(amount) FROM sell_orders_items WHERE order_id = ?";
 
