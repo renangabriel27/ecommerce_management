@@ -227,8 +227,10 @@
 
   public function changeStatusOrder() {
     $this->status = 'Fechado';
-    $params = array('id' => $this->id, 'status' => $this->status);
-    $sql = "UPDATE orders SET status= :status WHERE id = :id";
+    $closedAt = date('Y-m-d H:i:s', time());
+
+    $params = array('id' => $this->id, 'status' => $this->status, 'closed_at' => $closedAt);
+    $sql = "UPDATE orders SET status= :status, closed_at= :closed_at WHERE id = :id";
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);

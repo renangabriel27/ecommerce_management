@@ -70,6 +70,32 @@
       return $reports;
   }
 
+  public static function findByDateEmployee($createdAt, $closedAt) {
+      $sql = "SELECT
+                employee_id, name AS employee_name, COUNT(orders.employee_id) amount, SUM(total) total
+              FROM
+                orders, employees
+              WHERE
+                (orders.employee_id = employees.id) AND
+                  (orders.created_at > ? AND orders.closed_at <= ?) AND (orders.status = ?) GROUP BY (employee_id)
+              ORDER BY
+                3 DESC;";
+
+      $params = array($createdAt, $closedAt, 'Fechado');
+      $db = Database::getConnection();
+      $statement = $db->prepare($sql);
+      $resp = $statement->execute($params);
+
+      $reports = [];
+
+      if(!$resp) return $reports;
+
+      while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+        $reports[] = self::createEmployees($row);
+      }
+      return $reports;
+  }
+
   public static function bestSellingProducts() {
       $sql = "SELECT
                 product_id, name AS product_name, products.price AS product_price,
@@ -86,6 +112,64 @@
       $db = Database::getConnection();
       $statement = $db->prepare($sql);
       $resp = $statement->execute();
+
+      $reports = [];
+
+      if(!$resp) return $reports;
+
+      while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+        $reports[] = self::createProducts($row);
+      }
+      return $reports;
+  }
+
+  public static function findByDateBestSelling($createdAt, $closedAt) {
+      $sql = "SELECT
+                product_id, name AS product_name, products.price AS product_price,
+                SUM(sell_orders_items.amount) amount, SUM(sell_orders_items.amount*products.price) total
+              FROM
+                sell_orders_items, products, orders
+              WHERE
+                (sell_orders_items.product_id = products.id) AND (orders.id = sell_orders_items.order_id) AND
+                  orders.created_at > ? AND orders.closed_at <= ? AND orders.status = ?
+              GROUP BY
+                product_id
+              ORDER BY
+                4 DESC";
+
+      $params = array($createdAt, $closedAt, 'Fechado');
+      $db = Database::getConnection();
+      $statement = $db->prepare($sql);
+      $resp = $statement->execute($params);
+
+      $reports = [];
+
+      if(!$resp) return $reports;
+
+      while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+        $reports[] = self::createProducts($row);
+      }
+      return $reports;
+  }
+
+  public static function findByDateLeastSelling($createdAt, $closedAt) {
+      $sql = "SELECT
+                product_id, name AS product_name, products.price AS product_price,
+                SUM(sell_orders_items.amount) amount, SUM(sell_orders_items.amount*products.price) total
+              FROM
+                sell_orders_items, products, orders
+              WHERE
+                (sell_orders_items.product_id = products.id) AND (orders.id = sell_orders_items.order_id) AND
+                  orders.created_at > ? AND orders.closed_at <= ? AND orders.status = ?
+              GROUP BY
+                product_id
+              ORDER BY
+                4 ASC";
+
+      $params = array($createdAt, $closedAt, 'Fechado');
+      $db = Database::getConnection();
+      $statement = $db->prepare($sql);
+      $resp = $statement->execute($params);
 
       $reports = [];
 

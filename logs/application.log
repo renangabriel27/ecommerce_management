@@ -1,0 +1,1406 @@
+[18.06.2016 - 01:49:44][NOTICE] - /ecommerce_management/pedidos/abertos
+[18.06.2016 - 01:49:44][NOTICE] - match: /pedidos/abertos with /pedidos/abertos
+[18.06.2016 - 01:49:44][NOTICE] - Aberta conexão com banco de dados!
+[18.06.2016 - 01:49:45][NOTICE] - /ecommerce_management/pedidos/fechados
+[18.06.2016 - 01:49:45][NOTICE] - match: /pedidos/fechados with /pedidos/fechados
+[18.06.2016 - 01:49:45][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 18:40:55][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 18:40:55][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 18:40:55][NOTICE] - /ecommerce_management/login
+[19.06.2016 - 18:40:55][NOTICE] - match: /login with /login
+[19.06.2016 - 18:41:00][NOTICE] - /ecommerce_management/login
+[19.06.2016 - 18:41:00][NOTICE] - match: /login with /login
+[19.06.2016 - 18:41:00][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 18:41:00][NOTICE] - /ecommerce_management/
+[19.06.2016 - 18:41:00][NOTICE] - match: / with /
+[19.06.2016 - 18:41:00][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 18:41:02][NOTICE] - /ecommerce_management/clientes/pessoa-fisica
+[19.06.2016 - 18:41:02][NOTICE] - match: /clientes/pessoa-fisica with /clientes/pessoa-fisica
+[19.06.2016 - 18:41:02][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 18:41:06][NOTICE] - /ecommerce_management/clientes/1/deletar-pessoa-fisica
+[19.06.2016 - 18:41:06][NOTICE] - match: /clientes/:id/deletar-pessoa-fisica with /clientes/1/deletar-pessoa-fisica
+[19.06.2016 - 18:41:06][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 18:41:09][NOTICE] - /ecommerce_management/clientes/pessoa-fisica
+[19.06.2016 - 18:41:09][NOTICE] - match: /clientes/pessoa-fisica with /clientes/pessoa-fisica
+[19.06.2016 - 18:41:09][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 18:50:49][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 18:50:49][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 18:50:49][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 18:50:54][NOTICE] - /ecommerce_management/pedidos/abertos
+[19.06.2016 - 18:50:54][NOTICE] - match: /pedidos/abertos with /pedidos/abertos
+[19.06.2016 - 18:50:54][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 18:50:54][NOTICE] - /ecommerce_management/pedidos/fechados
+[19.06.2016 - 18:50:54][NOTICE] - match: /pedidos/fechados with /pedidos/fechados
+[19.06.2016 - 18:50:54][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 18:50:56][NOTICE] - /ecommerce_management/pedidos/2
+[19.06.2016 - 18:50:56][NOTICE] - match: /pedidos/:id with /pedidos/2
+[19.06.2016 - 18:50:56][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 18:50:57][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 18:50:57][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 18:50:57][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 18:50:58][NOTICE] - /ecommerce_management/pedidos/abertos
+[19.06.2016 - 18:50:58][NOTICE] - match: /pedidos/abertos with /pedidos/abertos
+[19.06.2016 - 18:50:58][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 18:50:59][NOTICE] - /ecommerce_management/pedidos/fechados
+[19.06.2016 - 18:50:59][NOTICE] - match: /pedidos/fechados with /pedidos/fechados
+[19.06.2016 - 18:50:59][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 18:51:01][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 18:51:01][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 18:51:01][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 18:51:03][NOTICE] - /ecommerce_management/pedidos/18
+[19.06.2016 - 18:51:03][NOTICE] - match: /pedidos/:id with /pedidos/18
+[19.06.2016 - 18:51:03][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 18:51:06][NOTICE] - /ecommerce_management/produtos/autocomplete-search?query=a
+[19.06.2016 - 18:51:06][NOTICE] - match: /produtos/autocomplete-search with /produtos/autocomplete-search
+[19.06.2016 - 18:51:06][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 18:51:06][NOTICE] - /ecommerce_management/pedidos/produtos
+[19.06.2016 - 18:51:06][NOTICE] - match: /pedidos/produtos with /pedidos/produtos
+[19.06.2016 - 18:51:06][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 18:51:07][NOTICE] - /ecommerce_management/pedidos/18
+[19.06.2016 - 18:51:07][NOTICE] - match: /pedidos/:id with /pedidos/18
+[19.06.2016 - 18:51:07][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 18:51:08][NOTICE] - /ecommerce_management/produtos/autocomplete-search?query=a
+[19.06.2016 - 18:51:08][NOTICE] - match: /produtos/autocomplete-search with /produtos/autocomplete-search
+[19.06.2016 - 18:51:08][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 18:51:09][NOTICE] - /ecommerce_management/pedidos/produtos
+[19.06.2016 - 18:51:09][NOTICE] - match: /pedidos/produtos with /pedidos/produtos
+[19.06.2016 - 18:51:09][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 18:51:09][NOTICE] - /ecommerce_management/pedidos/18
+[19.06.2016 - 18:51:09][NOTICE] - match: /pedidos/:id with /pedidos/18
+[19.06.2016 - 18:51:09][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 18:51:15][NOTICE] - /ecommerce_management/pedidos/18/produtos/1/remover
+[19.06.2016 - 18:51:15][NOTICE] - match: /pedidos/:id/produtos/:product_id/remover with /pedidos/18/produtos/1/remover
+[19.06.2016 - 18:51:15][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 18:51:15][NOTICE] - /ecommerce_management/pedidos/18
+[19.06.2016 - 18:51:15][NOTICE] - match: /pedidos/:id with /pedidos/18
+[19.06.2016 - 18:51:15][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 18:51:17][NOTICE] - /ecommerce_management/pedidos/18/produtos/31/remover
+[19.06.2016 - 18:51:17][NOTICE] - match: /pedidos/:id/produtos/:product_id/remover with /pedidos/18/produtos/31/remover
+[19.06.2016 - 18:51:17][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 18:51:17][NOTICE] - /ecommerce_management/pedidos/18
+[19.06.2016 - 18:51:17][NOTICE] - match: /pedidos/:id with /pedidos/18
+[19.06.2016 - 18:51:17][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 18:51:18][NOTICE] - /ecommerce_management/pedidos/18/produtos/31/remover
+[19.06.2016 - 18:51:18][NOTICE] - match: /pedidos/:id/produtos/:product_id/remover with /pedidos/18/produtos/31/remover
+[19.06.2016 - 18:51:18][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 18:51:18][NOTICE] - /ecommerce_management/pedidos/18
+[19.06.2016 - 18:51:18][NOTICE] - match: /pedidos/:id with /pedidos/18
+[19.06.2016 - 18:51:18][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 18:51:18][NOTICE] - /ecommerce_management/pedidos/18/produtos/31/remover
+[19.06.2016 - 18:51:18][NOTICE] - match: /pedidos/:id/produtos/:product_id/remover with /pedidos/18/produtos/31/remover
+[19.06.2016 - 18:51:18][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 18:51:19][NOTICE] - /ecommerce_management/pedidos/18
+[19.06.2016 - 18:51:19][NOTICE] - match: /pedidos/:id with /pedidos/18
+[19.06.2016 - 18:51:19][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 18:51:19][NOTICE] - /ecommerce_management/pedidos/18/produtos/31/remover
+[19.06.2016 - 18:51:19][NOTICE] - match: /pedidos/:id/produtos/:product_id/remover with /pedidos/18/produtos/31/remover
+[19.06.2016 - 18:51:19][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 18:51:19][NOTICE] - /ecommerce_management/pedidos/18
+[19.06.2016 - 18:51:19][NOTICE] - match: /pedidos/:id with /pedidos/18
+[19.06.2016 - 18:51:19][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 18:51:20][NOTICE] - /ecommerce_management/pedidos/18/produtos/32/remover
+[19.06.2016 - 18:51:20][NOTICE] - match: /pedidos/:id/produtos/:product_id/remover with /pedidos/18/produtos/32/remover
+[19.06.2016 - 18:51:20][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 18:51:20][NOTICE] - /ecommerce_management/pedidos/18
+[19.06.2016 - 18:51:20][NOTICE] - match: /pedidos/:id with /pedidos/18
+[19.06.2016 - 18:51:20][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 18:51:21][NOTICE] - /ecommerce_management/pedidos/18/produtos/5/remover
+[19.06.2016 - 18:51:21][NOTICE] - match: /pedidos/:id/produtos/:product_id/remover with /pedidos/18/produtos/5/remover
+[19.06.2016 - 18:51:21][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 18:51:21][NOTICE] - /ecommerce_management/pedidos/18
+[19.06.2016 - 18:51:21][NOTICE] - match: /pedidos/:id with /pedidos/18
+[19.06.2016 - 18:51:21][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 18:53:58][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 18:53:58][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 18:53:58][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 18:54:29][NOTICE] - /ecommerce_management/relatorios/funcionarios
+[19.06.2016 - 18:54:29][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 18:54:29][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 18:54:30][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 18:54:30][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 18:54:30][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 18:54:31][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos
+[19.06.2016 - 18:54:31][NOTICE] - match: /relatorios/produtos-menos-vendidos with /relatorios/produtos-menos-vendidos
+[19.06.2016 - 18:54:31][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 18:54:31][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 18:54:31][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 18:54:31][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 19:22:54][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos
+[19.06.2016 - 19:22:54][NOTICE] - match: /relatorios/produtos-menos-vendidos with /relatorios/produtos-menos-vendidos
+[19.06.2016 - 19:22:54][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 19:22:54][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 19:22:54][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 19:22:54][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 19:22:55][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos
+[19.06.2016 - 19:22:55][NOTICE] - match: /relatorios/produtos-menos-vendidos with /relatorios/produtos-menos-vendidos
+[19.06.2016 - 19:22:55][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 19:22:55][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 19:22:55][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 19:22:55][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 19:22:55][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos
+[19.06.2016 - 19:22:55][NOTICE] - match: /relatorios/produtos-menos-vendidos with /relatorios/produtos-menos-vendidos
+[19.06.2016 - 19:22:55][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 19:22:56][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 19:22:56][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 19:22:56][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 19:22:56][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos
+[19.06.2016 - 19:22:56][NOTICE] - match: /relatorios/produtos-menos-vendidos with /relatorios/produtos-menos-vendidos
+[19.06.2016 - 19:22:56][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 19:22:57][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 19:22:57][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 19:22:57][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 19:22:57][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos
+[19.06.2016 - 19:22:57][NOTICE] - match: /relatorios/produtos-menos-vendidos with /relatorios/produtos-menos-vendidos
+[19.06.2016 - 19:22:57][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 19:22:57][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 19:22:57][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 19:22:57][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 19:22:58][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos
+[19.06.2016 - 19:22:58][NOTICE] - match: /relatorios/produtos-menos-vendidos with /relatorios/produtos-menos-vendidos
+[19.06.2016 - 19:22:58][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 19:22:58][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 19:22:58][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 19:22:58][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 19:22:59][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos
+[19.06.2016 - 19:22:59][NOTICE] - match: /relatorios/produtos-menos-vendidos with /relatorios/produtos-menos-vendidos
+[19.06.2016 - 19:22:59][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 19:22:59][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 19:22:59][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 19:22:59][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 19:23:00][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos
+[19.06.2016 - 19:23:00][NOTICE] - match: /relatorios/produtos-menos-vendidos with /relatorios/produtos-menos-vendidos
+[19.06.2016 - 19:23:00][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 19:23:01][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 19:23:01][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 19:23:01][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 19:23:01][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos
+[19.06.2016 - 19:23:01][NOTICE] - match: /relatorios/produtos-menos-vendidos with /relatorios/produtos-menos-vendidos
+[19.06.2016 - 19:23:01][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 19:23:02][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 19:23:02][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 19:23:02][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 19:23:02][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos
+[19.06.2016 - 19:23:02][NOTICE] - match: /relatorios/produtos-menos-vendidos with /relatorios/produtos-menos-vendidos
+[19.06.2016 - 19:23:02][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 19:23:02][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 19:23:02][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 19:23:02][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 19:23:03][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos
+[19.06.2016 - 19:23:03][NOTICE] - match: /relatorios/produtos-menos-vendidos with /relatorios/produtos-menos-vendidos
+[19.06.2016 - 19:23:03][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 19:23:03][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 19:23:03][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 19:23:03][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 19:23:04][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos
+[19.06.2016 - 19:23:04][NOTICE] - match: /relatorios/produtos-menos-vendidos with /relatorios/produtos-menos-vendidos
+[19.06.2016 - 19:23:04][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 19:23:04][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 19:23:04][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 19:23:04][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 19:47:01][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 19:47:01][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 19:47:01][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 19:47:12][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 19:47:12][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 19:47:12][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 19:54:23][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 19:54:23][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 19:54:23][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 19:57:05][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 19:57:05][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 19:57:05][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 19:57:16][NOTICE] - /ecommerce_management/pedidos/novo
+[19.06.2016 - 19:57:16][NOTICE] - match: /pedidos/novo with /pedidos/novo
+[19.06.2016 - 19:57:16][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 19:57:18][NOTICE] - /ecommerce_management/clientes/autocomplete-search?query=Gu
+[19.06.2016 - 19:57:18][NOTICE] - match: /clientes/autocomplete-search with /clientes/autocomplete-search
+[19.06.2016 - 19:57:18][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 19:57:18][NOTICE] - /ecommerce_management/clientes/autocomplete-search?query=Gui
+[19.06.2016 - 19:57:18][NOTICE] - match: /clientes/autocomplete-search with /clientes/autocomplete-search
+[19.06.2016 - 19:57:18][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 19:57:19][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 19:57:19][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 19:57:19][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 19:57:20][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 19:57:20][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 19:57:20][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 19:57:22][NOTICE] - /ecommerce_management/pedidos/9
+[19.06.2016 - 19:57:22][NOTICE] - match: /pedidos/:id with /pedidos/9
+[19.06.2016 - 19:57:22][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:00:50][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:00:50][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:00:50][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:00:52][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 20:00:52][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 20:00:52][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:00:58][NOTICE] - /ecommerce_management/pedidos/novo
+[19.06.2016 - 20:00:58][NOTICE] - match: /pedidos/novo with /pedidos/novo
+[19.06.2016 - 20:00:58][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:01:00][NOTICE] - /ecommerce_management/clientes/autocomplete-search?query=GU
+[19.06.2016 - 20:01:00][NOTICE] - match: /clientes/autocomplete-search with /clientes/autocomplete-search
+[19.06.2016 - 20:01:00][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:01:01][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 20:01:01][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 20:01:01][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:01:01][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 20:01:01][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 20:01:01][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:01:04][NOTICE] - /ecommerce_management/pedidos/9
+[19.06.2016 - 20:01:04][NOTICE] - match: /pedidos/:id with /pedidos/9
+[19.06.2016 - 20:01:04][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:01:06][NOTICE] - /ecommerce_management/produtos/autocomplete-search?query=a
+[19.06.2016 - 20:01:06][NOTICE] - match: /produtos/autocomplete-search with /produtos/autocomplete-search
+[19.06.2016 - 20:01:06][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:01:07][NOTICE] - /ecommerce_management/pedidos/produtos
+[19.06.2016 - 20:01:07][NOTICE] - match: /pedidos/produtos with /pedidos/produtos
+[19.06.2016 - 20:01:07][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:01:07][NOTICE] - /ecommerce_management/pedidos/9
+[19.06.2016 - 20:01:07][NOTICE] - match: /pedidos/:id with /pedidos/9
+[19.06.2016 - 20:01:07][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:01:15][NOTICE] - /ecommerce_management/pedidos/9/fechar
+[19.06.2016 - 20:01:15][NOTICE] - match: /pedidos/:id/fechar with /pedidos/9/fechar
+[19.06.2016 - 20:01:15][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:01:22][NOTICE] - /ecommerce_management/pedidos/9
+[19.06.2016 - 20:01:22][NOTICE] - match: /pedidos/:id with /pedidos/9
+[19.06.2016 - 20:01:22][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:02:32][NOTICE] - /ecommerce_management/pedidos/9/fechar
+[19.06.2016 - 20:02:32][NOTICE] - match: /pedidos/:id/fechar with /pedidos/9/fechar
+[19.06.2016 - 20:02:32][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:02:34][NOTICE] - /ecommerce_management/pedidos/9
+[19.06.2016 - 20:02:34][NOTICE] - match: /pedidos/:id with /pedidos/9
+[19.06.2016 - 20:02:34][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:02:34][NOTICE] - /ecommerce_management/pedidos/9
+[19.06.2016 - 20:02:34][NOTICE] - match: /pedidos/:id with /pedidos/9
+[19.06.2016 - 20:02:34][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:02:35][NOTICE] - /ecommerce_management/pedidos/9/fechar
+[19.06.2016 - 20:02:35][NOTICE] - match: /pedidos/:id/fechar with /pedidos/9/fechar
+[19.06.2016 - 20:02:35][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:02:43][NOTICE] - /ecommerce_management/pedidos/9
+[19.06.2016 - 20:02:43][NOTICE] - match: /pedidos/:id with /pedidos/9
+[19.06.2016 - 20:02:43][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:03:03][NOTICE] - /ecommerce_management/pedidos/9/fechar
+[19.06.2016 - 20:03:03][NOTICE] - match: /pedidos/:id/fechar with /pedidos/9/fechar
+[19.06.2016 - 20:03:03][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:03:06][NOTICE] - /ecommerce_management/pedidos/9
+[19.06.2016 - 20:03:06][NOTICE] - match: /pedidos/:id with /pedidos/9
+[19.06.2016 - 20:03:06][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:03:59][NOTICE] - /ecommerce_management/produtos/autocomplete-search?query=a
+[19.06.2016 - 20:03:59][NOTICE] - match: /produtos/autocomplete-search with /produtos/autocomplete-search
+[19.06.2016 - 20:03:59][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:04:00][NOTICE] - /ecommerce_management/pedidos/produtos
+[19.06.2016 - 20:04:00][NOTICE] - match: /pedidos/produtos with /pedidos/produtos
+[19.06.2016 - 20:04:00][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:04:00][NOTICE] - /ecommerce_management/pedidos/9
+[19.06.2016 - 20:04:00][NOTICE] - match: /pedidos/:id with /pedidos/9
+[19.06.2016 - 20:04:00][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:04:03][NOTICE] - /ecommerce_management/produtos/autocomplete-search?query=a
+[19.06.2016 - 20:04:03][NOTICE] - match: /produtos/autocomplete-search with /produtos/autocomplete-search
+[19.06.2016 - 20:04:03][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:04:03][NOTICE] - /ecommerce_management/pedidos/produtos
+[19.06.2016 - 20:04:03][NOTICE] - match: /pedidos/produtos with /pedidos/produtos
+[19.06.2016 - 20:04:03][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:04:03][NOTICE] - /ecommerce_management/pedidos/9
+[19.06.2016 - 20:04:03][NOTICE] - match: /pedidos/:id with /pedidos/9
+[19.06.2016 - 20:04:03][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:04:05][NOTICE] - /ecommerce_management/produtos/autocomplete-search?query=a
+[19.06.2016 - 20:04:05][NOTICE] - match: /produtos/autocomplete-search with /produtos/autocomplete-search
+[19.06.2016 - 20:04:05][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:04:06][NOTICE] - /ecommerce_management/pedidos/produtos
+[19.06.2016 - 20:04:06][NOTICE] - match: /pedidos/produtos with /pedidos/produtos
+[19.06.2016 - 20:04:06][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:04:06][NOTICE] - /ecommerce_management/pedidos/9
+[19.06.2016 - 20:04:06][NOTICE] - match: /pedidos/:id with /pedidos/9
+[19.06.2016 - 20:04:06][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:04:07][NOTICE] - /ecommerce_management/pedidos/9/fechar
+[19.06.2016 - 20:04:07][NOTICE] - match: /pedidos/:id/fechar with /pedidos/9/fechar
+[19.06.2016 - 20:04:07][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:04:09][NOTICE] - /ecommerce_management/pedidos/9
+[19.06.2016 - 20:04:09][NOTICE] - match: /pedidos/:id with /pedidos/9
+[19.06.2016 - 20:04:09][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:05:21][NOTICE] - /ecommerce_management/pedidos/9
+[19.06.2016 - 20:05:21][NOTICE] - match: /pedidos/:id with /pedidos/9
+[19.06.2016 - 20:05:21][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:05:21][NOTICE] - /ecommerce_management/pedidos/9/fechar
+[19.06.2016 - 20:05:21][NOTICE] - match: /pedidos/:id/fechar with /pedidos/9/fechar
+[19.06.2016 - 20:05:21][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:05:22][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 20:05:22][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 20:05:22][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:07:45][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 20:07:45][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 20:07:45][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:07:46][NOTICE] - /ecommerce_management/pedidos/novo
+[19.06.2016 - 20:07:46][NOTICE] - match: /pedidos/novo with /pedidos/novo
+[19.06.2016 - 20:07:46][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:07:47][NOTICE] - /ecommerce_management/clientes/autocomplete-search?query=gu
+[19.06.2016 - 20:07:47][NOTICE] - match: /clientes/autocomplete-search with /clientes/autocomplete-search
+[19.06.2016 - 20:07:47][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:07:48][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 20:07:48][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 20:07:48][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:07:48][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 20:07:48][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 20:07:48][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:07:50][NOTICE] - /ecommerce_management/pedidos/10
+[19.06.2016 - 20:07:50][NOTICE] - match: /pedidos/:id with /pedidos/10
+[19.06.2016 - 20:07:50][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:07:57][NOTICE] - /ecommerce_management/pedidos/10/fechar
+[19.06.2016 - 20:07:57][NOTICE] - match: /pedidos/:id/fechar with /pedidos/10/fechar
+[19.06.2016 - 20:07:57][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:08:03][NOTICE] - /ecommerce_management/pedidos/10
+[19.06.2016 - 20:08:03][NOTICE] - match: /pedidos/:id with /pedidos/10
+[19.06.2016 - 20:08:03][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:09:16][NOTICE] - /ecommerce_management/pedidos/10/fechar
+[19.06.2016 - 20:09:16][NOTICE] - match: /pedidos/:id/fechar with /pedidos/10/fechar
+[19.06.2016 - 20:09:16][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:09:16][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 20:09:16][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 20:09:16][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:11:17][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 20:11:17][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 20:11:17][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:11:18][NOTICE] - /ecommerce_management/pedidos/10/deletar
+[19.06.2016 - 20:11:18][NOTICE] - match: /pedidos/:id/deletar with /pedidos/10/deletar
+[19.06.2016 - 20:11:18][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:11:18][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 20:11:18][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 20:11:18][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:11:19][NOTICE] - /ecommerce_management/pedidos/novo
+[19.06.2016 - 20:11:19][NOTICE] - match: /pedidos/novo with /pedidos/novo
+[19.06.2016 - 20:11:19][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:11:20][NOTICE] - /ecommerce_management/clientes/autocomplete-search?query=gu
+[19.06.2016 - 20:11:20][NOTICE] - match: /clientes/autocomplete-search with /clientes/autocomplete-search
+[19.06.2016 - 20:11:20][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:11:21][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 20:11:21][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 20:11:21][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:11:21][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 20:11:21][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 20:11:21][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:11:22][NOTICE] - /ecommerce_management/pedidos/11
+[19.06.2016 - 20:11:22][NOTICE] - match: /pedidos/:id with /pedidos/11
+[19.06.2016 - 20:11:22][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:11:27][NOTICE] - /ecommerce_management/pedidos/11/fechar
+[19.06.2016 - 20:11:27][NOTICE] - match: /pedidos/:id/fechar with /pedidos/11/fechar
+[19.06.2016 - 20:11:27][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:11:42][NOTICE] - /ecommerce_management/pedidos/11
+[19.06.2016 - 20:11:42][NOTICE] - match: /pedidos/:id with /pedidos/11
+[19.06.2016 - 20:11:42][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:15:13][NOTICE] - /ecommerce_management/pedidos/11/fechar
+[19.06.2016 - 20:15:13][NOTICE] - match: /pedidos/:id/fechar with /pedidos/11/fechar
+[19.06.2016 - 20:15:13][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:15:16][NOTICE] - /ecommerce_management/pedidos/11
+[19.06.2016 - 20:15:16][NOTICE] - match: /pedidos/:id with /pedidos/11
+[19.06.2016 - 20:15:16][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:15:53][NOTICE] - /ecommerce_management/pedidos/11
+[19.06.2016 - 20:15:53][NOTICE] - match: /pedidos/:id with /pedidos/11
+[19.06.2016 - 20:15:58][NOTICE] - /ecommerce_management/pedidos/11
+[19.06.2016 - 20:15:58][NOTICE] - match: /pedidos/:id with /pedidos/11
+[19.06.2016 - 20:15:58][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:15:59][NOTICE] - /ecommerce_management/pedidos/11/fechar
+[19.06.2016 - 20:15:59][NOTICE] - match: /pedidos/:id/fechar with /pedidos/11/fechar
+[19.06.2016 - 20:15:59][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:16:29][NOTICE] - /ecommerce_management/pedidos/11/fechar
+[19.06.2016 - 20:16:29][NOTICE] - match: /pedidos/:id/fechar with /pedidos/11/fechar
+[19.06.2016 - 20:16:29][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:16:33][NOTICE] - /ecommerce_management/pedidos/11
+[19.06.2016 - 20:16:33][NOTICE] - match: /pedidos/:id with /pedidos/11
+[19.06.2016 - 20:16:33][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:17:01][NOTICE] - /ecommerce_management/pedidos/11
+[19.06.2016 - 20:17:01][NOTICE] - match: /pedidos/:id with /pedidos/11
+[19.06.2016 - 20:17:01][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:17:02][NOTICE] - /ecommerce_management/pedidos/11/fechar
+[19.06.2016 - 20:17:02][NOTICE] - match: /pedidos/:id/fechar with /pedidos/11/fechar
+[19.06.2016 - 20:17:02][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:17:09][NOTICE] - /ecommerce_management/pedidos/11
+[19.06.2016 - 20:17:09][NOTICE] - match: /pedidos/:id with /pedidos/11
+[19.06.2016 - 20:17:09][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:17:22][NOTICE] - /ecommerce_management/pedidos/11/fechar
+[19.06.2016 - 20:17:22][NOTICE] - match: /pedidos/:id/fechar with /pedidos/11/fechar
+[19.06.2016 - 20:17:22][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:17:22][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 20:17:22][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 20:17:22][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:17:46][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:17:46][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:17:46][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:21:04][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:21:04][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:21:04][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:21:37][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:21:37][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:21:37][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:22:00][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:22:00][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:22:00][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:22:13][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:22:13][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:22:13][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:22:49][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:22:49][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:22:49][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:23:19][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:23:19][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:23:19][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:23:32][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:23:32][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:23:32][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:23:41][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:23:41][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:23:41][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:23:55][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:23:55][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:23:55][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:24:12][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:24:12][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:24:12][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:24:13][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:24:13][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:24:13][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:24:36][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:24:36][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:24:36][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:24:47][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:24:47][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:24:47][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:25:01][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:25:01][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:25:01][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:25:16][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:25:16][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:25:16][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:25:26][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:25:26][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:25:26][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:25:32][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:25:32][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:25:32][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:28:30][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:28:30][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:28:30][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:28:38][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:28:38][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:28:38][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:28:39][NOTICE] - /ecommerce_management/relatorios/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20property:%20ReportsController::$action%20in%20%3Cb%3E/var/www/ecommerce_management/app/views/reports/_table_products.phtml%3C/b%3E%20on%20line%20%3Cb%3E9%3C/b%3E%3Cbr%20/%3E
+[19.06.2016 - 20:28:39][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/relatorios/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20property:%20ReportsController::$action%20in%20%3Cb%3E/var/www/ecommerce_management/app/views/reports/_table_products.phtml%3C/b%3E%20on%20line%20%3Cb%3E9%3C/b%3E%3Cbr%20/%3E
+[19.06.2016 - 20:28:39][NOTICE] - /ecommerce_management/
+[19.06.2016 - 20:28:39][NOTICE] - match: / with /
+[19.06.2016 - 20:28:39][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:28:41][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:28:41][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:28:41][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:28:43][NOTICE] - /ecommerce_management/relatorios/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20property:%20ReportsController::$action%20in%20%3Cb%3E/var/www/ecommerce_management/app/views/reports/_table_products.phtml%3C/b%3E%20on%20line%20%3Cb%3E9%3C/b%3E%3Cbr%20/%3E
+[19.06.2016 - 20:28:43][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/relatorios/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20property:%20ReportsController::$action%20in%20%3Cb%3E/var/www/ecommerce_management/app/views/reports/_table_products.phtml%3C/b%3E%20on%20line%20%3Cb%3E9%3C/b%3E%3Cbr%20/%3E
+[19.06.2016 - 20:28:43][NOTICE] - /ecommerce_management/
+[19.06.2016 - 20:28:43][NOTICE] - match: / with /
+[19.06.2016 - 20:28:43][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:28:44][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:28:44][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:28:44][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:29:20][NOTICE] - /ecommerce_management/relatorios/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20property:%20ReportsController::$action%20in%20%3Cb%3E/var/www/ecommerce_management/app/views/reports/_table_products.phtml%3C/b%3E%20on%20line%20%3Cb%3E9%3C/b%3E%3Cbr%20/%3E
+[19.06.2016 - 20:29:20][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/relatorios/%3Cbr%20/%3E%3Cb%3ENotice%3C/b%3E:%20%20Undefined%20property:%20ReportsController::$action%20in%20%3Cb%3E/var/www/ecommerce_management/app/views/reports/_table_products.phtml%3C/b%3E%20on%20line%20%3Cb%3E9%3C/b%3E%3Cbr%20/%3E
+[19.06.2016 - 20:29:20][NOTICE] - /ecommerce_management/
+[19.06.2016 - 20:29:20][NOTICE] - match: / with /
+[19.06.2016 - 20:29:20][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:29:22][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:29:22][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:29:22][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:29:26][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:29:26][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:29:26][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:29:36][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:29:36][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:29:36][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:29:44][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:29:44][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:29:44][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:30:21][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:30:21][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:30:21][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:30:22][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:30:22][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:30:22][NOTICE] - /ecommerce_management/
+[19.06.2016 - 20:30:22][NOTICE] - match: / with /
+[19.06.2016 - 20:30:22][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:30:23][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:30:23][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:30:23][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:30:24][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:30:24][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:30:24][NOTICE] - /ecommerce_management/
+[19.06.2016 - 20:30:24][NOTICE] - match: / with /
+[19.06.2016 - 20:30:24][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:30:26][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:30:26][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:30:26][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:30:27][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:30:27][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:30:27][NOTICE] - /ecommerce_management/
+[19.06.2016 - 20:30:27][NOTICE] - match: / with /
+[19.06.2016 - 20:30:27][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:30:29][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:30:29][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:30:29][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:30:34][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:30:34][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:30:34][NOTICE] - /ecommerce_management/
+[19.06.2016 - 20:30:34][NOTICE] - match: / with /
+[19.06.2016 - 20:30:34][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:30:35][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:30:35][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:30:35][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:30:37][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:30:37][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:30:37][NOTICE] - /ecommerce_management/
+[19.06.2016 - 20:30:37][NOTICE] - match: / with /
+[19.06.2016 - 20:30:37][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:30:40][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:30:40][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:30:40][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:30:41][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:30:41][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:30:41][NOTICE] - /ecommerce_management/
+[19.06.2016 - 20:30:41][NOTICE] - match: / with /
+[19.06.2016 - 20:30:41][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:30:42][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:30:42][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:30:42][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:30:51][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:30:51][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:30:51][NOTICE] - /ecommerce_management/
+[19.06.2016 - 20:30:51][NOTICE] - match: / with /
+[19.06.2016 - 20:30:51][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:30:52][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:30:52][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:30:52][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:31:21][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:31:21][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:31:21][NOTICE] - /ecommerce_management/
+[19.06.2016 - 20:31:21][NOTICE] - match: / with /
+[19.06.2016 - 20:31:21][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:31:22][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:31:22][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:31:22][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:31:23][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:31:23][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:31:23][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:31:23][NOTICE] - /ecommerce_management/produtos-mais-vendidos
+[19.06.2016 - 20:31:23][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/produtos-mais-vendidos
+[19.06.2016 - 20:31:23][NOTICE] - /ecommerce_management/
+[19.06.2016 - 20:31:23][NOTICE] - match: / with /
+[19.06.2016 - 20:31:23][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:31:24][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:31:24][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:31:24][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:32:18][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:32:18][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:32:18][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:32:41][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:32:41][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:32:41][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:32:42][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:32:42][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:32:42][NOTICE] - /ecommerce_management/
+[19.06.2016 - 20:32:42][NOTICE] - match: / with /
+[19.06.2016 - 20:32:42][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:32:43][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:32:43][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:32:43][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:32:44][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:32:44][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:32:44][NOTICE] - /ecommerce_management/
+[19.06.2016 - 20:32:44][NOTICE] - match: / with /
+[19.06.2016 - 20:32:44][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:32:45][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:32:45][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:32:45][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:33:00][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:33:00][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:33:00][NOTICE] - /ecommerce_management/
+[19.06.2016 - 20:33:00][NOTICE] - match: / with /
+[19.06.2016 - 20:33:00][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:33:01][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:33:01][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:33:01][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:33:24][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 20:33:24][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 20:33:24][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:33:38][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 20:33:38][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 20:33:38][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:33:40][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:33:40][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:33:40][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:34:06][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:34:06][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:34:06][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:34:09][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:34:09][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:34:09][NOTICE] - /ecommerce_management/
+[19.06.2016 - 20:34:09][NOTICE] - match: / with /
+[19.06.2016 - 20:34:09][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:34:11][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:34:11][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:34:11][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:35:40][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:35:40][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:35:40][NOTICE] - /ecommerce_management/
+[19.06.2016 - 20:35:40][NOTICE] - match: / with /
+[19.06.2016 - 20:35:40][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:35:41][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:35:41][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:35:41][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:35:41][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:35:41][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:35:41][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:35:43][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos
+[19.06.2016 - 20:35:43][NOTICE] - match: /relatorios/produtos-menos-vendidos with /relatorios/produtos-menos-vendidos
+[19.06.2016 - 20:35:43][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:35:45][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:35:45][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:35:45][NOTICE] - /ecommerce_management/
+[19.06.2016 - 20:35:45][NOTICE] - match: / with /
+[19.06.2016 - 20:35:45][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:35:46][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos
+[19.06.2016 - 20:35:46][NOTICE] - match: /relatorios/produtos-menos-vendidos with /relatorios/produtos-menos-vendidos
+[19.06.2016 - 20:35:46][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:36:16][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos
+[19.06.2016 - 20:36:16][NOTICE] - match: /relatorios/produtos-menos-vendidos with /relatorios/produtos-menos-vendidos
+[19.06.2016 - 20:36:16][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:36:17][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos
+[19.06.2016 - 20:36:17][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/relatorios/produtos-menos-vendidos
+[19.06.2016 - 20:36:17][NOTICE] - /ecommerce_management/
+[19.06.2016 - 20:36:17][NOTICE] - match: / with /
+[19.06.2016 - 20:36:17][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:36:18][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos
+[19.06.2016 - 20:36:18][NOTICE] - match: /relatorios/produtos-menos-vendidos with /relatorios/produtos-menos-vendidos
+[19.06.2016 - 20:36:18][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:36:44][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos
+[19.06.2016 - 20:36:44][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/relatorios/produtos-menos-vendidos
+[19.06.2016 - 20:36:44][NOTICE] - /ecommerce_management/
+[19.06.2016 - 20:36:44][NOTICE] - match: / with /
+[19.06.2016 - 20:36:44][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:36:45][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos
+[19.06.2016 - 20:36:45][NOTICE] - match: /relatorios/produtos-menos-vendidos with /relatorios/produtos-menos-vendidos
+[19.06.2016 - 20:36:45][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:37:06][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos
+[19.06.2016 - 20:37:06][!!ERROR!!] - URL NOT FOUND: /ecommerce_management/relatorios/produtos-menos-vendidos
+[19.06.2016 - 20:37:06][NOTICE] - /ecommerce_management/
+[19.06.2016 - 20:37:06][NOTICE] - match: / with /
+[19.06.2016 - 20:37:06][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:37:08][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos
+[19.06.2016 - 20:37:08][NOTICE] - match: /relatorios/produtos-menos-vendidos with /relatorios/produtos-menos-vendidos
+[19.06.2016 - 20:37:08][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:37:08][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos
+[19.06.2016 - 20:37:08][NOTICE] - match: /relatorios/produtos-menos-vendidos with /relatorios/produtos-menos-vendidos
+[19.06.2016 - 20:37:08][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:37:09][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos?button=
+[19.06.2016 - 20:37:09][NOTICE] - match: /relatorios/produtos-menos-vendidos with /relatorios/produtos-menos-vendidos
+[19.06.2016 - 20:37:09][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:37:10][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos?button=
+[19.06.2016 - 20:37:10][NOTICE] - match: /relatorios/produtos-menos-vendidos with /relatorios/produtos-menos-vendidos
+[19.06.2016 - 20:37:10][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:38:04][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos
+[19.06.2016 - 20:38:04][NOTICE] - match: /relatorios/produtos-menos-vendidos with /relatorios/produtos-menos-vendidos
+[19.06.2016 - 20:38:04][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:38:05][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos?button=
+[19.06.2016 - 20:38:05][NOTICE] - match: /relatorios/produtos-menos-vendidos with /relatorios/produtos-menos-vendidos
+[19.06.2016 - 20:38:05][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:38:06][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:38:06][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:38:06][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:38:07][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos?button=
+[19.06.2016 - 20:38:07][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:38:07][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:39:12][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos?button=
+[19.06.2016 - 20:39:12][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:39:12][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:39:16][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos?report%5Bcreated_at%5D=2016-06-10&report%5Bclosed_at%5D=2016-06-10&button=
+[19.06.2016 - 20:39:16][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:39:16][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:41:01][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos?report%5Bcreated_at%5D=2016-06-08&report%5Bclosed_at%5D=&button=
+[19.06.2016 - 20:41:01][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:41:01][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:41:05][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos?report%5Bcreated_at%5D=2016-06-10&report%5Bclosed_at%5D=2016-06-10&button=
+[19.06.2016 - 20:41:05][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:41:05][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:41:06][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos?button=
+[19.06.2016 - 20:41:06][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:41:06][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:41:16][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos?button=
+[19.06.2016 - 20:41:16][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:41:16][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:41:16][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos?button=
+[19.06.2016 - 20:41:16][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:41:16][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:41:59][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos?button=
+[19.06.2016 - 20:41:59][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:41:59][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:42:01][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:42:01][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:42:01][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:42:01][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos?button=
+[19.06.2016 - 20:42:01][NOTICE] - match: /relatorios/produtos-menos-vendidos with /relatorios/produtos-menos-vendidos
+[19.06.2016 - 20:42:01][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:42:05][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos?report%5Bcreated_at%5D=2016-06-09&report%5Bclosed_at%5D=2016-06-08&button=
+[19.06.2016 - 20:42:05][NOTICE] - match: /relatorios/produtos-menos-vendidos with /relatorios/produtos-menos-vendidos
+[19.06.2016 - 20:42:05][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:42:07][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos?report%5Bcreated_at%5D=&report%5Bclosed_at%5D=&button=
+[19.06.2016 - 20:42:07][NOTICE] - match: /relatorios/produtos-menos-vendidos with /relatorios/produtos-menos-vendidos
+[19.06.2016 - 20:42:07][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:42:11][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos?report%5Bcreated_at%5D=2016-06-23&report%5Bclosed_at%5D=2016-06-03&button=
+[19.06.2016 - 20:42:11][NOTICE] - match: /relatorios/produtos-menos-vendidos with /relatorios/produtos-menos-vendidos
+[19.06.2016 - 20:42:11][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:42:17][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:42:17][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:42:17][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:42:18][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos?report%5Bcreated_at%5D=2016-06-23&report%5Bclosed_at%5D=2016-06-03&button=
+[19.06.2016 - 20:42:18][NOTICE] - match: /relatorios/produtos-menos-vendidos with /relatorios/produtos-menos-vendidos
+[19.06.2016 - 20:42:18][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:42:28][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos?report%5Bcreated_at%5D=2016-06-23&report%5Bclosed_at%5D=2016-06-03&button=
+[19.06.2016 - 20:42:28][NOTICE] - match: /relatorios/produtos-menos-vendidos with /relatorios/produtos-menos-vendidos
+[19.06.2016 - 20:42:28][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:42:29][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:42:29][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:42:29][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:42:31][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:42:31][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:42:31][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:42:36][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos?report%5Bcreated_at%5D=2016-06-10&report%5Bclosed_at%5D=&button=
+[19.06.2016 - 20:42:36][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:42:36][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:42:39][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:42:39][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:42:39][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:42:49][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:42:49][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:42:49][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:42:50][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos?report%5Bcreated_at%5D=2016-06-23&report%5Bclosed_at%5D=2016-06-03&button=
+[19.06.2016 - 20:42:50][NOTICE] - match: /relatorios/produtos-menos-vendidos with /relatorios/produtos-menos-vendidos
+[19.06.2016 - 20:42:50][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:42:52][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:42:52][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:42:52][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:42:56][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:42:56][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:42:56][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:42:57][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:42:57][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:42:57][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:43:02][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos?report%5Bcreated_at%5D=2016-06-09&report%5Bclosed_at%5D=&button=
+[19.06.2016 - 20:43:02][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:43:02][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:43:04][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:43:04][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:43:04][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:43:13][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:43:13][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:43:13][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:43:52][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:43:52][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:43:52][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:43:53][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:43:53][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:43:53][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:43:53][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:43:53][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:43:53][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:43:58][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:43:58][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:43:58][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:44:01][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos?report%5Bcreated_at%5D=2016-06-10&report%5Bclosed_at%5D=&button=
+[19.06.2016 - 20:44:01][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:44:01][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:44:09][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos?report%5Bcreated_at%5D=2016-06-10&report%5Bclosed_at%5D=&button=
+[19.06.2016 - 20:44:09][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:44:09][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:44:28][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:44:28][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:44:28][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:44:32][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:44:32][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:44:32][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:44:35][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos?report%5Bcreated_at%5D=&report%5Bclosed_at%5D=2016-06-09&button=
+[19.06.2016 - 20:44:35][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:44:35][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:44:40][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos?report%5Bcreated_at%5D=&report%5Bclosed_at%5D=2016-06-09&button=
+[19.06.2016 - 20:44:40][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:44:40][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:44:43][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:44:43][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:44:43][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:44:46][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:44:46][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:44:46][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:53:10][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 20:53:10][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 20:53:10][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:54:38][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:54:38][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:54:38][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:55:19][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:55:19][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:55:19][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:56:12][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos?report%5Bcreated_at%5D=2016-06-10&report%5Bclosed_at%5D=2016-10-10&button=
+[19.06.2016 - 20:56:12][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:56:12][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:56:22][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos?report%5Bcreated_at%5D=2016-06-10&report%5Bclosed_at%5D=2016-10-10&button=
+[19.06.2016 - 20:56:22][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:56:22][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:56:35][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos?report%5Bcreated_at%5D=2016-06-06&report%5Bclosed_at%5D=2016-10-10&button=
+[19.06.2016 - 20:56:35][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:56:35][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:56:38][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos?report%5Bcreated_at%5D=2016-06-06&report%5Bclosed_at%5D=2016-10-10&button=
+[19.06.2016 - 20:56:38][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:56:38][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:56:40][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:56:40][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:56:40][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:57:04][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:57:04][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:57:04][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:57:09][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:57:09][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:57:09][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 20:58:07][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:58:07][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 20:58:07][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:00:12][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos?report%5Bcreated_at%5D=2016-10-06&report%5Bclosed_at%5D=2016-10-08&button=
+[19.06.2016 - 21:00:12][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:00:12][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:00:26][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos?report%5Bcreated_at%5D=2016-06-06&report%5Bclosed_at%5D=2016-07-07&button=
+[19.06.2016 - 21:00:26][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:00:26][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:00:56][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos?report%5Bcreated_at%5D=2016-06-06&report%5Bclosed_at%5D=2016-06-09&button=
+[19.06.2016 - 21:00:56][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:00:56][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:01:15][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos?report%5Bcreated_at%5D=2016-06-06&report%5Bclosed_at%5D=2016-10-11&button=
+[19.06.2016 - 21:01:15][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:01:15][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:02:12][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos?report%5Bcreated_at%5D=2016-10-06&report%5Bclosed_at%5D=2016-10-07&button=
+[19.06.2016 - 21:02:12][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:02:12][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:03:12][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos?report%5Bcreated_at%5D=2016-10-06&report%5Bclosed_at%5D=2016-11-08&button=
+[19.06.2016 - 21:03:12][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:03:12][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:04:22][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos?report%5Bcreated_at%5D=2016-10-06&report%5Bclosed_at%5D=2016-12-06&button=
+[19.06.2016 - 21:04:22][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:04:22][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:05:30][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos?report%5Bcreated_at%5D=2016-06-10&report%5Bclosed_at%5D=2016-08-10&button=
+[19.06.2016 - 21:05:30][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:05:30][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:06:39][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos?report%5Bcreated_at%5D=2016-06-10&report%5Bclosed_at%5D=2016-09-10&button=
+[19.06.2016 - 21:06:39][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:06:39][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:07:24][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos?report%5Bcreated_at%5D=2016-06-10&report%5Bclosed_at%5D=2016-09-11&button=
+[19.06.2016 - 21:07:24][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:07:24][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:07:51][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos?report%5Bcreated_at%5D=2016-06-10&report%5Bclosed_at%5D=2016-09-10&button=
+[19.06.2016 - 21:07:51][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:07:51][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:08:07][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos?report%5Bcreated_at%5D=2016-06-10&report%5Bclosed_at%5D=2016-09-11&button=
+[19.06.2016 - 21:08:07][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:08:07][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:08:54][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos?report%5Bcreated_at%5D=2016-06-10&report%5Bclosed_at%5D=2016-09-11&button=
+[19.06.2016 - 21:08:54][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:08:54][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:09:09][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos
+[19.06.2016 - 21:09:09][NOTICE] - match: /relatorios/produtos-menos-vendidos with /relatorios/produtos-menos-vendidos
+[19.06.2016 - 21:09:09][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:09:11][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos?report%5Bcreated_at%5D=&report%5Bclosed_at%5D=&button=
+[19.06.2016 - 21:09:11][NOTICE] - match: /relatorios/produtos-menos-vendidos with /relatorios/produtos-menos-vendidos
+[19.06.2016 - 21:09:11][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:09:16][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos?report%5Bcreated_at%5D=2016-06-17&report%5Bclosed_at%5D=2016-06-09&button=
+[19.06.2016 - 21:09:16][NOTICE] - match: /relatorios/produtos-menos-vendidos with /relatorios/produtos-menos-vendidos
+[19.06.2016 - 21:09:16][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:10:18][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos?report%5Bcreated_at%5D=2016-06-17&report%5Bclosed_at%5D=2016-06-09&button=
+[19.06.2016 - 21:10:18][NOTICE] - match: /relatorios/produtos-menos-vendidos with /relatorios/produtos-menos-vendidos
+[19.06.2016 - 21:10:18][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:10:21][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:10:21][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:10:21][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:10:22][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos
+[19.06.2016 - 21:10:22][NOTICE] - match: /relatorios/produtos-menos-vendidos with /relatorios/produtos-menos-vendidos
+[19.06.2016 - 21:10:22][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:11:14][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos?report%5Bcreated_at%5D=2016-06-10&report%5Bclosed_at%5D=2016-09-11&button=
+[19.06.2016 - 21:11:14][NOTICE] - match: /relatorios/produtos-menos-vendidos with /relatorios/produtos-menos-vendidos
+[19.06.2016 - 21:11:14][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:11:23][NOTICE] - /ecommerce_management/relatorios/funcionarios
+[19.06.2016 - 21:11:23][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 21:11:23][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:11:42][NOTICE] - /ecommerce_management/logout
+[19.06.2016 - 21:11:42][NOTICE] - match: /logout with /logout
+[19.06.2016 - 21:11:42][NOTICE] - /ecommerce_management/login
+[19.06.2016 - 21:11:42][NOTICE] - match: /login with /login
+[19.06.2016 - 21:11:45][NOTICE] - /ecommerce_management/login
+[19.06.2016 - 21:11:45][NOTICE] - match: /login with /login
+[19.06.2016 - 21:11:45][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:11:45][NOTICE] - /ecommerce_management/
+[19.06.2016 - 21:11:45][NOTICE] - match: / with /
+[19.06.2016 - 21:11:45][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:11:46][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 21:11:46][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 21:11:46][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:11:47][NOTICE] - /ecommerce_management/pedidos/novo
+[19.06.2016 - 21:11:47][NOTICE] - match: /pedidos/novo with /pedidos/novo
+[19.06.2016 - 21:11:47][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:11:48][NOTICE] - /ecommerce_management/clientes/autocomplete-search?query=gu
+[19.06.2016 - 21:11:48][NOTICE] - match: /clientes/autocomplete-search with /clientes/autocomplete-search
+[19.06.2016 - 21:11:48][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:11:49][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 21:11:49][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 21:11:49][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:11:52][NOTICE] - /ecommerce_management/produtos
+[19.06.2016 - 21:11:52][NOTICE] - match: /produtos with /produtos
+[19.06.2016 - 21:11:52][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:11:52][NOTICE] - /ecommerce_management/clientes/nova-pessoa-fisica
+[19.06.2016 - 21:11:52][NOTICE] - match: /clientes/nova-pessoa-fisica with /clientes/nova-pessoa-fisica
+[19.06.2016 - 21:11:52][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:11:53][NOTICE] - /ecommerce_management/clientes/pessoa-fisica
+[19.06.2016 - 21:11:53][NOTICE] - match: /clientes/pessoa-fisica with /clientes/pessoa-fisica
+[19.06.2016 - 21:11:53][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:11:54][NOTICE] - /ecommerce_management/clientes/pessoa-juridica
+[19.06.2016 - 21:11:54][NOTICE] - match: /clientes/pessoa-juridica with /clientes/pessoa-juridica
+[19.06.2016 - 21:11:54][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:11:57][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 21:11:57][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 21:11:57][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:11:58][NOTICE] - /ecommerce_management/pedidos/novo
+[19.06.2016 - 21:11:58][NOTICE] - match: /pedidos/novo with /pedidos/novo
+[19.06.2016 - 21:11:58][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:11:59][NOTICE] - /ecommerce_management/clientes/autocomplete-search?query=ju
+[19.06.2016 - 21:11:59][NOTICE] - match: /clientes/autocomplete-search with /clientes/autocomplete-search
+[19.06.2016 - 21:11:59][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:12:00][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 21:12:00][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 21:12:00][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:12:00][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 21:12:00][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 21:12:00][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:12:03][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:12:03][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:12:03][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:12:04][NOTICE] - /ecommerce_management/relatorios/funcionarios
+[19.06.2016 - 21:12:04][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 21:12:04][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:12:11][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:12:11][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:12:11][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:12:13][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 21:12:13][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 21:12:13][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:12:15][NOTICE] - /ecommerce_management/pedidos/12
+[19.06.2016 - 21:12:15][NOTICE] - match: /pedidos/:id with /pedidos/12
+[19.06.2016 - 21:12:15][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:12:16][NOTICE] - /ecommerce_management/produtos/autocomplete-search?query=q
+[19.06.2016 - 21:12:16][NOTICE] - match: /produtos/autocomplete-search with /produtos/autocomplete-search
+[19.06.2016 - 21:12:16][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:12:19][NOTICE] - /ecommerce_management/produtos/autocomplete-search?query=a
+[19.06.2016 - 21:12:19][NOTICE] - match: /produtos/autocomplete-search with /produtos/autocomplete-search
+[19.06.2016 - 21:12:19][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:12:20][NOTICE] - /ecommerce_management/pedidos/produtos
+[19.06.2016 - 21:12:20][NOTICE] - match: /pedidos/produtos with /pedidos/produtos
+[19.06.2016 - 21:12:20][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:12:20][NOTICE] - /ecommerce_management/pedidos/12
+[19.06.2016 - 21:12:20][NOTICE] - match: /pedidos/:id with /pedidos/12
+[19.06.2016 - 21:12:20][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:12:22][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:12:22][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:12:22][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:12:24][NOTICE] - /ecommerce_management/relatorios/funcionarios
+[19.06.2016 - 21:12:24][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 21:12:24][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:12:27][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 21:12:27][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 21:12:27][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:12:28][NOTICE] - /ecommerce_management/pedidos/12
+[19.06.2016 - 21:12:28][NOTICE] - match: /pedidos/:id with /pedidos/12
+[19.06.2016 - 21:12:28][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:12:31][NOTICE] - /ecommerce_management/logout
+[19.06.2016 - 21:12:31][NOTICE] - match: /logout with /logout
+[19.06.2016 - 21:12:31][NOTICE] - /ecommerce_management/login
+[19.06.2016 - 21:12:31][NOTICE] - match: /login with /login
+[19.06.2016 - 21:12:34][NOTICE] - /ecommerce_management/login
+[19.06.2016 - 21:12:34][NOTICE] - match: /login with /login
+[19.06.2016 - 21:12:34][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:12:38][NOTICE] - /ecommerce_management/login
+[19.06.2016 - 21:12:38][NOTICE] - match: /login with /login
+[19.06.2016 - 21:12:38][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:12:42][NOTICE] - /ecommerce_management/login
+[19.06.2016 - 21:12:42][NOTICE] - match: /login with /login
+[19.06.2016 - 21:12:42][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:12:46][NOTICE] - /ecommerce_management/login
+[19.06.2016 - 21:12:46][NOTICE] - match: /login with /login
+[19.06.2016 - 21:12:46][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:12:54][NOTICE] - /ecommerce_management/login
+[19.06.2016 - 21:12:54][NOTICE] - match: /login with /login
+[19.06.2016 - 21:12:54][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:13:07][NOTICE] - /ecommerce_management/login
+[19.06.2016 - 21:13:07][NOTICE] - match: /login with /login
+[19.06.2016 - 21:13:07][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:13:07][NOTICE] - /ecommerce_management/
+[19.06.2016 - 21:13:07][NOTICE] - match: / with /
+[19.06.2016 - 21:13:07][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:13:08][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:13:08][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:13:08][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:13:09][NOTICE] - /ecommerce_management/relatorios/funcionarios
+[19.06.2016 - 21:13:09][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 21:13:09][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:14:17][NOTICE] - /ecommerce_management/relatorios/funcionarios
+[19.06.2016 - 21:14:17][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 21:14:17][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:18:15][NOTICE] - /ecommerce_management/relatorios/funcionarios
+[19.06.2016 - 21:18:15][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 21:18:15][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:18:51][NOTICE] - /ecommerce_management/relatorios/funcionarios
+[19.06.2016 - 21:18:51][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 21:18:51][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:19:52][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:19:52][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:19:52][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:20:09][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos?report%5Bcreated_at%5D=2016-06-10&report%5Bclosed_at%5D=2016-09-10&button=
+[19.06.2016 - 21:20:09][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:20:09][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:20:14][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:20:14][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:20:14][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:20:15][NOTICE] - /ecommerce_management/relatorios/funcionarios
+[19.06.2016 - 21:20:15][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 21:20:15][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:21:09][NOTICE] - /ecommerce_management/relatorios/funcionarios
+[19.06.2016 - 21:21:09][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 21:21:09][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:21:50][NOTICE] - /ecommerce_management/relatorios/funcionarios
+[19.06.2016 - 21:21:50][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 21:21:50][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:22:13][NOTICE] - /ecommerce_management/relatorios/funcionarios
+[19.06.2016 - 21:22:13][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 21:22:13][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:22:13][NOTICE] - /ecommerce_management/relatorios/funcionarios
+[19.06.2016 - 21:22:13][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 21:22:13][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:22:27][NOTICE] - /ecommerce_management/relatorios/funcionarios?report%5Bcreated_at%5D=2016-06-10&report%5Bclosed_at%5D=2016-09-10&button=
+[19.06.2016 - 21:22:27][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 21:22:27][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:23:01][NOTICE] - /ecommerce_management/relatorios/funcionarios?report%5Bcreated_at%5D=2016-06-10&report%5Bclosed_at%5D=2016-09-10&button=
+[19.06.2016 - 21:23:01][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 21:23:01][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:23:02][NOTICE] - /ecommerce_management/relatorios/funcionarios?report%5Bcreated_at%5D=2016-06-10&report%5Bclosed_at%5D=2016-09-10&button=
+[19.06.2016 - 21:23:02][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 21:23:02][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:23:03][NOTICE] - /ecommerce_management/relatorios/funcionarios
+[19.06.2016 - 21:23:03][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 21:23:03][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:23:04][NOTICE] - /ecommerce_management/relatorios/funcionarios
+[19.06.2016 - 21:23:04][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 21:23:04][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:23:21][NOTICE] - /ecommerce_management/relatorios/funcionarios?report%5Bcreated_at%5D=2016-06-06&report%5Bclosed_at%5D=2016-09-10&button=
+[19.06.2016 - 21:23:21][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 21:23:21][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:23:47][NOTICE] - /ecommerce_management/relatorios/funcionarios?report%5Bcreated_at%5D=2016-06-06&report%5Bclosed_at%5D=2016-09-10&button=
+[19.06.2016 - 21:23:47][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 21:23:47][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:25:10][NOTICE] - /ecommerce_management/relatorios/funcionarios?report%5Bcreated_at%5D=2016-06-06&report%5Bclosed_at%5D=2016-09-10&button=
+[19.06.2016 - 21:25:10][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 21:25:10][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:25:14][NOTICE] - /ecommerce_management/relatorios/funcionarios?report%5Bcreated_at%5D=2016-06-06&report%5Bclosed_at%5D=2016-09-10&button=
+[19.06.2016 - 21:25:14][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 21:25:14][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:25:16][NOTICE] - /ecommerce_management/relatorios/funcionarios
+[19.06.2016 - 21:25:16][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 21:25:16][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:25:27][NOTICE] - /ecommerce_management/relatorios/funcionarios?report%5Bcreated_at%5D=2016-06-06&report%5Bclosed_at%5D=2016-09-10&button=
+[19.06.2016 - 21:25:27][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 21:25:27][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:25:46][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 21:25:46][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 21:25:46][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:25:50][NOTICE] - /ecommerce_management/logout
+[19.06.2016 - 21:25:50][NOTICE] - match: /logout with /logout
+[19.06.2016 - 21:25:50][NOTICE] - /ecommerce_management/login
+[19.06.2016 - 21:25:50][NOTICE] - match: /login with /login
+[19.06.2016 - 21:25:53][NOTICE] - /ecommerce_management/login
+[19.06.2016 - 21:25:53][NOTICE] - match: /login with /login
+[19.06.2016 - 21:25:53][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:25:56][NOTICE] - /ecommerce_management/login
+[19.06.2016 - 21:25:56][NOTICE] - match: /login with /login
+[19.06.2016 - 21:25:56][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:25:56][NOTICE] - /ecommerce_management/
+[19.06.2016 - 21:25:56][NOTICE] - match: / with /
+[19.06.2016 - 21:25:56][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:25:59][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:25:59][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:25:59][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:25:59][NOTICE] - /ecommerce_management/relatorios/funcionarios
+[19.06.2016 - 21:25:59][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 21:25:59][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:26:00][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:26:00][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:26:00][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:26:01][NOTICE] - /ecommerce_management/categorias/novo
+[19.06.2016 - 21:26:01][NOTICE] - match: /categorias/novo with /categorias/novo
+[19.06.2016 - 21:26:01][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:26:02][NOTICE] - /ecommerce_management/categorias
+[19.06.2016 - 21:26:02][NOTICE] - match: /categorias with /categorias
+[19.06.2016 - 21:26:02][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:26:03][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 21:26:03][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 21:26:03][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:26:04][NOTICE] - /ecommerce_management/pedidos/12
+[19.06.2016 - 21:26:04][NOTICE] - match: /pedidos/:id with /pedidos/12
+[19.06.2016 - 21:26:04][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:26:05][NOTICE] - /ecommerce_management/pedidos/12/fechar
+[19.06.2016 - 21:26:05][NOTICE] - match: /pedidos/:id/fechar with /pedidos/12/fechar
+[19.06.2016 - 21:26:05][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:26:05][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 21:26:05][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 21:26:05][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:26:07][NOTICE] - /ecommerce_management/logout
+[19.06.2016 - 21:26:07][NOTICE] - match: /logout with /logout
+[19.06.2016 - 21:26:07][NOTICE] - /ecommerce_management/login
+[19.06.2016 - 21:26:07][NOTICE] - match: /login with /login
+[19.06.2016 - 21:26:10][NOTICE] - /ecommerce_management/login
+[19.06.2016 - 21:26:10][NOTICE] - match: /login with /login
+[19.06.2016 - 21:26:10][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:26:10][NOTICE] - /ecommerce_management/
+[19.06.2016 - 21:26:10][NOTICE] - match: / with /
+[19.06.2016 - 21:26:10][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:26:11][NOTICE] - /ecommerce_management/relatorios/funcionarios
+[19.06.2016 - 21:26:11][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 21:26:11][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:26:16][NOTICE] - /ecommerce_management/relatorios/funcionarios
+[19.06.2016 - 21:26:16][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 21:26:16][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:26:38][NOTICE] - /ecommerce_management/relatorios/funcionarios?report%5Bcreated_at%5D=2016-06-06&report%5Bclosed_at%5D=2016-06-20&button=
+[19.06.2016 - 21:26:38][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 21:26:38][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:27:45][NOTICE] - /ecommerce_management/relatorios/funcionarios?report%5Bcreated_at%5D=2016-06-10&report%5Bclosed_at%5D=2016-07-20&button=
+[19.06.2016 - 21:27:45][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 21:27:45][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:29:04][NOTICE] - /ecommerce_management/relatorios/funcionarios?report%5Bcreated_at%5D=2016-06-10&report%5Bclosed_at%5D=2016-10-10&button=
+[19.06.2016 - 21:29:04][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 21:29:04][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:31:27][NOTICE] - /ecommerce_management/relatorios/funcionarios?report%5Bcreated_at%5D=2016-06-10&report%5Bclosed_at%5D=2016-10-10&button=
+[19.06.2016 - 21:31:27][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 21:31:27][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:31:30][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 21:31:30][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 21:31:30][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:31:32][NOTICE] - /ecommerce_management/pedidos/novo
+[19.06.2016 - 21:31:32][NOTICE] - match: /pedidos/novo with /pedidos/novo
+[19.06.2016 - 21:31:32][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:31:33][NOTICE] - /ecommerce_management/clientes/autocomplete-search?query=gu
+[19.06.2016 - 21:31:33][NOTICE] - match: /clientes/autocomplete-search with /clientes/autocomplete-search
+[19.06.2016 - 21:31:33][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:31:34][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 21:31:34][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 21:31:34][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:31:34][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 21:31:34][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 21:31:34][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:31:35][NOTICE] - /ecommerce_management/pedidos/9
+[19.06.2016 - 21:31:35][NOTICE] - match: /pedidos/:id with /pedidos/9
+[19.06.2016 - 21:31:35][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:31:36][NOTICE] - /ecommerce_management/pedidos/9/fechar
+[19.06.2016 - 21:31:36][NOTICE] - match: /pedidos/:id/fechar with /pedidos/9/fechar
+[19.06.2016 - 21:31:36][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:31:36][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 21:31:36][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 21:31:36][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:31:38][NOTICE] - /ecommerce_management/pedidos/novo
+[19.06.2016 - 21:31:38][NOTICE] - match: /pedidos/novo with /pedidos/novo
+[19.06.2016 - 21:31:38][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:31:39][NOTICE] - /ecommerce_management/clientes/autocomplete-search?query=ju
+[19.06.2016 - 21:31:39][NOTICE] - match: /clientes/autocomplete-search with /clientes/autocomplete-search
+[19.06.2016 - 21:31:39][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:31:40][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 21:31:40][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 21:31:40][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:31:40][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 21:31:40][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 21:31:40][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:31:41][NOTICE] - /ecommerce_management/pedidos/10
+[19.06.2016 - 21:31:41][NOTICE] - match: /pedidos/:id with /pedidos/10
+[19.06.2016 - 21:31:41][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:31:42][NOTICE] - /ecommerce_management/produtos/autocomplete-search?query=a
+[19.06.2016 - 21:31:42][NOTICE] - match: /produtos/autocomplete-search with /produtos/autocomplete-search
+[19.06.2016 - 21:31:42][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:31:43][NOTICE] - /ecommerce_management/pedidos/produtos
+[19.06.2016 - 21:31:43][NOTICE] - match: /pedidos/produtos with /pedidos/produtos
+[19.06.2016 - 21:31:43][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:31:43][NOTICE] - /ecommerce_management/pedidos/10
+[19.06.2016 - 21:31:43][NOTICE] - match: /pedidos/:id with /pedidos/10
+[19.06.2016 - 21:31:43][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:31:44][NOTICE] - /ecommerce_management/pedidos/10/fechar
+[19.06.2016 - 21:31:44][NOTICE] - match: /pedidos/:id/fechar with /pedidos/10/fechar
+[19.06.2016 - 21:31:44][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:31:44][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 21:31:44][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 21:31:44][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:31:46][NOTICE] - /ecommerce_management/relatorios/funcionarios
+[19.06.2016 - 21:31:46][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 21:31:46][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:31:48][NOTICE] - /ecommerce_management/relatorios/funcionarios
+[19.06.2016 - 21:31:48][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 21:31:48][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:32:02][NOTICE] - /ecommerce_management/produtos
+[19.06.2016 - 21:32:02][NOTICE] - match: /produtos with /produtos
+[19.06.2016 - 21:32:02][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:32:03][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 21:32:03][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 21:32:03][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:32:06][NOTICE] - /ecommerce_management/pedidos/9/deletar
+[19.06.2016 - 21:32:06][NOTICE] - match: /pedidos/:id/deletar with /pedidos/9/deletar
+[19.06.2016 - 21:32:06][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:32:06][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 21:32:06][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 21:32:06][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:32:14][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 21:32:14][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 21:32:14][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:32:16][NOTICE] - /ecommerce_management/logout
+[19.06.2016 - 21:32:16][NOTICE] - match: /logout with /logout
+[19.06.2016 - 21:32:16][NOTICE] - /ecommerce_management/login
+[19.06.2016 - 21:32:16][NOTICE] - match: /login with /login
+[19.06.2016 - 21:32:19][NOTICE] - /ecommerce_management/login
+[19.06.2016 - 21:32:19][NOTICE] - match: /login with /login
+[19.06.2016 - 21:32:19][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:32:19][NOTICE] - /ecommerce_management/
+[19.06.2016 - 21:32:19][NOTICE] - match: / with /
+[19.06.2016 - 21:32:19][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:32:21][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 21:32:21][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 21:32:21][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:32:22][NOTICE] - /ecommerce_management/pedidos/novo
+[19.06.2016 - 21:32:22][NOTICE] - match: /pedidos/novo with /pedidos/novo
+[19.06.2016 - 21:32:22][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:32:23][NOTICE] - /ecommerce_management/clientes/autocomplete-search?query=ju
+[19.06.2016 - 21:32:23][NOTICE] - match: /clientes/autocomplete-search with /clientes/autocomplete-search
+[19.06.2016 - 21:32:23][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:32:24][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 21:32:24][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 21:32:24][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:32:24][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 21:32:24][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 21:32:24][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:32:25][NOTICE] - /ecommerce_management/pedidos/11
+[19.06.2016 - 21:32:25][NOTICE] - match: /pedidos/:id with /pedidos/11
+[19.06.2016 - 21:32:25][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:32:28][NOTICE] - /ecommerce_management/produtos/autocomplete-search?query=a
+[19.06.2016 - 21:32:28][NOTICE] - match: /produtos/autocomplete-search with /produtos/autocomplete-search
+[19.06.2016 - 21:32:28][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:32:29][NOTICE] - /ecommerce_management/pedidos/produtos
+[19.06.2016 - 21:32:29][NOTICE] - match: /pedidos/produtos with /pedidos/produtos
+[19.06.2016 - 21:32:29][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:32:29][NOTICE] - /ecommerce_management/pedidos/11
+[19.06.2016 - 21:32:29][NOTICE] - match: /pedidos/:id with /pedidos/11
+[19.06.2016 - 21:32:29][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:32:30][NOTICE] - /ecommerce_management/pedidos/11/fechar
+[19.06.2016 - 21:32:30][NOTICE] - match: /pedidos/:id/fechar with /pedidos/11/fechar
+[19.06.2016 - 21:32:30][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:32:30][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 21:32:30][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 21:32:30][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:32:32][NOTICE] - /ecommerce_management/pedidos/novo
+[19.06.2016 - 21:32:32][NOTICE] - match: /pedidos/novo with /pedidos/novo
+[19.06.2016 - 21:32:32][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:32:33][NOTICE] - /ecommerce_management/clientes/autocomplete-search?query=gu
+[19.06.2016 - 21:32:33][NOTICE] - match: /clientes/autocomplete-search with /clientes/autocomplete-search
+[19.06.2016 - 21:32:33][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:32:34][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 21:32:34][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 21:32:34][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:32:34][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 21:32:34][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 21:32:34][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:32:35][NOTICE] - /ecommerce_management/pedidos/12
+[19.06.2016 - 21:32:35][NOTICE] - match: /pedidos/:id with /pedidos/12
+[19.06.2016 - 21:32:35][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:32:36][NOTICE] - /ecommerce_management/pedidos/12/fechar
+[19.06.2016 - 21:32:36][NOTICE] - match: /pedidos/:id/fechar with /pedidos/12/fechar
+[19.06.2016 - 21:32:36][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:32:36][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 21:32:36][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 21:32:36][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:32:38][NOTICE] - /ecommerce_management/relatorios/funcionarios
+[19.06.2016 - 21:32:38][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 21:32:38][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:33:25][NOTICE] - /ecommerce_management/relatorios/funcionarios?report%5Bcreated_at%5D=2016-06-10&report%5Bclosed_at%5D=2016-06-19&button=
+[19.06.2016 - 21:33:25][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 21:33:25][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:33:44][NOTICE] - /ecommerce_management/relatorios/funcionarios?report%5Bcreated_at%5D=2016-06-06&report%5Bclosed_at%5D=2016-06-20&button=
+[19.06.2016 - 21:33:44][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 21:33:44][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:34:02][NOTICE] - /ecommerce_management/relatorios/funcionarios?report%5Bcreated_at%5D=2016-06-10&report%5Bclosed_at%5D=2016-08-11&button=
+[19.06.2016 - 21:34:02][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 21:34:02][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:34:27][NOTICE] - /ecommerce_management/relatorios/funcionarios?report%5Bcreated_at%5D=2016-06-10&report%5Bclosed_at%5D=2016-08-11&button=
+[19.06.2016 - 21:34:27][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 21:34:27][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:36:13][NOTICE] - /ecommerce_management/relatorios/funcionarios?report%5Bcreated_at%5D=2016-06-10&report%5Bclosed_at%5D=2016-06-11&button=
+[19.06.2016 - 21:36:13][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 21:36:13][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:36:40][NOTICE] - /ecommerce_management/relatorios/funcionarios?report%5Bcreated_at%5D=2016-06-19&report%5Bclosed_at%5D=2016-06-20&button=
+[19.06.2016 - 21:36:40][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 21:36:40][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:37:02][NOTICE] - /ecommerce_management/relatorios/funcionarios?report%5Bcreated_at%5D=2016-06-19&report%5Bclosed_at%5D=2016-06-19&button=
+[19.06.2016 - 21:37:02][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 21:37:02][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:37:10][NOTICE] - /ecommerce_management/relatorios/funcionarios?report%5Bcreated_at%5D=2016-06-07&report%5Bclosed_at%5D=2016-06-23&button=
+[19.06.2016 - 21:37:10][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 21:37:10][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:37:55][NOTICE] - /ecommerce_management/relatorios/funcionarios?report%5Bcreated_at%5D=2016-06-05&report%5Bclosed_at%5D=2016-06-18&button=
+[19.06.2016 - 21:37:55][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 21:37:55][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:38:01][NOTICE] - /ecommerce_management/relatorios/funcionarios?report%5Bcreated_at%5D=2016-06-06&report%5Bclosed_at%5D=2016-06-20&button=
+[19.06.2016 - 21:38:01][NOTICE] - match: /relatorios/funcionarios with /relatorios/funcionarios
+[19.06.2016 - 21:38:01][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:38:11][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:38:11][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:38:11][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:38:13][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:38:13][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:38:13][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:38:14][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos
+[19.06.2016 - 21:38:14][NOTICE] - match: /relatorios/produtos-menos-vendidos with /relatorios/produtos-menos-vendidos
+[19.06.2016 - 21:38:14][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:38:15][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos?report%5Bcreated_at%5D=&report%5Bclosed_at%5D=&button=
+[19.06.2016 - 21:38:15][NOTICE] - match: /relatorios/produtos-menos-vendidos with /relatorios/produtos-menos-vendidos
+[19.06.2016 - 21:38:15][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:38:17][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos?report%5Bcreated_at%5D=&report%5Bclosed_at%5D=&button=
+[19.06.2016 - 21:38:17][NOTICE] - match: /relatorios/produtos-menos-vendidos with /relatorios/produtos-menos-vendidos
+[19.06.2016 - 21:38:17][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:38:20][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos?report%5Bcreated_at%5D=&report%5Bclosed_at%5D=&button=
+[19.06.2016 - 21:38:20][NOTICE] - match: /relatorios/produtos-menos-vendidos with /relatorios/produtos-menos-vendidos
+[19.06.2016 - 21:38:20][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:38:22][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos?report%5Bcreated_at%5D=&report%5Bclosed_at%5D=&button=
+[19.06.2016 - 21:38:22][NOTICE] - match: /relatorios/produtos-menos-vendidos with /relatorios/produtos-menos-vendidos
+[19.06.2016 - 21:38:22][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:38:23][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:38:23][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:38:23][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:38:37][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos?report%5Bcreated_at%5D=&report%5Bclosed_at%5D=&button=
+[19.06.2016 - 21:38:37][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:38:37][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:38:56][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos?report%5Bcreated_at%5D=&report%5Bclosed_at%5D=&button=
+[19.06.2016 - 21:38:56][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:38:56][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:38:58][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:38:58][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:38:58][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:39:00][NOTICE] - /ecommerce_management/relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:39:00][NOTICE] - match: /relatorios/produtos-mais-vendidos with /relatorios/produtos-mais-vendidos
+[19.06.2016 - 21:39:00][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:39:01][NOTICE] - /ecommerce_management/relatorios/produtos-menos-vendidos
+[19.06.2016 - 21:39:01][NOTICE] - match: /relatorios/produtos-menos-vendidos with /relatorios/produtos-menos-vendidos
+[19.06.2016 - 21:39:01][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:39:02][NOTICE] - /ecommerce_management/pedidos/novo
+[19.06.2016 - 21:39:02][NOTICE] - match: /pedidos/novo with /pedidos/novo
+[19.06.2016 - 21:39:02][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:39:02][NOTICE] - /ecommerce_management/pedidos
+[19.06.2016 - 21:39:02][NOTICE] - match: /pedidos with /pedidos
+[19.06.2016 - 21:39:02][NOTICE] - Aberta conexão com banco de dados!
+[19.06.2016 - 21:39:03][NOTICE] - /ecommerce_management/clientes/pessoa-fisica
+[19.06.2016 - 21:39:03][NOTICE] - match: /clientes/pessoa-fisica with /clientes/pessoa-fisica
+[19.06.2016 - 21:39:03][NOTICE] - Aberta conexão com banco de dados!

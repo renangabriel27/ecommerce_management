@@ -1,8 +1,12 @@
 
+
+
     <div class="clearfix ui dividing header">
       <?= ViewHelpers::linkTo("/relatorios/produtos-menos-vendidos", 'Produtos menos vendidos', 'class="ui right floated small button"') ?>
       <?= ViewHelpers::linkTo("/relatorios/produtos-mais-vendidos", 'Produtos mais vendidos', 'class="ui right floated small button"') ?>
     </div>
+
+    <?php require '_form_date.phtml' ?>
 
     <table class="ui compact celled definition table">
       <thead class="full-width">

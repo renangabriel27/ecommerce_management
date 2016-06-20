@@ -1,0 +1,133 @@
+[19-Jun-2016 18:41:06 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`orders`, CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`))' in /var/www/ecommerce_management/app/models/client_pi.php:120
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/client_pi.php(120): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/clients_pi_controller.php(72): ClientPi->deleteClient('1')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): ClientsPiController->destroy()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(117): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/client_pi.php on line 120
+[19-Jun-2016 20:01:15 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE id = '9'' at line 1' in /var/www/ecommerce_management/app/models/order.php:235
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(235): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(89): Order->changeStatusOrder()
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->closeOrder()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(117): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 235
+[19-Jun-2016 20:02:32 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/order.php:236
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(236): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(89): Order->changeStatusOrder()
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->closeOrder()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(117): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 236
+[19-Jun-2016 20:02:35 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/order.php:236
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(236): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(89): Order->changeStatusOrder()
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->closeOrder()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(117): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 236
+[19-Jun-2016 20:03:03 America/Sao_Paulo] PHP Notice:  Use of undefined constant CURRENT_TIMESTAMP - assumed 'CURRENT_TIMESTAMP' in /var/www/ecommerce_management/app/models/order.php on line 231
+[19-Jun-2016 20:03:03 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/order.php:236
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(236): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(89): Order->changeStatusOrder()
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->closeOrder()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(117): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 236
+[19-Jun-2016 20:04:07 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/order.php:236
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(236): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/orders_controller.php(89): Order->changeStatusOrder()
+#2 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->closeOrder()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(117): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 236
+[19-Jun-2016 20:07:57 America/Sao_Paulo] PHP Notice:  Undefined variable: date in /var/www/ecommerce_management/app/models/order.php on line 230
+[19-Jun-2016 20:07:57 America/Sao_Paulo] PHP Fatal error:  Call to a member function getTimestamp() on null in /var/www/ecommerce_management/app/models/order.php on line 230
+[19-Jun-2016 20:09:16 America/Sao_Paulo] PHP Warning:  date() expects at least 1 parameter, 0 given in /var/www/ecommerce_management/app/models/order.php on line 230
+[19-Jun-2016 20:11:27 America/Sao_Paulo] PHP Catchable fatal error:  Object of class DateTime could not be converted to string in /var/www/ecommerce_management/app/models/order.php on line 237
+[19-Jun-2016 20:15:53 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected ';' in /var/www/ecommerce_management/app/models/order.php on line 232
+[19-Jun-2016 20:22:00 America/Sao_Paulo] PHP Notice:  Undefined property: ReportsController::$action in /var/www/ecommerce_management/app/views/reports/_table_products.phtml on line 2
+[19-Jun-2016 20:22:13 America/Sao_Paulo] PHP Notice:  Undefined property: ReportsController::$action in /var/www/ecommerce_management/app/views/reports/_table_products.phtml on line 9
+[19-Jun-2016 20:22:49 America/Sao_Paulo] PHP Notice:  Undefined property: ReportsController::$action in /var/www/ecommerce_management/app/views/reports/_table_products.phtml on line 9
+[19-Jun-2016 20:23:19 America/Sao_Paulo] PHP Notice:  Undefined property: ReportsController::$action in /var/www/ecommerce_management/app/views/reports/_table_products.phtml on line 9
+[19-Jun-2016 20:23:19 America/Sao_Paulo] PHP Notice:  Undefined property: ReportsController::$submit in /var/www/ecommerce_management/app/views/reports/_table_products.phtml on line 22
+[19-Jun-2016 20:23:32 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected ''class="ui right labeled icon ' (T_CONSTANT_ENCAPSED_STRING) in /var/www/ecommerce_management/app/views/reports/_table_products.phtml on line 22
+[19-Jun-2016 20:23:41 America/Sao_Paulo] PHP Notice:  Undefined property: ReportsController::$action in /var/www/ecommerce_management/app/views/reports/_table_products.phtml on line 9
+[19-Jun-2016 20:23:55 America/Sao_Paulo] PHP Notice:  Undefined property: ReportsController::$action in /var/www/ecommerce_management/app/views/reports/_table_products.phtml on line 9
+[19-Jun-2016 20:24:12 America/Sao_Paulo] PHP Notice:  Undefined property: ReportsController::$action in /var/www/ecommerce_management/app/views/reports/_table_products.phtml on line 9
+[19-Jun-2016 20:24:13 America/Sao_Paulo] PHP Notice:  Undefined property: ReportsController::$action in /var/www/ecommerce_management/app/views/reports/_table_products.phtml on line 9
+[19-Jun-2016 20:24:36 America/Sao_Paulo] PHP Notice:  Undefined property: ReportsController::$action in /var/www/ecommerce_management/app/views/reports/_table_products.phtml on line 9
+[19-Jun-2016 20:24:47 America/Sao_Paulo] PHP Notice:  Undefined property: ReportsController::$action in /var/www/ecommerce_management/app/views/reports/_table_products.phtml on line 9
+[19-Jun-2016 20:25:01 America/Sao_Paulo] PHP Notice:  Undefined property: ReportsController::$action in /var/www/ecommerce_management/app/views/reports/_table_products.phtml on line 9
+[19-Jun-2016 20:25:16 America/Sao_Paulo] PHP Notice:  Undefined property: ReportsController::$action in /var/www/ecommerce_management/app/views/reports/_table_products.phtml on line 9
+[19-Jun-2016 20:25:26 America/Sao_Paulo] PHP Notice:  Undefined property: ReportsController::$action in /var/www/ecommerce_management/app/views/reports/_table_products.phtml on line 9
+[19-Jun-2016 20:25:32 America/Sao_Paulo] PHP Notice:  Undefined property: ReportsController::$action in /var/www/ecommerce_management/app/views/reports/_table_products.phtml on line 9
+[19-Jun-2016 20:28:30 America/Sao_Paulo] PHP Notice:  Undefined property: ReportsController::$action in /var/www/ecommerce_management/app/views/reports/_table_products.phtml on line 9
+[19-Jun-2016 20:28:30 America/Sao_Paulo] PHP Fatal error:  Call to undefined method ViewHelpers::bunttonTo() in /var/www/ecommerce_management/app/views/reports/_table_products.phtml on line 23
+[19-Jun-2016 20:28:38 America/Sao_Paulo] PHP Notice:  Undefined property: ReportsController::$action in /var/www/ecommerce_management/app/views/reports/_table_products.phtml on line 9
+[19-Jun-2016 20:28:41 America/Sao_Paulo] PHP Notice:  Undefined property: ReportsController::$action in /var/www/ecommerce_management/app/views/reports/_table_products.phtml on line 9
+[19-Jun-2016 20:28:44 America/Sao_Paulo] PHP Notice:  Undefined property: ReportsController::$action in /var/www/ecommerce_management/app/views/reports/_table_products.phtml on line 9
+[19-Jun-2016 20:32:18 America/Sao_Paulo] PHP Notice:  Undefined property: ReportsController::$submit in /var/www/ecommerce_management/app/views/reports/_table_products.phtml on line 23
+[19-Jun-2016 20:35:43 America/Sao_Paulo] PHP Notice:  Undefined property: ReportsController::$submit in /var/www/ecommerce_management/app/views/reports/_table_products.phtml on line 23
+[19-Jun-2016 20:35:46 America/Sao_Paulo] PHP Notice:  Undefined property: ReportsController::$submit in /var/www/ecommerce_management/app/views/reports/_table_products.phtml on line 23
+[19-Jun-2016 20:41:01 America/Sao_Paulo] PHP Notice:  Undefined index: created_at in /var/www/ecommerce_management/app/controllers/reports_controller.php on line 16
+[19-Jun-2016 20:41:05 America/Sao_Paulo] PHP Notice:  Undefined index: created_at in /var/www/ecommerce_management/app/controllers/reports_controller.php on line 16
+[19-Jun-2016 20:41:06 America/Sao_Paulo] PHP Notice:  Undefined index: created_at in /var/www/ecommerce_management/app/controllers/reports_controller.php on line 16
+[19-Jun-2016 20:41:16 America/Sao_Paulo] PHP Notice:  Undefined index: report in /var/www/ecommerce_management/app/controllers/reports_controller.php on line 16
+[19-Jun-2016 20:41:16 America/Sao_Paulo] PHP Notice:  Undefined index: report in /var/www/ecommerce_management/app/controllers/reports_controller.php on line 16
+[19-Jun-2016 20:42:49 America/Sao_Paulo] PHP Notice:  Undefined index: created_at in /var/www/ecommerce_management/app/controllers/reports_controller.php on line 16
+[19-Jun-2016 20:42:52 America/Sao_Paulo] PHP Notice:  Undefined index: created_at in /var/www/ecommerce_management/app/controllers/reports_controller.php on line 16
+[19-Jun-2016 20:43:02 America/Sao_Paulo] PHP Notice:  Undefined index: created_at in /var/www/ecommerce_management/app/controllers/reports_controller.php on line 16
+[19-Jun-2016 20:43:04 America/Sao_Paulo] PHP Notice:  Undefined index: created_at in /var/www/ecommerce_management/app/controllers/reports_controller.php on line 16
+[19-Jun-2016 20:43:13 America/Sao_Paulo] PHP Notice:  Undefined index: report in /var/www/ecommerce_management/app/controllers/reports_controller.php on line 16
+[19-Jun-2016 20:43:52 America/Sao_Paulo] PHP Notice:  Undefined index: report in /var/www/ecommerce_management/app/controllers/reports_controller.php on line 16
+[19-Jun-2016 20:43:53 America/Sao_Paulo] PHP Notice:  Undefined index: report in /var/www/ecommerce_management/app/controllers/reports_controller.php on line 16
+[19-Jun-2016 20:43:53 America/Sao_Paulo] PHP Notice:  Undefined index: report in /var/www/ecommerce_management/app/controllers/reports_controller.php on line 16
+[19-Jun-2016 20:44:28 America/Sao_Paulo] PHP Notice:  Undefined index: report in /var/www/ecommerce_management/app/controllers/reports_controller.php on line 16
+[19-Jun-2016 20:44:43 America/Sao_Paulo] PHP Notice:  Undefined index: report in /var/www/ecommerce_management/app/controllers/reports_controller.php on line 16
+[19-Jun-2016 20:54:38 America/Sao_Paulo] PHP Notice:  Undefined index: report in /var/www/ecommerce_management/app/controllers/reports_controller.php on line 17
+[19-Jun-2016 20:54:38 America/Sao_Paulo] PHP Notice:  Undefined index: report in /var/www/ecommerce_management/app/controllers/reports_controller.php on line 17
+[19-Jun-2016 20:54:38 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order.created_at' in 'where clause'' in /var/www/ecommerce_management/app/models/report.php:117
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/report.php(117): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/reports_controller.php(17): Report::findByDate(NULL, NULL)
+#2 /var/www/ecommerce_management/core/routes/router.php(47): ReportsController->bestSellingProducts()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(117): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/report.php on line 117
+[19-Jun-2016 20:56:12 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'order.created_at' in 'where clause'' in /var/www/ecommerce_management/app/models/report.php:117
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/report.php(117): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/reports_controller.php(18): Report::findByDate('2016-06-10', '2016-10-10')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): ReportsController->bestSellingProducts()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(117): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/report.php on line 117
+[19-Jun-2016 20:57:04 America/Sao_Paulo] PHP Fatal error:  Call to undefined method Report::geId() in /var/www/ecommerce_management/app/views/reports/_table_products.phtml on line 43
+[19-Jun-2016 21:14:17 America/Sao_Paulo] PHP Notice:  Undefined property: ReportsController::$submit in /var/www/ecommerce_management/app/views/reports/_form_date.phtml on line 15
+[19-Jun-2016 21:18:15 America/Sao_Paulo] PHP Notice:  Undefined index: created_at in /var/www/ecommerce_management/app/controllers/reports_controller.php on line 9
+[19-Jun-2016 21:18:15 America/Sao_Paulo] PHP Notice:  Undefined index: closed_at in /var/www/ecommerce_management/app/controllers/reports_controller.php on line 10
+[19-Jun-2016 21:22:27 America/Sao_Paulo] PHP Notice:  Undefined index: created_at in /var/www/ecommerce_management/app/controllers/reports_controller.php on line 12
+[19-Jun-2016 21:22:27 America/Sao_Paulo] PHP Notice:  Undefined index: closed_at in /var/www/ecommerce_management/app/controllers/reports_controller.php on line 13
+[19-Jun-2016 21:23:01 America/Sao_Paulo] PHP Notice:  Undefined index: created_at in /var/www/ecommerce_management/app/controllers/reports_controller.php on line 12
+[19-Jun-2016 21:23:01 America/Sao_Paulo] PHP Notice:  Undefined index: closed_at in /var/www/ecommerce_management/app/controllers/reports_controller.php on line 13
+[19-Jun-2016 21:23:02 America/Sao_Paulo] PHP Notice:  Undefined index: created_at in /var/www/ecommerce_management/app/controllers/reports_controller.php on line 12
+[19-Jun-2016 21:23:02 America/Sao_Paulo] PHP Notice:  Undefined index: closed_at in /var/www/ecommerce_management/app/controllers/reports_controller.php on line 13
+[19-Jun-2016 21:23:21 America/Sao_Paulo] PHP Notice:  Undefined index: created_at in /var/www/ecommerce_management/app/controllers/reports_controller.php on line 12
+[19-Jun-2016 21:23:21 America/Sao_Paulo] PHP Notice:  Undefined index: closed_at in /var/www/ecommerce_management/app/controllers/reports_controller.php on line 13
+[19-Jun-2016 21:23:47 America/Sao_Paulo] PHP Notice:  Undefined index: created_at in /var/www/ecommerce_management/app/controllers/reports_controller.php on line 12
+[19-Jun-2016 21:23:47 America/Sao_Paulo] PHP Notice:  Undefined index: closed_at in /var/www/ecommerce_management/app/controllers/reports_controller.php on line 12
