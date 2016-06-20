@@ -3,8 +3,19 @@
     <h2><?= $this->title ?></h2>
   </header>
 
+  <div class="clearfix">
+    <?= ViewHelpers::linkTo("/clientes/nova-pessoa-fisica", 'Novo cliente', 'class="ui left floated primary labeled icon button"', 'class="add circle icon"') ?>
+
+    <select class="ui dropdown" onChange="window.location.href=this.value">
+      <option value="">Selecione ...</option>
+      <option value="<?= ViewHelpers::urlFor("/clientes", '') ?>">Todos os clientes</option>
+      <option value="<?= ViewHelpers::urlFor("/clientes/pessoa-fisica", '') ?>">Clientes pessoa física</option>
+      <option value="<?= ViewHelpers::urlFor("/clientes/pessoa-juridica", '') ?>">Clientes pessoa jurídica</option>
+    </select>
+  </div>
+
   <article>
-      <table class="ui compact celled definition table">
+      <table class="ui selectable celled table">
       <thead class="full-width">
         <tr>
           <th>ID</th>
@@ -34,16 +45,6 @@
           </tr>
         <?php endForeach; ?>
       </tbody>
-      <tfoot class="full-width">
-        <tr>
-          <th colspan="9">
-            <?= ViewHelpers::linkTo("/clientes/nova-pessoa-juridica", 'Novo cliente', 'class="ui left floated small primary labeled icon button"', 'class="add circle icon"') ?>
-            <?= ViewHelpers::linkTo("/clientes", 'Clientes', 'class="ui button"') ?>
-            <?= ViewHelpers::linkTo("/clientes/pessoa-fisica", 'Pessoa física', 'class="ui button"') ?>
-            <?= ViewHelpers::linkTo("/clientes/pessoa-juridica", 'Pessoa jurídica', 'class="ui button"') ?>
-          </th>
-        </tr>
-      </tfoot>
     </table>
   </div>
 </div>

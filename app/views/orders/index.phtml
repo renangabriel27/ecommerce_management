@@ -5,12 +5,17 @@
 
   <div class="clearfix">
     <?= ViewHelpers::linkTo("/pedidos/novo", 'Novo pedido', 'class="ui floated small primary labeled icon button"', 'class="add circle icon"') ?>
-    <?= ViewHelpers::linkTo("/pedidos/abertos", 'Pedidos abertos', 'class="ui button"') ?>
-    <?= ViewHelpers::linkTo("/pedidos/fechados", 'Pedidos fechados', 'class="ui button"') ?>
+
+    <select class="ui dropdown" onChange="window.location.href=this.value">
+      <option value="">Selecione ...</option>
+      <option value="<?= ViewHelpers::urlFor("/pedidos", '') ?>">Todos os pedidos</option>
+      <option value="<?= ViewHelpers::urlFor("/pedidos/abertos", '') ?>">Pedidos abertos</option>
+      <option value="<?= ViewHelpers::urlFor("/pedidos/fechados", '') ?>">Pedidos fechados</option>
+    </select>
   </div>
 
   <article>
-    <table class="ui compact celled definition table">
+    <table class="ui selectable celled table">
       <thead class="full-width">
         <tr>
           <th>ID</th>
@@ -42,13 +47,6 @@
         </tr>
         <?php endForeach; ?>
       </tbody>
-      <tfoot class="full-width">
-        <tr>
-          <th colspan="8">
-            <?= ViewHelpers::linkTo("/pedidos", 'Voltar', 'class="ui left small labeled icon button"', 'class="reply icon"') ?>
-          </th>
-        </tr>
-      </tfoot>
     </table>
 </article>
 </section>

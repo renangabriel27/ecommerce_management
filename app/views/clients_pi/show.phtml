@@ -4,67 +4,70 @@
   </header>
   <article>
 
-    <div class="ui segment">
 
-      <table class="ui celled table">
-        <thead>
-          <tr>
-            <th>Nome</th>
-            <th><?= $this->client->getName() ?></th>
-          </tr>
-          <tr>
-            <th>Email</th>
-            <th><?= $this->client->getEmail() ?></th>
-          </tr>
-          <tr>
-            <th>Telefone</th>
-            <th><?= $this->client->getPhone() ?></th>
-          </tr>
-          <tr>
-            <th>Cidade</th>
-            <th><?= $this->client->getCity()->getName() ?></th>
-          </tr>
-          <tr>
-            <th>CPF</th>
-            <th><?= $this->client->getCpf() ?></th>
-          </tr>
-          <tr>
-            <th>Data de nascimento</th>
-            <th><?= $this->client->getDateOfBirth() ?></th>
-          </tr>
-          <tr>
-            <th>Endereço</th>
-            <th><?= $this->client->getAddress() ?></th>
-          </tr>
-          <tr>
-            <th>Número</th>
-            <th><?= $this->client->getAddressNumber() ?></th>
-          </tr>
-          <tr>
-            <th>CEP</th>
-            <th><?= $this->client->getAddressCep() ?></th>
-          </tr>
-          <tr>
-            <th>Data de criação</th>
-            <th><?= ViewHelpers::dateFormat($this->client->getCreatedAt()) ?></th>
-          </tr>
-          <tr>
-            <th>Opções</th>
-            <th>
-              <?= ViewHelpers::linkTo("/clientes/{$this->client->getId()}/editar-pessoa-fisica", '', '', 'class="edit icon"') ?>
-              <?= ViewHelpers::linkTo("/clientes/{$this->client->getId()}/deletar-pessoa-fisica", '', 'data-confirm="Tem certeza que deseja deletar?"', 'class="trash icon"') ?>
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-        </tbody>
-      </table>
+      <div class="ui segment">
+        <form class="ui form client">
 
-      <div class="ui buttons">
-        <?= ViewHelpers::linkTo("/clientes/pessoa-fisica", 'Cancelar', 'class="ui labeled icon button"', 'class="reply icon"') ?>
+          <div class="two fields">
+            <div class="field">
+              <label>Nome </label>
+              <input type="text" id="client['name']" name="client[name]" value="<?= $this->client->getName() ?>" disabled>
+            </div>
+            <div class="field">
+              <label>Email</label>
+              <input type="text" id="client['email']" name="client[email]" value="<?= $this->client->getEmail() ?>" disabled>
+            </div>
+          </div>
+
+          <div class="four fields">
+
+            <div class="field">
+              <label>CPF</label>
+              <input type="text" id="client_cpf" name="client[cpf]" value="<?= $this->client->getCpf() ?>" disabled>
+            </div>
+            <div class="field">
+              <label>Data de nascimento</label>
+              <input type="date" id="client['date_of_birth']" name="client[date_of_birth]"  value="<?= $this->client->getDateOfBirth() ?>" disabled>
+            </div>
+
+            <div class="field">
+              <label>Telefone</label>
+              <input type="text" id="client_phone" name="client[phone]" value="<?= $this->client->getPhone() ?>" disabled>
+            </div>
+
+            <div class="field">
+              <label>Cidade</label>
+              <select name="client[city_id]" class="ui fluid dropdown" disabled>
+                  <option>
+                      <?= $this->client->getCity()->getName() ?>
+                  </option>
+              </select>
+            </div>
+          </div>
+
+          <div class="three fields">
+            <div class="field">
+                <label>Endereço</label>
+                  <input type="text" id="client['address']" name="client[address]"  value="<?= $this->client->getAddress() ?>" disabled>
+              </div>
+              <div class="field">
+                <label>Número</label>
+                  <input type="text" id="client['address_number']" name="client[address_number]"  value="<?= $this->client->getAddressNumber() ?>" disabled>
+              </div>
+              <div class="field">
+                <label>CEP</label>
+                  <input type="text" id="client_cep" name="client[address_cep]" value="<?= $this->client->getAddressCep() ?>" disabled>
+              </div>
+          </div>
+
+          <div class="ui buttons">
+            <?= ViewHelpers::linkTo("/clientes/pessoa-fisica", 'Voltar', 'class="ui labeled icon button"', 'class="reply icon"') ?>
+          </div>
+
+          </form>
+        </div>
       </div>
-    </div>
-  </div>
+
 
 </article>
 </section>

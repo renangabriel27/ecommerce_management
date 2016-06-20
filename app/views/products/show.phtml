@@ -1,51 +1,47 @@
 <section>
-  <header class="ui dividing header">
-    <h2><?= $this->title ?></h2>
-  </header>
+    <header class="ui dividing header">
+      <h2><?= $this->title ?></h2>
+    </header>
+
   <article>
 
-    <div class="ui segment">
 
-      <table class="ui celled table">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th><?= $this->product->getId() ?></th>
-          </tr>
-          <tr>
-            <th>Name</th>
-            <th><?= $this->product->getName() ?></th>
-          </tr>
-          <tr>
-            <th>Quantidade</th>
-            <th><?= $this->product->getAmount() ?></th>
-          </tr>
-          <tr>
-            <th>Preço</th>
-            <th><?= ViewHelpers::currencyFormat($this->product->getPrice()) ?></th>
-          </tr>
-          <tr>
-            <th>Categoria</th>
-            <th><?= $this->product->getCategory()->getName() ?></th>
-          </tr>
-          <tr>
-            <th>Descrição</th>
-            <th><?= $this->product->getDescription() ?></th>
-          </tr>
-          <tr>
-            <th>Data de criação</th>
-            <th><?= ViewHelpers::dateFormat($this->product->getCreatedAt()); ?></th>
-          </tr>
-        </thead>
-        <tbody>
-        </tbody>
-      </table>
-
-      <div class="ui buttons">
-        <?= ViewHelpers::linkTo("/produtos", 'Voltar', 'class="ui left floated small labeled icon button"', 'class="reply icon"') ?>
+  <form method="POST">
+    <div class="ui form">
+      <div class="two fields">
+        <div class="field">
+          <label for="product_name">Nome</label>
+          <input type="text" id="product_name" name="product[name]" value="<?= $this->product->getName() ?>" disabled>
+        </div>
+        <div class="field">
+          <label>Categoria</label>
+          <select name="product[category_id]" class="ui fluid dropdown" disabled>
+              <option>
+                <?=  $this->product->getCategory()->getName() ?>
+              </option>
+          </select>
+        </div>
       </div>
+
+      <div class="two fields">
+        <div class="field">
+          <label for="price">Preço</label>
+          <input type="text" id="product_price" name="product[price]" value="<?= $this->product->getPrice() ?>" disabled>
+        </div>
+        <div class="field">
+          <label for="price">Quantidade</label>
+          <input type="text" id="product['amount']" name="product[amount]" value="<?= $this->product->getAmount() ?>" disabled>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="description">Descrição</label>
+        <textarea id="product['description']" name="product[description]" disabled><?= $this->product->getDescription() ?></textarea>
+      </div>
+
+      <?= ViewHelpers::linkTo("/produtos", 'Voltar', 'class="ui left small labeled icon button"', 'class="reply icon"') ?>
     </div>
-  </div>
+  </form>
 
 </article>
 </section>

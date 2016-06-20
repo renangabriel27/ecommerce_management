@@ -1,0 +1,11 @@
+<div class="clearfix">
+  <div class="pull-right">
+    <select class="ui dropdown" onChange="window.location.href=this.value">
+      <option value="">Selecione ...</option>
+      <option value="<?= ViewHelpers::urlFor("/relatorios/produtos-mais-vendidos", '') ?>">Produtos mais vendidos</option>
+      <option value="<?= ViewHelpers::urlFor("/relatorios/produtos-menos-vendidos", '') ?>">Produtos menos vendidos</option>
+    </select>
+  </div>
+
+  <?php require '_table_products.phtml'; ?>
+</div>

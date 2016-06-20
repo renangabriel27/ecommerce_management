@@ -1,42 +1,15 @@
 <section>
   <header class="ui dividing header">
-    <h2><?= $this->title ?></h2>
+    <h2>Visualizar categoria</h2>
   </header>
   <article>
-
-    <div class="ui segment">
-
-      <table class="ui celled table">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th><?= $this->category->getId() ?></th>
-          </tr>
-          <tr>
-            <th>Nome</th>
-            <th><?= $this->category->getName() ?></th>
-          </tr>
-          <tr>
-            <th>Data de criação</th>
-            <th><?= ViewHelpers::dateFormat($this->category->getCreatedAt()); ?></th>
-          </tr>
-          <tr>
-            <th>Opções</th>
-            <th>
-              <?= ViewHelpers::linkTo("/categorias/{$this->category->getId()}/editar", '', '', 'class="edit icon"') ?>
-              <?= ViewHelpers::linkTo("/categorias/{$this->category->getId()}/deletar", '', 'data-confirm="Tem certeza que deseja deletar?"', 'class="trash icon"') ?>
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-        </tbody>
-      </table>
-
-      <div class="ui buttons">
-        <?= ViewHelpers::linkTo("/categorias", 'Cancelar', 'class="ui labeled icon button"', 'class="reply icon"') ?>
+    <div class="ui form">
+      <div class="field">
+        <label for="category_name">Nome</label>
+        <input type="text" id="category_name" name="category[name]" placeholder="Digite o nome da categoria" value="<?= $this->category->getName() ?>" disabled>
       </div>
+        <?= ViewHelpers::linkTo("/categorias", 'Voltar', 'class="ui left small labeled icon button"', 'class="reply icon"') ?>
     </div>
-  </div>
-
-</article>
+  </form>
+  </article>
 </section>

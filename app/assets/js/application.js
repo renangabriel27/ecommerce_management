@@ -89,7 +89,7 @@ var close_flash_message = function() {
 
 
 var dropdowns = function() {
-  $('.ui.menu .ui.dropdown').dropdown({ on: 'hover' });
+  $('.ui.dropdown').dropdown();
 
   $('.ui.menu a.item').on('click', function() {
       $(this).addClass('active').siblings().removeClass('active');

@@ -69,6 +69,17 @@ table {
   margin-top: 20px !important;
 }
 
+.item a {
+  color: #000;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
 
 /* Change defaults
 ------------------------- */

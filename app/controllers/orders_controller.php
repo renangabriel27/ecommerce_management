@@ -3,7 +3,7 @@
    protected $beforeAction = array('authenticated' => 'all');
 
    public function index() {
-      $this->title = 'Visualizar Pedidos';
+      $this->title = 'Visualizar todos os pedidos';
       $this->orders = Order::all();
    }
 

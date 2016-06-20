@@ -1,4 +1,5 @@
-<form class="ui form reports" action="<?= $this->action ?>" method="GET">
+<div class="clearfix">
+<form class="ui form reports pull-left" action="<?= $this->action ?>" method="GET">
   <div class="three fields">
     <div class="required field">
       <label>Data inicial</label>
@@ -10,9 +11,10 @@
       <input type="date" id="report_closed_at" name="report[closed_at]" placeholder=" ** / ** / ****" value="">
     </div>
 
-    <div class="required field">
-      <label></label>
+    <div class="field">
+      <label></label><br>
       <?= ViewHelpers::buttonTo($this->submit, 'class="ui right labeled icon primary button"', 'class="right arrow icon"') ?>
     </div>
   </div>
 </form>
+</div>
