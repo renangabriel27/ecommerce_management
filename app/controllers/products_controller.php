@@ -5,15 +5,8 @@
    public function index() {
       $this->title = "Produtos";
 
-      $this->limit = 10;
-      $this->page = isset($this->params[':page']) ? $this->params[':page'] : 1;
-      $offset = ($this->page-1)*$this->limit;
-      $this->totalOfRegisters = Product::count();
-      $this->totalOfPages = ceil($this->totalOfRegisters/$this->limit);
-      $options = array('limit' => $this->limit,'offset' => $offset);
-
       if(!isset($this->params['product'])) {
-        $this->products = Product::all($options);
+        $this->products = $this->pagination('Product', array('url' => '/produtos', 'limit' => 10));
         $this->linkToNew();
       } else {
         $this->search();

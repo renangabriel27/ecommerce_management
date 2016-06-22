@@ -1,0 +1,17 @@
+<div class="ui centered grid">
+  <div class="ui pagination menu">
+    <a class="icon item" href="<?= ViewHelpers::urlFor("{$this->url}/page/1")?>">
+      <i class="left chevron icon"></i>
+    </a>
+
+    <?php for($i = 1; $i <= $this->totalOfPages; $i++) {
+      $class = $i == $this->page ? 'active' : '';
+      $url = ViewHelpers::urlFor("{$this->url}/page/{$i}");
+      echo "<a class=\"item {$class}\" href=\"{$url}\"> {$i} </a>";
+    } ?>
+
+    <a class='icon item' href="<?= ViewHelpers::urlFor("{$this->url}/page/{$this->totalOfPages}") ?>">
+      <i class='right chevron icon'></i>
+    </a>
+  </div>
+</div>

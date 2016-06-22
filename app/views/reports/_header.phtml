@@ -1,0 +1,34 @@
+<header>
+  <h2><?= $this->title ?></h2>
+  <div class="ui divider"></div>
+  <div class="ui equal width grid">
+    <div class="three column">
+      <form class="ui form reports " action="<?= $this->action ?>" method="GET">
+        <div class="three fields">
+          <div class="required field">
+            <label>Data inicial</label>
+            <input type="date" id="report_created_at" name="report[created_at]" placeholder=" ** / ** / ****" value="">
+          </div>
+
+          <div class="required field">
+            <label>Data final</label>
+            <input type="date" id="report_closed_at" name="report[closed_at]" placeholder=" ** / ** / ****" value="">
+          </div>
+
+          <div class="field">
+            <label></label><br>
+            <?= ViewHelpers::buttonTo($this->submit, 'class="ui right labeled icon primary button"', 'class="right arrow icon"') ?>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="five wide column"><br>
+      <select class="ui fluid dropdown" onChange="window.location.href=this.value">
+        <option value="">Selecione os relatórios de ...</option>
+        <option value="<?= ViewHelpers::urlFor("/relatorios/funcionarios", '') ?>">Funcionários que mais venderam</option>
+        <option value="<?= ViewHelpers::urlFor("/relatorios/produtos-mais-vendidos", '') ?>">Produtos mais vendidos</option>
+        <option value="<?= ViewHelpers::urlFor("/relatorios/produtos-menos-vendidos", '') ?>">Produtos menos vendidos</option>
+      </select>
+    </div>
+  </div>
+</header>

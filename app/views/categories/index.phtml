@@ -1,6 +1,13 @@
 <section>
-  <header class="ui dividing header">
-    <h2><?= $this->title ?></h2>
+  <header>
+    <div class="ui equal width grid">
+      <div class="column">
+        <h2><?= $this->title ?></h2>
+      </div>
+      <div class="column">
+        <?= ViewHelpers::linkTo("/categorias/novo", 'Nova categoria', 'class="ui right floated primary labeled icon button"', 'class="add circle icon"') ?>
+      </div>
+    </div>
   </header>
 
   <article>
@@ -28,13 +35,12 @@
         </tr>
         <?php endForeach; ?>
       </tbody>
-      <tfoot class="full-width">
+      <tfoot>
         <tr>
-          <th colspan="8">
-            <?= ViewHelpers::linkTo("/categorias/novo", 'Nova categoria', 'class="ui left floated small primary labeled icon button"', 'class="add circle icon"') ?>
-          </th>
+          <th colspan="8"><p class="pull-right"> Mostrando <?= count($this->categories) ?> categorias de <?= $this->totalOfRegisters ?> </p></th>
         </tr>
       </tfoot>
     </table>
-</article>
+    <?php require "app/views/paginations/_pagination.phtml" ?>
+  </article>
 </section>

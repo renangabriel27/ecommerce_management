@@ -38,6 +38,7 @@
     /* Routes for orders
     ------------------------- */
     $router->get('/pedidos', array('controller' => 'OrdersController', 'action' => 'index'));
+    $router->get('/pedidos/page/:page', array('controller' => 'OrdersController', 'action' => 'index'));
     $router->post('/pedidos', array('controller' => 'OrdersController', 'action' => 'create'));
     $router->get('/pedidos/novo', array('controller' => 'OrdersController', 'action' => '_new'));
     $router->post('/pedidos/produtos', array('controller' => 'OrdersController', 'action' => 'addOrderProduct'));
@@ -80,6 +81,9 @@
     ------------------------- */
     $router->get('/clientes/autocomplete-search', array('controller' => 'ClientsPiController', 'action' => 'autoCompleteSearch'));
     $router->get('/clientes', array('controller' => 'ClientsPiController', 'action' => 'clients'));
+    $router->get('/clientes/page/:page', array('controller' => 'ClientsPiController', 'action' => 'clients'));
+    $router->get('/clientes/pessoa-fisica/page/:page', array('controller' => 'ClientsPiController', 'action' => 'index'));
+
 
     $router->get('/clientes/pessoa-fisica', array('controller' => 'ClientsPiController', 'action' => 'index'));
     $router->get('/clientes/nova-pessoa-fisica', array('controller' => 'ClientsPiController', 'action' => '_new'));
@@ -94,6 +98,7 @@
 
     /* Routes for clients - person corporate
     ------------------------- */
+    $router->get('/clientes/pessoa-juridica/page/:page', array('controller' => 'ClientsPcController', 'action' => 'index'));
 
     $router->get('/clientes/pessoa-juridica', array('controller' => 'ClientsPcController', 'action' => 'index'));
     $router->get('/clientes/nova-pessoa-juridica', array('controller' => 'ClientsPcController', 'action' => '_new'));

@@ -80,11 +80,19 @@
     return null;
   }
 
-  public static function all() {
+  public static function all($options = []) {
     $sql = "SELECT * FROM categories ORDER BY created_at DESC";
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
+
+    if(sizeof($options) != 0) {
+      $sql .= " LIMIT :limit OFFSET :offset ";
+      $statement = $db->prepare($sql);
+      $statement->bindParam(':limit', $options['limit'], PDO::PARAM_INT);
+      $statement->bindParam(':offset', $options['offset'], PDO::PARAM_INT);
+    }
+    
     $resp = $statement->execute();
 
     $categories = [];

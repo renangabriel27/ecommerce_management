@@ -1,18 +1,5 @@
 <section>
-  <header class="ui dividing header">
-    <h2><?= $this->title ?></h2>
-  </header>
-
-  <div class="clearfix">
-    <?= ViewHelpers::linkTo("/clientes/nova-pessoa-fisica", 'Novo cliente', 'class="ui left floated primary labeled icon button"', 'class="add circle icon"') ?>
-
-    <select class="ui dropdown" onChange="window.location.href=this.value">
-      <option value="">Selecione ...</option>
-      <option value="<?= ViewHelpers::urlFor("/clientes", '') ?>">Todos os clientes</option>
-      <option value="<?= ViewHelpers::urlFor("/clientes/pessoa-fisica", '') ?>">Clientes pessoa física</option>
-      <option value="<?= ViewHelpers::urlFor("/clientes/pessoa-juridica", '') ?>">Clientes pessoa jurídica</option>
-    </select>
-  </div>
+  <?php require "_header.phtml" ?>
 
   <article>
     <table class="ui selectable celled table">
@@ -45,8 +32,13 @@
         </tr>
         <?php endForeach; ?>
       </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="8"><p class="pull-right"> Mostrando <?= count($this->clients) ?> clientes de <?= $this->totalOfRegisters ?> </p></th>
+        </tr>
+      </tfoot>
     </table>
-  </div>
-</div>
+
+    <?php require "app/views/paginations/_pagination.phtml" ?>
 </article>
 </section>

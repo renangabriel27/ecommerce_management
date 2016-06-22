@@ -145,7 +145,7 @@
     return $statement->execute($params);
   }
 
-  public static function all() {
+  public static function all($options = []) {
     $sql = "SELECT
               clients.id AS client_id, clients.name AS client_name, clients.email AS client_email,
               clients.address AS client_address, clients.address_cep AS client_cep, clients.address_number AS
@@ -158,6 +158,14 @@
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
+    
+    if(sizeof($options) != 0) {
+      $sql .= " LIMIT :limit OFFSET :offset ";
+      $statement = $db->prepare($sql);
+      $statement->bindParam(':limit', $options['limit'], PDO::PARAM_INT);
+      $statement->bindParam(':offset', $options['offset'], PDO::PARAM_INT);
+    }
+
     $resp = $statement->execute();
 
     $clients = [];
@@ -199,6 +207,16 @@
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
     return $statement->execute($params);
+  }
+
+  public static function count() {
+    $sql = "SELECT COUNT(*) FROM clients";
+
+    $db = Database::getConnection();
+    $statement = $db->prepare($sql);
+    $statement->execute();
+
+    return $statement->fetch()[0];
   }
 
   private static function createClient($row) {

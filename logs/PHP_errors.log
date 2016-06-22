@@ -69,3 +69,264 @@ Stack trace:
 [21-Jun-2016 19:58:59 America/Sao_Paulo] PHP Fatal error:  Call to a member function getEmployeeOrder() on null in /var/www/ecommerce_management/app/controllers/application_controller.php on line 34
 [21-Jun-2016 19:59:06 America/Sao_Paulo] PHP Fatal error:  Call to a member function getEmployeeOrder() on null in /var/www/ecommerce_management/app/controllers/application_controller.php on line 34
 [21-Jun-2016 22:50:05 America/Sao_Paulo] PHP Notice:  Undefined variable: offset in /var/www/ecommerce_management/app/controllers/products_controller.php on line 13
+[21-Jun-2016 23:38:58 America/Sao_Paulo] PHP Warning:  require(_header.phtml): failed to open stream: No such file or directory in /var/www/ecommerce_management/app/views/clients_pc/index.phtml on line 2
+[21-Jun-2016 23:38:58 America/Sao_Paulo] PHP Fatal error:  require(): Failed opening required '_header.phtml' (include_path='.:/usr/share/php:/usr/share/pear:/var/www/ecommerce_management:/var/www/ecommerce_management/config/:/var/www/ecommerce_management/app/:/var/www/ecommerce_management/lib/:/var/www/ecommerce_management/vendor/') in /var/www/ecommerce_management/app/views/clients_pc/index.phtml on line 2
+[21-Jun-2016 23:39:54 America/Sao_Paulo] PHP Warning:  require(/ecommerce_management_header.phtml): failed to open stream: No such file or directory in /var/www/ecommerce_management/app/views/clients_pc/index.phtml on line 2
+[21-Jun-2016 23:39:54 America/Sao_Paulo] PHP Fatal error:  require(): Failed opening required '/ecommerce_management_header.phtml' (include_path='.:/usr/share/php:/usr/share/pear:/var/www/ecommerce_management:/var/www/ecommerce_management/config/:/var/www/ecommerce_management/app/:/var/www/ecommerce_management/lib/:/var/www/ecommerce_management/vendor/') in /var/www/ecommerce_management/app/views/clients_pc/index.phtml on line 2
+[21-Jun-2016 23:40:25 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected ')' in /var/www/ecommerce_management/app/views/clients_pc/index.phtml on line 2
+[21-Jun-2016 23:40:30 America/Sao_Paulo] PHP Warning:  require(clients_pc/_header.phtml): failed to open stream: No such file or directory in /var/www/ecommerce_management/app/views/clients_pc/index.phtml on line 2
+[21-Jun-2016 23:40:30 America/Sao_Paulo] PHP Fatal error:  require(): Failed opening required 'clients_pc/_header.phtml' (include_path='.:/usr/share/php:/usr/share/pear:/var/www/ecommerce_management:/var/www/ecommerce_management/config/:/var/www/ecommerce_management/app/:/var/www/ecommerce_management/lib/:/var/www/ecommerce_management/vendor/') in /var/www/ecommerce_management/app/views/clients_pc/index.phtml on line 2
+[21-Jun-2016 23:41:08 America/Sao_Paulo] PHP Warning:  require(/ecommerce_managementclients_pc/_header.phtml): failed to open stream: No such file or directory in /var/www/ecommerce_management/app/views/clients_pc/index.phtml on line 2
+[21-Jun-2016 23:41:08 America/Sao_Paulo] PHP Fatal error:  require(): Failed opening required '/ecommerce_managementclients_pc/_header.phtml' (include_path='.:/usr/share/php:/usr/share/pear:/var/www/ecommerce_management:/var/www/ecommerce_management/config/:/var/www/ecommerce_management/app/:/var/www/ecommerce_management/lib/:/var/www/ecommerce_management/vendor/') in /var/www/ecommerce_management/app/views/clients_pc/index.phtml on line 2
+[21-Jun-2016 23:41:16 America/Sao_Paulo] PHP Warning:  require(/ecommerce_management/clients_pc/_header.phtml): failed to open stream: No such file or directory in /var/www/ecommerce_management/app/views/clients_pc/index.phtml on line 2
+[21-Jun-2016 23:41:16 America/Sao_Paulo] PHP Fatal error:  require(): Failed opening required '/ecommerce_management/clients_pc/_header.phtml' (include_path='.:/usr/share/php:/usr/share/pear:/var/www/ecommerce_management:/var/www/ecommerce_management/config/:/var/www/ecommerce_management/app/:/var/www/ecommerce_management/lib/:/var/www/ecommerce_management/vendor/') in /var/www/ecommerce_management/app/views/clients_pc/index.phtml on line 2
+[21-Jun-2016 23:41:43 America/Sao_Paulo] PHP Warning:  require(/ecommerce_management/clients_pi/_header.phtml): failed to open stream: No such file or directory in /var/www/ecommerce_management/app/views/clients_pc/index.phtml on line 2
+[21-Jun-2016 23:41:43 America/Sao_Paulo] PHP Fatal error:  require(): Failed opening required '/ecommerce_management/clients_pi/_header.phtml' (include_path='.:/usr/share/php:/usr/share/pear:/var/www/ecommerce_management:/var/www/ecommerce_management/config/:/var/www/ecommerce_management/app/:/var/www/ecommerce_management/lib/:/var/www/ecommerce_management/vendor/') in /var/www/ecommerce_management/app/views/clients_pc/index.phtml on line 2
+[21-Jun-2016 23:42:09 America/Sao_Paulo] PHP Warning:  require(clients_pi/_header.phtml): failed to open stream: No such file or directory in /var/www/ecommerce_management/app/views/clients_pc/index.phtml on line 2
+[21-Jun-2016 23:42:09 America/Sao_Paulo] PHP Fatal error:  require(): Failed opening required 'clients_pi/_header.phtml' (include_path='.:/usr/share/php:/usr/share/pear:/var/www/ecommerce_management:/var/www/ecommerce_management/config/:/var/www/ecommerce_management/app/:/var/www/ecommerce_management/lib/:/var/www/ecommerce_management/vendor/') in /var/www/ecommerce_management/app/views/clients_pc/index.phtml on line 2
+[22-Jun-2016 00:15:50 America/Sao_Paulo] PHP Warning:  require(_form_date.phtml): failed to open stream: No such file or directory in /var/www/ecommerce_management/app/views/reports/employees.phtml on line 8
+[22-Jun-2016 00:15:50 America/Sao_Paulo] PHP Fatal error:  require(): Failed opening required '_form_date.phtml' (include_path='.:/usr/share/php:/usr/share/pear:/var/www/ecommerce_management:/var/www/ecommerce_management/config/:/var/www/ecommerce_management/app/:/var/www/ecommerce_management/lib/:/var/www/ecommerce_management/vendor/') in /var/www/ecommerce_management/app/views/reports/employees.phtml on line 8
+[22-Jun-2016 00:21:11 America/Sao_Paulo] PHP Warning:  require(app/views/pagination/paginations.phtml): failed to open stream: No such file or directory in /var/www/ecommerce_management/app/views/products/index.phtml on line 62
+[22-Jun-2016 00:21:11 America/Sao_Paulo] PHP Fatal error:  require(): Failed opening required 'app/views/pagination/paginations.phtml' (include_path='.:/usr/share/php:/usr/share/pear:/var/www/ecommerce_management:/var/www/ecommerce_management/config/:/var/www/ecommerce_management/app/:/var/www/ecommerce_management/lib/:/var/www/ecommerce_management/vendor/') in /var/www/ecommerce_management/app/views/products/index.phtml on line 62
+[22-Jun-2016 00:21:29 America/Sao_Paulo] PHP Warning:  require(/app/views/pagination/paginations.phtml): failed to open stream: No such file or directory in /var/www/ecommerce_management/app/views/products/index.phtml on line 62
+[22-Jun-2016 00:21:29 America/Sao_Paulo] PHP Fatal error:  require(): Failed opening required '/app/views/pagination/paginations.phtml' (include_path='.:/usr/share/php:/usr/share/pear:/var/www/ecommerce_management:/var/www/ecommerce_management/config/:/var/www/ecommerce_management/app/:/var/www/ecommerce_management/lib/:/var/www/ecommerce_management/vendor/') in /var/www/ecommerce_management/app/views/products/index.phtml on line 62
+[22-Jun-2016 00:21:44 America/Sao_Paulo] PHP Warning:  require(app/views/pagination/pagination.phtml): failed to open stream: No such file or directory in /var/www/ecommerce_management/app/views/products/index.phtml on line 62
+[22-Jun-2016 00:21:44 America/Sao_Paulo] PHP Fatal error:  require(): Failed opening required 'app/views/pagination/pagination.phtml' (include_path='.:/usr/share/php:/usr/share/pear:/var/www/ecommerce_management:/var/www/ecommerce_management/config/:/var/www/ecommerce_management/app/:/var/www/ecommerce_management/lib/:/var/www/ecommerce_management/vendor/') in /var/www/ecommerce_management/app/views/products/index.phtml on line 62
+[22-Jun-2016 00:22:20 America/Sao_Paulo] PHP Warning:  require(app/views/paginations/pagination.phtml): failed to open stream: No such file or directory in /var/www/ecommerce_management/app/views/products/index.phtml on line 62
+[22-Jun-2016 00:22:20 America/Sao_Paulo] PHP Fatal error:  require(): Failed opening required 'app/views/paginations/pagination.phtml' (include_path='.:/usr/share/php:/usr/share/pear:/var/www/ecommerce_management:/var/www/ecommerce_management/config/:/var/www/ecommerce_management/app/:/var/www/ecommerce_management/lib/:/var/www/ecommerce_management/vendor/') in /var/www/ecommerce_management/app/views/products/index.phtml on line 62
+[22-Jun-2016 00:24:03 America/Sao_Paulo] PHP Warning:  require(_pagination.phtml): failed to open stream: No such file or directory in /var/www/ecommerce_management/app/views/products/index.phtml on line 62
+[22-Jun-2016 00:24:03 America/Sao_Paulo] PHP Fatal error:  require(): Failed opening required '_pagination.phtml' (include_path='.:/usr/share/php:/usr/share/pear:/var/www/ecommerce_management:/var/www/ecommerce_management/config/:/var/www/ecommerce_management/app/:/var/www/ecommerce_management/lib/:/var/www/ecommerce_management/vendor/') in /var/www/ecommerce_management/app/views/products/index.phtml on line 62
+[22-Jun-2016 00:38:17 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ecommerce_management/app/views/products/index.phtml on line 38
+[22-Jun-2016 00:43:18 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$totalOfPages in /var/www/ecommerce_management/app/views/paginations/_pagination.phtml on line 7
+[22-Jun-2016 00:43:18 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$totalOfPages in /var/www/ecommerce_management/app/views/paginations/_pagination.phtml on line 13
+[22-Jun-2016 00:49:52 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: mixed named and positional parameters' in /var/www/ecommerce_management/app/models/order.php:285
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(285): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/application_controller.php(61): Order::all(Array)
+#2 /var/www/ecommerce_management/app/controllers/orders_controller.php(7): ApplicationController->pagination('Order', Array)
+#3 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->index()
+#4 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#5 /var/www/ecommerce_management/config/routes.php(118): Router->load()
+#6 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 285
+[22-Jun-2016 00:51:05 America/Sao_Paulo] PHP Warning:  PDOStatement::execute() expects parameter 1 to be array, string given in /var/www/ecommerce_management/app/models/order.php on line 285
+[22-Jun-2016 00:51:16 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: mixed named and positional parameters' in /var/www/ecommerce_management/app/models/order.php:285
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(285): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/application_controller.php(61): Order::all(Array)
+#2 /var/www/ecommerce_management/app/controllers/orders_controller.php(7): ApplicationController->pagination('Order', Array)
+#3 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->index()
+#4 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#5 /var/www/ecommerce_management/config/routes.php(118): Router->load()
+#6 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 285
+[22-Jun-2016 00:52:11 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: mixed named and positional parameters' in /var/www/ecommerce_management/app/models/order.php:285
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(285): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/application_controller.php(61): Order::all(Array)
+#2 /var/www/ecommerce_management/app/controllers/orders_controller.php(7): ApplicationController->pagination('Order', Array)
+#3 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->index()
+#4 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#5 /var/www/ecommerce_management/config/routes.php(118): Router->load()
+#6 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 285
+[22-Jun-2016 00:52:12 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: mixed named and positional parameters' in /var/www/ecommerce_management/app/models/order.php:285
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(285): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/application_controller.php(61): Order::all(Array)
+#2 /var/www/ecommerce_management/app/controllers/orders_controller.php(7): ApplicationController->pagination('Order', Array)
+#3 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->index()
+#4 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#5 /var/www/ecommerce_management/config/routes.php(118): Router->load()
+#6 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 285
+[22-Jun-2016 00:53:55 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: mixed named and positional parameters' in /var/www/ecommerce_management/app/models/order.php:285
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(285): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/application_controller.php(61): Order::all(Array)
+#2 /var/www/ecommerce_management/app/controllers/orders_controller.php(7): ApplicationController->pagination('Order', Array)
+#3 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->index()
+#4 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#5 /var/www/ecommerce_management/config/routes.php(118): Router->load()
+#6 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 285
+[22-Jun-2016 00:54:24 America/Sao_Paulo] PHP Notice:  Array to string conversion in /var/www/ecommerce_management/app/models/order.php on line 285
+[22-Jun-2016 00:54:24 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: mixed named and positional parameters' in /var/www/ecommerce_management/app/models/order.php:285
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(285): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/application_controller.php(61): Order::all(Array)
+#2 /var/www/ecommerce_management/app/controllers/orders_controller.php(7): ApplicationController->pagination('Order', Array)
+#3 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->index()
+#4 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#5 /var/www/ecommerce_management/config/routes.php(118): Router->load()
+#6 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 285
+[22-Jun-2016 00:55:44 America/Sao_Paulo] PHP Notice:  Array to string conversion in /var/www/ecommerce_management/app/models/order.php on line 285
+[22-Jun-2016 00:55:44 America/Sao_Paulo] PHP Notice:  Array to string conversion in /var/www/ecommerce_management/app/models/order.php on line 285
+[22-Jun-2016 00:55:44 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: mixed named and positional parameters' in /var/www/ecommerce_management/app/models/order.php:285
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(285): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/application_controller.php(61): Order::all(Array)
+#2 /var/www/ecommerce_management/app/controllers/orders_controller.php(7): ApplicationController->pagination('Order', Array)
+#3 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->index()
+#4 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#5 /var/www/ecommerce_management/config/routes.php(118): Router->load()
+#6 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 285
+[22-Jun-2016 00:57:49 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: mixed named and positional parameters' in /var/www/ecommerce_management/app/models/order.php:285
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(285): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/application_controller.php(61): Order::all(Array)
+#2 /var/www/ecommerce_management/app/controllers/orders_controller.php(7): ApplicationController->pagination('Order', Array)
+#3 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->index()
+#4 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#5 /var/www/ecommerce_management/config/routes.php(118): Router->load()
+#6 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 285
+[22-Jun-2016 01:00:02 America/Sao_Paulo] PHP Fatal error:  Cannot pass parameter 2 by reference in /var/www/ecommerce_management/app/models/order.php on line 285
+[22-Jun-2016 01:00:30 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/order.php:286
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(286): PDOStatement->execute()
+#1 /var/www/ecommerce_management/app/controllers/application_controller.php(61): Order::all(Array)
+#2 /var/www/ecommerce_management/app/controllers/orders_controller.php(7): ApplicationController->pagination('Order', Array)
+#3 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->index()
+#4 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#5 /var/www/ecommerce_management/config/routes.php(118): Router->load()
+#6 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 286
+[22-Jun-2016 01:01:39 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/order.php:287
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(287): PDOStatement->execute()
+#1 /var/www/ecommerce_management/app/controllers/application_controller.php(61): Order::all(Array)
+#2 /var/www/ecommerce_management/app/controllers/orders_controller.php(7): ApplicationController->pagination('Order', Array)
+#3 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->index()
+#4 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#5 /var/www/ecommerce_management/config/routes.php(118): Router->load()
+#6 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 287
+[22-Jun-2016 01:01:43 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/order.php:286
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(286): PDOStatement->execute()
+#1 /var/www/ecommerce_management/app/controllers/application_controller.php(61): Order::all(Array)
+#2 /var/www/ecommerce_management/app/controllers/orders_controller.php(7): ApplicationController->pagination('Order', Array)
+#3 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->index()
+#4 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#5 /var/www/ecommerce_management/config/routes.php(118): Router->load()
+#6 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 286
+[22-Jun-2016 01:03:06 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /var/www/ecommerce_management/app/models/order.php on line 285
+[22-Jun-2016 01:03:42 America/Sao_Paulo] PHP Notice:  Array to string conversion in /var/www/ecommerce_management/app/models/order.php on line 285
+[22-Jun-2016 01:03:42 America/Sao_Paulo] PHP Notice:  Array to string conversion in /var/www/ecommerce_management/app/models/order.php on line 285
+[22-Jun-2016 01:03:42 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/order.php:285
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(285): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/application_controller.php(61): Order::all(Array)
+#2 /var/www/ecommerce_management/app/controllers/orders_controller.php(7): ApplicationController->pagination('Order', Array)
+#3 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->index()
+#4 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#5 /var/www/ecommerce_management/config/routes.php(118): Router->load()
+#6 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 285
+[22-Jun-2016 01:04:36 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected ';' in /var/www/ecommerce_management/app/models/order.php on line 285
+[22-Jun-2016 01:04:47 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/order.php:285
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(285): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/application_controller.php(61): Order::all(Array)
+#2 /var/www/ecommerce_management/app/controllers/orders_controller.php(7): ApplicationController->pagination('Order', Array)
+#3 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->index()
+#4 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#5 /var/www/ecommerce_management/config/routes.php(118): Router->load()
+#6 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 285
+[22-Jun-2016 01:04:57 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ': employee)
+            ORDER BY
+              o.created_at ASC' at line 13' in /var/www/ecommerce_management/app/models/order.php:285
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(285): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/application_controller.php(61): Order::all(Array)
+#2 /var/www/ecommerce_management/app/controllers/orders_controller.php(7): ApplicationController->pagination('Order', Array)
+#3 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->index()
+#4 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#5 /var/www/ecommerce_management/config/routes.php(118): Router->load()
+#6 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 285
+[22-Jun-2016 01:05:20 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /var/www/ecommerce_management/app/models/order.php:285
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(285): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/application_controller.php(61): Order::all(Array)
+#2 /var/www/ecommerce_management/app/controllers/orders_controller.php(7): ApplicationController->pagination('Order', Array)
+#3 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->index()
+#4 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#5 /var/www/ecommerce_management/config/routes.php(118): Router->load()
+#6 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 285
+[22-Jun-2016 01:05:40 America/Sao_Paulo] PHP Notice:  Array to string conversion in /var/www/ecommerce_management/app/models/order.php on line 285
+[22-Jun-2016 01:05:40 America/Sao_Paulo] PHP Notice:  Array to string conversion in /var/www/ecommerce_management/app/models/order.php on line 285
+[22-Jun-2016 01:05:40 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''Array' OFFSET 'Array'' at line 15' in /var/www/ecommerce_management/app/models/order.php:285
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/order.php(285): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/application_controller.php(61): Order::all(Array)
+#2 /var/www/ecommerce_management/app/controllers/orders_controller.php(7): ApplicationController->pagination('Order', Array)
+#3 /var/www/ecommerce_management/core/routes/router.php(47): OrdersController->index()
+#4 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#5 /var/www/ecommerce_management/config/routes.php(118): Router->load()
+#6 {main}
+  thrown in /var/www/ecommerce_management/app/models/order.php on line 285
+[22-Jun-2016 01:20:29 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsPiController::$url in /var/www/ecommerce_management/app/views/paginations/_pagination.phtml on line 3
+[22-Jun-2016 01:20:29 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsPiController::$totalOfPages in /var/www/ecommerce_management/app/views/paginations/_pagination.phtml on line 7
+[22-Jun-2016 01:20:29 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsPiController::$url in /var/www/ecommerce_management/app/views/paginations/_pagination.phtml on line 13
+[22-Jun-2016 01:20:29 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsPiController::$totalOfPages in /var/www/ecommerce_management/app/views/paginations/_pagination.phtml on line 13
+[22-Jun-2016 01:20:44 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsPiController::$url in /var/www/ecommerce_management/app/views/paginations/_pagination.phtml on line 3
+[22-Jun-2016 01:20:44 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsPiController::$totalOfPages in /var/www/ecommerce_management/app/views/paginations/_pagination.phtml on line 7
+[22-Jun-2016 01:20:44 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsPiController::$url in /var/www/ecommerce_management/app/views/paginations/_pagination.phtml on line 13
+[22-Jun-2016 01:20:44 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsPiController::$totalOfPages in /var/www/ecommerce_management/app/views/paginations/_pagination.phtml on line 13
+[22-Jun-2016 01:22:36 America/Sao_Paulo] PHP Fatal error:  Class 'Clients' not found in /var/www/ecommerce_management/app/controllers/application_controller.php on line 57
+[22-Jun-2016 01:22:48 America/Sao_Paulo] PHP Fatal error:  Call to undefined method Client::count() in /var/www/ecommerce_management/app/controllers/application_controller.php on line 57
+[22-Jun-2016 01:24:48 America/Sao_Paulo] PHP Fatal error:  Call to undefined method Client::count() in /var/www/ecommerce_management/app/controllers/application_controller.php on line 58
+[22-Jun-2016 01:25:28 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsPiController::$clients in /var/www/ecommerce_management/app/views/clients_pi/clients.phtml on line 19
+[22-Jun-2016 01:25:28 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ecommerce_management/app/views/clients_pi/clients.phtml on line 19
+[22-Jun-2016 01:27:11 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsPiController::$clients in /var/www/ecommerce_management/app/views/clients_pi/clients.phtml on line 19
+[22-Jun-2016 01:27:11 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ecommerce_management/app/views/clients_pi/clients.phtml on line 19
+[22-Jun-2016 01:27:38 America/Sao_Paulo] PHP Notice:  Undefined property: ClientsPiController::$clients in /var/www/ecommerce_management/app/views/clients_pi/clients.phtml on line 19
+[22-Jun-2016 01:27:38 America/Sao_Paulo] PHP Warning:  Invalid argument supplied for foreach() in /var/www/ecommerce_management/app/views/clients_pi/clients.phtml on line 19
+[22-Jun-2016 01:29:28 America/Sao_Paulo] PHP Fatal error:  Class 'clientpi' not found in /var/www/ecommerce_management/app/controllers/application_controller.php on line 58
+[22-Jun-2016 01:29:36 America/Sao_Paulo] PHP Fatal error:  Class 'clientpi' not found in /var/www/ecommerce_management/app/controllers/application_controller.php on line 58
+[22-Jun-2016 01:36:51 America/Sao_Paulo] PHP Notice:  Undefined property: CategoriesController::$url in /var/www/ecommerce_management/app/views/paginations/_pagination.phtml on line 3
+[22-Jun-2016 01:36:51 America/Sao_Paulo] PHP Notice:  Undefined property: CategoriesController::$totalOfPages in /var/www/ecommerce_management/app/views/paginations/_pagination.phtml on line 7
+[22-Jun-2016 01:36:51 America/Sao_Paulo] PHP Notice:  Undefined property: CategoriesController::$url in /var/www/ecommerce_management/app/views/paginations/_pagination.phtml on line 13
+[22-Jun-2016 01:36:51 America/Sao_Paulo] PHP Notice:  Undefined property: CategoriesController::$totalOfPages in /var/www/ecommerce_management/app/views/paginations/_pagination.phtml on line 13
+[22-Jun-2016 01:45:07 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$totalOfRegisters in /var/www/ecommerce_management/app/views/orders/index.phtml on line 56
+[22-Jun-2016 01:45:07 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$url in /var/www/ecommerce_management/app/views/paginations/_pagination.phtml on line 3
+[22-Jun-2016 01:45:07 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$totalOfPages in /var/www/ecommerce_management/app/views/paginations/_pagination.phtml on line 7
+[22-Jun-2016 01:45:07 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$url in /var/www/ecommerce_management/app/views/paginations/_pagination.phtml on line 13
+[22-Jun-2016 01:45:07 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$totalOfPages in /var/www/ecommerce_management/app/views/paginations/_pagination.phtml on line 13
+[22-Jun-2016 01:45:12 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$totalOfRegisters in /var/www/ecommerce_management/app/views/orders/index.phtml on line 56
+[22-Jun-2016 01:45:12 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$url in /var/www/ecommerce_management/app/views/paginations/_pagination.phtml on line 3
+[22-Jun-2016 01:45:12 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$totalOfPages in /var/www/ecommerce_management/app/views/paginations/_pagination.phtml on line 7
+[22-Jun-2016 01:45:12 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$url in /var/www/ecommerce_management/app/views/paginations/_pagination.phtml on line 13
+[22-Jun-2016 01:45:12 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$totalOfPages in /var/www/ecommerce_management/app/views/paginations/_pagination.phtml on line 13
+[22-Jun-2016 01:45:52 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$totalOfRegisters in /var/www/ecommerce_management/app/views/orders/index.phtml on line 56
+[22-Jun-2016 01:45:52 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$url in /var/www/ecommerce_management/app/views/paginations/_pagination.phtml on line 3
+[22-Jun-2016 01:45:52 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$totalOfPages in /var/www/ecommerce_management/app/views/paginations/_pagination.phtml on line 7
+[22-Jun-2016 01:45:52 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$url in /var/www/ecommerce_management/app/views/paginations/_pagination.phtml on line 13
+[22-Jun-2016 01:45:52 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$totalOfPages in /var/www/ecommerce_management/app/views/paginations/_pagination.phtml on line 13
+[22-Jun-2016 01:50:58 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$totalOfRegisters in /var/www/ecommerce_management/app/views/orders/index.phtml on line 56
+[22-Jun-2016 01:50:58 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$url in /var/www/ecommerce_management/app/views/paginations/_pagination.phtml on line 3
+[22-Jun-2016 01:50:58 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$totalOfPages in /var/www/ecommerce_management/app/views/paginations/_pagination.phtml on line 7
+[22-Jun-2016 01:50:58 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$url in /var/www/ecommerce_management/app/views/paginations/_pagination.phtml on line 13
+[22-Jun-2016 01:50:58 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$totalOfPages in /var/www/ecommerce_management/app/views/paginations/_pagination.phtml on line 13
+[22-Jun-2016 01:50:59 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$totalOfRegisters in /var/www/ecommerce_management/app/views/orders/index.phtml on line 56
+[22-Jun-2016 01:50:59 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$url in /var/www/ecommerce_management/app/views/paginations/_pagination.phtml on line 3
+[22-Jun-2016 01:50:59 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$totalOfPages in /var/www/ecommerce_management/app/views/paginations/_pagination.phtml on line 7
+[22-Jun-2016 01:50:59 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$url in /var/www/ecommerce_management/app/views/paginations/_pagination.phtml on line 13
+[22-Jun-2016 01:50:59 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$totalOfPages in /var/www/ecommerce_management/app/views/paginations/_pagination.phtml on line 13
+[22-Jun-2016 01:51:03 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$totalOfRegisters in /var/www/ecommerce_management/app/views/orders/index.phtml on line 56
+[22-Jun-2016 01:51:03 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$url in /var/www/ecommerce_management/app/views/paginations/_pagination.phtml on line 3
+[22-Jun-2016 01:51:03 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$totalOfPages in /var/www/ecommerce_management/app/views/paginations/_pagination.phtml on line 7
+[22-Jun-2016 01:51:03 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$url in /var/www/ecommerce_management/app/views/paginations/_pagination.phtml on line 13
+[22-Jun-2016 01:51:03 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$totalOfPages in /var/www/ecommerce_management/app/views/paginations/_pagination.phtml on line 13
+[22-Jun-2016 01:52:32 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$totalOfRegisters in /var/www/ecommerce_management/app/views/orders/index.phtml on line 56
+[22-Jun-2016 01:52:32 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$url in /var/www/ecommerce_management/app/views/paginations/_pagination.phtml on line 3
+[22-Jun-2016 01:52:32 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$totalOfPages in /var/www/ecommerce_management/app/views/paginations/_pagination.phtml on line 7
+[22-Jun-2016 01:52:32 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$url in /var/www/ecommerce_management/app/views/paginations/_pagination.phtml on line 13
+[22-Jun-2016 01:52:32 America/Sao_Paulo] PHP Notice:  Undefined property: OrdersController::$totalOfPages in /var/www/ecommerce_management/app/views/paginations/_pagination.phtml on line 13

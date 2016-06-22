@@ -49,4 +49,18 @@
     $this->sellOrderItem = SellOrderItem::findById($productId, $orderId);
   }
 
+  public function pagination($class, $options) {
+    $this->url = $options['url'];
+    $this->limit = $options['limit'];
+    $this->page = isset($this->params[':page']) ? $this->params[':page'] : 1;
+    $offset = ($this->page-1)*$this->limit;
+    $this->totalOfRegisters = $class::count();
+    $this->totalOfPages = ceil($this->totalOfRegisters/$this->limit);
+    $options = array('limit' => $this->limit,'offset' => $offset);
+
+    $registers = $class::all($options);
+
+    return $registers;
+  }
+
 }

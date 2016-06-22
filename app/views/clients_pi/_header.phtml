@@ -1,0 +1,18 @@
+<header>
+  <div class="ui equal width grid">
+    <div class="column">
+      <h2><?= $this->title ?></h2>
+    </div>
+    <div class="column">
+      <?= ViewHelpers::linkTo("/clientes/nova-pessoa-fisica", 'Novo cliente', 'class="ui right floated primary labeled icon button"', 'class="add circle icon"') ?>
+    </div>
+    <div class="column">
+      <select class="ui fluid dropdown" onChange="window.location.href=this.value">
+        <option value="">Selecione ...</option>
+        <option value="<?= ViewHelpers::urlFor("/clientes", '') ?>">Todos os clientes</option>
+        <option value="<?= ViewHelpers::urlFor("/clientes/pessoa-fisica", '') ?>">Clientes pessoa física</option>
+        <option value="<?= ViewHelpers::urlFor("/clientes/pessoa-juridica", '') ?>">Clientes pessoa jurídica</option>
+      </select>
+    </div>
+  </div>
+</header>

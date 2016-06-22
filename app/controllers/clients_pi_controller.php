@@ -3,13 +3,13 @@
   protected $beforeAction = array('authenticated' => 'all');
 
   public function index() {
-     $this->title = "Clientes (Pessoa física)";
-     $this->clients = ClientPi::all();
+    $this->title = "Clientes (Pessoa física)";
+    $this->clients = $this->pagination('ClientPi', array('url' => '/clientes/pessoa-fisica', 'limit' => 10));
   }
 
   public function clients() {
-     $this->title = "Clientes";
-     $this->clients = Client::all();
+    $this->title = "Clientes";
+    $this->clients = $this->pagination('Client', array('url' => '/clientes', 'limit' => 10));
   }
 
   public function show() {

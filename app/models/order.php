@@ -268,13 +268,15 @@
             FROM
               clients c, orders o, cities ct, employees e
             WHERE
-              (o.client_id = c.id) AND (ct.id = c.city_id ) AND (e.id = o.employee_id) AND (o.employee_id = ?)
+              (o.client_id = c.id) AND (ct.id = c.city_id ) AND (e.id = o.employee_id) AND (o.employee_id = :employee)
             ORDER BY
               o.created_at ASC";
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
-    $resp = $statement->execute(array($employeeId));
+
+    $statement->bindParam(':employee', $employeeId , PDO::PARAM_INT);
+    $resp = $statement->execute();
 
     $orders = [];
 
@@ -317,6 +319,16 @@
       $orders[] = self::createOrder($row);
     }
     return $orders;
+  }
+
+  public static function count() {
+    $sql = "SELECT COUNT(*) FROM orders";
+
+    $db = Database::getConnection();
+    $statement = $db->prepare($sql);
+    $statement->execute();
+
+    return $statement->fetch()[0];
   }
 
   public static function allClose() {

@@ -1,8 +1,14 @@
 <section>
     <header>
       <div class="ui equal width grid">
-        <div class="column">  <h2><?= $this->title ?></h2></div>
-        <div class="column"><?= ViewHelpers::linkTo($this->url, $this->link, 'class="ui right small primary labeled icon button"', $this->icon) ?></div>
+        <div class="column">
+          <h2><?= $this->title ?></h2>
+        </div>
+
+        <div class="column">
+          <?= ViewHelpers::linkTo($this->url, $this->link, 'class="ui right floated primary labeled icon button"', $this->icon) ?>
+        </div>
+
         <div class="column">
           <form action="<?= ViewHelpers::urlFor($this->action) ?>" method="GET">
             <div class="ui action input">
@@ -47,33 +53,12 @@
       </tbody>
       <tfoot>
         <tr>
-          <th colspan="8"><h4 class="pull-right"> Mostrando <?= count($this->products) ?> produtos de <?= $this->totalOfRegisters ?> </h4></th>
+          <th colspan="8"><p class="pull-right"> Mostrando <?= count($this->products) ?> produtos de <?= $this->totalOfRegisters ?> </p></th>
         </tr>
       </tfoot>
     </table>
 
-    <div class="ui centered grid">
-    <div class="ui pagination menu">
-
-      <a class="icon item" href="<?= ViewHelpers::urlFor("/produtos/page/1")?>">
-        <i class="left chevron icon"></i>
-      </a>
-
-      <?php for($i = 1; $i <= $this->totalOfPages; $i++) {
-        $class = $i == $this->page ? 'active' : '';
-        $url = ViewHelpers::urlFor("/produtos/page/{$i}");
-        echo "<a class=\"item {$class}\" href=\"{$url}\"> {$i} </a>";
-      } ?>
-
-      <a class='icon item' href="<?= ViewHelpers::urlFor("/produtos/page/{$this->totalOfPages}") ?>">
-        <i class='right chevron icon'></i>
-      </a>
-
-    </div>
-</div>
-
-
-
+    <?php require "app/views/paginations/_pagination.phtml" ?>
 
 </article>
 </section>
