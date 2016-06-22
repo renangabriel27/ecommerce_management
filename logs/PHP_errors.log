@@ -1,0 +1,71 @@
+[21-Jun-2016 19:07:49 America/Sao_Paulo] PHP Fatal error:  Undefined class constant 'INT' in /var/www/ecommerce_management/app/models/product.php on line 223
+[21-Jun-2016 19:08:26 America/Sao_Paulo] PHP Fatal error:  Cannot pass parameter 2 by reference in /var/www/ecommerce_management/app/models/product.php on line 223
+[21-Jun-2016 19:10:26 America/Sao_Paulo] PHP Fatal error:  Cannot pass parameter 2 by reference in /var/www/ecommerce_management/app/models/product.php on line 224
+[21-Jun-2016 19:10:29 America/Sao_Paulo] PHP Fatal error:  Cannot pass parameter 2 by reference in /var/www/ecommerce_management/app/models/product.php on line 224
+[21-Jun-2016 19:14:08 America/Sao_Paulo] PHP Notice:  Undefined index: product in /var/www/ecommerce_management/app/controllers/products_controller.php on line 69
+[21-Jun-2016 19:17:26 America/Sao_Paulo] PHP Notice:  Undefined index: product in /var/www/ecommerce_management/app/controllers/products_controller.php on line 9
+[21-Jun-2016 19:17:27 America/Sao_Paulo] PHP Notice:  Undefined index: product in /var/www/ecommerce_management/app/controllers/products_controller.php on line 9
+[21-Jun-2016 19:35:32 America/Sao_Paulo] PHP Notice:  Undefined variable: page in /var/www/ecommerce_management/app/controllers/products_controller.php on line 10
+[21-Jun-2016 19:35:32 America/Sao_Paulo] PHP Notice:  Undefined variable: limit in /var/www/ecommerce_management/app/controllers/products_controller.php on line 10
+[21-Jun-2016 19:35:32 America/Sao_Paulo] PHP Notice:  Undefined variable: limit in /var/www/ecommerce_management/app/controllers/products_controller.php on line 14
+[21-Jun-2016 19:35:32 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NULL OFFSET 0' at line 9' in /var/www/ecommerce_management/app/models/product.php:228
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/product.php(228): PDOStatement->execute()
+#1 /var/www/ecommerce_management/app/controllers/products_controller.php(16): Product::all(Array)
+#2 /var/www/ecommerce_management/core/routes/router.php(47): ProductsController->index()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(117): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/product.php on line 228
+[21-Jun-2016 19:35:41 America/Sao_Paulo] PHP Notice:  Undefined variable: page in /var/www/ecommerce_management/app/controllers/products_controller.php on line 10
+[21-Jun-2016 19:35:41 America/Sao_Paulo] PHP Notice:  Undefined variable: limit in /var/www/ecommerce_management/app/controllers/products_controller.php on line 10
+[21-Jun-2016 19:35:41 America/Sao_Paulo] PHP Notice:  Undefined variable: limit in /var/www/ecommerce_management/app/controllers/products_controller.php on line 14
+[21-Jun-2016 19:35:41 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NULL OFFSET 0' at line 9' in /var/www/ecommerce_management/app/models/product.php:228
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/product.php(228): PDOStatement->execute()
+#1 /var/www/ecommerce_management/app/controllers/products_controller.php(16): Product::all(Array)
+#2 /var/www/ecommerce_management/core/routes/router.php(47): ProductsController->index()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(117): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/product.php on line 228
+[21-Jun-2016 19:35:44 America/Sao_Paulo] PHP Notice:  Undefined variable: page in /var/www/ecommerce_management/app/controllers/products_controller.php on line 10
+[21-Jun-2016 19:35:44 America/Sao_Paulo] PHP Notice:  Undefined variable: limit in /var/www/ecommerce_management/app/controllers/products_controller.php on line 10
+[21-Jun-2016 19:35:44 America/Sao_Paulo] PHP Notice:  Undefined variable: limit in /var/www/ecommerce_management/app/controllers/products_controller.php on line 14
+[21-Jun-2016 19:35:44 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NULL OFFSET 0' at line 9' in /var/www/ecommerce_management/app/models/product.php:228
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/product.php(228): PDOStatement->execute()
+#1 /var/www/ecommerce_management/app/controllers/products_controller.php(16): Product::all(Array)
+#2 /var/www/ecommerce_management/core/routes/router.php(47): ProductsController->index()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(117): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/product.php on line 228
+[21-Jun-2016 19:36:42 America/Sao_Paulo] PHP Notice:  Undefined variable: page in /var/www/ecommerce_management/app/controllers/products_controller.php on line 10
+[21-Jun-2016 19:36:42 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10' at line 9' in /var/www/ecommerce_management/app/models/product.php:228
+Stack trace:
+#0 /var/www/ecommerce_management/app/models/product.php(228): PDOStatement->execute()
+#1 /var/www/ecommerce_management/app/controllers/products_controller.php(16): Product::all(Array)
+#2 /var/www/ecommerce_management/core/routes/router.php(47): ProductsController->index()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(117): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/app/models/product.php on line 228
+[21-Jun-2016 19:45:03 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`ecommerce_management`.`sell_orders_items`, CONSTRAINT `sell_orders_items_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`))' in /var/www/ecommerce_management/core/models/base.php:91
+Stack trace:
+#0 /var/www/ecommerce_management/core/models/base.php(91): PDOStatement->execute(Array)
+#1 /var/www/ecommerce_management/app/controllers/products_controller.php(76): Base->delete('products')
+#2 /var/www/ecommerce_management/core/routes/router.php(47): ProductsController->destroy()
+#3 /var/www/ecommerce_management/core/routes/router.php(25): Router->find(Array)
+#4 /var/www/ecommerce_management/config/routes.php(117): Router->load()
+#5 {main}
+  thrown in /var/www/ecommerce_management/core/models/base.php on line 91
+[21-Jun-2016 19:47:39 America/Sao_Paulo] PHP Fatal error:  Call to a member function getEmployeeOrder() on null in /var/www/ecommerce_management/app/controllers/application_controller.php on line 34
+[21-Jun-2016 19:49:51 America/Sao_Paulo] PHP Fatal error:  Call to a member function getEmployeeOrder() on null in /var/www/ecommerce_management/app/controllers/application_controller.php on line 34
+[21-Jun-2016 19:49:54 America/Sao_Paulo] PHP Fatal error:  Call to a member function getEmployeeOrder() on null in /var/www/ecommerce_management/app/controllers/application_controller.php on line 34
+[21-Jun-2016 19:50:40 America/Sao_Paulo] PHP Fatal error:  Call to a member function getEmployeeOrder() on null in /var/www/ecommerce_management/app/controllers/application_controller.php on line 34
+[21-Jun-2016 19:53:53 America/Sao_Paulo] PHP Fatal error:  Call to a member function getEmployeeOrder() on null in /var/www/ecommerce_management/app/controllers/application_controller.php on line 34
+[21-Jun-2016 19:53:54 America/Sao_Paulo] PHP Fatal error:  Call to a member function getEmployeeOrder() on null in /var/www/ecommerce_management/app/controllers/application_controller.php on line 34
+[21-Jun-2016 19:58:59 America/Sao_Paulo] PHP Fatal error:  Call to a member function getEmployeeOrder() on null in /var/www/ecommerce_management/app/controllers/application_controller.php on line 34
+[21-Jun-2016 19:59:06 America/Sao_Paulo] PHP Fatal error:  Call to a member function getEmployeeOrder() on null in /var/www/ecommerce_management/app/controllers/application_controller.php on line 34
+[21-Jun-2016 22:50:05 America/Sao_Paulo] PHP Notice:  Undefined variable: offset in /var/www/ecommerce_management/app/controllers/products_controller.php on line 13

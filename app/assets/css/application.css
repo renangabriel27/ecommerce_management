@@ -81,6 +81,10 @@ table {
   float: left;
 }
 
+.ui.centered.grid .pagination {
+  margin: 10px;
+  padding: 0;
+}
 /* Change defaults
 ------------------------- */
 

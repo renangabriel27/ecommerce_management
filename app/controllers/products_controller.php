@@ -4,7 +4,21 @@
 
    public function index() {
       $this->title = "Produtos";
-      $this->existParams();
+
+      $this->limit = 10;
+      $this->page = isset($this->params[':page']) ? $this->params[':page'] : 1;
+      $offset = ($this->page-1)*$this->limit;
+      $this->totalOfRegisters = Product::count();
+      $this->totalOfPages = ceil($this->totalOfRegisters/$this->limit);
+      $options = array('limit' => $this->limit,'offset' => $offset);
+
+      if(!isset($this->params['product'])) {
+        $this->products = Product::all($options);
+        $this->linkToNew();
+      } else {
+        $this->search();
+        $this->linkToBack();
+      }
       $this->action = "/produtos/search";
    }
 
@@ -89,22 +103,16 @@
    }
 
    public function existParams() {
-     if(!$this->params) {
-       $this->products = Product::all();
-       $this->linkToNew();
-     } else {
-       $this->search();
-       $this->linkToBack();
-     }
+
    }
 
-   public function linkToNew() {
+   private function linkToNew() {
      $this->url = "/produtos/novo";
      $this->link = "Novo produto";
      $this->icon = 'class="add circle icon"';
    }
 
-   public function linkToBack() {
+   private function linkToBack() {
      $this->url = "/produtos";
      $this->link = "Voltar";
      $this->icon = 'class="reply icon"';

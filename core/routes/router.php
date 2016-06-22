@@ -38,8 +38,8 @@
            $merged_params = array_merge($this->params(), $params);
 
            $controller = new $controller_name();
-           $controller->beforeAction($action_name);
            $controller->setParams($merged_params);
+           $controller->beforeAction($action_name);
 
            $controller->setView($action_name);
            $controller->setControllerName($controller_name);

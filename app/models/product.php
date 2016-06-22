@@ -203,19 +203,28 @@
     return null;
   }
 
-  public static function all() {
-    $sql = "SELECT
-              p.id AS id, p.name AS product_name, p.amount AS product_amount,
-              p.price AS product_price, p.description AS product_description,
-              p.created_at AS product_created_at, c.id AS category_id,
-              c.name AS category_name, c.created_at AS category_created_at
-            FROM
-              products p, categories c
-            WHERE
-              (p.category_id = c.id) ORDER BY product_created_at DESC";
+  public static function all($options = []) {
+
+      $sql = "SELECT
+                p.id AS id, p.name AS product_name, p.amount AS product_amount,
+                p.price AS product_price, p.description AS product_description,
+                p.created_at AS product_created_at, c.id AS category_id,
+                c.name AS category_name, c.created_at AS category_created_at
+              FROM
+                products p, categories c
+              WHERE
+                (p.category_id = c.id) ORDER BY product_created_at ASC";
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
+
+    if(sizeof($options) != 0) {
+      $sql .= " LIMIT :limit OFFSET :offset ";
+      $statement = $db->prepare($sql);
+      $statement->bindParam(':limit', $options['limit'], PDO::PARAM_INT);
+      $statement->bindParam(':offset', $options['offset'], PDO::PARAM_INT);
+    }
+
     $resp = $statement->execute();
 
     $products = [];
