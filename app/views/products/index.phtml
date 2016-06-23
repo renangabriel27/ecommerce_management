@@ -6,7 +6,7 @@
         </div>
 
         <div class="column">
-          <?= ViewHelpers::linkTo($this->url, $this->link, 'class="ui right floated primary labeled icon button"', $this->icon) ?>
+          <?= ViewHelpers::linkTo($this->urlButton, $this->link, 'class="ui right floated primary labeled icon button"', $this->icon) ?>
         </div>
 
         <div class="column">
@@ -58,7 +58,7 @@
       </tfoot>
     </table>
 
-    <?php require "app/views/paginations/_pagination.phtml" ?>
+    <?php require "app/views/partials/_pagination.phtml" ?>
 
 </article>
 </section>

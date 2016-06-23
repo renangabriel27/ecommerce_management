@@ -85,6 +85,17 @@ table {
   margin: 10px;
   padding: 0;
 }
+
+#graphicBestSellingProducts {
+    width: 900px;
+    height: 500px;
+    margin: 20px 120px;
+    padding: 20px;
+    border-radius: 3px;
+    float: right;
+    border: 1px solid rgba(0,0,0,.1);
+}
+
 /* Change defaults
 ------------------------- */
 

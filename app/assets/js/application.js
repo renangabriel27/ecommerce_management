@@ -7,6 +7,7 @@ $(document).ready(function() {
   mask_money();
   dropdowns();
   inputmasks();
+  charts();
 });
 
 /*** Confirm dialog **/
@@ -101,4 +102,30 @@ var inputmasks = function() {
     $("#client_cpf").mask("999.999.999-99");
     $('#client_cep').mask('00000-000');
     $('#client_cnpj').mask('99.999.999/9999-99');
+}
+
+var charts = function() {
+  if($("#graphicBestSellingProducts"))
+  google.charts.load('current', {'packages':['bar']});
+  google.charts.setOnLoadCallback(drawStuff);
+
+  function drawStuff() {
+    var data_info = $("#graphicBestSellingProducts ").data('graphicdata');
+    var data = new google.visualization.arrayToDataTable(data_info);
+
+    var options = {
+      title: 'Quantidade de vendas por produto',
+      width: 850,
+      axes: {
+        x: {
+          0: { position: 'top' } // Top x-axis.
+        }
+      },
+      bar: { groupWidth: "90%" }
+    };
+
+    var chart = new google.charts.Bar(document.getElementById('graphicBestSellingProducts'));
+    // Convert the Classic options to Material options.
+    chart.draw(data, google.charts.Bar.convertOptions(options));
+  };
 }

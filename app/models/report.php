@@ -5,6 +5,7 @@
   private $amount;
   private $product;
   private $total;
+  private $closedAt;
 
   public function setEmployeeId($employeeId) {
     $this->employeeId = $employeeId;
@@ -44,6 +45,14 @@
 
   public function getAmount() {
     return $this->amount;
+  }
+
+  public function setClosedAt($closedAt) {
+    $this->closedAt = $closedAt;
+  }
+
+  public function getClosedAt() {
+    return $this->closedAt;
   }
 
   public static function employeeWhoDidMoreSales() {
@@ -99,7 +108,7 @@
   public static function bestSellingProducts() {
       $sql = "SELECT
                 product_id, name AS product_name, products.price AS product_price,
-                SUM(sell_orders_items.amount) amount, SUM(sell_orders_items.amount*products.price) total
+                SUM(sell_orders_items.amount) AS amount, SUM(sell_orders_items.amount*products.price) total
               FROM
                 sell_orders_items, products
               WHERE
@@ -107,7 +116,7 @@
               GROUP BY
                 product_id
               ORDER BY
-                4 DESC";
+                amount DESC";
 
       $db = Database::getConnection();
       $statement = $db->prepare($sql);
@@ -131,7 +140,7 @@
                 sell_orders_items, products, orders
               WHERE
                 (sell_orders_items.product_id = products.id) AND (orders.id = sell_orders_items.order_id) AND
-                  orders.created_at > ? AND orders.closed_at <= ? AND orders.status = ?
+                  orders.created_at >  ? AND orders.closed_at  <= ? AND orders.status = ?
               GROUP BY
                 product_id
               ORDER BY
@@ -160,7 +169,7 @@
                 sell_orders_items, products, orders
               WHERE
                 (sell_orders_items.product_id = products.id) AND (orders.id = sell_orders_items.order_id) AND
-                  orders.created_at > ? AND orders.closed_at <= ? AND orders.status = ?
+                  orders.created_at > ? AND orders.closed_at  <= ? AND orders.status = ?
               GROUP BY
                 product_id
               ORDER BY

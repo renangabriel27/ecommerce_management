@@ -100,13 +100,13 @@
    }
 
    private function linkToNew() {
-     $this->url = "/produtos/novo";
+     $this->urlButton = "/produtos/novo";
      $this->link = "Novo produto";
      $this->icon = 'class="add circle icon"';
    }
 
    private function linkToBack() {
-     $this->url = "/produtos";
+     $this->urlButton = "/produtos";
      $this->link = "Voltar";
      $this->icon = 'class="reply icon"';
    }
