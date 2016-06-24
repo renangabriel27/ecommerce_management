@@ -41,7 +41,7 @@
     Validations::notEmpty($this->productId, 'id', $this->errors);
   }
 
-  public function getAmountOfProduct($productId, $orderId) {
+  public static function getAmountOfProduct($productId, $orderId) {
       $params = array($productId, $orderId);
       $sql = "SELECT amount FROM sell_orders_items WHERE product_id = ? AND order_id = ?";
 
@@ -98,6 +98,16 @@
       return new SellOrderItem($row);
     }
     return null;
+  }
+
+  public static function findByIdPrice($orderId, $productId) {
+    $sql = "SELECT DISTINCT price FROM sell_orders_items WHERE product_id = ? AND order_id = ?";
+    $params = array($productId, $orderId);
+
+    $db = Database::getConnection();
+    $statement = $db->prepare($sql);
+    $resp = $statement->execute($params);
+    return $statement->fetch()[0];
   }
 
 }

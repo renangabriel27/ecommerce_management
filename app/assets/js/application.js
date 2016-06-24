@@ -114,12 +114,16 @@ var charts = function() {
     var data = new google.visualization.arrayToDataTable(data_info);
 
     var options = {
-      title: 'Quantidade de vendas por produto',
+      title: 'Selecione para visualizar mais detalhes',
       width: 850,
-      axes: {
-        x: {
-          0: { position: 'top' } // Top x-axis.
-        }
+      legend:  {position: 'none' } ,
+      hAxis: {textPosition: 'in'},
+      vAxis: {textPosition: 'in'},
+      hAxis : {
+        textStyle : {
+            fontSize: 0
+        },
+        direction: -1 ,
       },
       bar: { groupWidth: "90%" }
     };

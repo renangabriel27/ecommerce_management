@@ -6,7 +6,7 @@
       $this->title = "Produtos";
 
       if(!isset($this->params['product'])) {
-        $this->products = $this->pagination('Product', array('url' => '/produtos', 'limit' => 10));
+        $this->products = $this->pagination('Product', 'all', array('url' => '/produtos', 'limit' => 10));
         $this->linkToNew();
       } else {
         $this->search();
@@ -73,7 +73,7 @@
 
    public function search() {
      $this->product = new Product();
-     $this->products = $this->product->productSearch($this->params['product']['name']);
+     $this->products = $this->pagination('Product', 'productSearch', array('url' => '/produtos', 'limit' => 10, 'param' => $this->params['product']['name']));
 
      if($this->products) {
        Flash::message("success", "Produto(s) encontrado(s)!");
@@ -93,10 +93,6 @@
      $products = Product::whereIdLikeAsJson($this->params['query']);
      echo $products;
      exit();
-   }
-
-   public function existParams() {
-
    }
 
    private function linkToNew() {

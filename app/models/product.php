@@ -96,15 +96,27 @@
     return true;
   }
 
+  public function selectPrice($id) {
+    $sql = "SELECT price FROM sell_orders_items, orders
+      WHERE(sell_orders_items.order_id = orders.id) AND product_id = ? AND status = ?";
+
+    $db = Database::getConnection();
+    $statement = $db->prepare($sql);
+    $statement->execute(array($id, 'Fechado'));
+
+    return $statement->fetch()[0];
+  }
+
   public function update($data = array()) {
     // if($this->hasNotChange($data)) return true;
 
     $this->setData($data);
     if (!$this->isValid()) return false;
-
     $params = array($this->name, $this->amount, $this->description, $this->price, $this->categoryId, $this->id);
     $sql = "UPDATE
-              products set name = ?, amount = ?, description = ?, price = ?, category_id = ?
+              products
+           SET
+              name = ?, amount = ?, description = ?, price = ?, category_id = ?
            WHERE
               id = ?";
 
@@ -117,7 +129,7 @@
     return true;
   }
 
-  public function productSearch($param) {
+  public static function productSearch($options = []) {
     $sql = "SELECT
               p.id AS id, p.name AS product_name, p.amount AS product_amount,
               p.price AS product_price, p.description AS product_description,
@@ -128,11 +140,21 @@
             WHERE
               p.name LIKE :param ORDER BY p.name";
 
-    $params = array('param' => "%{$param}%");
+    $param = $options['param'];
+    $params ="%{$param}%";
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
-    $resp = $statement->execute($params);
+
+    if(sizeof($options) != 0) {
+      $sql .= " LIMIT :limit OFFSET :offset ";;
+      $statement = $db->prepare($sql);
+      $statement->bindParam(':limit', $options['limit'], PDO::PARAM_INT);
+      $statement->bindParam(':offset', $options['offset'], PDO::PARAM_INT);
+    }
+    $statement->bindParam(':param', $params, PDO::PARAM_STR, 12);
+
+    $resp = $statement->execute();
 
     $products = [];
 
@@ -141,7 +163,6 @@
     while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
       $products[] =  self::createProduct($row);
     }
-
     return $products;
   }
 
@@ -204,7 +225,6 @@
   }
 
   public static function all($options = []) {
-
       $sql = "SELECT
                 p.id AS id, p.name AS product_name, p.amount AS product_amount,
                 p.price AS product_price, p.description AS product_description,
@@ -219,12 +239,11 @@
     $statement = $db->prepare($sql);
 
     if(sizeof($options) != 0) {
-      $sql .= " LIMIT :limit OFFSET :offset ";
+      $sql .= " LIMIT :limit OFFSET :offset ";;
       $statement = $db->prepare($sql);
       $statement->bindParam(':limit', $options['limit'], PDO::PARAM_INT);
       $statement->bindParam(':offset', $options['offset'], PDO::PARAM_INT);
     }
-
     $resp = $statement->execute();
 
     $products = [];

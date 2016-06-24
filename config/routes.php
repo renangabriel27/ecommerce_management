@@ -6,8 +6,6 @@
 
     /* Routes for employees
     ------------------------- */
-    $router->get('/registre-se', array('controller' => 'EmployeesController', 'action' => '_new'));
-    $router->post('/registre-se', array('controller' => 'EmployeesController', 'action' => 'create'));
     $router->get('/perfil', array('controller' => 'EmployeesController', 'action' => 'edit'));
     $router->post('/perfil', array('controller' => 'EmployeesController', 'action' => 'update'));
     /* End of routes for employees

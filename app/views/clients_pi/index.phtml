@@ -20,7 +20,7 @@
         <tr>
           <td><?= $client->getId() ?></td>
           <td><?= $client->getName() ?></td>
-          <td><?= $client->getEmail() ?></td>
+          <td><?= ViewHelpers::mask("###.###.###-##", $client->getCpf()) ?></td>
           <td><?= $client->getAddressCep() ?></td>
           <td><?= $client->getPhone() ?></td>
           <td><?= $client->getCity()->getName() ?></td>
@@ -32,13 +32,6 @@
         </tr>
         <?php endForeach; ?>
       </tbody>
-      <tfoot>
-        <tr>
-          <th colspan="8"><p class="pull-right"> Mostrando <?= count($this->clients) ?> clientes de <?= $this->totalOfRegisters ?> </p></th>
-        </tr>
-      </tfoot>
     </table>
-
-    <?php require "app/views/partials/_pagination.phtml" ?>
 </article>
 </section>

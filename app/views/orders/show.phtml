@@ -18,12 +18,16 @@
       </thead>
       <tbody>
         <?php foreach($this->order->getProducts() as $product) : ?>
+            <?php ?>
             <tr>
               <td><?= $product->getId() ?></td>
               <td><?= $product->getName() ?></td>
-              <td><?= ViewHelpers::currencyFormat($product->getPrice()) ?></td>
-              <td><?= $amount = $this->sellOrderItem->getAmountOfProduct($product->getId(), $this->order->getId()) ?></td>
-              <td><?= $price_amount = ViewHelpers::currencyFormat($product->getPrice() * $amount) ?>
+              <td>
+                <?php $price = SellOrderItem::findByIdPrice($this->order->getId(), $product->getId()) ?>
+                <?= ViewHelpers::currencyFormat($price) ?>
+              </td>
+              <td><?= $amount = SellOrderItem::getAmountOfProduct($product->getId(), $this->order->getId()) ?></td>
+              <td><?= $price_amount = ViewHelpers::currencyFormat($price * $amount) ?>
             </tr>
       </tbody>
       <?php endForeach; ?>

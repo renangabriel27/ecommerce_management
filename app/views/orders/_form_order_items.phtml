@@ -24,7 +24,7 @@
               <td><?= ViewHelpers::currencyFormat($product->getPrice()) ?></td>
               <td>
                 <?= ViewHelpers::linkTo("/pedidos/{$this->order->getId()}/produtos/{$product->getId()}/adicionar", "", '', 'class="add square icon"') ?>
-                <?= $amount = $this->sellOrderItem->getAmountOfProduct($product->getId(), $this->order->getId()) ?>
+                <?= $amount = SellOrderItem::getAmountOfProduct($product->getId(), $this->order->getId()) ?>
                 <?= ViewHelpers::linkTo("/pedidos/{$this->order->getId()}/produtos/{$product->getId()}/remover", '', '', 'class="minus square icon"') ?>
               </td>
 

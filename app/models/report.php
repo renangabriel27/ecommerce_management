@@ -55,6 +55,12 @@
     return $this->closedAt;
   }
 
+  public static function validDate($createdAt, $closedAt) {
+
+
+    return true;
+  }
+
   public static function employeeWhoDidMoreSales() {
       $sql = "SELECT
                 employee_id, name AS employee_name, COUNT(orders.employee_id) amount, SUM(total) total
@@ -63,7 +69,7 @@
               WHERE
                 (orders.employee_id = employees.id) GROUP BY (employee_id)
               ORDER BY
-                3 DESC;";
+                total DESC";
 
       $db = Database::getConnection();
       $statement = $db->prepare($sql);
@@ -80,6 +86,8 @@
   }
 
   public static function findByDateEmployee($createdAt, $closedAt) {
+      if($createdAt >= $closedAt) return null;
+
       $sql = "SELECT
                 employee_id, name AS employee_name, COUNT(orders.employee_id) amount, SUM(total) total
               FROM
@@ -88,7 +96,7 @@
                 (orders.employee_id = employees.id) AND
                   (orders.created_at > ? AND orders.closed_at <= ?) AND (orders.status = ?) GROUP BY (employee_id)
               ORDER BY
-                3 DESC;";
+                total DESC;";
 
       $params = array($createdAt, $closedAt, 'Fechado');
       $db = Database::getConnection();
@@ -102,6 +110,7 @@
       while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
         $reports[] = self::createEmployees($row);
       }
+
       return $reports;
   }
 
@@ -116,7 +125,7 @@
               GROUP BY
                 product_id
               ORDER BY
-                amount DESC";
+                amount DESC LIMIT 10";
 
       $db = Database::getConnection();
       $statement = $db->prepare($sql);

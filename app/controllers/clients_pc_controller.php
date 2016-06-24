@@ -4,7 +4,7 @@
 
   public function index() {
      $this->title = "Clientes (Pessoa jurídica)";
-     $this->clients = $this->pagination('ClientPc', array('url' => '/clientes/pessoa-juridica', 'limit' => 10));
+     $this->clients = ClientPc::all();
   }
 
   public function show() {

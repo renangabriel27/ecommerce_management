@@ -52,17 +52,17 @@
   public function validates() {
     Validations::notEmpty($this->name, 'name', $this->errors);
 
-    if ($this->newRecord() || $this->changedFieldValue('email', 'employees')) {
+    if ($this->changedFieldValue('email', 'employees')) {
       Validations::validEmail($this->email, 'email', $this->errors);
       Validations::uniqueField($this->email, 'email', 'employees', $this->errors);
     }
 
-    if ($this->newRecord()) /* Caso a senha seja vazia não deve ser atualizada */
+    if ($this->newRecord())
       Validations::notEmpty($this->password, 'password', $this->errors);
   }
 
   public function save() {
-    if (!$this->isvalid()) return false;
+    if(!$this->isvalid()) return false;
 
     $sql = "INSERT INTO
               employees (name, email, password)

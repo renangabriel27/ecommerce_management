@@ -4,17 +4,22 @@
 
   public function employees() {
      $this->title = "Relatório dos funcionários que mais venderam";
+     $this->action = ViewHelpers::urlFor("/relatorios/funcionarios");
      $this->reports = Report::employeeWhoDidMoreSales();
      $this->report = new Report();
-     $this->action = ViewHelpers::urlFor("/relatorios/funcionarios");
-
 
      if($this->params) {
        $this->reports = Report::findByDateEmployee($this->params['report']['created_at'], $this->params['report']['closed_at']);
+
+       if(sizeof($this->reports) == 0) {
+         Flash::message('negative', 'Não foi encontrado nenhum relatório nessa data');
+         $this->redirectTo("/relatorios/funcionarios");
+       }
        $this->report->setCreatedAt($this->params['report']['created_at']);
        $this->report->setClosedAt($this->params['report']['closed_at']);
      }
 
+     $this->graphicEmployee();
      $this->submit = "Pesquisar";
   }
 
@@ -31,7 +36,7 @@
        $this->report->setClosedAt($this->params['report']['closed_at']);
      }
 
-     $this->graphic();
+     $this->graphicProduct();
      $this->submit = "Pesquisar";
   }
 
@@ -47,14 +52,25 @@
       $this->report->setClosedAt($this->params['report']['closed_at']);
     }
 
+    $this->graphicProduct();
     $this->submit = "Pesquisar";
   }
 
-  public function graphic() {
+  public function graphicProduct() {
     $this->graphics = [['Produto', 'Quantidade']];
 
     foreach($this->reports as $report) {
       $this->graphics[] = [ $report->getProduct()->getName(),  $report->getAmount()];
+    }
+    $this->graphics = json_encode($this->graphics, JSON_NUMERIC_CHECK);
+
+  }
+
+  public function graphicEmployee() {
+    $this->graphics = [['Funcionario', 'Quantidade']];
+
+    foreach($this->reports as $report) {
+      $this->graphics[] = [ $report->getEmployee()->getName(),  $report->getTotal()];
     }
     $this->graphics = json_encode($this->graphics, JSON_NUMERIC_CHECK);
 

@@ -98,7 +98,6 @@ class ViewHelpers {
   public static function clientType($type) {
     return ($type == 1) ? 'Pessoa física' : 'Pessoa jurídica';
   }
-
   /*
    * Função para converter boleano em formato amigável
    */
@@ -112,6 +111,14 @@ class ViewHelpers {
 
   public static function currencyFormat($number) {
      return 'R$ ' . number_format($number, 2, ',', '.');
+  }
+
+  public static function mask($mask,$str) {
+    $str = str_replace(" ","",$str);
+    for($i=0; $i < strlen($str); $i++) {
+      $mask[strpos($mask,"#")] = $str[$i];
+    }
+    return $mask;
   }
 
   public static function activeClass($route) {

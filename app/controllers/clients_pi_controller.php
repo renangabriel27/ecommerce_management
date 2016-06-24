@@ -4,12 +4,12 @@
 
   public function index() {
     $this->title = "Clientes (Pessoa física)";
-    $this->clients = $this->pagination('ClientPi', array('url' => '/clientes/pessoa-fisica', 'limit' => 10));
+    $this->clients = ClientPi::all();
   }
 
   public function clients() {
     $this->title = "Clientes";
-    $this->clients = $this->pagination('Client', array('url' => '/clientes', 'limit' => 10));
+    $this->clients = Client::all();
   }
 
   public function show() {

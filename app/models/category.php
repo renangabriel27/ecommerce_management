@@ -11,7 +11,7 @@
   }
 
   public function validates() {
-    Validations::greaterThen($this->name, 5, 'name', $this->errors);
+    Validations::greaterThen($this->name, 3, 'name', $this->errors);
 
     if ($this->newRecord() || $this->changedFieldValue('name', 'categories')) {
       Validations::notEmpty($this->name, 'name', $this->errors);
@@ -29,15 +29,10 @@
     $statement = $db->prepare($sql);
     $resp = $statement->execute($params);
 
-
-    if(!$resp) {
-      Logger::getInstance()->log("Falha para salvar categorias: " . print_r($this, TRUE), Logger::ERROR);
-      Logger::getInstance()->log("Error " . print_r(error_get_last(), true ), Logger::ERROR);
-      return false;
-    }
+    if(!$resp) return false;
 
     $this->setId($db->lastInsertId());
-    $this->setCreatedAt(date());
+    $this->setCreatedAt(date('Y-m-d H:i:s', time()));
     return true;
   }
 
@@ -66,7 +61,6 @@
   }
 
   public static function findById($id) {
-    $db = Database::getConnection();
     $sql = "SELECT * FROM categories WHERE id = ?";
     $params = array($id);
 
@@ -81,13 +75,13 @@
   }
 
   public static function all($options = []) {
-    $sql = "SELECT * FROM categories ORDER BY created_at DESC";
+    $sql = "SELECT * FROM categories ORDER BY created_at ASC";
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
 
     if(sizeof($options) != 0) {
-      $sql .= " LIMIT :limit OFFSET :offset ";
+      $sql .= " LIMIT :limit OFFSET :offset ";;
       $statement = $db->prepare($sql);
       $statement->bindParam(':limit', $options['limit'], PDO::PARAM_INT);
       $statement->bindParam(':offset', $options['offset'], PDO::PARAM_INT);

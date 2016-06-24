@@ -7,9 +7,8 @@
         <tr>
           <th>ID</th>
           <th>Funcionário</th>
-          <th>Quantidade de vendas</td>
+          <th>Quantidade de pedidos</td>
           <th>Valor total das vendas</th>
-          <th>Opções</th>
         </tr>
       </thead>
       <tbody>
@@ -20,9 +19,6 @@
           <td><?= $report->getEmployee()->getName() ?></td>
           <td><?= $report->getAmount() ?></td>
           <td><?= ViewHelpers::currencyFormat($report->getTotal()) ?></td>
-          <td>
-            <?= ViewHelpers::linkTo("/relatorios/", '', '', 'class="zoom icon"') ?>
-          </td>
         </tr>
         <?php endForeach; ?>
       </tbody>
@@ -36,4 +32,5 @@
   </div>
 </div>
 </article>
+<div id="graphicBestSellingProducts" data-graphicData='<?= $this->graphics ?>'></div>
 </section>

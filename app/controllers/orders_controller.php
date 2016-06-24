@@ -21,7 +21,6 @@
      $this->order = Order::findById($this->params[':id']);
      $this->authenticatedEmployee();
 
-     $this->sellOrderItem = new SellOrderItem();
      $this->title = 'Pedido';
      $this->submit = "Adicionar";
      $this->action =  ViewHelpers::urlFor('/pedidos/produtos');

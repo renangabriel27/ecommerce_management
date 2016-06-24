@@ -13,7 +13,7 @@
     $this->employee = Employee::findByEmail($email);
     if ($this->employee && $this->employee->authenticate($password)) {
       Flash::message('success', 'Usuário autenticado com sucesso!');
-      $this->redirectTo('/');
+      $this->redirectTo('/pedidos');
     } else {
       $this->employee = new Employee();
       Flash::message('negative', 'Usuário ou senha inválidos!');

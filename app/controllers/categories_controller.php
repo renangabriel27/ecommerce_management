@@ -4,7 +4,7 @@
 
   public function index() {
     $this->title = 'Categorias';
-    $this->categories = $this->pagination('Category', array('url' => '/categorias', 'limit' => 10));
+    $this->categories = Category::all();
   }
 
   public function show() {
