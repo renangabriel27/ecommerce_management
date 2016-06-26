@@ -40,6 +40,14 @@
     }
   }
 
+  public function createObjects() {
+    if(isset($this->params[':id']) && isset($this->params[':product_id'])) {
+      $this->findByParams($this->params[':id'], $this->params[':product_id']);
+    } else {
+      $this->findByParams($this->params['order']['id'], $this->params['product']['id']);
+    }
+  }
+
   public function validateProduct() {
     if($this->order->emptyProduct($this->params['product']['name'])) {
       Flash::message('negative', 'Insira algum produto!');
@@ -50,7 +58,7 @@
       $this->redirectTo("/pedidos/{$this->order->getId()}");
     }
   }
-  
+
   public function findByParams($orderId, $productId) {
     $this->order = Order::findById($orderId);
     $this->product = Product::findById($productId);

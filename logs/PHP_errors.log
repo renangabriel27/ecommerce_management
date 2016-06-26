@@ -7,3 +7,12 @@ Stack trace:
 #4 /var/www/ecommerce_management/config/routes.php(114): Router->load()
 #5 {main}
   thrown in /var/www/ecommerce_management/core/models/base.php on line 91
+[26-Jun-2016 01:24:29 America/Sao_Paulo] PHP Notice:  Undefined index: :id in /var/www/ecommerce_management/app/controllers/application_controller.php on line 32
+[26-Jun-2016 01:24:29 America/Sao_Paulo] PHP Notice:  Undefined property: SellOrdersItemsController::$order in /var/www/ecommerce_management/app/controllers/application_controller.php on line 44
+[26-Jun-2016 01:24:29 America/Sao_Paulo] PHP Fatal error:  Call to a member function emptyProduct() on null in /var/www/ecommerce_management/app/controllers/application_controller.php on line 44
+[26-Jun-2016 01:25:30 America/Sao_Paulo] PHP Notice:  Undefined property: SellOrdersItemsController::$order in /var/www/ecommerce_management/app/controllers/application_controller.php on line 44
+[26-Jun-2016 01:25:30 America/Sao_Paulo] PHP Fatal error:  Call to a member function emptyProduct() on null in /var/www/ecommerce_management/app/controllers/application_controller.php on line 44
+[26-Jun-2016 01:31:55 America/Sao_Paulo] PHP Notice:  Undefined index: :id in /var/www/ecommerce_management/app/controllers/application_controller.php on line 40
+[26-Jun-2016 01:31:58 America/Sao_Paulo] PHP Notice:  Undefined index: :id in /var/www/ecommerce_management/app/controllers/application_controller.php on line 40
+[26-Jun-2016 01:32:01 America/Sao_Paulo] PHP Notice:  Undefined index: :id in /var/www/ecommerce_management/app/controllers/application_controller.php on line 40
+[26-Jun-2016 01:32:03 America/Sao_Paulo] PHP Notice:  Undefined index: :id in /var/www/ecommerce_management/app/controllers/application_controller.php on line 40
