@@ -81,7 +81,7 @@
 
     $router->get('/clientes/pessoa-fisica', array('controller' => 'ClientsPiController', 'action' => 'index'));
     $router->get('/clientes/nova-pessoa-fisica', array('controller' => 'ClientsPiController', 'action' => '_new'));
-    $router->post('/clientes/pessoa-fisica', array('controller' => 'ClientsPiController', 'action' => 'create'));
+    $router->post('/clientes/nova-pessoa-fisica', array('controller' => 'ClientsPiController', 'action' => 'create'));
     $router->get('/clientes/:id/pessoa-fisica', array('controller' => 'ClientsPiController', 'action' => 'show'));
     $router->get('/clientes/:id/editar-pessoa-fisica', array('controller' => 'ClientsPiController', 'action' => 'edit'));
     $router->post('/clientes/:id/pessoa-fisica', array('controller' => 'ClientsPiController', 'action' => 'update'));
@@ -94,7 +94,7 @@
     ------------------------- */
     $router->get('/clientes/pessoa-juridica', array('controller' => 'ClientsPcController', 'action' => 'index'));
     $router->get('/clientes/nova-pessoa-juridica', array('controller' => 'ClientsPcController', 'action' => '_new'));
-    $router->post('/clientes/pessoa-juridica', array('controller' => 'ClientsPcController', 'action' => 'create'));
+    $router->post('/clientes/nova-pessoa-juridica', array('controller' => 'ClientsPcController', 'action' => 'create'));
     $router->get('/clientes/:id/pessoa-juridica', array('controller' => 'ClientsPcController', 'action' => 'show'));
     $router->get('/clientes/:id/editar-pessoa-juridica', array('controller' => 'ClientsPcController', 'action' => 'edit'));
     $router->post('/clientes/:id/pessoa-juridica', array('controller' => 'ClientsPcController', 'action' => 'update'));

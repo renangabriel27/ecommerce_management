@@ -50,16 +50,6 @@
     return $statement->execute($params);
   }
 
-  public static function count() {
-    $sql = "SELECT COUNT(*) FROM categories";
-
-    $db = Database::getConnection();
-    $statement = $db->prepare($sql);
-    $resp = $statement->execute();
-
-    return $statement->fetch()[0];
-  }
-
   public static function findById($id) {
     $sql = "SELECT * FROM categories WHERE id = ?";
     $params = array($id);
@@ -74,19 +64,11 @@
     return null;
   }
 
-  public static function all($options = []) {
+  public static function all() {
     $sql = "SELECT * FROM categories ORDER BY created_at ASC";
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
-
-    if(sizeof($options) != 0) {
-      $sql .= " LIMIT :limit OFFSET :offset ";;
-      $statement = $db->prepare($sql);
-      $statement->bindParam(':limit', $options['limit'], PDO::PARAM_INT);
-      $statement->bindParam(':offset', $options['offset'], PDO::PARAM_INT);
-    }
-    
     $resp = $statement->execute();
 
     $categories = [];

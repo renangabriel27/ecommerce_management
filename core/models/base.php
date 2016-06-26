@@ -63,6 +63,20 @@ abstract class Base {
       return $field_from_db !== $this->$method();
     }
 
+    public function isTableRelations($table, $field) {
+      $sql = "SELECT * FROM {$table} WHERE {$field} = ?";
+      $params = array($this->id);
+
+      $db = Database::getConnection();
+      $statement = $db->prepare($sql);
+      $statement->execute($params);
+      $resp = $statement->fetch(PDO::FETCH_ASSOC);
+
+      if($resp) return true;
+
+      return false;
+    }
+
     public function setData($data = array()) {
       foreach($data as $key => $value){
          $method = "set{$key}";

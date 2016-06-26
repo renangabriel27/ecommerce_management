@@ -54,9 +54,13 @@
   }
 
   public function destroy() {
-    $category = Category::findById($this->params[':id']);
-    $category->delete('categories');
-    Flash::message('success', 'Categoria deletada com sucesso');
+    $this->category = Category::findById($this->params[':id']);
+    if(!$this->category->isTableRelations('products','category_id')) {
+      $this->category->delete('categories');
+      Flash::message('success', 'Categoria deletada com sucesso');
+    } else {
+      Flash::message('negative', 'Categoria não pode ser deletada, pois está relacionada com outras tabelas');
+    }
     $this->redirectTo("/categorias");
   }
 

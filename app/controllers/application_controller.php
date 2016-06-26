@@ -29,7 +29,7 @@
   }
 
   public function authenticatedEmployee() {
-    if($this->params[':id']) {
+    if(isset($this->params[':id'])) {
       $this->order = Order::findById($this->params[':id']);
       $this->employeeId = $this->currentEmployee()->getId();
 
@@ -40,11 +40,14 @@
     }
   }
 
-  public function createObjects() {
+  public function authenticatedOrder() {
     if(isset($this->params[':id']) && isset($this->params[':product_id'])) {
       $this->findByParams($this->params[':id'], $this->params[':product_id']);
     } else {
       $this->findByParams($this->params['order']['id'], $this->params['product']['id']);
+    }
+    if($this->order->orderIsClosed()) {
+     $this->redirectTo("/pedidos");
     }
   }
 

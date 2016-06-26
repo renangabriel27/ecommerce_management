@@ -65,9 +65,13 @@
    }
 
    public function destroy() {
-     $product = Product::findById($this->params[':id']);
-     $product->delete('products');
-     Flash::message('success', 'Produto deletado com sucesso');
+     $this->product = Product::findById($this->params[':id']);
+     if(!$this->product->isTableRelations('sell_orders_items','product_id')) {
+       $this->product->delete('products');
+       Flash::message('success', 'Produto deletado com sucesso');
+     } else {
+       Flash::message('negative', 'Produto não pode ser deletado, pois está relacionada com outras tabelas');
+     }
      $this->redirectTo("/produtos");
    }
 

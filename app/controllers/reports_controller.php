@@ -33,8 +33,13 @@
   }
 
   private function create($method, $url) {
-    $this->report = new Report();
-    if($this->params && Report::dateIsValid($this->params['report']['created_at'], $this->params['report']['closed_at'])) {
+    $this->report  = new Report();
+
+    if(isset($this->params['report'])) {
+      if(!Report::dateIsValid($this->params['report']['created_at'], $this->params['report']['closed_at'])) {
+        Flash::message('negative', 'Data inicial não pode ser maior que a data final');
+        $this->redirectTo("/relatorios/{$url}");
+      }
       $this->reports = Report::$method($this->params['report']['created_at'], $this->params['report']['closed_at']);
 
       if(sizeof($this->reports) == 0) {
@@ -43,7 +48,7 @@
       }
       $this->report->setCreatedAt($this->params['report']['created_at']);
       $this->report->setClosedAt($this->params['report']['closed_at']);
-    } 
+    }
   }
 
   private function graphicProduct() {

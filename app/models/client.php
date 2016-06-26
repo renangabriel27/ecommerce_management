@@ -55,6 +55,7 @@
     $phone = str_replace('(', '', $phone);
     $phone = str_replace(')', '', $phone);
     $phone = str_replace('-', '', $phone);
+    $phone = preg_replace('/\s+/', '', $phone);
 
     $this->phone = $phone;
   }
@@ -94,7 +95,8 @@
     Validations::notEmpty($this->address, 'address', $this->errors);
     Validations::notEmpty($this->addressNumber, 'address_number', $this->errors);
     Validations::notEmpty($this->addressCep, 'address_cep', $this->errors);
-
+    Validations::greaterThen($this->phone, 10, 'phone', $this->errors);
+    Validations::greaterThen($this->addressCep, 8, 'address_cep', $this->errors);
     /* Como o campo é único é necessário atualizar caso não tenha mudado*/
     if ($this->newRecord() || $this->changedFieldValue('email', 'clients')) {
       Validations::validEmail($this->email, 'email', $this->errors);

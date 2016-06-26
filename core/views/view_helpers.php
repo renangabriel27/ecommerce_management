@@ -46,14 +46,18 @@ class ViewHelpers {
       $link = SITE_ROOT . $path;
     else
       $link = $path;
-    return "<a href='{$link}' {$options}><i {$icon} ></i>$name</a>";
+
+    if(!empty($icon))
+      return "<a href='{$link}' {$options}><i {$icon} ></i>$name</a>";
+    else
+      return "<a href='{$link}' {$options}>$name</a>";
   }
 
   /*
    * Função para criar buttons.
    */
   public static function buttonTo($name, $options = '', $icon = '') {
-    if($icon != '')
+    if(!empty($icon))
       return "<button type='submit' name='button' {$options}><i {$icon}></i>{$name} </button>";
 
     return "<button type='submit' name='button' {$options}> {$name} </button>";
@@ -113,12 +117,31 @@ class ViewHelpers {
      return 'R$ ' . number_format($number, 2, ',', '.');
   }
 
-  public static function mask($mask,$str) {
-    $str = str_replace(" ","",$str);
-    for($i=0; $i < strlen($str); $i++) {
-      $mask[strpos($mask,"#")] = $str[$i];
+  public static function mask($mask, $string) {
+    $string = str_replace(" ","",$string);
+    for($i = 0; $i < strlen($string); $i++) {
+      $mask[strpos($mask,"#")] = $string[$i];
     }
     return $mask;
+  }
+
+  public static function cpfFormat($cpf) {
+    return self::mask("###.###.###-##", $cpf);
+  }
+
+  public static function cnpjFormat($cnpj) {
+    return self::mask("##.###.###/####-##" , $cnpj);
+  }
+
+  public static function cepFormat($cep) {
+    return self::mask("#####-###", $cep);
+  }
+
+  public static function phoneFormat($phone) {
+    if(strlen($phone) == 10)
+      return self::mask("(##)####-####",$phone);
+    else if(strlen($phone) == 11)
+      return self::mask("(##)####-#####", $phone);
   }
 
   public static function activeClass($route) {

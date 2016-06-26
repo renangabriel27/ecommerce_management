@@ -21,8 +21,8 @@
           <td><?= $client->getId() ?></td>
           <td><?= $client->getName() ?></td>
           <td><?= $client->getEmail() ?></td>
-          <td><?= ViewHelpers::mask("#####-###", $client->getAddressCep()) ?></td>
-          <td><?= ViewHelpers::mask("(##)####-####",$client->getPhone()) ?></td>
+          <td><?= ViewHelpers::cepFormat($client->getAddressCep()) ?></td>
+          <td><?= ViewHelpers::phoneFormat($client->getPhone()) ?></td>
           <td><?= $client->getCity()->getName() ?></td>
           <td><?= ViewHelpers::clientType($client->getType()) ?></td>
         </tr>

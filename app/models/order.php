@@ -183,6 +183,8 @@
   }
 
   public function changeStatusOrder() {
+    if($this->status == 'Fechado') return null;
+
     $this->status = 'Fechado';
     $closedAt = date('Y-m-d H:i:s', time());
 
@@ -191,9 +193,11 @@
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
-    $resp = $statement->execute($params);
+    return $statement->execute($params);
+  }
 
-    if($resp) return true;
+  public function orderIsClosed() {
+    if($this->getStatus() == 'Fechado') return true;
 
     return false;
   }

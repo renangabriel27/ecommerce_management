@@ -79,12 +79,6 @@
       return $reports;
   }
 
-  public static function dateIsValid($createdAt, $closedAt) {
-    if($createdAt > $closedAt) return false;
-
-    return true;
-  }
-
   public static function findByDateEmployee($createdAt, $closedAt) {
       $sql = "SELECT
                 employee_id, name AS employee_name, COUNT(orders.employee_id) amount, SUM(total) total
@@ -151,7 +145,7 @@
               GROUP BY
                 product_id
               ORDER BY
-                amount DESC";
+                amount DESC LIMIT 10";
 
       $params = array($createdAt, $closedAt, 'Fechado');
       $db = Database::getConnection();
@@ -180,7 +174,7 @@
               GROUP BY
                 product_id
               ORDER BY
-                amount DESC";
+                amount ASC LIMIT 10";
 
       $params = array($createdAt, $closedAt, 'Fechado');
       $db = Database::getConnection();
@@ -208,7 +202,7 @@
               GROUP BY
                 product_id
               ORDER BY
-                amount ASC";
+                amount ASC LIMIT 10";
 
       $db = Database::getConnection();
       $statement = $db->prepare($sql);
@@ -222,6 +216,12 @@
         $reports[] = self::createProducts($row);
       }
       return $reports;
+  }
+
+  public static function dateIsValid($createdAt, $closedAt) {
+    if($createdAt > $closedAt) return false;
+
+    return true;
   }
 
   private static function createEmployees($row) {
@@ -252,8 +252,6 @@
 
     return $report;
   }
-
-
 
 
 } ?>

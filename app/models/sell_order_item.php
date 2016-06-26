@@ -53,19 +53,8 @@
     return true;
   }
 
-  public static function getAmountOfProduct($productId, $orderId) {
-      $params = array($productId, $orderId);
-      $sql = "SELECT amount FROM sell_orders_items WHERE product_id = ? AND order_id = ?";
-
-      $db = Database::getConnection();
-      $statement = $db->prepare($sql);
-      $statement->execute($params);;
-
-      return $statement->fetch()[0];
-  }
-
   public function addAmountProduct() {
-    $this->amount = $this->getAmountOfProduct($this->productId, $this->orderId);
+    $this->amount = self::getAmountOfProduct($this->productId, $this->orderId);
     $this->amount++;
 
     $params = array('id' => $this->productId, 'amount' => $this->amount, 'order_id' => $this->orderId);
@@ -81,7 +70,7 @@
   }
 
   public function removeProduct() {
-    $this->amount = $this->getAmountOfProduct($this->productId, $this->orderId);
+    $this->amount = self::getAmountOfProduct($this->productId, $this->orderId);
 
     if(($this->amount-1) == 0) {
       $sellOrderItem = self::findById($this->productId, $this->orderId);
@@ -94,8 +83,18 @@
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
-
     return $statement->execute($params);
+  }
+
+  public static function getAmountOfProduct($productId, $orderId) {
+      $params = array($productId, $orderId);
+      $sql = "SELECT amount FROM sell_orders_items WHERE product_id = ? AND order_id = ?";
+
+      $db = Database::getConnection();
+      $statement = $db->prepare($sql);
+      $statement->execute($params);;
+
+      return $statement->fetch()[0];
   }
 
   public static function findById($productId, $orderId) {

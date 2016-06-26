@@ -77,20 +77,22 @@
 
   public function save() {
     if(!$this->isValid()) return false;
+    $this->createdAt = date('Y-m-d H:i:s', time());
 
     $sql = "INSERT INTO
-              products (name, amount, description, price, category_id)
+              products (name, amount, description, price, category_id, created_at)
             VALUES
-              (:name, :amount, :description, :price, :category_id)";
+              (:name, :amount, :description, :price, :category_id, :created_at)";
 
     $params = array('name' => $this->name, 'amount' => $this->amount,
                     'description' => $this->description, 'price' => $this->price,
-                    'category_id' => $this->categoryId);
+                    'category_id' => $this->categoryId, 'created_at' => $this->createdAt);
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
     $resp = $statement->execute($params);
 
+    $this->setId($db->lastInsertId());
     if(!$resp)  return false;
 
     return true;
@@ -233,7 +235,7 @@
               FROM
                 products p, categories c
               WHERE
-                (p.category_id = c.id) ORDER BY product_created_at ASC";
+                (p.category_id = c.id) ORDER BY product_created_at DESC";
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);

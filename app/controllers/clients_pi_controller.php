@@ -21,9 +21,8 @@
     $this->title ="Cadastro de cliente";
     $this->cities = City::all();
     $this->client  = new ClientPi();
-    $this->action = ViewHelpers::urlFor("/clientes/pessoa-fisica");
+    $this->action = ViewHelpers::urlFor("/clientes/nova-pessoa-fisica");
     $this->submit = 'Cadastrar';
-    $this->render('new');
   }
 
   public function create(){
@@ -37,7 +36,7 @@
       $this->title ="Cadastro de cliente";
       $this->submit = 'Cadastrar';
       $this->cities = City::all();
-      $this->action = ViewHelpers::urlFor("/clientes/pessoa-fisica");
+      $this->action = ViewHelpers::urlFor("/clientes/nova-pessoa-fisica");
       $this->render('new');
     }
   }
@@ -69,10 +68,11 @@
 
   public function destroy() {
     $this->client = ClientPi::findById($this->params[':id']);
-    if($this->client->deleteClient($this->params[':id'])) {
+    if(!$this->client->isTableRelations('orders','client_id')) {
+      $this->client->deleteClient($this->params[':id']);
       Flash::message('success', 'Cliente deletado com sucesso');
     } else {
-      Flash::message('negative', 'Cliente não pode ser deletado, pois está relacionado com outras tabelas');  
+      Flash::message('negative', 'Cliente não pode ser deletado, pois está relacionado com outras tabelas');
     }
     $this->redirectTo("/clientes/pessoa-fisica");
   }

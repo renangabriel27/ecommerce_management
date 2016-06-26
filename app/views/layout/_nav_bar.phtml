@@ -1,18 +1,24 @@
 
   <div class="ui attached stackable menu">
     <div class="ui container">
-      <?= ViewHelpers::linkTo('/', 'Sistema', 'class="item"', 'class="home icon"') ?>
+      <div class="<?= ViewHelpers::activeClass('/') ?> item">
+        <?= ViewHelpers::linkTo('/', 'Sistema', '', 'class="home icon"') ?>
+      </div>
       <?php if (SessionHelpers::isLoggedIn()): ?>
       <div class="ui dropdown item">
         <i class="user icon"></i> Olá <?= $this->currentEmployee()->getName() ?>
         <i class="dropdown icon"></i>
         <div class="menu">
-          <?= ViewHelpers::linkTo('/perfil', 'Perfil', 'class="item"', 'class="settings icon"') ?>
+          <div class="<?= ViewHelpers::activeClass('/perfil') ?> item">
+            <?= ViewHelpers::linkTo('/perfil', 'Perfil', '', 'class="settings icon"') ?>
+          </div>
           <?= ViewHelpers::linkTo('/logout', 'Sair', 'class="item"', 'class="sign out icon"') ?>
         </div>
       </div>
       <?php else: ?>
-        <?= ViewHelpers::linkTo('/login', 'Login', 'class="item"', 'class="protect icon"') ?>
+        <div class="<?= ViewHelpers::activeClass('/login') ?> item">
+          <?= ViewHelpers::linkTo('/login', 'Login', '', 'class="protect icon"') ?>
+        </div>
       <?php endif ?>
     </div>
     </div>

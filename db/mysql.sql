@@ -130,7 +130,7 @@ INSERT INTO cities (name, state_id) VALUES ("Florianópolis", 3);
 *** Dumping data for table `employees`
 */
 
-INSERT INTO employees (name, email, password, salary, city_id) VALUES ("Rafael", "renan@gmail.com", "62fbe97113baa78a7e2bab0f21b50ef525f6dc37", 1200, 3);
+INSERT INTO employees (name, email, password, salary, city_id) VALUES ("Renan", "renan@gmail.com", "62fbe97113baa78a7e2bab0f21b50ef525f6dc37", 1200, 3);
 INSERT INTO employees (name, email, password, salary, city_id) VALUES ("Carlos", "carlos@gmail.com", "62fbe97113baa78a7e2bab0f21b50ef525f6dc37", 1500, 1);
 INSERT INTO employees (name, email, password, salary, city_id) VALUES ("Alisson", "alisson@gmail.com", "62fbe97113baa78a7e2bab0f21b50ef525f6dc37", 2200, 2);
 INSERT INTO employees (name, email, password, salary, city_id) VALUES ("Gabriel", "gabriel@gmail.com", "62fbe97113baa78a7e2bab0f21b50ef525f6dc37", 2200, 2);

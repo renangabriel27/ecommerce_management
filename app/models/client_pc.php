@@ -25,37 +25,34 @@
   public function validates() {
     parent::validates();
     Validations::notEmpty($this->cnpj, 'cnpj', $this->errors);
+    Validations::greaterThen($this->cnpj, 14, 'cnpj', $this->errors);
     Validations::notEmpty($this->companyName, 'companyName', $this->errors);
   }
 
   public function save() {
     if (!$this->isvalid()) return false;
     $this->type = 2;
+    $this->createdAt = date('Y-m-d H:i:s', time());
 
     $sql = "INSERT INTO
-              clients (name, email, phone, address , address_number, address_cep, city_id, type)
+              clients (name, email, phone, address , address_number, address_cep, city_id, type, created_at)
             VALUES
-              (:name, :email, :phone, :address, :address_number, :address_cep, :city_id, :type);";
+              (:name, :email, :phone, :address, :address_number, :address_cep, :city_id, :type, :created_at)";
 
     $params = array('name' => $this->name, 'email' => $this->email, 'phone' => $this->phone, 'address' => $this->address,
                     'address_number' => $this->addressNumber, 'address_cep' => $this->addressCep,
-                    'city_id' => $this->cityId, 'type' => $this->type);
+                    'city_id' => $this->cityId, 'type' => $this->type, 'created_at' => $this->createdAt);
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
     $resp = $statement->execute($params);
-
     $this->setId($db->lastInsertId());
-    $this->setCreatedAt(date());
 
     $sql = "INSERT INTO clients_pc (id, company_name, cnpj) VALUES (:id, :companyName, :cnpj)";
-
     $params = array('id' => $this->id, 'companyName' => $this->companyName, 'cnpj' => $this->cnpj);
-
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
     $resp = $statement->execute($params);
-
 
     return true;
   }

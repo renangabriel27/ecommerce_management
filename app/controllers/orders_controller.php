@@ -49,9 +49,13 @@
    }
 
    public function destroy() {
-     $order = Order::findById($this->params[':id']);
-     $order->delete('orders');
-     Flash::message('success', 'Pedido deletado com sucesso');
+     $this->order = Order::findById($this->params[':id']);
+     if(!$this->order->isTableRelations('sell_orders_items','order_id')) {
+       $this->order->delete('orders');
+       Flash::message('success', 'Pedido deletado com sucesso');
+     } else {
+       Flash::message('negative', 'Pedido não pode ser deletado, pois está relacionado com outras tabelas');
+     }
      $this->redirectTo("/pedidos");
    }
 
@@ -61,10 +65,8 @@
 
      if($this->order->changeStatusOrder()) {
        Flash::message('positive', 'Pedido fechado com sucesso!');
-       $this->redirectTo("/pedidos");
-     } else {
-       Flash::message('negative', 'Erro no fechamento do pedido!');
      }
+    $this->redirectTo("/pedidos");
    }
 
 

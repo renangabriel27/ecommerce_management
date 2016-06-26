@@ -1,6 +1,6 @@
 <?php class SellOrdersItemsController extends ApplicationController {
 
-   protected $beforeAction = array('authenticated' => 'all', 'authenticatedEmployee' => 'all', 'createObjects' => 'all');
+   protected $beforeAction = array('authenticated' => 'all', 'authenticatedEmployee' => 'all', 'authenticatedOrder' => 'all');
 
    public function addProduct() {
      $this->validateProduct();

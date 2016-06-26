@@ -71,7 +71,7 @@ var auto_complete = function() {
 
 var close_flash_message = function() {
     $('.message').transition({
-      duration   : '1.5s'
+      duration   : '1.3s'
     });
 
     $('.message .close').on('click', function() {
