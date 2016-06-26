@@ -1,6 +1,6 @@
 <?php class OrdersController extends ApplicationController {
 
-   protected $beforeAction = array('authenticated' => 'all', 'authenticatedOrder' => array('addItemsProduct'));
+   protected $beforeAction = array('authenticated' => 'all', 'authenticatedEmployee' => array('edit', 'destroy', 'closeOrder'));
 
    public function index() {
       $this->title = 'Todos os pedidos';
@@ -18,9 +18,6 @@
    }
 
    public function edit() {
-     $this->order = Order::findById($this->params[':id']);
-     $this->authenticatedEmployee();
-
      $this->sellOrderItem = new SellOrderItem();
      $this->title = 'Pedido';
      $this->submit = "Adicionar";

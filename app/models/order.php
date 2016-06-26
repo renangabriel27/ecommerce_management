@@ -119,7 +119,8 @@
             FROM
               sell_orders_items, products
             WHERE
-              ((sell_orders_items.order_id = ?) AND (products.id = sell_orders_items.product_id))";
+              ((sell_orders_items.order_id = ?) AND (products.id = sell_orders_items.product_id))
+            ORDER BY sell_orders_items.created_at DESC";
 
     $params = array($this->id);
 
@@ -171,7 +172,7 @@
   }
 
   public function sum() {
-    $sql = "SELECT SUM(amount) FROM sell_orders_items WHERE order_id = ?";
+    $sql = "SELECT COALESCE(SUM(amount),0) FROM sell_orders_items WHERE order_id = ?";
 
     $params = array($this->id);
     $db = Database::getConnection();
@@ -179,26 +180,6 @@
     $statement->execute($params);
 
     return $statement->fetch()[0];
-  }
-
-  public function getSellOrderItem($id) {
-    $sql = "SELECT * FROM sell_orders_items where product_id = ?";
-    $db = Database::getConnection();
-    $params = array($id);
-    $statement = $db->prepare($sql);
-    $statement->execute($params);
-
-    while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-      $sell_order_item = new SellOrderItem();
-      $sell_order_item->setId($row['id']);
-      $sell_order_item->setAmount($row['amount']);
-      $sell_order_item->setPrice($row['price']);
-      $sell_order_item->setCreatedAt($row['created_at']);
-      $sell_order_item->setOrderId($row['order_id']);
-      $sell_order_item->setProductId($row['product_id']);
-
-    }
-    return $sell_order_item;
   }
 
   public function changeStatusOrder() {
@@ -227,13 +208,6 @@
     $resp = $statement->fetch(PDO::FETCH_ASSOC);
     if($resp) return true;
 
-    return false;
-  }
-
-  public function orderIsClosed() {
-    if($this->getStatus() == 'Fechado') {
-      return true;
-    }
     return false;
   }
 

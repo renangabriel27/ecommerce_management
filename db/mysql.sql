@@ -24,12 +24,12 @@ CREATE TABLE cities (
 CREATE TABLE clients (
 	id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 	name VARCHAR(50) NOT NULL,
-	address VARCHAR(50),
-  address_number INT,
-  address_cep VARCHAR(10),
-	phone VARCHAR(11),
-	email VARCHAR(50),
-	type VARCHAR(10),
+	address VARCHAR(50) NOT NULL,
+  address_number INT NOT NULL,
+  address_cep CHAR(8) NOT NULL,
+	phone VARCHAR(11) NOT NULL,
+	email VARCHAR(50) NOT NULL,
+	type CHAR(1) NOT NULL,
 	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 
 	city_id INT NOT NULL,
@@ -38,14 +38,14 @@ CREATE TABLE clients (
 
 CREATE TABLE clients_pi (
 	id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-  cpf CHAR(11),
-	date_of_birth DATE
+  cpf CHAR(11) NOT NULL,
+	date_of_birth DATE NOT NULL
 );
 
 CREATE TABLE clients_pc (
 	id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-  cnpj CHAR(14),
-  company_name VARCHAR(50)
+  cnpj CHAR(14) NOT NULL,
+  company_name VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE employees (
@@ -69,8 +69,8 @@ CREATE TABLE categories (
 CREATE TABLE products (
 	id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 	name VARCHAR(50) NOT NULL,
-  amount INT,
-	description TEXT,
+  amount INT NOT NULL,
+	description TEXT NOT NULL,
 	price DOUBLE NOT NULL,
 	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 
@@ -82,7 +82,7 @@ CREATE TABLE orders (
 	id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
 	total DOUBLE NOT NULL DEFAULT 0,
 	created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-	closed_at TIMESTAMP NULL,
+	closed_at TIMESTAMP,
 	status VARCHAR(8) DEFAULT "Aberto",
 
 	client_id INT NOT NULL,
@@ -213,78 +213,76 @@ INSERT INTO products (name, amount, description, price, category_id) VALUES ("Me
 /* ---------------------------------------------------- */
 
 /*
-*** Dumping data for table `clients and clients_pi`
+*** Dumping data for table `clients`
 */
 
-INSERT INTO clients(name, address, address_number, address_cep, phone, email, type, city_id) VALUES ("Amélio", "Rua 1", 1, 230, "9919-2033",
+INSERT INTO clients(name, address, address_number, address_cep, phone, email, type, city_id) VALUES ("Amélio", "Rua 1", 1, 85025370, "4299192033",
 "amelio@hotmail.com", 1, 1);
-INSERT INTO clients_pi(id, cpf, date_of_birth) VALUES (1, "18960196410", "1996-12-02");
-
-INSERT INTO clients(name, address, address_number, address_cep, phone, email, type, city_id) VALUES ("Bruno", "Rua 2", 2, 240, "9920-2013",
+INSERT INTO clients(name, address, address_number, address_cep, phone, email, type, city_id) VALUES ("Bruno", "Rua 2", 2, 85025790, "4299202013",
 "bruno@hotmail.com", 1, 2);
-INSERT INTO clients_pi(id, cpf, date_of_birth) VALUES (2, "89761184641", "1990-06-01");
-
-INSERT INTO clients(name, address, address_number, address_cep, phone, email, type, city_id) VALUES ("Rogério", "Rua 3", 3, 250, "8818-2055",
+INSERT INTO clients(name, address, address_number, address_cep, phone, email, type, city_id) VALUES ("Rogério", "Rua 3", 3, 85725390, "4288182055",
 "rogerio@hotmail.com", 1, 3);
-INSERT INTO clients_pi(id, cpf, date_of_birth) VALUES (3, "56865189981", "2000-03-05");
-
-INSERT INTO clients(name, address, address_number, address_cep, phone, email, type, city_id) VALUES ("Thomas", "Rua 4", 4, 260, "8815-2023",
+INSERT INTO clients(name, address, address_number, address_cep, phone, email, type, city_id) VALUES ("Thomas", "Rua 4", 4, 85025790, "4288152023",
 "thomas@hotmail.com", 1, 2);
-INSERT INTO clients_pi(id, cpf, date_of_birth) VALUES (4, "80078987784", "1995-05-01");
-
-INSERT INTO clients(name, address, address_number, address_cep, phone, email, type, city_id) VALUES ("Maicon", "Rua 5", 5, 270, "3619-2543",
+INSERT INTO clients(name, address, address_number, address_cep, phone, email, type, city_id) VALUES ("Maicon", "Rua 5", 5, 85725390, "4236192543",
 "maicon@hotmail.com", 1, 2);
-INSERT INTO clients_pi(id, cpf, date_of_birth) VALUES (5, "05636927584", "1998-06-07");
-
+INSERT INTO clients(name, address, address_number, address_cep, phone, email, type, city_id) VALUES ("Marcos", "Rua 6", 6, 87025390, "4236232010",
+"marcos@gmail.com", 2, 1);
+INSERT INTO clients(name, address, address_number, address_cep, phone, email, type, city_id) VALUES ("Leandro", "Rua 7", 8, 85025790, "4299102040",
+"leandro@gmail.com",  2, 2);
+INSERT INTO clients(name, address, address_number, address_cep, phone, email, type, city_id) VALUES ("Paulo", "Rua 8", 9, 85325390, "4288181033",
+"paulo@gmail.com",  2, 3);
+INSERT INTO clients(name, address, address_number, address_cep, phone, email, type, city_id) VALUES ("Guilherme", "Rua 9", 10, 85035390, "4288151033",
+"guilherme@gmail.com",  2, 2);
+INSERT INTO clients(name, address, address_number, address_cep, phone, email, type, city_id) VALUES ("Juca", "Rua 10", 11, 85035390, "4236193543",
+"juca@gmail.com", 2, 2);
 
 /* ---------------------------------------------------- */
 
 /*
-*** Dumping data for table `clients and clients_pc`
+*** Dumping data for table `clients_pi`
 */
 
-INSERT INTO clients(name, address, address_number, address_cep, phone, email, type, city_id) VALUES ("Marcos", "Rua 6", 6, 280, "3623-2010",
-"marcos@gmail.com", 2, 1);
+INSERT INTO clients_pi(id, cpf, date_of_birth) VALUES (1, "18960196410", "1996-12-02");
+INSERT INTO clients_pi(id, cpf, date_of_birth) VALUES (2, "89761184641", "1990-06-01");
+INSERT INTO clients_pi(id, cpf, date_of_birth) VALUES (3, "56865189981", "2000-03-05");
+INSERT INTO clients_pi(id, cpf, date_of_birth) VALUES (4, "80078987784", "1995-05-01");
+INSERT INTO clients_pi(id, cpf, date_of_birth) VALUES (5, "05636927584", "1998-06-07");
+
+/* ---------------------------------------------------- */
+
+/*
+*** Dumping data for table `clients_pc`
+*/
+
+
 INSERT INTO clients_pc(id, cnpj, company_name) VALUES (6, "04641158000100", "Contact computadores");
-
-INSERT INTO clients(name, address, address_number, address_cep, phone, email, type, city_id) VALUES ("Leandro", "Rua 7", 8, 290, "9910-2040",
-"leandro@gmail.com",  2, 2);
 INSERT INTO clients_pc(id, cnpj, company_name) VALUES (7, "43441387000124", "Alta tecnologia");
-
-INSERT INTO clients(name, address, address_number, address_cep, phone, email, type, city_id) VALUES ("Paulo", "Rua 8", 9, 300, "8818-1033",
-"paulo@gmail.com",  2, 3);
 INSERT INTO clients_pc(id, cnpj, company_name) VALUES (8, "82260863000162", "Milenium informática");
-
-INSERT INTO clients(name, address, address_number, address_cep, phone, email, type, city_id) VALUES ("Guilherme", "Rua 9", 10, 310, "8815-1033",
-"guilherme@gmail.com",  2, 2);
 INSERT INTO clients_pc(id, cnpj, company_name) VALUES (9, "34568180000124", "Tech tudo");
-
-INSERT INTO clients(name, address, address_number, address_cep, phone, email, type, city_id) VALUES ("Juca", "Rua 10", 11, 320, "3619-3543",
-"juca@gmail.com", 2, 2);
 INSERT INTO clients_pc(id, cnpj, company_name) VALUES (10, "36674375000184", "Inf hardware");
 
 /* ---------------------------------------------------- */
 
-
 /*
 *** Dumping data for table `orders'
 */
 
-INSERT INTO orders (total, created_at, closed_at, status, client_id, employee_id) VALUES ("417.49", '2016-06-02 18:56:30', '2016-06-04 19:56:30', "Fechado", 6, 1);
-INSERT INTO orders (total, created_at, closed_at, status, client_id, employee_id) VALUES ("1969.96", '2016-06-02 18:56:30', '2016-06-04 19:56:30', "Fechado", 1, 2);
-INSERT INTO orders (total, created_at, closed_at, status, client_id, employee_id) VALUES ("2209.65", '2016-06-02 19:09:07', '2016-06-04 20:09:07', "Fechado", 5, 3);
-INSERT INTO orders (total, created_at, closed_at, status, client_id, employee_id) VALUES ("775.1", '2016-06-02 19:17:13', '2016-06-04 20:17:13', "Fechado", 4, 4);
-INSERT INTO orders (total, created_at, closed_at, status, client_id, employee_id) VALUES ("4186.1", '2016-06-02 19:26:01', '2016-06-04 20:26:01', "Fechado", 2, 5);
-INSERT INTO orders (total, created_at, closed_at, status, client_id, employee_id) VALUES ("12550.2", '2016-06-02 19:32:28', '2016-06-04 20:32:28', "Fechado", 3, 1);
-INSERT INTO orders (total, created_at, closed_at, status, client_id, employee_id) VALUES ("155.02", '2016-06-02 20:09:07', '2016-06-04 21:09:07', "Fechado", 7, 1);
-INSERT INTO orders (total, created_at, closed_at, status, client_id, employee_id) VALUES ("1838.04", '2016-06-02 20:17:13', '2016-06-04 21:17:13', "Fechado", 8, 2);
-INSERT INTO orders (total, created_at, closed_at, status, client_id, employee_id) VALUES ("785.00", '2016-06-10 20:17:13', '2016-06-20 21:17:13', "Fechado", 5, 3);
-INSERT INTO orders (total, created_at, closed_at, status, client_id, employee_id) VALUES ("819.02", '2016-06-10 20:17:13', '2016-06-20 21:17:13', "Fechado", 8, 3);
-INSERT INTO orders (total, created_at, closed_at, status, client_id, employee_id) VALUES ("919.02", '2016-06-10 20:17:13', '2016-06-20 21:17:13', "Fechado", 8, 5);
-INSERT INTO orders (total, created_at, closed_at, status, client_id, employee_id) VALUES ("919.00", '2016-06-10 20:17:13', '2016-06-20 21:17:13', "Fechado", 8, 5);
-INSERT INTO orders (total, created_at, closed_at, status, client_id, employee_id) VALUES ("1029.00", '2016-06-10 20:17:13', '2016-06-20 21:17:13', "Fechado", 8, 1);
-INSERT INTO orders (total, created_at, closed_at, status, client_id, employee_id) VALUES ("1618.49", '2016-06-10 20:17:13', '2016-06-20 21:17:13', "Fechado", 8, 1);
-INSERT INTO orders (total, created_at, closed_at, status, client_id, employee_id) VALUES ("3618.49", '2016-06-10 20:17:13', '2016-06-20 21:17:13', "Fechado", 8, 2);
+INSERT INTO orders (total, created_at, closed_at, status, client_id, employee_id) VALUES ("417.49", '2016-01-01 18:56:30', '2016-01-01 19:56:30', "Fechado", 6, 1);
+INSERT INTO orders (total, created_at, closed_at, status, client_id, employee_id) VALUES ("1969.96", '2016-01-01 18:56:30', '2016-01-01 19:56:30', "Fechado", 1, 2);
+INSERT INTO orders (total, created_at, closed_at, status, client_id, employee_id) VALUES ("2209.65", '2016-01-01 19:09:07', '2016-01-01 20:09:07', "Fechado", 5, 3);
+INSERT INTO orders (total, created_at, closed_at, status, client_id, employee_id) VALUES ("775.1", '2016-01-01 19:17:13', '2016-01-01 20:17:13', "Fechado", 4, 4);
+INSERT INTO orders (total, created_at, closed_at, status, client_id, employee_id) VALUES ("4186.1", '2016-01-01 19:26:01', '2016-01-01 20:26:01', "Fechado", 2, 5);
+INSERT INTO orders (total, created_at, closed_at, status, client_id, employee_id) VALUES ("12550.2", '2016-01-01 19:32:28', '2016-01-01 20:32:28', "Fechado", 3, 1);
+INSERT INTO orders (total, created_at, closed_at, status, client_id, employee_id) VALUES ("155.02", '2016-01-01 20:09:07', '2016-01-01 21:09:07', "Fechado", 7, 1);
+INSERT INTO orders (total, created_at, closed_at, status, client_id, employee_id) VALUES ("1838.04", '2016-06-01 20:17:13', '2016-06-01 21:17:13', "Fechado", 8, 2);
+INSERT INTO orders (total, created_at, closed_at, status, client_id, employee_id) VALUES ("785.00", '2016-06-01 20:17:13', '2016-06-01 21:17:13', "Fechado", 5, 3);
+INSERT INTO orders (total, created_at, closed_at, status, client_id, employee_id) VALUES ("819.02", '2016-06-01 20:17:13', '2016-06-01 21:17:13', "Fechado", 8, 3);
+INSERT INTO orders (total, created_at, closed_at, status, client_id, employee_id) VALUES ("919.02", '2016-06-01 20:17:13', '2016-06-01 21:17:13', "Fechado", 8, 5);
+INSERT INTO orders (total, created_at, closed_at, status, client_id, employee_id) VALUES ("919.00", '2016-06-01 20:17:13', '2016-06-01 21:17:13', "Fechado", 8, 5);
+INSERT INTO orders (total, created_at, closed_at, status, client_id, employee_id) VALUES ("1029.00", '2016-06-01 20:17:13', '2016-06-01 21:17:13', "Fechado", 8, 1);
+INSERT INTO orders (total, created_at, closed_at, status, client_id, employee_id) VALUES ("1618.49", '2016-06-01 20:17:13', '2016-06-01 21:17:13', "Fechado", 8, 1);
+INSERT INTO orders (total, created_at, closed_at, status, client_id, employee_id) VALUES ("3618.49", '2016-06-01 20:17:13', '2016-06-01 21:17:13', "Fechado", 8, 2);
 
 /* ---------------------------------------------------- */
 
@@ -292,23 +290,23 @@ INSERT INTO orders (total, created_at, closed_at, status, client_id, employee_id
 *** Dumping data for table `orders'
 */
 
-INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("417.49", 1, '2016-06-10 18:56:30', 1, 1);
-INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("417.49", 1, '2016-06-10 18:56:30', 2, 1);
-INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("517.49", 3, '2016-06-10 18:56:30', 2, 2);
-INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("434.75", 1, '2016-06-10 19:09:07', 3, 32);
-INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("823.95", 2, '2016-06-10 19:09:07', 3, 40);
-INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("127", 1, '2016-06-10 19:09:07', 3, 43);
-INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("155.05", 5, '2016-06-10 19:17:13', 4, 27);
-INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("78.9", 5, '2016-06-10 19:26:01', 5, 46);
-INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("823.95", 4, '2016-06-10 19:26:01', 5, 40);
-INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("247.9", 2, '2016-06-10 19:26:01', 5, 30);
-INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("1255.02", 10, '2016-06-10 19:32:28', 6, 17);
-INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("155.02", 1, '2016-06-10 20:09:07', 7, 27);
-INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("919.02", 1, '2016-06-10 20:09:07', 8, 6);
-INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("785.00", 1, '2016-06-10 20:17:13', 9, 4);
-INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("819.02", 1, '2016-06-10 20:17:13', 10, 5);
-INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("919.02", 1, '2016-06-10 20:17:13', 11, 6);
-INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("919.00", 1, '2016-06-10 20:17:13', 12, 7);
-INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("1029.00", 1, '2016-06-10 20:17:13', 13, 8);
-INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("1618.49", 1, '2016-06-10 20:17:13', 14, 9);
-INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("3618.492", 1, '2016-06-10 20:17:13', 15, 10);
+INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("417.49", 1, '2016-01-01 18:56:30', 1, 1);
+INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("417.49", 1, '2016-01-01 18:56:30', 2, 1);
+INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("517.49", 3, '2016-01-01 18:56:30', 2, 2);
+INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("434.75", 1, '2016-01-01 19:09:07', 3, 32);
+INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("823.95", 2, '2016-01-01 19:09:07', 3, 40);
+INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("127", 1, '2016-01-01 19:09:07', 3, 43);
+INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("155.05", 5, '2016-01-01 19:17:13', 4, 27);
+INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("78.9", 5, '2016-01-01 19:26:01', 5, 46);
+INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("823.95", 4, '2016-01-01 19:26:01', 5, 40);
+INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("247.9", 2, '2016-01-01 19:26:01', 5, 30);
+INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("1255.02", 10, '2016-01-01 19:32:28', 6, 17);
+INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("155.02", 1, '2016-01-01 20:09:07', 7, 27);
+INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("919.02", 1, '2016-06-01 20:17:13', 8, 6);
+INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("785.00", 1, '2016-06-01 20:17:13', 9, 4);
+INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("819.02", 1, '2016-06-01 20:17:13', 10, 5);
+INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("919.02", 1, '2016-06-01 20:17:13', 11, 6);
+INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("919.00", 1, '2016-06-01 20:17:13', 12, 7);
+INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("1029.00", 1, '2016-06-01 20:17:13', 13, 8);
+INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("1618.49", 1, '2016-06-01 20:17:13', 14, 9);
+INSERT INTO sell_orders_items (price, amount, created_at, order_id, product_id) VALUES ("3618.492", 1, '2016-06-01 20:17:13', 15, 10);

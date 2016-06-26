@@ -1,14 +1,16 @@
 <form action="<?= $this->action ?>" method="POST">
 
   <div class="ui form">
+    <div class="required field"><label class="ui dividing header">Campos obrigatórios</label></div>
+
     <div class="two fields">
-      <div class="field <?= $this->product->getErrors('name') ? 'error' : '' ?>">
+      <div class="required field <?= $this->product->getErrors('name') ? 'error' : '' ?>">
         <label for="product_name">Nome</label>
         <input type="text" id="product_name" name="product[name]"
         placeholder="Digite o nome da produto" value="<?= $this->product->getName() ?>">
         <div class="ui pointing <?= $this->product->getErrors('name') ? 'red basic label' : '' ?>"><?= $this->product->getErrors('name') ?></div>
       </div>
-      <div class="field">
+      <div class="required field">
         <label>Categoria</label>
         <select name="product[category_id]" class="ui fluid dropdown <?= $this->product->getErrors('category_id') ? 'error' : '' ?>">
           <option value="">Selecione uma categoria</option>
@@ -23,13 +25,13 @@
     </div>
 
     <div class="two fields">
-      <div class="field <?= $this->product->getErrors('price') ? 'error' : '' ?>">
+      <div class="required field <?= $this->product->getErrors('price') ? 'error' : '' ?>">
         <label for="price">Preço</label>
         <input type="text" id="product_price" name="product[price]"
         placeholder="Digite o preço do produto" value="<?= $this->product->getPrice() ?>">
         <div class="ui pointing <?= $this->product->getErrors('price') ? 'red basic label' : '' ?>"><?= $this->product->getErrors('price') ?></div>
       </div>
-      <div class="field <?= $this->product->getErrors('amount') ? 'error' : '' ?>">
+      <div class="required field <?= $this->product->getErrors('amount') ? 'error' : '' ?>">
         <label for="price">Quantidade</label>
         <input type="text" id="product['amount']" name="product[amount]"
         placeholder="Digite a quantidade do produto" value="<?= $this->product->getAmount() ?>">
@@ -37,7 +39,7 @@
       </div>
     </div>
 
-    <div class="field <?= $this->product->getErrors('description') ? 'error' : '' ?>">
+    <div class="required field <?= $this->product->getErrors('description') ? 'error' : '' ?>">
       <label for="description">Descrição</label>
       <textarea id="product['description']" name="product[description]"><?= $this->product->getDescription() ?></textarea>
       <div class="ui pointing <?= $this->product->getErrors('description') ? 'red basic label' : '' ?>"><?= $this->product->getErrors('description') ?></div>

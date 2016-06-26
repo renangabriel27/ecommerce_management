@@ -38,8 +38,8 @@
               (:name, :email, :phone, :address, :address_number, :address_cep, :city_id, :type);";
 
     $params = array('name' => $this->name, 'email' => $this->email, 'phone' => $this->phone, 'address' => $this->address,
-                    'address_number' => $this->addressNumber, 'address_cep' => $this->addressCep, 'city_id' => $this->cityId,
-                    'type' => $this->type);
+                    'address_number' => $this->addressNumber, 'address_cep' => $this->addressCep,
+                    'city_id' => $this->cityId, 'type' => $this->type);
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
@@ -77,11 +77,9 @@
 
     $statement = $db->prepare($sql);
     $resp = $statement->execute($params);
-
     $params = array($this->cnpj, $this->companyName, $this->id);
 
     $sql = "UPDATE clients_pc SET cnpj= ?, company_name = ? WHERE id = ?";
-
     $statement = $db->prepare($sql);
     $resp = $statement->execute($params);
 
@@ -92,9 +90,7 @@
 
   public function deleteClient($id) {
     $sql = "DELETE FROM clients, clients_pc USING clients, clients_pc WHERE clients.id = ? AND clients_pc.id =?";
-
     $params = array($id, $id);
-
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
     return $statement->execute($params);
@@ -126,7 +122,7 @@
     return null;
   }
 
-  public static function all($options = []) {
+  public static function all() {
     $sql = "SELECT
               c.id, c.name, c.email, c.address, c.address_cep, c.address_number, c.city_id,
               c.phone, c.type, c.created_at, cities.id AS city_id, cities.name AS city_name,
@@ -139,14 +135,6 @@
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
-
-    if(sizeof($options) != 0) {
-      $sql .= " LIMIT :limit OFFSET :offset ";
-      $statement = $db->prepare($sql);
-      $statement->bindParam(':limit', $options['limit'], PDO::PARAM_INT);
-      $statement->bindParam(':offset', $options['offset'], PDO::PARAM_INT);
-    }
-
     $resp = $statement->execute();
 
     $clients = [];
@@ -157,16 +145,6 @@
       $clients[] =  self::createClient($row);
     }
     return $clients;
-  }
-
-  public static function count() {
-    $sql = "SELECT COUNT(*) FROM clients_pc";
-
-    $db = Database::getConnection();
-    $statement = $db->prepare($sql);
-    $statement->execute();
-
-    return $statement->fetch()[0];
   }
 
   private static function createClient($row) {

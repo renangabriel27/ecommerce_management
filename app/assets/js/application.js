@@ -89,7 +89,7 @@ var dropdowns = function() {
 };
 
 var inputmasks = function() {
-    $("#client_phone").mask("(000) 0000-00000");
+    $("#client_phone").mask("(00) 0000-00000");
     $("#client_cpf").mask("999.999.999-99");
     $('#client_cep').mask('00000-000');
     $('#client_cnpj').mask('99.999.999/9999-99');

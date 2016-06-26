@@ -69,8 +69,11 @@
 
   public function destroy() {
     $this->client = ClientPi::findById($this->params[':id']);
-    $this->client->deleteClient($this->params[':id']);
-    Flash::message('success', 'Cliente deletado com sucesso');
+    if($this->client->deleteClient($this->params[':id'])) {
+      Flash::message('success', 'Cliente deletado com sucesso');
+    } else {
+      Flash::message('negative', 'Cliente não pode ser deletado, pois está relacionado com outras tabelas');  
+    }
     $this->redirectTo("/clientes/pessoa-fisica");
   }
 

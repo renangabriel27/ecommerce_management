@@ -58,6 +58,63 @@
     return true;
   }
 
+  public function update($data = array()) {
+    $this->setData($data);
+    if (!$this->isvalid()) return false;
+
+    $db = Database::getConnection();
+    $params = array($this->name, $this->address, $this->addressNumber, $this->addressCep,
+                    $this->phone, $this->email, $this->cityId, $this->id);
+
+    $sql = "UPDATE clients SET name = ?, address = ? , address_number = ?, address_cep = ?,
+                    phone = ?, email = ?, city_id = ? WHERE id = ?";
+
+    $statement = $db->prepare($sql);
+    $resp = $statement->execute($params);
+    $params = array($this->cpf, $this->dateOfBirth, $this->id);
+
+    $sql = "UPDATE clients_pi SET cpf= ? , date_of_birth = ? WHERE id = ?";
+    $statement = $db->prepare($sql);
+    $resp = $statement->execute($params);
+
+    if(!$resp) return false;
+
+    return true;
+  }
+
+  public function deleteClient($id) {
+    $sql = "DELETE FROM clients, clients_pi USING clients, clients_pi WHERE clients.id = ? AND clients_pi.id =?";
+    $params = array($id, $id);
+    $db = Database::getConnection();
+    $statement = $db->prepare($sql);
+    return $statement->execute($params);
+  }
+
+  public static function all() {
+    $sql = "SELECT
+              c.id, c.name, c.email, c.address, c.address_cep, c.address_number, c.city_id,
+              c.phone, c.type, c.created_at, cities.id AS city_id, cities.name AS city_name,
+              cities.state_id AS state_id, cities.created_at AS city_created_at, cp.cpf,
+              cp.date_of_birth
+            FROM
+              clients c, clients_pi cp, cities WHERE (c.city_id = cities.id) AND (c.id = cp.id)
+            ORDER BY
+              id";
+
+    $db = Database::getConnection();
+    $statement = $db->prepare($sql);
+    $resp = $statement->execute();
+
+    $clients = [];
+
+    if(!$resp) return $clients;
+
+    while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+      $clients[] =  self::createClient($row);
+    }
+    return $clients;
+  }
+
   public static function findById($id) {
     $sql = "SELECT
               c.id, c.name, c.email, c.address, c.address_cep, c.address_number, c.city_id,
@@ -82,85 +139,6 @@
       return self::createClient($row);
     }
     return null;
-  }
-
-  public function update($data = array()) {
-    $this->setData($data);
-    if (!$this->isvalid()) return false;
-
-    $db = Database::getConnection();
-    $params = array($this->name, $this->address, $this->addressNumber, $this->addressCep,
-                    $this->phone, $this->email, $this->cityId, $this->id);
-
-    $sql = "UPDATE clients SET name = ?, address = ? , address_number = ?, address_cep = ?,
-                    phone = ?, email = ?, city_id = ? WHERE id = ?";
-
-    $statement = $db->prepare($sql);
-    $resp = $statement->execute($params);
-
-    $params = array($this->cpf, $this->dateOfBirth, $this->id);
-
-    $sql = "UPDATE clients_pi SET cpf= ? , date_of_birth = ? WHERE id = ?";
-
-    $statement = $db->prepare($sql);
-    $resp = $statement->execute($params);
-
-    if(!$resp) return false;
-
-    return true;
-  }
-
-  public function deleteClient($id) {
-    $sql = "DELETE FROM clients, clients_pi USING clients, clients_pi WHERE clients.id = ? AND clients_pi.id =?";
-
-    $params = array($id, $id);
-
-    $db = Database::getConnection();
-    $statement = $db->prepare($sql);
-    return $statement->execute($params);
-  }
-
-  public static function all($options = []) {
-    $sql = "SELECT
-              c.id, c.name, c.email, c.address, c.address_cep, c.address_number, c.city_id,
-              c.phone, c.type, c.created_at, cities.id AS city_id, cities.name AS city_name,
-              cities.state_id AS state_id, cities.created_at AS city_created_at, cp.cpf,
-              cp.date_of_birth
-            FROM
-              clients c, clients_pi cp, cities WHERE (c.city_id = cities.id) AND (c.id = cp.id)
-            ORDER BY
-              id";
-
-    $db = Database::getConnection();
-    $statement = $db->prepare($sql);
-
-    if(sizeof($options) != 0) {
-      $sql .= " LIMIT :limit OFFSET :offset ";
-      $statement = $db->prepare($sql);
-      $statement->bindParam(':limit', $options['limit'], PDO::PARAM_INT);
-      $statement->bindParam(':offset', $options['offset'], PDO::PARAM_INT);
-    }
-
-    $resp = $statement->execute();
-
-    $clients = [];
-
-    if(!$resp) return $clients;
-
-    while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-      $clients[] =  self::createClient($row);
-    }
-    return $clients;
-  }
-
-  public static function count() {
-    $sql = "SELECT COUNT(*) FROM clients_pi";
-
-    $db = Database::getConnection();
-    $statement = $db->prepare($sql);
-    $statement->execute();
-
-    return $statement->fetch()[0];
   }
 
   private static function createClient($row) {

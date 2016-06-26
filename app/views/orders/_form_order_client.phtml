@@ -1,7 +1,7 @@
 <form action="<?= $this->action ?>" method="POST">
 
   <div class="ui form">
-    <div class="field <?= $this->order->getErrors('client_id') ? 'error' : ' '?>">
+    <div class="required field <?= $this->order->getErrors('client_id') ? 'error' : ' '?>">
       <label for="autocomplete_clients"> Cliente : </label>
       <div class="ui search">
         <div class="ui icon input">

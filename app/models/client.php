@@ -103,49 +103,7 @@
 
   }
 
-  public function save() {
-    if (!$this->isvalid()) return false;
-
-    $sql = "INSERT INTO
-              clients (name, email, phone, date_of_birth, address , address_number, address_cep, city_id, type)
-            VALUES
-              (:name, :email, :phone, :date_of_birth, :address, :address_number, :address_cep, :city_id, :type);";
-
-    $params = array('name' => $this->name, 'email' => $this->email, 'phone' => $this->phone,
-                    'date_of_birth' => $this->dateOfBirth, 'city_id' => $this->city, 'address' => $this->address,
-                    'address_number' => $this->addressNumber, 'address_cep' => $this->addressCep, 'type' => $this->type);
-
-    $db = Database::getConnection();
-    $statement = $db->prepare($sql);
-    $resp = $statement->execute($params);
-
-    $this->setId($db->lastInsertId());
-    $this->setCreatedAt(date());
-    return true;
-  }
-
-  public function update($data = array()) {
-    $this->setData($data);
-    if (!$this->isvalid()) return false;
-
-    $db = Database::getConnection();
-    $params = array('id' => $this->clientId, 'name' => $this->name, 'email' => $this->email,
-                    'phone' => $this->phone, 'address' => $this->address, 'address_number' => $this->addressNumber,
-                    'address_cep' => $this->addressCep, 'city_id' => $this->cityId);
-
-    $sql = "UPDATE
-              clients
-            SET
-              name=:name, email=:email, phone:=phone, address:=address,
-              address_number:=address_number, address_cep:=address_cep, city_id:=city_id
-            WHERE
-              id = :id";
-
-    $statement = $db->prepare($sql);
-    return $statement->execute($params);
-  }
-
-  public static function all($options = []) {
+  public static function all() {
     $sql = "SELECT
               clients.id AS client_id, clients.name AS client_name, clients.email AS client_email,
               clients.address AS client_address, clients.address_cep AS client_cep, clients.address_number AS
@@ -158,14 +116,6 @@
 
     $db = Database::getConnection();
     $statement = $db->prepare($sql);
-    
-    if(sizeof($options) != 0) {
-      $sql .= " LIMIT :limit OFFSET :offset ";
-      $statement = $db->prepare($sql);
-      $statement->bindParam(':limit', $options['limit'], PDO::PARAM_INT);
-      $statement->bindParam(':offset', $options['offset'], PDO::PARAM_INT);
-    }
-
     $resp = $statement->execute();
 
     $clients = [];
@@ -194,29 +144,6 @@
       $suggestions['suggestions'][] = array('value' => $row['name'], 'data' => $row['id']);
     }
     return json_encode($suggestions);
-  }
-
-  public function deleteClient($type, $id) {
-    if($type == "1")
-      $sql = "DELETE FROM clients, clients_pi USING clients, clients_pi WHERE clients.id = ? AND clients_pi.client_id =?";
-    else
-      $sql = "DELETE FROM clients, clients_pc USING clients, clients_pc WHERE clients.id = ? AND clients_pc.client_id =?";
-
-    $params = array($id,  $id);
-
-    $db = Database::getConnection();
-    $statement = $db->prepare($sql);
-    return $statement->execute($params);
-  }
-
-  public static function count() {
-    $sql = "SELECT COUNT(*) FROM clients";
-
-    $db = Database::getConnection();
-    $statement = $db->prepare($sql);
-    $statement->execute();
-
-    return $statement->fetch()[0];
   }
 
   private static function createClient($row) {

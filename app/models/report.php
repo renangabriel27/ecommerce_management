@@ -80,7 +80,7 @@
   }
 
   public static function dateIsValid($createdAt, $closedAt) {
-    if($createdAt >= $closedAt) return false;
+    if($createdAt > $closedAt) return false;
 
     return true;
   }
@@ -208,7 +208,7 @@
               GROUP BY
                 product_id
               ORDER BY
-                4 ASC";
+                amount ASC";
 
       $db = Database::getConnection();
       $statement = $db->prepare($sql);

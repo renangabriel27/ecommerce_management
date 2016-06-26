@@ -29,11 +29,14 @@
   }
 
   public function authenticatedEmployee() {
-    $this->employeeId = $this->currentEmployee()->getId();
+    if($this->params[':id']) {
+      $this->order = Order::findById($this->params[':id']);
+      $this->employeeId = $this->currentEmployee()->getId();
 
-    if(!$this->order->getEmployeeOrder($this->employeeId)) {
-      Flash::message('negative', 'Você não pode acessar esta página');
-      $this->redirectTo('/pedidos');
+      if(!$this->order->getEmployeeOrder($this->employeeId)) {
+        Flash::message('negative', 'Você não pode acessar esta página');
+        $this->redirectTo('/pedidos');
+      }
     }
   }
 
@@ -47,18 +50,7 @@
       $this->redirectTo("/pedidos/{$this->order->getId()}");
     }
   }
-
-  public  function authenticatedOrder() {
-    if(isset($this->params[':id']) && isset($this->params[':product_id'])) {
-      $this->findByParams($this->params[':id'], $this->params[':product_id']);
-    } else {
-      $this->findByParams($this->params['order']['id'], $this->params['product']['id']);
-    }
-    if($this->order->orderIsClosed()) {
-      $this->redirectTo("/pedidos");
-    }
-  }
-
+  
   public function findByParams($orderId, $productId) {
     $this->order = Order::findById($orderId);
     $this->product = Product::findById($productId);

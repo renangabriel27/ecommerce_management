@@ -43,7 +43,7 @@
       }
       $this->report->setCreatedAt($this->params['report']['created_at']);
       $this->report->setClosedAt($this->params['report']['closed_at']);
-    }
+    } 
   }
 
   private function graphicProduct() {

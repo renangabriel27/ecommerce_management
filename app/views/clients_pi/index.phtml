@@ -8,6 +8,7 @@
           <th>ID</th>
           <th>Nome</th>
           <th>Email</th>
+          <th>CPF</th>
           <th>CEP</th>
           <th>Telefone</th>
           <th>Cidade</th>
@@ -20,9 +21,10 @@
         <tr>
           <td><?= $client->getId() ?></td>
           <td><?= $client->getName() ?></td>
+          <td><?= $client->getEmail() ?></td>
           <td><?= ViewHelpers::mask("###.###.###-##", $client->getCpf()) ?></td>
-          <td><?= $client->getAddressCep() ?></td>
-          <td><?= $client->getPhone() ?></td>
+          <td><?= ViewHelpers::mask("#####-###", $client->getAddressCep()) ?></td>
+          <td><?= ViewHelpers::mask("(##)####-####",$client->getPhone()) ?></td>
           <td><?= $client->getCity()->getName() ?></td>
           <td>
             <?= ViewHelpers::linkTo("/clientes/{$client->getId()}/pessoa-fisica", '', '', 'class="zoom icon"') ?>
