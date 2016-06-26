@@ -37,8 +37,20 @@
     return $this->productId;
   }
 
-  public function validates() {
-    Validations::notEmpty($this->productId, 'id', $this->errors);
+  public function save($productId, $orderId) {
+    $sql = "INSERT INTO
+              sell_orders_items (price, order_id, product_id)
+            VALUES
+              ((SELECT price FROM products WHERE products.id = :product_id), :order_id, :product_id)";
+
+    $params = array('product_id' => $productId, 'order_id' => $orderId);
+    $db = Database::getConnection();
+    $statement = $db->prepare($sql);
+    $resp = $statement->execute($params);
+
+    if(!$resp) return false;
+
+    return true;
   }
 
   public static function getAmountOfProduct($productId, $orderId) {
@@ -52,7 +64,7 @@
       return $statement->fetch()[0];
   }
 
-  public function addProduct() {
+  public function addAmountProduct() {
     $this->amount = $this->getAmountOfProduct($this->productId, $this->orderId);
     $this->amount++;
 

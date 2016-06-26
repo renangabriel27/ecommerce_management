@@ -55,12 +55,6 @@
     return $this->closedAt;
   }
 
-  public static function validDate($createdAt, $closedAt) {
-
-
-    return true;
-  }
-
   public static function employeeWhoDidMoreSales() {
       $sql = "SELECT
                 employee_id, name AS employee_name, COUNT(orders.employee_id) amount, SUM(total) total
@@ -85,9 +79,13 @@
       return $reports;
   }
 
-  public static function findByDateEmployee($createdAt, $closedAt) {
-      if($createdAt >= $closedAt) return null;
+  public static function dateIsValid($createdAt, $closedAt) {
+    if($createdAt >= $closedAt) return false;
 
+    return true;
+  }
+
+  public static function findByDateEmployee($createdAt, $closedAt) {
       $sql = "SELECT
                 employee_id, name AS employee_name, COUNT(orders.employee_id) amount, SUM(total) total
               FROM
@@ -153,7 +151,7 @@
               GROUP BY
                 product_id
               ORDER BY
-                4 DESC";
+                amount DESC";
 
       $params = array($createdAt, $closedAt, 'Fechado');
       $db = Database::getConnection();
@@ -182,7 +180,7 @@
               GROUP BY
                 product_id
               ORDER BY
-                4 ASC";
+                amount DESC";
 
       $params = array($createdAt, $closedAt, 'Fechado');
       $db = Database::getConnection();

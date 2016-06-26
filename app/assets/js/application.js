@@ -67,15 +67,6 @@ var auto_complete = function() {
     }
   });
 
-  url = $('#autocomplete_product_by_id').data('url');
-  $('#autocomplete_product_by_id').autocomplete({
-    serviceUrl: url,
-    onSelect: function (suggestion) {
-      $("#autocomplete_product_by_name").val(suggestion.data)
-    }
-  });
-
-
 };
 
 var close_flash_message = function() {

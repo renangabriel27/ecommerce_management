@@ -39,9 +39,8 @@
     $router->get('/pedidos/page/:page', array('controller' => 'OrdersController', 'action' => 'index'));
     $router->post('/pedidos', array('controller' => 'OrdersController', 'action' => 'create'));
     $router->get('/pedidos/novo', array('controller' => 'OrdersController', 'action' => '_new'));
-    $router->post('/pedidos/produtos', array('controller' => 'OrdersController', 'action' => 'addOrderProduct'));
-    $router->get('/pedidos/abertos', array('controller' => 'OrdersController', 'action' => 'orderOpen'));
-    $router->get('/pedidos/fechados', array('controller' => 'OrdersController', 'action' => 'orderClose'));
+    $router->get('/pedidos/abertos', array('controller' => 'OrdersController', 'action' => 'open'));
+    $router->get('/pedidos/fechados', array('controller' => 'OrdersController', 'action' => 'close'));
     $router->get('/pedidos/:id', array('controller' => 'OrdersController', 'action' => 'edit'));
     $router->get('/pedidos/:id/deletar', array('controller' => 'OrdersController', 'action' => 'destroy'));
     $router->get('/pedidos/:id/fechar', array('controller' => 'OrdersController', 'action' => 'closeOrder'));
@@ -50,9 +49,10 @@
 
     /* Routes for sell orders items
     ------------------------- */
-    $router->get('/pedidos/:id/produtos/:product_id/adicionar', array('controller' => 'SellOrdersController', 'action' => 'addAmountProduct'));
-    $router->get('/pedidos/:id/produtos/:product_id/deletar', array('controller' => 'SellOrdersController', 'action' => 'destroyProduct'));
-    $router->get('/pedidos/:id/produtos/:product_id/remover', array('controller' => 'SellOrdersController', 'action' => 'removeAmountProduct'));
+    $router->post('/pedidos/produtos', array('controller' => 'SellOrdersItemsController', 'action' => 'addProduct'));
+    $router->get('/pedidos/:id/produtos/:product_id/adicionar', array('controller' => 'SellOrdersItemsController', 'action' => 'addAmount'));
+    $router->get('/pedidos/:id/produtos/:product_id/remover', array('controller' => 'SellOrdersItemsController', 'action' => 'removeAmount'));
+    $router->get('/pedidos/:id/produtos/:product_id/deletar', array('controller' => 'SellOrdersItemsController', 'action' => 'destroy'));
     /* End of routes for sell orders items
     --------------------------------- */
 
@@ -60,7 +60,6 @@
     /* Routes for products
     ------------------------- */
     $router->get('/produtos/autocomplete-search', array('controller' => 'ProductsController', 'action' => 'autoCompleteSearch'));
-    $router->get('/produtos/autocomplete-search-id', array('controller' => 'ProductsController', 'action' => 'autoCompleteSearchId'));
     $router->get('/produtos/search', array('controller' => 'ProductsController', 'action' => 'index'));
 
     $router->get('/produtos', array('controller' => 'ProductsController', 'action' => 'index'));
@@ -79,9 +78,6 @@
     ------------------------- */
     $router->get('/clientes/autocomplete-search', array('controller' => 'ClientsPiController', 'action' => 'autoCompleteSearch'));
     $router->get('/clientes', array('controller' => 'ClientsPiController', 'action' => 'clients'));
-    $router->get('/clientes/page/:page', array('controller' => 'ClientsPiController', 'action' => 'clients'));
-    $router->get('/clientes/pessoa-fisica/page/:page', array('controller' => 'ClientsPiController', 'action' => 'index'));
-
 
     $router->get('/clientes/pessoa-fisica', array('controller' => 'ClientsPiController', 'action' => 'index'));
     $router->get('/clientes/nova-pessoa-fisica', array('controller' => 'ClientsPiController', 'action' => '_new'));
@@ -96,8 +92,6 @@
 
     /* Routes for clients - person corporate
     ------------------------- */
-    $router->get('/clientes/pessoa-juridica/page/:page', array('controller' => 'ClientsPcController', 'action' => 'index'));
-
     $router->get('/clientes/pessoa-juridica', array('controller' => 'ClientsPcController', 'action' => 'index'));
     $router->get('/clientes/nova-pessoa-juridica', array('controller' => 'ClientsPcController', 'action' => '_new'));
     $router->post('/clientes/pessoa-juridica', array('controller' => 'ClientsPcController', 'action' => 'create'));

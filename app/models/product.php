@@ -129,6 +129,40 @@
     return true;
   }
 
+  public function updateProductOnStock() {
+    $sql = "UPDATE products set amount = ? WHERE id = ?";
+    $params = array($this->amount, $this->id);
+
+    $db = Database::getConnection();
+    $statement = $db->prepare($sql);
+    $resp = $statement->execute($params);
+
+    if(!$resp) return false;
+
+    return true;
+  }
+
+  public function removeProductOfStock() {
+    if($this->amount != 0) {
+      $this->amount--;
+      if($this->updateProductOnStock()) return true;
+    }
+    return false;
+  }
+
+  public function addProductOnStock() {
+    $this->amount++;
+    if($this->updateProductOnStock()) return true;
+    return false;
+  }
+
+  public function restoreProductOnStock($amount) {
+    $this->amount += $amount;
+    if($this->updateProductOnStock()) return true;
+
+    return false;
+  }
+
   public static function productSearch($options = []) {
     $sql = "SELECT
               p.id AS id, p.name AS product_name, p.amount AS product_amount,
@@ -164,40 +198,6 @@
       $products[] =  self::createProduct($row);
     }
     return $products;
-  }
-
-  public function updateProductOnStock() {
-    $sql = "UPDATE products set amount = ? WHERE id = ?";
-    $params = array($this->amount, $this->id);
-
-    $db = Database::getConnection();
-    $statement = $db->prepare($sql);
-    $resp = $statement->execute($params);
-
-    if(!$resp) return false;
-
-    return true;
-  }
-
-  public function removeProductOfStock() {
-    if($this->amount == 0) return false;
-
-    $this->amount--;
-    if($this->updateProductOnStock()) return true;
-    return false;
-  }
-
-  public function addProductOnStock() {
-    $this->amount++;
-    if($this->updateProductOnStock()) return true;
-    return false;
-  }
-
-  public function restoreProductOnStock($amount) {
-    $this->amount += $amount;
-    if($this->updateProductOnStock()) return true;
-
-    return false;
   }
 
   public static function findById($id) {
@@ -270,25 +270,6 @@
 
     while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
       $product = array('value' => $row['name'], 'data' => $row['id']);
-      $suggestions['suggestions'][] = $product;
-    }
-    return json_encode($suggestions);
-  }
-
-  public static function whereIdLikeAsJson($param) {
-    $sql = "SELECT id, name FROM products WHERE name LIKE :param ORDER BY name";
-    $params = array('param' => "%{$param}%");
-
-    $db = Database::getConnection();
-    $statement = $db->prepare($sql);
-    $resp = $statement->execute($params);
-
-    $suggestions = array('suggestions' => '');
-
-    if(!$resp) return $suggestions;
-
-    while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-      $product = array('value' => $row['id'], 'data' => $row['name']);
       $suggestions['suggestions'][] = $product;
     }
     return json_encode($suggestions);

@@ -89,12 +89,6 @@
      exit();
    }
 
-   public function autoCompleteSearchId() {
-     $products = Product::whereIdLikeAsJson($this->params['query']);
-     echo $products;
-     exit();
-   }
-
    private function linkToNew() {
      $this->urlButton = "/produtos/novo";
      $this->link = "Novo produto";

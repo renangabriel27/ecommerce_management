@@ -106,11 +106,7 @@
     $statement = $db->prepare($sql);
     $resp = $statement->execute($params);
 
-    if(!$resp) {
-      Logger::getInstance()->log("Falha para salvar pedidos: " . print_r($this, TRUE), Logger::ERROR);
-      Logger::getInstance()->log("Error " . print_r(error_get_last(), true ), Logger::ERROR);
-      return false;
-    }
+    if(!$resp)  return false;
 
     $this->setId($db->lastInsertId());
 
@@ -155,26 +151,7 @@
     return true;
   }
 
-  public function addProduct($productId) {
-    $sql = "INSERT INTO
-              sell_orders_items (price, order_id, product_id)
-            VALUES
-              ((SELECT price FROM products WHERE products.id = :product_id), :order_id, :product_id)";
-    $params = array('product_id' => $productId, 'order_id' => $this->id);
-
-    $db = Database::getConnection();
-    $statement = $db->prepare($sql);
-    $resp = $statement->execute($params);
-
-    if(!$resp) {
-      Logger::getInstance()->log("Falha para salvar: " . print_r($this, TRUE), Logger::ERROR);
-      Logger::getInstance()->log("Error " . print_r(error_get_last(), true ), Logger::ERROR);
-      return false;
-    }
-    return true;
-  }
-
-  public function uniqueItem($id) {
+  public function uniqueProduct($id) {
     $sql = "SELECT order_id, product_id FROM sell_orders_items WHERE order_id = ? AND product_id = ?";
     $params = array($this->id, $id);
 
@@ -182,13 +159,12 @@
     $statement = $db->prepare($sql);
     $statement->execute($params);
 
-    if (!$row = $statement->fetch()) {
-      return false;
-    }
+    if (!$row = $statement->fetch()) return false;
+
     return true;
   }
 
-  public function productIsValid($params) {
+  public function emptyProduct($params) {
     if($params == NULL) return true;
 
     return false;
@@ -254,41 +230,14 @@
     return false;
   }
 
-  public static function all() {
-    $employeeId = SessionHelpers::currentEmployee()->getId();
-    $sql = "SELECT
-              o.id AS id, o.created_at AS created_at,  o.total AS total, o.status AS status,
-              o.employee_id AS order_employee_id, o.client_id AS order_client_id,
-              c.id AS client_id, c.name AS client_name, c.email AS client_email, c.address AS client_address,
-              c.address_number AS client_address_number, c.address_cep AS client_cep, c.phone AS client_phone,
-              c.created_at AS client_created_at, c.city_id AS client_city_id, c.type AS client_type,
-              ct.id AS city_id, ct.name AS city_name, ct.created_at AS city_created_at, ct.state_id AS state_id,
-              e.id AS employee_id, e.name AS employee_name, e.email AS employee_email, e.salary AS employee_salary,
-              e.created_at AS employee_created_at
-            FROM
-              clients c, orders o, cities ct, employees e
-            WHERE
-              (o.client_id = c.id) AND (ct.id = c.city_id ) AND (e.id = o.employee_id) AND (o.employee_id = :employee)
-            ORDER BY
-              o.created_at ASC";
-
-    $db = Database::getConnection();
-    $statement = $db->prepare($sql);
-
-    $statement->bindParam(':employee', $employeeId , PDO::PARAM_INT);
-    $resp = $statement->execute();
-
-    $orders = [];
-
-    if(!$resp) return $orders;
-
-    while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-      $orders[] = self::createOrder($row);
+  public function orderIsClosed() {
+    if($this->getStatus() == 'Fechado') {
+      return true;
     }
-    return $orders;
+    return false;
   }
 
-  public static function allOpen() {
+  public static function all($options = '') {
     $employeeId = SessionHelpers::currentEmployee()->getId();
     $sql = "SELECT
               o.id AS id, o.created_at AS created_at,  o.total AS total, o.status AS status,
@@ -302,12 +251,18 @@
             FROM
               clients c, orders o, cities ct, employees e
             WHERE
-              (o.client_id = c.id) AND (ct.id = c.city_id ) AND (e.id = o.employee_id) AND (o.employee_id = ?) AND (o.status = ?)
-            ORDER BY
-              o.created_at ASC";
+              (o.client_id = c.id) AND (ct.id = c.city_id ) AND (e.id = o.employee_id) AND (o.employee_id = :employee)";
 
-    $params = array($employeeId, 'Aberto');
+
+    $params = array('employee' => $employeeId);
     $db = Database::getConnection();
+
+    if($options == 'Fechado' || $options == 'Aberto') {
+      $sql .= " AND (o.status = :status)";
+      $params['status'] = $options;
+    }
+
+    $sql .= " ORDER BY o.created_at DESC";
     $statement = $db->prepare($sql);
     $resp = $statement->execute($params);
 
@@ -329,39 +284,6 @@
     $statement->execute();
 
     return $statement->fetch()[0];
-  }
-
-  public static function allClose() {
-    $employeeId = SessionHelpers::currentEmployee()->getId();
-    $sql = "SELECT
-              o.id AS id, o.created_at AS created_at,  o.total AS total, o.status AS status,
-              o.employee_id AS order_employee_id, o.client_id AS order_client_id,
-              c.id AS client_id, c.name AS client_name, c.email AS client_email, c.address AS client_address,
-              c.address_number AS client_address_number, c.address_cep AS client_cep, c.phone AS client_phone,
-              c.created_at AS client_created_at, c.city_id AS client_city_id, c.type AS client_type,
-              ct.id AS city_id, ct.name AS city_name, ct.created_at AS city_created_at, ct.state_id AS state_id,
-              e.id AS employee_id, e.name AS employee_name, e.email AS employee_email, e.salary AS employee_salary,
-              e.created_at AS employee_created_at
-            FROM
-              clients c, orders o, cities ct, employees e
-            WHERE
-              (o.client_id = c.id) AND (ct.id = c.city_id ) AND (e.id = o.employee_id) AND (o.employee_id = ?) AND (o.status = ?)
-            ORDER BY
-              o.created_at ASC";
-
-    $params = array($employeeId, 'Fechado');
-    $db = Database::getConnection();
-    $statement = $db->prepare($sql);
-    $resp = $statement->execute($params);
-
-    $orders = [];
-
-    if(!$resp) return $orders;
-
-    while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-      $orders[] = self::createOrder($row);
-    }
-    return $orders;
   }
 
   public static function findById($id) {
